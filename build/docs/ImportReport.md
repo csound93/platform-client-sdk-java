@@ -1,18 +1,16 @@
 ---
 title: ImportReport
 ---
-## ImportReport
 
+## ImportReport
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **errors** | <!----><!---->[**List&lt;ImportError&gt;**](ImportError.html)<!----> |  |  [optional] |
-| **validated** | <!----><!---->[**ResultCounters**](ResultCounters.html)<!----> |  |  [optional] |
-| **imported** | <!----><!---->[**ResultCounters**](ResultCounters.html)<!----> |  |  [optional] |
-| **totalDocuments** | <!----><!---->**Integer**<!----> |  |  [optional] |
+| Name               | Type                                                               | Description | Notes      |
+| ------------------ | ------------------------------------------------------------------ | ----------- | ---------- |
+| **errors**         | <!----><!---->[**List&lt;ImportError&gt;**](ImportError.md)<!----> |             | [optional] |
+| **validated**      | <!----><!---->[**ResultCounters**](ResultCounters.md)<!---->       |             | [optional] |
+| **imported**       | <!----><!---->[**ResultCounters**](ResultCounters.md)<!---->       |             | [optional] |
+| **totalDocuments** | <!----><!---->**Integer**<!---->                                   |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

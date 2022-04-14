@@ -1,20 +1,18 @@
 ---
 title: GamificationScorecardChangeTopicScorecardChange
 ---
-## GamificationScorecardChangeTopicScorecardChange
 
+## GamificationScorecardChangeTopicScorecardChange
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **workday** | <!----><!---->**String**<!----> |  |  [optional] |
-| **divisionId** | <!----><!---->**String**<!----> |  |  [optional] |
-| **teamId** | <!----><!---->**String**<!----> |  |  [optional] |
-| **performanceProfileId** | <!----><!---->**String**<!----> |  |  [optional] |
-| **userId** | <!----><!---->**String**<!----> |  |  [optional] |
-| **performanceMetrics** | <!----><!---->[**List&lt;GamificationScorecardChangeTopicPerformanceMetric&gt;**](GamificationScorecardChangeTopicPerformanceMetric.html)<!----> |  |  [optional] |
+| Name                     | Type                                                                                                                                           | Description | Notes      |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **workday**              | <!----><!---->**String**<!---->                                                                                                                |             | [optional] |
+| **divisionId**           | <!----><!---->**String**<!---->                                                                                                                |             | [optional] |
+| **teamId**               | <!----><!---->**String**<!---->                                                                                                                |             | [optional] |
+| **performanceProfileId** | <!----><!---->**String**<!---->                                                                                                                |             | [optional] |
+| **userId**               | <!----><!---->**String**<!---->                                                                                                                |             | [optional] |
+| **performanceMetrics**   | <!----><!---->[**List&lt;GamificationScorecardChangeTopicPerformanceMetric&gt;**](GamificationScorecardChangeTopicPerformanceMetric.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

@@ -1,16 +1,14 @@
 ---
 title: StatEventQueueTopicStatsNotification
 ---
-## StatEventQueueTopicStatsNotification
 
+## StatEventQueueTopicStatsNotification
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **group** | <!----><!---->**Map&lt;String, String&gt;**<!----> |  |  [optional] |
-| **data** | <!----><!---->[**List&lt;StatEventQueueTopicIntervalMetrics&gt;**](StatEventQueueTopicIntervalMetrics.html)<!----> |  |  [optional] |
+| Name      | Type                                                                                                             | Description | Notes      |
+| --------- | ---------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **group** | <!----><!---->**Map&lt;String, String&gt;**<!---->                                                               |             | [optional] |
+| **data**  | <!----><!---->[**List&lt;StatEventQueueTopicIntervalMetrics&gt;**](StatEventQueueTopicIntervalMetrics.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

@@ -1,15 +1,13 @@
 ---
 title: BusinessUnitActivityCodeListing
 ---
-## BusinessUnitActivityCodeListing
 
+## BusinessUnitActivityCodeListing
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **entities** | <!----><!---->[**List&lt;BusinessUnitActivityCode&gt;**](BusinessUnitActivityCode.html)<!----> |  |  [optional] |
+| Name         | Type                                                                                         | Description | Notes      |
+| ------------ | -------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **entities** | <!----><!---->[**List&lt;BusinessUnitActivityCode&gt;**](BusinessUnitActivityCode.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

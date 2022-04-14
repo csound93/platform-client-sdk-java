@@ -1,17 +1,15 @@
 ---
 title: ConversationEmailEventTopicJourneyContext
 ---
-## ConversationEmailEventTopicJourneyContext
 
+## ConversationEmailEventTopicJourneyContext
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **customer** | <!----><!---->[**ConversationEmailEventTopicJourneyCustomer**](ConversationEmailEventTopicJourneyCustomer.html)<!----> |  |  [optional] |
-| **customerSession** | <!----><!---->[**ConversationEmailEventTopicJourneyCustomerSession**](ConversationEmailEventTopicJourneyCustomerSession.html)<!----> |  |  [optional] |
-| **triggeringAction** | <!----><!---->[**ConversationEmailEventTopicJourneyAction**](ConversationEmailEventTopicJourneyAction.html)<!----> |  |  [optional] |
+| Name                 | Type                                                                                                                               | Description | Notes      |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **customer**         | <!----><!---->[**ConversationEmailEventTopicJourneyCustomer**](ConversationEmailEventTopicJourneyCustomer.md)<!---->               |             | [optional] |
+| **customerSession**  | <!----><!---->[**ConversationEmailEventTopicJourneyCustomerSession**](ConversationEmailEventTopicJourneyCustomerSession.md)<!----> |             | [optional] |
+| **triggeringAction** | <!----><!---->[**ConversationEmailEventTopicJourneyAction**](ConversationEmailEventTopicJourneyAction.md)<!---->                   |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

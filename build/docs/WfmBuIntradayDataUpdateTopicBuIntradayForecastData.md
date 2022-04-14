@@ -1,16 +1,14 @@
 ---
 title: WfmBuIntradayDataUpdateTopicBuIntradayForecastData
 ---
-## WfmBuIntradayDataUpdateTopicBuIntradayForecastData
 
+## WfmBuIntradayDataUpdateTopicBuIntradayForecastData
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **offered** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
-| **averageHandleTimeSeconds** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
+| Name                         | Type                                                 | Description | Notes      |
+| ---------------------------- | ---------------------------------------------------- | ----------- | ---------- |
+| **offered**                  | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+| **averageHandleTimeSeconds** | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

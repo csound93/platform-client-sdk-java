@@ -1,24 +1,22 @@
 ---
 title: CoachingAppointmentResponseList
 ---
-## CoachingAppointmentResponseList
 
+## CoachingAppointmentResponseList
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **entities** | <!----><!---->[**List&lt;CoachingAppointmentResponse&gt;**](CoachingAppointmentResponse.html)<!----> |  |  [optional] |
-| **pageSize** | <!----><!---->**Integer**<!----> |  |  [optional] |
-| **pageNumber** | <!----><!---->**Integer**<!----> |  |  [optional] |
-| **total** | <!----><!---->**Long**<!----> |  |  [optional] |
-| **firstUri** | <!----><!---->**String**<!----> |  |  [optional] |
-| **selfUri** | <!----><!---->**String**<!----> |  |  [optional] |
-| **nextUri** | <!----><!---->**String**<!----> |  |  [optional] |
-| **previousUri** | <!----><!---->**String**<!----> |  |  [optional] |
-| **lastUri** | <!----><!---->**String**<!----> |  |  [optional] |
-| **pageCount** | <!----><!---->**Integer**<!----> |  |  [optional] |
+| Name            | Type                                                                                               | Description | Notes      |
+| --------------- | -------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **entities**    | <!----><!---->[**List&lt;CoachingAppointmentResponse&gt;**](CoachingAppointmentResponse.md)<!----> |             | [optional] |
+| **pageSize**    | <!----><!---->**Integer**<!---->                                                                   |             | [optional] |
+| **pageNumber**  | <!----><!---->**Integer**<!---->                                                                   |             | [optional] |
+| **total**       | <!----><!---->**Long**<!---->                                                                      |             | [optional] |
+| **firstUri**    | <!----><!---->**String**<!---->                                                                    |             | [optional] |
+| **selfUri**     | <!----><!---->**String**<!---->                                                                    |             | [optional] |
+| **nextUri**     | <!----><!---->**String**<!---->                                                                    |             | [optional] |
+| **previousUri** | <!----><!---->**String**<!---->                                                                    |             | [optional] |
+| **lastUri**     | <!----><!---->**String**<!---->                                                                    |             | [optional] |
+| **pageCount**   | <!----><!---->**Integer**<!---->                                                                   |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

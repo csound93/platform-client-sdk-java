@@ -1,35 +1,33 @@
 ---
 title: ChatApi
 ---
+
 ## ChatApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**getChatSettings**](ChatApi.html#getChatSettings) | Get Chat Settings. |
-| [**patchChatSettings**](ChatApi.html#patchChatSettings) | Patch Chat Settings. |
-| [**putChatSettings**](ChatApi.html#putChatSettings) | Update Chat Settings. |
+| Method                                                | Description           |
+| ----------------------------------------------------- | --------------------- |
+| [**getChatSettings**](ChatApi.md#getChatSettings)     | Get Chat Settings.    |
+| [**patchChatSettings**](ChatApi.md#patchChatSettings) | Patch Chat Settings.  |
+| [**putChatSettings**](ChatApi.md#putChatSettings)     | Update Chat Settings. |
+
 {: class="table-striped"}
 
 <a name="getChatSettings"></a>
 
 # **getChatSettings**
 
-
-
-> [ChatSettings](ChatSettings.html) getChatSettings()
+> [ChatSettings](ChatSettings.md) getChatSettings()
 
 Get Chat Settings.
 
+Wraps GET /api/v2/chat/settings
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/chat/settings  
-
-Requires ANY permissions: 
-
-* chat:setting:view
-* chat:setting:edit
+- chat:setting:view
+- chat:setting:edit
 
 ### Example
 
@@ -66,29 +64,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**ChatSettings**](ChatSettings.html)
+[**ChatSettings**](ChatSettings.md)
 
 <a name="patchChatSettings"></a>
 
 # **patchChatSettings**
 
-
-
-> [ChatSettings](ChatSettings.html) patchChatSettings(body)
+> [ChatSettings](ChatSettings.md) patchChatSettings(body)
 
 Patch Chat Settings.
 
+Wraps PATCH /api/v2/chat/settings
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/chat/settings  
-
-Requires ANY permissions: 
-
-* chat:setting:edit
+- chat:setting:edit
 
 ### Example
 
@@ -124,34 +116,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                | Description | Notes |
+| -------- | ----------------------------------- | ----------- | ----- |
+| **body** | [**ChatSettings**](ChatSettings.md) | Chat        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ChatSettings**](ChatSettings.html)| Chat | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ChatSettings**](ChatSettings.html)
+[**ChatSettings**](ChatSettings.md)
 
 <a name="putChatSettings"></a>
 
 # **putChatSettings**
 
-
-
-> [ChatSettings](ChatSettings.html) putChatSettings(body)
+> [ChatSettings](ChatSettings.md) putChatSettings(body)
 
 Update Chat Settings.
 
+Wraps PUT /api/v2/chat/settings
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/chat/settings  
-
-Requires ANY permissions: 
-
-* chat:setting:edit
+- chat:setting:edit
 
 ### Example
 
@@ -187,14 +174,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                                | Description | Notes |
+| -------- | ----------------------------------- | ----------- | ----- |
+| **body** | [**ChatSettings**](ChatSettings.md) | Chat        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ChatSettings**](ChatSettings.html)| Chat | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ChatSettings**](ChatSettings.html)
-
+[**ChatSettings**](ChatSettings.md)

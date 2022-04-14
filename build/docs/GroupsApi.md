@@ -1,45 +1,43 @@
 ---
 title: GroupsApi
 ---
+
 ## GroupsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteGroup**](GroupsApi.html#deleteGroup) | Delete group |
-| [**deleteGroupMembers**](GroupsApi.html#deleteGroupMembers) | Remove members |
-| [**getFieldconfig**](GroupsApi.html#getFieldconfig) | Fetch field config for an entity type |
-| [**getGroup**](GroupsApi.html#getGroup) | Get group |
-| [**getGroupIndividuals**](GroupsApi.html#getGroupIndividuals) | Get all individuals associated with the group |
-| [**getGroupMembers**](GroupsApi.html#getGroupMembers) | Get group members, includes individuals, owners, and dynamically included people |
-| [**getGroupProfile**](GroupsApi.html#getGroupProfile) | Get group profile |
-| [**getGroups**](GroupsApi.html#getGroups) | Get a group list |
-| [**getGroupsSearch**](GroupsApi.html#getGroupsSearch) | Search groups using the q64 value returned from a previous search |
-| [**getProfilesGroups**](GroupsApi.html#getProfilesGroups) | Get group profile listing |
-| [**postGroupMembers**](GroupsApi.html#postGroupMembers) | Add members |
-| [**postGroups**](GroupsApi.html#postGroups) | Create a group |
-| [**postGroupsSearch**](GroupsApi.html#postGroupsSearch) | Search groups |
-| [**putGroup**](GroupsApi.html#putGroup) | Update group |
+| Method                                                      | Description                                                                      |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| [**deleteGroup**](GroupsApi.md#deleteGroup)                 | Delete group                                                                     |
+| [**deleteGroupMembers**](GroupsApi.md#deleteGroupMembers)   | Remove members                                                                   |
+| [**getFieldconfig**](GroupsApi.md#getFieldconfig)           | Fetch field config for an entity type                                            |
+| [**getGroup**](GroupsApi.md#getGroup)                       | Get group                                                                        |
+| [**getGroupIndividuals**](GroupsApi.md#getGroupIndividuals) | Get all individuals associated with the group                                    |
+| [**getGroupMembers**](GroupsApi.md#getGroupMembers)         | Get group members, includes individuals, owners, and dynamically included people |
+| [**getGroupProfile**](GroupsApi.md#getGroupProfile)         | Get group profile                                                                |
+| [**getGroups**](GroupsApi.md#getGroups)                     | Get a group list                                                                 |
+| [**getGroupsSearch**](GroupsApi.md#getGroupsSearch)         | Search groups using the q64 value returned from a previous search                |
+| [**getProfilesGroups**](GroupsApi.md#getProfilesGroups)     | Get group profile listing                                                        |
+| [**postGroupMembers**](GroupsApi.md#postGroupMembers)       | Add members                                                                      |
+| [**postGroups**](GroupsApi.md#postGroups)                   | Create a group                                                                   |
+| [**postGroupsSearch**](GroupsApi.md#postGroupsSearch)       | Search groups                                                                    |
+| [**putGroup**](GroupsApi.md#putGroup)                       | Update group                                                                     |
+
 {: class="table-striped"}
 
 <a name="deleteGroup"></a>
 
 # **deleteGroup**
 
-
-
 > Void deleteGroup(groupId)
 
 Delete group
 
+Wraps DELETE /api/v2/groups/{groupId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/groups/{groupId}  
-
-Requires ANY permissions: 
-
-* directory:group:delete
+- directory:group:delete
 
 ### Example
 
@@ -74,12 +72,11 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **groupId** | **String** | Group ID    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -89,18 +86,13 @@ null (empty response body)
 
 # **deleteGroupMembers**
 
-
-
-> [Empty](Empty.html) deleteGroupMembers(groupId, ids)
+> [Empty](Empty.md) deleteGroupMembers(groupId, ids)
 
 Remove members
 
+Wraps DELETE /api/v2/groups/{groupId}/members
 
-
-Wraps DELETE /api/v2/groups/{groupId}/members  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -137,17 +129,16 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description                               | Notes |
+| ----------- | ---------- | ----------------------------------------- | ----- |
+| **groupId** | **String** | Group ID                                  |
+| **ids**     | **String** | Comma separated list of userIds to remove |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
-| **ids** | **String**| Comma separated list of userIds to remove | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="getFieldconfig"></a>
 
@@ -155,16 +146,13 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [FieldConfig](FieldConfig.html) getFieldconfig(type)
+> [FieldConfig](FieldConfig.md) getFieldconfig(type)
 
 Fetch field config for an entity type
 
+Wraps GET /api/v2/fieldconfig
 
-
-Wraps GET /api/v2/fieldconfig  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -200,33 +188,27 @@ try {
 
 ### Parameters
 
+| Name     | Type       | Description | Notes                                                 |
+| -------- | ---------- | ----------- | ----------------------------------------------------- |
+| **type** | **String** | Field type  | <br />**Values**: person, group, org, externalContact |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **type** | **String**| Field type |<br />**Values**: person, group, org, externalContact 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**FieldConfig**](FieldConfig.html)
+[**FieldConfig**](FieldConfig.md)
 
 <a name="getGroup"></a>
 
 # **getGroup**
 
-
-
-> [Group](Group.html) getGroup(groupId)
+> [Group](Group.md) getGroup(groupId)
 
 Get group
 
+Wraps GET /api/v2/groups/{groupId}
 
-
-Wraps GET /api/v2/groups/{groupId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -262,33 +244,27 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **groupId** | **String** | Group ID    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Group**](Group.html)
+[**Group**](Group.md)
 
 <a name="getGroupIndividuals"></a>
 
 # **getGroupIndividuals**
 
-
-
-> [UserEntityListing](UserEntityListing.html) getGroupIndividuals(groupId)
+> [UserEntityListing](UserEntityListing.md) getGroupIndividuals(groupId)
 
 Get all individuals associated with the group
 
+Wraps GET /api/v2/groups/{groupId}/individuals
 
-
-Wraps GET /api/v2/groups/{groupId}/individuals  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -324,33 +300,27 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **groupId** | **String** | Group ID    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserEntityListing**](UserEntityListing.html)
+[**UserEntityListing**](UserEntityListing.md)
 
 <a name="getGroupMembers"></a>
 
 # **getGroupMembers**
 
-
-
-> [UserEntityListing](UserEntityListing.html) getGroupMembers(groupId, pageSize, pageNumber, sortOrder, expand)
+> [UserEntityListing](UserEntityListing.md) getGroupMembers(groupId, pageSize, pageNumber, sortOrder, expand)
 
 Get group members, includes individuals, owners, and dynamically included people
 
+Wraps GET /api/v2/groups/{groupId}/members
 
-
-Wraps GET /api/v2/groups/{groupId}/members  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -390,20 +360,19 @@ try {
 
 ### Parameters
 
+| Name           | Type                                | Description                        | Notes                                                                                                                                                                                                                                                                                                         |
+| -------------- | ----------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **groupId**    | **String**                          | Group ID                           |
+| **pageSize**   | **Integer**                         | Page size                          | [optional] [default to 25]                                                                                                                                                                                                                                                                                    |
+| **pageNumber** | **Integer**                         | Page number                        | [optional] [default to 1]                                                                                                                                                                                                                                                                                     |
+| **sortOrder**  | **String**                          | Ascending or descending sort order | [optional] [default to ASC]<br />**Values**: ascending, descending                                                                                                                                                                                                                                            |
+| **expand**     | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand    | [optional]<br />**Values**: routingStatus, presence, conversationSummary, outOfOffice, geolocation, station, authorization, lasttokenissued, dateLastLogin, authorization.unusedRoles, team, profileSkills, certifications, locations, groups, skills, languages, languagePreference, employerInfo, biography |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortOrder** | **String**| Ascending or descending sort order | [optional] [default to ASC]<br />**Values**: ascending, descending 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: routingStatus, presence, conversationSummary, outOfOffice, geolocation, station, authorization, lasttokenissued, dateLastLogin, authorization.unusedRoles, team, profileSkills, certifications, locations, groups, skills, languages, languagePreference, employerInfo, biography 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserEntityListing**](UserEntityListing.html)
+[**UserEntityListing**](UserEntityListing.md)
 
 <a name="getGroupProfile"></a>
 
@@ -411,16 +380,15 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [GroupProfile](GroupProfile.html) getGroupProfile(groupId, fields)
+> [GroupProfile](GroupProfile.md) getGroupProfile(groupId, fields)
 
 Get group profile
 
 This api is deprecated. Use /api/v2/groups instead
 
-Wraps GET /api/v2/groups/{groupId}/profile  
+Wraps GET /api/v2/groups/{groupId}/profile
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -457,34 +425,28 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description                                                                                                                                                             | Notes      |
+| ----------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| **groupId** | **String** | groupId                                                                                                                                                                 |
+| **fields**  | **String** | Comma separated fields to return. Allowable values can be found by querying /api/v2/fieldconfig?type=group and using the key for the elements returned by the fieldList | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| groupId | 
-| **fields** | **String**| Comma separated fields to return.  Allowable values can be found by querying /api/v2/fieldconfig?type=group and using the key for the elements returned by the fieldList | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GroupProfile**](GroupProfile.html)
+[**GroupProfile**](GroupProfile.md)
 
 <a name="getGroups"></a>
 
 # **getGroups**
 
-
-
-> [GroupEntityListing](GroupEntityListing.html) getGroups(pageSize, pageNumber, id, jabberId, sortOrder)
+> [GroupEntityListing](GroupEntityListing.md) getGroups(pageSize, pageNumber, id, jabberId, sortOrder)
 
 Get a group list
 
+Wraps GET /api/v2/groups
 
-
-Wraps GET /api/v2/groups  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -524,37 +486,31 @@ try {
 
 ### Parameters
 
+| Name           | Type                                | Description                                                                               | Notes                                                              |
+| -------------- | ----------------------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **pageSize**   | **Integer**                         | Page size                                                                                 | [optional] [default to 25]                                         |
+| **pageNumber** | **Integer**                         | Page number                                                                               | [optional] [default to 1]                                          |
+| **id**         | [**List&lt;String&gt;**](String.md) | id                                                                                        | [optional]                                                         |
+| **jabberId**   | [**List&lt;String&gt;**](String.md) | A list of jabberIds to fetch by bulk (cannot be used with the \&quot;id\&quot; parameter) | [optional]                                                         |
+| **sortOrder**  | **String**                          | Ascending or descending sort order                                                        | [optional] [default to ASC]<br />**Values**: ascending, descending |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **id** | [**List&lt;String&gt;**](String.html)| id | [optional] 
-| **jabberId** | [**List&lt;String&gt;**](String.html)| A list of jabberIds to fetch by bulk (cannot be used with the \&quot;id\&quot; parameter) | [optional] 
-| **sortOrder** | **String**| Ascending or descending sort order | [optional] [default to ASC]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GroupEntityListing**](GroupEntityListing.html)
+[**GroupEntityListing**](GroupEntityListing.md)
 
 <a name="getGroupsSearch"></a>
 
 # **getGroupsSearch**
 
-
-
-> [GroupsSearchResponse](GroupsSearchResponse.html) getGroupsSearch(q64, expand)
+> [GroupsSearchResponse](GroupsSearchResponse.md) getGroupsSearch(q64, expand)
 
 Search groups using the q64 value returned from a previous search
 
+Wraps GET /api/v2/groups/search
 
-
-Wraps GET /api/v2/groups/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -591,17 +547,16 @@ try {
 
 ### Parameters
 
+| Name       | Type                                | Description | Notes      |
+| ---------- | ----------------------------------- | ----------- | ---------- |
+| **q64**    | **String**                          | q64         |
+| **expand** | [**List&lt;String&gt;**](String.md) | expand      | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **q64** | **String**| q64 | 
-| **expand** | [**List&lt;String&gt;**](String.html)| expand | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GroupsSearchResponse**](GroupsSearchResponse.html)
+[**GroupsSearchResponse**](GroupsSearchResponse.md)
 
 <a name="getProfilesGroups"></a>
 
@@ -609,16 +564,15 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [GroupProfileEntityListing](GroupProfileEntityListing.html) getProfilesGroups(pageSize, pageNumber, id, sortOrder)
+> [GroupProfileEntityListing](GroupProfileEntityListing.md) getProfilesGroups(pageSize, pageNumber, id, sortOrder)
 
 Get group profile listing
 
 This api is deprecated. Use /api/v2/groups instead.
 
-Wraps GET /api/v2/profiles/groups  
+Wraps GET /api/v2/profiles/groups
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -657,36 +611,30 @@ try {
 
 ### Parameters
 
+| Name           | Type                                | Description                        | Notes                                                              |
+| -------------- | ----------------------------------- | ---------------------------------- | ------------------------------------------------------------------ |
+| **pageSize**   | **Integer**                         | Page size                          | [optional] [default to 25]                                         |
+| **pageNumber** | **Integer**                         | Page number                        | [optional] [default to 1]                                          |
+| **id**         | [**List&lt;String&gt;**](String.md) | id                                 | [optional]                                                         |
+| **sortOrder**  | **String**                          | Ascending or descending sort order | [optional] [default to ASC]<br />**Values**: ascending, descending |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **id** | [**List&lt;String&gt;**](String.html)| id | [optional] 
-| **sortOrder** | **String**| Ascending or descending sort order | [optional] [default to ASC]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GroupProfileEntityListing**](GroupProfileEntityListing.html)
+[**GroupProfileEntityListing**](GroupProfileEntityListing.md)
 
 <a name="postGroupMembers"></a>
 
 # **postGroupMembers**
 
-
-
-> [Empty](Empty.html) postGroupMembers(groupId, body)
+> [Empty](Empty.md) postGroupMembers(groupId, body)
 
 Add members
 
+Wraps POST /api/v2/groups/{groupId}/members
 
-
-Wraps POST /api/v2/groups/{groupId}/members  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -723,35 +671,30 @@ try {
 
 ### Parameters
 
+| Name        | Type                                            | Description | Notes |
+| ----------- | ----------------------------------------------- | ----------- | ----- |
+| **groupId** | **String**                                      | Group ID    |
+| **body**    | [**GroupMembersUpdate**](GroupMembersUpdate.md) | Add members |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
-| **body** | [**GroupMembersUpdate**](GroupMembersUpdate.html)| Add members | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="postGroups"></a>
 
 # **postGroups**
 
-
-
-> [Group](Group.html) postGroups(body)
+> [Group](Group.md) postGroups(body)
 
 Create a group
 
+Wraps POST /api/v2/groups
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/groups  
-
-Requires ANY permissions: 
-
-* directory:group:add
+- directory:group:add
 
 ### Example
 
@@ -787,33 +730,27 @@ try {
 
 ### Parameters
 
+| Name     | Type                              | Description | Notes |
+| -------- | --------------------------------- | ----------- | ----- |
+| **body** | [**GroupCreate**](GroupCreate.md) | Group       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**GroupCreate**](GroupCreate.html)| Group | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Group**](Group.html)
+[**Group**](Group.md)
 
 <a name="postGroupsSearch"></a>
 
 # **postGroupsSearch**
 
-
-
-> [GroupsSearchResponse](GroupsSearchResponse.html) postGroupsSearch(body)
+> [GroupsSearchResponse](GroupsSearchResponse.md) postGroupsSearch(body)
 
 Search groups
 
+Wraps POST /api/v2/groups/search
 
-
-Wraps POST /api/v2/groups/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -849,34 +786,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                            | Description            | Notes |
+| -------- | ----------------------------------------------- | ---------------------- | ----- |
+| **body** | [**GroupSearchRequest**](GroupSearchRequest.md) | Search request options |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**GroupSearchRequest**](GroupSearchRequest.html)| Search request options | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GroupsSearchResponse**](GroupsSearchResponse.html)
+[**GroupsSearchResponse**](GroupsSearchResponse.md)
 
 <a name="putGroup"></a>
 
 # **putGroup**
 
-
-
-> [Group](Group.html) putGroup(groupId, body)
+> [Group](Group.md) putGroup(groupId, body)
 
 Update group
 
+Wraps PUT /api/v2/groups/{groupId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/groups/{groupId}  
-
-Requires ANY permissions: 
-
-* directory:group:edit
+- directory:group:edit
 
 ### Example
 
@@ -913,15 +845,13 @@ try {
 
 ### Parameters
 
+| Name        | Type                              | Description | Notes      |
+| ----------- | --------------------------------- | ----------- | ---------- |
+| **groupId** | **String**                        | Group ID    |
+| **body**    | [**GroupUpdate**](GroupUpdate.md) | Group       | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
-| **body** | [**GroupUpdate**](GroupUpdate.html)| Group | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Group**](Group.html)
-
+[**Group**](Group.md)

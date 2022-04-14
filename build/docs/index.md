@@ -7,8 +7,8 @@ title: Platform API Client SDK - Java
 [![platform-client-v2](https://maven-badges.herokuapp.com/maven-central/com.mypurecloud/platform-client-v2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.mypurecloud/platform-client-v2)
 [![Release Notes Badge](https://developer-content.genesys.cloud/images/sdk-release-notes.png)](https://github.com/MyPureCloud/platform-client-sdk-java/blob/master/releaseNotes.md)
 
-* **Documentation** https://developer.mypurecloud.com/api/rest/client-libraries/java/
-* **Source** https://github.com/MyPureCloud/platform-client-sdk-java
+- **Documentation** https://developer.mypurecloud.com/api/rest/client-libraries/java/
+- **Source** https://github.com/MyPureCloud/platform-client-sdk-java
 
 ## Install Using maven
 
@@ -16,7 +16,7 @@ Install the library from maven via the package [com.mypurecloud:platform-client-
 
 ## Android Support
 
-The SDK may be used in Android as of SDK version 5.0.1. This requires Java 8 support in Android Studio (2.4 Preview 6 or later). For more information, see the Android Developers Blog: [Java 8 Language Features Support Update](https://android-developers.googleblog.com/2017/04/java-8-language-features-support-update.html)
+The SDK may be used in Android as of SDK version 5.0.1. This requires Java 8 support in Android Studio (2.4 Preview 6 or later). For more information, see the Android Developers Blog: [Java 8 Language Features Support Update](https://android-developers.googleblog.com/2017/04/java-8-language-features-support-update.md)
 
 ## Using the SDK
 
@@ -36,7 +36,7 @@ import com.mypurecloud.sdk.v2.PureCloudRegionHosts;
 
 ### Authenticating
 
-The Java SDK contains a helper method to execute a Client Credentials OAuth flow. This is appropriate for non-user Java applications, typically when there is no UI. Invoking `authorizeClientCredentials(String clientId, String clientSecret)` will execute the client credentials OAuth grant and store the access token within the ApiClient class. 
+The Java SDK contains a helper method to execute a Client Credentials OAuth flow. This is appropriate for non-user Java applications, typically when there is no UI. Invoking `authorizeClientCredentials(String clientId, String clientSecret)` will execute the client credentials OAuth grant and store the access token within the ApiClient class.
 
 ```{"language":"java"}
 String clientId = "a0bda580-cb41-4ff6-8f06-28ffb4227594";
@@ -59,14 +59,14 @@ UsersApi apiInstance = new UsersApi();
 UserEntityListing response = apiInstance.getUsers(null, null, null, null, null, null, null);
 ```
 
-For user applications, the consuming application must complete an implicit, auth token, or SAML2 Bearer OAuth flow to get an access token outside the scope of the SDK. Once an access token is obtained, it should be set on the SDK via constructing a new ApiClient instance (use `withAccessToken(String token)`). For more information about authenticating with OAuth, see the Developer Center article [Authorization](https://developer.mypurecloud.com/api/rest/authorization/index.html). For more information about SAML2 Bearer Oauth flow view the example below 
+For user applications, the consuming application must complete an implicit, auth token, or SAML2 Bearer OAuth flow to get an access token outside the scope of the SDK. Once an access token is obtained, it should be set on the SDK via constructing a new ApiClient instance (use `withAccessToken(String token)`). For more information about authenticating with OAuth, see the Developer Center article [Authorization](https://developer.mypurecloud.com/api/rest/authorization/index.md). For more information about SAML2 Bearer Oauth flow view the example below
 
 #### Authentication with SAML2Bearer token
 
 ```{"language":"java"}
 String clientId = "a0bda580-cb41-4ff6-8f06-28ffb4227594";
 String clientSecret = "e4meQ53cXGq53j6uffdULVjRl8It8M3FVsupKei0nSg";
-String orgName = "YourOrg"; // Your org name 
+String orgName = "YourOrg"; // Your org name
 String encodedSamlAssertion= ""; // Base64 encoded SAML assertion
 
 //Set Region
@@ -80,12 +80,12 @@ System.out.println("Authentication successful. Access token expires in " + authR
 
 #### Authentication with Authorization Code
 
-See example on how to authenticate with an authorization code below. For more information see the article on [Code Authorization](https://developer.mypurecloud.com/api/rest/authorization/use-authorization-code.html)
+See example on how to authenticate with an authorization code below. For more information see the article on [Code Authorization](https://developer.mypurecloud.com/api/rest/authorization/use-authorization-code.md)
 
 ```{"language":"java"}
 String clientId = "a0bda580-cb41-4ff6-8f06-28ffb4227594";
 String clientSecret = "e4meQ53cXGq53j6uffdULVjRl8It8M3FVsupKei0nSg";
-String authorizationCode = "YourAuthorizationCode"; // Your authorization code 
+String authorizationCode = "YourAuthorizationCode"; // Your authorization code
 String redirectUri= ""; // Your redirect URI
 
 //Set Region
@@ -155,9 +155,9 @@ Provide the full base url if not using `https://api.mypurecloud.com`:
 
 The SDK supports the following HTTP connectors:
 
-* Apache (_default_, synchronous), use `ApacheHttpClientConnectorProvider`
-* Ning (async), use `AsyncHttpClientConnectorProvider`
-* OkHTTP (synchronous, recommended for Android), use `OkHttpClientConnectorProvider`
+- Apache (_default_, synchronous), use `ApacheHttpClientConnectorProvider`
+- Ning (async), use `AsyncHttpClientConnectorProvider`
+- OkHTTP (synchronous, recommended for Android), use `OkHttpClientConnectorProvider`
 
 Specify the connector in the builder:
 
@@ -170,7 +170,8 @@ Specify the connector in the builder:
 By default, the Java SDK does not automatically retry any failed requests.
 To enable automatic retries, provide a RetryConfiguration object with the maximum number of seconds to retry requests and the max number of retries when building the ApiClient instance.
 
-Building a `RetryConfiguration` instance:  
+Building a `RetryConfiguration` instance:
+
 ```{"language":"java"}
 ApiClient.RetryConfiguration retryConfiguration = new ApiClient.RetryConfiguration();
 retryConfiguration.setMaxRetryTimeSec(30);
@@ -178,13 +179,15 @@ retryConfiguration.setRetryMax(5);
 ```
 
 Setting `RetryConfiguration` instance to `ApiClient`:
+
 ```{"language":"java"}
         .withRetryConfiguration(retryConfiguration)
 ```
+
 Set the `maxRetryTimeSec` to the number of seconds to process retries before returning an error.
 Set the 'MaxRetryTimeSec' to the number of seconds to process retries before returning an error.
 When the retry time is a positive integer, the SDK will follow the recommended backoff logic using the provided configuration.
-The best practices are documented in the [Rate Limiting](https://developer.mypurecloud.com/api/rest/rate_limits.html) Developer Center article.
+The best practices are documented in the [Rate Limiting](https://developer.mypurecloud.com/api/rest/rate_limits.md) Developer Center article.
 
 ### SDK Logging
 
@@ -193,14 +196,16 @@ SDK users can choose between SL4J or our logging implementation, which makes use
 #### SL4J
 
 Logging can be provided through SL4J, which uses HTTP request and response interceptors for requests when using the Apache connector. SL4J also logs exceptions from the Apache connector and Notification handler.  
-To use SL4J, include a relevant SL4J library in the dependencies and SL4J configuration file.  
+To use SL4J, include a relevant SL4J library in the dependencies and SL4J configuration file.
 
 To provide a custom request interceptor, provide an object implementing `org.apache.http.HttpRequestInterceptor` to the following APIClient builder method:
+
 ```{"language":"java"}
         .withHttpRequestInterceptor(requestInterceptor)
 ```
 
 Use the following method to provide a custom response interceptor implementing `org.apache.http.HttpResponseInterceptor`:
+
 ```{"language":"java"}
         .withHttpResponseInterceptor(responseInterceptor)
 ```
@@ -210,12 +215,14 @@ Use the following method to provide a custom response interceptor implementing `
 Logging of API requests and responses can be controlled programmatically by creating an instance of `ApiClient.LoggingConfiguration` and passing it to the `withLoggingConfiguration` builder method of the `APIClient`.
 
 `LogLevel` values:
+
 1. trace (HTTP Method, URL, Request Body, HTTP Status Code, Request Headers, Response Headers)
 2. debug (HTTP Method, URL, Request Body, HTTP Status Code, Request Headers)
 3. error (HTTP Method, URL, Request Body, Response Body, HTTP Status Code, Request Headers, Response Headers)
 4. none - default
 
 `LogFormat` values:
+
 1. JSON
 2. Text - default
 
@@ -223,6 +230,7 @@ By default, the request and response bodies are not logged because these can con
 To log to a file, provide a value to `setLogFilePath`. SDK users are responsible for the rotation of the log file.
 
 Example logging configuration:
+
 ```{"language":"java"}
 ApiClient.LoggingConfiguration loggingConfiguration = new ApiClient.LoggingConfiguration();
 loggingConfiguration.setLogLevel("trace");
@@ -250,14 +258,16 @@ Example setting the configuration file:
         .withConfigFilePath("/path/to/config")
 ```
 
-The SDK will take an event-driven approach to monitor for config file changes and will apply changes in near real-time, regardless of whether a config file was present at start-up. To disable this behavior, set `autoReloadConfig` to false like so:  
+The SDK will take an event-driven approach to monitor for config file changes and will apply changes in near real-time, regardless of whether a config file was present at start-up. To disable this behavior, set `autoReloadConfig` to false like so:
 
 ```{"language": "java"}
         .withAutoReloadConfig(false)
 ```
+
 INI and JSON formats are supported. See below for examples of configuration values in both formats:
 
 INI:
+
 ```{"language":"ini"}
 [logging]
 log_level = trace
@@ -279,6 +289,7 @@ host = https://api.mypurecloud.com
 ```
 
 JSON:
+
 ```{"language":"json"}
 {
     "logging": {
@@ -307,15 +318,15 @@ JSON:
 
 #### Other ApiClient.Builder methods
 
-* `withDefaultHeader(String header, String value)` Specifies additional headers to be sent with every request
-* `withUserAgent(String userAgent)` Overrides the default user agent header
-* `withObjectMapper(ObjectMapper objectMapper)` Overrides the default `ObjectMapper` used for deserialization
-* `withDateFormat(DateFormat dateFormat)` Overrides the default `DateFormat`
-* `withConnectionTimeout(int connectionTimeout)` Overrides the default connection timeout
-* `withShouldThrowErrors(boolean shouldThrowErrors)` Set to `false` to suppress throwing of all errors
-* `withProxy(Proxy proxy)` Sets a proxy to use for requests
-* `withAuthenticatedProxy(Proxy proxy, String user, String pass)` Sets an authenticated proxy to use for requests
-* `withRefreshTokenWaitTime(int refreshTokenWaitTime)` Overrides the default time a thread will wait for another thread to request a new access token. The default is 10 seconds
+- `withDefaultHeader(String header, String value)` Specifies additional headers to be sent with every request
+- `withUserAgent(String userAgent)` Overrides the default user agent header
+- `withObjectMapper(ObjectMapper objectMapper)` Overrides the default `ObjectMapper` used for deserialization
+- `withDateFormat(DateFormat dateFormat)` Overrides the default `DateFormat`
+- `withConnectionTimeout(int connectionTimeout)` Overrides the default connection timeout
+- `withShouldThrowErrors(boolean shouldThrowErrors)` Set to `false` to suppress throwing of all errors
+- `withProxy(Proxy proxy)` Sets a proxy to use for requests
+- `withAuthenticatedProxy(Proxy proxy, String user, String pass)` Sets an authenticated proxy to use for requests
+- `withRefreshTokenWaitTime(int refreshTokenWaitTime)` Overrides the default time a thread will wait for another thread to request a new access token. The default is 10 seconds
 
 ### Making Requests
 
@@ -349,7 +360,6 @@ UserMe me = usersApi.getUsersMe(Collections.singletonList("presence"));
 System.out.println("Hello " + me.getName());
 ```
 
-
 #### Getting extended info
 
 The Java SDK has the ability to return extended information about the response in addition to the response body. There are varieties of each API method call that are suffixed with _WithHttpInfo_. E.g. The `UsersApi` has a method `getUsersMe(...)` as well as `getUsersMeWithHttpInfo(...)`. Additionally, the request builder classes (e.g. `GetUsersMeRequest`) has a method `withHttpInfo()` that can be used to transform the request into an `ApiRequest` object that will return the extended information.
@@ -379,7 +389,6 @@ System.out.println(meWithHttpInfo.getHeaders());
 System.out.println(meWithHttpInfo.getCorrelationId());
 System.out.println(meWithHttpInfo.getBody().getName());
 ```
-
 
 ## NotificationHandler Helper Class
 
@@ -423,7 +432,7 @@ notificationHandler.addSubscriptions(new ArrayList<NotificationListener<?>>() { 
 
 **Send a ping**
 
-To test the connection, you may send a ping. For more information about this ping, see [Use the notification service](https://developer.mypurecloud.com/api/rest/v2/notifications/notification_service.html) under the _WebSocket Health Check_ heading.
+To test the connection, you may send a ping. For more information about this ping, see [Use the notification service](https://developer.mypurecloud.com/api/rest/v2/notifications/notification_service.md) under the _WebSocket Health Check_ heading.
 
 ```{"language":"java"}
 notificationHandler.sendPing();
@@ -478,11 +487,9 @@ public class ChannelMetadataListener implements NotificationListener<ChannelMeta
 
 The SDK is automatically regenerated and published from the API's definition after each API release. For more information on the build process, see the [platform-client-sdk-common](https://github.com/MyPureCloud/platform-client-sdk-common) project.
 
-
 ## Versioning
 
 The SDK's version is incremented according to the [Semantic Versioning Specification](https://semver.org/). The decision to increment version numbers is determined by [diffing the Platform API's swagger](https://github.com/purecloudlabs/platform-client-sdk-common/blob/master/modules/swaggerDiff.js) for automated builds, and optionally forcing a version bump when a build is triggered manually (e.g. releasing a bugfix).
-
 
 ## Support
 

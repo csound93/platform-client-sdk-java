@@ -1,17 +1,15 @@
 ---
 title: QueueConversationVideoEventTopicJourneyContext
 ---
-## QueueConversationVideoEventTopicJourneyContext
 
+## QueueConversationVideoEventTopicJourneyContext
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **customer** | <!----><!---->[**QueueConversationVideoEventTopicJourneyCustomer**](QueueConversationVideoEventTopicJourneyCustomer.html)<!----> |  |  [optional] |
-| **customerSession** | <!----><!---->[**QueueConversationVideoEventTopicJourneyCustomerSession**](QueueConversationVideoEventTopicJourneyCustomerSession.html)<!----> |  |  [optional] |
-| **triggeringAction** | <!----><!---->[**QueueConversationVideoEventTopicJourneyAction**](QueueConversationVideoEventTopicJourneyAction.html)<!----> |  |  [optional] |
+| Name                 | Type                                                                                                                                         | Description | Notes      |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **customer**         | <!----><!---->[**QueueConversationVideoEventTopicJourneyCustomer**](QueueConversationVideoEventTopicJourneyCustomer.md)<!---->               |             | [optional] |
+| **customerSession**  | <!----><!---->[**QueueConversationVideoEventTopicJourneyCustomerSession**](QueueConversationVideoEventTopicJourneyCustomerSession.md)<!----> |             | [optional] |
+| **triggeringAction** | <!----><!---->[**QueueConversationVideoEventTopicJourneyAction**](QueueConversationVideoEventTopicJourneyAction.md)<!---->                   |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

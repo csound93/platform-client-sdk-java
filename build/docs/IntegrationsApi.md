@@ -1,90 +1,88 @@
 ---
 title: IntegrationsApi
 ---
+
 ## IntegrationsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteIntegration**](IntegrationsApi.html#deleteIntegration) | Delete integration. |
-| [**deleteIntegrationsAction**](IntegrationsApi.html#deleteIntegrationsAction) | Delete an Action |
-| [**deleteIntegrationsActionDraft**](IntegrationsApi.html#deleteIntegrationsActionDraft) | Delete a Draft |
-| [**deleteIntegrationsCredential**](IntegrationsApi.html#deleteIntegrationsCredential) | Delete a set of credentials |
-| [**getIntegration**](IntegrationsApi.html#getIntegration) | Get integration. |
-| [**getIntegrationConfigCurrent**](IntegrationsApi.html#getIntegrationConfigCurrent) | Get integration configuration. |
-| [**getIntegrations**](IntegrationsApi.html#getIntegrations) | List integrations |
-| [**getIntegrationsAction**](IntegrationsApi.html#getIntegrationsAction) | Retrieves a single Action matching id. |
-| [**getIntegrationsActionDraft**](IntegrationsApi.html#getIntegrationsActionDraft) | Retrieve a Draft |
-| [**getIntegrationsActionDraftSchema**](IntegrationsApi.html#getIntegrationsActionDraftSchema) | Retrieve schema for a Draft based on filename. |
-| [**getIntegrationsActionDraftTemplate**](IntegrationsApi.html#getIntegrationsActionDraftTemplate) | Retrieve templates for a Draft based on filename. |
-| [**getIntegrationsActionDraftValidation**](IntegrationsApi.html#getIntegrationsActionDraftValidation) | Validate current Draft configuration. |
-| [**getIntegrationsActionSchema**](IntegrationsApi.html#getIntegrationsActionSchema) | Retrieve schema for an action based on filename. |
-| [**getIntegrationsActionTemplate**](IntegrationsApi.html#getIntegrationsActionTemplate) | Retrieve text of templates for an action based on filename. |
-| [**getIntegrationsActions**](IntegrationsApi.html#getIntegrationsActions) | Retrieves all actions associated with filters passed in via query param. |
-| [**getIntegrationsActionsCategories**](IntegrationsApi.html#getIntegrationsActionsCategories) | Retrieves all categories of available Actions |
-| [**getIntegrationsActionsDrafts**](IntegrationsApi.html#getIntegrationsActionsDrafts) | Retrieves all action drafts associated with the filters passed in via query param. |
-| [**getIntegrationsBotconnectorIntegrationIdBot**](IntegrationsApi.html#getIntegrationsBotconnectorIntegrationIdBot) | Get a specific botConnector bot, plus versions, for this integration |
-| [**getIntegrationsBotconnectorIntegrationIdBotVersions**](IntegrationsApi.html#getIntegrationsBotconnectorIntegrationIdBotVersions) | Get a list of bot versions for a bot |
-| [**getIntegrationsBotconnectorIntegrationIdBots**](IntegrationsApi.html#getIntegrationsBotconnectorIntegrationIdBots) | Get a list of botConnector bots for this integration |
-| [**getIntegrationsBotconnectorIntegrationIdBotsSummaries**](IntegrationsApi.html#getIntegrationsBotconnectorIntegrationIdBotsSummaries) | Get a summary list of botConnector bots for this integration |
-| [**getIntegrationsClientapps**](IntegrationsApi.html#getIntegrationsClientapps) | List permitted client app integrations for the logged in user |
-| [**getIntegrationsClientappsUnifiedcommunications**](IntegrationsApi.html#getIntegrationsClientappsUnifiedcommunications) | UC integration client application configuration. |
-| [**getIntegrationsCredential**](IntegrationsApi.html#getIntegrationsCredential) | Get a single credential with sensitive fields redacted |
-| [**getIntegrationsCredentials**](IntegrationsApi.html#getIntegrationsCredentials) | List multiple sets of credentials |
-| [**getIntegrationsCredentialsTypes**](IntegrationsApi.html#getIntegrationsCredentialsTypes) | List all credential types |
-| [**getIntegrationsEventlog**](IntegrationsApi.html#getIntegrationsEventlog) | List all events |
-| [**getIntegrationsEventlogEventId**](IntegrationsApi.html#getIntegrationsEventlogEventId) | Get a single event |
-| [**getIntegrationsSpeechDialogflowAgent**](IntegrationsApi.html#getIntegrationsSpeechDialogflowAgent) | Get details about a Dialogflow agent |
-| [**getIntegrationsSpeechDialogflowAgents**](IntegrationsApi.html#getIntegrationsSpeechDialogflowAgents) | Get a list of Dialogflow agents in the customers&#39; Google accounts |
-| [**getIntegrationsSpeechLexBotAlias**](IntegrationsApi.html#getIntegrationsSpeechLexBotAlias) | Get details about a Lex bot alias |
-| [**getIntegrationsSpeechLexBotBotIdAliases**](IntegrationsApi.html#getIntegrationsSpeechLexBotBotIdAliases) | Get a list of aliases for a bot in the customer&#39;s AWS accounts |
-| [**getIntegrationsSpeechLexBots**](IntegrationsApi.html#getIntegrationsSpeechLexBots) | Get a list of Lex bots in the customers&#39; AWS accounts |
-| [**getIntegrationsSpeechTtsEngine**](IntegrationsApi.html#getIntegrationsSpeechTtsEngine) | Get details about a TTS engine |
-| [**getIntegrationsSpeechTtsEngineVoice**](IntegrationsApi.html#getIntegrationsSpeechTtsEngineVoice) | Get details about a specific voice for a TTS engine |
-| [**getIntegrationsSpeechTtsEngineVoices**](IntegrationsApi.html#getIntegrationsSpeechTtsEngineVoices) | Get a list of voices for a TTS engine |
-| [**getIntegrationsSpeechTtsEngines**](IntegrationsApi.html#getIntegrationsSpeechTtsEngines) | Get a list of TTS engines enabled for org |
-| [**getIntegrationsSpeechTtsSettings**](IntegrationsApi.html#getIntegrationsSpeechTtsSettings) | Get TTS settings for an org |
-| [**getIntegrationsType**](IntegrationsApi.html#getIntegrationsType) | Get integration type. |
-| [**getIntegrationsTypeConfigschema**](IntegrationsApi.html#getIntegrationsTypeConfigschema) | Get properties config schema for an integration type. |
-| [**getIntegrationsTypes**](IntegrationsApi.html#getIntegrationsTypes) | List integration types |
-| [**getIntegrationsUserapps**](IntegrationsApi.html#getIntegrationsUserapps) | List permitted user app integrations for the logged in user |
-| [**patchIntegration**](IntegrationsApi.html#patchIntegration) | Update an integration. |
-| [**patchIntegrationsAction**](IntegrationsApi.html#patchIntegrationsAction) | Patch an Action |
-| [**patchIntegrationsActionDraft**](IntegrationsApi.html#patchIntegrationsActionDraft) | Update an existing Draft |
-| [**postIntegrations**](IntegrationsApi.html#postIntegrations) | Create an integration. |
-| [**postIntegrationsActionDraft**](IntegrationsApi.html#postIntegrationsActionDraft) | Create a new Draft from existing Action |
-| [**postIntegrationsActionDraftPublish**](IntegrationsApi.html#postIntegrationsActionDraftPublish) | Publish a Draft and make it the active Action configuration |
-| [**postIntegrationsActionDraftTest**](IntegrationsApi.html#postIntegrationsActionDraftTest) | Test the execution of a draft. Responses will show execution steps broken out with intermediate results to help in debugging. |
-| [**postIntegrationsActionExecute**](IntegrationsApi.html#postIntegrationsActionExecute) | Execute Action and return response from 3rd party.  Responses will follow the schemas defined on the Action for success and error. |
-| [**postIntegrationsActionTest**](IntegrationsApi.html#postIntegrationsActionTest) | Test the execution of an action. Responses will show execution steps broken out with intermediate results to help in debugging. |
-| [**postIntegrationsActions**](IntegrationsApi.html#postIntegrationsActions) | Create a new Action |
-| [**postIntegrationsActionsDrafts**](IntegrationsApi.html#postIntegrationsActionsDrafts) | Create a new Draft |
-| [**postIntegrationsCredentials**](IntegrationsApi.html#postIntegrationsCredentials) | Create a set of credentials |
-| [**postIntegrationsWorkforcemanagementVendorconnection**](IntegrationsApi.html#postIntegrationsWorkforcemanagementVendorconnection) | Add a vendor connection |
-| [**putIntegrationConfigCurrent**](IntegrationsApi.html#putIntegrationConfigCurrent) | Update integration configuration. |
-| [**putIntegrationsBotconnectorIntegrationIdBots**](IntegrationsApi.html#putIntegrationsBotconnectorIntegrationIdBots) | Set a list of botConnector bots plus versions for this integration |
-| [**putIntegrationsCredential**](IntegrationsApi.html#putIntegrationsCredential) | Update a set of credentials |
-| [**putIntegrationsSpeechTtsSettings**](IntegrationsApi.html#putIntegrationsSpeechTtsSettings) | Update TTS settings for an org |
+| Method                                                                                                                                | Description                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| [**deleteIntegration**](IntegrationsApi.md#deleteIntegration)                                                                         | Delete integration.                                                                                                               |
+| [**deleteIntegrationsAction**](IntegrationsApi.md#deleteIntegrationsAction)                                                           | Delete an Action                                                                                                                  |
+| [**deleteIntegrationsActionDraft**](IntegrationsApi.md#deleteIntegrationsActionDraft)                                                 | Delete a Draft                                                                                                                    |
+| [**deleteIntegrationsCredential**](IntegrationsApi.md#deleteIntegrationsCredential)                                                   | Delete a set of credentials                                                                                                       |
+| [**getIntegration**](IntegrationsApi.md#getIntegration)                                                                               | Get integration.                                                                                                                  |
+| [**getIntegrationConfigCurrent**](IntegrationsApi.md#getIntegrationConfigCurrent)                                                     | Get integration configuration.                                                                                                    |
+| [**getIntegrations**](IntegrationsApi.md#getIntegrations)                                                                             | List integrations                                                                                                                 |
+| [**getIntegrationsAction**](IntegrationsApi.md#getIntegrationsAction)                                                                 | Retrieves a single Action matching id.                                                                                            |
+| [**getIntegrationsActionDraft**](IntegrationsApi.md#getIntegrationsActionDraft)                                                       | Retrieve a Draft                                                                                                                  |
+| [**getIntegrationsActionDraftSchema**](IntegrationsApi.md#getIntegrationsActionDraftSchema)                                           | Retrieve schema for a Draft based on filename.                                                                                    |
+| [**getIntegrationsActionDraftTemplate**](IntegrationsApi.md#getIntegrationsActionDraftTemplate)                                       | Retrieve templates for a Draft based on filename.                                                                                 |
+| [**getIntegrationsActionDraftValidation**](IntegrationsApi.md#getIntegrationsActionDraftValidation)                                   | Validate current Draft configuration.                                                                                             |
+| [**getIntegrationsActionSchema**](IntegrationsApi.md#getIntegrationsActionSchema)                                                     | Retrieve schema for an action based on filename.                                                                                  |
+| [**getIntegrationsActionTemplate**](IntegrationsApi.md#getIntegrationsActionTemplate)                                                 | Retrieve text of templates for an action based on filename.                                                                       |
+| [**getIntegrationsActions**](IntegrationsApi.md#getIntegrationsActions)                                                               | Retrieves all actions associated with filters passed in via query param.                                                          |
+| [**getIntegrationsActionsCategories**](IntegrationsApi.md#getIntegrationsActionsCategories)                                           | Retrieves all categories of available Actions                                                                                     |
+| [**getIntegrationsActionsDrafts**](IntegrationsApi.md#getIntegrationsActionsDrafts)                                                   | Retrieves all action drafts associated with the filters passed in via query param.                                                |
+| [**getIntegrationsBotconnectorIntegrationIdBot**](IntegrationsApi.md#getIntegrationsBotconnectorIntegrationIdBot)                     | Get a specific botConnector bot, plus versions, for this integration                                                              |
+| [**getIntegrationsBotconnectorIntegrationIdBotVersions**](IntegrationsApi.md#getIntegrationsBotconnectorIntegrationIdBotVersions)     | Get a list of bot versions for a bot                                                                                              |
+| [**getIntegrationsBotconnectorIntegrationIdBots**](IntegrationsApi.md#getIntegrationsBotconnectorIntegrationIdBots)                   | Get a list of botConnector bots for this integration                                                                              |
+| [**getIntegrationsBotconnectorIntegrationIdBotsSummaries**](IntegrationsApi.md#getIntegrationsBotconnectorIntegrationIdBotsSummaries) | Get a summary list of botConnector bots for this integration                                                                      |
+| [**getIntegrationsClientapps**](IntegrationsApi.md#getIntegrationsClientapps)                                                         | List permitted client app integrations for the logged in user                                                                     |
+| [**getIntegrationsClientappsUnifiedcommunications**](IntegrationsApi.md#getIntegrationsClientappsUnifiedcommunications)               | UC integration client application configuration.                                                                                  |
+| [**getIntegrationsCredential**](IntegrationsApi.md#getIntegrationsCredential)                                                         | Get a single credential with sensitive fields redacted                                                                            |
+| [**getIntegrationsCredentials**](IntegrationsApi.md#getIntegrationsCredentials)                                                       | List multiple sets of credentials                                                                                                 |
+| [**getIntegrationsCredentialsTypes**](IntegrationsApi.md#getIntegrationsCredentialsTypes)                                             | List all credential types                                                                                                         |
+| [**getIntegrationsEventlog**](IntegrationsApi.md#getIntegrationsEventlog)                                                             | List all events                                                                                                                   |
+| [**getIntegrationsEventlogEventId**](IntegrationsApi.md#getIntegrationsEventlogEventId)                                               | Get a single event                                                                                                                |
+| [**getIntegrationsSpeechDialogflowAgent**](IntegrationsApi.md#getIntegrationsSpeechDialogflowAgent)                                   | Get details about a Dialogflow agent                                                                                              |
+| [**getIntegrationsSpeechDialogflowAgents**](IntegrationsApi.md#getIntegrationsSpeechDialogflowAgents)                                 | Get a list of Dialogflow agents in the customers&#39; Google accounts                                                             |
+| [**getIntegrationsSpeechLexBotAlias**](IntegrationsApi.md#getIntegrationsSpeechLexBotAlias)                                           | Get details about a Lex bot alias                                                                                                 |
+| [**getIntegrationsSpeechLexBotBotIdAliases**](IntegrationsApi.md#getIntegrationsSpeechLexBotBotIdAliases)                             | Get a list of aliases for a bot in the customer&#39;s AWS accounts                                                                |
+| [**getIntegrationsSpeechLexBots**](IntegrationsApi.md#getIntegrationsSpeechLexBots)                                                   | Get a list of Lex bots in the customers&#39; AWS accounts                                                                         |
+| [**getIntegrationsSpeechTtsEngine**](IntegrationsApi.md#getIntegrationsSpeechTtsEngine)                                               | Get details about a TTS engine                                                                                                    |
+| [**getIntegrationsSpeechTtsEngineVoice**](IntegrationsApi.md#getIntegrationsSpeechTtsEngineVoice)                                     | Get details about a specific voice for a TTS engine                                                                               |
+| [**getIntegrationsSpeechTtsEngineVoices**](IntegrationsApi.md#getIntegrationsSpeechTtsEngineVoices)                                   | Get a list of voices for a TTS engine                                                                                             |
+| [**getIntegrationsSpeechTtsEngines**](IntegrationsApi.md#getIntegrationsSpeechTtsEngines)                                             | Get a list of TTS engines enabled for org                                                                                         |
+| [**getIntegrationsSpeechTtsSettings**](IntegrationsApi.md#getIntegrationsSpeechTtsSettings)                                           | Get TTS settings for an org                                                                                                       |
+| [**getIntegrationsType**](IntegrationsApi.md#getIntegrationsType)                                                                     | Get integration type.                                                                                                             |
+| [**getIntegrationsTypeConfigschema**](IntegrationsApi.md#getIntegrationsTypeConfigschema)                                             | Get properties config schema for an integration type.                                                                             |
+| [**getIntegrationsTypes**](IntegrationsApi.md#getIntegrationsTypes)                                                                   | List integration types                                                                                                            |
+| [**getIntegrationsUserapps**](IntegrationsApi.md#getIntegrationsUserapps)                                                             | List permitted user app integrations for the logged in user                                                                       |
+| [**patchIntegration**](IntegrationsApi.md#patchIntegration)                                                                           | Update an integration.                                                                                                            |
+| [**patchIntegrationsAction**](IntegrationsApi.md#patchIntegrationsAction)                                                             | Patch an Action                                                                                                                   |
+| [**patchIntegrationsActionDraft**](IntegrationsApi.md#patchIntegrationsActionDraft)                                                   | Update an existing Draft                                                                                                          |
+| [**postIntegrations**](IntegrationsApi.md#postIntegrations)                                                                           | Create an integration.                                                                                                            |
+| [**postIntegrationsActionDraft**](IntegrationsApi.md#postIntegrationsActionDraft)                                                     | Create a new Draft from existing Action                                                                                           |
+| [**postIntegrationsActionDraftPublish**](IntegrationsApi.md#postIntegrationsActionDraftPublish)                                       | Publish a Draft and make it the active Action configuration                                                                       |
+| [**postIntegrationsActionDraftTest**](IntegrationsApi.md#postIntegrationsActionDraftTest)                                             | Test the execution of a draft. Responses will show execution steps broken out with intermediate results to help in debugging.     |
+| [**postIntegrationsActionExecute**](IntegrationsApi.md#postIntegrationsActionExecute)                                                 | Execute Action and return response from 3rd party. Responses will follow the schemas defined on the Action for success and error. |
+| [**postIntegrationsActionTest**](IntegrationsApi.md#postIntegrationsActionTest)                                                       | Test the execution of an action. Responses will show execution steps broken out with intermediate results to help in debugging.   |
+| [**postIntegrationsActions**](IntegrationsApi.md#postIntegrationsActions)                                                             | Create a new Action                                                                                                               |
+| [**postIntegrationsActionsDrafts**](IntegrationsApi.md#postIntegrationsActionsDrafts)                                                 | Create a new Draft                                                                                                                |
+| [**postIntegrationsCredentials**](IntegrationsApi.md#postIntegrationsCredentials)                                                     | Create a set of credentials                                                                                                       |
+| [**postIntegrationsWorkforcemanagementVendorconnection**](IntegrationsApi.md#postIntegrationsWorkforcemanagementVendorconnection)     | Add a vendor connection                                                                                                           |
+| [**putIntegrationConfigCurrent**](IntegrationsApi.md#putIntegrationConfigCurrent)                                                     | Update integration configuration.                                                                                                 |
+| [**putIntegrationsBotconnectorIntegrationIdBots**](IntegrationsApi.md#putIntegrationsBotconnectorIntegrationIdBots)                   | Set a list of botConnector bots plus versions for this integration                                                                |
+| [**putIntegrationsCredential**](IntegrationsApi.md#putIntegrationsCredential)                                                         | Update a set of credentials                                                                                                       |
+| [**putIntegrationsSpeechTtsSettings**](IntegrationsApi.md#putIntegrationsSpeechTtsSettings)                                           | Update TTS settings for an org                                                                                                    |
+
 {: class="table-striped"}
 
 <a name="deleteIntegration"></a>
 
 # **deleteIntegration**
 
-
-
-> [Integration](Integration.html) deleteIntegration(integrationId)
+> [Integration](Integration.md) deleteIntegration(integrationId)
 
 Delete integration.
 
+Wraps DELETE /api/v2/integrations/{integrationId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/integrations/{integrationId}  
-
-Requires ANY permissions: 
-
-* integrations:integration:delete
+- integrations:integration:delete
 
 ### Example
 
@@ -120,34 +118,29 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description    | Notes |
+| ----------------- | ---------- | -------------- | ----- |
+| **integrationId** | **String** | Integration Id |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **integrationId** | **String**| Integration Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Integration**](Integration.html)
+[**Integration**](Integration.md)
 
 <a name="deleteIntegrationsAction"></a>
 
 # **deleteIntegrationsAction**
 
-
-
 > Void deleteIntegrationsAction(actionId)
 
 Delete an Action
 
+Wraps DELETE /api/v2/integrations/actions/{actionId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/integrations/actions/{actionId}  
-
-Requires ANY permissions: 
-
-* integrations:action:delete
+- integrations:action:delete
 
 ### Example
 
@@ -182,12 +175,11 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description | Notes |
+| ------------ | ---------- | ----------- | ----- |
+| **actionId** | **String** | actionId    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -197,19 +189,15 @@ null (empty response body)
 
 # **deleteIntegrationsActionDraft**
 
-
-
 > Void deleteIntegrationsActionDraft(actionId)
 
 Delete a Draft
 
+Wraps DELETE /api/v2/integrations/actions/{actionId}/draft
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/integrations/actions/{actionId}/draft  
-
-Requires ANY permissions: 
-
-* integrations:action:delete
+- integrations:action:delete
 
 ### Example
 
@@ -244,12 +232,11 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description | Notes |
+| ------------ | ---------- | ----------- | ----- |
+| **actionId** | **String** | actionId    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -259,18 +246,13 @@ null (empty response body)
 
 # **deleteIntegrationsCredential**
 
-
-
 > Void deleteIntegrationsCredential(credentialId)
 
 Delete a set of credentials
 
+Wraps DELETE /api/v2/integrations/credentials/{credentialId}
 
-
-Wraps DELETE /api/v2/integrations/credentials/{credentialId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -305,12 +287,11 @@ try {
 
 ### Parameters
 
+| Name             | Type       | Description   | Notes |
+| ---------------- | ---------- | ------------- | ----- |
+| **credentialId** | **String** | Credential ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **credentialId** | **String**| Credential ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -320,19 +301,15 @@ null (empty response body)
 
 # **getIntegration**
 
-
-
-> [Integration](Integration.html) getIntegration(integrationId, pageSize, pageNumber, sortBy, expand, nextPage, previousPage)
+> [Integration](Integration.md) getIntegration(integrationId, pageSize, pageNumber, sortBy, expand, nextPage, previousPage)
 
 Get integration.
 
+Wraps GET /api/v2/integrations/{integrationId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/{integrationId}  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -374,40 +351,35 @@ try {
 
 ### Parameters
 
+| Name              | Type                                | Description                            | Notes                      |
+| ----------------- | ----------------------------------- | -------------------------------------- | -------------------------- |
+| **integrationId** | **String**                          | Integration Id                         |
+| **pageSize**      | **Integer**                         | The total page size requested          | [optional] [default to 25] |
+| **pageNumber**    | **Integer**                         | The page number requested              | [optional] [default to 1]  |
+| **sortBy**        | **String**                          | variable name requested to sort by     | [optional]                 |
+| **expand**        | [**List&lt;String&gt;**](String.md) | variable name requested by expand list | [optional]                 |
+| **nextPage**      | **String**                          | next page token                        | [optional]                 |
+| **previousPage**  | **String**                          | Previous page token                    | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **integrationId** | **String**| Integration Id | 
-| **pageSize** | **Integer**| The total page size requested | [optional] [default to 25] 
-| **pageNumber** | **Integer**| The page number requested | [optional] [default to 1] 
-| **sortBy** | **String**| variable name requested to sort by | [optional] 
-| **expand** | [**List&lt;String&gt;**](String.html)| variable name requested by expand list | [optional] 
-| **nextPage** | **String**| next page token | [optional] 
-| **previousPage** | **String**| Previous page token | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Integration**](Integration.html)
+[**Integration**](Integration.md)
 
 <a name="getIntegrationConfigCurrent"></a>
 
 # **getIntegrationConfigCurrent**
 
-
-
-> [IntegrationConfiguration](IntegrationConfiguration.html) getIntegrationConfigCurrent(integrationId)
+> [IntegrationConfiguration](IntegrationConfiguration.md) getIntegrationConfigCurrent(integrationId)
 
 Get integration configuration.
 
+Wraps GET /api/v2/integrations/{integrationId}/config/current
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/{integrationId}/config/current  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -443,34 +415,29 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description    | Notes |
+| ----------------- | ---------- | -------------- | ----- |
+| **integrationId** | **String** | Integration Id |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **integrationId** | **String**| Integration Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**IntegrationConfiguration**](IntegrationConfiguration.html)
+[**IntegrationConfiguration**](IntegrationConfiguration.md)
 
 <a name="getIntegrations"></a>
 
 # **getIntegrations**
 
-
-
-> [IntegrationEntityListing](IntegrationEntityListing.html) getIntegrations(pageSize, pageNumber, sortBy, expand, nextPage, previousPage)
+> [IntegrationEntityListing](IntegrationEntityListing.md) getIntegrations(pageSize, pageNumber, sortBy, expand, nextPage, previousPage)
 
 List integrations
 
+Wraps GET /api/v2/integrations
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -511,40 +478,35 @@ try {
 
 ### Parameters
 
+| Name             | Type                                | Description                            | Notes                      |
+| ---------------- | ----------------------------------- | -------------------------------------- | -------------------------- |
+| **pageSize**     | **Integer**                         | The total page size requested          | [optional] [default to 25] |
+| **pageNumber**   | **Integer**                         | The page number requested              | [optional] [default to 1]  |
+| **sortBy**       | **String**                          | variable name requested to sort by     | [optional]                 |
+| **expand**       | [**List&lt;String&gt;**](String.md) | variable name requested by expand list | [optional]                 |
+| **nextPage**     | **String**                          | next page token                        | [optional]                 |
+| **previousPage** | **String**                          | Previous page token                    | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| The total page size requested | [optional] [default to 25] 
-| **pageNumber** | **Integer**| The page number requested | [optional] [default to 1] 
-| **sortBy** | **String**| variable name requested to sort by | [optional] 
-| **expand** | [**List&lt;String&gt;**](String.html)| variable name requested by expand list | [optional] 
-| **nextPage** | **String**| next page token | [optional] 
-| **previousPage** | **String**| Previous page token | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**IntegrationEntityListing**](IntegrationEntityListing.html)
+[**IntegrationEntityListing**](IntegrationEntityListing.md)
 
 <a name="getIntegrationsAction"></a>
 
 # **getIntegrationsAction**
 
-
-
-> [Action](Action.html) getIntegrationsAction(actionId, expand, includeConfig)
+> [Action](Action.md) getIntegrationsAction(actionId, expand, includeConfig)
 
 Retrieves a single Action matching id.
 
+Wraps GET /api/v2/integrations/actions/{actionId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/actions/{actionId}  
-
-Requires ANY permissions: 
-
-* integrations:action:view
-* bridge:actions:view
+- integrations:action:view
+- bridge:actions:view
 
 ### Example
 
@@ -582,37 +544,32 @@ try {
 
 ### Parameters
 
+| Name              | Type        | Description                                                 | Notes                                |
+| ----------------- | ----------- | ----------------------------------------------------------- | ------------------------------------ |
+| **actionId**      | **String**  | actionId                                                    |
+| **expand**        | **String**  | Indicates a field in the response which should be expanded. | [optional]<br />**Values**: contract |
+| **includeConfig** | **Boolean** | Return config in response.                                  | [optional] [default to false]        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
-| **expand** | **String**| Indicates a field in the response which should be expanded. | [optional]<br />**Values**: contract 
-| **includeConfig** | **Boolean**| Return config in response. | [optional] [default to false] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Action**](Action.html)
+[**Action**](Action.md)
 
 <a name="getIntegrationsActionDraft"></a>
 
 # **getIntegrationsActionDraft**
 
-
-
-> [Action](Action.html) getIntegrationsActionDraft(actionId, expand, includeConfig)
+> [Action](Action.md) getIntegrationsActionDraft(actionId, expand, includeConfig)
 
 Retrieve a Draft
 
+Wraps GET /api/v2/integrations/actions/{actionId}/draft
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/actions/{actionId}/draft  
-
-Requires ANY permissions: 
-
-* integrations:action:view
-* bridge:actions:view
+- integrations:action:view
+- bridge:actions:view
 
 ### Example
 
@@ -650,37 +607,32 @@ try {
 
 ### Parameters
 
+| Name              | Type        | Description                                                 | Notes                                |
+| ----------------- | ----------- | ----------------------------------------------------------- | ------------------------------------ |
+| **actionId**      | **String**  | actionId                                                    |
+| **expand**        | **String**  | Indicates a field in the response which should be expanded. | [optional]<br />**Values**: contract |
+| **includeConfig** | **Boolean** | Return config in response.                                  | [optional] [default to false]        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
-| **expand** | **String**| Indicates a field in the response which should be expanded. | [optional]<br />**Values**: contract 
-| **includeConfig** | **Boolean**| Return config in response. | [optional] [default to false] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Action**](Action.html)
+[**Action**](Action.md)
 
 <a name="getIntegrationsActionDraftSchema"></a>
 
 # **getIntegrationsActionDraftSchema**
 
-
-
-> [JsonSchemaDocument](JsonSchemaDocument.html) getIntegrationsActionDraftSchema(actionId, fileName)
+> [JsonSchemaDocument](JsonSchemaDocument.md) getIntegrationsActionDraftSchema(actionId, fileName)
 
 Retrieve schema for a Draft based on filename.
 
+Wraps GET /api/v2/integrations/actions/{actionId}/draft/schemas/{fileName}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/actions/{actionId}/draft/schemas/{fileName}  
-
-Requires ANY permissions: 
-
-* integrations:action:view
-* bridge:actions:view
+- integrations:action:view
+- bridge:actions:view
 
 ### Example
 
@@ -717,36 +669,31 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                                         | Notes |
+| ------------ | ---------- | --------------------------------------------------- | ----- |
+| **actionId** | **String** | actionId                                            |
+| **fileName** | **String** | Name of schema file to be retrieved for this draft. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
-| **fileName** | **String**| Name of schema file to be retrieved for this draft. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JsonSchemaDocument**](JsonSchemaDocument.html)
+[**JsonSchemaDocument**](JsonSchemaDocument.md)
 
 <a name="getIntegrationsActionDraftTemplate"></a>
 
 # **getIntegrationsActionDraftTemplate**
 
-
-
 > String getIntegrationsActionDraftTemplate(actionId, fileName)
 
 Retrieve templates for a Draft based on filename.
 
+Wraps GET /api/v2/integrations/actions/{actionId}/draft/templates/{fileName}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/actions/{actionId}/draft/templates/{fileName}  
-
-Requires ANY permissions: 
-
-* integrations:action:view
-* bridge:actions:view
+- integrations:action:view
+- bridge:actions:view
 
 ### Example
 
@@ -783,13 +730,12 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                                                  | Notes |
+| ------------ | ---------- | ------------------------------------------------------------ | ----- |
+| **actionId** | **String** | actionId                                                     |
+| **fileName** | **String** | Name of template file to be retrieved for this action draft. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
-| **fileName** | **String**| Name of template file to be retrieved for this action draft. | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -799,19 +745,15 @@ try {
 
 # **getIntegrationsActionDraftValidation**
 
-
-
-> [DraftValidationResult](DraftValidationResult.html) getIntegrationsActionDraftValidation(actionId)
+> [DraftValidationResult](DraftValidationResult.md) getIntegrationsActionDraftValidation(actionId)
 
 Validate current Draft configuration.
 
+Wraps GET /api/v2/integrations/actions/{actionId}/draft/validation
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/actions/{actionId}/draft/validation  
-
-Requires ANY permissions: 
-
-* integrations:action:edit
+- integrations:action:edit
 
 ### Example
 
@@ -847,35 +789,30 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description | Notes |
+| ------------ | ---------- | ----------- | ----- |
+| **actionId** | **String** | actionId    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DraftValidationResult**](DraftValidationResult.html)
+[**DraftValidationResult**](DraftValidationResult.md)
 
 <a name="getIntegrationsActionSchema"></a>
 
 # **getIntegrationsActionSchema**
 
-
-
-> [JsonSchemaDocument](JsonSchemaDocument.html) getIntegrationsActionSchema(actionId, fileName)
+> [JsonSchemaDocument](JsonSchemaDocument.md) getIntegrationsActionSchema(actionId, fileName)
 
 Retrieve schema for an action based on filename.
 
+Wraps GET /api/v2/integrations/actions/{actionId}/schemas/{fileName}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/actions/{actionId}/schemas/{fileName}  
-
-Requires ANY permissions: 
-
-* integrations:action:view
-* bridge:actions:view
+- integrations:action:view
+- bridge:actions:view
 
 ### Example
 
@@ -912,36 +849,31 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                                          | Notes |
+| ------------ | ---------- | ---------------------------------------------------- | ----- |
+| **actionId** | **String** | actionId                                             |
+| **fileName** | **String** | Name of schema file to be retrieved for this action. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
-| **fileName** | **String**| Name of schema file to be retrieved for this action. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JsonSchemaDocument**](JsonSchemaDocument.html)
+[**JsonSchemaDocument**](JsonSchemaDocument.md)
 
 <a name="getIntegrationsActionTemplate"></a>
 
 # **getIntegrationsActionTemplate**
 
-
-
 > String getIntegrationsActionTemplate(actionId, fileName)
 
 Retrieve text of templates for an action based on filename.
 
+Wraps GET /api/v2/integrations/actions/{actionId}/templates/{fileName}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/actions/{actionId}/templates/{fileName}  
-
-Requires ANY permissions: 
-
-* integrations:action:view
-* bridge:actions:view
+- integrations:action:view
+- bridge:actions:view
 
 ### Example
 
@@ -978,13 +910,12 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                                            | Notes |
+| ------------ | ---------- | ------------------------------------------------------ | ----- |
+| **actionId** | **String** | actionId                                               |
+| **fileName** | **String** | Name of template file to be retrieved for this action. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
-| **fileName** | **String**| Name of template file to be retrieved for this action. | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -994,20 +925,16 @@ try {
 
 # **getIntegrationsActions**
 
-
-
-> [ActionEntityListing](ActionEntityListing.html) getIntegrationsActions(pageSize, pageNumber, nextPage, previousPage, sortBy, sortOrder, category, name, secure, includeAuthActions)
+> [ActionEntityListing](ActionEntityListing.md) getIntegrationsActions(pageSize, pageNumber, nextPage, previousPage, sortBy, sortOrder, category, name, secure, includeAuthActions)
 
 Retrieves all actions associated with filters passed in via query param.
 
+Wraps GET /api/v2/integrations/actions
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/actions  
-
-Requires ANY permissions: 
-
-* integrations:action:view
-* bridge:actions:view
+- integrations:action:view
+- bridge:actions:view
 
 ### Example
 
@@ -1052,44 +979,39 @@ try {
 
 ### Parameters
 
+| Name                   | Type        | Description                                                                                                                                                                                                                     | Notes                                                      |
+| ---------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| **pageSize**           | **Integer** | The total page size requested                                                                                                                                                                                                   | [optional] [default to 25]                                 |
+| **pageNumber**         | **Integer** | The page number requested                                                                                                                                                                                                       | [optional] [default to 1]                                  |
+| **nextPage**           | **String**  | next page token                                                                                                                                                                                                                 | [optional]                                                 |
+| **previousPage**       | **String**  | Previous page token                                                                                                                                                                                                             | [optional]                                                 |
+| **sortBy**             | **String**  | Root level field name to sort on.                                                                                                                                                                                               | [optional]                                                 |
+| **sortOrder**          | **String**  | Direction to sort &#39;sortBy&#39; field.                                                                                                                                                                                       | [optional] [default to asc]<br />**Values**: ASC, DESC     |
+| **category**           | **String**  | Filter by category name                                                                                                                                                                                                         | [optional]                                                 |
+| **name**               | **String**  | Filter by action name. Provide full or just the first part of name.                                                                                                                                                             | [optional]                                                 |
+| **secure**             | **String**  | Filter to only include secure actions. True will only include actions marked secured. False will include only unsecure actions. Do not use filter if you want all Actions.                                                      | [optional]<br />**Values**: true, false                    |
+| **includeAuthActions** | **String**  | Whether or not to include authentication actions in the response. These actions are not directly executable. Some integrations create them and will run them as needed to refresh authentication information for other actions. | [optional] [default to false]<br />**Values**: true, false |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| The total page size requested | [optional] [default to 25] 
-| **pageNumber** | **Integer**| The page number requested | [optional] [default to 1] 
-| **nextPage** | **String**| next page token | [optional] 
-| **previousPage** | **String**| Previous page token | [optional] 
-| **sortBy** | **String**| Root level field name to sort on. | [optional] 
-| **sortOrder** | **String**| Direction to sort &#39;sortBy&#39; field. | [optional] [default to asc]<br />**Values**: ASC, DESC 
-| **category** | **String**| Filter by category name | [optional] 
-| **name** | **String**| Filter by action name. Provide full or just the first part of name. | [optional] 
-| **secure** | **String**| Filter to only include secure actions. True will only include actions marked secured. False will include only unsecure actions. Do not use filter if you want all Actions. | [optional]<br />**Values**: true, false 
-| **includeAuthActions** | **String**| Whether or not to include authentication actions in the response. These actions are not directly executable. Some integrations create them and will run them as needed to refresh authentication information for other actions. | [optional] [default to false]<br />**Values**: true, false 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ActionEntityListing**](ActionEntityListing.html)
+[**ActionEntityListing**](ActionEntityListing.md)
 
 <a name="getIntegrationsActionsCategories"></a>
 
 # **getIntegrationsActionsCategories**
 
-
-
-> [CategoryEntityListing](CategoryEntityListing.html) getIntegrationsActionsCategories(pageSize, pageNumber, nextPage, previousPage, sortBy, sortOrder, secure)
+> [CategoryEntityListing](CategoryEntityListing.md) getIntegrationsActionsCategories(pageSize, pageNumber, nextPage, previousPage, sortBy, sortOrder, secure)
 
 Retrieves all categories of available Actions
 
+Wraps GET /api/v2/integrations/actions/categories
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/actions/categories  
-
-Requires ANY permissions: 
-
-* integrations:action:view
-* bridge:actions:view
+- integrations:action:view
+- bridge:actions:view
 
 ### Example
 
@@ -1131,41 +1053,36 @@ try {
 
 ### Parameters
 
+| Name             | Type        | Description                                                                                                                                                                | Notes                                                  |
+| ---------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| **pageSize**     | **Integer** | The total page size requested                                                                                                                                              | [optional] [default to 25]                             |
+| **pageNumber**   | **Integer** | The page number requested                                                                                                                                                  | [optional] [default to 1]                              |
+| **nextPage**     | **String**  | next page token                                                                                                                                                            | [optional]                                             |
+| **previousPage** | **String**  | Previous page token                                                                                                                                                        | [optional]                                             |
+| **sortBy**       | **String**  | Root level field name to sort on. Only &#39;name&#39; is supported on this endpoint.                                                                                       | [optional]                                             |
+| **sortOrder**    | **String**  | Direction to sort &#39;sortBy&#39; field.                                                                                                                                  | [optional] [default to asc]<br />**Values**: ASC, DESC |
+| **secure**       | **String**  | Filter to only include secure actions. True will only include actions marked secured. False will include only unsecure actions. Do not use filter if you want all Actions. | [optional]<br />**Values**: true, false                |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| The total page size requested | [optional] [default to 25] 
-| **pageNumber** | **Integer**| The page number requested | [optional] [default to 1] 
-| **nextPage** | **String**| next page token | [optional] 
-| **previousPage** | **String**| Previous page token | [optional] 
-| **sortBy** | **String**| Root level field name to sort on.  Only &#39;name&#39; is supported on this endpoint. | [optional] 
-| **sortOrder** | **String**| Direction to sort &#39;sortBy&#39; field. | [optional] [default to asc]<br />**Values**: ASC, DESC 
-| **secure** | **String**| Filter to only include secure actions. True will only include actions marked secured. False will include only unsecure actions. Do not use filter if you want all Actions. | [optional]<br />**Values**: true, false 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CategoryEntityListing**](CategoryEntityListing.html)
+[**CategoryEntityListing**](CategoryEntityListing.md)
 
 <a name="getIntegrationsActionsDrafts"></a>
 
 # **getIntegrationsActionsDrafts**
 
-
-
-> [ActionEntityListing](ActionEntityListing.html) getIntegrationsActionsDrafts(pageSize, pageNumber, nextPage, previousPage, sortBy, sortOrder, category, name, secure, includeAuthActions)
+> [ActionEntityListing](ActionEntityListing.md) getIntegrationsActionsDrafts(pageSize, pageNumber, nextPage, previousPage, sortBy, sortOrder, category, name, secure, includeAuthActions)
 
 Retrieves all action drafts associated with the filters passed in via query param.
 
+Wraps GET /api/v2/integrations/actions/drafts
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/actions/drafts  
-
-Requires ANY permissions: 
-
-* integrations:action:view
-* bridge:actions:view
+- integrations:action:view
+- bridge:actions:view
 
 ### Example
 
@@ -1210,43 +1127,38 @@ try {
 
 ### Parameters
 
+| Name                   | Type        | Description                                                                                                                                                                                                                     | Notes                                                      |
+| ---------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| **pageSize**           | **Integer** | The total page size requested                                                                                                                                                                                                   | [optional] [default to 25]                                 |
+| **pageNumber**         | **Integer** | The page number requested                                                                                                                                                                                                       | [optional] [default to 1]                                  |
+| **nextPage**           | **String**  | next page token                                                                                                                                                                                                                 | [optional]                                                 |
+| **previousPage**       | **String**  | Previous page token                                                                                                                                                                                                             | [optional]                                                 |
+| **sortBy**             | **String**  | Root level field name to sort on.                                                                                                                                                                                               | [optional]                                                 |
+| **sortOrder**          | **String**  | Direction to sort &#39;sortBy&#39; field.                                                                                                                                                                                       | [optional] [default to asc]<br />**Values**: ASC, DESC     |
+| **category**           | **String**  | Filter by category name                                                                                                                                                                                                         | [optional]                                                 |
+| **name**               | **String**  | Filter by action name. Provide full or just the first part of name.                                                                                                                                                             | [optional]                                                 |
+| **secure**             | **String**  | Filter to only include secure actions. True will only include actions marked secured. False will include only unsecure actions. Do not use filter if you want all Actions.                                                      | [optional]<br />**Values**: true, false                    |
+| **includeAuthActions** | **String**  | Whether or not to include authentication actions in the response. These actions are not directly executable. Some integrations create them and will run them as needed to refresh authentication information for other actions. | [optional] [default to false]<br />**Values**: true, false |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| The total page size requested | [optional] [default to 25] 
-| **pageNumber** | **Integer**| The page number requested | [optional] [default to 1] 
-| **nextPage** | **String**| next page token | [optional] 
-| **previousPage** | **String**| Previous page token | [optional] 
-| **sortBy** | **String**| Root level field name to sort on. | [optional] 
-| **sortOrder** | **String**| Direction to sort &#39;sortBy&#39; field. | [optional] [default to asc]<br />**Values**: ASC, DESC 
-| **category** | **String**| Filter by category name | [optional] 
-| **name** | **String**| Filter by action name. Provide full or just the first part of name. | [optional] 
-| **secure** | **String**| Filter to only include secure actions. True will only include actions marked secured. False will include only unsecure actions. Do not use filter if you want all Actions. | [optional]<br />**Values**: true, false 
-| **includeAuthActions** | **String**| Whether or not to include authentication actions in the response. These actions are not directly executable. Some integrations create them and will run them as needed to refresh authentication information for other actions. | [optional] [default to false]<br />**Values**: true, false 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ActionEntityListing**](ActionEntityListing.html)
+[**ActionEntityListing**](ActionEntityListing.md)
 
 <a name="getIntegrationsBotconnectorIntegrationIdBot"></a>
 
 # **getIntegrationsBotconnectorIntegrationIdBot**
 
-
-
-> [BotConnectorBot](BotConnectorBot.html) getIntegrationsBotconnectorIntegrationIdBot(integrationId, botId, version)
+> [BotConnectorBot](BotConnectorBot.md) getIntegrationsBotconnectorIntegrationIdBot(integrationId, botId, version)
 
 Get a specific botConnector bot, plus versions, for this integration
 
+Wraps GET /api/v2/integrations/botconnector/{integrationId}/bots/{botId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/botconnector/{integrationId}/bots/{botId}  
-
-Requires ANY permissions: 
-
-* integration:botconnector:view
+- integration:botconnector:view
 
 ### Example
 
@@ -1284,36 +1196,31 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description                               | Notes      |
+| ----------------- | ---------- | ----------------------------------------- | ---------- |
+| **integrationId** | **String** | The integration ID for this group of bots |
+| **botId**         | **String** | The botID for this bot                    |
+| **version**       | **String** | Specific Version                          | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **integrationId** | **String**| The integration ID for this group of bots | 
-| **botId** | **String**| The botID for this bot | 
-| **version** | **String**| Specific Version | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**BotConnectorBot**](BotConnectorBot.html)
+[**BotConnectorBot**](BotConnectorBot.md)
 
 <a name="getIntegrationsBotconnectorIntegrationIdBotVersions"></a>
 
 # **getIntegrationsBotconnectorIntegrationIdBotVersions**
 
-
-
-> [BotConnectorBotVersionSummaryEntityListing](BotConnectorBotVersionSummaryEntityListing.html) getIntegrationsBotconnectorIntegrationIdBotVersions(integrationId, botId, pageNumber, pageSize)
+> [BotConnectorBotVersionSummaryEntityListing](BotConnectorBotVersionSummaryEntityListing.md) getIntegrationsBotconnectorIntegrationIdBotVersions(integrationId, botId, pageNumber, pageSize)
 
 Get a list of bot versions for a bot
 
+Wraps GET /api/v2/integrations/botconnector/{integrationId}/bots/{botId}/versions
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/botconnector/{integrationId}/bots/{botId}/versions  
-
-Requires ANY permissions: 
-
-* integration:botconnector:view
+- integration:botconnector:view
 
 ### Example
 
@@ -1352,37 +1259,32 @@ try {
 
 ### Parameters
 
+| Name              | Type        | Description                           | Notes                      |
+| ----------------- | ----------- | ------------------------------------- | -------------------------- |
+| **integrationId** | **String**  | The integration ID for this bot group |
+| **botId**         | **String**  | The botID for this bot                |
+| **pageNumber**    | **Integer** | Page number                           | [optional] [default to 1]  |
+| **pageSize**      | **Integer** | Page size                             | [optional] [default to 25] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **integrationId** | **String**| The integration ID for this bot group | 
-| **botId** | **String**| The botID for this bot | 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**BotConnectorBotVersionSummaryEntityListing**](BotConnectorBotVersionSummaryEntityListing.html)
+[**BotConnectorBotVersionSummaryEntityListing**](BotConnectorBotVersionSummaryEntityListing.md)
 
 <a name="getIntegrationsBotconnectorIntegrationIdBots"></a>
 
 # **getIntegrationsBotconnectorIntegrationIdBots**
 
-
-
-> [BotList](BotList.html) getIntegrationsBotconnectorIntegrationIdBots(integrationId)
+> [BotList](BotList.md) getIntegrationsBotconnectorIntegrationIdBots(integrationId)
 
 Get a list of botConnector bots for this integration
 
+Wraps GET /api/v2/integrations/botconnector/{integrationId}/bots
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/botconnector/{integrationId}/bots  
-
-Requires ANY permissions: 
-
-* integration:botconnector:view
+- integration:botconnector:view
 
 ### Example
 
@@ -1418,34 +1320,29 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description                               | Notes |
+| ----------------- | ---------- | ----------------------------------------- | ----- |
+| **integrationId** | **String** | The integration ID for this group of bots |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **integrationId** | **String**| The integration ID for this group of bots | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**BotList**](BotList.html)
+[**BotList**](BotList.md)
 
 <a name="getIntegrationsBotconnectorIntegrationIdBotsSummaries"></a>
 
 # **getIntegrationsBotconnectorIntegrationIdBotsSummaries**
 
-
-
-> [BotConnectorBotSummaryEntityListing](BotConnectorBotSummaryEntityListing.html) getIntegrationsBotconnectorIntegrationIdBotsSummaries(integrationId, pageNumber, pageSize)
+> [BotConnectorBotSummaryEntityListing](BotConnectorBotSummaryEntityListing.md) getIntegrationsBotconnectorIntegrationIdBotsSummaries(integrationId, pageNumber, pageSize)
 
 Get a summary list of botConnector bots for this integration
 
+Wraps GET /api/v2/integrations/botconnector/{integrationId}/bots/summaries
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/botconnector/{integrationId}/bots/summaries  
-
-Requires ANY permissions: 
-
-* integration:botconnector:view
+- integration:botconnector:view
 
 ### Example
 
@@ -1483,35 +1380,29 @@ try {
 
 ### Parameters
 
+| Name              | Type        | Description                               | Notes                      |
+| ----------------- | ----------- | ----------------------------------------- | -------------------------- |
+| **integrationId** | **String**  | The integration ID for this group of bots |
+| **pageNumber**    | **Integer** | Page number                               | [optional] [default to 1]  |
+| **pageSize**      | **Integer** | Page size                                 | [optional] [default to 25] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **integrationId** | **String**| The integration ID for this group of bots | 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**BotConnectorBotSummaryEntityListing**](BotConnectorBotSummaryEntityListing.html)
+[**BotConnectorBotSummaryEntityListing**](BotConnectorBotSummaryEntityListing.md)
 
 <a name="getIntegrationsClientapps"></a>
 
 # **getIntegrationsClientapps**
 
-
-
-> [ClientAppEntityListing](ClientAppEntityListing.html) getIntegrationsClientapps(pageSize, pageNumber, sortBy, expand, nextPage, previousPage)
+> [ClientAppEntityListing](ClientAppEntityListing.md) getIntegrationsClientapps(pageSize, pageNumber, sortBy, expand, nextPage, previousPage)
 
 List permitted client app integrations for the logged in user
 
+Wraps GET /api/v2/integrations/clientapps
 
-
-Wraps GET /api/v2/integrations/clientapps  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1552,39 +1443,36 @@ try {
 
 ### Parameters
 
+| Name             | Type                                | Description                            | Notes                      |
+| ---------------- | ----------------------------------- | -------------------------------------- | -------------------------- |
+| **pageSize**     | **Integer**                         | The total page size requested          | [optional] [default to 25] |
+| **pageNumber**   | **Integer**                         | The page number requested              | [optional] [default to 1]  |
+| **sortBy**       | **String**                          | variable name requested to sort by     | [optional]                 |
+| **expand**       | [**List&lt;String&gt;**](String.md) | variable name requested by expand list | [optional]                 |
+| **nextPage**     | **String**                          | next page token                        | [optional]                 |
+| **previousPage** | **String**                          | Previous page token                    | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| The total page size requested | [optional] [default to 25] 
-| **pageNumber** | **Integer**| The page number requested | [optional] [default to 1] 
-| **sortBy** | **String**| variable name requested to sort by | [optional] 
-| **expand** | [**List&lt;String&gt;**](String.html)| variable name requested by expand list | [optional] 
-| **nextPage** | **String**| next page token | [optional] 
-| **previousPage** | **String**| Previous page token | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ClientAppEntityListing**](ClientAppEntityListing.html)
+[**ClientAppEntityListing**](ClientAppEntityListing.md)
 
 <a name="getIntegrationsClientappsUnifiedcommunications"></a>
 
 # **getIntegrationsClientappsUnifiedcommunications**
 
-
-
-> [UCIntegrationListing](UCIntegrationListing.html) getIntegrationsClientappsUnifiedcommunications(pageSize, pageNumber, sortBy, expand, nextPage, previousPage)
+> [UCIntegrationListing](UCIntegrationListing.md) getIntegrationsClientappsUnifiedcommunications(pageSize, pageNumber, sortBy, expand, nextPage, previousPage)
 
 UC integration client application configuration.
 
 This endpoint returns basic UI configuration data for all Unified Communications integrations client applications enabled for the current organization.
 
-Wraps GET /api/v2/integrations/clientapps/unifiedcommunications  
+Wraps GET /api/v2/integrations/clientapps/unifiedcommunications
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* integration:unifiedCommunications:view
+- integration:unifiedCommunications:view
 
 ### Example
 
@@ -1625,38 +1513,32 @@ try {
 
 ### Parameters
 
+| Name             | Type                                | Description                            | Notes                      |
+| ---------------- | ----------------------------------- | -------------------------------------- | -------------------------- |
+| **pageSize**     | **Integer**                         | The total page size requested          | [optional] [default to 25] |
+| **pageNumber**   | **Integer**                         | The page number requested              | [optional] [default to 1]  |
+| **sortBy**       | **String**                          | variable name requested to sort by     | [optional]                 |
+| **expand**       | [**List&lt;String&gt;**](String.md) | variable name requested by expand list | [optional]                 |
+| **nextPage**     | **String**                          | next page token                        | [optional]                 |
+| **previousPage** | **String**                          | Previous page token                    | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| The total page size requested | [optional] [default to 25] 
-| **pageNumber** | **Integer**| The page number requested | [optional] [default to 1] 
-| **sortBy** | **String**| variable name requested to sort by | [optional] 
-| **expand** | [**List&lt;String&gt;**](String.html)| variable name requested by expand list | [optional] 
-| **nextPage** | **String**| next page token | [optional] 
-| **previousPage** | **String**| Previous page token | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UCIntegrationListing**](UCIntegrationListing.html)
+[**UCIntegrationListing**](UCIntegrationListing.md)
 
 <a name="getIntegrationsCredential"></a>
 
 # **getIntegrationsCredential**
 
-
-
-> [Credential](Credential.html) getIntegrationsCredential(credentialId)
+> [Credential](Credential.md) getIntegrationsCredential(credentialId)
 
 Get a single credential with sensitive fields redacted
 
+Wraps GET /api/v2/integrations/credentials/{credentialId}
 
-
-Wraps GET /api/v2/integrations/credentials/{credentialId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1692,33 +1574,27 @@ try {
 
 ### Parameters
 
+| Name             | Type       | Description   | Notes |
+| ---------------- | ---------- | ------------- | ----- |
+| **credentialId** | **String** | Credential ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **credentialId** | **String**| Credential ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Credential**](Credential.html)
+[**Credential**](Credential.md)
 
 <a name="getIntegrationsCredentials"></a>
 
 # **getIntegrationsCredentials**
 
-
-
-> [CredentialInfoListing](CredentialInfoListing.html) getIntegrationsCredentials(pageNumber, pageSize)
+> [CredentialInfoListing](CredentialInfoListing.md) getIntegrationsCredentials(pageNumber, pageSize)
 
 List multiple sets of credentials
 
+Wraps GET /api/v2/integrations/credentials
 
-
-Wraps GET /api/v2/integrations/credentials  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1755,34 +1631,28 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CredentialInfoListing**](CredentialInfoListing.html)
+[**CredentialInfoListing**](CredentialInfoListing.md)
 
 <a name="getIntegrationsCredentialsTypes"></a>
 
 # **getIntegrationsCredentialsTypes**
 
-
-
-> [CredentialTypeListing](CredentialTypeListing.html) getIntegrationsCredentialsTypes()
+> [CredentialTypeListing](CredentialTypeListing.md) getIntegrationsCredentialsTypes()
 
 List all credential types
 
+Wraps GET /api/v2/integrations/credentials/types
 
-
-Wraps GET /api/v2/integrations/credentials/types  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1819,30 +1689,24 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**CredentialTypeListing**](CredentialTypeListing.html)
+[**CredentialTypeListing**](CredentialTypeListing.md)
 
 <a name="getIntegrationsEventlog"></a>
 
 # **getIntegrationsEventlog**
 
-
-
-> [IntegrationEventEntityListing](IntegrationEventEntityListing.html) getIntegrationsEventlog(pageSize, pageNumber, sortBy, sortOrder, entityId)
+> [IntegrationEventEntityListing](IntegrationEventEntityListing.md) getIntegrationsEventlog(pageSize, pageNumber, sortBy, sortOrder, entityId)
 
 List all events
 
+Wraps GET /api/v2/integrations/eventlog
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/eventlog  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
-* bridge:notification:view
+- integrations:integration:view
+- bridge:notification:view
 
 ### Example
 
@@ -1882,39 +1746,34 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description                             | Notes                              |
+| -------------- | ----------- | --------------------------------------- | ---------------------------------- |
+| **pageSize**   | **Integer** | Page size                               | [optional] [default to 25]         |
+| **pageNumber** | **Integer** | Page number                             | [optional] [default to 1]          |
+| **sortBy**     | **String**  | Sort by                                 | [optional] [default to timestamp]  |
+| **sortOrder**  | **String**  | Order by                                | [optional] [default to descending] |
+| **entityId**   | **String**  | Include only events with this entity ID | [optional]                         |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortBy** | **String**| Sort by | [optional] [default to timestamp] 
-| **sortOrder** | **String**| Order by | [optional] [default to descending] 
-| **entityId** | **String**| Include only events with this entity ID | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**IntegrationEventEntityListing**](IntegrationEventEntityListing.html)
+[**IntegrationEventEntityListing**](IntegrationEventEntityListing.md)
 
 <a name="getIntegrationsEventlogEventId"></a>
 
 # **getIntegrationsEventlogEventId**
 
-
-
-> [IntegrationEvent](IntegrationEvent.html) getIntegrationsEventlogEventId(eventId)
+> [IntegrationEvent](IntegrationEvent.md) getIntegrationsEventlogEventId(eventId)
 
 Get a single event
 
+Wraps GET /api/v2/integrations/eventlog/{eventId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/eventlog/{eventId}  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
-* bridge:notification:view
+- integrations:integration:view
+- bridge:notification:view
 
 ### Example
 
@@ -1950,34 +1809,29 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **eventId** | **String** | Event Id    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **eventId** | **String**| Event Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**IntegrationEvent**](IntegrationEvent.html)
+[**IntegrationEvent**](IntegrationEvent.md)
 
 <a name="getIntegrationsSpeechDialogflowAgent"></a>
 
 # **getIntegrationsSpeechDialogflowAgent**
 
-
-
-> [DialogflowAgent](DialogflowAgent.html) getIntegrationsSpeechDialogflowAgent(agentId)
+> [DialogflowAgent](DialogflowAgent.md) getIntegrationsSpeechDialogflowAgent(agentId)
 
 Get details about a Dialogflow agent
 
+Wraps GET /api/v2/integrations/speech/dialogflow/agents/{agentId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/speech/dialogflow/agents/{agentId}  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -2013,34 +1867,29 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description  | Notes |
+| ----------- | ---------- | ------------ | ----- |
+| **agentId** | **String** | The agent ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **agentId** | **String**| The agent ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DialogflowAgent**](DialogflowAgent.html)
+[**DialogflowAgent**](DialogflowAgent.md)
 
 <a name="getIntegrationsSpeechDialogflowAgents"></a>
 
 # **getIntegrationsSpeechDialogflowAgents**
 
-
-
-> [DialogflowAgentSummaryEntityListing](DialogflowAgentSummaryEntityListing.html) getIntegrationsSpeechDialogflowAgents(pageNumber, pageSize, name)
+> [DialogflowAgentSummaryEntityListing](DialogflowAgentSummaryEntityListing.md) getIntegrationsSpeechDialogflowAgents(pageNumber, pageSize, name)
 
 Get a list of Dialogflow agents in the customers&#39; Google accounts
 
+Wraps GET /api/v2/integrations/speech/dialogflow/agents
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/speech/dialogflow/agents  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -2078,36 +1927,31 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description          | Notes                      |
+| -------------- | ----------- | -------------------- | -------------------------- |
+| **pageNumber** | **Integer** | Page number          | [optional] [default to 1]  |
+| **pageSize**   | **Integer** | Page size            | [optional] [default to 25] |
+| **name**       | **String**  | Filter on agent name | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **name** | **String**| Filter on agent name | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DialogflowAgentSummaryEntityListing**](DialogflowAgentSummaryEntityListing.html)
+[**DialogflowAgentSummaryEntityListing**](DialogflowAgentSummaryEntityListing.md)
 
 <a name="getIntegrationsSpeechLexBotAlias"></a>
 
 # **getIntegrationsSpeechLexBotAlias**
 
-
-
-> [LexBotAlias](LexBotAlias.html) getIntegrationsSpeechLexBotAlias(aliasId)
+> [LexBotAlias](LexBotAlias.md) getIntegrationsSpeechLexBotAlias(aliasId)
 
 Get details about a Lex bot alias
 
+Wraps GET /api/v2/integrations/speech/lex/bot/alias/{aliasId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/speech/lex/bot/alias/{aliasId}  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -2143,34 +1987,29 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description  | Notes |
+| ----------- | ---------- | ------------ | ----- |
+| **aliasId** | **String** | The alias ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **aliasId** | **String**| The alias ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LexBotAlias**](LexBotAlias.html)
+[**LexBotAlias**](LexBotAlias.md)
 
 <a name="getIntegrationsSpeechLexBotBotIdAliases"></a>
 
 # **getIntegrationsSpeechLexBotBotIdAliases**
 
-
-
-> [LexBotAliasEntityListing](LexBotAliasEntityListing.html) getIntegrationsSpeechLexBotBotIdAliases(botId, pageNumber, pageSize, status, name)
+> [LexBotAliasEntityListing](LexBotAliasEntityListing.md) getIntegrationsSpeechLexBotBotIdAliases(botId, pageNumber, pageSize, status, name)
 
 Get a list of aliases for a bot in the customer&#39;s AWS accounts
 
+Wraps GET /api/v2/integrations/speech/lex/bot/{botId}/aliases
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/speech/lex/bot/{botId}/aliases  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -2210,38 +2049,33 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description            | Notes                                                          |
+| -------------- | ----------- | ---------------------- | -------------------------------------------------------------- |
+| **botId**      | **String**  | The bot ID             |
+| **pageNumber** | **Integer** | Page number            | [optional] [default to 1]                                      |
+| **pageSize**   | **Integer** | Page size              | [optional] [default to 25]                                     |
+| **status**     | **String**  | Filter on alias status | [optional]<br />**Values**: READY, FAILED, BUILDING, NOT_BUILT |
+| **name**       | **String**  | Filter on alias name   | [optional]                                                     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **botId** | **String**| The bot ID | 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **status** | **String**| Filter on alias status | [optional]<br />**Values**: READY, FAILED, BUILDING, NOT_BUILT 
-| **name** | **String**| Filter on alias name | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LexBotAliasEntityListing**](LexBotAliasEntityListing.html)
+[**LexBotAliasEntityListing**](LexBotAliasEntityListing.md)
 
 <a name="getIntegrationsSpeechLexBots"></a>
 
 # **getIntegrationsSpeechLexBots**
 
-
-
-> [LexBotEntityListing](LexBotEntityListing.html) getIntegrationsSpeechLexBots(pageNumber, pageSize, name)
+> [LexBotEntityListing](LexBotEntityListing.md) getIntegrationsSpeechLexBots(pageNumber, pageSize, name)
 
 Get a list of Lex bots in the customers&#39; AWS accounts
 
+Wraps GET /api/v2/integrations/speech/lex/bots
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/speech/lex/bots  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -2279,36 +2113,31 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description        | Notes                      |
+| -------------- | ----------- | ------------------ | -------------------------- |
+| **pageNumber** | **Integer** | Page number        | [optional] [default to 1]  |
+| **pageSize**   | **Integer** | Page size          | [optional] [default to 25] |
+| **name**       | **String**  | Filter on bot name | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **name** | **String**| Filter on bot name | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LexBotEntityListing**](LexBotEntityListing.html)
+[**LexBotEntityListing**](LexBotEntityListing.md)
 
 <a name="getIntegrationsSpeechTtsEngine"></a>
 
 # **getIntegrationsSpeechTtsEngine**
 
-
-
-> [TtsEngineEntity](TtsEngineEntity.html) getIntegrationsSpeechTtsEngine(engineId, includeVoices)
+> [TtsEngineEntity](TtsEngineEntity.md) getIntegrationsSpeechTtsEngine(engineId, includeVoices)
 
 Get details about a TTS engine
 
+Wraps GET /api/v2/integrations/speech/tts/engines/{engineId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/speech/tts/engines/{engineId}  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -2345,35 +2174,30 @@ try {
 
 ### Parameters
 
+| Name              | Type        | Description                   | Notes                         |
+| ----------------- | ----------- | ----------------------------- | ----------------------------- |
+| **engineId**      | **String**  | The engine ID                 |
+| **includeVoices** | **Boolean** | Include voices for the engine | [optional] [default to false] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **engineId** | **String**| The engine ID | 
-| **includeVoices** | **Boolean**| Include voices for the engine | [optional] [default to false] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TtsEngineEntity**](TtsEngineEntity.html)
+[**TtsEngineEntity**](TtsEngineEntity.md)
 
 <a name="getIntegrationsSpeechTtsEngineVoice"></a>
 
 # **getIntegrationsSpeechTtsEngineVoice**
 
-
-
-> [TtsVoiceEntity](TtsVoiceEntity.html) getIntegrationsSpeechTtsEngineVoice(engineId, voiceId)
+> [TtsVoiceEntity](TtsVoiceEntity.md) getIntegrationsSpeechTtsEngineVoice(engineId, voiceId)
 
 Get details about a specific voice for a TTS engine
 
+Wraps GET /api/v2/integrations/speech/tts/engines/{engineId}/voices/{voiceId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/speech/tts/engines/{engineId}/voices/{voiceId}  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -2410,35 +2234,30 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description   | Notes |
+| ------------ | ---------- | ------------- | ----- |
+| **engineId** | **String** | The engine ID |
+| **voiceId**  | **String** | The voice ID  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **engineId** | **String**| The engine ID | 
-| **voiceId** | **String**| The voice ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TtsVoiceEntity**](TtsVoiceEntity.html)
+[**TtsVoiceEntity**](TtsVoiceEntity.md)
 
 <a name="getIntegrationsSpeechTtsEngineVoices"></a>
 
 # **getIntegrationsSpeechTtsEngineVoices**
 
-
-
-> [TtsVoiceEntityListing](TtsVoiceEntityListing.html) getIntegrationsSpeechTtsEngineVoices(engineId, pageNumber, pageSize)
+> [TtsVoiceEntityListing](TtsVoiceEntityListing.md) getIntegrationsSpeechTtsEngineVoices(engineId, pageNumber, pageSize)
 
 Get a list of voices for a TTS engine
 
+Wraps GET /api/v2/integrations/speech/tts/engines/{engineId}/voices
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/speech/tts/engines/{engineId}/voices  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -2476,36 +2295,31 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description   | Notes                      |
+| -------------- | ----------- | ------------- | -------------------------- |
+| **engineId**   | **String**  | The engine ID |
+| **pageNumber** | **Integer** | Page number   | [optional] [default to 1]  |
+| **pageSize**   | **Integer** | Page size     | [optional] [default to 25] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **engineId** | **String**| The engine ID | 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TtsVoiceEntityListing**](TtsVoiceEntityListing.html)
+[**TtsVoiceEntityListing**](TtsVoiceEntityListing.md)
 
 <a name="getIntegrationsSpeechTtsEngines"></a>
 
 # **getIntegrationsSpeechTtsEngines**
 
-
-
-> [TtsEngineEntityListing](TtsEngineEntityListing.html) getIntegrationsSpeechTtsEngines(pageNumber, pageSize, includeVoices, name, language)
+> [TtsEngineEntityListing](TtsEngineEntityListing.md) getIntegrationsSpeechTtsEngines(pageNumber, pageSize, includeVoices, name, language)
 
 Get a list of TTS engines enabled for org
 
+Wraps GET /api/v2/integrations/speech/tts/engines
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/speech/tts/engines  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -2545,38 +2359,33 @@ try {
 
 ### Parameters
 
+| Name              | Type        | Description                                                                            | Notes                         |
+| ----------------- | ----------- | -------------------------------------------------------------------------------------- | ----------------------------- |
+| **pageNumber**    | **Integer** | Page number                                                                            | [optional] [default to 1]     |
+| **pageSize**      | **Integer** | Page size                                                                              | [optional] [default to 25]    |
+| **includeVoices** | **Boolean** | Include voices for the engine                                                          | [optional] [default to false] |
+| **name**          | **String**  | Filter on engine name                                                                  | [optional]                    |
+| **language**      | **String**  | Filter on supported language. If includeVoices=true then the voices are also filtered. | [optional]                    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **includeVoices** | **Boolean**| Include voices for the engine | [optional] [default to false] 
-| **name** | **String**| Filter on engine name | [optional] 
-| **language** | **String**| Filter on supported language. If includeVoices=true then the voices are also filtered. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TtsEngineEntityListing**](TtsEngineEntityListing.html)
+[**TtsEngineEntityListing**](TtsEngineEntityListing.md)
 
 <a name="getIntegrationsSpeechTtsSettings"></a>
 
 # **getIntegrationsSpeechTtsSettings**
 
-
-
-> [TtsSettings](TtsSettings.html) getIntegrationsSpeechTtsSettings()
+> [TtsSettings](TtsSettings.md) getIntegrationsSpeechTtsSettings()
 
 Get TTS settings for an org
 
+Wraps GET /api/v2/integrations/speech/tts/settings
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/speech/tts/settings  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -2613,29 +2422,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**TtsSettings**](TtsSettings.html)
+[**TtsSettings**](TtsSettings.md)
 
 <a name="getIntegrationsType"></a>
 
 # **getIntegrationsType**
 
-
-
-> [IntegrationType](IntegrationType.html) getIntegrationsType(typeId)
+> [IntegrationType](IntegrationType.md) getIntegrationsType(typeId)
 
 Get integration type.
 
+Wraps GET /api/v2/integrations/types/{typeId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/types/{typeId}  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -2671,34 +2474,29 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description         | Notes |
+| ---------- | ---------- | ------------------- | ----- |
+| **typeId** | **String** | Integration Type Id |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **typeId** | **String**| Integration Type Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**IntegrationType**](IntegrationType.html)
+[**IntegrationType**](IntegrationType.md)
 
 <a name="getIntegrationsTypeConfigschema"></a>
 
 # **getIntegrationsTypeConfigschema**
 
-
-
-> [JsonSchemaDocument](JsonSchemaDocument.html) getIntegrationsTypeConfigschema(typeId, configType)
+> [JsonSchemaDocument](JsonSchemaDocument.md) getIntegrationsTypeConfigschema(typeId, configType)
 
 Get properties config schema for an integration type.
 
+Wraps GET /api/v2/integrations/types/{typeId}/configschemas/{configType}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/types/{typeId}/configschemas/{configType}  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -2735,35 +2533,30 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description         | Notes                                  |
+| -------------- | ---------- | ------------------- | -------------------------------------- |
+| **typeId**     | **String** | Integration Type Id |
+| **configType** | **String** | Config schema type  | <br />**Values**: properties, advanced |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **typeId** | **String**| Integration Type Id | 
-| **configType** | **String**| Config schema type |<br />**Values**: properties, advanced 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JsonSchemaDocument**](JsonSchemaDocument.html)
+[**JsonSchemaDocument**](JsonSchemaDocument.md)
 
 <a name="getIntegrationsTypes"></a>
 
 # **getIntegrationsTypes**
 
-
-
-> [IntegrationTypeEntityListing](IntegrationTypeEntityListing.html) getIntegrationsTypes(pageSize, pageNumber, sortBy, expand, nextPage, previousPage)
+> [IntegrationTypeEntityListing](IntegrationTypeEntityListing.md) getIntegrationsTypes(pageSize, pageNumber, sortBy, expand, nextPage, previousPage)
 
 List integration types
 
+Wraps GET /api/v2/integrations/types
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/integrations/types  
-
-Requires ANY permissions: 
-
-* integrations:integration:view
+- integrations:integration:view
 
 ### Example
 
@@ -2804,38 +2597,32 @@ try {
 
 ### Parameters
 
+| Name             | Type                                | Description                            | Notes                      |
+| ---------------- | ----------------------------------- | -------------------------------------- | -------------------------- |
+| **pageSize**     | **Integer**                         | The total page size requested          | [optional] [default to 25] |
+| **pageNumber**   | **Integer**                         | The page number requested              | [optional] [default to 1]  |
+| **sortBy**       | **String**                          | variable name requested to sort by     | [optional]                 |
+| **expand**       | [**List&lt;String&gt;**](String.md) | variable name requested by expand list | [optional]                 |
+| **nextPage**     | **String**                          | next page token                        | [optional]                 |
+| **previousPage** | **String**                          | Previous page token                    | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| The total page size requested | [optional] [default to 25] 
-| **pageNumber** | **Integer**| The page number requested | [optional] [default to 1] 
-| **sortBy** | **String**| variable name requested to sort by | [optional] 
-| **expand** | [**List&lt;String&gt;**](String.html)| variable name requested by expand list | [optional] 
-| **nextPage** | **String**| next page token | [optional] 
-| **previousPage** | **String**| Previous page token | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**IntegrationTypeEntityListing**](IntegrationTypeEntityListing.html)
+[**IntegrationTypeEntityListing**](IntegrationTypeEntityListing.md)
 
 <a name="getIntegrationsUserapps"></a>
 
 # **getIntegrationsUserapps**
 
-
-
-> [UserAppEntityListing](UserAppEntityListing.html) getIntegrationsUserapps(pageSize, pageNumber, sortBy, expand, nextPage, previousPage, appHost)
+> [UserAppEntityListing](UserAppEntityListing.md) getIntegrationsUserapps(pageSize, pageNumber, sortBy, expand, nextPage, previousPage, appHost)
 
 List permitted user app integrations for the logged in user
 
+Wraps GET /api/v2/integrations/userapps
 
-
-Wraps GET /api/v2/integrations/userapps  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -2877,40 +2664,35 @@ try {
 
 ### Parameters
 
+| Name             | Type                                | Description                            | Notes                      |
+| ---------------- | ----------------------------------- | -------------------------------------- | -------------------------- |
+| **pageSize**     | **Integer**                         | The total page size requested          | [optional] [default to 25] |
+| **pageNumber**   | **Integer**                         | The page number requested              | [optional] [default to 1]  |
+| **sortBy**       | **String**                          | variable name requested to sort by     | [optional]                 |
+| **expand**       | [**List&lt;String&gt;**](String.md) | variable name requested by expand list | [optional]                 |
+| **nextPage**     | **String**                          | next page token                        | [optional]                 |
+| **previousPage** | **String**                          | Previous page token                    | [optional]                 |
+| **appHost**      | **String**                          | The type of UserApp to filter by       | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| The total page size requested | [optional] [default to 25] 
-| **pageNumber** | **Integer**| The page number requested | [optional] [default to 1] 
-| **sortBy** | **String**| variable name requested to sort by | [optional] 
-| **expand** | [**List&lt;String&gt;**](String.html)| variable name requested by expand list | [optional] 
-| **nextPage** | **String**| next page token | [optional] 
-| **previousPage** | **String**| Previous page token | [optional] 
-| **appHost** | **String**| The type of UserApp to filter by | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserAppEntityListing**](UserAppEntityListing.html)
+[**UserAppEntityListing**](UserAppEntityListing.md)
 
 <a name="patchIntegration"></a>
 
 # **patchIntegration**
 
-
-
-> [Integration](Integration.html) patchIntegration(integrationId, body, pageSize, pageNumber, sortBy, expand, nextPage, previousPage)
+> [Integration](Integration.md) patchIntegration(integrationId, body, pageSize, pageNumber, sortBy, expand, nextPage, previousPage)
 
 Update an integration.
 
+Wraps PATCH /api/v2/integrations/{integrationId}
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/integrations/{integrationId}  
-
-Requires ANY permissions: 
-
-* integrations:integration:edit
+- integrations:integration:edit
 
 ### Example
 
@@ -2953,41 +2735,36 @@ try {
 
 ### Parameters
 
+| Name              | Type                                | Description                            | Notes                      |
+| ----------------- | ----------------------------------- | -------------------------------------- | -------------------------- |
+| **integrationId** | **String**                          | Integration Id                         |
+| **body**          | [**Integration**](Integration.md)   | Integration Update                     | [optional]                 |
+| **pageSize**      | **Integer**                         | The total page size requested          | [optional] [default to 25] |
+| **pageNumber**    | **Integer**                         | The page number requested              | [optional] [default to 1]  |
+| **sortBy**        | **String**                          | variable name requested to sort by     | [optional]                 |
+| **expand**        | [**List&lt;String&gt;**](String.md) | variable name requested by expand list | [optional]                 |
+| **nextPage**      | **String**                          | next page token                        | [optional]                 |
+| **previousPage**  | **String**                          | Previous page token                    | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **integrationId** | **String**| Integration Id | 
-| **body** | [**Integration**](Integration.html)| Integration Update | [optional] 
-| **pageSize** | **Integer**| The total page size requested | [optional] [default to 25] 
-| **pageNumber** | **Integer**| The page number requested | [optional] [default to 1] 
-| **sortBy** | **String**| variable name requested to sort by | [optional] 
-| **expand** | [**List&lt;String&gt;**](String.html)| variable name requested by expand list | [optional] 
-| **nextPage** | **String**| next page token | [optional] 
-| **previousPage** | **String**| Previous page token | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Integration**](Integration.html)
+[**Integration**](Integration.md)
 
 <a name="patchIntegrationsAction"></a>
 
 # **patchIntegrationsAction**
 
-
-
-> [Action](Action.html) patchIntegrationsAction(actionId, body)
+> [Action](Action.md) patchIntegrationsAction(actionId, body)
 
 Patch an Action
 
+Wraps PATCH /api/v2/integrations/actions/{actionId}
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/integrations/actions/{actionId}  
-
-Requires ANY permissions: 
-
-* integrations:action:edit
+- integrations:action:edit
 
 ### Example
 
@@ -3024,35 +2801,30 @@ try {
 
 ### Parameters
 
+| Name         | Type                                          | Description                     | Notes |
+| ------------ | --------------------------------------------- | ------------------------------- | ----- |
+| **actionId** | **String**                                    | actionId                        |
+| **body**     | [**UpdateActionInput**](UpdateActionInput.md) | Input used to patch the Action. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
-| **body** | [**UpdateActionInput**](UpdateActionInput.html)| Input used to patch the Action. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Action**](Action.html)
+[**Action**](Action.md)
 
 <a name="patchIntegrationsActionDraft"></a>
 
 # **patchIntegrationsActionDraft**
 
-
-
-> [Action](Action.html) patchIntegrationsActionDraft(actionId, body)
+> [Action](Action.md) patchIntegrationsActionDraft(actionId, body)
 
 Update an existing Draft
 
+Wraps PATCH /api/v2/integrations/actions/{actionId}/draft
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/integrations/actions/{actionId}/draft  
-
-Requires ANY permissions: 
-
-* integrations:action:edit
+- integrations:action:edit
 
 ### Example
 
@@ -3089,35 +2861,30 @@ try {
 
 ### Parameters
 
+| Name         | Type                                        | Description                           | Notes |
+| ------------ | ------------------------------------------- | ------------------------------------- | ----- |
+| **actionId** | **String**                                  | actionId                              |
+| **body**     | [**UpdateDraftInput**](UpdateDraftInput.md) | Input used to patch the Action Draft. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
-| **body** | [**UpdateDraftInput**](UpdateDraftInput.html)| Input used to patch the Action Draft. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Action**](Action.html)
+[**Action**](Action.md)
 
 <a name="postIntegrations"></a>
 
 # **postIntegrations**
 
-
-
-> [Integration](Integration.html) postIntegrations(body)
+> [Integration](Integration.md) postIntegrations(body)
 
 Create an integration.
 
+Wraps POST /api/v2/integrations
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/integrations  
-
-Requires ANY permissions: 
-
-* integrations:integration:add
+- integrations:integration:add
 
 ### Example
 
@@ -3153,34 +2920,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                        | Description | Notes      |
+| -------- | ----------------------------------------------------------- | ----------- | ---------- |
+| **body** | [**CreateIntegrationRequest**](CreateIntegrationRequest.md) | Integration | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**CreateIntegrationRequest**](CreateIntegrationRequest.html)| Integration | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Integration**](Integration.html)
+[**Integration**](Integration.md)
 
 <a name="postIntegrationsActionDraft"></a>
 
 # **postIntegrationsActionDraft**
 
-
-
-> [Action](Action.html) postIntegrationsActionDraft(actionId)
+> [Action](Action.md) postIntegrationsActionDraft(actionId)
 
 Create a new Draft from existing Action
 
+Wraps POST /api/v2/integrations/actions/{actionId}/draft
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/integrations/actions/{actionId}/draft  
-
-Requires ANY permissions: 
-
-* integrations:action:edit
+- integrations:action:edit
 
 ### Example
 
@@ -3216,34 +2978,29 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description | Notes |
+| ------------ | ---------- | ----------- | ----- |
+| **actionId** | **String** | actionId    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Action**](Action.html)
+[**Action**](Action.md)
 
 <a name="postIntegrationsActionDraftPublish"></a>
 
 # **postIntegrationsActionDraftPublish**
 
-
-
-> [Action](Action.html) postIntegrationsActionDraftPublish(actionId, body)
+> [Action](Action.md) postIntegrationsActionDraftPublish(actionId, body)
 
 Publish a Draft and make it the active Action configuration
 
+Wraps POST /api/v2/integrations/actions/{actionId}/draft/publish
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/integrations/actions/{actionId}/draft/publish  
-
-Requires ANY permissions: 
-
-* integrations:action:edit
+- integrations:action:edit
 
 ### Example
 
@@ -3280,35 +3037,30 @@ try {
 
 ### Parameters
 
+| Name         | Type                                          | Description                     | Notes |
+| ------------ | --------------------------------------------- | ------------------------------- | ----- |
+| **actionId** | **String**                                    | actionId                        |
+| **body**     | [**PublishDraftInput**](PublishDraftInput.md) | Input used to patch the Action. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
-| **body** | [**PublishDraftInput**](PublishDraftInput.html)| Input used to patch the Action. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Action**](Action.html)
+[**Action**](Action.md)
 
 <a name="postIntegrationsActionDraftTest"></a>
 
 # **postIntegrationsActionDraftTest**
 
-
-
-> [TestExecutionResult](TestExecutionResult.html) postIntegrationsActionDraftTest(actionId, body)
+> [TestExecutionResult](TestExecutionResult.md) postIntegrationsActionDraftTest(actionId, body)
 
 Test the execution of a draft. Responses will show execution steps broken out with intermediate results to help in debugging.
 
+Wraps POST /api/v2/integrations/actions/{actionId}/draft/test
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/integrations/actions/{actionId}/draft/test  
-
-Requires ANY permissions: 
-
-* integrations:action:execute
+- integrations:action:execute
 
 ### Example
 
@@ -3345,36 +3097,31 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                                       | Notes |
+| ------------ | ---------- | ------------------------------------------------- | ----- |
+| **actionId** | **String** | actionId                                          |
+| **body**     | **Object** | Map of parameters used for variable substitution. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
-| **body** | **Object**| Map of parameters used for variable substitution. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TestExecutionResult**](TestExecutionResult.html)
+[**TestExecutionResult**](TestExecutionResult.md)
 
 <a name="postIntegrationsActionExecute"></a>
 
 # **postIntegrationsActionExecute**
 
-
-
 > Object postIntegrationsActionExecute(actionId, body)
 
-Execute Action and return response from 3rd party.  Responses will follow the schemas defined on the Action for success and error.
+Execute Action and return response from 3rd party. Responses will follow the schemas defined on the Action for success and error.
 
+Wraps POST /api/v2/integrations/actions/{actionId}/execute
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/integrations/actions/{actionId}/execute  
-
-Requires ANY permissions: 
-
-* integrations:action:execute
-* bridge:actions:execute
+- integrations:action:execute
+- bridge:actions:execute
 
 ### Example
 
@@ -3411,13 +3158,12 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                                       | Notes |
+| ------------ | ---------- | ------------------------------------------------- | ----- |
+| **actionId** | **String** | actionId                                          |
+| **body**     | **Object** | Map of parameters used for variable substitution. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
-| **body** | **Object**| Map of parameters used for variable substitution. | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -3427,20 +3173,16 @@ try {
 
 # **postIntegrationsActionTest**
 
-
-
-> [TestExecutionResult](TestExecutionResult.html) postIntegrationsActionTest(actionId, body)
+> [TestExecutionResult](TestExecutionResult.md) postIntegrationsActionTest(actionId, body)
 
 Test the execution of an action. Responses will show execution steps broken out with intermediate results to help in debugging.
 
+Wraps POST /api/v2/integrations/actions/{actionId}/test
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/integrations/actions/{actionId}/test  
-
-Requires ANY permissions: 
-
-* integrations:action:execute
-* bridge:actions:execute
+- integrations:action:execute
+- bridge:actions:execute
 
 ### Example
 
@@ -3477,35 +3219,30 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                                       | Notes |
+| ------------ | ---------- | ------------------------------------------------- | ----- |
+| **actionId** | **String** | actionId                                          |
+| **body**     | **Object** | Map of parameters used for variable substitution. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionId** | **String**| actionId | 
-| **body** | **Object**| Map of parameters used for variable substitution. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TestExecutionResult**](TestExecutionResult.html)
+[**TestExecutionResult**](TestExecutionResult.md)
 
 <a name="postIntegrationsActions"></a>
 
 # **postIntegrationsActions**
 
-
-
-> [Action](Action.html) postIntegrationsActions(body)
+> [Action](Action.md) postIntegrationsActions(body)
 
 Create a new Action
 
+Wraps POST /api/v2/integrations/actions
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/integrations/actions  
-
-Requires ANY permissions: 
-
-* integrations:action:add
+- integrations:action:add
 
 ### Example
 
@@ -3541,34 +3278,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                      | Description                  | Notes |
+| -------- | ----------------------------------------- | ---------------------------- | ----- |
+| **body** | [**PostActionInput**](PostActionInput.md) | Input used to create Action. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**PostActionInput**](PostActionInput.html)| Input used to create Action. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Action**](Action.html)
+[**Action**](Action.md)
 
 <a name="postIntegrationsActionsDrafts"></a>
 
 # **postIntegrationsActionsDrafts**
 
-
-
-> [Action](Action.html) postIntegrationsActionsDrafts(body)
+> [Action](Action.md) postIntegrationsActionsDrafts(body)
 
 Create a new Draft
 
+Wraps POST /api/v2/integrations/actions/drafts
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/integrations/actions/drafts  
-
-Requires ANY permissions: 
-
-* integrations:action:add
+- integrations:action:add
 
 ### Example
 
@@ -3604,33 +3336,27 @@ try {
 
 ### Parameters
 
+| Name     | Type                                      | Description                        | Notes |
+| -------- | ----------------------------------------- | ---------------------------------- | ----- |
+| **body** | [**PostActionInput**](PostActionInput.md) | Input used to create Action Draft. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**PostActionInput**](PostActionInput.html)| Input used to create Action Draft. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Action**](Action.html)
+[**Action**](Action.md)
 
 <a name="postIntegrationsCredentials"></a>
 
 # **postIntegrationsCredentials**
 
-
-
-> [CredentialInfo](CredentialInfo.html) postIntegrationsCredentials(body)
+> [CredentialInfo](CredentialInfo.md) postIntegrationsCredentials(body)
 
 Create a set of credentials
 
+Wraps POST /api/v2/integrations/credentials
 
-
-Wraps POST /api/v2/integrations/credentials  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -3666,33 +3392,27 @@ try {
 
 ### Parameters
 
+| Name     | Type                            | Description | Notes      |
+| -------- | ------------------------------- | ----------- | ---------- |
+| **body** | [**Credential**](Credential.md) | Credential  | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**Credential**](Credential.html)| Credential | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CredentialInfo**](CredentialInfo.html)
+[**CredentialInfo**](CredentialInfo.md)
 
 <a name="postIntegrationsWorkforcemanagementVendorconnection"></a>
 
 # **postIntegrationsWorkforcemanagementVendorconnection**
 
-
-
-> [UserActionCategoryEntityListing](UserActionCategoryEntityListing.html) postIntegrationsWorkforcemanagementVendorconnection(body)
+> [UserActionCategoryEntityListing](UserActionCategoryEntityListing.md) postIntegrationsWorkforcemanagementVendorconnection(body)
 
 Add a vendor connection
 
+Wraps POST /api/v2/integrations/workforcemanagement/vendorconnection
 
-
-Wraps POST /api/v2/integrations/workforcemanagement/vendorconnection  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -3716,7 +3436,7 @@ ApiClient apiClient = ApiClient.Builder.standard()
 Configuration.setDefaultApiClient(apiClient);
 
 IntegrationsApi apiInstance = new IntegrationsApi();
-VendorConnectionRequest body = new VendorConnectionRequest(); // VendorConnectionRequest | 
+VendorConnectionRequest body = new VendorConnectionRequest(); // VendorConnectionRequest |
 try {
     UserActionCategoryEntityListing result = apiInstance.postIntegrationsWorkforcemanagementVendorconnection(body);
     System.out.println(result);
@@ -3728,34 +3448,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                      | Description | Notes      |
+| -------- | --------------------------------------------------------- | ----------- | ---------- |
+| **body** | [**VendorConnectionRequest**](VendorConnectionRequest.md) |             | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**VendorConnectionRequest**](VendorConnectionRequest.html)|  | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserActionCategoryEntityListing**](UserActionCategoryEntityListing.html)
+[**UserActionCategoryEntityListing**](UserActionCategoryEntityListing.md)
 
 <a name="putIntegrationConfigCurrent"></a>
 
 # **putIntegrationConfigCurrent**
 
-
-
-> [IntegrationConfiguration](IntegrationConfiguration.html) putIntegrationConfigCurrent(integrationId, body)
+> [IntegrationConfiguration](IntegrationConfiguration.md) putIntegrationConfigCurrent(integrationId, body)
 
 Update integration configuration.
 
+Wraps PUT /api/v2/integrations/{integrationId}/config/current
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/integrations/{integrationId}/config/current  
-
-Requires ANY permissions: 
-
-* integrations:integration:edit
+- integrations:integration:edit
 
 ### Example
 
@@ -3792,35 +3507,30 @@ try {
 
 ### Parameters
 
+| Name              | Type                                                        | Description               | Notes      |
+| ----------------- | ----------------------------------------------------------- | ------------------------- | ---------- |
+| **integrationId** | **String**                                                  | Integration Id            |
+| **body**          | [**IntegrationConfiguration**](IntegrationConfiguration.md) | Integration Configuration | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **integrationId** | **String**| Integration Id | 
-| **body** | [**IntegrationConfiguration**](IntegrationConfiguration.html)| Integration Configuration | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**IntegrationConfiguration**](IntegrationConfiguration.html)
+[**IntegrationConfiguration**](IntegrationConfiguration.md)
 
 <a name="putIntegrationsBotconnectorIntegrationIdBots"></a>
 
 # **putIntegrationsBotconnectorIntegrationIdBots**
 
-
-
 > Void putIntegrationsBotconnectorIntegrationIdBots(integrationId, botList)
 
 Set a list of botConnector bots plus versions for this integration
 
+Wraps PUT /api/v2/integrations/botconnector/{integrationId}/bots
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/integrations/botconnector/{integrationId}/bots  
-
-Requires ANY permissions: 
-
-* integration:botconnector:edit
+- integration:botconnector:edit
 
 ### Example
 
@@ -3845,7 +3555,7 @@ Configuration.setDefaultApiClient(apiClient);
 
 IntegrationsApi apiInstance = new IntegrationsApi();
 String integrationId = "integrationId_example"; // String | The integration ID for this group of bots
-BotList botList = new BotList(); // BotList | 
+BotList botList = new BotList(); // BotList |
 try {
     apiInstance.putIntegrationsBotconnectorIntegrationIdBots(integrationId, botList);
 } catch (ApiException e) {
@@ -3856,13 +3566,12 @@ try {
 
 ### Parameters
 
+| Name              | Type                      | Description                               | Notes |
+| ----------------- | ------------------------- | ----------------------------------------- | ----- |
+| **integrationId** | **String**                | The integration ID for this group of bots |
+| **botList**       | [**BotList**](BotList.md) |                                           |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **integrationId** | **String**| The integration ID for this group of bots | 
-| **botList** | [**BotList**](BotList.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -3872,18 +3581,13 @@ null (empty response body)
 
 # **putIntegrationsCredential**
 
-
-
-> [CredentialInfo](CredentialInfo.html) putIntegrationsCredential(credentialId, body)
+> [CredentialInfo](CredentialInfo.md) putIntegrationsCredential(credentialId, body)
 
 Update a set of credentials
 
+Wraps PUT /api/v2/integrations/credentials/{credentialId}
 
-
-Wraps PUT /api/v2/integrations/credentials/{credentialId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -3920,35 +3624,30 @@ try {
 
 ### Parameters
 
+| Name             | Type                            | Description   | Notes      |
+| ---------------- | ------------------------------- | ------------- | ---------- |
+| **credentialId** | **String**                      | Credential ID |
+| **body**         | [**Credential**](Credential.md) | Credential    | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **credentialId** | **String**| Credential ID | 
-| **body** | [**Credential**](Credential.html)| Credential | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CredentialInfo**](CredentialInfo.html)
+[**CredentialInfo**](CredentialInfo.md)
 
 <a name="putIntegrationsSpeechTtsSettings"></a>
 
 # **putIntegrationsSpeechTtsSettings**
 
-
-
-> [TtsSettings](TtsSettings.html) putIntegrationsSpeechTtsSettings(body)
+> [TtsSettings](TtsSettings.md) putIntegrationsSpeechTtsSettings(body)
 
 Update TTS settings for an org
 
+Wraps PUT /api/v2/integrations/speech/tts/settings
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/integrations/speech/tts/settings  
-
-Requires ANY permissions: 
-
-* integrations:integration:edit
+- integrations:integration:edit
 
 ### Example
 
@@ -3984,14 +3683,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                              | Description         | Notes |
+| -------- | --------------------------------- | ------------------- | ----- |
+| **body** | [**TtsSettings**](TtsSettings.md) | Updated TtsSettings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**TtsSettings**](TtsSettings.html)| Updated TtsSettings | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TtsSettings**](TtsSettings.html)
-
+[**TtsSettings**](TtsSettings.md)

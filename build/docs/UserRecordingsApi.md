@@ -1,36 +1,33 @@
 ---
 title: UserRecordingsApi
 ---
+
 ## UserRecordingsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteUserrecording**](UserRecordingsApi.html#deleteUserrecording) | Delete a user recording. |
-| [**getUserrecording**](UserRecordingsApi.html#getUserrecording) | Get a user recording. |
-| [**getUserrecordingMedia**](UserRecordingsApi.html#getUserrecordingMedia) | Download a user recording. |
-| [**getUserrecordings**](UserRecordingsApi.html#getUserrecordings) | Get a list of user recordings. |
-| [**getUserrecordingsSummary**](UserRecordingsApi.html#getUserrecordingsSummary) | Get user recording summary |
-| [**putUserrecording**](UserRecordingsApi.html#putUserrecording) | Update a user recording. |
+| Method                                                                        | Description                    |
+| ----------------------------------------------------------------------------- | ------------------------------ |
+| [**deleteUserrecording**](UserRecordingsApi.md#deleteUserrecording)           | Delete a user recording.       |
+| [**getUserrecording**](UserRecordingsApi.md#getUserrecording)                 | Get a user recording.          |
+| [**getUserrecordingMedia**](UserRecordingsApi.md#getUserrecordingMedia)       | Download a user recording.     |
+| [**getUserrecordings**](UserRecordingsApi.md#getUserrecordings)               | Get a list of user recordings. |
+| [**getUserrecordingsSummary**](UserRecordingsApi.md#getUserrecordingsSummary) | Get user recording summary     |
+| [**putUserrecording**](UserRecordingsApi.md#putUserrecording)                 | Update a user recording.       |
+
 {: class="table-striped"}
 
 <a name="deleteUserrecording"></a>
 
 # **deleteUserrecording**
 
-
-
 > Void deleteUserrecording(recordingId)
 
 Delete a user recording.
 
+Wraps DELETE /api/v2/userrecordings/{recordingId}
 
-
-Wraps DELETE /api/v2/userrecordings/{recordingId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -65,12 +62,11 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description       | Notes |
+| --------------- | ---------- | ----------------- | ----- |
+| **recordingId** | **String** | User Recording ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **recordingId** | **String**| User Recording ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -80,18 +76,13 @@ null (empty response body)
 
 # **getUserrecording**
 
-
-
-> [UserRecording](UserRecording.html) getUserrecording(recordingId, expand)
+> [UserRecording](UserRecording.md) getUserrecording(recordingId, expand)
 
 Get a user recording.
 
+Wraps GET /api/v2/userrecordings/{recordingId}
 
-
-Wraps GET /api/v2/userrecordings/{recordingId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -128,34 +119,28 @@ try {
 
 ### Parameters
 
+| Name            | Type                                | Description                      | Notes                                    |
+| --------------- | ----------------------------------- | -------------------------------- | ---------------------------------------- |
+| **recordingId** | **String**                          | User Recording ID                |
+| **expand**      | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand. | [optional]<br />**Values**: conversation |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **recordingId** | **String**| User Recording ID | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand. | [optional]<br />**Values**: conversation 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserRecording**](UserRecording.html)
+[**UserRecording**](UserRecording.md)
 
 <a name="getUserrecordingMedia"></a>
 
 # **getUserrecordingMedia**
 
-
-
-> [DownloadResponse](DownloadResponse.html) getUserrecordingMedia(recordingId, formatId)
+> [DownloadResponse](DownloadResponse.md) getUserrecordingMedia(recordingId, formatId)
 
 Download a user recording.
 
+Wraps GET /api/v2/userrecordings/{recordingId}/media
 
-
-Wraps GET /api/v2/userrecordings/{recordingId}/media  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -192,34 +177,28 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description               | Notes                                                                                              |
+| --------------- | ---------- | ------------------------- | -------------------------------------------------------------------------------------------------- |
+| **recordingId** | **String** | User Recording ID         |
+| **formatId**    | **String** | The desired media format. | [optional] [default to WEBM]<br />**Values**: WAV, WEBM, WAV_ULAW, OGG_VORBIS, OGG_OPUS, MP3, NONE |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **recordingId** | **String**| User Recording ID | 
-| **formatId** | **String**| The desired media format. | [optional] [default to WEBM]<br />**Values**: WAV, WEBM, WAV_ULAW, OGG_VORBIS, OGG_OPUS, MP3, NONE 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DownloadResponse**](DownloadResponse.html)
+[**DownloadResponse**](DownloadResponse.md)
 
 <a name="getUserrecordings"></a>
 
 # **getUserrecordings**
 
-
-
-> [UserRecordingEntityListing](UserRecordingEntityListing.html) getUserrecordings(pageSize, pageNumber, expand)
+> [UserRecordingEntityListing](UserRecordingEntityListing.md) getUserrecordings(pageSize, pageNumber, expand)
 
 Get a list of user recordings.
 
+Wraps GET /api/v2/userrecordings
 
-
-Wraps GET /api/v2/userrecordings  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -257,35 +236,29 @@ try {
 
 ### Parameters
 
+| Name           | Type                                | Description                      | Notes                                    |
+| -------------- | ----------------------------------- | -------------------------------- | ---------------------------------------- |
+| **pageSize**   | **Integer**                         | Page size                        | [optional] [default to 25]               |
+| **pageNumber** | **Integer**                         | Page number                      | [optional] [default to 1]                |
+| **expand**     | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand. | [optional]<br />**Values**: conversation |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand. | [optional]<br />**Values**: conversation 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserRecordingEntityListing**](UserRecordingEntityListing.html)
+[**UserRecordingEntityListing**](UserRecordingEntityListing.md)
 
 <a name="getUserrecordingsSummary"></a>
 
 # **getUserrecordingsSummary**
 
-
-
-> [FaxSummary](FaxSummary.html) getUserrecordingsSummary()
+> [FaxSummary](FaxSummary.md) getUserrecordingsSummary()
 
 Get user recording summary
 
+Wraps GET /api/v2/userrecordings/summary
 
-
-Wraps GET /api/v2/userrecordings/summary  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -322,28 +295,21 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**FaxSummary**](FaxSummary.html)
+[**FaxSummary**](FaxSummary.md)
 
 <a name="putUserrecording"></a>
 
 # **putUserrecording**
 
-
-
-> [UserRecording](UserRecording.html) putUserrecording(recordingId, body, expand)
+> [UserRecording](UserRecording.md) putUserrecording(recordingId, body, expand)
 
 Update a user recording.
 
+Wraps PUT /api/v2/userrecordings/{recordingId}
 
-
-Wraps PUT /api/v2/userrecordings/{recordingId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -381,16 +347,14 @@ try {
 
 ### Parameters
 
+| Name            | Type                                  | Description                      | Notes                                    |
+| --------------- | ------------------------------------- | -------------------------------- | ---------------------------------------- |
+| **recordingId** | **String**                            | User Recording ID                |
+| **body**        | [**UserRecording**](UserRecording.md) | UserRecording                    |
+| **expand**      | [**List&lt;String&gt;**](String.md)   | Which fields, if any, to expand. | [optional]<br />**Values**: conversation |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **recordingId** | **String**| User Recording ID | 
-| **body** | [**UserRecording**](UserRecording.html)| UserRecording | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand. | [optional]<br />**Values**: conversation 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserRecording**](UserRecording.html)
-
+[**UserRecording**](UserRecording.md)

@@ -1,20 +1,18 @@
 ---
 title: ValidationLimits
 ---
-## ValidationLimits
 
+## ValidationLimits
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **minLength** | <!----><!---->[**MinLength**](MinLength.html)<!----> |  |  [optional] |
-| **maxLength** | <!----><!---->[**MaxLength**](MaxLength.html)<!----> |  |  [optional] |
-| **minItems** | <!----><!---->[**MinLength**](MinLength.html)<!----> |  |  [optional] |
-| **maxItems** | <!----><!---->[**MaxLength**](MaxLength.html)<!----> |  |  [optional] |
-| **minimum** | <!----><!---->[**MinLength**](MinLength.html)<!----> |  |  [optional] |
-| **maximum** | <!----><!---->[**MaxLength**](MaxLength.html)<!----> |  |  [optional] |
+| Name          | Type                                               | Description | Notes      |
+| ------------- | -------------------------------------------------- | ----------- | ---------- |
+| **minLength** | <!----><!---->[**MinLength**](MinLength.md)<!----> |             | [optional] |
+| **maxLength** | <!----><!---->[**MaxLength**](MaxLength.md)<!----> |             | [optional] |
+| **minItems**  | <!----><!---->[**MinLength**](MinLength.md)<!----> |             | [optional] |
+| **maxItems**  | <!----><!---->[**MaxLength**](MaxLength.md)<!----> |             | [optional] |
+| **minimum**   | <!----><!---->[**MinLength**](MinLength.md)<!----> |             | [optional] |
+| **maximum**   | <!----><!---->[**MaxLength**](MaxLength.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

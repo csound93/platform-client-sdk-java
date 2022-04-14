@@ -1,65 +1,63 @@
 ---
 title: IdentityProviderApi
 ---
+
 ## IdentityProviderApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteIdentityprovidersAdfs**](IdentityProviderApi.html#deleteIdentityprovidersAdfs) | Delete ADFS Identity Provider |
-| [**deleteIdentityprovidersCic**](IdentityProviderApi.html#deleteIdentityprovidersCic) | Delete Customer Interaction Center (CIC) Identity Provider |
-| [**deleteIdentityprovidersGeneric**](IdentityProviderApi.html#deleteIdentityprovidersGeneric) | Delete Generic SAML Identity Provider |
-| [**deleteIdentityprovidersGsuite**](IdentityProviderApi.html#deleteIdentityprovidersGsuite) | Delete G Suite Identity Provider |
-| [**deleteIdentityprovidersIdentitynow**](IdentityProviderApi.html#deleteIdentityprovidersIdentitynow) | Delete IdentityNow Provider |
-| [**deleteIdentityprovidersOkta**](IdentityProviderApi.html#deleteIdentityprovidersOkta) | Delete Okta Identity Provider |
-| [**deleteIdentityprovidersOnelogin**](IdentityProviderApi.html#deleteIdentityprovidersOnelogin) | Delete OneLogin Identity Provider |
-| [**deleteIdentityprovidersPing**](IdentityProviderApi.html#deleteIdentityprovidersPing) | Delete Ping Identity Provider |
-| [**deleteIdentityprovidersPurecloud**](IdentityProviderApi.html#deleteIdentityprovidersPurecloud) | Delete PureCloud Identity Provider |
-| [**deleteIdentityprovidersPureengage**](IdentityProviderApi.html#deleteIdentityprovidersPureengage) | Delete PureEngage Identity Provider |
-| [**deleteIdentityprovidersSalesforce**](IdentityProviderApi.html#deleteIdentityprovidersSalesforce) | Delete Salesforce Identity Provider |
-| [**getIdentityproviders**](IdentityProviderApi.html#getIdentityproviders) | The list of identity providers |
-| [**getIdentityprovidersAdfs**](IdentityProviderApi.html#getIdentityprovidersAdfs) | Get ADFS Identity Provider |
-| [**getIdentityprovidersCic**](IdentityProviderApi.html#getIdentityprovidersCic) | Get Customer Interaction Center (CIC) Identity Provider |
-| [**getIdentityprovidersGeneric**](IdentityProviderApi.html#getIdentityprovidersGeneric) | Get Generic SAML Identity Provider |
-| [**getIdentityprovidersGsuite**](IdentityProviderApi.html#getIdentityprovidersGsuite) | Get G Suite Identity Provider |
-| [**getIdentityprovidersIdentitynow**](IdentityProviderApi.html#getIdentityprovidersIdentitynow) | Get IdentityNow Provider |
-| [**getIdentityprovidersOkta**](IdentityProviderApi.html#getIdentityprovidersOkta) | Get Okta Identity Provider |
-| [**getIdentityprovidersOnelogin**](IdentityProviderApi.html#getIdentityprovidersOnelogin) | Get OneLogin Identity Provider |
-| [**getIdentityprovidersPing**](IdentityProviderApi.html#getIdentityprovidersPing) | Get Ping Identity Provider |
-| [**getIdentityprovidersPurecloud**](IdentityProviderApi.html#getIdentityprovidersPurecloud) | Get PureCloud Identity Provider |
-| [**getIdentityprovidersPureengage**](IdentityProviderApi.html#getIdentityprovidersPureengage) | Get PureEngage Identity Provider |
-| [**getIdentityprovidersSalesforce**](IdentityProviderApi.html#getIdentityprovidersSalesforce) | Get Salesforce Identity Provider |
-| [**putIdentityprovidersAdfs**](IdentityProviderApi.html#putIdentityprovidersAdfs) | Update/Create ADFS Identity Provider |
-| [**putIdentityprovidersCic**](IdentityProviderApi.html#putIdentityprovidersCic) | Update/Create Customer Interaction Center (CIC) Identity Provider |
-| [**putIdentityprovidersGeneric**](IdentityProviderApi.html#putIdentityprovidersGeneric) | Update/Create Generic SAML Identity Provider |
-| [**putIdentityprovidersGsuite**](IdentityProviderApi.html#putIdentityprovidersGsuite) | Update/Create G Suite Identity Provider |
-| [**putIdentityprovidersIdentitynow**](IdentityProviderApi.html#putIdentityprovidersIdentitynow) | Update/Create IdentityNow Provider |
-| [**putIdentityprovidersOkta**](IdentityProviderApi.html#putIdentityprovidersOkta) | Update/Create Okta Identity Provider |
-| [**putIdentityprovidersOnelogin**](IdentityProviderApi.html#putIdentityprovidersOnelogin) | Update/Create OneLogin Identity Provider |
-| [**putIdentityprovidersPing**](IdentityProviderApi.html#putIdentityprovidersPing) | Update/Create Ping Identity Provider |
-| [**putIdentityprovidersPurecloud**](IdentityProviderApi.html#putIdentityprovidersPurecloud) | Update/Create PureCloud Identity Provider |
-| [**putIdentityprovidersPureengage**](IdentityProviderApi.html#putIdentityprovidersPureengage) | Update/Create PureEngage Identity Provider |
-| [**putIdentityprovidersSalesforce**](IdentityProviderApi.html#putIdentityprovidersSalesforce) | Update/Create Salesforce Identity Provider |
+| Method                                                                                              | Description                                                       |
+| --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| [**deleteIdentityprovidersAdfs**](IdentityProviderApi.md#deleteIdentityprovidersAdfs)               | Delete ADFS Identity Provider                                     |
+| [**deleteIdentityprovidersCic**](IdentityProviderApi.md#deleteIdentityprovidersCic)                 | Delete Customer Interaction Center (CIC) Identity Provider        |
+| [**deleteIdentityprovidersGeneric**](IdentityProviderApi.md#deleteIdentityprovidersGeneric)         | Delete Generic SAML Identity Provider                             |
+| [**deleteIdentityprovidersGsuite**](IdentityProviderApi.md#deleteIdentityprovidersGsuite)           | Delete G Suite Identity Provider                                  |
+| [**deleteIdentityprovidersIdentitynow**](IdentityProviderApi.md#deleteIdentityprovidersIdentitynow) | Delete IdentityNow Provider                                       |
+| [**deleteIdentityprovidersOkta**](IdentityProviderApi.md#deleteIdentityprovidersOkta)               | Delete Okta Identity Provider                                     |
+| [**deleteIdentityprovidersOnelogin**](IdentityProviderApi.md#deleteIdentityprovidersOnelogin)       | Delete OneLogin Identity Provider                                 |
+| [**deleteIdentityprovidersPing**](IdentityProviderApi.md#deleteIdentityprovidersPing)               | Delete Ping Identity Provider                                     |
+| [**deleteIdentityprovidersPurecloud**](IdentityProviderApi.md#deleteIdentityprovidersPurecloud)     | Delete PureCloud Identity Provider                                |
+| [**deleteIdentityprovidersPureengage**](IdentityProviderApi.md#deleteIdentityprovidersPureengage)   | Delete PureEngage Identity Provider                               |
+| [**deleteIdentityprovidersSalesforce**](IdentityProviderApi.md#deleteIdentityprovidersSalesforce)   | Delete Salesforce Identity Provider                               |
+| [**getIdentityproviders**](IdentityProviderApi.md#getIdentityproviders)                             | The list of identity providers                                    |
+| [**getIdentityprovidersAdfs**](IdentityProviderApi.md#getIdentityprovidersAdfs)                     | Get ADFS Identity Provider                                        |
+| [**getIdentityprovidersCic**](IdentityProviderApi.md#getIdentityprovidersCic)                       | Get Customer Interaction Center (CIC) Identity Provider           |
+| [**getIdentityprovidersGeneric**](IdentityProviderApi.md#getIdentityprovidersGeneric)               | Get Generic SAML Identity Provider                                |
+| [**getIdentityprovidersGsuite**](IdentityProviderApi.md#getIdentityprovidersGsuite)                 | Get G Suite Identity Provider                                     |
+| [**getIdentityprovidersIdentitynow**](IdentityProviderApi.md#getIdentityprovidersIdentitynow)       | Get IdentityNow Provider                                          |
+| [**getIdentityprovidersOkta**](IdentityProviderApi.md#getIdentityprovidersOkta)                     | Get Okta Identity Provider                                        |
+| [**getIdentityprovidersOnelogin**](IdentityProviderApi.md#getIdentityprovidersOnelogin)             | Get OneLogin Identity Provider                                    |
+| [**getIdentityprovidersPing**](IdentityProviderApi.md#getIdentityprovidersPing)                     | Get Ping Identity Provider                                        |
+| [**getIdentityprovidersPurecloud**](IdentityProviderApi.md#getIdentityprovidersPurecloud)           | Get PureCloud Identity Provider                                   |
+| [**getIdentityprovidersPureengage**](IdentityProviderApi.md#getIdentityprovidersPureengage)         | Get PureEngage Identity Provider                                  |
+| [**getIdentityprovidersSalesforce**](IdentityProviderApi.md#getIdentityprovidersSalesforce)         | Get Salesforce Identity Provider                                  |
+| [**putIdentityprovidersAdfs**](IdentityProviderApi.md#putIdentityprovidersAdfs)                     | Update/Create ADFS Identity Provider                              |
+| [**putIdentityprovidersCic**](IdentityProviderApi.md#putIdentityprovidersCic)                       | Update/Create Customer Interaction Center (CIC) Identity Provider |
+| [**putIdentityprovidersGeneric**](IdentityProviderApi.md#putIdentityprovidersGeneric)               | Update/Create Generic SAML Identity Provider                      |
+| [**putIdentityprovidersGsuite**](IdentityProviderApi.md#putIdentityprovidersGsuite)                 | Update/Create G Suite Identity Provider                           |
+| [**putIdentityprovidersIdentitynow**](IdentityProviderApi.md#putIdentityprovidersIdentitynow)       | Update/Create IdentityNow Provider                                |
+| [**putIdentityprovidersOkta**](IdentityProviderApi.md#putIdentityprovidersOkta)                     | Update/Create Okta Identity Provider                              |
+| [**putIdentityprovidersOnelogin**](IdentityProviderApi.md#putIdentityprovidersOnelogin)             | Update/Create OneLogin Identity Provider                          |
+| [**putIdentityprovidersPing**](IdentityProviderApi.md#putIdentityprovidersPing)                     | Update/Create Ping Identity Provider                              |
+| [**putIdentityprovidersPurecloud**](IdentityProviderApi.md#putIdentityprovidersPurecloud)           | Update/Create PureCloud Identity Provider                         |
+| [**putIdentityprovidersPureengage**](IdentityProviderApi.md#putIdentityprovidersPureengage)         | Update/Create PureEngage Identity Provider                        |
+| [**putIdentityprovidersSalesforce**](IdentityProviderApi.md#putIdentityprovidersSalesforce)         | Update/Create Salesforce Identity Provider                        |
+
 {: class="table-striped"}
 
 <a name="deleteIdentityprovidersAdfs"></a>
 
 # **deleteIdentityprovidersAdfs**
 
-
-
-> [Empty](Empty.html) deleteIdentityprovidersAdfs()
+> [Empty](Empty.md) deleteIdentityprovidersAdfs()
 
 Delete ADFS Identity Provider
 
+Wraps DELETE /api/v2/identityproviders/adfs
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/identityproviders/adfs  
-
-Requires ANY permissions: 
-
-* sso:provider:delete
+- sso:provider:delete
 
 ### Example
 
@@ -96,29 +94,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="deleteIdentityprovidersCic"></a>
 
 # **deleteIdentityprovidersCic**
 
-
-
-> [Empty](Empty.html) deleteIdentityprovidersCic()
+> [Empty](Empty.md) deleteIdentityprovidersCic()
 
 Delete Customer Interaction Center (CIC) Identity Provider
 
+Wraps DELETE /api/v2/identityproviders/cic
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/identityproviders/cic  
-
-Requires ANY permissions: 
-
-* sso:provider:delete
+- sso:provider:delete
 
 ### Example
 
@@ -155,29 +147,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="deleteIdentityprovidersGeneric"></a>
 
 # **deleteIdentityprovidersGeneric**
 
-
-
-> [Empty](Empty.html) deleteIdentityprovidersGeneric()
+> [Empty](Empty.md) deleteIdentityprovidersGeneric()
 
 Delete Generic SAML Identity Provider
 
+Wraps DELETE /api/v2/identityproviders/generic
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/identityproviders/generic  
-
-Requires ANY permissions: 
-
-* sso:provider:delete
+- sso:provider:delete
 
 ### Example
 
@@ -214,29 +200,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="deleteIdentityprovidersGsuite"></a>
 
 # **deleteIdentityprovidersGsuite**
 
-
-
-> [Empty](Empty.html) deleteIdentityprovidersGsuite()
+> [Empty](Empty.md) deleteIdentityprovidersGsuite()
 
 Delete G Suite Identity Provider
 
+Wraps DELETE /api/v2/identityproviders/gsuite
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/identityproviders/gsuite  
-
-Requires ANY permissions: 
-
-* sso:provider:delete
+- sso:provider:delete
 
 ### Example
 
@@ -273,29 +253,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="deleteIdentityprovidersIdentitynow"></a>
 
 # **deleteIdentityprovidersIdentitynow**
 
-
-
-> [Empty](Empty.html) deleteIdentityprovidersIdentitynow()
+> [Empty](Empty.md) deleteIdentityprovidersIdentitynow()
 
 Delete IdentityNow Provider
 
+Wraps DELETE /api/v2/identityproviders/identitynow
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/identityproviders/identitynow  
-
-Requires ANY permissions: 
-
-* sso:provider:delete
+- sso:provider:delete
 
 ### Example
 
@@ -332,29 +306,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="deleteIdentityprovidersOkta"></a>
 
 # **deleteIdentityprovidersOkta**
 
-
-
-> [Empty](Empty.html) deleteIdentityprovidersOkta()
+> [Empty](Empty.md) deleteIdentityprovidersOkta()
 
 Delete Okta Identity Provider
 
+Wraps DELETE /api/v2/identityproviders/okta
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/identityproviders/okta  
-
-Requires ANY permissions: 
-
-* sso:provider:delete
+- sso:provider:delete
 
 ### Example
 
@@ -391,29 +359,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="deleteIdentityprovidersOnelogin"></a>
 
 # **deleteIdentityprovidersOnelogin**
 
-
-
-> [Empty](Empty.html) deleteIdentityprovidersOnelogin()
+> [Empty](Empty.md) deleteIdentityprovidersOnelogin()
 
 Delete OneLogin Identity Provider
 
+Wraps DELETE /api/v2/identityproviders/onelogin
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/identityproviders/onelogin  
-
-Requires ANY permissions: 
-
-* sso:provider:delete
+- sso:provider:delete
 
 ### Example
 
@@ -450,29 +412,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="deleteIdentityprovidersPing"></a>
 
 # **deleteIdentityprovidersPing**
 
-
-
-> [Empty](Empty.html) deleteIdentityprovidersPing()
+> [Empty](Empty.md) deleteIdentityprovidersPing()
 
 Delete Ping Identity Provider
 
+Wraps DELETE /api/v2/identityproviders/ping
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/identityproviders/ping  
-
-Requires ANY permissions: 
-
-* sso:provider:delete
+- sso:provider:delete
 
 ### Example
 
@@ -509,29 +465,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="deleteIdentityprovidersPurecloud"></a>
 
 # **deleteIdentityprovidersPurecloud**
 
-
-
-> [Empty](Empty.html) deleteIdentityprovidersPurecloud()
+> [Empty](Empty.md) deleteIdentityprovidersPurecloud()
 
 Delete PureCloud Identity Provider
 
+Wraps DELETE /api/v2/identityproviders/purecloud
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/identityproviders/purecloud  
-
-Requires ANY permissions: 
-
-* sso:provider:delete
+- sso:provider:delete
 
 ### Example
 
@@ -568,29 +518,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="deleteIdentityprovidersPureengage"></a>
 
 # **deleteIdentityprovidersPureengage**
 
-
-
-> [Empty](Empty.html) deleteIdentityprovidersPureengage()
+> [Empty](Empty.md) deleteIdentityprovidersPureengage()
 
 Delete PureEngage Identity Provider
 
+Wraps DELETE /api/v2/identityproviders/pureengage
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/identityproviders/pureengage  
-
-Requires ANY permissions: 
-
-* sso:provider:delete
+- sso:provider:delete
 
 ### Example
 
@@ -627,29 +571,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="deleteIdentityprovidersSalesforce"></a>
 
 # **deleteIdentityprovidersSalesforce**
 
-
-
-> [Empty](Empty.html) deleteIdentityprovidersSalesforce()
+> [Empty](Empty.md) deleteIdentityprovidersSalesforce()
 
 Delete Salesforce Identity Provider
 
+Wraps DELETE /api/v2/identityproviders/salesforce
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/identityproviders/salesforce  
-
-Requires ANY permissions: 
-
-* sso:provider:delete
+- sso:provider:delete
 
 ### Example
 
@@ -686,29 +624,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="getIdentityproviders"></a>
 
 # **getIdentityproviders**
 
-
-
-> [OAuthProviderEntityListing](OAuthProviderEntityListing.html) getIdentityproviders()
+> [OAuthProviderEntityListing](OAuthProviderEntityListing.md) getIdentityproviders()
 
 The list of identity providers
 
+Wraps GET /api/v2/identityproviders
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/identityproviders  
-
-Requires ANY permissions: 
-
-* sso:provider:view
+- sso:provider:view
 
 ### Example
 
@@ -745,29 +677,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**OAuthProviderEntityListing**](OAuthProviderEntityListing.html)
+[**OAuthProviderEntityListing**](OAuthProviderEntityListing.md)
 
 <a name="getIdentityprovidersAdfs"></a>
 
 # **getIdentityprovidersAdfs**
 
-
-
-> [ADFS](ADFS.html) getIdentityprovidersAdfs()
+> [ADFS](ADFS.md) getIdentityprovidersAdfs()
 
 Get ADFS Identity Provider
 
+Wraps GET /api/v2/identityproviders/adfs
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/identityproviders/adfs  
-
-Requires ANY permissions: 
-
-* sso:provider:view
+- sso:provider:view
 
 ### Example
 
@@ -804,29 +730,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**ADFS**](ADFS.html)
+[**ADFS**](ADFS.md)
 
 <a name="getIdentityprovidersCic"></a>
 
 # **getIdentityprovidersCic**
 
-
-
-> [CustomerInteractionCenter](CustomerInteractionCenter.html) getIdentityprovidersCic()
+> [CustomerInteractionCenter](CustomerInteractionCenter.md) getIdentityprovidersCic()
 
 Get Customer Interaction Center (CIC) Identity Provider
 
+Wraps GET /api/v2/identityproviders/cic
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/identityproviders/cic  
-
-Requires ANY permissions: 
-
-* sso:provider:view
+- sso:provider:view
 
 ### Example
 
@@ -863,29 +783,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**CustomerInteractionCenter**](CustomerInteractionCenter.html)
+[**CustomerInteractionCenter**](CustomerInteractionCenter.md)
 
 <a name="getIdentityprovidersGeneric"></a>
 
 # **getIdentityprovidersGeneric**
 
-
-
-> [GenericSAML](GenericSAML.html) getIdentityprovidersGeneric()
+> [GenericSAML](GenericSAML.md) getIdentityprovidersGeneric()
 
 Get Generic SAML Identity Provider
 
+Wraps GET /api/v2/identityproviders/generic
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/identityproviders/generic  
-
-Requires ANY permissions: 
-
-* sso:provider:view
+- sso:provider:view
 
 ### Example
 
@@ -922,29 +836,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**GenericSAML**](GenericSAML.html)
+[**GenericSAML**](GenericSAML.md)
 
 <a name="getIdentityprovidersGsuite"></a>
 
 # **getIdentityprovidersGsuite**
 
-
-
-> [GSuite](GSuite.html) getIdentityprovidersGsuite()
+> [GSuite](GSuite.md) getIdentityprovidersGsuite()
 
 Get G Suite Identity Provider
 
+Wraps GET /api/v2/identityproviders/gsuite
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/identityproviders/gsuite  
-
-Requires ANY permissions: 
-
-* sso:provider:view
+- sso:provider:view
 
 ### Example
 
@@ -981,29 +889,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**GSuite**](GSuite.html)
+[**GSuite**](GSuite.md)
 
 <a name="getIdentityprovidersIdentitynow"></a>
 
 # **getIdentityprovidersIdentitynow**
 
-
-
-> [IdentityNow](IdentityNow.html) getIdentityprovidersIdentitynow()
+> [IdentityNow](IdentityNow.md) getIdentityprovidersIdentitynow()
 
 Get IdentityNow Provider
 
+Wraps GET /api/v2/identityproviders/identitynow
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/identityproviders/identitynow  
-
-Requires ANY permissions: 
-
-* sso:provider:view
+- sso:provider:view
 
 ### Example
 
@@ -1040,29 +942,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**IdentityNow**](IdentityNow.html)
+[**IdentityNow**](IdentityNow.md)
 
 <a name="getIdentityprovidersOkta"></a>
 
 # **getIdentityprovidersOkta**
 
-
-
-> [Okta](Okta.html) getIdentityprovidersOkta()
+> [Okta](Okta.md) getIdentityprovidersOkta()
 
 Get Okta Identity Provider
 
+Wraps GET /api/v2/identityproviders/okta
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/identityproviders/okta  
-
-Requires ANY permissions: 
-
-* sso:provider:view
+- sso:provider:view
 
 ### Example
 
@@ -1099,29 +995,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Okta**](Okta.html)
+[**Okta**](Okta.md)
 
 <a name="getIdentityprovidersOnelogin"></a>
 
 # **getIdentityprovidersOnelogin**
 
-
-
-> [OneLogin](OneLogin.html) getIdentityprovidersOnelogin()
+> [OneLogin](OneLogin.md) getIdentityprovidersOnelogin()
 
 Get OneLogin Identity Provider
 
+Wraps GET /api/v2/identityproviders/onelogin
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/identityproviders/onelogin  
-
-Requires ANY permissions: 
-
-* sso:provider:view
+- sso:provider:view
 
 ### Example
 
@@ -1158,29 +1048,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**OneLogin**](OneLogin.html)
+[**OneLogin**](OneLogin.md)
 
 <a name="getIdentityprovidersPing"></a>
 
 # **getIdentityprovidersPing**
 
-
-
-> [PingIdentity](PingIdentity.html) getIdentityprovidersPing()
+> [PingIdentity](PingIdentity.md) getIdentityprovidersPing()
 
 Get Ping Identity Provider
 
+Wraps GET /api/v2/identityproviders/ping
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/identityproviders/ping  
-
-Requires ANY permissions: 
-
-* sso:provider:view
+- sso:provider:view
 
 ### Example
 
@@ -1217,29 +1101,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**PingIdentity**](PingIdentity.html)
+[**PingIdentity**](PingIdentity.md)
 
 <a name="getIdentityprovidersPurecloud"></a>
 
 # **getIdentityprovidersPurecloud**
 
-
-
-> [PureCloud](PureCloud.html) getIdentityprovidersPurecloud()
+> [PureCloud](PureCloud.md) getIdentityprovidersPurecloud()
 
 Get PureCloud Identity Provider
 
+Wraps GET /api/v2/identityproviders/purecloud
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/identityproviders/purecloud  
-
-Requires ANY permissions: 
-
-* sso:provider:view
+- sso:provider:view
 
 ### Example
 
@@ -1276,29 +1154,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**PureCloud**](PureCloud.html)
+[**PureCloud**](PureCloud.md)
 
 <a name="getIdentityprovidersPureengage"></a>
 
 # **getIdentityprovidersPureengage**
 
-
-
-> [PureEngage](PureEngage.html) getIdentityprovidersPureengage()
+> [PureEngage](PureEngage.md) getIdentityprovidersPureengage()
 
 Get PureEngage Identity Provider
 
+Wraps GET /api/v2/identityproviders/pureengage
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/identityproviders/pureengage  
-
-Requires ANY permissions: 
-
-* sso:provider:view
+- sso:provider:view
 
 ### Example
 
@@ -1335,29 +1207,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**PureEngage**](PureEngage.html)
+[**PureEngage**](PureEngage.md)
 
 <a name="getIdentityprovidersSalesforce"></a>
 
 # **getIdentityprovidersSalesforce**
 
-
-
-> [Salesforce](Salesforce.html) getIdentityprovidersSalesforce()
+> [Salesforce](Salesforce.md) getIdentityprovidersSalesforce()
 
 Get Salesforce Identity Provider
 
+Wraps GET /api/v2/identityproviders/salesforce
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/identityproviders/salesforce  
-
-Requires ANY permissions: 
-
-* sso:provider:view
+- sso:provider:view
 
 ### Example
 
@@ -1394,30 +1260,24 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Salesforce**](Salesforce.html)
+[**Salesforce**](Salesforce.md)
 
 <a name="putIdentityprovidersAdfs"></a>
 
 # **putIdentityprovidersAdfs**
 
-
-
-> [OAuthProvider](OAuthProvider.html) putIdentityprovidersAdfs(body)
+> [OAuthProvider](OAuthProvider.md) putIdentityprovidersAdfs(body)
 
 Update/Create ADFS Identity Provider
 
+Wraps PUT /api/v2/identityproviders/adfs
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/identityproviders/adfs  
-
-Requires ANY permissions: 
-
-* sso:provider:add
-* sso:provider:edit
+- sso:provider:add
+- sso:provider:edit
 
 ### Example
 
@@ -1453,35 +1313,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                | Description | Notes |
+| -------- | ------------------- | ----------- | ----- |
+| **body** | [**ADFS**](ADFS.md) | Provider    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ADFS**](ADFS.html)| Provider | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthProvider**](OAuthProvider.html)
+[**OAuthProvider**](OAuthProvider.md)
 
 <a name="putIdentityprovidersCic"></a>
 
 # **putIdentityprovidersCic**
 
-
-
-> [OAuthProvider](OAuthProvider.html) putIdentityprovidersCic(body)
+> [OAuthProvider](OAuthProvider.md) putIdentityprovidersCic(body)
 
 Update/Create Customer Interaction Center (CIC) Identity Provider
 
+Wraps PUT /api/v2/identityproviders/cic
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/identityproviders/cic  
-
-Requires ANY permissions: 
-
-* sso:provider:add
-* sso:provider:edit
+- sso:provider:add
+- sso:provider:edit
 
 ### Example
 
@@ -1517,35 +1372,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                          | Description | Notes |
+| -------- | ------------------------------------------------------------- | ----------- | ----- |
+| **body** | [**CustomerInteractionCenter**](CustomerInteractionCenter.md) | Provider    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**CustomerInteractionCenter**](CustomerInteractionCenter.html)| Provider | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthProvider**](OAuthProvider.html)
+[**OAuthProvider**](OAuthProvider.md)
 
 <a name="putIdentityprovidersGeneric"></a>
 
 # **putIdentityprovidersGeneric**
 
-
-
-> [OAuthProvider](OAuthProvider.html) putIdentityprovidersGeneric(body)
+> [OAuthProvider](OAuthProvider.md) putIdentityprovidersGeneric(body)
 
 Update/Create Generic SAML Identity Provider
 
+Wraps PUT /api/v2/identityproviders/generic
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/identityproviders/generic  
-
-Requires ANY permissions: 
-
-* sso:provider:add
-* sso:provider:edit
+- sso:provider:add
+- sso:provider:edit
 
 ### Example
 
@@ -1581,35 +1431,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                              | Description | Notes |
+| -------- | --------------------------------- | ----------- | ----- |
+| **body** | [**GenericSAML**](GenericSAML.md) | Provider    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**GenericSAML**](GenericSAML.html)| Provider | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthProvider**](OAuthProvider.html)
+[**OAuthProvider**](OAuthProvider.md)
 
 <a name="putIdentityprovidersGsuite"></a>
 
 # **putIdentityprovidersGsuite**
 
-
-
-> [OAuthProvider](OAuthProvider.html) putIdentityprovidersGsuite(body)
+> [OAuthProvider](OAuthProvider.md) putIdentityprovidersGsuite(body)
 
 Update/Create G Suite Identity Provider
 
+Wraps PUT /api/v2/identityproviders/gsuite
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/identityproviders/gsuite  
-
-Requires ANY permissions: 
-
-* sso:provider:add
-* sso:provider:edit
+- sso:provider:add
+- sso:provider:edit
 
 ### Example
 
@@ -1645,35 +1490,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                    | Description | Notes |
+| -------- | ----------------------- | ----------- | ----- |
+| **body** | [**GSuite**](GSuite.md) | Provider    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**GSuite**](GSuite.html)| Provider | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthProvider**](OAuthProvider.html)
+[**OAuthProvider**](OAuthProvider.md)
 
 <a name="putIdentityprovidersIdentitynow"></a>
 
 # **putIdentityprovidersIdentitynow**
 
-
-
-> [IdentityNow](IdentityNow.html) putIdentityprovidersIdentitynow(body)
+> [IdentityNow](IdentityNow.md) putIdentityprovidersIdentitynow(body)
 
 Update/Create IdentityNow Provider
 
+Wraps PUT /api/v2/identityproviders/identitynow
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/identityproviders/identitynow  
-
-Requires ANY permissions: 
-
-* sso:provider:add
-* sso:provider:edit
+- sso:provider:add
+- sso:provider:edit
 
 ### Example
 
@@ -1709,35 +1549,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                              | Description | Notes |
+| -------- | --------------------------------- | ----------- | ----- |
+| **body** | [**IdentityNow**](IdentityNow.md) | Provider    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**IdentityNow**](IdentityNow.html)| Provider | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**IdentityNow**](IdentityNow.html)
+[**IdentityNow**](IdentityNow.md)
 
 <a name="putIdentityprovidersOkta"></a>
 
 # **putIdentityprovidersOkta**
 
-
-
-> [OAuthProvider](OAuthProvider.html) putIdentityprovidersOkta(body)
+> [OAuthProvider](OAuthProvider.md) putIdentityprovidersOkta(body)
 
 Update/Create Okta Identity Provider
 
+Wraps PUT /api/v2/identityproviders/okta
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/identityproviders/okta  
-
-Requires ANY permissions: 
-
-* sso:provider:add
-* sso:provider:edit
+- sso:provider:add
+- sso:provider:edit
 
 ### Example
 
@@ -1773,35 +1608,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                | Description | Notes |
+| -------- | ------------------- | ----------- | ----- |
+| **body** | [**Okta**](Okta.md) | Provider    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**Okta**](Okta.html)| Provider | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthProvider**](OAuthProvider.html)
+[**OAuthProvider**](OAuthProvider.md)
 
 <a name="putIdentityprovidersOnelogin"></a>
 
 # **putIdentityprovidersOnelogin**
 
-
-
-> [OAuthProvider](OAuthProvider.html) putIdentityprovidersOnelogin(body)
+> [OAuthProvider](OAuthProvider.md) putIdentityprovidersOnelogin(body)
 
 Update/Create OneLogin Identity Provider
 
+Wraps PUT /api/v2/identityproviders/onelogin
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/identityproviders/onelogin  
-
-Requires ANY permissions: 
-
-* sso:provider:add
-* sso:provider:edit
+- sso:provider:add
+- sso:provider:edit
 
 ### Example
 
@@ -1837,35 +1667,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                        | Description | Notes |
+| -------- | --------------------------- | ----------- | ----- |
+| **body** | [**OneLogin**](OneLogin.md) | Provider    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**OneLogin**](OneLogin.html)| Provider | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthProvider**](OAuthProvider.html)
+[**OAuthProvider**](OAuthProvider.md)
 
 <a name="putIdentityprovidersPing"></a>
 
 # **putIdentityprovidersPing**
 
-
-
-> [OAuthProvider](OAuthProvider.html) putIdentityprovidersPing(body)
+> [OAuthProvider](OAuthProvider.md) putIdentityprovidersPing(body)
 
 Update/Create Ping Identity Provider
 
+Wraps PUT /api/v2/identityproviders/ping
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/identityproviders/ping  
-
-Requires ANY permissions: 
-
-* sso:provider:add
-* sso:provider:edit
+- sso:provider:add
+- sso:provider:edit
 
 ### Example
 
@@ -1901,35 +1726,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                                | Description | Notes |
+| -------- | ----------------------------------- | ----------- | ----- |
+| **body** | [**PingIdentity**](PingIdentity.md) | Provider    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**PingIdentity**](PingIdentity.html)| Provider | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthProvider**](OAuthProvider.html)
+[**OAuthProvider**](OAuthProvider.md)
 
 <a name="putIdentityprovidersPurecloud"></a>
 
 # **putIdentityprovidersPurecloud**
 
-
-
-> [OAuthProvider](OAuthProvider.html) putIdentityprovidersPurecloud(body)
+> [OAuthProvider](OAuthProvider.md) putIdentityprovidersPurecloud(body)
 
 Update/Create PureCloud Identity Provider
 
+Wraps PUT /api/v2/identityproviders/purecloud
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/identityproviders/purecloud  
-
-Requires ANY permissions: 
-
-* sso:provider:add
-* sso:provider:edit
+- sso:provider:add
+- sso:provider:edit
 
 ### Example
 
@@ -1965,35 +1785,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                          | Description | Notes |
+| -------- | ----------------------------- | ----------- | ----- |
+| **body** | [**PureCloud**](PureCloud.md) | Provider    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**PureCloud**](PureCloud.html)| Provider | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthProvider**](OAuthProvider.html)
+[**OAuthProvider**](OAuthProvider.md)
 
 <a name="putIdentityprovidersPureengage"></a>
 
 # **putIdentityprovidersPureengage**
 
-
-
-> [OAuthProvider](OAuthProvider.html) putIdentityprovidersPureengage(body)
+> [OAuthProvider](OAuthProvider.md) putIdentityprovidersPureengage(body)
 
 Update/Create PureEngage Identity Provider
 
+Wraps PUT /api/v2/identityproviders/pureengage
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/identityproviders/pureengage  
-
-Requires ANY permissions: 
-
-* sso:provider:add
-* sso:provider:edit
+- sso:provider:add
+- sso:provider:edit
 
 ### Example
 
@@ -2029,35 +1844,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                            | Description | Notes |
+| -------- | ------------------------------- | ----------- | ----- |
+| **body** | [**PureEngage**](PureEngage.md) | Provider    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**PureEngage**](PureEngage.html)| Provider | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthProvider**](OAuthProvider.html)
+[**OAuthProvider**](OAuthProvider.md)
 
 <a name="putIdentityprovidersSalesforce"></a>
 
 # **putIdentityprovidersSalesforce**
 
-
-
-> [OAuthProvider](OAuthProvider.html) putIdentityprovidersSalesforce(body)
+> [OAuthProvider](OAuthProvider.md) putIdentityprovidersSalesforce(body)
 
 Update/Create Salesforce Identity Provider
 
+Wraps PUT /api/v2/identityproviders/salesforce
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/identityproviders/salesforce  
-
-Requires ANY permissions: 
-
-* sso:provider:add
-* sso:provider:edit
+- sso:provider:add
+- sso:provider:edit
 
 ### Example
 
@@ -2093,14 +1903,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                            | Description | Notes |
+| -------- | ------------------------------- | ----------- | ----- |
+| **body** | [**Salesforce**](Salesforce.md) | Provider    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**Salesforce**](Salesforce.html)| Provider | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthProvider**](OAuthProvider.html)
-
+[**OAuthProvider**](OAuthProvider.md)

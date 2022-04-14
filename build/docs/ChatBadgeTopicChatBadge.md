@@ -1,17 +1,15 @@
 ---
 title: ChatBadgeTopicChatBadge
 ---
-## ChatBadgeTopicChatBadge
 
+## ChatBadgeTopicChatBadge
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **entity** | <!----><!---->[**ChatBadgeTopicBadgeEntity**](ChatBadgeTopicBadgeEntity.html)<!----> |  |  [optional] |
-| **unreadCount** | <!----><!---->**Integer**<!----> |  |  [optional] |
-| **lastUnreadNotificationDate** | <!----><!---->[**Date**](Date.html)<!----> |  |  [optional] |
+| Name                           | Type                                                                               | Description | Notes      |
+| ------------------------------ | ---------------------------------------------------------------------------------- | ----------- | ---------- |
+| **entity**                     | <!----><!---->[**ChatBadgeTopicBadgeEntity**](ChatBadgeTopicBadgeEntity.md)<!----> |             | [optional] |
+| **unreadCount**                | <!----><!---->**Integer**<!---->                                                   |             | [optional] |
+| **lastUnreadNotificationDate** | <!----><!---->[**Date**](Date.md)<!---->                                           |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

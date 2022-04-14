@@ -1,35 +1,33 @@
 ---
 title: TokensApi
 ---
+
 ## TokensApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteToken**](TokensApi.html#deleteToken) | Delete all auth tokens for the specified user. |
-| [**deleteTokensMe**](TokensApi.html#deleteTokensMe) | Delete auth token used to make the request. |
-| [**getTokensMe**](TokensApi.html#getTokensMe) | Fetch information about the current token |
-| [**headTokensMe**](TokensApi.html#headTokensMe) | Verify user token |
+| Method                                            | Description                                    |
+| ------------------------------------------------- | ---------------------------------------------- |
+| [**deleteToken**](TokensApi.md#deleteToken)       | Delete all auth tokens for the specified user. |
+| [**deleteTokensMe**](TokensApi.md#deleteTokensMe) | Delete auth token used to make the request.    |
+| [**getTokensMe**](TokensApi.md#getTokensMe)       | Fetch information about the current token      |
+| [**headTokensMe**](TokensApi.md#headTokensMe)     | Verify user token                              |
+
 {: class="table-striped"}
 
 <a name="deleteToken"></a>
 
 # **deleteToken**
 
-
-
 > Void deleteToken(userId)
 
 Delete all auth tokens for the specified user.
 
+Wraps DELETE /api/v2/tokens/{userId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/tokens/{userId}  
-
-Requires ANY permissions: 
-
-* oauth:token:delete
+- oauth:token:delete
 
 ### Example
 
@@ -64,12 +62,11 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **userId** | **String** | User ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| User ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -79,18 +76,13 @@ null (empty response body)
 
 # **deleteTokensMe**
 
-
-
 > Void deleteTokensMe()
 
 Delete auth token used to make the request.
 
+Wraps DELETE /api/v2/tokens/me
 
-
-Wraps DELETE /api/v2/tokens/me  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -126,8 +118,6 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
 null (empty response body)
@@ -136,18 +126,13 @@ null (empty response body)
 
 # **getTokensMe**
 
-
-
-> [TokenInfo](TokenInfo.html) getTokensMe()
+> [TokenInfo](TokenInfo.md) getTokensMe()
 
 Fetch information about the current token
 
+Wraps GET /api/v2/tokens/me
 
-
-Wraps GET /api/v2/tokens/me  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -184,28 +169,21 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**TokenInfo**](TokenInfo.html)
+[**TokenInfo**](TokenInfo.md)
 
 <a name="headTokensMe"></a>
 
 # **headTokensMe**
 
-
-
 > Void headTokensMe()
 
 Verify user token
 
+Wraps HEAD /api/v2/tokens/me
 
-
-Wraps HEAD /api/v2/tokens/me  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -241,9 +219,6 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
 null (empty response body)
-

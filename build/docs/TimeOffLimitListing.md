@@ -1,15 +1,13 @@
 ---
 title: TimeOffLimitListing
 ---
-## TimeOffLimitListing
 
+## TimeOffLimitListing
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **entities** | <!----><!---->[**List&lt;TimeOffLimit&gt;**](TimeOffLimit.html)<!----> |  |  [optional] |
+| Name         | Type                                                                 | Description | Notes      |
+| ------------ | -------------------------------------------------------------------- | ----------- | ---------- |
+| **entities** | <!----><!---->[**List&lt;TimeOffLimit&gt;**](TimeOffLimit.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

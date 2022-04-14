@@ -1,16 +1,14 @@
 ---
 title: StatEventCampaignTopicIntervalMetrics
 ---
-## StatEventCampaignTopicIntervalMetrics
 
+## StatEventCampaignTopicIntervalMetrics
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **interval** | <!----><!---->**String**<!----> |  |  [optional] |
-| **metrics** | <!----><!---->[**List&lt;StatEventCampaignTopicMetricStats&gt;**](StatEventCampaignTopicMetricStats.html)<!----> |  |  [optional] |
+| Name         | Type                                                                                                           | Description | Notes      |
+| ------------ | -------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **interval** | <!----><!---->**String**<!---->                                                                                |             | [optional] |
+| **metrics**  | <!----><!---->[**List&lt;StatEventCampaignTopicMetricStats&gt;**](StatEventCampaignTopicMetricStats.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

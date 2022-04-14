@@ -1,21 +1,19 @@
 ---
 title: ChatMediaPolicyConditions
 ---
-## ChatMediaPolicyConditions
 
+## ChatMediaPolicyConditions
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **forUsers** | <!----><!---->[**List&lt;User&gt;**](User.html)<!----> |  |  [optional] |
-| **dateRanges** | <!----><!---->**List&lt;String&gt;**<!----> |  |  [optional] |
-| **forQueues** | <!----><!---->[**List&lt;Queue&gt;**](Queue.html)<!----> |  |  [optional] |
-| **wrapupCodes** | <!----><!---->[**List&lt;WrapupCode&gt;**](WrapupCode.html)<!----> |  |  [optional] |
-| **languages** | <!----><!---->[**List&lt;Language&gt;**](Language.html)<!----> |  |  [optional] |
-| **timeAllowed** | <!----><!---->[**TimeAllowed**](TimeAllowed.html)<!----> |  |  [optional] |
-| **duration** | <!----><!---->[**DurationCondition**](DurationCondition.html)<!----> |  |  [optional] |
+| Name            | Type                                                               | Description | Notes      |
+| --------------- | ------------------------------------------------------------------ | ----------- | ---------- |
+| **forUsers**    | <!----><!---->[**List&lt;User&gt;**](User.md)<!---->               |             | [optional] |
+| **dateRanges**  | <!----><!---->**List&lt;String&gt;**<!---->                        |             | [optional] |
+| **forQueues**   | <!----><!---->[**List&lt;Queue&gt;**](Queue.md)<!---->             |             | [optional] |
+| **wrapupCodes** | <!----><!---->[**List&lt;WrapupCode&gt;**](WrapupCode.md)<!---->   |             | [optional] |
+| **languages**   | <!----><!---->[**List&lt;Language&gt;**](Language.md)<!---->       |             | [optional] |
+| **timeAllowed** | <!----><!---->[**TimeAllowed**](TimeAllowed.md)<!---->             |             | [optional] |
+| **duration**    | <!----><!---->[**DurationCondition**](DurationCondition.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

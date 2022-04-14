@@ -1,17 +1,15 @@
 ---
 title: ConversationScreenShareEventTopicJourneyContext
 ---
-## ConversationScreenShareEventTopicJourneyContext
 
+## ConversationScreenShareEventTopicJourneyContext
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **customer** | <!----><!---->[**ConversationScreenShareEventTopicJourneyCustomer**](ConversationScreenShareEventTopicJourneyCustomer.html)<!----> |  |  [optional] |
-| **customerSession** | <!----><!---->[**ConversationScreenShareEventTopicJourneyCustomerSession**](ConversationScreenShareEventTopicJourneyCustomerSession.html)<!----> |  |  [optional] |
-| **triggeringAction** | <!----><!---->[**ConversationScreenShareEventTopicJourneyAction**](ConversationScreenShareEventTopicJourneyAction.html)<!----> |  |  [optional] |
+| Name                 | Type                                                                                                                                           | Description | Notes      |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **customer**         | <!----><!---->[**ConversationScreenShareEventTopicJourneyCustomer**](ConversationScreenShareEventTopicJourneyCustomer.md)<!---->               |             | [optional] |
+| **customerSession**  | <!----><!---->[**ConversationScreenShareEventTopicJourneyCustomerSession**](ConversationScreenShareEventTopicJourneyCustomerSession.md)<!----> |             | [optional] |
+| **triggeringAction** | <!----><!---->[**ConversationScreenShareEventTopicJourneyAction**](ConversationScreenShareEventTopicJourneyAction.md)<!---->                   |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

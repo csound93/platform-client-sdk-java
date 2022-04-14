@@ -1,24 +1,22 @@
 ---
 title: JourneyWebEventsNotificationOutcomeAchievedMessage
 ---
-## JourneyWebEventsNotificationOutcomeAchievedMessage
 
+## JourneyWebEventsNotificationOutcomeAchievedMessage
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **outcome** | <!----><!---->[**JourneyWebEventsNotificationOutcome**](JourneyWebEventsNotificationOutcome.html)<!----> |  |  [optional] |
-| **browser** | <!----><!---->[**JourneyWebEventsNotificationBrowser**](JourneyWebEventsNotificationBrowser.html)<!----> |  |  [optional] |
-| **visitCreatedDate** | <!----><!---->[**Date**](Date.html)<!----> |  |  [optional] |
-| **ipAddress** | <!----><!---->**String**<!----> |  |  [optional] |
-| **ipOrganization** | <!----><!---->**String**<!----> |  |  [optional] |
-| **userAgentString** | <!----><!---->**String**<!----> |  |  [optional] |
-| **device** | <!----><!---->[**JourneyWebEventsNotificationDevice**](JourneyWebEventsNotificationDevice.html)<!----> |  |  [optional] |
-| **geolocation** | <!----><!---->[**JourneyWebEventsNotificationGeoLocation**](JourneyWebEventsNotificationGeoLocation.html)<!----> |  |  [optional] |
-| **mktCampaign** | <!----><!---->[**JourneyWebEventsNotificationMktCampaign**](JourneyWebEventsNotificationMktCampaign.html)<!----> |  |  [optional] |
-| **visitReferrer** | <!----><!---->[**JourneyWebEventsNotificationReferrer**](JourneyWebEventsNotificationReferrer.html)<!----> |  |  [optional] |
+| Name                 | Type                                                                                                           | Description | Notes      |
+| -------------------- | -------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **outcome**          | <!----><!---->[**JourneyWebEventsNotificationOutcome**](JourneyWebEventsNotificationOutcome.md)<!---->         |             | [optional] |
+| **browser**          | <!----><!---->[**JourneyWebEventsNotificationBrowser**](JourneyWebEventsNotificationBrowser.md)<!---->         |             | [optional] |
+| **visitCreatedDate** | <!----><!---->[**Date**](Date.md)<!---->                                                                       |             | [optional] |
+| **ipAddress**        | <!----><!---->**String**<!---->                                                                                |             | [optional] |
+| **ipOrganization**   | <!----><!---->**String**<!---->                                                                                |             | [optional] |
+| **userAgentString**  | <!----><!---->**String**<!---->                                                                                |             | [optional] |
+| **device**           | <!----><!---->[**JourneyWebEventsNotificationDevice**](JourneyWebEventsNotificationDevice.md)<!---->           |             | [optional] |
+| **geolocation**      | <!----><!---->[**JourneyWebEventsNotificationGeoLocation**](JourneyWebEventsNotificationGeoLocation.md)<!----> |             | [optional] |
+| **mktCampaign**      | <!----><!---->[**JourneyWebEventsNotificationMktCampaign**](JourneyWebEventsNotificationMktCampaign.md)<!----> |             | [optional] |
+| **visitReferrer**    | <!----><!---->[**JourneyWebEventsNotificationReferrer**](JourneyWebEventsNotificationReferrer.md)<!---->       |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

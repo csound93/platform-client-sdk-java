@@ -1,25 +1,23 @@
 ---
 title: StatisticalSummary
 ---
-## StatisticalSummary
 
+## StatisticalSummary
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **max** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
-| **min** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
-| **count** | <!----><!---->**Long**<!----> |  |  [optional] |
-| **countNegative** | <!----><!---->**Long**<!----> |  |  [optional] |
-| **countPositive** | <!----><!---->**Long**<!----> |  |  [optional] |
-| **sum** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
-| **current** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
-| **ratio** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
-| **numerator** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
-| **denominator** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
-| **target** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
+| Name              | Type                                                 | Description | Notes      |
+| ----------------- | ---------------------------------------------------- | ----------- | ---------- |
+| **max**           | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+| **min**           | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+| **count**         | <!----><!---->**Long**<!---->                        |             | [optional] |
+| **countNegative** | <!----><!---->**Long**<!---->                        |             | [optional] |
+| **countPositive** | <!----><!---->**Long**<!---->                        |             | [optional] |
+| **sum**           | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+| **current**       | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+| **ratio**         | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+| **numerator**     | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+| **denominator**   | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+| **target**        | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

@@ -1,39 +1,37 @@
 ---
 title: LocationsApi
 ---
+
 ## LocationsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteLocation**](LocationsApi.html#deleteLocation) | Delete a location |
-| [**getLocation**](LocationsApi.html#getLocation) | Get Location by ID. |
-| [**getLocationSublocations**](LocationsApi.html#getLocationSublocations) | Get sublocations for location ID. |
-| [**getLocations**](LocationsApi.html#getLocations) | Get a list of all locations. |
-| [**getLocationsSearch**](LocationsApi.html#getLocationsSearch) | Search locations using the q64 value returned from a previous search |
-| [**patchLocation**](LocationsApi.html#patchLocation) | Update a location |
-| [**postLocations**](LocationsApi.html#postLocations) | Create a location |
-| [**postLocationsSearch**](LocationsApi.html#postLocationsSearch) | Search locations |
+| Method                                                                 | Description                                                          |
+| ---------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| [**deleteLocation**](LocationsApi.md#deleteLocation)                   | Delete a location                                                    |
+| [**getLocation**](LocationsApi.md#getLocation)                         | Get Location by ID.                                                  |
+| [**getLocationSublocations**](LocationsApi.md#getLocationSublocations) | Get sublocations for location ID.                                    |
+| [**getLocations**](LocationsApi.md#getLocations)                       | Get a list of all locations.                                         |
+| [**getLocationsSearch**](LocationsApi.md#getLocationsSearch)           | Search locations using the q64 value returned from a previous search |
+| [**patchLocation**](LocationsApi.md#patchLocation)                     | Update a location                                                    |
+| [**postLocations**](LocationsApi.md#postLocations)                     | Create a location                                                    |
+| [**postLocationsSearch**](LocationsApi.md#postLocationsSearch)         | Search locations                                                     |
+
 {: class="table-striped"}
 
 <a name="deleteLocation"></a>
 
 # **deleteLocation**
 
-
-
 > Void deleteLocation(locationId)
 
 Delete a location
 
+Wraps DELETE /api/v2/locations/{locationId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/locations/{locationId}  
-
-Requires ALL permissions: 
-
-* directory:location:delete
+- directory:location:delete
 
 ### Example
 
@@ -68,12 +66,11 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **locationId** | **String** | Location ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **locationId** | **String**| Location ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -83,18 +80,13 @@ null (empty response body)
 
 # **getLocation**
 
-
-
-> [LocationDefinition](LocationDefinition.html) getLocation(locationId, expand)
+> [LocationDefinition](LocationDefinition.md) getLocation(locationId, expand)
 
 Get Location by ID.
 
+Wraps GET /api/v2/locations/{locationId}
 
-
-Wraps GET /api/v2/locations/{locationId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -131,34 +123,28 @@ try {
 
 ### Parameters
 
+| Name           | Type                                | Description                     | Notes                                                          |
+| -------------- | ----------------------------------- | ------------------------------- | -------------------------------------------------------------- |
+| **locationId** | **String**                          | Location ID                     |
+| **expand**     | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand | [optional]<br />**Values**: images, addressVerificationDetails |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **locationId** | **String**| Location ID | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: images, addressVerificationDetails 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LocationDefinition**](LocationDefinition.html)
+[**LocationDefinition**](LocationDefinition.md)
 
 <a name="getLocationSublocations"></a>
 
 # **getLocationSublocations**
 
-
-
-> [LocationEntityListing](LocationEntityListing.html) getLocationSublocations(locationId)
+> [LocationEntityListing](LocationEntityListing.md) getLocationSublocations(locationId)
 
 Get sublocations for location ID.
 
+Wraps GET /api/v2/locations/{locationId}/sublocations
 
-
-Wraps GET /api/v2/locations/{locationId}/sublocations  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -194,33 +180,27 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **locationId** | **String** | Location ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **locationId** | **String**| Location ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LocationEntityListing**](LocationEntityListing.html)
+[**LocationEntityListing**](LocationEntityListing.md)
 
 <a name="getLocations"></a>
 
 # **getLocations**
 
-
-
-> [LocationEntityListing](LocationEntityListing.html) getLocations(pageSize, pageNumber, id, sortOrder)
+> [LocationEntityListing](LocationEntityListing.md) getLocations(pageSize, pageNumber, id, sortOrder)
 
 Get a list of all locations.
 
+Wraps GET /api/v2/locations
 
-
-Wraps GET /api/v2/locations  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -259,36 +239,30 @@ try {
 
 ### Parameters
 
+| Name           | Type                                | Description | Notes                                 |
+| -------------- | ----------------------------------- | ----------- | ------------------------------------- |
+| **pageSize**   | **Integer**                         | Page size   | [optional] [default to 25]            |
+| **pageNumber** | **Integer**                         | Page number | [optional] [default to 1]             |
+| **id**         | [**List&lt;String&gt;**](String.md) | id          | [optional]                            |
+| **sortOrder**  | **String**                          | Sort order  | [optional]<br />**Values**: asc, desc |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **id** | [**List&lt;String&gt;**](String.html)| id | [optional] 
-| **sortOrder** | **String**| Sort order | [optional]<br />**Values**: asc, desc 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LocationEntityListing**](LocationEntityListing.html)
+[**LocationEntityListing**](LocationEntityListing.md)
 
 <a name="getLocationsSearch"></a>
 
 # **getLocationsSearch**
 
-
-
-> [LocationsSearchResponse](LocationsSearchResponse.html) getLocationsSearch(q64, expand)
+> [LocationsSearchResponse](LocationsSearchResponse.md) getLocationsSearch(q64, expand)
 
 Search locations using the q64 value returned from a previous search
 
+Wraps GET /api/v2/locations/search
 
-
-Wraps GET /api/v2/locations/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -325,35 +299,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                | Description                                      | Notes                                                          |
+| ---------- | ----------------------------------- | ------------------------------------------------ | -------------------------------------------------------------- |
+| **q64**    | **String**                          | q64                                              |
+| **expand** | [**List&lt;String&gt;**](String.md) | Provides more details about a specified resource | [optional]<br />**Values**: images, addressVerificationDetails |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **q64** | **String**| q64 | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Provides more details about a specified resource | [optional]<br />**Values**: images, addressVerificationDetails 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LocationsSearchResponse**](LocationsSearchResponse.html)
+[**LocationsSearchResponse**](LocationsSearchResponse.md)
 
 <a name="patchLocation"></a>
 
 # **patchLocation**
 
-
-
-> [LocationDefinition](LocationDefinition.html) patchLocation(locationId, body)
+> [LocationDefinition](LocationDefinition.md) patchLocation(locationId, body)
 
 Update a location
 
+Wraps PATCH /api/v2/locations/{locationId}
 
+Requires ALL permissions:
 
-Wraps PATCH /api/v2/locations/{locationId}  
-
-Requires ALL permissions: 
-
-* directory:location:edit
+- directory:location:edit
 
 ### Example
 
@@ -390,35 +359,30 @@ try {
 
 ### Parameters
 
+| Name           | Type                                                        | Description | Notes |
+| -------------- | ----------------------------------------------------------- | ----------- | ----- |
+| **locationId** | **String**                                                  | Location ID |
+| **body**       | [**LocationUpdateDefinition**](LocationUpdateDefinition.md) | Location    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **locationId** | **String**| Location ID | 
-| **body** | [**LocationUpdateDefinition**](LocationUpdateDefinition.html)| Location | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LocationDefinition**](LocationDefinition.html)
+[**LocationDefinition**](LocationDefinition.md)
 
 <a name="postLocations"></a>
 
 # **postLocations**
 
-
-
-> [LocationDefinition](LocationDefinition.html) postLocations(body)
+> [LocationDefinition](LocationDefinition.md) postLocations(body)
 
 Create a location
 
+Wraps POST /api/v2/locations
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/locations  
-
-Requires ALL permissions: 
-
-* directory:location:add
+- directory:location:add
 
 ### Example
 
@@ -454,33 +418,27 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                        | Description | Notes |
+| -------- | ----------------------------------------------------------- | ----------- | ----- |
+| **body** | [**LocationCreateDefinition**](LocationCreateDefinition.md) | Location    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**LocationCreateDefinition**](LocationCreateDefinition.html)| Location | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LocationDefinition**](LocationDefinition.html)
+[**LocationDefinition**](LocationDefinition.md)
 
 <a name="postLocationsSearch"></a>
 
 # **postLocationsSearch**
 
-
-
-> [LocationsSearchResponse](LocationsSearchResponse.html) postLocationsSearch(body)
+> [LocationsSearchResponse](LocationsSearchResponse.md) postLocationsSearch(body)
 
 Search locations
 
+Wraps POST /api/v2/locations/search
 
-
-Wraps POST /api/v2/locations/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -516,14 +474,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                  | Description            | Notes |
+| -------- | ----------------------------------------------------- | ---------------------- | ----- |
+| **body** | [**LocationSearchRequest**](LocationSearchRequest.md) | Search request options |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**LocationSearchRequest**](LocationSearchRequest.html)| Search request options | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LocationsSearchResponse**](LocationsSearchResponse.html)
-
+[**LocationsSearchResponse**](LocationsSearchResponse.md)

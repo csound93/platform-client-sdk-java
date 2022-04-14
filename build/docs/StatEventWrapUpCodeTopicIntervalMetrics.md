@@ -1,16 +1,14 @@
 ---
 title: StatEventWrapUpCodeTopicIntervalMetrics
 ---
-## StatEventWrapUpCodeTopicIntervalMetrics
 
+## StatEventWrapUpCodeTopicIntervalMetrics
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **interval** | <!----><!---->**String**<!----> |  |  [optional] |
-| **metrics** | <!----><!---->[**List&lt;StatEventWrapUpCodeTopicMetricStats&gt;**](StatEventWrapUpCodeTopicMetricStats.html)<!----> |  |  [optional] |
+| Name         | Type                                                                                                               | Description | Notes      |
+| ------------ | ------------------------------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| **interval** | <!----><!---->**String**<!---->                                                                                    |             | [optional] |
+| **metrics**  | <!----><!---->[**List&lt;StatEventWrapUpCodeTopicMetricStats&gt;**](StatEventWrapUpCodeTopicMetricStats.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

@@ -1,22 +1,20 @@
 ---
 title: UserConversationSummary
 ---
-## UserConversationSummary
 
+## UserConversationSummary
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **userId** | <!----><!---->**String**<!----> |  |  [optional] |
-| **call** | <!----><!---->[**MediaSummary**](MediaSummary.html)<!----> |  |  [optional] |
-| **callback** | <!----><!---->[**MediaSummary**](MediaSummary.html)<!----> |  |  [optional] |
-| **email** | <!----><!---->[**MediaSummary**](MediaSummary.html)<!----> |  |  [optional] |
-| **message** | <!----><!---->[**MediaSummary**](MediaSummary.html)<!----> |  |  [optional] |
-| **chat** | <!----><!---->[**MediaSummary**](MediaSummary.html)<!----> |  |  [optional] |
-| **socialExpression** | <!----><!---->[**MediaSummary**](MediaSummary.html)<!----> |  |  [optional] |
-| **video** | <!----><!---->[**MediaSummary**](MediaSummary.html)<!----> |  |  [optional] |
+| Name                 | Type                                                     | Description | Notes      |
+| -------------------- | -------------------------------------------------------- | ----------- | ---------- |
+| **userId**           | <!----><!---->**String**<!---->                          |             | [optional] |
+| **call**             | <!----><!---->[**MediaSummary**](MediaSummary.md)<!----> |             | [optional] |
+| **callback**         | <!----><!---->[**MediaSummary**](MediaSummary.md)<!----> |             | [optional] |
+| **email**            | <!----><!---->[**MediaSummary**](MediaSummary.md)<!----> |             | [optional] |
+| **message**          | <!----><!---->[**MediaSummary**](MediaSummary.md)<!----> |             | [optional] |
+| **chat**             | <!----><!---->[**MediaSummary**](MediaSummary.md)<!----> |             | [optional] |
+| **socialExpression** | <!----><!---->[**MediaSummary**](MediaSummary.md)<!----> |             | [optional] |
+| **video**            | <!----><!---->[**MediaSummary**](MediaSummary.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

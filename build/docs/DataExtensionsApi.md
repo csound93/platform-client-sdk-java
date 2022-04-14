@@ -1,34 +1,32 @@
 ---
 title: DataExtensionsApi
 ---
+
 ## DataExtensionsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**getDataextensionsCoretype**](DataExtensionsApi.html#getDataextensionsCoretype) | Get a specific named core type. |
-| [**getDataextensionsCoretypes**](DataExtensionsApi.html#getDataextensionsCoretypes) | Get the core types from which all schemas are built. |
-| [**getDataextensionsLimits**](DataExtensionsApi.html#getDataextensionsLimits) | Get quantitative limits on schemas |
+| Method                                                                            | Description                                          |
+| --------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| [**getDataextensionsCoretype**](DataExtensionsApi.md#getDataextensionsCoretype)   | Get a specific named core type.                      |
+| [**getDataextensionsCoretypes**](DataExtensionsApi.md#getDataextensionsCoretypes) | Get the core types from which all schemas are built. |
+| [**getDataextensionsLimits**](DataExtensionsApi.md#getDataextensionsLimits)       | Get quantitative limits on schemas                   |
+
 {: class="table-striped"}
 
 <a name="getDataextensionsCoretype"></a>
 
 # **getDataextensionsCoretype**
 
-
-
-> [Coretype](Coretype.html) getDataextensionsCoretype(coretypeName)
+> [Coretype](Coretype.md) getDataextensionsCoretype(coretypeName)
 
 Get a specific named core type.
 
+Wraps GET /api/v2/dataextensions/coretypes/{coretypeName}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/dataextensions/coretypes/{coretypeName}  
-
-Requires ANY permissions: 
-
-* externalContacts:customFields:view
+- externalContacts:customFields:view
 
 ### Example
 
@@ -64,34 +62,29 @@ try {
 
 ### Parameters
 
+| Name             | Type       | Description              | Notes                                                                                                   |
+| ---------------- | ---------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
+| **coretypeName** | **String** | The core type&#39;s name | <br />**Values**: text, longtext, url, identifier, enum, date, datetime, integer, number, checkbox, tag |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **coretypeName** | **String**| The core type&#39;s name |<br />**Values**: text, longtext, url, identifier, enum, date, datetime, integer, number, checkbox, tag 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Coretype**](Coretype.html)
+[**Coretype**](Coretype.md)
 
 <a name="getDataextensionsCoretypes"></a>
 
 # **getDataextensionsCoretypes**
 
-
-
-> [CoretypeListing](CoretypeListing.html) getDataextensionsCoretypes()
+> [CoretypeListing](CoretypeListing.md) getDataextensionsCoretypes()
 
 Get the core types from which all schemas are built.
 
+Wraps GET /api/v2/dataextensions/coretypes
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/dataextensions/coretypes  
-
-Requires ANY permissions: 
-
-* externalContacts:customFields:view
+- externalContacts:customFields:view
 
 ### Example
 
@@ -128,29 +121,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**CoretypeListing**](CoretypeListing.html)
+[**CoretypeListing**](CoretypeListing.md)
 
 <a name="getDataextensionsLimits"></a>
 
 # **getDataextensionsLimits**
 
-
-
-> [SchemaQuantityLimits](SchemaQuantityLimits.html) getDataextensionsLimits()
+> [SchemaQuantityLimits](SchemaQuantityLimits.md) getDataextensionsLimits()
 
 Get quantitative limits on schemas
 
+Wraps GET /api/v2/dataextensions/limits
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/dataextensions/limits  
-
-Requires ANY permissions: 
-
-* externalContacts:customFields:view
+- externalContacts:customFields:view
 
 ### Example
 
@@ -187,9 +174,6 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**SchemaQuantityLimits**](SchemaQuantityLimits.html)
-
+[**SchemaQuantityLimits**](SchemaQuantityLimits.md)

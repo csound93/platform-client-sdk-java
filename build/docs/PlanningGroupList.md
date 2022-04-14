@@ -1,15 +1,13 @@
 ---
 title: PlanningGroupList
 ---
-## PlanningGroupList
 
+## PlanningGroupList
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **entities** | <!----><!---->[**List&lt;PlanningGroup&gt;**](PlanningGroup.html)<!----> |  |  [optional] |
+| Name         | Type                                                                   | Description | Notes      |
+| ------------ | ---------------------------------------------------------------------- | ----------- | ---------- |
+| **entities** | <!----><!---->[**List&lt;PlanningGroup&gt;**](PlanningGroup.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

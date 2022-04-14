@@ -1,22 +1,24 @@
 ---
 title: LanguagesApi
 ---
+
 ## LanguagesApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteLanguage**](LanguagesApi.html#deleteLanguage) | Delete Language (Deprecated) |
-| [**deleteRoutingLanguage**](LanguagesApi.html#deleteRoutingLanguage) | Delete Language |
-| [**getLanguage**](LanguagesApi.html#getLanguage) | Get language (Deprecated) |
-| [**getLanguages**](LanguagesApi.html#getLanguages) | Get the list of supported languages. (Deprecated) |
-| [**getLanguagesTranslations**](LanguagesApi.html#getLanguagesTranslations) | Get all available languages for translation |
-| [**getLanguagesTranslationsBuiltin**](LanguagesApi.html#getLanguagesTranslationsBuiltin) | Get the builtin translation for a language |
-| [**getLanguagesTranslationsOrganization**](LanguagesApi.html#getLanguagesTranslationsOrganization) | Get effective translation for an organization by language |
-| [**getLanguagesTranslationsUser**](LanguagesApi.html#getLanguagesTranslationsUser) | Get effective language translation for a user |
-| [**getRoutingLanguage**](LanguagesApi.html#getRoutingLanguage) | Get language |
-| [**postLanguages**](LanguagesApi.html#postLanguages) | Create Language (Deprecated) |
+| Method                                                                                           | Description                                               |
+| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| [**deleteLanguage**](LanguagesApi.md#deleteLanguage)                                             | Delete Language (Deprecated)                              |
+| [**deleteRoutingLanguage**](LanguagesApi.md#deleteRoutingLanguage)                               | Delete Language                                           |
+| [**getLanguage**](LanguagesApi.md#getLanguage)                                                   | Get language (Deprecated)                                 |
+| [**getLanguages**](LanguagesApi.md#getLanguages)                                                 | Get the list of supported languages. (Deprecated)         |
+| [**getLanguagesTranslations**](LanguagesApi.md#getLanguagesTranslations)                         | Get all available languages for translation               |
+| [**getLanguagesTranslationsBuiltin**](LanguagesApi.md#getLanguagesTranslationsBuiltin)           | Get the builtin translation for a language                |
+| [**getLanguagesTranslationsOrganization**](LanguagesApi.md#getLanguagesTranslationsOrganization) | Get effective translation for an organization by language |
+| [**getLanguagesTranslationsUser**](LanguagesApi.md#getLanguagesTranslationsUser)                 | Get effective language translation for a user             |
+| [**getRoutingLanguage**](LanguagesApi.md#getRoutingLanguage)                                     | Get language                                              |
+| [**postLanguages**](LanguagesApi.md#postLanguages)                                               | Create Language (Deprecated)                              |
+
 {: class="table-striped"}
 
 <a name="deleteLanguage"></a>
@@ -31,11 +33,11 @@ Delete Language (Deprecated)
 
 This endpoint is deprecated. It has been moved to /routing/languages/{languageId}
 
-Wraps DELETE /api/v2/languages/{languageId}  
+Wraps DELETE /api/v2/languages/{languageId}
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* routing:skill:manage
+- routing:skill:manage
 
 ### Example
 
@@ -70,12 +72,11 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **languageId** | **String** | Language ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **languageId** | **String**| Language ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -85,19 +86,15 @@ null (empty response body)
 
 # **deleteRoutingLanguage**
 
-
-
 > Void deleteRoutingLanguage(languageId)
 
 Delete Language
 
+Wraps DELETE /api/v2/routing/languages/{languageId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/routing/languages/{languageId}  
-
-Requires ANY permissions: 
-
-* routing:skill:manage
+- routing:skill:manage
 
 ### Example
 
@@ -132,12 +129,11 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **languageId** | **String** | Language ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **languageId** | **String**| Language ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -149,17 +145,17 @@ null (empty response body)
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [Language](Language.html) getLanguage(languageId)
+> [Language](Language.md) getLanguage(languageId)
 
 Get language (Deprecated)
 
 This endpoint is deprecated. It has been moved to /routing/languages/{languageId}
 
-Wraps GET /api/v2/languages/{languageId}  
+Wraps GET /api/v2/languages/{languageId}
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* routing:skill:manage
+- routing:skill:manage
 
 ### Example
 
@@ -195,16 +191,15 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **languageId** | **String** | Language ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **languageId** | **String**| Language ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Language**](Language.html)
+[**Language**](Language.md)
 
 <a name="getLanguages"></a>
 
@@ -212,17 +207,17 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [LanguageEntityListing](LanguageEntityListing.html) getLanguages(pageSize, pageNumber, sortOrder, name)
+> [LanguageEntityListing](LanguageEntityListing.md) getLanguages(pageSize, pageNumber, sortOrder, name)
 
 Get the list of supported languages. (Deprecated)
 
 This endpoint is deprecated. It has been moved to /routing/languages
 
-Wraps GET /api/v2/languages  
+Wraps GET /api/v2/languages
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* routing:skill:manage
+- routing:skill:manage
 
 ### Example
 
@@ -261,36 +256,30 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description                        | Notes                                                              |
+| -------------- | ----------- | ---------------------------------- | ------------------------------------------------------------------ |
+| **pageSize**   | **Integer** | Page size                          | [optional] [default to 25]                                         |
+| **pageNumber** | **Integer** | Page number                        | [optional] [default to 1]                                          |
+| **sortOrder**  | **String**  | Ascending or descending sort order | [optional] [default to ASC]<br />**Values**: ascending, descending |
+| **name**       | **String**  | Name                               | [optional]                                                         |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortOrder** | **String**| Ascending or descending sort order | [optional] [default to ASC]<br />**Values**: ascending, descending 
-| **name** | **String**| Name | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LanguageEntityListing**](LanguageEntityListing.html)
+[**LanguageEntityListing**](LanguageEntityListing.md)
 
 <a name="getLanguagesTranslations"></a>
 
 # **getLanguagesTranslations**
 
-
-
-> [AvailableTranslations](AvailableTranslations.html) getLanguagesTranslations()
+> [AvailableTranslations](AvailableTranslations.md) getLanguagesTranslations()
 
 Get all available languages for translation
 
+Wraps GET /api/v2/languages/translations
 
-
-Wraps GET /api/v2/languages/translations  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -327,28 +316,21 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**AvailableTranslations**](AvailableTranslations.html)
+[**AvailableTranslations**](AvailableTranslations.md)
 
 <a name="getLanguagesTranslationsBuiltin"></a>
 
 # **getLanguagesTranslationsBuiltin**
 
-
-
-> [Map&lt;String, Object&gt;](Map.html) getLanguagesTranslationsBuiltin(language)
+> [Map&lt;String, Object&gt;](Map.md) getLanguagesTranslationsBuiltin(language)
 
 Get the builtin translation for a language
 
+Wraps GET /api/v2/languages/translations/builtin
 
-
-Wraps GET /api/v2/languages/translations/builtin  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -384,33 +366,27 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                                         | Notes |
+| ------------ | ---------- | --------------------------------------------------- | ----- |
+| **language** | **String** | The language of the builtin translation to retrieve |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **language** | **String**| The language of the builtin translation to retrieve | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Map&lt;String, Object&gt;**](Map.html)
+[**Map&lt;String, Object&gt;**](Map.md)
 
 <a name="getLanguagesTranslationsOrganization"></a>
 
 # **getLanguagesTranslationsOrganization**
 
-
-
-> [Map&lt;String, Object&gt;](Map.html) getLanguagesTranslationsOrganization(language)
+> [Map&lt;String, Object&gt;](Map.md) getLanguagesTranslationsOrganization(language)
 
 Get effective translation for an organization by language
 
+Wraps GET /api/v2/languages/translations/organization
 
-
-Wraps GET /api/v2/languages/translations/organization  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -446,33 +422,27 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                                                      | Notes |
+| ------------ | ---------- | ---------------------------------------------------------------- | ----- |
+| **language** | **String** | The language of the translation to retrieve for the organization |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **language** | **String**| The language of the translation to retrieve for the organization | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Map&lt;String, Object&gt;**](Map.html)
+[**Map&lt;String, Object&gt;**](Map.md)
 
 <a name="getLanguagesTranslationsUser"></a>
 
 # **getLanguagesTranslationsUser**
 
-
-
-> [Map&lt;String, Object&gt;](Map.html) getLanguagesTranslationsUser(userId)
+> [Map&lt;String, Object&gt;](Map.md) getLanguagesTranslationsUser(userId)
 
 Get effective language translation for a user
 
+Wraps GET /api/v2/languages/translations/users/{userId}
 
-
-Wraps GET /api/v2/languages/translations/users/{userId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -508,33 +478,27 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **userId** | **String** | The user id |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| The user id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Map&lt;String, Object&gt;**](Map.html)
+[**Map&lt;String, Object&gt;**](Map.md)
 
 <a name="getRoutingLanguage"></a>
 
 # **getRoutingLanguage**
 
-
-
-> [Language](Language.html) getRoutingLanguage(languageId)
+> [Language](Language.md) getRoutingLanguage(languageId)
 
 Get language
 
+Wraps GET /api/v2/routing/languages/{languageId}
 
-
-Wraps GET /api/v2/routing/languages/{languageId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -570,16 +534,15 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **languageId** | **String** | Language ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **languageId** | **String**| Language ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Language**](Language.html)
+[**Language**](Language.md)
 
 <a name="postLanguages"></a>
 
@@ -587,17 +550,17 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [Language](Language.html) postLanguages(body)
+> [Language](Language.md) postLanguages(body)
 
 Create Language (Deprecated)
 
 This endpoint is deprecated. It has been moved to /routing/languages
 
-Wraps POST /api/v2/languages  
+Wraps POST /api/v2/languages
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* routing:skill:manage
+- routing:skill:manage
 
 ### Example
 
@@ -633,14 +596,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                        | Description | Notes |
+| -------- | --------------------------- | ----------- | ----- |
+| **body** | [**Language**](Language.md) | Language    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**Language**](Language.html)| Language | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Language**](Language.html)
-
+[**Language**](Language.md)

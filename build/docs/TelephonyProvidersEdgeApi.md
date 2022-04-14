@@ -1,161 +1,159 @@
 ---
 title: TelephonyProvidersEdgeApi
 ---
+
 ## TelephonyProvidersEdgeApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteTelephonyProvidersEdge**](TelephonyProvidersEdgeApi.html#deleteTelephonyProvidersEdge) | Delete a edge. |
-| [**deleteTelephonyProvidersEdgeLogicalinterface**](TelephonyProvidersEdgeApi.html#deleteTelephonyProvidersEdgeLogicalinterface) | Delete an edge logical interface |
-| [**deleteTelephonyProvidersEdgeSoftwareupdate**](TelephonyProvidersEdgeApi.html#deleteTelephonyProvidersEdgeSoftwareupdate) | Cancels any in-progress update for this edge. |
-| [**deleteTelephonyProvidersEdgesCertificateauthority**](TelephonyProvidersEdgeApi.html#deleteTelephonyProvidersEdgesCertificateauthority) | Delete a certificate authority. |
-| [**deleteTelephonyProvidersEdgesDidpool**](TelephonyProvidersEdgeApi.html#deleteTelephonyProvidersEdgesDidpool) | Delete a DID Pool by ID. |
-| [**deleteTelephonyProvidersEdgesEdgegroup**](TelephonyProvidersEdgeApi.html#deleteTelephonyProvidersEdgesEdgegroup) | Delete an edge group. |
-| [**deleteTelephonyProvidersEdgesExtensionpool**](TelephonyProvidersEdgeApi.html#deleteTelephonyProvidersEdgesExtensionpool) | Delete an extension pool by ID |
-| [**deleteTelephonyProvidersEdgesOutboundroute**](TelephonyProvidersEdgeApi.html#deleteTelephonyProvidersEdgesOutboundroute) | Delete Outbound Route |
-| [**deleteTelephonyProvidersEdgesPhone**](TelephonyProvidersEdgeApi.html#deleteTelephonyProvidersEdgesPhone) | Delete a Phone by ID |
-| [**deleteTelephonyProvidersEdgesPhonebasesetting**](TelephonyProvidersEdgeApi.html#deleteTelephonyProvidersEdgesPhonebasesetting) | Delete a Phone Base Settings by ID |
-| [**deleteTelephonyProvidersEdgesSite**](TelephonyProvidersEdgeApi.html#deleteTelephonyProvidersEdgesSite) | Delete a Site by ID |
-| [**deleteTelephonyProvidersEdgesSiteOutboundroute**](TelephonyProvidersEdgeApi.html#deleteTelephonyProvidersEdgesSiteOutboundroute) | Delete Outbound Route |
-| [**deleteTelephonyProvidersEdgesTrunkbasesetting**](TelephonyProvidersEdgeApi.html#deleteTelephonyProvidersEdgesTrunkbasesetting) | Delete a Trunk Base Settings object by ID |
-| [**getConfigurationSchemasEdgesVnext**](TelephonyProvidersEdgeApi.html#getConfigurationSchemasEdgesVnext) | Lists available schema categories (Deprecated) |
-| [**getConfigurationSchemasEdgesVnextSchemaCategory**](TelephonyProvidersEdgeApi.html#getConfigurationSchemasEdgesVnextSchemaCategory) | List schemas of a specific category (Deprecated) |
-| [**getConfigurationSchemasEdgesVnextSchemaCategorySchemaType**](TelephonyProvidersEdgeApi.html#getConfigurationSchemasEdgesVnextSchemaCategorySchemaType) | List schemas of a specific category (Deprecated) |
-| [**getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaId**](TelephonyProvidersEdgeApi.html#getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaId) | Get a json schema (Deprecated) |
-| [**getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaIdExtensionTypeMetadataId**](TelephonyProvidersEdgeApi.html#getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaIdExtensionTypeMetadataId) | Get metadata for a schema (Deprecated) |
-| [**getTelephonyProvidersEdge**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdge) | Get edge. |
-| [**getTelephonyProvidersEdgeDiagnosticNslookup**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeDiagnosticNslookup) | Get networking-related information from an Edge for a target IP or host. |
-| [**getTelephonyProvidersEdgeDiagnosticPing**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeDiagnosticPing) | Get networking-related information from an Edge for a target IP or host. |
-| [**getTelephonyProvidersEdgeDiagnosticRoute**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeDiagnosticRoute) | Get networking-related information from an Edge for a target IP or host. |
-| [**getTelephonyProvidersEdgeDiagnosticTracepath**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeDiagnosticTracepath) | Get networking-related information from an Edge for a target IP or host. |
-| [**getTelephonyProvidersEdgeLine**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeLine) | Get line |
-| [**getTelephonyProvidersEdgeLines**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeLines) | Get the list of lines. |
-| [**getTelephonyProvidersEdgeLogicalinterface**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeLogicalinterface) | Get an edge logical interface |
-| [**getTelephonyProvidersEdgeLogicalinterfaces**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeLogicalinterfaces) | Get edge logical interfaces. |
-| [**getTelephonyProvidersEdgeLogsJob**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeLogsJob) | Get an Edge logs job. |
-| [**getTelephonyProvidersEdgeMetrics**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeMetrics) | Get the edge metrics. |
-| [**getTelephonyProvidersEdgePhysicalinterface**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgePhysicalinterface) | Get edge physical interface. |
-| [**getTelephonyProvidersEdgePhysicalinterfaces**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgePhysicalinterfaces) | Retrieve a list of all configured physical interfaces from a specific edge. |
-| [**getTelephonyProvidersEdgeSetuppackage**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeSetuppackage) | Get the setup package for a locally deployed edge device. This is needed to complete the setup process for the virtual edge. |
-| [**getTelephonyProvidersEdgeSoftwareupdate**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeSoftwareupdate) | Gets software update status information about any edge. |
-| [**getTelephonyProvidersEdgeSoftwareversions**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeSoftwareversions) | Gets all the available software versions for this edge. |
-| [**getTelephonyProvidersEdgeTrunks**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgeTrunks) | Get the list of available trunks for the given Edge. |
-| [**getTelephonyProvidersEdges**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdges) | Get the list of edges. |
-| [**getTelephonyProvidersEdgesAvailablelanguages**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesAvailablelanguages) | Get the list of available languages. |
-| [**getTelephonyProvidersEdgesCertificateauthorities**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesCertificateauthorities) | Get the list of certificate authorities. |
-| [**getTelephonyProvidersEdgesCertificateauthority**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesCertificateauthority) | Get a certificate authority. |
-| [**getTelephonyProvidersEdgesDid**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesDid) | Get a DID by ID. |
-| [**getTelephonyProvidersEdgesDidpool**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesDidpool) | Get a DID Pool by ID. |
-| [**getTelephonyProvidersEdgesDidpools**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesDidpools) | Get a listing of DID Pools |
-| [**getTelephonyProvidersEdgesDidpoolsDids**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesDidpoolsDids) | Get a listing of unassigned and/or assigned numbers in a set of DID Pools. |
-| [**getTelephonyProvidersEdgesDids**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesDids) | Get a listing of DIDs |
-| [**getTelephonyProvidersEdgesEdgegroup**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesEdgegroup) | Get edge group. |
-| [**getTelephonyProvidersEdgesEdgegroupEdgetrunkbase**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesEdgegroupEdgetrunkbase) | Gets the edge trunk base associated with the edge group |
-| [**getTelephonyProvidersEdgesEdgegroups**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesEdgegroups) | Get the list of edge groups. |
-| [**getTelephonyProvidersEdgesEdgeversionreport**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesEdgeversionreport) | Get the edge version report. |
-| [**getTelephonyProvidersEdgesExpired**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesExpired) | List of edges more than 4 edge versions behind the latest software. |
-| [**getTelephonyProvidersEdgesExtension**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesExtension) | Get an extension by ID. |
-| [**getTelephonyProvidersEdgesExtensionpool**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesExtensionpool) | Get an extension pool by ID |
-| [**getTelephonyProvidersEdgesExtensionpools**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesExtensionpools) | Get a listing of extension pools |
-| [**getTelephonyProvidersEdgesExtensions**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesExtensions) | Get a listing of extensions |
-| [**getTelephonyProvidersEdgesLine**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesLine) | Get a Line by ID |
-| [**getTelephonyProvidersEdgesLinebasesetting**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesLinebasesetting) | Get a line base settings object by ID |
-| [**getTelephonyProvidersEdgesLinebasesettings**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesLinebasesettings) | Get a listing of line base settings objects |
-| [**getTelephonyProvidersEdgesLines**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesLines) | Get a list of Lines |
-| [**getTelephonyProvidersEdgesLinesTemplate**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesLinesTemplate) | Get a Line instance template based on a Line Base Settings object. This object can then be modified and saved as a new Line instance |
-| [**getTelephonyProvidersEdgesLogicalinterfaces**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesLogicalinterfaces) | Get edge logical interfaces. |
-| [**getTelephonyProvidersEdgesMetrics**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesMetrics) | Get the metrics for a list of edges. |
-| [**getTelephonyProvidersEdgesOutboundroute**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesOutboundroute) | Get outbound route |
-| [**getTelephonyProvidersEdgesOutboundroutes**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesOutboundroutes) | Get outbound routes |
-| [**getTelephonyProvidersEdgesPhone**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesPhone) | Get a Phone by ID |
-| [**getTelephonyProvidersEdgesPhonebasesetting**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesPhonebasesetting) | Get a Phone Base Settings object by ID |
-| [**getTelephonyProvidersEdgesPhonebasesettings**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesPhonebasesettings) | Get a list of Phone Base Settings objects |
-| [**getTelephonyProvidersEdgesPhonebasesettingsAvailablemetabases**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesPhonebasesettingsAvailablemetabases) | Get a list of available makes and models to create a new Phone Base Settings |
-| [**getTelephonyProvidersEdgesPhonebasesettingsTemplate**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesPhonebasesettingsTemplate) | Get a Phone Base Settings instance template from a given make and model. This object can then be modified and saved as a new Phone Base Settings instance |
-| [**getTelephonyProvidersEdgesPhones**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesPhones) | Get a list of Phone Instances |
-| [**getTelephonyProvidersEdgesPhonesTemplate**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesPhonesTemplate) | Get a Phone instance template based on a Phone Base Settings object. This object can then be modified and saved as a new Phone instance |
-| [**getTelephonyProvidersEdgesPhysicalinterfaces**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesPhysicalinterfaces) | Get physical interfaces for edges. |
-| [**getTelephonyProvidersEdgesSite**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesSite) | Get a Site by ID. |
-| [**getTelephonyProvidersEdgesSiteNumberplan**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesSiteNumberplan) | Get a Number Plan by ID. |
-| [**getTelephonyProvidersEdgesSiteNumberplans**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesSiteNumberplans) | Get the list of Number Plans for this Site. Only fetches the first 200 records. |
-| [**getTelephonyProvidersEdgesSiteNumberplansClassifications**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesSiteNumberplansClassifications) | Get a list of Classifications for this Site |
-| [**getTelephonyProvidersEdgesSiteOutboundroute**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesSiteOutboundroute) | Get an outbound route |
-| [**getTelephonyProvidersEdgesSiteOutboundroutes**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesSiteOutboundroutes) | Get outbound routes |
-| [**getTelephonyProvidersEdgesSites**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesSites) | Get the list of Sites. |
-| [**getTelephonyProvidersEdgesTimezones**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesTimezones) | Get a list of Edge-compatible time zones |
-| [**getTelephonyProvidersEdgesTrunk**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesTrunk) | Get a Trunk by ID |
-| [**getTelephonyProvidersEdgesTrunkMetrics**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesTrunkMetrics) | Get the trunk metrics. |
-| [**getTelephonyProvidersEdgesTrunkbasesetting**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesTrunkbasesetting) | Get a Trunk Base Settings object by ID |
-| [**getTelephonyProvidersEdgesTrunkbasesettings**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesTrunkbasesettings) | Get Trunk Base Settings listing |
-| [**getTelephonyProvidersEdgesTrunkbasesettingsAvailablemetabases**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesTrunkbasesettingsAvailablemetabases) | Get a list of available makes and models to create a new Trunk Base Settings |
-| [**getTelephonyProvidersEdgesTrunkbasesettingsTemplate**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesTrunkbasesettingsTemplate) | Get a Trunk Base Settings instance template from a given make and model. This object can then be modified and saved as a new Trunk Base Settings instance |
-| [**getTelephonyProvidersEdgesTrunks**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesTrunks) | Get the list of available trunks. |
-| [**getTelephonyProvidersEdgesTrunksMetrics**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesTrunksMetrics) | Get the metrics for a list of trunks. |
-| [**getTelephonyProvidersEdgesTrunkswithrecording**](TelephonyProvidersEdgeApi.html#getTelephonyProvidersEdgesTrunkswithrecording) | Get Counts of trunks that have recording disabled or enabled |
-| [**postTelephonyProvidersEdgeDiagnosticNslookup**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgeDiagnosticNslookup) | Nslookup request command to collect networking-related information from an Edge for a target IP or host. |
-| [**postTelephonyProvidersEdgeDiagnosticPing**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgeDiagnosticPing) | Ping Request command to collect networking-related information from an Edge for a target IP or host. |
-| [**postTelephonyProvidersEdgeDiagnosticRoute**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgeDiagnosticRoute) | Route request command to collect networking-related information from an Edge for a target IP or host. |
-| [**postTelephonyProvidersEdgeDiagnosticTracepath**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgeDiagnosticTracepath) | Tracepath request command to collect networking-related information from an Edge for a target IP or host. |
-| [**postTelephonyProvidersEdgeLogicalinterfaces**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgeLogicalinterfaces) | Create an edge logical interface. |
-| [**postTelephonyProvidersEdgeLogsJobUpload**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgeLogsJobUpload) | Request that the specified fileIds be uploaded from the Edge. |
-| [**postTelephonyProvidersEdgeLogsJobs**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgeLogsJobs) | Create a job to upload a list of Edge logs. |
-| [**postTelephonyProvidersEdgeReboot**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgeReboot) | Reboot an Edge |
-| [**postTelephonyProvidersEdgeSoftwareupdate**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgeSoftwareupdate) | Starts a software update for this edge. |
-| [**postTelephonyProvidersEdgeStatuscode**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgeStatuscode) | Take an Edge in or out of service |
-| [**postTelephonyProvidersEdgeUnpair**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgeUnpair) | Unpair an Edge |
-| [**postTelephonyProvidersEdges**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdges) | Create an edge. |
-| [**postTelephonyProvidersEdgesAddressvalidation**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesAddressvalidation) | Validates a street address |
-| [**postTelephonyProvidersEdgesCertificateauthorities**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesCertificateauthorities) | Create a certificate authority. |
-| [**postTelephonyProvidersEdgesDidpools**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesDidpools) | Create a new DID pool |
-| [**postTelephonyProvidersEdgesEdgegroups**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesEdgegroups) | Create an edge group. |
-| [**postTelephonyProvidersEdgesExtensionpools**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesExtensionpools) | Create a new extension pool |
-| [**postTelephonyProvidersEdgesOutboundroutes**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesOutboundroutes) | Create outbound rule |
-| [**postTelephonyProvidersEdgesPhoneReboot**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesPhoneReboot) | Reboot a Phone |
-| [**postTelephonyProvidersEdgesPhonebasesettings**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesPhonebasesettings) | Create a new Phone Base Settings object |
-| [**postTelephonyProvidersEdgesPhones**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesPhones) | Create a new Phone |
-| [**postTelephonyProvidersEdgesPhonesReboot**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesPhonesReboot) | Reboot Multiple Phones |
-| [**postTelephonyProvidersEdgesSiteOutboundroutes**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesSiteOutboundroutes) | Create outbound route |
-| [**postTelephonyProvidersEdgesSiteRebalance**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesSiteRebalance) | Triggers the rebalance operation. |
-| [**postTelephonyProvidersEdgesSites**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesSites) | Create a Site. |
-| [**postTelephonyProvidersEdgesTrunkbasesettings**](TelephonyProvidersEdgeApi.html#postTelephonyProvidersEdgesTrunkbasesettings) | Create a Trunk Base Settings object |
-| [**putTelephonyProvidersEdge**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdge) | Update a edge. |
-| [**putTelephonyProvidersEdgeLine**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgeLine) | Update a line. |
-| [**putTelephonyProvidersEdgeLogicalinterface**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgeLogicalinterface) | Update an edge logical interface. |
-| [**putTelephonyProvidersEdgesCertificateauthority**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesCertificateauthority) | Update a certificate authority. |
-| [**putTelephonyProvidersEdgesDid**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesDid) | Update a DID by ID. |
-| [**putTelephonyProvidersEdgesDidpool**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesDidpool) | Update a DID Pool by ID. |
-| [**putTelephonyProvidersEdgesEdgegroup**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesEdgegroup) | Update an edge group. |
-| [**putTelephonyProvidersEdgesEdgegroupEdgetrunkbase**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesEdgegroupEdgetrunkbase) | Update the edge trunk base associated with the edge group |
-| [**putTelephonyProvidersEdgesExtension**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesExtension) | Update an extension by ID. |
-| [**putTelephonyProvidersEdgesExtensionpool**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesExtensionpool) | Update an extension pool by ID |
-| [**putTelephonyProvidersEdgesOutboundroute**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesOutboundroute) | Update outbound route |
-| [**putTelephonyProvidersEdgesPhone**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesPhone) | Update a Phone by ID |
-| [**putTelephonyProvidersEdgesPhonebasesetting**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesPhonebasesetting) | Update a Phone Base Settings by ID |
-| [**putTelephonyProvidersEdgesSite**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesSite) | Update a Site by ID. |
-| [**putTelephonyProvidersEdgesSiteNumberplans**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesSiteNumberplans) | Update the list of Number Plans. A user can update maximum 200 number plans at a time. |
-| [**putTelephonyProvidersEdgesSiteOutboundroute**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesSiteOutboundroute) | Update outbound route |
-| [**putTelephonyProvidersEdgesTrunkbasesetting**](TelephonyProvidersEdgeApi.html#putTelephonyProvidersEdgesTrunkbasesetting) | Update a Trunk Base Settings object by ID |
+| Method                                                                                                                                                                                                                | Description                                                                                                                                               |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**deleteTelephonyProvidersEdge**](TelephonyProvidersEdgeApi.md#deleteTelephonyProvidersEdge)                                                                                                                         | Delete a edge.                                                                                                                                            |
+| [**deleteTelephonyProvidersEdgeLogicalinterface**](TelephonyProvidersEdgeApi.md#deleteTelephonyProvidersEdgeLogicalinterface)                                                                                         | Delete an edge logical interface                                                                                                                          |
+| [**deleteTelephonyProvidersEdgeSoftwareupdate**](TelephonyProvidersEdgeApi.md#deleteTelephonyProvidersEdgeSoftwareupdate)                                                                                             | Cancels any in-progress update for this edge.                                                                                                             |
+| [**deleteTelephonyProvidersEdgesCertificateauthority**](TelephonyProvidersEdgeApi.md#deleteTelephonyProvidersEdgesCertificateauthority)                                                                               | Delete a certificate authority.                                                                                                                           |
+| [**deleteTelephonyProvidersEdgesDidpool**](TelephonyProvidersEdgeApi.md#deleteTelephonyProvidersEdgesDidpool)                                                                                                         | Delete a DID Pool by ID.                                                                                                                                  |
+| [**deleteTelephonyProvidersEdgesEdgegroup**](TelephonyProvidersEdgeApi.md#deleteTelephonyProvidersEdgesEdgegroup)                                                                                                     | Delete an edge group.                                                                                                                                     |
+| [**deleteTelephonyProvidersEdgesExtensionpool**](TelephonyProvidersEdgeApi.md#deleteTelephonyProvidersEdgesExtensionpool)                                                                                             | Delete an extension pool by ID                                                                                                                            |
+| [**deleteTelephonyProvidersEdgesOutboundroute**](TelephonyProvidersEdgeApi.md#deleteTelephonyProvidersEdgesOutboundroute)                                                                                             | Delete Outbound Route                                                                                                                                     |
+| [**deleteTelephonyProvidersEdgesPhone**](TelephonyProvidersEdgeApi.md#deleteTelephonyProvidersEdgesPhone)                                                                                                             | Delete a Phone by ID                                                                                                                                      |
+| [**deleteTelephonyProvidersEdgesPhonebasesetting**](TelephonyProvidersEdgeApi.md#deleteTelephonyProvidersEdgesPhonebasesetting)                                                                                       | Delete a Phone Base Settings by ID                                                                                                                        |
+| [**deleteTelephonyProvidersEdgesSite**](TelephonyProvidersEdgeApi.md#deleteTelephonyProvidersEdgesSite)                                                                                                               | Delete a Site by ID                                                                                                                                       |
+| [**deleteTelephonyProvidersEdgesSiteOutboundroute**](TelephonyProvidersEdgeApi.md#deleteTelephonyProvidersEdgesSiteOutboundroute)                                                                                     | Delete Outbound Route                                                                                                                                     |
+| [**deleteTelephonyProvidersEdgesTrunkbasesetting**](TelephonyProvidersEdgeApi.md#deleteTelephonyProvidersEdgesTrunkbasesetting)                                                                                       | Delete a Trunk Base Settings object by ID                                                                                                                 |
+| [**getConfigurationSchemasEdgesVnext**](TelephonyProvidersEdgeApi.md#getConfigurationSchemasEdgesVnext)                                                                                                               | Lists available schema categories (Deprecated)                                                                                                            |
+| [**getConfigurationSchemasEdgesVnextSchemaCategory**](TelephonyProvidersEdgeApi.md#getConfigurationSchemasEdgesVnextSchemaCategory)                                                                                   | List schemas of a specific category (Deprecated)                                                                                                          |
+| [**getConfigurationSchemasEdgesVnextSchemaCategorySchemaType**](TelephonyProvidersEdgeApi.md#getConfigurationSchemasEdgesVnextSchemaCategorySchemaType)                                                               | List schemas of a specific category (Deprecated)                                                                                                          |
+| [**getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaId**](TelephonyProvidersEdgeApi.md#getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaId)                                               | Get a json schema (Deprecated)                                                                                                                            |
+| [**getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaIdExtensionTypeMetadataId**](TelephonyProvidersEdgeApi.md#getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaIdExtensionTypeMetadataId) | Get metadata for a schema (Deprecated)                                                                                                                    |
+| [**getTelephonyProvidersEdge**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdge)                                                                                                                               | Get edge.                                                                                                                                                 |
+| [**getTelephonyProvidersEdgeDiagnosticNslookup**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeDiagnosticNslookup)                                                                                           | Get networking-related information from an Edge for a target IP or host.                                                                                  |
+| [**getTelephonyProvidersEdgeDiagnosticPing**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeDiagnosticPing)                                                                                                   | Get networking-related information from an Edge for a target IP or host.                                                                                  |
+| [**getTelephonyProvidersEdgeDiagnosticRoute**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeDiagnosticRoute)                                                                                                 | Get networking-related information from an Edge for a target IP or host.                                                                                  |
+| [**getTelephonyProvidersEdgeDiagnosticTracepath**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeDiagnosticTracepath)                                                                                         | Get networking-related information from an Edge for a target IP or host.                                                                                  |
+| [**getTelephonyProvidersEdgeLine**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeLine)                                                                                                                       | Get line                                                                                                                                                  |
+| [**getTelephonyProvidersEdgeLines**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeLines)                                                                                                                     | Get the list of lines.                                                                                                                                    |
+| [**getTelephonyProvidersEdgeLogicalinterface**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeLogicalinterface)                                                                                               | Get an edge logical interface                                                                                                                             |
+| [**getTelephonyProvidersEdgeLogicalinterfaces**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeLogicalinterfaces)                                                                                             | Get edge logical interfaces.                                                                                                                              |
+| [**getTelephonyProvidersEdgeLogsJob**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeLogsJob)                                                                                                                 | Get an Edge logs job.                                                                                                                                     |
+| [**getTelephonyProvidersEdgeMetrics**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeMetrics)                                                                                                                 | Get the edge metrics.                                                                                                                                     |
+| [**getTelephonyProvidersEdgePhysicalinterface**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgePhysicalinterface)                                                                                             | Get edge physical interface.                                                                                                                              |
+| [**getTelephonyProvidersEdgePhysicalinterfaces**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgePhysicalinterfaces)                                                                                           | Retrieve a list of all configured physical interfaces from a specific edge.                                                                               |
+| [**getTelephonyProvidersEdgeSetuppackage**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeSetuppackage)                                                                                                       | Get the setup package for a locally deployed edge device. This is needed to complete the setup process for the virtual edge.                              |
+| [**getTelephonyProvidersEdgeSoftwareupdate**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeSoftwareupdate)                                                                                                   | Gets software update status information about any edge.                                                                                                   |
+| [**getTelephonyProvidersEdgeSoftwareversions**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeSoftwareversions)                                                                                               | Gets all the available software versions for this edge.                                                                                                   |
+| [**getTelephonyProvidersEdgeTrunks**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgeTrunks)                                                                                                                   | Get the list of available trunks for the given Edge.                                                                                                      |
+| [**getTelephonyProvidersEdges**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdges)                                                                                                                             | Get the list of edges.                                                                                                                                    |
+| [**getTelephonyProvidersEdgesAvailablelanguages**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesAvailablelanguages)                                                                                         | Get the list of available languages.                                                                                                                      |
+| [**getTelephonyProvidersEdgesCertificateauthorities**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesCertificateauthorities)                                                                                 | Get the list of certificate authorities.                                                                                                                  |
+| [**getTelephonyProvidersEdgesCertificateauthority**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesCertificateauthority)                                                                                     | Get a certificate authority.                                                                                                                              |
+| [**getTelephonyProvidersEdgesDid**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesDid)                                                                                                                       | Get a DID by ID.                                                                                                                                          |
+| [**getTelephonyProvidersEdgesDidpool**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesDidpool)                                                                                                               | Get a DID Pool by ID.                                                                                                                                     |
+| [**getTelephonyProvidersEdgesDidpools**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesDidpools)                                                                                                             | Get a listing of DID Pools                                                                                                                                |
+| [**getTelephonyProvidersEdgesDidpoolsDids**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesDidpoolsDids)                                                                                                     | Get a listing of unassigned and/or assigned numbers in a set of DID Pools.                                                                                |
+| [**getTelephonyProvidersEdgesDids**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesDids)                                                                                                                     | Get a listing of DIDs                                                                                                                                     |
+| [**getTelephonyProvidersEdgesEdgegroup**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesEdgegroup)                                                                                                           | Get edge group.                                                                                                                                           |
+| [**getTelephonyProvidersEdgesEdgegroupEdgetrunkbase**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesEdgegroupEdgetrunkbase)                                                                                 | Gets the edge trunk base associated with the edge group                                                                                                   |
+| [**getTelephonyProvidersEdgesEdgegroups**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesEdgegroups)                                                                                                         | Get the list of edge groups.                                                                                                                              |
+| [**getTelephonyProvidersEdgesEdgeversionreport**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesEdgeversionreport)                                                                                           | Get the edge version report.                                                                                                                              |
+| [**getTelephonyProvidersEdgesExpired**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesExpired)                                                                                                               | List of edges more than 4 edge versions behind the latest software.                                                                                       |
+| [**getTelephonyProvidersEdgesExtension**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesExtension)                                                                                                           | Get an extension by ID.                                                                                                                                   |
+| [**getTelephonyProvidersEdgesExtensionpool**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesExtensionpool)                                                                                                   | Get an extension pool by ID                                                                                                                               |
+| [**getTelephonyProvidersEdgesExtensionpools**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesExtensionpools)                                                                                                 | Get a listing of extension pools                                                                                                                          |
+| [**getTelephonyProvidersEdgesExtensions**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesExtensions)                                                                                                         | Get a listing of extensions                                                                                                                               |
+| [**getTelephonyProvidersEdgesLine**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesLine)                                                                                                                     | Get a Line by ID                                                                                                                                          |
+| [**getTelephonyProvidersEdgesLinebasesetting**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesLinebasesetting)                                                                                               | Get a line base settings object by ID                                                                                                                     |
+| [**getTelephonyProvidersEdgesLinebasesettings**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesLinebasesettings)                                                                                             | Get a listing of line base settings objects                                                                                                               |
+| [**getTelephonyProvidersEdgesLines**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesLines)                                                                                                                   | Get a list of Lines                                                                                                                                       |
+| [**getTelephonyProvidersEdgesLinesTemplate**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesLinesTemplate)                                                                                                   | Get a Line instance template based on a Line Base Settings object. This object can then be modified and saved as a new Line instance                      |
+| [**getTelephonyProvidersEdgesLogicalinterfaces**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesLogicalinterfaces)                                                                                           | Get edge logical interfaces.                                                                                                                              |
+| [**getTelephonyProvidersEdgesMetrics**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesMetrics)                                                                                                               | Get the metrics for a list of edges.                                                                                                                      |
+| [**getTelephonyProvidersEdgesOutboundroute**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesOutboundroute)                                                                                                   | Get outbound route                                                                                                                                        |
+| [**getTelephonyProvidersEdgesOutboundroutes**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesOutboundroutes)                                                                                                 | Get outbound routes                                                                                                                                       |
+| [**getTelephonyProvidersEdgesPhone**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesPhone)                                                                                                                   | Get a Phone by ID                                                                                                                                         |
+| [**getTelephonyProvidersEdgesPhonebasesetting**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesPhonebasesetting)                                                                                             | Get a Phone Base Settings object by ID                                                                                                                    |
+| [**getTelephonyProvidersEdgesPhonebasesettings**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesPhonebasesettings)                                                                                           | Get a list of Phone Base Settings objects                                                                                                                 |
+| [**getTelephonyProvidersEdgesPhonebasesettingsAvailablemetabases**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesPhonebasesettingsAvailablemetabases)                                                       | Get a list of available makes and models to create a new Phone Base Settings                                                                              |
+| [**getTelephonyProvidersEdgesPhonebasesettingsTemplate**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesPhonebasesettingsTemplate)                                                                           | Get a Phone Base Settings instance template from a given make and model. This object can then be modified and saved as a new Phone Base Settings instance |
+| [**getTelephonyProvidersEdgesPhones**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesPhones)                                                                                                                 | Get a list of Phone Instances                                                                                                                             |
+| [**getTelephonyProvidersEdgesPhonesTemplate**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesPhonesTemplate)                                                                                                 | Get a Phone instance template based on a Phone Base Settings object. This object can then be modified and saved as a new Phone instance                   |
+| [**getTelephonyProvidersEdgesPhysicalinterfaces**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesPhysicalinterfaces)                                                                                         | Get physical interfaces for edges.                                                                                                                        |
+| [**getTelephonyProvidersEdgesSite**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesSite)                                                                                                                     | Get a Site by ID.                                                                                                                                         |
+| [**getTelephonyProvidersEdgesSiteNumberplan**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesSiteNumberplan)                                                                                                 | Get a Number Plan by ID.                                                                                                                                  |
+| [**getTelephonyProvidersEdgesSiteNumberplans**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesSiteNumberplans)                                                                                               | Get the list of Number Plans for this Site. Only fetches the first 200 records.                                                                           |
+| [**getTelephonyProvidersEdgesSiteNumberplansClassifications**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesSiteNumberplansClassifications)                                                                 | Get a list of Classifications for this Site                                                                                                               |
+| [**getTelephonyProvidersEdgesSiteOutboundroute**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesSiteOutboundroute)                                                                                           | Get an outbound route                                                                                                                                     |
+| [**getTelephonyProvidersEdgesSiteOutboundroutes**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesSiteOutboundroutes)                                                                                         | Get outbound routes                                                                                                                                       |
+| [**getTelephonyProvidersEdgesSites**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesSites)                                                                                                                   | Get the list of Sites.                                                                                                                                    |
+| [**getTelephonyProvidersEdgesTimezones**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesTimezones)                                                                                                           | Get a list of Edge-compatible time zones                                                                                                                  |
+| [**getTelephonyProvidersEdgesTrunk**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesTrunk)                                                                                                                   | Get a Trunk by ID                                                                                                                                         |
+| [**getTelephonyProvidersEdgesTrunkMetrics**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesTrunkMetrics)                                                                                                     | Get the trunk metrics.                                                                                                                                    |
+| [**getTelephonyProvidersEdgesTrunkbasesetting**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesTrunkbasesetting)                                                                                             | Get a Trunk Base Settings object by ID                                                                                                                    |
+| [**getTelephonyProvidersEdgesTrunkbasesettings**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesTrunkbasesettings)                                                                                           | Get Trunk Base Settings listing                                                                                                                           |
+| [**getTelephonyProvidersEdgesTrunkbasesettingsAvailablemetabases**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesTrunkbasesettingsAvailablemetabases)                                                       | Get a list of available makes and models to create a new Trunk Base Settings                                                                              |
+| [**getTelephonyProvidersEdgesTrunkbasesettingsTemplate**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesTrunkbasesettingsTemplate)                                                                           | Get a Trunk Base Settings instance template from a given make and model. This object can then be modified and saved as a new Trunk Base Settings instance |
+| [**getTelephonyProvidersEdgesTrunks**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesTrunks)                                                                                                                 | Get the list of available trunks.                                                                                                                         |
+| [**getTelephonyProvidersEdgesTrunksMetrics**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesTrunksMetrics)                                                                                                   | Get the metrics for a list of trunks.                                                                                                                     |
+| [**getTelephonyProvidersEdgesTrunkswithrecording**](TelephonyProvidersEdgeApi.md#getTelephonyProvidersEdgesTrunkswithrecording)                                                                                       | Get Counts of trunks that have recording disabled or enabled                                                                                              |
+| [**postTelephonyProvidersEdgeDiagnosticNslookup**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgeDiagnosticNslookup)                                                                                         | Nslookup request command to collect networking-related information from an Edge for a target IP or host.                                                  |
+| [**postTelephonyProvidersEdgeDiagnosticPing**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgeDiagnosticPing)                                                                                                 | Ping Request command to collect networking-related information from an Edge for a target IP or host.                                                      |
+| [**postTelephonyProvidersEdgeDiagnosticRoute**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgeDiagnosticRoute)                                                                                               | Route request command to collect networking-related information from an Edge for a target IP or host.                                                     |
+| [**postTelephonyProvidersEdgeDiagnosticTracepath**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgeDiagnosticTracepath)                                                                                       | Tracepath request command to collect networking-related information from an Edge for a target IP or host.                                                 |
+| [**postTelephonyProvidersEdgeLogicalinterfaces**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgeLogicalinterfaces)                                                                                           | Create an edge logical interface.                                                                                                                         |
+| [**postTelephonyProvidersEdgeLogsJobUpload**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgeLogsJobUpload)                                                                                                   | Request that the specified fileIds be uploaded from the Edge.                                                                                             |
+| [**postTelephonyProvidersEdgeLogsJobs**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgeLogsJobs)                                                                                                             | Create a job to upload a list of Edge logs.                                                                                                               |
+| [**postTelephonyProvidersEdgeReboot**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgeReboot)                                                                                                                 | Reboot an Edge                                                                                                                                            |
+| [**postTelephonyProvidersEdgeSoftwareupdate**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgeSoftwareupdate)                                                                                                 | Starts a software update for this edge.                                                                                                                   |
+| [**postTelephonyProvidersEdgeStatuscode**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgeStatuscode)                                                                                                         | Take an Edge in or out of service                                                                                                                         |
+| [**postTelephonyProvidersEdgeUnpair**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgeUnpair)                                                                                                                 | Unpair an Edge                                                                                                                                            |
+| [**postTelephonyProvidersEdges**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdges)                                                                                                                           | Create an edge.                                                                                                                                           |
+| [**postTelephonyProvidersEdgesAddressvalidation**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesAddressvalidation)                                                                                         | Validates a street address                                                                                                                                |
+| [**postTelephonyProvidersEdgesCertificateauthorities**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesCertificateauthorities)                                                                               | Create a certificate authority.                                                                                                                           |
+| [**postTelephonyProvidersEdgesDidpools**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesDidpools)                                                                                                           | Create a new DID pool                                                                                                                                     |
+| [**postTelephonyProvidersEdgesEdgegroups**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesEdgegroups)                                                                                                       | Create an edge group.                                                                                                                                     |
+| [**postTelephonyProvidersEdgesExtensionpools**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesExtensionpools)                                                                                               | Create a new extension pool                                                                                                                               |
+| [**postTelephonyProvidersEdgesOutboundroutes**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesOutboundroutes)                                                                                               | Create outbound rule                                                                                                                                      |
+| [**postTelephonyProvidersEdgesPhoneReboot**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesPhoneReboot)                                                                                                     | Reboot a Phone                                                                                                                                            |
+| [**postTelephonyProvidersEdgesPhonebasesettings**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesPhonebasesettings)                                                                                         | Create a new Phone Base Settings object                                                                                                                   |
+| [**postTelephonyProvidersEdgesPhones**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesPhones)                                                                                                               | Create a new Phone                                                                                                                                        |
+| [**postTelephonyProvidersEdgesPhonesReboot**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesPhonesReboot)                                                                                                   | Reboot Multiple Phones                                                                                                                                    |
+| [**postTelephonyProvidersEdgesSiteOutboundroutes**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesSiteOutboundroutes)                                                                                       | Create outbound route                                                                                                                                     |
+| [**postTelephonyProvidersEdgesSiteRebalance**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesSiteRebalance)                                                                                                 | Triggers the rebalance operation.                                                                                                                         |
+| [**postTelephonyProvidersEdgesSites**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesSites)                                                                                                                 | Create a Site.                                                                                                                                            |
+| [**postTelephonyProvidersEdgesTrunkbasesettings**](TelephonyProvidersEdgeApi.md#postTelephonyProvidersEdgesTrunkbasesettings)                                                                                         | Create a Trunk Base Settings object                                                                                                                       |
+| [**putTelephonyProvidersEdge**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdge)                                                                                                                               | Update a edge.                                                                                                                                            |
+| [**putTelephonyProvidersEdgeLine**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgeLine)                                                                                                                       | Update a line.                                                                                                                                            |
+| [**putTelephonyProvidersEdgeLogicalinterface**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgeLogicalinterface)                                                                                               | Update an edge logical interface.                                                                                                                         |
+| [**putTelephonyProvidersEdgesCertificateauthority**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesCertificateauthority)                                                                                     | Update a certificate authority.                                                                                                                           |
+| [**putTelephonyProvidersEdgesDid**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesDid)                                                                                                                       | Update a DID by ID.                                                                                                                                       |
+| [**putTelephonyProvidersEdgesDidpool**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesDidpool)                                                                                                               | Update a DID Pool by ID.                                                                                                                                  |
+| [**putTelephonyProvidersEdgesEdgegroup**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesEdgegroup)                                                                                                           | Update an edge group.                                                                                                                                     |
+| [**putTelephonyProvidersEdgesEdgegroupEdgetrunkbase**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesEdgegroupEdgetrunkbase)                                                                                 | Update the edge trunk base associated with the edge group                                                                                                 |
+| [**putTelephonyProvidersEdgesExtension**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesExtension)                                                                                                           | Update an extension by ID.                                                                                                                                |
+| [**putTelephonyProvidersEdgesExtensionpool**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesExtensionpool)                                                                                                   | Update an extension pool by ID                                                                                                                            |
+| [**putTelephonyProvidersEdgesOutboundroute**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesOutboundroute)                                                                                                   | Update outbound route                                                                                                                                     |
+| [**putTelephonyProvidersEdgesPhone**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesPhone)                                                                                                                   | Update a Phone by ID                                                                                                                                      |
+| [**putTelephonyProvidersEdgesPhonebasesetting**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesPhonebasesetting)                                                                                             | Update a Phone Base Settings by ID                                                                                                                        |
+| [**putTelephonyProvidersEdgesSite**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesSite)                                                                                                                     | Update a Site by ID.                                                                                                                                      |
+| [**putTelephonyProvidersEdgesSiteNumberplans**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesSiteNumberplans)                                                                                               | Update the list of Number Plans. A user can update maximum 200 number plans at a time.                                                                    |
+| [**putTelephonyProvidersEdgesSiteOutboundroute**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesSiteOutboundroute)                                                                                           | Update outbound route                                                                                                                                     |
+| [**putTelephonyProvidersEdgesTrunkbasesetting**](TelephonyProvidersEdgeApi.md#putTelephonyProvidersEdgesTrunkbasesetting)                                                                                             | Update a Trunk Base Settings object by ID                                                                                                                 |
+
 {: class="table-striped"}
 
 <a name="deleteTelephonyProvidersEdge"></a>
 
 # **deleteTelephonyProvidersEdge**
 
-
-
 > Void deleteTelephonyProvidersEdge(edgeId)
 
 Delete a edge.
 
+Wraps DELETE /api/v2/telephony/providers/edges/{edgeId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/telephony/providers/edges/{edgeId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -190,12 +188,11 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -205,19 +202,15 @@ null (empty response body)
 
 # **deleteTelephonyProvidersEdgeLogicalinterface**
 
-
-
 > Void deleteTelephonyProvidersEdgeLogicalinterface(edgeId, interfaceId)
 
 Delete an edge logical interface
 
+Wraps DELETE /api/v2/telephony/providers/edges/{edgeId}/logicalinterfaces/{interfaceId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/telephony/providers/edges/{edgeId}/logicalinterfaces/{interfaceId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -253,13 +246,12 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description  | Notes |
+| --------------- | ---------- | ------------ | ----- |
+| **edgeId**      | **String** | Edge ID      |
+| **interfaceId** | **String** | Interface ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **interfaceId** | **String**| Interface ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -269,18 +261,13 @@ null (empty response body)
 
 # **deleteTelephonyProvidersEdgeSoftwareupdate**
 
-
-
 > Void deleteTelephonyProvidersEdgeSoftwareupdate(edgeId)
 
 Cancels any in-progress update for this edge.
 
+Wraps DELETE /api/v2/telephony/providers/edges/{edgeId}/softwareupdate
 
-
-Wraps DELETE /api/v2/telephony/providers/edges/{edgeId}/softwareupdate  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -315,12 +302,11 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -330,19 +316,15 @@ null (empty response body)
 
 # **deleteTelephonyProvidersEdgesCertificateauthority**
 
-
-
 > Void deleteTelephonyProvidersEdgesCertificateauthority(certificateId)
 
 Delete a certificate authority.
 
+Wraps DELETE /api/v2/telephony/providers/edges/certificateauthorities/{certificateId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/telephony/providers/edges/certificateauthorities/{certificateId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -377,12 +359,11 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description    | Notes |
+| ----------------- | ---------- | -------------- | ----- |
+| **certificateId** | **String** | Certificate ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **certificateId** | **String**| Certificate ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -392,19 +373,15 @@ null (empty response body)
 
 # **deleteTelephonyProvidersEdgesDidpool**
 
-
-
 > Void deleteTelephonyProvidersEdgesDidpool(didPoolId)
 
 Delete a DID Pool by ID.
 
+Wraps DELETE /api/v2/telephony/providers/edges/didpools/{didPoolId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/telephony/providers/edges/didpools/{didPoolId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -439,12 +416,11 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **didPoolId** | **String** | DID pool ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **didPoolId** | **String**| DID pool ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -454,19 +430,15 @@ null (empty response body)
 
 # **deleteTelephonyProvidersEdgesEdgegroup**
 
-
-
 > Void deleteTelephonyProvidersEdgesEdgegroup(edgeGroupId)
 
 Delete an edge group.
 
+Wraps DELETE /api/v2/telephony/providers/edges/edgegroups/{edgeGroupId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/telephony/providers/edges/edgegroups/{edgeGroupId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -501,12 +473,11 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description   | Notes |
+| --------------- | ---------- | ------------- | ----- |
+| **edgeGroupId** | **String** | Edge group ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeGroupId** | **String**| Edge group ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -516,19 +487,15 @@ null (empty response body)
 
 # **deleteTelephonyProvidersEdgesExtensionpool**
 
-
-
 > Void deleteTelephonyProvidersEdgesExtensionpool(extensionPoolId)
 
 Delete an extension pool by ID
 
+Wraps DELETE /api/v2/telephony/providers/edges/extensionpools/{extensionPoolId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/telephony/providers/edges/extensionpools/{extensionPoolId}  
-
-Requires ALL permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -563,12 +530,11 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description       | Notes |
+| ------------------- | ---------- | ----------------- | ----- |
+| **extensionPoolId** | **String** | Extension pool ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **extensionPoolId** | **String**| Extension pool ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -586,11 +552,11 @@ Delete Outbound Route
 
 This route is deprecated, use /telephony/providers/edges/sites/{siteId}/outboundroutes/{outboundRouteId} instead.
 
-Wraps DELETE /api/v2/telephony/providers/edges/outboundroutes/{outboundRouteId}  
+Wraps DELETE /api/v2/telephony/providers/edges/outboundroutes/{outboundRouteId}
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -625,12 +591,11 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description       | Notes |
+| ------------------- | ---------- | ----------------- | ----- |
+| **outboundRouteId** | **String** | Outbound route ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **outboundRouteId** | **String**| Outbound route ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -640,19 +605,15 @@ null (empty response body)
 
 # **deleteTelephonyProvidersEdgesPhone**
 
-
-
 > Void deleteTelephonyProvidersEdgesPhone(phoneId)
 
 Delete a Phone by ID
 
+Wraps DELETE /api/v2/telephony/providers/edges/phones/{phoneId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/telephony/providers/edges/phones/{phoneId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -687,12 +648,11 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **phoneId** | **String** | Phone ID    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **phoneId** | **String**| Phone ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -702,19 +662,15 @@ null (empty response body)
 
 # **deleteTelephonyProvidersEdgesPhonebasesetting**
 
-
-
 > Void deleteTelephonyProvidersEdgesPhonebasesetting(phoneBaseId)
 
 Delete a Phone Base Settings by ID
 
+Wraps DELETE /api/v2/telephony/providers/edges/phonebasesettings/{phoneBaseId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/telephony/providers/edges/phonebasesettings/{phoneBaseId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -749,12 +705,11 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description   | Notes |
+| --------------- | ---------- | ------------- | ----- |
+| **phoneBaseId** | **String** | Phone base ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **phoneBaseId** | **String**| Phone base ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -764,19 +719,15 @@ null (empty response body)
 
 # **deleteTelephonyProvidersEdgesSite**
 
-
-
 > Void deleteTelephonyProvidersEdgesSite(siteId)
 
 Delete a Site by ID
 
+Wraps DELETE /api/v2/telephony/providers/edges/sites/{siteId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/telephony/providers/edges/sites/{siteId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -811,12 +762,11 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **siteId** | **String** | Site ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **siteId** | **String**| Site ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -826,19 +776,15 @@ null (empty response body)
 
 # **deleteTelephonyProvidersEdgesSiteOutboundroute**
 
-
-
 > Void deleteTelephonyProvidersEdgesSiteOutboundroute(siteId, outboundRouteId)
 
 Delete Outbound Route
 
+Wraps DELETE /api/v2/telephony/providers/edges/sites/{siteId}/outboundroutes/{outboundRouteId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/telephony/providers/edges/sites/{siteId}/outboundroutes/{outboundRouteId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -874,13 +820,12 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description       | Notes |
+| ------------------- | ---------- | ----------------- | ----- |
+| **siteId**          | **String** | Site ID           |
+| **outboundRouteId** | **String** | Outbound route ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **siteId** | **String**| Site ID | 
-| **outboundRouteId** | **String**| Outbound route ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -890,19 +835,15 @@ null (empty response body)
 
 # **deleteTelephonyProvidersEdgesTrunkbasesetting**
 
-
-
 > Void deleteTelephonyProvidersEdgesTrunkbasesetting(trunkBaseSettingsId)
 
 Delete a Trunk Base Settings object by ID
 
+Wraps DELETE /api/v2/telephony/providers/edges/trunkbasesettings/{trunkBaseSettingsId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/telephony/providers/edges/trunkbasesettings/{trunkBaseSettingsId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -937,12 +878,11 @@ try {
 
 ### Parameters
 
+| Name                    | Type       | Description   | Notes |
+| ----------------------- | ---------- | ------------- | ----- |
+| **trunkBaseSettingsId** | **String** | Trunk Base ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **trunkBaseSettingsId** | **String**| Trunk Base ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -954,16 +894,13 @@ null (empty response body)
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [SchemaCategoryEntityListing](SchemaCategoryEntityListing.html) getConfigurationSchemasEdgesVnext(pageSize, pageNumber)
+> [SchemaCategoryEntityListing](SchemaCategoryEntityListing.md) getConfigurationSchemasEdgesVnext(pageSize, pageNumber)
 
 Lists available schema categories (Deprecated)
 
+Wraps GET /api/v2/configuration/schemas/edges/vnext
 
-
-Wraps GET /api/v2/configuration/schemas/edges/vnext  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1000,17 +937,16 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SchemaCategoryEntityListing**](SchemaCategoryEntityListing.html)
+[**SchemaCategoryEntityListing**](SchemaCategoryEntityListing.md)
 
 <a name="getConfigurationSchemasEdgesVnextSchemaCategory"></a>
 
@@ -1018,16 +954,13 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [SchemaReferenceEntityListing](SchemaReferenceEntityListing.html) getConfigurationSchemasEdgesVnextSchemaCategory(schemaCategory, pageSize, pageNumber)
+> [SchemaReferenceEntityListing](SchemaReferenceEntityListing.md) getConfigurationSchemasEdgesVnextSchemaCategory(schemaCategory, pageSize, pageNumber)
 
 List schemas of a specific category (Deprecated)
 
+Wraps GET /api/v2/configuration/schemas/edges/vnext/{schemaCategory}
 
-
-Wraps GET /api/v2/configuration/schemas/edges/vnext/{schemaCategory}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1065,18 +998,17 @@ try {
 
 ### Parameters
 
+| Name               | Type        | Description     | Notes                      |
+| ------------------ | ----------- | --------------- | -------------------------- |
+| **schemaCategory** | **String**  | Schema category |
+| **pageSize**       | **Integer** | Page size       | [optional] [default to 25] |
+| **pageNumber**     | **Integer** | Page number     | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **schemaCategory** | **String**| Schema category | 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SchemaReferenceEntityListing**](SchemaReferenceEntityListing.html)
+[**SchemaReferenceEntityListing**](SchemaReferenceEntityListing.md)
 
 <a name="getConfigurationSchemasEdgesVnextSchemaCategorySchemaType"></a>
 
@@ -1084,16 +1016,13 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [SchemaReferenceEntityListing](SchemaReferenceEntityListing.html) getConfigurationSchemasEdgesVnextSchemaCategorySchemaType(schemaCategory, schemaType, pageSize, pageNumber)
+> [SchemaReferenceEntityListing](SchemaReferenceEntityListing.md) getConfigurationSchemasEdgesVnextSchemaCategorySchemaType(schemaCategory, schemaType, pageSize, pageNumber)
 
 List schemas of a specific category (Deprecated)
 
+Wraps GET /api/v2/configuration/schemas/edges/vnext/{schemaCategory}/{schemaType}
 
-
-Wraps GET /api/v2/configuration/schemas/edges/vnext/{schemaCategory}/{schemaType}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1132,19 +1061,18 @@ try {
 
 ### Parameters
 
+| Name               | Type        | Description     | Notes                      |
+| ------------------ | ----------- | --------------- | -------------------------- |
+| **schemaCategory** | **String**  | Schema category |
+| **schemaType**     | **String**  | Schema type     |
+| **pageSize**       | **Integer** | Page size       | [optional] [default to 25] |
+| **pageNumber**     | **Integer** | Page number     | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **schemaCategory** | **String**| Schema category | 
-| **schemaType** | **String**| Schema type | 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SchemaReferenceEntityListing**](SchemaReferenceEntityListing.html)
+[**SchemaReferenceEntityListing**](SchemaReferenceEntityListing.md)
 
 <a name="getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaId"></a>
 
@@ -1152,16 +1080,13 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [Organization](Organization.html) getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaId(schemaCategory, schemaType, schemaId)
+> [Organization](Organization.md) getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaId(schemaCategory, schemaType, schemaId)
 
 Get a json schema (Deprecated)
 
+Wraps GET /api/v2/configuration/schemas/edges/vnext/{schemaCategory}/{schemaType}/{schemaId}
 
-
-Wraps GET /api/v2/configuration/schemas/edges/vnext/{schemaCategory}/{schemaType}/{schemaId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1199,18 +1124,17 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description     | Notes |
+| ------------------ | ---------- | --------------- | ----- |
+| **schemaCategory** | **String** | Schema category |
+| **schemaType**     | **String** | Schema type     |
+| **schemaId**       | **String** | Schema ID       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **schemaCategory** | **String**| Schema category | 
-| **schemaType** | **String**| Schema type | 
-| **schemaId** | **String**| Schema ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Organization**](Organization.html)
+[**Organization**](Organization.md)
 
 <a name="getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaIdExtensionTypeMetadataId"></a>
 
@@ -1218,16 +1142,13 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [Organization](Organization.html) getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaIdExtensionTypeMetadataId(schemaCategory, schemaType, schemaId, extensionType, metadataId, type)
+> [Organization](Organization.md) getConfigurationSchemasEdgesVnextSchemaCategorySchemaTypeSchemaIdExtensionTypeMetadataId(schemaCategory, schemaType, schemaId, extensionType, metadataId, type)
 
 Get metadata for a schema (Deprecated)
 
+Wraps GET /api/v2/configuration/schemas/edges/vnext/{schemaCategory}/{schemaType}/{schemaId}/{extensionType}/{metadataId}
 
-
-Wraps GET /api/v2/configuration/schemas/edges/vnext/{schemaCategory}/{schemaType}/{schemaId}/{extensionType}/{metadataId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1268,39 +1189,34 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description     | Notes      |
+| ------------------ | ---------- | --------------- | ---------- |
+| **schemaCategory** | **String** | Schema category |
+| **schemaType**     | **String** | Schema type     |
+| **schemaId**       | **String** | Schema ID       |
+| **extensionType**  | **String** | extension       |
+| **metadataId**     | **String** | Metadata ID     |
+| **type**           | **String** | Type            | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **schemaCategory** | **String**| Schema category | 
-| **schemaType** | **String**| Schema type | 
-| **schemaId** | **String**| Schema ID | 
-| **extensionType** | **String**| extension | 
-| **metadataId** | **String**| Metadata ID | 
-| **type** | **String**| Type | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Organization**](Organization.html)
+[**Organization**](Organization.md)
 
 <a name="getTelephonyProvidersEdge"></a>
 
 # **getTelephonyProvidersEdge**
 
-
-
-> [Edge](Edge.html) getTelephonyProvidersEdge(edgeId, expand)
+> [Edge](Edge.md) getTelephonyProvidersEdge(edgeId, expand)
 
 Get edge.
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -1337,35 +1253,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                | Description                                       | Notes                            |
+| ---------- | ----------------------------------- | ------------------------------------------------- | -------------------------------- |
+| **edgeId** | **String**                          | Edge ID                                           |
+| **expand** | [**List&lt;String&gt;**](String.md) | Fields to expand in the response, comma-separated | [optional]<br />**Values**: site |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Fields to expand in the response, comma-separated | [optional]<br />**Values**: site 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Edge**](Edge.html)
+[**Edge**](Edge.md)
 
 <a name="getTelephonyProvidersEdgeDiagnosticNslookup"></a>
 
 # **getTelephonyProvidersEdgeDiagnosticNslookup**
 
-
-
-> [EdgeNetworkDiagnosticResponse](EdgeNetworkDiagnosticResponse.html) getTelephonyProvidersEdgeDiagnosticNslookup(edgeId)
+> [EdgeNetworkDiagnosticResponse](EdgeNetworkDiagnosticResponse.md) getTelephonyProvidersEdgeDiagnosticNslookup(edgeId)
 
 Get networking-related information from an Edge for a target IP or host.
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/diagnostic/nslookup
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/diagnostic/nslookup  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -1401,34 +1312,29 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge Id     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeNetworkDiagnosticResponse**](EdgeNetworkDiagnosticResponse.html)
+[**EdgeNetworkDiagnosticResponse**](EdgeNetworkDiagnosticResponse.md)
 
 <a name="getTelephonyProvidersEdgeDiagnosticPing"></a>
 
 # **getTelephonyProvidersEdgeDiagnosticPing**
 
-
-
-> [EdgeNetworkDiagnosticResponse](EdgeNetworkDiagnosticResponse.html) getTelephonyProvidersEdgeDiagnosticPing(edgeId)
+> [EdgeNetworkDiagnosticResponse](EdgeNetworkDiagnosticResponse.md) getTelephonyProvidersEdgeDiagnosticPing(edgeId)
 
 Get networking-related information from an Edge for a target IP or host.
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/diagnostic/ping
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/diagnostic/ping  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -1464,34 +1370,29 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge Id     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeNetworkDiagnosticResponse**](EdgeNetworkDiagnosticResponse.html)
+[**EdgeNetworkDiagnosticResponse**](EdgeNetworkDiagnosticResponse.md)
 
 <a name="getTelephonyProvidersEdgeDiagnosticRoute"></a>
 
 # **getTelephonyProvidersEdgeDiagnosticRoute**
 
-
-
-> [EdgeNetworkDiagnosticResponse](EdgeNetworkDiagnosticResponse.html) getTelephonyProvidersEdgeDiagnosticRoute(edgeId)
+> [EdgeNetworkDiagnosticResponse](EdgeNetworkDiagnosticResponse.md) getTelephonyProvidersEdgeDiagnosticRoute(edgeId)
 
 Get networking-related information from an Edge for a target IP or host.
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/diagnostic/route
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/diagnostic/route  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -1527,34 +1428,29 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge Id     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeNetworkDiagnosticResponse**](EdgeNetworkDiagnosticResponse.html)
+[**EdgeNetworkDiagnosticResponse**](EdgeNetworkDiagnosticResponse.md)
 
 <a name="getTelephonyProvidersEdgeDiagnosticTracepath"></a>
 
 # **getTelephonyProvidersEdgeDiagnosticTracepath**
 
-
-
-> [EdgeNetworkDiagnosticResponse](EdgeNetworkDiagnosticResponse.html) getTelephonyProvidersEdgeDiagnosticTracepath(edgeId)
+> [EdgeNetworkDiagnosticResponse](EdgeNetworkDiagnosticResponse.md) getTelephonyProvidersEdgeDiagnosticTracepath(edgeId)
 
 Get networking-related information from an Edge for a target IP or host.
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/diagnostic/tracepath
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/diagnostic/tracepath  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -1590,16 +1486,15 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge Id     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeNetworkDiagnosticResponse**](EdgeNetworkDiagnosticResponse.html)
+[**EdgeNetworkDiagnosticResponse**](EdgeNetworkDiagnosticResponse.md)
 
 <a name="getTelephonyProvidersEdgeLine"></a>
 
@@ -1607,17 +1502,15 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [EdgeLine](EdgeLine.html) getTelephonyProvidersEdgeLine(edgeId, lineId)
+> [EdgeLine](EdgeLine.md) getTelephonyProvidersEdgeLine(edgeId, lineId)
 
 Get line
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/lines/{lineId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/lines/{lineId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -1654,17 +1547,16 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge ID     |
+| **lineId** | **String** | Line ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **lineId** | **String**| Line ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeLine**](EdgeLine.html)
+[**EdgeLine**](EdgeLine.md)
 
 <a name="getTelephonyProvidersEdgeLines"></a>
 
@@ -1672,17 +1564,15 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [EdgeLineEntityListing](EdgeLineEntityListing.html) getTelephonyProvidersEdgeLines(edgeId, pageSize, pageNumber)
+> [EdgeLineEntityListing](EdgeLineEntityListing.md) getTelephonyProvidersEdgeLines(edgeId, pageSize, pageNumber)
 
 Get the list of lines.
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/lines
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/lines  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -1720,36 +1610,31 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **edgeId**     | **String**  | Edge ID     |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeLineEntityListing**](EdgeLineEntityListing.html)
+[**EdgeLineEntityListing**](EdgeLineEntityListing.md)
 
 <a name="getTelephonyProvidersEdgeLogicalinterface"></a>
 
 # **getTelephonyProvidersEdgeLogicalinterface**
 
-
-
-> [DomainLogicalInterface](DomainLogicalInterface.html) getTelephonyProvidersEdgeLogicalinterface(edgeId, interfaceId, expand)
+> [DomainLogicalInterface](DomainLogicalInterface.md) getTelephonyProvidersEdgeLogicalinterface(edgeId, interfaceId, expand)
 
 Get an edge logical interface
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/logicalinterfaces/{interfaceId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/logicalinterfaces/{interfaceId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -1787,36 +1672,33 @@ try {
 
 ### Parameters
 
+| Name            | Type                                | Description                     | Notes                                                                               |
+| --------------- | ----------------------------------- | ------------------------------- | ----------------------------------------------------------------------------------- |
+| **edgeId**      | **String**                          | Edge ID                         |
+| **interfaceId** | **String**                          | Interface ID                    |
+| **expand**      | [**List&lt;String&gt;**](String.md) | Field to expand in the response | [optional]<br />**Values**: externalTrunkBaseAssignments, phoneTrunkBaseAssignments |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **interfaceId** | **String**| Interface ID | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Field to expand in the response | [optional]<br />**Values**: externalTrunkBaseAssignments, phoneTrunkBaseAssignments 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainLogicalInterface**](DomainLogicalInterface.html)
+[**DomainLogicalInterface**](DomainLogicalInterface.md)
 
 <a name="getTelephonyProvidersEdgeLogicalinterfaces"></a>
 
 # **getTelephonyProvidersEdgeLogicalinterfaces**
 
-
-
-> [LogicalInterfaceEntityListing](LogicalInterfaceEntityListing.html) getTelephonyProvidersEdgeLogicalinterfaces(edgeId, expand)
+> [LogicalInterfaceEntityListing](LogicalInterfaceEntityListing.md) getTelephonyProvidersEdgeLogicalinterfaces(edgeId, expand)
 
 Get edge logical interfaces.
 
 Retrieve a list of all configured logical interfaces from a specific edge.
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/logicalinterfaces  
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/logicalinterfaces
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -1853,35 +1735,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                | Description                     | Notes                                                                               |
+| ---------- | ----------------------------------- | ------------------------------- | ----------------------------------------------------------------------------------- |
+| **edgeId** | **String**                          | Edge ID                         |
+| **expand** | [**List&lt;String&gt;**](String.md) | Field to expand in the response | [optional]<br />**Values**: externalTrunkBaseAssignments, phoneTrunkBaseAssignments |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Field to expand in the response | [optional]<br />**Values**: externalTrunkBaseAssignments, phoneTrunkBaseAssignments 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LogicalInterfaceEntityListing**](LogicalInterfaceEntityListing.html)
+[**LogicalInterfaceEntityListing**](LogicalInterfaceEntityListing.md)
 
 <a name="getTelephonyProvidersEdgeLogsJob"></a>
 
 # **getTelephonyProvidersEdgeLogsJob**
 
-
-
-> [EdgeLogsJob](EdgeLogsJob.html) getTelephonyProvidersEdgeLogsJob(edgeId, jobId)
+> [EdgeLogsJob](EdgeLogsJob.md) getTelephonyProvidersEdgeLogsJob(edgeId, jobId)
 
 Get an Edge logs job.
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/logs/jobs/{jobId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/logs/jobs/{jobId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -1918,35 +1795,30 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge ID     |
+| **jobId**  | **String** | Job ID      |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **jobId** | **String**| Job ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeLogsJob**](EdgeLogsJob.html)
+[**EdgeLogsJob**](EdgeLogsJob.md)
 
 <a name="getTelephonyProvidersEdgeMetrics"></a>
 
 # **getTelephonyProvidersEdgeMetrics**
 
-
-
-> [EdgeMetrics](EdgeMetrics.html) getTelephonyProvidersEdgeMetrics(edgeId)
+> [EdgeMetrics](EdgeMetrics.md) getTelephonyProvidersEdgeMetrics(edgeId)
 
 Get the edge metrics.
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/metrics
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/metrics  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -1982,34 +1854,31 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge Id     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeMetrics**](EdgeMetrics.html)
+[**EdgeMetrics**](EdgeMetrics.md)
 
 <a name="getTelephonyProvidersEdgePhysicalinterface"></a>
 
 # **getTelephonyProvidersEdgePhysicalinterface**
 
-
-
-> [DomainPhysicalInterface](DomainPhysicalInterface.html) getTelephonyProvidersEdgePhysicalinterface(edgeId, interfaceId)
+> [DomainPhysicalInterface](DomainPhysicalInterface.md) getTelephonyProvidersEdgePhysicalinterface(edgeId, interfaceId)
 
 Get edge physical interface.
 
 Retrieve a physical interface from a specific edge.
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/physicalinterfaces/{interfaceId}  
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/physicalinterfaces/{interfaceId}
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -2046,35 +1915,30 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description  | Notes |
+| --------------- | ---------- | ------------ | ----- |
+| **edgeId**      | **String** | Edge ID      |
+| **interfaceId** | **String** | Interface ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **interfaceId** | **String**| Interface ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainPhysicalInterface**](DomainPhysicalInterface.html)
+[**DomainPhysicalInterface**](DomainPhysicalInterface.md)
 
 <a name="getTelephonyProvidersEdgePhysicalinterfaces"></a>
 
 # **getTelephonyProvidersEdgePhysicalinterfaces**
 
-
-
-> [PhysicalInterfaceEntityListing](PhysicalInterfaceEntityListing.html) getTelephonyProvidersEdgePhysicalinterfaces(edgeId)
+> [PhysicalInterfaceEntityListing](PhysicalInterfaceEntityListing.md) getTelephonyProvidersEdgePhysicalinterfaces(edgeId)
 
 Retrieve a list of all configured physical interfaces from a specific edge.
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/physicalinterfaces
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/physicalinterfaces  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -2110,34 +1974,29 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**PhysicalInterfaceEntityListing**](PhysicalInterfaceEntityListing.html)
+[**PhysicalInterfaceEntityListing**](PhysicalInterfaceEntityListing.md)
 
 <a name="getTelephonyProvidersEdgeSetuppackage"></a>
 
 # **getTelephonyProvidersEdgeSetuppackage**
 
-
-
-> [VmPairingInfo](VmPairingInfo.html) getTelephonyProvidersEdgeSetuppackage(edgeId)
+> [VmPairingInfo](VmPairingInfo.md) getTelephonyProvidersEdgeSetuppackage(edgeId)
 
 Get the setup package for a locally deployed edge device. This is needed to complete the setup process for the virtual edge.
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/setuppackage
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/setuppackage  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -2173,33 +2032,27 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VmPairingInfo**](VmPairingInfo.html)
+[**VmPairingInfo**](VmPairingInfo.md)
 
 <a name="getTelephonyProvidersEdgeSoftwareupdate"></a>
 
 # **getTelephonyProvidersEdgeSoftwareupdate**
 
-
-
-> [DomainEdgeSoftwareUpdateDto](DomainEdgeSoftwareUpdateDto.html) getTelephonyProvidersEdgeSoftwareupdate(edgeId)
+> [DomainEdgeSoftwareUpdateDto](DomainEdgeSoftwareUpdateDto.md) getTelephonyProvidersEdgeSoftwareupdate(edgeId)
 
 Gets software update status information about any edge.
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/softwareupdate
 
-
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/softwareupdate  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -2235,33 +2088,27 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainEdgeSoftwareUpdateDto**](DomainEdgeSoftwareUpdateDto.html)
+[**DomainEdgeSoftwareUpdateDto**](DomainEdgeSoftwareUpdateDto.md)
 
 <a name="getTelephonyProvidersEdgeSoftwareversions"></a>
 
 # **getTelephonyProvidersEdgeSoftwareversions**
 
-
-
-> [DomainEdgeSoftwareVersionDtoEntityListing](DomainEdgeSoftwareVersionDtoEntityListing.html) getTelephonyProvidersEdgeSoftwareversions(edgeId)
+> [DomainEdgeSoftwareVersionDtoEntityListing](DomainEdgeSoftwareVersionDtoEntityListing.md) getTelephonyProvidersEdgeSoftwareversions(edgeId)
 
 Gets all the available software versions for this edge.
 
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/softwareversions
 
-
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/softwareversions  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -2297,34 +2144,31 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainEdgeSoftwareVersionDtoEntityListing**](DomainEdgeSoftwareVersionDtoEntityListing.html)
+[**DomainEdgeSoftwareVersionDtoEntityListing**](DomainEdgeSoftwareVersionDtoEntityListing.md)
 
 <a name="getTelephonyProvidersEdgeTrunks"></a>
 
 # **getTelephonyProvidersEdgeTrunks**
 
-
-
-> [TrunkEntityListing](TrunkEntityListing.html) getTelephonyProvidersEdgeTrunks(edgeId, pageNumber, pageSize, sortBy, sortOrder, trunkBaseId, trunkType)
+> [TrunkEntityListing](TrunkEntityListing.md) getTelephonyProvidersEdgeTrunks(edgeId, pageNumber, pageSize, sortBy, sortOrder, trunkBaseId, trunkType)
 
 Get the list of available trunks for the given Edge.
 
 Trunks are created by assigning trunk base settings to an Edge or Edge Group.
 
-Wraps GET /api/v2/telephony/providers/edges/{edgeId}/trunks  
+Wraps GET /api/v2/telephony/providers/edges/{edgeId}/trunks
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -2366,40 +2210,35 @@ try {
 
 ### Parameters
 
+| Name            | Type        | Description              | Notes                                             |
+| --------------- | ----------- | ------------------------ | ------------------------------------------------- |
+| **edgeId**      | **String**  | Edge ID                  |
+| **pageNumber**  | **Integer** | Page number              | [optional] [default to 1]                         |
+| **pageSize**    | **Integer** | Page size                | [optional] [default to 25]                        |
+| **sortBy**      | **String**  | Value by which to sort   | [optional] [default to name]                      |
+| **sortOrder**   | **String**  | Sort order               | [optional] [default to ASC]                       |
+| **trunkBaseId** | **String**  | Filter by Trunk Base Ids | [optional]                                        |
+| **trunkType**   | **String**  | Filter by a Trunk type   | [optional]<br />**Values**: EXTERNAL, PHONE, EDGE |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **sortBy** | **String**| Value by which to sort | [optional] [default to name] 
-| **sortOrder** | **String**| Sort order | [optional] [default to ASC] 
-| **trunkBaseId** | **String**| Filter by Trunk Base Ids | [optional] 
-| **trunkType** | **String**| Filter by a Trunk type | [optional]<br />**Values**: EXTERNAL, PHONE, EDGE 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TrunkEntityListing**](TrunkEntityListing.html)
+[**TrunkEntityListing**](TrunkEntityListing.md)
 
 <a name="getTelephonyProvidersEdges"></a>
 
 # **getTelephonyProvidersEdges**
 
-
-
-> [EdgeEntityListing](EdgeEntityListing.html) getTelephonyProvidersEdges(pageSize, pageNumber, name, siteId, edgeGroupId, sortBy, managed)
+> [EdgeEntityListing](EdgeEntityListing.md) getTelephonyProvidersEdges(pageSize, pageNumber, name, siteId, edgeGroupId, sortBy, managed)
 
 Get the list of edges.
 
+Wraps GET /api/v2/telephony/providers/edges
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -2441,39 +2280,33 @@ try {
 
 ### Parameters
 
+| Name            | Type        | Description            | Notes                        |
+| --------------- | ----------- | ---------------------- | ---------------------------- |
+| **pageSize**    | **Integer** | Page size              | [optional] [default to 25]   |
+| **pageNumber**  | **Integer** | Page number            | [optional] [default to 1]    |
+| **name**        | **String**  | Name                   | [optional]                   |
+| **siteId**      | **String**  | Filter by site.id      | [optional]                   |
+| **edgeGroupId** | **String**  | Filter by edgeGroup.id | [optional]                   |
+| **sortBy**      | **String**  | Sort by                | [optional] [default to name] |
+| **managed**     | **Boolean** | Filter by managed      | [optional]                   |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **name** | **String**| Name | [optional] 
-| **siteId** | **String**| Filter by site.id | [optional] 
-| **edgeGroupId** | **String**| Filter by edgeGroup.id | [optional] 
-| **sortBy** | **String**| Sort by | [optional] [default to name] 
-| **managed** | **Boolean**| Filter by managed | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeEntityListing**](EdgeEntityListing.html)
+[**EdgeEntityListing**](EdgeEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesAvailablelanguages"></a>
 
 # **getTelephonyProvidersEdgesAvailablelanguages**
 
-
-
-> [AvailableLanguageList](AvailableLanguageList.html) getTelephonyProvidersEdgesAvailablelanguages()
+> [AvailableLanguageList](AvailableLanguageList.md) getTelephonyProvidersEdgesAvailablelanguages()
 
 Get the list of available languages.
 
+Wraps GET /api/v2/telephony/providers/edges/availablelanguages
 
-
-Wraps GET /api/v2/telephony/providers/edges/availablelanguages  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -2510,29 +2343,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**AvailableLanguageList**](AvailableLanguageList.html)
+[**AvailableLanguageList**](AvailableLanguageList.md)
 
 <a name="getTelephonyProvidersEdgesCertificateauthorities"></a>
 
 # **getTelephonyProvidersEdgesCertificateauthorities**
 
-
-
-> [CertificateAuthorityEntityListing](CertificateAuthorityEntityListing.html) getTelephonyProvidersEdgesCertificateauthorities()
+> [CertificateAuthorityEntityListing](CertificateAuthorityEntityListing.md) getTelephonyProvidersEdgesCertificateauthorities()
 
 Get the list of certificate authorities.
 
+Wraps GET /api/v2/telephony/providers/edges/certificateauthorities
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/certificateauthorities  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -2569,29 +2396,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**CertificateAuthorityEntityListing**](CertificateAuthorityEntityListing.html)
+[**CertificateAuthorityEntityListing**](CertificateAuthorityEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesCertificateauthority"></a>
 
 # **getTelephonyProvidersEdgesCertificateauthority**
 
-
-
-> [DomainCertificateAuthority](DomainCertificateAuthority.html) getTelephonyProvidersEdgesCertificateauthority(certificateId)
+> [DomainCertificateAuthority](DomainCertificateAuthority.md) getTelephonyProvidersEdgesCertificateauthority(certificateId)
 
 Get a certificate authority.
 
+Wraps GET /api/v2/telephony/providers/edges/certificateauthorities/{certificateId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/certificateauthorities/{certificateId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -2627,34 +2448,29 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description    | Notes |
+| ----------------- | ---------- | -------------- | ----- |
+| **certificateId** | **String** | Certificate ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **certificateId** | **String**| Certificate ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainCertificateAuthority**](DomainCertificateAuthority.html)
+[**DomainCertificateAuthority**](DomainCertificateAuthority.md)
 
 <a name="getTelephonyProvidersEdgesDid"></a>
 
 # **getTelephonyProvidersEdgesDid**
 
-
-
-> [DID](DID.html) getTelephonyProvidersEdgesDid(didId)
+> [DID](DID.md) getTelephonyProvidersEdgesDid(didId)
 
 Get a DID by ID.
 
+Wraps GET /api/v2/telephony/providers/edges/dids/{didId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/dids/{didId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -2690,34 +2506,29 @@ try {
 
 ### Parameters
 
+| Name      | Type       | Description | Notes |
+| --------- | ---------- | ----------- | ----- |
+| **didId** | **String** | DID ID      |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **didId** | **String**| DID ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DID**](DID.html)
+[**DID**](DID.md)
 
 <a name="getTelephonyProvidersEdgesDidpool"></a>
 
 # **getTelephonyProvidersEdgesDidpool**
 
-
-
-> [DIDPool](DIDPool.html) getTelephonyProvidersEdgesDidpool(didPoolId)
+> [DIDPool](DIDPool.md) getTelephonyProvidersEdgesDidpool(didPoolId)
 
 Get a DID Pool by ID.
 
+Wraps GET /api/v2/telephony/providers/edges/didpools/{didPoolId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/didpools/{didPoolId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -2753,34 +2564,29 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **didPoolId** | **String** | DID pool ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **didPoolId** | **String**| DID pool ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DIDPool**](DIDPool.html)
+[**DIDPool**](DIDPool.md)
 
 <a name="getTelephonyProvidersEdgesDidpools"></a>
 
 # **getTelephonyProvidersEdgesDidpools**
 
-
-
-> [DIDPoolEntityListing](DIDPoolEntityListing.html) getTelephonyProvidersEdgesDidpools(pageSize, pageNumber, sortBy, id)
+> [DIDPoolEntityListing](DIDPoolEntityListing.md) getTelephonyProvidersEdgesDidpools(pageSize, pageNumber, sortBy, id)
 
 Get a listing of DID Pools
 
+Wraps GET /api/v2/telephony/providers/edges/didpools
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/didpools  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -2819,37 +2625,32 @@ try {
 
 ### Parameters
 
+| Name           | Type                                | Description                           | Notes                          |
+| -------------- | ----------------------------------- | ------------------------------------- | ------------------------------ |
+| **pageSize**   | **Integer**                         | Page size                             | [optional] [default to 25]     |
+| **pageNumber** | **Integer**                         | Page number                           | [optional] [default to 1]      |
+| **sortBy**     | **String**                          | Sort by                               | [optional] [default to number] |
+| **id**         | [**List&lt;String&gt;**](String.md) | Filter by a specific list of ID&#39;s | [optional]                     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortBy** | **String**| Sort by | [optional] [default to number] 
-| **id** | [**List&lt;String&gt;**](String.html)| Filter by a specific list of ID&#39;s | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DIDPoolEntityListing**](DIDPoolEntityListing.html)
+[**DIDPoolEntityListing**](DIDPoolEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesDidpoolsDids"></a>
 
 # **getTelephonyProvidersEdgesDidpoolsDids**
 
-
-
-> [DIDNumberEntityListing](DIDNumberEntityListing.html) getTelephonyProvidersEdgesDidpoolsDids(type, id, numberMatch, pageSize, pageNumber, sortOrder)
+> [DIDNumberEntityListing](DIDNumberEntityListing.md) getTelephonyProvidersEdgesDidpoolsDids(type, id, numberMatch, pageSize, pageNumber, sortOrder)
 
 Get a listing of unassigned and/or assigned numbers in a set of DID Pools.
 
+Wraps GET /api/v2/telephony/providers/edges/didpools/dids
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/didpools/dids  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -2890,39 +2691,34 @@ try {
 
 ### Parameters
 
+| Name            | Type                                | Description                                                                                                   | Notes                                                 |
+| --------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| **type**        | **String**                          | The type of numbers to return.                                                                                | <br />**Values**: ASSIGNED_AND_UNASSIGNED, UNASSIGNED |
+| **id**          | [**List&lt;String&gt;**](String.md) | Filter by a specific list of DID Pools. If this is not provided, numbers from all DID Pools will be returned. | [optional]                                            |
+| **numberMatch** | **String**                          | A number to filter the results by.                                                                            | [optional]                                            |
+| **pageSize**    | **Integer**                         | Page size                                                                                                     | [optional] [default to 25]                            |
+| **pageNumber**  | **Integer**                         | Page number                                                                                                   | [optional] [default to 1]                             |
+| **sortOrder**   | **String**                          | Sort order                                                                                                    | [optional] [default to ascending]                     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **type** | **String**| The type of numbers to return. |<br />**Values**: ASSIGNED_AND_UNASSIGNED, UNASSIGNED 
-| **id** | [**List&lt;String&gt;**](String.html)| Filter by a specific list of DID Pools.  If this is not provided, numbers from all DID Pools will be returned. | [optional] 
-| **numberMatch** | **String**| A number to filter the results by. | [optional] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortOrder** | **String**| Sort order | [optional] [default to ascending] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DIDNumberEntityListing**](DIDNumberEntityListing.html)
+[**DIDNumberEntityListing**](DIDNumberEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesDids"></a>
 
 # **getTelephonyProvidersEdgesDids**
 
-
-
-> [DIDEntityListing](DIDEntityListing.html) getTelephonyProvidersEdgesDids(pageSize, pageNumber, sortBy, sortOrder, phoneNumber, ownerId, didPoolId, id)
+> [DIDEntityListing](DIDEntityListing.md) getTelephonyProvidersEdgesDids(pageSize, pageNumber, sortBy, sortOrder, phoneNumber, ownerId, didPoolId, id)
 
 Get a listing of DIDs
 
+Wraps GET /api/v2/telephony/providers/edges/dids
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/dids  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -2965,41 +2761,36 @@ try {
 
 ### Parameters
 
+| Name            | Type                                | Description                           | Notes                          |
+| --------------- | ----------------------------------- | ------------------------------------- | ------------------------------ |
+| **pageSize**    | **Integer**                         | Page size                             | [optional] [default to 25]     |
+| **pageNumber**  | **Integer**                         | Page number                           | [optional] [default to 1]      |
+| **sortBy**      | **String**                          | Sort by                               | [optional] [default to number] |
+| **sortOrder**   | **String**                          | Sort order                            | [optional] [default to ASC]    |
+| **phoneNumber** | **String**                          | Filter by phoneNumber                 | [optional]                     |
+| **ownerId**     | **String**                          | Filter by the owner of a phone number | [optional]                     |
+| **didPoolId**   | **String**                          | Filter by the DID Pool assignment     | [optional]                     |
+| **id**          | [**List&lt;String&gt;**](String.md) | Filter by a specific list of ID&#39;s | [optional]                     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortBy** | **String**| Sort by | [optional] [default to number] 
-| **sortOrder** | **String**| Sort order | [optional] [default to ASC] 
-| **phoneNumber** | **String**| Filter by phoneNumber | [optional] 
-| **ownerId** | **String**| Filter by the owner of a phone number | [optional] 
-| **didPoolId** | **String**| Filter by the DID Pool assignment | [optional] 
-| **id** | [**List&lt;String&gt;**](String.html)| Filter by a specific list of ID&#39;s | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DIDEntityListing**](DIDEntityListing.html)
+[**DIDEntityListing**](DIDEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesEdgegroup"></a>
 
 # **getTelephonyProvidersEdgesEdgegroup**
 
-
-
-> [EdgeGroup](EdgeGroup.html) getTelephonyProvidersEdgesEdgegroup(edgeGroupId, expand)
+> [EdgeGroup](EdgeGroup.md) getTelephonyProvidersEdgesEdgegroup(edgeGroupId, expand)
 
 Get edge group.
 
+Wraps GET /api/v2/telephony/providers/edges/edgegroups/{edgeGroupId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/edgegroups/{edgeGroupId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -3036,35 +2827,30 @@ try {
 
 ### Parameters
 
+| Name            | Type                                | Description                      | Notes                                                                |
+| --------------- | ----------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
+| **edgeGroupId** | **String**                          | Edge group ID                    |
+| **expand**      | [**List&lt;String&gt;**](String.md) | Fields to expand in the response | [optional]<br />**Values**: phoneTrunkBases, edgeTrunkBaseAssignment |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeGroupId** | **String**| Edge group ID | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Fields to expand in the response | [optional]<br />**Values**: phoneTrunkBases, edgeTrunkBaseAssignment 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeGroup**](EdgeGroup.html)
+[**EdgeGroup**](EdgeGroup.md)
 
 <a name="getTelephonyProvidersEdgesEdgegroupEdgetrunkbase"></a>
 
 # **getTelephonyProvidersEdgesEdgegroupEdgetrunkbase**
 
-
-
-> [EdgeTrunkBase](EdgeTrunkBase.html) getTelephonyProvidersEdgesEdgegroupEdgetrunkbase(edgegroupId, edgetrunkbaseId)
+> [EdgeTrunkBase](EdgeTrunkBase.md) getTelephonyProvidersEdgesEdgegroupEdgetrunkbase(edgegroupId, edgetrunkbaseId)
 
 Gets the edge trunk base associated with the edge group
 
+Wraps GET /api/v2/telephony/providers/edges/edgegroups/{edgegroupId}/edgetrunkbases/{edgetrunkbaseId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/edgegroups/{edgegroupId}/edgetrunkbases/{edgetrunkbaseId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -3101,35 +2887,30 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description        | Notes |
+| ------------------- | ---------- | ------------------ | ----- |
+| **edgegroupId**     | **String** | Edge Group ID      |
+| **edgetrunkbaseId** | **String** | Edge Trunk Base ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgegroupId** | **String**| Edge Group ID | 
-| **edgetrunkbaseId** | **String**| Edge Trunk Base ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeTrunkBase**](EdgeTrunkBase.html)
+[**EdgeTrunkBase**](EdgeTrunkBase.md)
 
 <a name="getTelephonyProvidersEdgesEdgegroups"></a>
 
 # **getTelephonyProvidersEdgesEdgegroups**
 
-
-
-> [EdgeGroupEntityListing](EdgeGroupEntityListing.html) getTelephonyProvidersEdgesEdgegroups(pageSize, pageNumber, name, sortBy, managed)
+> [EdgeGroupEntityListing](EdgeGroupEntityListing.md) getTelephonyProvidersEdgesEdgegroups(pageSize, pageNumber, name, sortBy, managed)
 
 Get the list of edge groups.
 
+Wraps GET /api/v2/telephony/providers/edges/edgegroups
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/edgegroups  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -3169,37 +2950,33 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description       | Notes                        |
+| -------------- | ----------- | ----------------- | ---------------------------- |
+| **pageSize**   | **Integer** | Page size         | [optional] [default to 25]   |
+| **pageNumber** | **Integer** | Page number       | [optional] [default to 1]    |
+| **name**       | **String**  | Name              | [optional]                   |
+| **sortBy**     | **String**  | Sort by           | [optional] [default to name] |
+| **managed**    | **Boolean** | Filter by managed | [optional]                   |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **name** | **String**| Name | [optional] 
-| **sortBy** | **String**| Sort by | [optional] [default to name] 
-| **managed** | **Boolean**| Filter by managed | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeGroupEntityListing**](EdgeGroupEntityListing.html)
+[**EdgeGroupEntityListing**](EdgeGroupEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesEdgeversionreport"></a>
 
 # **getTelephonyProvidersEdgesEdgeversionreport**
 
-
-
-> [EdgeVersionReport](EdgeVersionReport.html) getTelephonyProvidersEdgesEdgeversionreport()
+> [EdgeVersionReport](EdgeVersionReport.md) getTelephonyProvidersEdgesEdgeversionreport()
 
 Get the edge version report.
 
 The report will not have consistent data about the edge version(s) until all edges have been reset.
 
-Wraps GET /api/v2/telephony/providers/edges/edgeversionreport  
+Wraps GET /api/v2/telephony/providers/edges/edgeversionreport
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -3236,30 +3013,24 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**EdgeVersionReport**](EdgeVersionReport.html)
+[**EdgeVersionReport**](EdgeVersionReport.md)
 
 <a name="getTelephonyProvidersEdgesExpired"></a>
 
 # **getTelephonyProvidersEdgesExpired**
 
-
-
-> [ExpiredEdgeListing](ExpiredEdgeListing.html) getTelephonyProvidersEdgesExpired()
+> [ExpiredEdgeListing](ExpiredEdgeListing.md) getTelephonyProvidersEdgesExpired()
 
 List of edges more than 4 edge versions behind the latest software.
 
+Wraps GET /api/v2/telephony/providers/edges/expired
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/expired  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
-* internal:edge:view
+- telephony:plugin:all
+- internal:edge:view
 
 ### Example
 
@@ -3296,29 +3067,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**ExpiredEdgeListing**](ExpiredEdgeListing.html)
+[**ExpiredEdgeListing**](ExpiredEdgeListing.md)
 
 <a name="getTelephonyProvidersEdgesExtension"></a>
 
 # **getTelephonyProvidersEdgesExtension**
 
-
-
-> [Extension](Extension.html) getTelephonyProvidersEdgesExtension(extensionId)
+> [Extension](Extension.md) getTelephonyProvidersEdgesExtension(extensionId)
 
 Get an extension by ID.
 
+Wraps GET /api/v2/telephony/providers/edges/extensions/{extensionId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/extensions/{extensionId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -3354,34 +3119,29 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description  | Notes |
+| --------------- | ---------- | ------------ | ----- |
+| **extensionId** | **String** | Extension ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **extensionId** | **String**| Extension ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Extension**](Extension.html)
+[**Extension**](Extension.md)
 
 <a name="getTelephonyProvidersEdgesExtensionpool"></a>
 
 # **getTelephonyProvidersEdgesExtensionpool**
 
-
-
-> [ExtensionPool](ExtensionPool.html) getTelephonyProvidersEdgesExtensionpool(extensionPoolId)
+> [ExtensionPool](ExtensionPool.md) getTelephonyProvidersEdgesExtensionpool(extensionPoolId)
 
 Get an extension pool by ID
 
+Wraps GET /api/v2/telephony/providers/edges/extensionpools/{extensionPoolId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/extensionpools/{extensionPoolId}  
-
-Requires ALL permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -3417,34 +3177,29 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description       | Notes |
+| ------------------- | ---------- | ----------------- | ----- |
+| **extensionPoolId** | **String** | Extension pool ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **extensionPoolId** | **String**| Extension pool ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ExtensionPool**](ExtensionPool.html)
+[**ExtensionPool**](ExtensionPool.md)
 
 <a name="getTelephonyProvidersEdgesExtensionpools"></a>
 
 # **getTelephonyProvidersEdgesExtensionpools**
 
-
-
-> [ExtensionPoolEntityListing](ExtensionPoolEntityListing.html) getTelephonyProvidersEdgesExtensionpools(pageSize, pageNumber, sortBy, number)
+> [ExtensionPoolEntityListing](ExtensionPoolEntityListing.md) getTelephonyProvidersEdgesExtensionpools(pageSize, pageNumber, sortBy, number)
 
 Get a listing of extension pools
 
+Wraps GET /api/v2/telephony/providers/edges/extensionpools
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/extensionpools  
-
-Requires ALL permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -3483,37 +3238,32 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
+| **sortBy**     | **String**  | Sort by     | [optional]                 |
+| **number**     | **String**  | Number      | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **number** | **String**| Number | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ExtensionPoolEntityListing**](ExtensionPoolEntityListing.html)
+[**ExtensionPoolEntityListing**](ExtensionPoolEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesExtensions"></a>
 
 # **getTelephonyProvidersEdgesExtensions**
 
-
-
-> [ExtensionEntityListing](ExtensionEntityListing.html) getTelephonyProvidersEdgesExtensions(pageSize, pageNumber, sortBy, sortOrder, number)
+> [ExtensionEntityListing](ExtensionEntityListing.md) getTelephonyProvidersEdgesExtensions(pageSize, pageNumber, sortBy, sortOrder, number)
 
 Get a listing of extensions
 
+Wraps GET /api/v2/telephony/providers/edges/extensions
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/extensions  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -3553,38 +3303,33 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description      | Notes                          |
+| -------------- | ----------- | ---------------- | ------------------------------ |
+| **pageSize**   | **Integer** | Page size        | [optional] [default to 25]     |
+| **pageNumber** | **Integer** | Page number      | [optional] [default to 1]      |
+| **sortBy**     | **String**  | Sort by          | [optional] [default to number] |
+| **sortOrder**  | **String**  | Sort order       | [optional] [default to ASC]    |
+| **number**     | **String**  | Filter by number | [optional]                     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortBy** | **String**| Sort by | [optional] [default to number] 
-| **sortOrder** | **String**| Sort order | [optional] [default to ASC] 
-| **number** | **String**| Filter by number | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ExtensionEntityListing**](ExtensionEntityListing.html)
+[**ExtensionEntityListing**](ExtensionEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesLine"></a>
 
 # **getTelephonyProvidersEdgesLine**
 
-
-
-> [Line](Line.html) getTelephonyProvidersEdgesLine(lineId)
+> [Line](Line.md) getTelephonyProvidersEdgesLine(lineId)
 
 Get a Line by ID
 
+Wraps GET /api/v2/telephony/providers/edges/lines/{lineId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/lines/{lineId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -3620,34 +3365,29 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **lineId** | **String** | Line ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **lineId** | **String**| Line ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Line**](Line.html)
+[**Line**](Line.md)
 
 <a name="getTelephonyProvidersEdgesLinebasesetting"></a>
 
 # **getTelephonyProvidersEdgesLinebasesetting**
 
-
-
-> [LineBase](LineBase.html) getTelephonyProvidersEdgesLinebasesetting(lineBaseId)
+> [LineBase](LineBase.md) getTelephonyProvidersEdgesLinebasesetting(lineBaseId)
 
 Get a line base settings object by ID
 
+Wraps GET /api/v2/telephony/providers/edges/linebasesettings/{lineBaseId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/linebasesettings/{lineBaseId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -3683,34 +3423,29 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description  | Notes |
+| -------------- | ---------- | ------------ | ----- |
+| **lineBaseId** | **String** | Line base ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **lineBaseId** | **String**| Line base ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LineBase**](LineBase.html)
+[**LineBase**](LineBase.md)
 
 <a name="getTelephonyProvidersEdgesLinebasesettings"></a>
 
 # **getTelephonyProvidersEdgesLinebasesettings**
 
-
-
-> [LineBaseEntityListing](LineBaseEntityListing.html) getTelephonyProvidersEdgesLinebasesettings(pageNumber, pageSize, sortBy, sortOrder, expand)
+> [LineBaseEntityListing](LineBaseEntityListing.md) getTelephonyProvidersEdgesLinebasesettings(pageNumber, pageSize, sortBy, sortOrder, expand)
 
 Get a listing of line base settings objects
 
+Wraps GET /api/v2/telephony/providers/edges/linebasesettings
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/linebasesettings  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -3750,38 +3485,33 @@ try {
 
 ### Parameters
 
+| Name           | Type                                | Description                                       | Notes                                  |
+| -------------- | ----------------------------------- | ------------------------------------------------- | -------------------------------------- |
+| **pageNumber** | **Integer**                         | Page number                                       | [optional] [default to 1]              |
+| **pageSize**   | **Integer**                         | Page size                                         | [optional] [default to 25]             |
+| **sortBy**     | **String**                          | Value by which to sort                            | [optional] [default to name]           |
+| **sortOrder**  | **String**                          | Sort order                                        | [optional] [default to ASC]            |
+| **expand**     | [**List&lt;String&gt;**](String.md) | Fields to expand in the response, comma-separated | [optional]<br />**Values**: properties |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **sortBy** | **String**| Value by which to sort | [optional] [default to name] 
-| **sortOrder** | **String**| Sort order | [optional] [default to ASC] 
-| **expand** | [**List&lt;String&gt;**](String.html)| Fields to expand in the response, comma-separated | [optional]<br />**Values**: properties 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LineBaseEntityListing**](LineBaseEntityListing.html)
+[**LineBaseEntityListing**](LineBaseEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesLines"></a>
 
 # **getTelephonyProvidersEdgesLines**
 
-
-
-> [LineEntityListing](LineEntityListing.html) getTelephonyProvidersEdgesLines(pageSize, pageNumber, name, sortBy, expand)
+> [LineEntityListing](LineEntityListing.md) getTelephonyProvidersEdgesLines(pageSize, pageNumber, name, sortBy, expand)
 
 Get a list of Lines
 
+Wraps GET /api/v2/telephony/providers/edges/lines
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/lines  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -3821,38 +3551,33 @@ try {
 
 ### Parameters
 
+| Name           | Type                                | Description                                       | Notes                                                                                                    |
+| -------------- | ----------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **pageSize**   | **Integer**                         | Page size                                         | [optional] [default to 25]                                                                               |
+| **pageNumber** | **Integer**                         | Page number                                       | [optional] [default to 1]                                                                                |
+| **name**       | **String**                          | Name                                              | [optional]                                                                                               |
+| **sortBy**     | **String**                          | Value by which to sort                            | [optional] [default to name]                                                                             |
+| **expand**     | [**List&lt;String&gt;**](String.md) | Fields to expand in the response, comma-separated | [optional]<br />**Values**: properties, site, edgeGroup, primaryEdge, secondaryEdge, edges, assignedUser |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **name** | **String**| Name | [optional] 
-| **sortBy** | **String**| Value by which to sort | [optional] [default to name] 
-| **expand** | [**List&lt;String&gt;**](String.html)| Fields to expand in the response, comma-separated | [optional]<br />**Values**: properties, site, edgeGroup, primaryEdge, secondaryEdge, edges, assignedUser 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LineEntityListing**](LineEntityListing.html)
+[**LineEntityListing**](LineEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesLinesTemplate"></a>
 
 # **getTelephonyProvidersEdgesLinesTemplate**
 
-
-
-> [Line](Line.html) getTelephonyProvidersEdgesLinesTemplate(lineBaseSettingsId)
+> [Line](Line.md) getTelephonyProvidersEdgesLinesTemplate(lineBaseSettingsId)
 
 Get a Line instance template based on a Line Base Settings object. This object can then be modified and saved as a new Line instance
 
+Wraps GET /api/v2/telephony/providers/edges/lines/template
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/lines/template  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -3888,34 +3613,31 @@ try {
 
 ### Parameters
 
+| Name                   | Type       | Description                                                        | Notes |
+| ---------------------- | ---------- | ------------------------------------------------------------------ | ----- |
+| **lineBaseSettingsId** | **String** | The id of a Line Base Settings object upon which to base this Line |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **lineBaseSettingsId** | **String**| The id of a Line Base Settings object upon which to base this Line | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Line**](Line.html)
+[**Line**](Line.md)
 
 <a name="getTelephonyProvidersEdgesLogicalinterfaces"></a>
 
 # **getTelephonyProvidersEdgesLogicalinterfaces**
 
-
-
-> [LogicalInterfaceEntityListing](LogicalInterfaceEntityListing.html) getTelephonyProvidersEdgesLogicalinterfaces(edgeIds, expand)
+> [LogicalInterfaceEntityListing](LogicalInterfaceEntityListing.md) getTelephonyProvidersEdgesLogicalinterfaces(edgeIds, expand)
 
 Get edge logical interfaces.
 
 Retrieve the configured logical interfaces for a list edges. Only 100 edges can be requested at a time.
 
-Wraps GET /api/v2/telephony/providers/edges/logicalinterfaces  
+Wraps GET /api/v2/telephony/providers/edges/logicalinterfaces
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -3952,35 +3674,30 @@ try {
 
 ### Parameters
 
+| Name        | Type                                | Description                           | Notes                                                                               |
+| ----------- | ----------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------- |
+| **edgeIds** | **String**                          | Comma separated list of Edge Id&#39;s |
+| **expand**  | [**List&lt;String&gt;**](String.md) | Field to expand in the response       | [optional]<br />**Values**: externalTrunkBaseAssignments, phoneTrunkBaseAssignments |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeIds** | **String**| Comma separated list of Edge Id&#39;s | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Field to expand in the response | [optional]<br />**Values**: externalTrunkBaseAssignments, phoneTrunkBaseAssignments 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LogicalInterfaceEntityListing**](LogicalInterfaceEntityListing.html)
+[**LogicalInterfaceEntityListing**](LogicalInterfaceEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesMetrics"></a>
 
 # **getTelephonyProvidersEdgesMetrics**
 
-
-
-> [List&lt;EdgeMetrics&gt;](EdgeMetrics.html) getTelephonyProvidersEdgesMetrics(edgeIds)
+> [List&lt;EdgeMetrics&gt;](EdgeMetrics.md) getTelephonyProvidersEdgesMetrics(edgeIds)
 
 Get the metrics for a list of edges.
 
+Wraps GET /api/v2/telephony/providers/edges/metrics
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/metrics  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4016,16 +3733,15 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description                           | Notes |
+| ----------- | ---------- | ------------------------------------- | ----- |
+| **edgeIds** | **String** | Comma separated list of Edge Id&#39;s |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeIds** | **String**| Comma separated list of Edge Id&#39;s | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**List&lt;EdgeMetrics&gt;**](EdgeMetrics.html)
+[**List&lt;EdgeMetrics&gt;**](EdgeMetrics.md)
 
 <a name="getTelephonyProvidersEdgesOutboundroute"></a>
 
@@ -4033,17 +3749,17 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [OutboundRoute](OutboundRoute.html) getTelephonyProvidersEdgesOutboundroute(outboundRouteId)
+> [OutboundRoute](OutboundRoute.md) getTelephonyProvidersEdgesOutboundroute(outboundRouteId)
 
 Get outbound route
 
 This route is deprecated, use /telephony/providers/edges/sites/{siteId}/outboundroutes/{outboundRouteId} instead.
 
-Wraps GET /api/v2/telephony/providers/edges/outboundroutes/{outboundRouteId}  
+Wraps GET /api/v2/telephony/providers/edges/outboundroutes/{outboundRouteId}
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4079,34 +3795,29 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description       | Notes |
+| ------------------- | ---------- | ----------------- | ----- |
+| **outboundRouteId** | **String** | Outbound route ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **outboundRouteId** | **String**| Outbound route ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OutboundRoute**](OutboundRoute.html)
+[**OutboundRoute**](OutboundRoute.md)
 
 <a name="getTelephonyProvidersEdgesOutboundroutes"></a>
 
 # **getTelephonyProvidersEdgesOutboundroutes**
 
-
-
-> [OutboundRouteEntityListing](OutboundRouteEntityListing.html) getTelephonyProvidersEdgesOutboundroutes(pageSize, pageNumber, name, siteId, externalTrunkBasesIds, sortBy)
+> [OutboundRouteEntityListing](OutboundRouteEntityListing.md) getTelephonyProvidersEdgesOutboundroutes(pageSize, pageNumber, name, siteId, externalTrunkBasesIds, sortBy)
 
 Get outbound routes
 
+Wraps GET /api/v2/telephony/providers/edges/outboundroutes
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/outboundroutes  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4147,39 +3858,34 @@ try {
 
 ### Parameters
 
+| Name                      | Type        | Description                      | Notes                        |
+| ------------------------- | ----------- | -------------------------------- | ---------------------------- |
+| **pageSize**              | **Integer** | Page size                        | [optional] [default to 25]   |
+| **pageNumber**            | **Integer** | Page number                      | [optional] [default to 1]    |
+| **name**                  | **String**  | Name                             | [optional]                   |
+| **siteId**                | **String**  | Filter by site.id                | [optional]                   |
+| **externalTrunkBasesIds** | **String**  | Filter by externalTrunkBases.ids | [optional]                   |
+| **sortBy**                | **String**  | Sort by                          | [optional] [default to name] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **name** | **String**| Name | [optional] 
-| **siteId** | **String**| Filter by site.id | [optional] 
-| **externalTrunkBasesIds** | **String**| Filter by externalTrunkBases.ids | [optional] 
-| **sortBy** | **String**| Sort by | [optional] [default to name] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OutboundRouteEntityListing**](OutboundRouteEntityListing.html)
+[**OutboundRouteEntityListing**](OutboundRouteEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesPhone"></a>
 
 # **getTelephonyProvidersEdgesPhone**
 
-
-
-> [Phone](Phone.html) getTelephonyProvidersEdgesPhone(phoneId)
+> [Phone](Phone.md) getTelephonyProvidersEdgesPhone(phoneId)
 
 Get a Phone by ID
 
+Wraps GET /api/v2/telephony/providers/edges/phones/{phoneId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/phones/{phoneId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4215,34 +3921,29 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **phoneId** | **String** | Phone ID    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **phoneId** | **String**| Phone ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Phone**](Phone.html)
+[**Phone**](Phone.md)
 
 <a name="getTelephonyProvidersEdgesPhonebasesetting"></a>
 
 # **getTelephonyProvidersEdgesPhonebasesetting**
 
-
-
-> [PhoneBase](PhoneBase.html) getTelephonyProvidersEdgesPhonebasesetting(phoneBaseId)
+> [PhoneBase](PhoneBase.md) getTelephonyProvidersEdgesPhonebasesetting(phoneBaseId)
 
 Get a Phone Base Settings object by ID
 
+Wraps GET /api/v2/telephony/providers/edges/phonebasesettings/{phoneBaseId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/phonebasesettings/{phoneBaseId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4278,34 +3979,29 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description   | Notes |
+| --------------- | ---------- | ------------- | ----- |
+| **phoneBaseId** | **String** | Phone base ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **phoneBaseId** | **String**| Phone base ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**PhoneBase**](PhoneBase.html)
+[**PhoneBase**](PhoneBase.md)
 
 <a name="getTelephonyProvidersEdgesPhonebasesettings"></a>
 
 # **getTelephonyProvidersEdgesPhonebasesettings**
 
-
-
-> [PhoneBaseEntityListing](PhoneBaseEntityListing.html) getTelephonyProvidersEdgesPhonebasesettings(pageSize, pageNumber, sortBy, sortOrder, expand, name)
+> [PhoneBaseEntityListing](PhoneBaseEntityListing.md) getTelephonyProvidersEdgesPhonebasesettings(pageSize, pageNumber, sortBy, sortOrder, expand, name)
 
 Get a list of Phone Base Settings objects
 
+Wraps GET /api/v2/telephony/providers/edges/phonebasesettings
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/phonebasesettings  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4346,39 +4042,34 @@ try {
 
 ### Parameters
 
+| Name           | Type                                | Description                                       | Notes                                         |
+| -------------- | ----------------------------------- | ------------------------------------------------- | --------------------------------------------- |
+| **pageSize**   | **Integer**                         | Page size                                         | [optional] [default to 25]                    |
+| **pageNumber** | **Integer**                         | Page number                                       | [optional] [default to 1]                     |
+| **sortBy**     | **String**                          | Value by which to sort                            | [optional] [default to name]                  |
+| **sortOrder**  | **String**                          | Sort order                                        | [optional] [default to ASC]                   |
+| **expand**     | [**List&lt;String&gt;**](String.md) | Fields to expand in the response, comma-separated | [optional]<br />**Values**: properties, lines |
+| **name**       | **String**                          | Name                                              | [optional]                                    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortBy** | **String**| Value by which to sort | [optional] [default to name] 
-| **sortOrder** | **String**| Sort order | [optional] [default to ASC] 
-| **expand** | [**List&lt;String&gt;**](String.html)| Fields to expand in the response, comma-separated | [optional]<br />**Values**: properties, lines 
-| **name** | **String**| Name | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**PhoneBaseEntityListing**](PhoneBaseEntityListing.html)
+[**PhoneBaseEntityListing**](PhoneBaseEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesPhonebasesettingsAvailablemetabases"></a>
 
 # **getTelephonyProvidersEdgesPhonebasesettingsAvailablemetabases**
 
-
-
-> [PhoneMetaBaseEntityListing](PhoneMetaBaseEntityListing.html) getTelephonyProvidersEdgesPhonebasesettingsAvailablemetabases(pageSize, pageNumber)
+> [PhoneMetaBaseEntityListing](PhoneMetaBaseEntityListing.md) getTelephonyProvidersEdgesPhonebasesettingsAvailablemetabases(pageSize, pageNumber)
 
 Get a list of available makes and models to create a new Phone Base Settings
 
+Wraps GET /api/v2/telephony/providers/edges/phonebasesettings/availablemetabases
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/phonebasesettings/availablemetabases  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4415,35 +4106,30 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**PhoneMetaBaseEntityListing**](PhoneMetaBaseEntityListing.html)
+[**PhoneMetaBaseEntityListing**](PhoneMetaBaseEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesPhonebasesettingsTemplate"></a>
 
 # **getTelephonyProvidersEdgesPhonebasesettingsTemplate**
 
-
-
-> [PhoneBase](PhoneBase.html) getTelephonyProvidersEdgesPhonebasesettingsTemplate(phoneMetabaseId)
+> [PhoneBase](PhoneBase.md) getTelephonyProvidersEdgesPhonebasesettingsTemplate(phoneMetabaseId)
 
 Get a Phone Base Settings instance template from a given make and model. This object can then be modified and saved as a new Phone Base Settings instance
 
+Wraps GET /api/v2/telephony/providers/edges/phonebasesettings/template
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/phonebasesettings/template  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4479,34 +4165,29 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                                                             | Notes |
+| ------------------- | ---------- | ----------------------------------------------------------------------- | ----- |
+| **phoneMetabaseId** | **String** | The id of a metabase object upon which to base this Phone Base Settings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **phoneMetabaseId** | **String**| The id of a metabase object upon which to base this Phone Base Settings | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**PhoneBase**](PhoneBase.html)
+[**PhoneBase**](PhoneBase.md)
 
 <a name="getTelephonyProvidersEdgesPhones"></a>
 
 # **getTelephonyProvidersEdgesPhones**
 
-
-
-> [PhoneEntityListing](PhoneEntityListing.html) getTelephonyProvidersEdgesPhones(pageNumber, pageSize, sortBy, sortOrder, siteId, webRtcUserId, phoneBaseSettingsId, linesLoggedInUserId, linesDefaultForUserId, phoneHardwareId, linesId, linesName, name, statusOperationalStatus, secondaryStatusOperationalStatus, expand, fields)
+> [PhoneEntityListing](PhoneEntityListing.md) getTelephonyProvidersEdgesPhones(pageNumber, pageSize, sortBy, sortOrder, siteId, webRtcUserId, phoneBaseSettingsId, linesLoggedInUserId, linesDefaultForUserId, phoneHardwareId, linesId, linesName, name, statusOperationalStatus, secondaryStatusOperationalStatus, expand, fields)
 
 Get a list of Phone Instances
 
+Wraps GET /api/v2/telephony/providers/edges/phones
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/phones  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4558,50 +4239,45 @@ try {
 
 ### Parameters
 
+| Name                                 | Type                                | Description                                       | Notes                                                                                                                                  |
+| ------------------------------------ | ----------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **pageNumber**                       | **Integer**                         | Page number                                       | [optional] [default to 1]                                                                                                              |
+| **pageSize**                         | **Integer**                         | Page size                                         | [optional] [default to 25]                                                                                                             |
+| **sortBy**                           | **String**                          | The field to sort by                              | [optional] [default to name]<br />**Values**: name, status.operationalStatus, secondaryStatus.operationalStatus                        |
+| **sortOrder**                        | **String**                          | Sort order                                        | [optional] [default to ASC]                                                                                                            |
+| **siteId**                           | **String**                          | Filter by site.id                                 | [optional]                                                                                                                             |
+| **webRtcUserId**                     | **String**                          | Filter by webRtcUser.id                           | [optional]                                                                                                                             |
+| **phoneBaseSettingsId**              | **String**                          | Filter by phoneBaseSettings.id                    | [optional]                                                                                                                             |
+| **linesLoggedInUserId**              | **String**                          | Filter by lines.loggedInUser.id                   | [optional]                                                                                                                             |
+| **linesDefaultForUserId**            | **String**                          | Filter by lines.defaultForUser.id                 | [optional]                                                                                                                             |
+| **phoneHardwareId**                  | **String**                          | Filter by phone_hardwareId                        | [optional]                                                                                                                             |
+| **linesId**                          | **String**                          | Filter by lines.id                                | [optional]                                                                                                                             |
+| **linesName**                        | **String**                          | Filter by lines.name                              | [optional]                                                                                                                             |
+| **name**                             | **String**                          | Name of the Phone to filter by                    | [optional]                                                                                                                             |
+| **statusOperationalStatus**          | **String**                          | The primary status to filter by                   | [optional]                                                                                                                             |
+| **secondaryStatusOperationalStatus** | **String**                          | The secondary status to filter by                 | [optional]                                                                                                                             |
+| **expand**                           | [**List&lt;String&gt;**](String.md) | Fields to expand in the response, comma-separated | [optional]<br />**Values**: properties, site, status, status.primaryEdgesStatus, status.secondaryEdgesStatus, phoneBaseSettings, lines |
+| **fields**                           | [**List&lt;String&gt;**](String.md) | Fields and properties to get, comma-separated     | [optional]<br />**Values**: webRtcUser, properties.\*, lines.loggedInUser, lines.defaultForUser                                        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **sortBy** | **String**| The field to sort by | [optional] [default to name]<br />**Values**: name, status.operationalStatus, secondaryStatus.operationalStatus 
-| **sortOrder** | **String**| Sort order | [optional] [default to ASC] 
-| **siteId** | **String**| Filter by site.id | [optional] 
-| **webRtcUserId** | **String**| Filter by webRtcUser.id | [optional] 
-| **phoneBaseSettingsId** | **String**| Filter by phoneBaseSettings.id | [optional] 
-| **linesLoggedInUserId** | **String**| Filter by lines.loggedInUser.id | [optional] 
-| **linesDefaultForUserId** | **String**| Filter by lines.defaultForUser.id | [optional] 
-| **phoneHardwareId** | **String**| Filter by phone_hardwareId | [optional] 
-| **linesId** | **String**| Filter by lines.id | [optional] 
-| **linesName** | **String**| Filter by lines.name | [optional] 
-| **name** | **String**| Name of the Phone to filter by | [optional] 
-| **statusOperationalStatus** | **String**| The primary status to filter by | [optional] 
-| **secondaryStatusOperationalStatus** | **String**| The secondary status to filter by | [optional] 
-| **expand** | [**List&lt;String&gt;**](String.html)| Fields to expand in the response, comma-separated | [optional]<br />**Values**: properties, site, status, status.primaryEdgesStatus, status.secondaryEdgesStatus, phoneBaseSettings, lines 
-| **fields** | [**List&lt;String&gt;**](String.html)| Fields and properties to get, comma-separated | [optional]<br />**Values**: webRtcUser, properties.*, lines.loggedInUser, lines.defaultForUser 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**PhoneEntityListing**](PhoneEntityListing.html)
+[**PhoneEntityListing**](PhoneEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesPhonesTemplate"></a>
 
 # **getTelephonyProvidersEdgesPhonesTemplate**
 
-
-
-> [Phone](Phone.html) getTelephonyProvidersEdgesPhonesTemplate(phoneBaseSettingsId)
+> [Phone](Phone.md) getTelephonyProvidersEdgesPhonesTemplate(phoneBaseSettingsId)
 
 Get a Phone instance template based on a Phone Base Settings object. This object can then be modified and saved as a new Phone instance
 
+Wraps GET /api/v2/telephony/providers/edges/phones/template
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/phones/template  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4637,34 +4313,31 @@ try {
 
 ### Parameters
 
+| Name                    | Type       | Description                                                          | Notes |
+| ----------------------- | ---------- | -------------------------------------------------------------------- | ----- |
+| **phoneBaseSettingsId** | **String** | The id of a Phone Base Settings object upon which to base this Phone |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **phoneBaseSettingsId** | **String**| The id of a Phone Base Settings object upon which to base this Phone | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Phone**](Phone.html)
+[**Phone**](Phone.md)
 
 <a name="getTelephonyProvidersEdgesPhysicalinterfaces"></a>
 
 # **getTelephonyProvidersEdgesPhysicalinterfaces**
 
-
-
-> [PhysicalInterfaceEntityListing](PhysicalInterfaceEntityListing.html) getTelephonyProvidersEdgesPhysicalinterfaces(edgeIds)
+> [PhysicalInterfaceEntityListing](PhysicalInterfaceEntityListing.md) getTelephonyProvidersEdgesPhysicalinterfaces(edgeIds)
 
 Get physical interfaces for edges.
 
 Retrieves a list of all configured physical interfaces for a list of edges. Only 100 edges can be requested at a time.
 
-Wraps GET /api/v2/telephony/providers/edges/physicalinterfaces  
+Wraps GET /api/v2/telephony/providers/edges/physicalinterfaces
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4700,35 +4373,30 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description                           | Notes |
+| ----------- | ---------- | ------------------------------------- | ----- |
+| **edgeIds** | **String** | Comma separated list of Edge Id&#39;s |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeIds** | **String**| Comma separated list of Edge Id&#39;s | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**PhysicalInterfaceEntityListing**](PhysicalInterfaceEntityListing.html)
+[**PhysicalInterfaceEntityListing**](PhysicalInterfaceEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesSite"></a>
 
 # **getTelephonyProvidersEdgesSite**
 
-
-
-> [Site](Site.html) getTelephonyProvidersEdgesSite(siteId)
+> [Site](Site.md) getTelephonyProvidersEdgesSite(siteId)
 
 Get a Site by ID.
 
+Wraps GET /api/v2/telephony/providers/edges/sites/{siteId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/sites/{siteId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
-* telephony:sites:view
+- telephony:plugin:all
+- telephony:sites:view
 
 ### Example
 
@@ -4764,34 +4432,29 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **siteId** | **String** | Site ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **siteId** | **String**| Site ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Site**](Site.html)
+[**Site**](Site.md)
 
 <a name="getTelephonyProvidersEdgesSiteNumberplan"></a>
 
 # **getTelephonyProvidersEdgesSiteNumberplan**
 
-
-
-> [NumberPlan](NumberPlan.html) getTelephonyProvidersEdgesSiteNumberplan(siteId, numberPlanId)
+> [NumberPlan](NumberPlan.md) getTelephonyProvidersEdgesSiteNumberplan(siteId, numberPlanId)
 
 Get a Number Plan by ID.
 
+Wraps GET /api/v2/telephony/providers/edges/sites/{siteId}/numberplans/{numberPlanId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/sites/{siteId}/numberplans/{numberPlanId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4828,35 +4491,30 @@ try {
 
 ### Parameters
 
+| Name             | Type       | Description    | Notes |
+| ---------------- | ---------- | -------------- | ----- |
+| **siteId**       | **String** | Site ID        |
+| **numberPlanId** | **String** | Number Plan ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **siteId** | **String**| Site ID | 
-| **numberPlanId** | **String**| Number Plan ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**NumberPlan**](NumberPlan.html)
+[**NumberPlan**](NumberPlan.md)
 
 <a name="getTelephonyProvidersEdgesSiteNumberplans"></a>
 
 # **getTelephonyProvidersEdgesSiteNumberplans**
 
-
-
-> [List&lt;NumberPlan&gt;](NumberPlan.html) getTelephonyProvidersEdgesSiteNumberplans(siteId)
+> [List&lt;NumberPlan&gt;](NumberPlan.md) getTelephonyProvidersEdgesSiteNumberplans(siteId)
 
 Get the list of Number Plans for this Site. Only fetches the first 200 records.
 
+Wraps GET /api/v2/telephony/providers/edges/sites/{siteId}/numberplans
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/sites/{siteId}/numberplans  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4892,34 +4550,29 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **siteId** | **String** | Site ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **siteId** | **String**| Site ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**List&lt;NumberPlan&gt;**](NumberPlan.html)
+[**List&lt;NumberPlan&gt;**](NumberPlan.md)
 
 <a name="getTelephonyProvidersEdgesSiteNumberplansClassifications"></a>
 
 # **getTelephonyProvidersEdgesSiteNumberplansClassifications**
 
-
-
 > List&lt;String&gt; getTelephonyProvidersEdgesSiteNumberplansClassifications(siteId, classification)
 
 Get a list of Classifications for this Site
 
+Wraps GET /api/v2/telephony/providers/edges/sites/{siteId}/numberplans/classifications
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/sites/{siteId}/numberplans/classifications  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -4956,13 +4609,12 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description    | Notes      |
+| ------------------ | ---------- | -------------- | ---------- |
+| **siteId**         | **String** | Site ID        |
+| **classification** | **String** | Classification | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **siteId** | **String**| Site ID | 
-| **classification** | **String**| Classification | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -4972,19 +4624,15 @@ try {
 
 # **getTelephonyProvidersEdgesSiteOutboundroute**
 
-
-
-> [OutboundRouteBase](OutboundRouteBase.html) getTelephonyProvidersEdgesSiteOutboundroute(siteId, outboundRouteId)
+> [OutboundRouteBase](OutboundRouteBase.md) getTelephonyProvidersEdgesSiteOutboundroute(siteId, outboundRouteId)
 
 Get an outbound route
 
+Wraps GET /api/v2/telephony/providers/edges/sites/{siteId}/outboundroutes/{outboundRouteId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/sites/{siteId}/outboundroutes/{outboundRouteId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -5021,35 +4669,30 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description       | Notes |
+| ------------------- | ---------- | ----------------- | ----- |
+| **siteId**          | **String** | Site ID           |
+| **outboundRouteId** | **String** | Outbound route ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **siteId** | **String**| Site ID | 
-| **outboundRouteId** | **String**| Outbound route ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OutboundRouteBase**](OutboundRouteBase.html)
+[**OutboundRouteBase**](OutboundRouteBase.md)
 
 <a name="getTelephonyProvidersEdgesSiteOutboundroutes"></a>
 
 # **getTelephonyProvidersEdgesSiteOutboundroutes**
 
-
-
-> [OutboundRouteBaseEntityListing](OutboundRouteBaseEntityListing.html) getTelephonyProvidersEdgesSiteOutboundroutes(siteId, pageSize, pageNumber, name, externalTrunkBasesIds, sortBy)
+> [OutboundRouteBaseEntityListing](OutboundRouteBaseEntityListing.md) getTelephonyProvidersEdgesSiteOutboundroutes(siteId, pageSize, pageNumber, name, externalTrunkBasesIds, sortBy)
 
 Get outbound routes
 
+Wraps GET /api/v2/telephony/providers/edges/sites/{siteId}/outboundroutes
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/sites/{siteId}/outboundroutes  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -5090,38 +4733,32 @@ try {
 
 ### Parameters
 
+| Name                      | Type        | Description            | Notes                        |
+| ------------------------- | ----------- | ---------------------- | ---------------------------- |
+| **siteId**                | **String**  | Site ID                |
+| **pageSize**              | **Integer** | Page size              | [optional] [default to 25]   |
+| **pageNumber**            | **Integer** | Page number            | [optional] [default to 1]    |
+| **name**                  | **String**  | Name                   | [optional]                   |
+| **externalTrunkBasesIds** | **String**  | externalTrunkBases.ids | [optional]                   |
+| **sortBy**                | **String**  | Sort by                | [optional] [default to name] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **siteId** | **String**| Site ID | 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **name** | **String**| Name | [optional] 
-| **externalTrunkBasesIds** | **String**| externalTrunkBases.ids | [optional] 
-| **sortBy** | **String**| Sort by | [optional] [default to name] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OutboundRouteBaseEntityListing**](OutboundRouteBaseEntityListing.html)
+[**OutboundRouteBaseEntityListing**](OutboundRouteBaseEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesSites"></a>
 
 # **getTelephonyProvidersEdgesSites**
 
-
-
-> [SiteEntityListing](SiteEntityListing.html) getTelephonyProvidersEdgesSites(pageSize, pageNumber, sortBy, sortOrder, name, locationId, managed)
+> [SiteEntityListing](SiteEntityListing.md) getTelephonyProvidersEdgesSites(pageSize, pageNumber, sortBy, sortOrder, name, locationId, managed)
 
 Get the list of Sites.
 
+Wraps GET /api/v2/telephony/providers/edges/sites
 
-
-Wraps GET /api/v2/telephony/providers/edges/sites  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -5163,39 +4800,33 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description       | Notes                        |
+| -------------- | ----------- | ----------------- | ---------------------------- |
+| **pageSize**   | **Integer** | Page size         | [optional] [default to 25]   |
+| **pageNumber** | **Integer** | Page number       | [optional] [default to 1]    |
+| **sortBy**     | **String**  | Sort by           | [optional] [default to name] |
+| **sortOrder**  | **String**  | Sort order        | [optional] [default to ASC]  |
+| **name**       | **String**  | Name              | [optional]                   |
+| **locationId** | **String**  | Location Id       | [optional]                   |
+| **managed**    | **Boolean** | Filter by managed | [optional]                   |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortBy** | **String**| Sort by | [optional] [default to name] 
-| **sortOrder** | **String**| Sort order | [optional] [default to ASC] 
-| **name** | **String**| Name | [optional] 
-| **locationId** | **String**| Location Id | [optional] 
-| **managed** | **Boolean**| Filter by managed | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SiteEntityListing**](SiteEntityListing.html)
+[**SiteEntityListing**](SiteEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesTimezones"></a>
 
 # **getTelephonyProvidersEdgesTimezones**
 
-
-
-> [TimeZoneEntityListing](TimeZoneEntityListing.html) getTelephonyProvidersEdgesTimezones(pageSize, pageNumber)
+> [TimeZoneEntityListing](TimeZoneEntityListing.md) getTelephonyProvidersEdgesTimezones(pageSize, pageNumber)
 
 Get a list of Edge-compatible time zones
 
+Wraps GET /api/v2/telephony/providers/edges/timezones
 
-
-Wraps GET /api/v2/telephony/providers/edges/timezones  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -5232,35 +4863,30 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                        |
+| -------------- | ----------- | ----------- | ---------------------------- |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 1000] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 1000] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TimeZoneEntityListing**](TimeZoneEntityListing.html)
+[**TimeZoneEntityListing**](TimeZoneEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesTrunk"></a>
 
 # **getTelephonyProvidersEdgesTrunk**
 
-
-
-> [Trunk](Trunk.html) getTelephonyProvidersEdgesTrunk(trunkId)
+> [Trunk](Trunk.md) getTelephonyProvidersEdgesTrunk(trunkId)
 
 Get a Trunk by ID
 
+Wraps GET /api/v2/telephony/providers/edges/trunks/{trunkId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/trunks/{trunkId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -5296,34 +4922,29 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **trunkId** | **String** | Trunk ID    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **trunkId** | **String**| Trunk ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Trunk**](Trunk.html)
+[**Trunk**](Trunk.md)
 
 <a name="getTelephonyProvidersEdgesTrunkMetrics"></a>
 
 # **getTelephonyProvidersEdgesTrunkMetrics**
 
-
-
-> [TrunkMetrics](TrunkMetrics.html) getTelephonyProvidersEdgesTrunkMetrics(trunkId)
+> [TrunkMetrics](TrunkMetrics.md) getTelephonyProvidersEdgesTrunkMetrics(trunkId)
 
 Get the trunk metrics.
 
+Wraps GET /api/v2/telephony/providers/edges/trunks/{trunkId}/metrics
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/trunks/{trunkId}/metrics  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -5359,34 +4980,31 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **trunkId** | **String** | Trunk Id    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **trunkId** | **String**| Trunk Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TrunkMetrics**](TrunkMetrics.html)
+[**TrunkMetrics**](TrunkMetrics.md)
 
 <a name="getTelephonyProvidersEdgesTrunkbasesetting"></a>
 
 # **getTelephonyProvidersEdgesTrunkbasesetting**
 
-
-
-> [TrunkBase](TrunkBase.html) getTelephonyProvidersEdgesTrunkbasesetting(trunkBaseSettingsId, ignoreHidden)
+> [TrunkBase](TrunkBase.md) getTelephonyProvidersEdgesTrunkbasesetting(trunkBaseSettingsId, ignoreHidden)
 
 Get a Trunk Base Settings object by ID
 
 Managed properties will not be returned unless the user is assigned the internal:trunk:edit permission.
 
-Wraps GET /api/v2/telephony/providers/edges/trunkbasesettings/{trunkBaseSettingsId}  
+Wraps GET /api/v2/telephony/providers/edges/trunkbasesettings/{trunkBaseSettingsId}
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -5423,35 +5041,32 @@ try {
 
 ### Parameters
 
+| Name                    | Type        | Description                                                                                                     | Notes      |
+| ----------------------- | ----------- | --------------------------------------------------------------------------------------------------------------- | ---------- |
+| **trunkBaseSettingsId** | **String**  | Trunk Base ID                                                                                                   |
+| **ignoreHidden**        | **Boolean** | Set this to true to not receive trunk properties that are meant to be hidden or for internal system usage only. | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **trunkBaseSettingsId** | **String**| Trunk Base ID | 
-| **ignoreHidden** | **Boolean**| Set this to true to not receive trunk properties that are meant to be hidden or for internal system usage only. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TrunkBase**](TrunkBase.html)
+[**TrunkBase**](TrunkBase.md)
 
 <a name="getTelephonyProvidersEdgesTrunkbasesettings"></a>
 
 # **getTelephonyProvidersEdgesTrunkbasesettings**
 
-
-
-> [TrunkBaseEntityListing](TrunkBaseEntityListing.html) getTelephonyProvidersEdgesTrunkbasesettings(pageNumber, pageSize, sortBy, sortOrder, recordingEnabled, ignoreHidden, managed, expand, name)
+> [TrunkBaseEntityListing](TrunkBaseEntityListing.md) getTelephonyProvidersEdgesTrunkbasesettings(pageNumber, pageSize, sortBy, sortOrder, recordingEnabled, ignoreHidden, managed, expand, name)
 
 Get Trunk Base Settings listing
 
 Managed properties will not be returned unless the user is assigned the internal:trunk:edit permission.
 
-Wraps GET /api/v2/telephony/providers/edges/trunkbasesettings  
+Wraps GET /api/v2/telephony/providers/edges/trunkbasesettings
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -5495,42 +5110,37 @@ try {
 
 ### Parameters
 
+| Name                 | Type                                | Description                                                                                                     | Notes                                  |
+| -------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| **pageNumber**       | **Integer**                         | Page number                                                                                                     | [optional] [default to 1]              |
+| **pageSize**         | **Integer**                         | Page size                                                                                                       | [optional] [default to 25]             |
+| **sortBy**           | **String**                          | Value by which to sort                                                                                          | [optional] [default to name]           |
+| **sortOrder**        | **String**                          | Sort order                                                                                                      | [optional] [default to ASC]            |
+| **recordingEnabled** | **Boolean**                         | Filter trunks by recording enabled                                                                              | [optional]                             |
+| **ignoreHidden**     | **Boolean**                         | Set this to true to not receive trunk properties that are meant to be hidden or for internal system usage only. | [optional]                             |
+| **managed**          | **Boolean**                         | Filter by managed                                                                                               | [optional]                             |
+| **expand**           | [**List&lt;String&gt;**](String.md) | Fields to expand in the response, comma-separated                                                               | [optional]<br />**Values**: properties |
+| **name**             | **String**                          | Name of the TrunkBase to filter by                                                                              | [optional]                             |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **sortBy** | **String**| Value by which to sort | [optional] [default to name] 
-| **sortOrder** | **String**| Sort order | [optional] [default to ASC] 
-| **recordingEnabled** | **Boolean**| Filter trunks by recording enabled | [optional] 
-| **ignoreHidden** | **Boolean**| Set this to true to not receive trunk properties that are meant to be hidden or for internal system usage only. | [optional] 
-| **managed** | **Boolean**| Filter by managed | [optional] 
-| **expand** | [**List&lt;String&gt;**](String.html)| Fields to expand in the response, comma-separated | [optional]<br />**Values**: properties 
-| **name** | **String**| Name of the TrunkBase to filter by | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TrunkBaseEntityListing**](TrunkBaseEntityListing.html)
+[**TrunkBaseEntityListing**](TrunkBaseEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesTrunkbasesettingsAvailablemetabases"></a>
 
 # **getTelephonyProvidersEdgesTrunkbasesettingsAvailablemetabases**
 
-
-
-> [TrunkMetabaseEntityListing](TrunkMetabaseEntityListing.html) getTelephonyProvidersEdgesTrunkbasesettingsAvailablemetabases(type, pageSize, pageNumber)
+> [TrunkMetabaseEntityListing](TrunkMetabaseEntityListing.md) getTelephonyProvidersEdgesTrunkbasesettingsAvailablemetabases(type, pageSize, pageNumber)
 
 Get a list of available makes and models to create a new Trunk Base Settings
 
+Wraps GET /api/v2/telephony/providers/edges/trunkbasesettings/availablemetabases
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/trunkbasesettings/availablemetabases  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -5554,9 +5164,9 @@ ApiClient apiClient = ApiClient.Builder.standard()
 Configuration.setDefaultApiClient(apiClient);
 
 TelephonyProvidersEdgeApi apiInstance = new TelephonyProvidersEdgeApi();
-String type = "type_example"; // String | 
-Integer pageSize = 25; // Integer | 
-Integer pageNumber = 1; // Integer | 
+String type = "type_example"; // String |
+Integer pageSize = 25; // Integer |
+Integer pageNumber = 1; // Integer |
 try {
     TrunkMetabaseEntityListing result = apiInstance.getTelephonyProvidersEdgesTrunkbasesettingsAvailablemetabases(type, pageSize, pageNumber);
     System.out.println(result);
@@ -5568,36 +5178,31 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                                             |
+| -------------- | ----------- | ----------- | ------------------------------------------------- |
+| **type**       | **String**  |             | [optional]<br />**Values**: EXTERNAL, PHONE, EDGE |
+| **pageSize**   | **Integer** |             | [optional] [default to 25]                        |
+| **pageNumber** | **Integer** |             | [optional] [default to 1]                         |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **type** | **String**|  | [optional]<br />**Values**: EXTERNAL, PHONE, EDGE 
-| **pageSize** | **Integer**|  | [optional] [default to 25] 
-| **pageNumber** | **Integer**|  | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TrunkMetabaseEntityListing**](TrunkMetabaseEntityListing.html)
+[**TrunkMetabaseEntityListing**](TrunkMetabaseEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesTrunkbasesettingsTemplate"></a>
 
 # **getTelephonyProvidersEdgesTrunkbasesettingsTemplate**
 
-
-
-> [TrunkBase](TrunkBase.html) getTelephonyProvidersEdgesTrunkbasesettingsTemplate(trunkMetabaseId)
+> [TrunkBase](TrunkBase.md) getTelephonyProvidersEdgesTrunkbasesettingsTemplate(trunkMetabaseId)
 
 Get a Trunk Base Settings instance template from a given make and model. This object can then be modified and saved as a new Trunk Base Settings instance
 
+Wraps GET /api/v2/telephony/providers/edges/trunkbasesettings/template
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/trunkbasesettings/template  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -5633,34 +5238,31 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                                                             | Notes |
+| ------------------- | ---------- | ----------------------------------------------------------------------- | ----- |
+| **trunkMetabaseId** | **String** | The id of a metabase object upon which to base this Trunk Base Settings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **trunkMetabaseId** | **String**| The id of a metabase object upon which to base this Trunk Base Settings | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TrunkBase**](TrunkBase.html)
+[**TrunkBase**](TrunkBase.md)
 
 <a name="getTelephonyProvidersEdgesTrunks"></a>
 
 # **getTelephonyProvidersEdgesTrunks**
 
-
-
-> [TrunkEntityListing](TrunkEntityListing.html) getTelephonyProvidersEdgesTrunks(pageNumber, pageSize, sortBy, sortOrder, edgeId, trunkBaseId, trunkType)
+> [TrunkEntityListing](TrunkEntityListing.md) getTelephonyProvidersEdgesTrunks(pageNumber, pageSize, sortBy, sortOrder, edgeId, trunkBaseId, trunkType)
 
 Get the list of available trunks.
 
 Trunks are created by assigning trunk base settings to an Edge or Edge Group.
 
-Wraps GET /api/v2/telephony/providers/edges/trunks  
+Wraps GET /api/v2/telephony/providers/edges/trunks
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -5702,40 +5304,35 @@ try {
 
 ### Parameters
 
+| Name            | Type        | Description              | Notes                                             |
+| --------------- | ----------- | ------------------------ | ------------------------------------------------- |
+| **pageNumber**  | **Integer** | Page number              | [optional] [default to 1]                         |
+| **pageSize**    | **Integer** | Page size                | [optional] [default to 25]                        |
+| **sortBy**      | **String**  | Value by which to sort   | [optional] [default to name]                      |
+| **sortOrder**   | **String**  | Sort order               | [optional] [default to ASC]                       |
+| **edgeId**      | **String**  | Filter by Edge Ids       | [optional]                                        |
+| **trunkBaseId** | **String**  | Filter by Trunk Base Ids | [optional]                                        |
+| **trunkType**   | **String**  | Filter by a Trunk type   | [optional]<br />**Values**: EXTERNAL, PHONE, EDGE |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **sortBy** | **String**| Value by which to sort | [optional] [default to name] 
-| **sortOrder** | **String**| Sort order | [optional] [default to ASC] 
-| **edgeId** | **String**| Filter by Edge Ids | [optional] 
-| **trunkBaseId** | **String**| Filter by Trunk Base Ids | [optional] 
-| **trunkType** | **String**| Filter by a Trunk type | [optional]<br />**Values**: EXTERNAL, PHONE, EDGE 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TrunkEntityListing**](TrunkEntityListing.html)
+[**TrunkEntityListing**](TrunkEntityListing.md)
 
 <a name="getTelephonyProvidersEdgesTrunksMetrics"></a>
 
 # **getTelephonyProvidersEdgesTrunksMetrics**
 
-
-
-> [List&lt;TrunkMetrics&gt;](TrunkMetrics.html) getTelephonyProvidersEdgesTrunksMetrics(trunkIds)
+> [List&lt;TrunkMetrics&gt;](TrunkMetrics.md) getTelephonyProvidersEdgesTrunksMetrics(trunkIds)
 
 Get the metrics for a list of trunks.
 
+Wraps GET /api/v2/telephony/providers/edges/trunks/metrics
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/trunks/metrics  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -5771,35 +5368,30 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                            | Notes |
+| ------------ | ---------- | -------------------------------------- | ----- |
+| **trunkIds** | **String** | Comma separated list of Trunk Id&#39;s |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **trunkIds** | **String**| Comma separated list of Trunk Id&#39;s | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**List&lt;TrunkMetrics&gt;**](TrunkMetrics.html)
+[**List&lt;TrunkMetrics&gt;**](TrunkMetrics.md)
 
 <a name="getTelephonyProvidersEdgesTrunkswithrecording"></a>
 
 # **getTelephonyProvidersEdgesTrunkswithrecording**
 
-
-
-> [TrunkRecordingEnabledCount](TrunkRecordingEnabledCount.html) getTelephonyProvidersEdgesTrunkswithrecording(trunkType)
+> [TrunkRecordingEnabledCount](TrunkRecordingEnabledCount.md) getTelephonyProvidersEdgesTrunkswithrecording(trunkType)
 
 Get Counts of trunks that have recording disabled or enabled
 
+Wraps GET /api/v2/telephony/providers/edges/trunkswithrecording
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/telephony/providers/edges/trunkswithrecording  
-
-Requires ANY permissions: 
-
-* recording:retentionPolicy:view
-* telephony:plugin:all
+- recording:retentionPolicy:view
+- telephony:plugin:all
 
 ### Example
 
@@ -5835,34 +5427,29 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description                  | Notes                                             |
+| ------------- | ---------- | ---------------------------- | ------------------------------------------------- |
+| **trunkType** | **String** | The type of this trunk base. | [optional]<br />**Values**: EXTERNAL, PHONE, EDGE |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **trunkType** | **String**| The type of this trunk base. | [optional]<br />**Values**: EXTERNAL, PHONE, EDGE 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TrunkRecordingEnabledCount**](TrunkRecordingEnabledCount.html)
+[**TrunkRecordingEnabledCount**](TrunkRecordingEnabledCount.md)
 
 <a name="postTelephonyProvidersEdgeDiagnosticNslookup"></a>
 
 # **postTelephonyProvidersEdgeDiagnosticNslookup**
 
-
-
-> [EdgeNetworkDiagnostic](EdgeNetworkDiagnostic.html) postTelephonyProvidersEdgeDiagnosticNslookup(edgeId, body)
+> [EdgeNetworkDiagnostic](EdgeNetworkDiagnostic.md) postTelephonyProvidersEdgeDiagnosticNslookup(edgeId, body)
 
 Nslookup request command to collect networking-related information from an Edge for a target IP or host.
 
+Wraps POST /api/v2/telephony/providers/edges/{edgeId}/diagnostic/nslookup
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/{edgeId}/diagnostic/nslookup  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -5899,35 +5486,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                                                | Description                               | Notes |
+| ---------- | ------------------------------------------------------------------- | ----------------------------------------- | ----- |
+| **edgeId** | **String**                                                          | Edge Id                                   |
+| **body**   | [**EdgeNetworkDiagnosticRequest**](EdgeNetworkDiagnosticRequest.md) | request payload to get network diagnostic |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge Id | 
-| **body** | [**EdgeNetworkDiagnosticRequest**](EdgeNetworkDiagnosticRequest.html)| request payload to get network diagnostic | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeNetworkDiagnostic**](EdgeNetworkDiagnostic.html)
+[**EdgeNetworkDiagnostic**](EdgeNetworkDiagnostic.md)
 
 <a name="postTelephonyProvidersEdgeDiagnosticPing"></a>
 
 # **postTelephonyProvidersEdgeDiagnosticPing**
 
-
-
-> [EdgeNetworkDiagnostic](EdgeNetworkDiagnostic.html) postTelephonyProvidersEdgeDiagnosticPing(edgeId, body)
+> [EdgeNetworkDiagnostic](EdgeNetworkDiagnostic.md) postTelephonyProvidersEdgeDiagnosticPing(edgeId, body)
 
 Ping Request command to collect networking-related information from an Edge for a target IP or host.
 
+Wraps POST /api/v2/telephony/providers/edges/{edgeId}/diagnostic/ping
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/{edgeId}/diagnostic/ping  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -5964,35 +5546,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                                                | Description                               | Notes |
+| ---------- | ------------------------------------------------------------------- | ----------------------------------------- | ----- |
+| **edgeId** | **String**                                                          | Edge Id                                   |
+| **body**   | [**EdgeNetworkDiagnosticRequest**](EdgeNetworkDiagnosticRequest.md) | request payload to get network diagnostic |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge Id | 
-| **body** | [**EdgeNetworkDiagnosticRequest**](EdgeNetworkDiagnosticRequest.html)| request payload to get network diagnostic | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeNetworkDiagnostic**](EdgeNetworkDiagnostic.html)
+[**EdgeNetworkDiagnostic**](EdgeNetworkDiagnostic.md)
 
 <a name="postTelephonyProvidersEdgeDiagnosticRoute"></a>
 
 # **postTelephonyProvidersEdgeDiagnosticRoute**
 
-
-
-> [EdgeNetworkDiagnostic](EdgeNetworkDiagnostic.html) postTelephonyProvidersEdgeDiagnosticRoute(edgeId, body)
+> [EdgeNetworkDiagnostic](EdgeNetworkDiagnostic.md) postTelephonyProvidersEdgeDiagnosticRoute(edgeId, body)
 
 Route request command to collect networking-related information from an Edge for a target IP or host.
 
+Wraps POST /api/v2/telephony/providers/edges/{edgeId}/diagnostic/route
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/{edgeId}/diagnostic/route  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6029,35 +5606,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                                                | Description                               | Notes |
+| ---------- | ------------------------------------------------------------------- | ----------------------------------------- | ----- |
+| **edgeId** | **String**                                                          | Edge Id                                   |
+| **body**   | [**EdgeNetworkDiagnosticRequest**](EdgeNetworkDiagnosticRequest.md) | request payload to get network diagnostic |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge Id | 
-| **body** | [**EdgeNetworkDiagnosticRequest**](EdgeNetworkDiagnosticRequest.html)| request payload to get network diagnostic | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeNetworkDiagnostic**](EdgeNetworkDiagnostic.html)
+[**EdgeNetworkDiagnostic**](EdgeNetworkDiagnostic.md)
 
 <a name="postTelephonyProvidersEdgeDiagnosticTracepath"></a>
 
 # **postTelephonyProvidersEdgeDiagnosticTracepath**
 
-
-
-> [EdgeNetworkDiagnostic](EdgeNetworkDiagnostic.html) postTelephonyProvidersEdgeDiagnosticTracepath(edgeId, body)
+> [EdgeNetworkDiagnostic](EdgeNetworkDiagnostic.md) postTelephonyProvidersEdgeDiagnosticTracepath(edgeId, body)
 
 Tracepath request command to collect networking-related information from an Edge for a target IP or host.
 
+Wraps POST /api/v2/telephony/providers/edges/{edgeId}/diagnostic/tracepath
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/{edgeId}/diagnostic/tracepath  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6094,35 +5666,32 @@ try {
 
 ### Parameters
 
+| Name       | Type                                                                | Description                               | Notes |
+| ---------- | ------------------------------------------------------------------- | ----------------------------------------- | ----- |
+| **edgeId** | **String**                                                          | Edge Id                                   |
+| **body**   | [**EdgeNetworkDiagnosticRequest**](EdgeNetworkDiagnosticRequest.md) | request payload to get network diagnostic |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge Id | 
-| **body** | [**EdgeNetworkDiagnosticRequest**](EdgeNetworkDiagnosticRequest.html)| request payload to get network diagnostic | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeNetworkDiagnostic**](EdgeNetworkDiagnostic.html)
+[**EdgeNetworkDiagnostic**](EdgeNetworkDiagnostic.md)
 
 <a name="postTelephonyProvidersEdgeLogicalinterfaces"></a>
 
 # **postTelephonyProvidersEdgeLogicalinterfaces**
 
-
-
-> [DomainLogicalInterface](DomainLogicalInterface.html) postTelephonyProvidersEdgeLogicalinterfaces(edgeId, body)
+> [DomainLogicalInterface](DomainLogicalInterface.md) postTelephonyProvidersEdgeLogicalinterfaces(edgeId, body)
 
 Create an edge logical interface.
 
 Create
 
-Wraps POST /api/v2/telephony/providers/edges/{edgeId}/logicalinterfaces  
+Wraps POST /api/v2/telephony/providers/edges/{edgeId}/logicalinterfaces
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6159,35 +5728,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                                    | Description       | Notes |
+| ---------- | ------------------------------------------------------- | ----------------- | ----- |
+| **edgeId** | **String**                                              | Edge ID           |
+| **body**   | [**DomainLogicalInterface**](DomainLogicalInterface.md) | Logical interface |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **body** | [**DomainLogicalInterface**](DomainLogicalInterface.html)| Logical interface | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainLogicalInterface**](DomainLogicalInterface.html)
+[**DomainLogicalInterface**](DomainLogicalInterface.md)
 
 <a name="postTelephonyProvidersEdgeLogsJobUpload"></a>
 
 # **postTelephonyProvidersEdgeLogsJobUpload**
 
-
-
 > Void postTelephonyProvidersEdgeLogsJobUpload(edgeId, jobId, body)
 
 Request that the specified fileIds be uploaded from the Edge.
 
+Wraps POST /api/v2/telephony/providers/edges/{edgeId}/logs/jobs/{jobId}/upload
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/{edgeId}/logs/jobs/{jobId}/upload  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6224,14 +5788,13 @@ try {
 
 ### Parameters
 
+| Name       | Type                                                        | Description        | Notes |
+| ---------- | ----------------------------------------------------------- | ------------------ | ----- |
+| **edgeId** | **String**                                                  | Edge ID            |
+| **jobId**  | **String**                                                  | Job ID             |
+| **body**   | [**EdgeLogsJobUploadRequest**](EdgeLogsJobUploadRequest.md) | Log upload request |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **jobId** | **String**| Job ID | 
-| **body** | [**EdgeLogsJobUploadRequest**](EdgeLogsJobUploadRequest.html)| Log upload request | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -6241,19 +5804,15 @@ null (empty response body)
 
 # **postTelephonyProvidersEdgeLogsJobs**
 
-
-
-> [EdgeLogsJobResponse](EdgeLogsJobResponse.html) postTelephonyProvidersEdgeLogsJobs(edgeId, body)
+> [EdgeLogsJobResponse](EdgeLogsJobResponse.md) postTelephonyProvidersEdgeLogsJobs(edgeId, body)
 
 Create a job to upload a list of Edge logs.
 
+Wraps POST /api/v2/telephony/providers/edges/{edgeId}/logs/jobs
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/{edgeId}/logs/jobs  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6290,35 +5849,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                            | Description        | Notes |
+| ---------- | ----------------------------------------------- | ------------------ | ----- |
+| **edgeId** | **String**                                      | Edge ID            |
+| **body**   | [**EdgeLogsJobRequest**](EdgeLogsJobRequest.md) | EdgeLogsJobRequest |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **body** | [**EdgeLogsJobRequest**](EdgeLogsJobRequest.html)| EdgeLogsJobRequest | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeLogsJobResponse**](EdgeLogsJobResponse.html)
+[**EdgeLogsJobResponse**](EdgeLogsJobResponse.md)
 
 <a name="postTelephonyProvidersEdgeReboot"></a>
 
 # **postTelephonyProvidersEdgeReboot**
 
-
-
 > String postTelephonyProvidersEdgeReboot(edgeId, body)
 
 Reboot an Edge
 
+Wraps POST /api/v2/telephony/providers/edges/{edgeId}/reboot
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/{edgeId}/reboot  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6355,13 +5909,12 @@ try {
 
 ### Parameters
 
+| Name       | Type                                                | Description                    | Notes      |
+| ---------- | --------------------------------------------------- | ------------------------------ | ---------- |
+| **edgeId** | **String**                                          | Edge ID                        |
+| **body**   | [**EdgeRebootParameters**](EdgeRebootParameters.md) | Parameters for the edge reboot | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **body** | [**EdgeRebootParameters**](EdgeRebootParameters.html)| Parameters for the edge reboot | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -6371,18 +5924,13 @@ try {
 
 # **postTelephonyProvidersEdgeSoftwareupdate**
 
-
-
-> [DomainEdgeSoftwareUpdateDto](DomainEdgeSoftwareUpdateDto.html) postTelephonyProvidersEdgeSoftwareupdate(edgeId, body)
+> [DomainEdgeSoftwareUpdateDto](DomainEdgeSoftwareUpdateDto.md) postTelephonyProvidersEdgeSoftwareupdate(edgeId, body)
 
 Starts a software update for this edge.
 
+Wraps POST /api/v2/telephony/providers/edges/{edgeId}/softwareupdate
 
-
-Wraps POST /api/v2/telephony/providers/edges/{edgeId}/softwareupdate  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -6419,35 +5967,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                                              | Description             | Notes |
+| ---------- | ----------------------------------------------------------------- | ----------------------- | ----- |
+| **edgeId** | **String**                                                        | Edge ID                 |
+| **body**   | [**DomainEdgeSoftwareUpdateDto**](DomainEdgeSoftwareUpdateDto.md) | Software update request |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **body** | [**DomainEdgeSoftwareUpdateDto**](DomainEdgeSoftwareUpdateDto.html)| Software update request | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainEdgeSoftwareUpdateDto**](DomainEdgeSoftwareUpdateDto.html)
+[**DomainEdgeSoftwareUpdateDto**](DomainEdgeSoftwareUpdateDto.md)
 
 <a name="postTelephonyProvidersEdgeStatuscode"></a>
 
 # **postTelephonyProvidersEdgeStatuscode**
 
-
-
 > String postTelephonyProvidersEdgeStatuscode(edgeId, body)
 
 Take an Edge in or out of service
 
+Wraps POST /api/v2/telephony/providers/edges/{edgeId}/statuscode
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/{edgeId}/statuscode  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6484,13 +6027,12 @@ try {
 
 ### Parameters
 
+| Name       | Type                                                      | Description        | Notes      |
+| ---------- | --------------------------------------------------------- | ------------------ | ---------- |
+| **edgeId** | **String**                                                | Edge ID            |
+| **body**   | [**EdgeServiceStateRequest**](EdgeServiceStateRequest.md) | Edge Service State | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **body** | [**EdgeServiceStateRequest**](EdgeServiceStateRequest.html)| Edge Service State | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -6500,19 +6042,15 @@ try {
 
 # **postTelephonyProvidersEdgeUnpair**
 
-
-
 > String postTelephonyProvidersEdgeUnpair(edgeId)
 
 Unpair an Edge
 
+Wraps POST /api/v2/telephony/providers/edges/{edgeId}/unpair
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/{edgeId}/unpair  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6548,12 +6086,11 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **edgeId** | **String** | Edge Id     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -6563,19 +6100,15 @@ try {
 
 # **postTelephonyProvidersEdges**
 
-
-
-> [Edge](Edge.html) postTelephonyProvidersEdges(body)
+> [Edge](Edge.md) postTelephonyProvidersEdges(body)
 
 Create an edge.
 
+Wraps POST /api/v2/telephony/providers/edges
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6611,33 +6144,27 @@ try {
 
 ### Parameters
 
+| Name     | Type                | Description | Notes |
+| -------- | ------------------- | ----------- | ----- |
+| **body** | [**Edge**](Edge.md) | Edge        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**Edge**](Edge.html)| Edge | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Edge**](Edge.html)
+[**Edge**](Edge.md)
 
 <a name="postTelephonyProvidersEdgesAddressvalidation"></a>
 
 # **postTelephonyProvidersEdgesAddressvalidation**
 
-
-
-> [ValidateAddressResponse](ValidateAddressResponse.html) postTelephonyProvidersEdgesAddressvalidation(body)
+> [ValidateAddressResponse](ValidateAddressResponse.md) postTelephonyProvidersEdgesAddressvalidation(body)
 
 Validates a street address
 
+Wraps POST /api/v2/telephony/providers/edges/addressvalidation
 
-
-Wraps POST /api/v2/telephony/providers/edges/addressvalidation  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -6673,34 +6200,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                    | Description | Notes |
+| -------- | ------------------------------------------------------- | ----------- | ----- |
+| **body** | [**ValidateAddressRequest**](ValidateAddressRequest.md) | Address     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ValidateAddressRequest**](ValidateAddressRequest.html)| Address | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ValidateAddressResponse**](ValidateAddressResponse.html)
+[**ValidateAddressResponse**](ValidateAddressResponse.md)
 
 <a name="postTelephonyProvidersEdgesCertificateauthorities"></a>
 
 # **postTelephonyProvidersEdgesCertificateauthorities**
 
-
-
-> [DomainCertificateAuthority](DomainCertificateAuthority.html) postTelephonyProvidersEdgesCertificateauthorities(body)
+> [DomainCertificateAuthority](DomainCertificateAuthority.md) postTelephonyProvidersEdgesCertificateauthorities(body)
 
 Create a certificate authority.
 
+Wraps POST /api/v2/telephony/providers/edges/certificateauthorities
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/certificateauthorities  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6736,34 +6258,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                            | Description          | Notes |
+| -------- | --------------------------------------------------------------- | -------------------- | ----- |
+| **body** | [**DomainCertificateAuthority**](DomainCertificateAuthority.md) | CertificateAuthority |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**DomainCertificateAuthority**](DomainCertificateAuthority.html)| CertificateAuthority | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainCertificateAuthority**](DomainCertificateAuthority.html)
+[**DomainCertificateAuthority**](DomainCertificateAuthority.md)
 
 <a name="postTelephonyProvidersEdgesDidpools"></a>
 
 # **postTelephonyProvidersEdgesDidpools**
 
-
-
-> [DIDPool](DIDPool.html) postTelephonyProvidersEdgesDidpools(body)
+> [DIDPool](DIDPool.md) postTelephonyProvidersEdgesDidpools(body)
 
 Create a new DID pool
 
+Wraps POST /api/v2/telephony/providers/edges/didpools
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/didpools  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6799,34 +6316,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                      | Description | Notes |
+| -------- | ------------------------- | ----------- | ----- |
+| **body** | [**DIDPool**](DIDPool.md) | DID pool    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**DIDPool**](DIDPool.html)| DID pool | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DIDPool**](DIDPool.html)
+[**DIDPool**](DIDPool.md)
 
 <a name="postTelephonyProvidersEdgesEdgegroups"></a>
 
 # **postTelephonyProvidersEdgesEdgegroups**
 
-
-
-> [EdgeGroup](EdgeGroup.html) postTelephonyProvidersEdgesEdgegroups(body)
+> [EdgeGroup](EdgeGroup.md) postTelephonyProvidersEdgesEdgegroups(body)
 
 Create an edge group.
 
+Wraps POST /api/v2/telephony/providers/edges/edgegroups
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/edgegroups  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6862,34 +6374,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                          | Description | Notes |
+| -------- | ----------------------------- | ----------- | ----- |
+| **body** | [**EdgeGroup**](EdgeGroup.md) | EdgeGroup   |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**EdgeGroup**](EdgeGroup.html)| EdgeGroup | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeGroup**](EdgeGroup.html)
+[**EdgeGroup**](EdgeGroup.md)
 
 <a name="postTelephonyProvidersEdgesExtensionpools"></a>
 
 # **postTelephonyProvidersEdgesExtensionpools**
 
-
-
-> [ExtensionPool](ExtensionPool.html) postTelephonyProvidersEdgesExtensionpools(body)
+> [ExtensionPool](ExtensionPool.md) postTelephonyProvidersEdgesExtensionpools(body)
 
 Create a new extension pool
 
+Wraps POST /api/v2/telephony/providers/edges/extensionpools
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/extensionpools  
-
-Requires ALL permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6925,16 +6432,15 @@ try {
 
 ### Parameters
 
+| Name     | Type                                  | Description   | Notes |
+| -------- | ------------------------------------- | ------------- | ----- |
+| **body** | [**ExtensionPool**](ExtensionPool.md) | ExtensionPool |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ExtensionPool**](ExtensionPool.html)| ExtensionPool | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ExtensionPool**](ExtensionPool.html)
+[**ExtensionPool**](ExtensionPool.md)
 
 <a name="postTelephonyProvidersEdgesOutboundroutes"></a>
 
@@ -6942,17 +6448,17 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [OutboundRoute](OutboundRoute.html) postTelephonyProvidersEdgesOutboundroutes(body)
+> [OutboundRoute](OutboundRoute.md) postTelephonyProvidersEdgesOutboundroutes(body)
 
 Create outbound rule
 
 This route is deprecated, use /telephony/providers/edges/sites/{siteId}/outboundroutes instead.
 
-Wraps POST /api/v2/telephony/providers/edges/outboundroutes  
+Wraps POST /api/v2/telephony/providers/edges/outboundroutes
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -6988,34 +6494,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                  | Description   | Notes |
+| -------- | ------------------------------------- | ------------- | ----- |
+| **body** | [**OutboundRoute**](OutboundRoute.md) | OutboundRoute |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**OutboundRoute**](OutboundRoute.html)| OutboundRoute | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OutboundRoute**](OutboundRoute.html)
+[**OutboundRoute**](OutboundRoute.md)
 
 <a name="postTelephonyProvidersEdgesPhoneReboot"></a>
 
 # **postTelephonyProvidersEdgesPhoneReboot**
 
-
-
 > Void postTelephonyProvidersEdgesPhoneReboot(phoneId)
 
 Reboot a Phone
 
+Wraps POST /api/v2/telephony/providers/edges/phones/{phoneId}/reboot
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/phones/{phoneId}/reboot  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7050,12 +6551,11 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **phoneId** | **String** | Phone Id    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **phoneId** | **String**| Phone Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -7065,19 +6565,15 @@ null (empty response body)
 
 # **postTelephonyProvidersEdgesPhonebasesettings**
 
-
-
-> [PhoneBase](PhoneBase.html) postTelephonyProvidersEdgesPhonebasesettings(body)
+> [PhoneBase](PhoneBase.md) postTelephonyProvidersEdgesPhonebasesettings(body)
 
 Create a new Phone Base Settings object
 
+Wraps POST /api/v2/telephony/providers/edges/phonebasesettings
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/phonebasesettings  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7113,34 +6609,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                          | Description         | Notes |
+| -------- | ----------------------------- | ------------------- | ----- |
+| **body** | [**PhoneBase**](PhoneBase.md) | Phone base settings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**PhoneBase**](PhoneBase.html)| Phone base settings | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**PhoneBase**](PhoneBase.html)
+[**PhoneBase**](PhoneBase.md)
 
 <a name="postTelephonyProvidersEdgesPhones"></a>
 
 # **postTelephonyProvidersEdgesPhones**
 
-
-
-> [Phone](Phone.html) postTelephonyProvidersEdgesPhones(body)
+> [Phone](Phone.md) postTelephonyProvidersEdgesPhones(body)
 
 Create a new Phone
 
+Wraps POST /api/v2/telephony/providers/edges/phones
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/phones  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7176,34 +6667,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                  | Description | Notes |
+| -------- | --------------------- | ----------- | ----- |
+| **body** | [**Phone**](Phone.md) | Phone       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**Phone**](Phone.html)| Phone | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Phone**](Phone.html)
+[**Phone**](Phone.md)
 
 <a name="postTelephonyProvidersEdgesPhonesReboot"></a>
 
 # **postTelephonyProvidersEdgesPhonesReboot**
 
-
-
 > Void postTelephonyProvidersEdgesPhonesReboot(body)
 
 Reboot Multiple Phones
 
+Wraps POST /api/v2/telephony/providers/edges/phones/reboot
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/phones/reboot  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7238,12 +6724,11 @@ try {
 
 ### Parameters
 
+| Name     | Type                                | Description | Notes |
+| -------- | ----------------------------------- | ----------- | ----- |
+| **body** | [**PhonesReboot**](PhonesReboot.md) | Phones      |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**PhonesReboot**](PhonesReboot.html)| Phones | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -7253,19 +6738,15 @@ null (empty response body)
 
 # **postTelephonyProvidersEdgesSiteOutboundroutes**
 
-
-
-> [OutboundRouteBase](OutboundRouteBase.html) postTelephonyProvidersEdgesSiteOutboundroutes(siteId, body)
+> [OutboundRouteBase](OutboundRouteBase.md) postTelephonyProvidersEdgesSiteOutboundroutes(siteId, body)
 
 Create outbound route
 
+Wraps POST /api/v2/telephony/providers/edges/sites/{siteId}/outboundroutes
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/sites/{siteId}/outboundroutes  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7302,35 +6783,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                          | Description   | Notes |
+| ---------- | --------------------------------------------- | ------------- | ----- |
+| **siteId** | **String**                                    | Site ID       |
+| **body**   | [**OutboundRouteBase**](OutboundRouteBase.md) | OutboundRoute |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **siteId** | **String**| Site ID | 
-| **body** | [**OutboundRouteBase**](OutboundRouteBase.html)| OutboundRoute | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OutboundRouteBase**](OutboundRouteBase.html)
+[**OutboundRouteBase**](OutboundRouteBase.md)
 
 <a name="postTelephonyProvidersEdgesSiteRebalance"></a>
 
 # **postTelephonyProvidersEdgesSiteRebalance**
 
-
-
 > Void postTelephonyProvidersEdgesSiteRebalance(siteId)
 
 Triggers the rebalance operation.
 
+Wraps POST /api/v2/telephony/providers/edges/sites/{siteId}/rebalance
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/sites/{siteId}/rebalance  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7365,12 +6841,11 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **siteId** | **String** | Site ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **siteId** | **String**| Site ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -7380,19 +6855,15 @@ null (empty response body)
 
 # **postTelephonyProvidersEdgesSites**
 
-
-
-> [Site](Site.html) postTelephonyProvidersEdgesSites(body)
+> [Site](Site.md) postTelephonyProvidersEdgesSites(body)
 
 Create a Site.
 
+Wraps POST /api/v2/telephony/providers/edges/sites
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/sites  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7428,34 +6899,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                | Description | Notes |
+| -------- | ------------------- | ----------- | ----- |
+| **body** | [**Site**](Site.md) | Site        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**Site**](Site.html)| Site | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Site**](Site.html)
+[**Site**](Site.md)
 
 <a name="postTelephonyProvidersEdgesTrunkbasesettings"></a>
 
 # **postTelephonyProvidersEdgesTrunkbasesettings**
 
-
-
-> [TrunkBase](TrunkBase.html) postTelephonyProvidersEdgesTrunkbasesettings(body)
+> [TrunkBase](TrunkBase.md) postTelephonyProvidersEdgesTrunkbasesettings(body)
 
 Create a Trunk Base Settings object
 
+Wraps POST /api/v2/telephony/providers/edges/trunkbasesettings
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/telephony/providers/edges/trunkbasesettings  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7491,34 +6957,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                          | Description         | Notes |
+| -------- | ----------------------------- | ------------------- | ----- |
+| **body** | [**TrunkBase**](TrunkBase.md) | Trunk base settings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**TrunkBase**](TrunkBase.html)| Trunk base settings | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TrunkBase**](TrunkBase.html)
+[**TrunkBase**](TrunkBase.md)
 
 <a name="putTelephonyProvidersEdge"></a>
 
 # **putTelephonyProvidersEdge**
 
-
-
-> [Edge](Edge.html) putTelephonyProvidersEdge(edgeId, body)
+> [Edge](Edge.md) putTelephonyProvidersEdge(edgeId, body)
 
 Update a edge.
 
+Wraps PUT /api/v2/telephony/providers/edges/{edgeId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/{edgeId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7555,17 +7016,16 @@ try {
 
 ### Parameters
 
+| Name       | Type                | Description | Notes |
+| ---------- | ------------------- | ----------- | ----- |
+| **edgeId** | **String**          | Edge ID     |
+| **body**   | [**Edge**](Edge.md) | Edge        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **body** | [**Edge**](Edge.html)| Edge | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Edge**](Edge.html)
+[**Edge**](Edge.md)
 
 <a name="putTelephonyProvidersEdgeLine"></a>
 
@@ -7573,17 +7033,15 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [EdgeLine](EdgeLine.html) putTelephonyProvidersEdgeLine(edgeId, lineId, body)
+> [EdgeLine](EdgeLine.md) putTelephonyProvidersEdgeLine(edgeId, lineId, body)
 
 Update a line.
 
+Wraps PUT /api/v2/telephony/providers/edges/{edgeId}/lines/{lineId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/{edgeId}/lines/{lineId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7621,36 +7079,31 @@ try {
 
 ### Parameters
 
+| Name       | Type                        | Description | Notes |
+| ---------- | --------------------------- | ----------- | ----- |
+| **edgeId** | **String**                  | Edge ID     |
+| **lineId** | **String**                  | Line ID     |
+| **body**   | [**EdgeLine**](EdgeLine.md) | Line        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **lineId** | **String**| Line ID | 
-| **body** | [**EdgeLine**](EdgeLine.html)| Line | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeLine**](EdgeLine.html)
+[**EdgeLine**](EdgeLine.md)
 
 <a name="putTelephonyProvidersEdgeLogicalinterface"></a>
 
 # **putTelephonyProvidersEdgeLogicalinterface**
 
-
-
-> [DomainLogicalInterface](DomainLogicalInterface.html) putTelephonyProvidersEdgeLogicalinterface(edgeId, interfaceId, body)
+> [DomainLogicalInterface](DomainLogicalInterface.md) putTelephonyProvidersEdgeLogicalinterface(edgeId, interfaceId, body)
 
 Update an edge logical interface.
 
+Wraps PUT /api/v2/telephony/providers/edges/{edgeId}/logicalinterfaces/{interfaceId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/{edgeId}/logicalinterfaces/{interfaceId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7688,36 +7141,31 @@ try {
 
 ### Parameters
 
+| Name            | Type                                                    | Description       | Notes |
+| --------------- | ------------------------------------------------------- | ----------------- | ----- |
+| **edgeId**      | **String**                                              | Edge ID           |
+| **interfaceId** | **String**                                              | Interface ID      |
+| **body**        | [**DomainLogicalInterface**](DomainLogicalInterface.md) | Logical interface |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeId** | **String**| Edge ID | 
-| **interfaceId** | **String**| Interface ID | 
-| **body** | [**DomainLogicalInterface**](DomainLogicalInterface.html)| Logical interface | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainLogicalInterface**](DomainLogicalInterface.html)
+[**DomainLogicalInterface**](DomainLogicalInterface.md)
 
 <a name="putTelephonyProvidersEdgesCertificateauthority"></a>
 
 # **putTelephonyProvidersEdgesCertificateauthority**
 
-
-
-> [DomainCertificateAuthority](DomainCertificateAuthority.html) putTelephonyProvidersEdgesCertificateauthority(certificateId, body)
+> [DomainCertificateAuthority](DomainCertificateAuthority.md) putTelephonyProvidersEdgesCertificateauthority(certificateId, body)
 
 Update a certificate authority.
 
+Wraps PUT /api/v2/telephony/providers/edges/certificateauthorities/{certificateId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/certificateauthorities/{certificateId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7754,17 +7202,16 @@ try {
 
 ### Parameters
 
+| Name              | Type                                                            | Description           | Notes |
+| ----------------- | --------------------------------------------------------------- | --------------------- | ----- |
+| **certificateId** | **String**                                                      | Certificate ID        |
+| **body**          | [**DomainCertificateAuthority**](DomainCertificateAuthority.md) | Certificate authority |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **certificateId** | **String**| Certificate ID | 
-| **body** | [**DomainCertificateAuthority**](DomainCertificateAuthority.html)| Certificate authority | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainCertificateAuthority**](DomainCertificateAuthority.html)
+[**DomainCertificateAuthority**](DomainCertificateAuthority.md)
 
 <a name="putTelephonyProvidersEdgesDid"></a>
 
@@ -7772,17 +7219,15 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [DID](DID.html) putTelephonyProvidersEdgesDid(didId, body)
+> [DID](DID.md) putTelephonyProvidersEdgesDid(didId, body)
 
 Update a DID by ID.
 
+Wraps PUT /api/v2/telephony/providers/edges/dids/{didId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/dids/{didId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7819,35 +7264,30 @@ try {
 
 ### Parameters
 
+| Name      | Type              | Description | Notes |
+| --------- | ----------------- | ----------- | ----- |
+| **didId** | **String**        | DID ID      |
+| **body**  | [**DID**](DID.md) | DID         |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **didId** | **String**| DID ID | 
-| **body** | [**DID**](DID.html)| DID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DID**](DID.html)
+[**DID**](DID.md)
 
 <a name="putTelephonyProvidersEdgesDidpool"></a>
 
 # **putTelephonyProvidersEdgesDidpool**
 
-
-
-> [DIDPool](DIDPool.html) putTelephonyProvidersEdgesDidpool(didPoolId, body)
+> [DIDPool](DIDPool.md) putTelephonyProvidersEdgesDidpool(didPoolId, body)
 
 Update a DID Pool by ID.
 
+Wraps PUT /api/v2/telephony/providers/edges/didpools/{didPoolId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/didpools/{didPoolId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7884,35 +7324,30 @@ try {
 
 ### Parameters
 
+| Name          | Type                      | Description | Notes |
+| ------------- | ------------------------- | ----------- | ----- |
+| **didPoolId** | **String**                | DID pool ID |
+| **body**      | [**DIDPool**](DIDPool.md) | DID pool    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **didPoolId** | **String**| DID pool ID | 
-| **body** | [**DIDPool**](DIDPool.html)| DID pool | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DIDPool**](DIDPool.html)
+[**DIDPool**](DIDPool.md)
 
 <a name="putTelephonyProvidersEdgesEdgegroup"></a>
 
 # **putTelephonyProvidersEdgesEdgegroup**
 
-
-
-> [EdgeGroup](EdgeGroup.html) putTelephonyProvidersEdgesEdgegroup(edgeGroupId, body)
+> [EdgeGroup](EdgeGroup.md) putTelephonyProvidersEdgesEdgegroup(edgeGroupId, body)
 
 Update an edge group.
 
+Wraps PUT /api/v2/telephony/providers/edges/edgegroups/{edgeGroupId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/edgegroups/{edgeGroupId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -7949,35 +7384,30 @@ try {
 
 ### Parameters
 
+| Name            | Type                          | Description   | Notes |
+| --------------- | ----------------------------- | ------------- | ----- |
+| **edgeGroupId** | **String**                    | Edge group ID |
+| **body**        | [**EdgeGroup**](EdgeGroup.md) | EdgeGroup     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgeGroupId** | **String**| Edge group ID | 
-| **body** | [**EdgeGroup**](EdgeGroup.html)| EdgeGroup | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeGroup**](EdgeGroup.html)
+[**EdgeGroup**](EdgeGroup.md)
 
 <a name="putTelephonyProvidersEdgesEdgegroupEdgetrunkbase"></a>
 
 # **putTelephonyProvidersEdgesEdgegroupEdgetrunkbase**
 
-
-
-> [EdgeTrunkBase](EdgeTrunkBase.html) putTelephonyProvidersEdgesEdgegroupEdgetrunkbase(edgegroupId, edgetrunkbaseId, body)
+> [EdgeTrunkBase](EdgeTrunkBase.md) putTelephonyProvidersEdgesEdgegroupEdgetrunkbase(edgegroupId, edgetrunkbaseId, body)
 
 Update the edge trunk base associated with the edge group
 
+Wraps PUT /api/v2/telephony/providers/edges/edgegroups/{edgegroupId}/edgetrunkbases/{edgetrunkbaseId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/edgegroups/{edgegroupId}/edgetrunkbases/{edgetrunkbaseId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -8015,18 +7445,17 @@ try {
 
 ### Parameters
 
+| Name                | Type                                  | Description        | Notes |
+| ------------------- | ------------------------------------- | ------------------ | ----- |
+| **edgegroupId**     | **String**                            | Edge Group ID      |
+| **edgetrunkbaseId** | **String**                            | Edge Trunk Base ID |
+| **body**            | [**EdgeTrunkBase**](EdgeTrunkBase.md) | EdgeTrunkBase      |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **edgegroupId** | **String**| Edge Group ID | 
-| **edgetrunkbaseId** | **String**| Edge Trunk Base ID | 
-| **body** | [**EdgeTrunkBase**](EdgeTrunkBase.html)| EdgeTrunkBase | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EdgeTrunkBase**](EdgeTrunkBase.html)
+[**EdgeTrunkBase**](EdgeTrunkBase.md)
 
 <a name="putTelephonyProvidersEdgesExtension"></a>
 
@@ -8034,17 +7463,15 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [Extension](Extension.html) putTelephonyProvidersEdgesExtension(extensionId, body)
+> [Extension](Extension.md) putTelephonyProvidersEdgesExtension(extensionId, body)
 
 Update an extension by ID.
 
+Wraps PUT /api/v2/telephony/providers/edges/extensions/{extensionId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/extensions/{extensionId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -8081,35 +7508,30 @@ try {
 
 ### Parameters
 
+| Name            | Type                          | Description  | Notes |
+| --------------- | ----------------------------- | ------------ | ----- |
+| **extensionId** | **String**                    | Extension ID |
+| **body**        | [**Extension**](Extension.md) | Extension    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **extensionId** | **String**| Extension ID | 
-| **body** | [**Extension**](Extension.html)| Extension | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Extension**](Extension.html)
+[**Extension**](Extension.md)
 
 <a name="putTelephonyProvidersEdgesExtensionpool"></a>
 
 # **putTelephonyProvidersEdgesExtensionpool**
 
-
-
-> [ExtensionPool](ExtensionPool.html) putTelephonyProvidersEdgesExtensionpool(extensionPoolId, body)
+> [ExtensionPool](ExtensionPool.md) putTelephonyProvidersEdgesExtensionpool(extensionPoolId, body)
 
 Update an extension pool by ID
 
+Wraps PUT /api/v2/telephony/providers/edges/extensionpools/{extensionPoolId}
 
+Requires ALL permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/extensionpools/{extensionPoolId}  
-
-Requires ALL permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -8146,17 +7568,16 @@ try {
 
 ### Parameters
 
+| Name                | Type                                  | Description       | Notes |
+| ------------------- | ------------------------------------- | ----------------- | ----- |
+| **extensionPoolId** | **String**                            | Extension pool ID |
+| **body**            | [**ExtensionPool**](ExtensionPool.md) | ExtensionPool     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **extensionPoolId** | **String**| Extension pool ID | 
-| **body** | [**ExtensionPool**](ExtensionPool.html)| ExtensionPool | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ExtensionPool**](ExtensionPool.html)
+[**ExtensionPool**](ExtensionPool.md)
 
 <a name="putTelephonyProvidersEdgesOutboundroute"></a>
 
@@ -8164,17 +7585,17 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [OutboundRoute](OutboundRoute.html) putTelephonyProvidersEdgesOutboundroute(outboundRouteId, body)
+> [OutboundRoute](OutboundRoute.md) putTelephonyProvidersEdgesOutboundroute(outboundRouteId, body)
 
 Update outbound route
 
 This route is deprecated, use /telephony/providers/edges/sites/{siteId}/outboundroutes/{outboundRouteId} instead.
 
-Wraps PUT /api/v2/telephony/providers/edges/outboundroutes/{outboundRouteId}  
+Wraps PUT /api/v2/telephony/providers/edges/outboundroutes/{outboundRouteId}
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -8211,35 +7632,30 @@ try {
 
 ### Parameters
 
+| Name                | Type                                  | Description       | Notes |
+| ------------------- | ------------------------------------- | ----------------- | ----- |
+| **outboundRouteId** | **String**                            | Outbound route ID |
+| **body**            | [**OutboundRoute**](OutboundRoute.md) | OutboundRoute     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **outboundRouteId** | **String**| Outbound route ID | 
-| **body** | [**OutboundRoute**](OutboundRoute.html)| OutboundRoute | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OutboundRoute**](OutboundRoute.html)
+[**OutboundRoute**](OutboundRoute.md)
 
 <a name="putTelephonyProvidersEdgesPhone"></a>
 
 # **putTelephonyProvidersEdgesPhone**
 
-
-
-> [Phone](Phone.html) putTelephonyProvidersEdgesPhone(phoneId, body)
+> [Phone](Phone.md) putTelephonyProvidersEdgesPhone(phoneId, body)
 
 Update a Phone by ID
 
+Wraps PUT /api/v2/telephony/providers/edges/phones/{phoneId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/phones/{phoneId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -8276,35 +7692,30 @@ try {
 
 ### Parameters
 
+| Name        | Type                  | Description | Notes |
+| ----------- | --------------------- | ----------- | ----- |
+| **phoneId** | **String**            | Phone ID    |
+| **body**    | [**Phone**](Phone.md) | Phone       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **phoneId** | **String**| Phone ID | 
-| **body** | [**Phone**](Phone.html)| Phone | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Phone**](Phone.html)
+[**Phone**](Phone.md)
 
 <a name="putTelephonyProvidersEdgesPhonebasesetting"></a>
 
 # **putTelephonyProvidersEdgesPhonebasesetting**
 
-
-
-> [PhoneBase](PhoneBase.html) putTelephonyProvidersEdgesPhonebasesetting(phoneBaseId, body)
+> [PhoneBase](PhoneBase.md) putTelephonyProvidersEdgesPhonebasesetting(phoneBaseId, body)
 
 Update a Phone Base Settings by ID
 
+Wraps PUT /api/v2/telephony/providers/edges/phonebasesettings/{phoneBaseId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/phonebasesettings/{phoneBaseId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -8341,35 +7752,30 @@ try {
 
 ### Parameters
 
+| Name            | Type                          | Description         | Notes |
+| --------------- | ----------------------------- | ------------------- | ----- |
+| **phoneBaseId** | **String**                    | Phone base ID       |
+| **body**        | [**PhoneBase**](PhoneBase.md) | Phone base settings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **phoneBaseId** | **String**| Phone base ID | 
-| **body** | [**PhoneBase**](PhoneBase.html)| Phone base settings | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**PhoneBase**](PhoneBase.html)
+[**PhoneBase**](PhoneBase.md)
 
 <a name="putTelephonyProvidersEdgesSite"></a>
 
 # **putTelephonyProvidersEdgesSite**
 
-
-
-> [Site](Site.html) putTelephonyProvidersEdgesSite(siteId, body)
+> [Site](Site.md) putTelephonyProvidersEdgesSite(siteId, body)
 
 Update a Site by ID.
 
+Wraps PUT /api/v2/telephony/providers/edges/sites/{siteId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/sites/{siteId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -8406,35 +7812,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                | Description | Notes |
+| ---------- | ------------------- | ----------- | ----- |
+| **siteId** | **String**          | Site ID     |
+| **body**   | [**Site**](Site.md) | Site        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **siteId** | **String**| Site ID | 
-| **body** | [**Site**](Site.html)| Site | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Site**](Site.html)
+[**Site**](Site.md)
 
 <a name="putTelephonyProvidersEdgesSiteNumberplans"></a>
 
 # **putTelephonyProvidersEdgesSiteNumberplans**
 
-
-
-> [List&lt;NumberPlan&gt;](NumberPlan.html) putTelephonyProvidersEdgesSiteNumberplans(siteId, body)
+> [List&lt;NumberPlan&gt;](NumberPlan.md) putTelephonyProvidersEdgesSiteNumberplans(siteId, body)
 
 Update the list of Number Plans. A user can update maximum 200 number plans at a time.
 
+Wraps PUT /api/v2/telephony/providers/edges/sites/{siteId}/numberplans
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/sites/{siteId}/numberplans  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -8471,35 +7872,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                        | Description          | Notes |
+| ---------- | ------------------------------------------- | -------------------- | ----- |
+| **siteId** | **String**                                  | Site ID              |
+| **body**   | [**List&lt;NumberPlan&gt;**](NumberPlan.md) | List of number plans |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **siteId** | **String**| Site ID | 
-| **body** | [**List&lt;NumberPlan&gt;**](NumberPlan.html)| List of number plans | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**List&lt;NumberPlan&gt;**](NumberPlan.html)
+[**List&lt;NumberPlan&gt;**](NumberPlan.md)
 
 <a name="putTelephonyProvidersEdgesSiteOutboundroute"></a>
 
 # **putTelephonyProvidersEdgesSiteOutboundroute**
 
-
-
-> [OutboundRouteBase](OutboundRouteBase.html) putTelephonyProvidersEdgesSiteOutboundroute(siteId, outboundRouteId, body)
+> [OutboundRouteBase](OutboundRouteBase.md) putTelephonyProvidersEdgesSiteOutboundroute(siteId, outboundRouteId, body)
 
 Update outbound route
 
+Wraps PUT /api/v2/telephony/providers/edges/sites/{siteId}/outboundroutes/{outboundRouteId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/sites/{siteId}/outboundroutes/{outboundRouteId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -8537,36 +7933,31 @@ try {
 
 ### Parameters
 
+| Name                | Type                                          | Description       | Notes |
+| ------------------- | --------------------------------------------- | ----------------- | ----- |
+| **siteId**          | **String**                                    | Site ID           |
+| **outboundRouteId** | **String**                                    | Outbound route ID |
+| **body**            | [**OutboundRouteBase**](OutboundRouteBase.md) | OutboundRoute     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **siteId** | **String**| Site ID | 
-| **outboundRouteId** | **String**| Outbound route ID | 
-| **body** | [**OutboundRouteBase**](OutboundRouteBase.html)| OutboundRoute | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OutboundRouteBase**](OutboundRouteBase.html)
+[**OutboundRouteBase**](OutboundRouteBase.md)
 
 <a name="putTelephonyProvidersEdgesTrunkbasesetting"></a>
 
 # **putTelephonyProvidersEdgesTrunkbasesetting**
 
-
-
-> [TrunkBase](TrunkBase.html) putTelephonyProvidersEdgesTrunkbasesetting(trunkBaseSettingsId, body)
+> [TrunkBase](TrunkBase.md) putTelephonyProvidersEdgesTrunkbasesetting(trunkBaseSettingsId, body)
 
 Update a Trunk Base Settings object by ID
 
+Wraps PUT /api/v2/telephony/providers/edges/trunkbasesettings/{trunkBaseSettingsId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/telephony/providers/edges/trunkbasesettings/{trunkBaseSettingsId}  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -8603,15 +7994,13 @@ try {
 
 ### Parameters
 
+| Name                    | Type                          | Description         | Notes |
+| ----------------------- | ----------------------------- | ------------------- | ----- |
+| **trunkBaseSettingsId** | **String**                    | Trunk Base ID       |
+| **body**                | [**TrunkBase**](TrunkBase.md) | Trunk base settings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **trunkBaseSettingsId** | **String**| Trunk Base ID | 
-| **body** | [**TrunkBase**](TrunkBase.html)| Trunk base settings | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TrunkBase**](TrunkBase.html)
-
+[**TrunkBase**](TrunkBase.md)

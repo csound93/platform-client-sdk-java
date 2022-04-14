@@ -1,15 +1,13 @@
 ---
 title: BulkIdsRequest
 ---
-## BulkIdsRequest
 
+## BulkIdsRequest
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **entities** | <!----><!---->[**List&lt;Entity&gt;**](Entity.html)<!----> |  |  [optional] |
+| Name         | Type                                                     | Description | Notes      |
+| ------------ | -------------------------------------------------------- | ----------- | ---------- |
+| **entities** | <!----><!---->[**List&lt;Entity&gt;**](Entity.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

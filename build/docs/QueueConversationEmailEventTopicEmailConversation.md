@@ -1,18 +1,16 @@
 ---
 title: QueueConversationEmailEventTopicEmailConversation
 ---
-## QueueConversationEmailEventTopicEmailConversation
 
+## QueueConversationEmailEventTopicEmailConversation
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **id** | <!----><!---->**String**<!----> |  |  [optional] |
-| **name** | <!----><!---->**String**<!----> |  |  [optional] |
-| **participants** | <!----><!---->[**List&lt;QueueConversationEmailEventTopicEmailMediaParticipant&gt;**](QueueConversationEmailEventTopicEmailMediaParticipant.html)<!----> |  |  [optional] |
-| **otherMediaUris** | <!----><!---->**List&lt;String&gt;**<!----> |  |  [optional] |
+| Name               | Type                                                                                                                                                   | Description | Notes      |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| **id**             | <!----><!---->**String**<!---->                                                                                                                        |             | [optional] |
+| **name**           | <!----><!---->**String**<!---->                                                                                                                        |             | [optional] |
+| **participants**   | <!----><!---->[**List&lt;QueueConversationEmailEventTopicEmailMediaParticipant&gt;**](QueueConversationEmailEventTopicEmailMediaParticipant.md)<!----> |             | [optional] |
+| **otherMediaUris** | <!----><!---->**List&lt;String&gt;**<!---->                                                                                                            |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

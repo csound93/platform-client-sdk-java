@@ -1,16 +1,14 @@
 ---
 title: QueryFacetInfo
 ---
-## QueryFacetInfo
 
+## QueryFacetInfo
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **attributes** | <!----><!---->[**List&lt;FacetKeyAttribute&gt;**](FacetKeyAttribute.html)<!----> |  |  [optional] |
-| **facets** | <!----><!---->[**List&lt;FacetEntry&gt;**](FacetEntry.html)<!----> |  |  [optional] |
+| Name           | Type                                                                           | Description | Notes      |
+| -------------- | ------------------------------------------------------------------------------ | ----------- | ---------- |
+| **attributes** | <!----><!---->[**List&lt;FacetKeyAttribute&gt;**](FacetKeyAttribute.md)<!----> |             | [optional] |
+| **facets**     | <!----><!---->[**List&lt;FacetEntry&gt;**](FacetEntry.md)<!---->               |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

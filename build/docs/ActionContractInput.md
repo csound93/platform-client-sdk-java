@@ -1,16 +1,14 @@
 ---
 title: ActionContractInput
 ---
-## ActionContractInput
 
+## ActionContractInput
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **input** | <!----><!---->[**PostInputContract**](PostInputContract.html)<!----> | Execution input contract |  |
-| **output** | <!----><!---->[**PostOutputContract**](PostOutputContract.html)<!----> | Execution output contract |  |
+| Name       | Type                                                                 | Description               | Notes |
+| ---------- | -------------------------------------------------------------------- | ------------------------- | ----- |
+| **input**  | <!----><!---->[**PostInputContract**](PostInputContract.md)<!---->   | Execution input contract  |       |
+| **output** | <!----><!---->[**PostOutputContract**](PostOutputContract.md)<!----> | Execution output contract |       |
+
 {: class="table table-striped"}
-
-
-

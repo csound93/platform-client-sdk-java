@@ -1,28 +1,26 @@
 ---
 title: FlowAggregateQueryClause
 ---
-## FlowAggregateQueryClause
 
+## FlowAggregateQueryClause
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **type** | [**TypeEnum**](#TypeEnum)<!----> | Boolean operation to apply to the provided predicates |  |
-| **predicates** | <!----><!---->[**List&lt;FlowAggregateQueryPredicate&gt;**](FlowAggregateQueryPredicate.html)<!----> | Like a three-word sentence: (attribute-name) (operator) (target-value). |  |
-{: class="table table-striped"}
+| Name           | Type                                                                                               | Description                                                             | Notes |
+| -------------- | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----- |
+| **type**       | [**TypeEnum**](#TypeEnum)<!---->                                                                   | Boolean operation to apply to the provided predicates                   |       |
+| **predicates** | <!----><!---->[**List&lt;FlowAggregateQueryPredicate&gt;**](FlowAggregateQueryPredicate.md)<!----> | Like a three-word sentence: (attribute-name) (operator) (target-value). |       |
 
+{: class="table table-striped"}
 
 <a name="TypeEnum"></a>
 
 ## Enum: TypeEnum
 
-| Name | Value |
-| ---- | ----- |
+| Name               | Value                          |
+| ------------------ | ------------------------------ |
 | OUTDATEDSDKVERSION | &quot;OutdatedSdkVersion&quot; |
-| AND | &quot;and&quot; |
-| OR | &quot;or&quot; |
+| AND                | &quot;and&quot;                |
+| OR                 | &quot;or&quot;                 |
+
 {: class="table table-striped"}
-
-
-

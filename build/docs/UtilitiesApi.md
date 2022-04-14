@@ -1,34 +1,31 @@
 ---
 title: UtilitiesApi
 ---
+
 ## UtilitiesApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**getDate**](UtilitiesApi.html#getDate) | Get the current system date/time |
-| [**getIpranges**](UtilitiesApi.html#getIpranges) | Get public ip address ranges for Genesys Cloud |
-| [**getTimezones**](UtilitiesApi.html#getTimezones) | Get time zones list |
-| [**postCertificateDetails**](UtilitiesApi.html#postCertificateDetails) | Returns the information about an X509 PEM encoded certificate or certificate chain. |
+| Method                                                               | Description                                                                         |
+| -------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [**getDate**](UtilitiesApi.md#getDate)                               | Get the current system date/time                                                    |
+| [**getIpranges**](UtilitiesApi.md#getIpranges)                       | Get public ip address ranges for Genesys Cloud                                      |
+| [**getTimezones**](UtilitiesApi.md#getTimezones)                     | Get time zones list                                                                 |
+| [**postCertificateDetails**](UtilitiesApi.md#postCertificateDetails) | Returns the information about an X509 PEM encoded certificate or certificate chain. |
+
 {: class="table-striped"}
 
 <a name="getDate"></a>
 
 # **getDate**
 
-
-
-> [ServerDate](ServerDate.html) getDate()
+> [ServerDate](ServerDate.md) getDate()
 
 Get the current system date/time
 
+Wraps GET /api/v2/date
 
-
-Wraps GET /api/v2/date  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -65,28 +62,21 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**ServerDate**](ServerDate.html)
+[**ServerDate**](ServerDate.md)
 
 <a name="getIpranges"></a>
 
 # **getIpranges**
 
-
-
-> [IpAddressRangeListing](IpAddressRangeListing.html) getIpranges()
+> [IpAddressRangeListing](IpAddressRangeListing.md) getIpranges()
 
 Get public ip address ranges for Genesys Cloud
 
+Wraps GET /api/v2/ipranges
 
-
-Wraps GET /api/v2/ipranges  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -123,28 +113,21 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**IpAddressRangeListing**](IpAddressRangeListing.html)
+[**IpAddressRangeListing**](IpAddressRangeListing.md)
 
 <a name="getTimezones"></a>
 
 # **getTimezones**
 
-
-
-> [TimeZoneEntityListing](TimeZoneEntityListing.html) getTimezones(pageSize, pageNumber)
+> [TimeZoneEntityListing](TimeZoneEntityListing.md) getTimezones(pageSize, pageNumber)
 
 Get time zones list
 
+Wraps GET /api/v2/timezones
 
-
-Wraps GET /api/v2/timezones  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -181,34 +164,28 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TimeZoneEntityListing**](TimeZoneEntityListing.html)
+[**TimeZoneEntityListing**](TimeZoneEntityListing.md)
 
 <a name="postCertificateDetails"></a>
 
 # **postCertificateDetails**
 
-
-
-> [ParsedCertificate](ParsedCertificate.html) postCertificateDetails(body)
+> [ParsedCertificate](ParsedCertificate.md) postCertificateDetails(body)
 
 Returns the information about an X509 PEM encoded certificate or certificate chain.
 
+Wraps POST /api/v2/certificate/details
 
-
-Wraps POST /api/v2/certificate/details  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -244,14 +221,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                              | Description | Notes |
+| -------- | --------------------------------- | ----------- | ----- |
+| **body** | [**Certificate**](Certificate.md) | Certificate |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**Certificate**](Certificate.html)| Certificate | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ParsedCertificate**](ParsedCertificate.html)
-
+[**ParsedCertificate**](ParsedCertificate.md)

@@ -1,37 +1,35 @@
 ---
 title: WidgetsApi
 ---
+
 ## WidgetsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteWidgetsDeployment**](WidgetsApi.html#deleteWidgetsDeployment) | Delete a Widget deployment |
-| [**getWidgetsDeployment**](WidgetsApi.html#getWidgetsDeployment) | Get a Widget deployment |
-| [**getWidgetsDeployments**](WidgetsApi.html#getWidgetsDeployments) | List Widget deployments |
-| [**postWidgetsDeployments**](WidgetsApi.html#postWidgetsDeployments) | Create Widget deployment |
-| [**putWidgetsDeployment**](WidgetsApi.html#putWidgetsDeployment) | Update a Widget deployment |
+| Method                                                               | Description                |
+| -------------------------------------------------------------------- | -------------------------- |
+| [**deleteWidgetsDeployment**](WidgetsApi.md#deleteWidgetsDeployment) | Delete a Widget deployment |
+| [**getWidgetsDeployment**](WidgetsApi.md#getWidgetsDeployment)       | Get a Widget deployment    |
+| [**getWidgetsDeployments**](WidgetsApi.md#getWidgetsDeployments)     | List Widget deployments    |
+| [**postWidgetsDeployments**](WidgetsApi.md#postWidgetsDeployments)   | Create Widget deployment   |
+| [**putWidgetsDeployment**](WidgetsApi.md#putWidgetsDeployment)       | Update a Widget deployment |
+
 {: class="table-striped"}
 
 <a name="deleteWidgetsDeployment"></a>
 
 # **deleteWidgetsDeployment**
 
-
-
 > Void deleteWidgetsDeployment(deploymentId)
 
 Delete a Widget deployment
 
+Wraps DELETE /api/v2/widgets/deployments/{deploymentId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/widgets/deployments/{deploymentId}  
-
-Requires ANY permissions: 
-
-* widgets:deployment:delete
-* webchat:deployment:delete
+- widgets:deployment:delete
+- webchat:deployment:delete
 
 ### Example
 
@@ -66,12 +64,11 @@ try {
 
 ### Parameters
 
+| Name             | Type       | Description      | Notes |
+| ---------------- | ---------- | ---------------- | ----- |
+| **deploymentId** | **String** | Widget Config Id |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **deploymentId** | **String**| Widget Config Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -81,20 +78,16 @@ null (empty response body)
 
 # **getWidgetsDeployment**
 
-
-
-> [WidgetDeployment](WidgetDeployment.html) getWidgetsDeployment(deploymentId)
+> [WidgetDeployment](WidgetDeployment.md) getWidgetsDeployment(deploymentId)
 
 Get a Widget deployment
 
+Wraps GET /api/v2/widgets/deployments/{deploymentId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/widgets/deployments/{deploymentId}  
-
-Requires ANY permissions: 
-
-* widgets:deployment:view
-* webchat:deployment:read
+- widgets:deployment:view
+- webchat:deployment:read
 
 ### Example
 
@@ -130,35 +123,30 @@ try {
 
 ### Parameters
 
+| Name             | Type       | Description      | Notes |
+| ---------------- | ---------- | ---------------- | ----- |
+| **deploymentId** | **String** | Widget Config Id |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **deploymentId** | **String**| Widget Config Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WidgetDeployment**](WidgetDeployment.html)
+[**WidgetDeployment**](WidgetDeployment.md)
 
 <a name="getWidgetsDeployments"></a>
 
 # **getWidgetsDeployments**
 
-
-
-> [WidgetDeploymentEntityListing](WidgetDeploymentEntityListing.html) getWidgetsDeployments()
+> [WidgetDeploymentEntityListing](WidgetDeploymentEntityListing.md) getWidgetsDeployments()
 
 List Widget deployments
 
+Wraps GET /api/v2/widgets/deployments
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/widgets/deployments  
-
-Requires ANY permissions: 
-
-* widgets:deployment:view
-* webchat:deployment:read
+- widgets:deployment:view
+- webchat:deployment:read
 
 ### Example
 
@@ -195,30 +183,24 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**WidgetDeploymentEntityListing**](WidgetDeploymentEntityListing.html)
+[**WidgetDeploymentEntityListing**](WidgetDeploymentEntityListing.md)
 
 <a name="postWidgetsDeployments"></a>
 
 # **postWidgetsDeployments**
 
-
-
-> [WidgetDeployment](WidgetDeployment.html) postWidgetsDeployments(body)
+> [WidgetDeployment](WidgetDeployment.md) postWidgetsDeployments(body)
 
 Create Widget deployment
 
+Wraps POST /api/v2/widgets/deployments
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/widgets/deployments  
-
-Requires ANY permissions: 
-
-* widgets:deployment:add
-* webchat:deployment:create
+- widgets:deployment:add
+- webchat:deployment:create
 
 ### Example
 
@@ -254,35 +236,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                                        | Description | Notes |
+| -------- | ------------------------------------------- | ----------- | ----- |
+| **body** | [**WidgetDeployment**](WidgetDeployment.md) | Deployment  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**WidgetDeployment**](WidgetDeployment.html)| Deployment | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WidgetDeployment**](WidgetDeployment.html)
+[**WidgetDeployment**](WidgetDeployment.md)
 
 <a name="putWidgetsDeployment"></a>
 
 # **putWidgetsDeployment**
 
-
-
-> [WidgetDeployment](WidgetDeployment.html) putWidgetsDeployment(deploymentId, body)
+> [WidgetDeployment](WidgetDeployment.md) putWidgetsDeployment(deploymentId, body)
 
 Update a Widget deployment
 
+Wraps PUT /api/v2/widgets/deployments/{deploymentId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/widgets/deployments/{deploymentId}  
-
-Requires ANY permissions: 
-
-* widgets:deployment:edit
-* webchat:deployment:update
+- widgets:deployment:edit
+- webchat:deployment:update
 
 ### Example
 
@@ -319,15 +296,13 @@ try {
 
 ### Parameters
 
+| Name             | Type                                        | Description      | Notes |
+| ---------------- | ------------------------------------------- | ---------------- | ----- |
+| **deploymentId** | **String**                                  | Widget Config Id |
+| **body**         | [**WidgetDeployment**](WidgetDeployment.md) | Deployment       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **deploymentId** | **String**| Widget Config Id | 
-| **body** | [**WidgetDeployment**](WidgetDeployment.html)| Deployment | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WidgetDeployment**](WidgetDeployment.html)
-
+[**WidgetDeployment**](WidgetDeployment.md)

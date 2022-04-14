@@ -1,44 +1,42 @@
 ---
 title: PresenceApi
 ---
+
 ## PresenceApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deletePresencedefinition**](PresenceApi.html#deletePresencedefinition) | Delete a Presence Definition |
-| [**getPresencedefinition**](PresenceApi.html#getPresencedefinition) | Get a Presence Definition |
-| [**getPresencedefinitions**](PresenceApi.html#getPresencedefinitions) | Get an Organization&#39;s list of Presence Definitions |
-| [**getSystempresences**](PresenceApi.html#getSystempresences) | Get the list of SystemPresences |
-| [**getUserPresence**](PresenceApi.html#getUserPresence) | Get a user&#39;s Presence |
-| [**getUserPresencesMicrosoftteams**](PresenceApi.html#getUserPresencesMicrosoftteams) | Get a user&#39;s Microsoft Teams presence. |
-| [**getUserPresencesPurecloud**](PresenceApi.html#getUserPresencesPurecloud) | Get a user&#39;s Genesys Cloud presence. |
-| [**getUserPresencesZoomphone**](PresenceApi.html#getUserPresencesZoomphone) | Get a user&#39;s Zoom Phone presence. |
-| [**patchUserPresence**](PresenceApi.html#patchUserPresence) | Patch a user&#39;s Presence |
-| [**patchUserPresencesPurecloud**](PresenceApi.html#patchUserPresencesPurecloud) | Patch a Genesys Cloud user&#39;s presence |
-| [**postPresencedefinitions**](PresenceApi.html#postPresencedefinitions) | Create a Presence Definition |
-| [**putPresencedefinition**](PresenceApi.html#putPresencedefinition) | Update a Presence Definition |
-| [**putUsersPresencesBulk**](PresenceApi.html#putUsersPresencesBulk) | Update bulk user Presences |
+| Method                                                                              | Description                                            |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| [**deletePresencedefinition**](PresenceApi.md#deletePresencedefinition)             | Delete a Presence Definition                           |
+| [**getPresencedefinition**](PresenceApi.md#getPresencedefinition)                   | Get a Presence Definition                              |
+| [**getPresencedefinitions**](PresenceApi.md#getPresencedefinitions)                 | Get an Organization&#39;s list of Presence Definitions |
+| [**getSystempresences**](PresenceApi.md#getSystempresences)                         | Get the list of SystemPresences                        |
+| [**getUserPresence**](PresenceApi.md#getUserPresence)                               | Get a user&#39;s Presence                              |
+| [**getUserPresencesMicrosoftteams**](PresenceApi.md#getUserPresencesMicrosoftteams) | Get a user&#39;s Microsoft Teams presence.             |
+| [**getUserPresencesPurecloud**](PresenceApi.md#getUserPresencesPurecloud)           | Get a user&#39;s Genesys Cloud presence.               |
+| [**getUserPresencesZoomphone**](PresenceApi.md#getUserPresencesZoomphone)           | Get a user&#39;s Zoom Phone presence.                  |
+| [**patchUserPresence**](PresenceApi.md#patchUserPresence)                           | Patch a user&#39;s Presence                            |
+| [**patchUserPresencesPurecloud**](PresenceApi.md#patchUserPresencesPurecloud)       | Patch a Genesys Cloud user&#39;s presence              |
+| [**postPresencedefinitions**](PresenceApi.md#postPresencedefinitions)               | Create a Presence Definition                           |
+| [**putPresencedefinition**](PresenceApi.md#putPresencedefinition)                   | Update a Presence Definition                           |
+| [**putUsersPresencesBulk**](PresenceApi.md#putUsersPresencesBulk)                   | Update bulk user Presences                             |
+
 {: class="table-striped"}
 
 <a name="deletePresencedefinition"></a>
 
 # **deletePresencedefinition**
 
-
-
 > Void deletePresencedefinition(presenceId)
 
 Delete a Presence Definition
 
+Wraps DELETE /api/v2/presencedefinitions/{presenceId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/presencedefinitions/{presenceId}  
-
-Requires ALL permissions: 
-
-* presence:presenceDefinition:delete
+- presence:presenceDefinition:delete
 
 ### Example
 
@@ -73,12 +71,11 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description              | Notes |
+| -------------- | ---------- | ------------------------ | ----- |
+| **presenceId** | **String** | Organization Presence ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **presenceId** | **String**| Organization Presence ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -88,18 +85,13 @@ null (empty response body)
 
 # **getPresencedefinition**
 
-
-
-> [OrganizationPresence](OrganizationPresence.html) getPresencedefinition(presenceId, localeCode)
+> [OrganizationPresence](OrganizationPresence.md) getPresencedefinition(presenceId, localeCode)
 
 Get a Presence Definition
 
+Wraps GET /api/v2/presencedefinitions/{presenceId}
 
-
-Wraps GET /api/v2/presencedefinitions/{presenceId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -136,34 +128,28 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description                                                                        | Notes      |
+| -------------- | ---------- | ---------------------------------------------------------------------------------- | ---------- |
+| **presenceId** | **String** | Organization Presence ID                                                           |
+| **localeCode** | **String** | The locale code to fetch for the presence definition. Use ALL to fetch everything. | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **presenceId** | **String**| Organization Presence ID | 
-| **localeCode** | **String**| The locale code to fetch for the presence definition. Use ALL to fetch everything. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OrganizationPresence**](OrganizationPresence.html)
+[**OrganizationPresence**](OrganizationPresence.md)
 
 <a name="getPresencedefinitions"></a>
 
 # **getPresencedefinitions**
 
-
-
-> [OrganizationPresenceEntityListing](OrganizationPresenceEntityListing.html) getPresencedefinitions(pageNumber, pageSize, deleted, localeCode)
+> [OrganizationPresenceEntityListing](OrganizationPresenceEntityListing.md) getPresencedefinitions(pageNumber, pageSize, deleted, localeCode)
 
 Get an Organization&#39;s list of Presence Definitions
 
+Wraps GET /api/v2/presencedefinitions
 
-
-Wraps GET /api/v2/presencedefinitions  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -202,36 +188,30 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description                                                                         | Notes                         |
+| -------------- | ----------- | ----------------------------------------------------------------------------------- | ----------------------------- |
+| **pageNumber** | **Integer** | Page number                                                                         | [optional] [default to 1]     |
+| **pageSize**   | **Integer** | Page size                                                                           | [optional] [default to 25]    |
+| **deleted**    | **String**  | Deleted query can be TRUE, FALSE or ALL                                             | [optional] [default to false] |
+| **localeCode** | **String**  | The locale code to fetch for each presence definition. Use ALL to fetch everything. | [optional]                    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **deleted** | **String**| Deleted query can be TRUE, FALSE or ALL | [optional] [default to false] 
-| **localeCode** | **String**| The locale code to fetch for each presence definition. Use ALL to fetch everything. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OrganizationPresenceEntityListing**](OrganizationPresenceEntityListing.html)
+[**OrganizationPresenceEntityListing**](OrganizationPresenceEntityListing.md)
 
 <a name="getSystempresences"></a>
 
 # **getSystempresences**
 
-
-
-> [List&lt;SystemPresence&gt;](SystemPresence.html) getSystempresences()
+> [List&lt;SystemPresence&gt;](SystemPresence.md) getSystempresences()
 
 Get the list of SystemPresences
 
+Wraps GET /api/v2/systempresences
 
-
-Wraps GET /api/v2/systempresences  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -268,28 +248,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**List&lt;SystemPresence&gt;**](SystemPresence.html)
+[**List&lt;SystemPresence&gt;**](SystemPresence.md)
 
 <a name="getUserPresence"></a>
 
 # **getUserPresence**
 
-
-
-> [UserPresence](UserPresence.html) getUserPresence(userId, sourceId)
+> [UserPresence](UserPresence.md) getUserPresence(userId, sourceId)
 
 Get a user&#39;s Presence
 
-Get a user&#39;s presence for the specified source that is not specifically listed.  Used to support custom presence sources.
+Get a user&#39;s presence for the specified source that is not specifically listed. Used to support custom presence sources.
 
-Wraps GET /api/v2/users/{userId}/presences/{sourceId}  
+Wraps GET /api/v2/users/{userId}/presences/{sourceId}
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -326,36 +301,33 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description        | Notes |
+| ------------ | ---------- | ------------------ | ----- |
+| **userId**   | **String** | user Id            |
+| **sourceId** | **String** | Presence source ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| user Id | 
-| **sourceId** | **String**| Presence source ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserPresence**](UserPresence.html)
+[**UserPresence**](UserPresence.md)
 
 <a name="getUserPresencesMicrosoftteams"></a>
 
 # **getUserPresencesMicrosoftteams**
 
-
-
-> [PresenceExpand](PresenceExpand.html) getUserPresencesMicrosoftteams(userId)
+> [PresenceExpand](PresenceExpand.md) getUserPresencesMicrosoftteams(userId)
 
 Get a user&#39;s Microsoft Teams presence.
 
-Gets the presence for a Microsoft Teams user.  This will return the Microsoft Teams presence mapped to Genesys Cloud presence with additional activity details in the message field. This presence source is read-only.
+Gets the presence for a Microsoft Teams user. This will return the Microsoft Teams presence mapped to Genesys Cloud presence with additional activity details in the message field. This presence source is read-only.
 
-Wraps GET /api/v2/users/{userId}/presences/microsoftteams  
+Wraps GET /api/v2/users/{userId}/presences/microsoftteams
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* integration:microsoftTeams:view
-* integrations:integration:view
+- integration:microsoftTeams:view
+- integrations:integration:view
 
 ### Example
 
@@ -391,33 +363,29 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **userId** | **String** | user Id     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| user Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**PresenceExpand**](PresenceExpand.html)
+[**PresenceExpand**](PresenceExpand.md)
 
 <a name="getUserPresencesPurecloud"></a>
 
 # **getUserPresencesPurecloud**
 
-
-
-> [UserPresence](UserPresence.html) getUserPresencesPurecloud(userId)
+> [UserPresence](UserPresence.md) getUserPresencesPurecloud(userId)
 
 Get a user&#39;s Genesys Cloud presence.
 
 Get the default Genesys Cloud user presence source PURECLOUD
 
-Wraps GET /api/v2/users/{userId}/presences/purecloud  
+Wraps GET /api/v2/users/{userId}/presences/purecloud
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -453,35 +421,32 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **userId** | **String** | user Id     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| user Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserPresence**](UserPresence.html)
+[**UserPresence**](UserPresence.md)
 
 <a name="getUserPresencesZoomphone"></a>
 
 # **getUserPresencesZoomphone**
 
-
-
-> [PresenceExpand](PresenceExpand.html) getUserPresencesZoomphone(userId)
+> [PresenceExpand](PresenceExpand.md) getUserPresencesZoomphone(userId)
 
 Get a user&#39;s Zoom Phone presence.
 
-Gets the presence for a Zoom user.  This will return the Zoom Phone presence mapped to Genesys Cloud presence with additional activity details in the message field. This presence source is read-only.
+Gets the presence for a Zoom user. This will return the Zoom Phone presence mapped to Genesys Cloud presence with additional activity details in the message field. This presence source is read-only.
 
-Wraps GET /api/v2/users/{userId}/presences/zoomphone  
+Wraps GET /api/v2/users/{userId}/presences/zoomphone
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* integration:zoomPhone:view
-* integrations:integration:view
+- integration:zoomPhone:view
+- integrations:integration:view
 
 ### Example
 
@@ -517,33 +482,29 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **userId** | **String** | user Id     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| user Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**PresenceExpand**](PresenceExpand.html)
+[**PresenceExpand**](PresenceExpand.md)
 
 <a name="patchUserPresence"></a>
 
 # **patchUserPresence**
 
-
-
-> [UserPresence](UserPresence.html) patchUserPresence(userId, sourceId, body)
+> [UserPresence](UserPresence.md) patchUserPresence(userId, sourceId, body)
 
 Patch a user&#39;s Presence
 
 Patch a user&#39;s presence for the specified source that is not specifically listed. The presence object can be patched one of three ways. Option 1: Set the &#39;primary&#39; property to true. This will set the &#39;source&#39; defined in the path as the user&#39;s primary presence source. Option 2: Provide the presenceDefinition value. The &#39;id&#39; is the only value required within the presenceDefinition. Option 3: Provide the message value. Option 1 can be combined with Option 2 and/or Option 3.
 
-Wraps PATCH /api/v2/users/{userId}/presences/{sourceId}  
+Wraps PATCH /api/v2/users/{userId}/presences/{sourceId}
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -581,35 +542,31 @@ try {
 
 ### Parameters
 
+| Name         | Type                                | Description        | Notes |
+| ------------ | ----------------------------------- | ------------------ | ----- |
+| **userId**   | **String**                          | user Id            |
+| **sourceId** | **String**                          | Presence source ID |
+| **body**     | [**UserPresence**](UserPresence.md) | User presence      |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| user Id | 
-| **sourceId** | **String**| Presence source ID | 
-| **body** | [**UserPresence**](UserPresence.html)| User presence | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserPresence**](UserPresence.html)
+[**UserPresence**](UserPresence.md)
 
 <a name="patchUserPresencesPurecloud"></a>
 
 # **patchUserPresencesPurecloud**
 
-
-
-> [UserPresence](UserPresence.html) patchUserPresencesPurecloud(userId, body)
+> [UserPresence](UserPresence.md) patchUserPresencesPurecloud(userId, body)
 
 Patch a Genesys Cloud user&#39;s presence
 
 The presence object can be patched one of three ways. Option 1: Set the &#39;primary&#39; property to true. This will set the PURECLOUD source as the user&#39;s primary presence source. Option 2: Provide the presenceDefinition value. The &#39;id&#39; is the only value required within the presenceDefinition. Option 3: Provide the message value. Option 1 can be combined with Option 2 and/or Option 3.
 
-Wraps PATCH /api/v2/users/{userId}/presences/purecloud  
+Wraps PATCH /api/v2/users/{userId}/presences/purecloud
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -646,35 +603,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                | Description   | Notes |
+| ---------- | ----------------------------------- | ------------- | ----- |
+| **userId** | **String**                          | user Id       |
+| **body**   | [**UserPresence**](UserPresence.md) | User presence |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| user Id | 
-| **body** | [**UserPresence**](UserPresence.html)| User presence | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserPresence**](UserPresence.html)
+[**UserPresence**](UserPresence.md)
 
 <a name="postPresencedefinitions"></a>
 
 # **postPresencedefinitions**
 
-
-
-> [OrganizationPresence](OrganizationPresence.html) postPresencedefinitions(body)
+> [OrganizationPresence](OrganizationPresence.md) postPresencedefinitions(body)
 
 Create a Presence Definition
 
+Wraps POST /api/v2/presencedefinitions
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/presencedefinitions  
-
-Requires ALL permissions: 
-
-* presence:presenceDefinition:add
+- presence:presenceDefinition:add
 
 ### Example
 
@@ -710,34 +662,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                | Description                       | Notes |
+| -------- | --------------------------------------------------- | --------------------------------- | ----- |
+| **body** | [**OrganizationPresence**](OrganizationPresence.md) | The Presence Definition to create |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**OrganizationPresence**](OrganizationPresence.html)| The Presence Definition to create | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OrganizationPresence**](OrganizationPresence.html)
+[**OrganizationPresence**](OrganizationPresence.md)
 
 <a name="putPresencedefinition"></a>
 
 # **putPresencedefinition**
 
-
-
-> [OrganizationPresence](OrganizationPresence.html) putPresencedefinition(presenceId, body)
+> [OrganizationPresence](OrganizationPresence.md) putPresencedefinition(presenceId, body)
 
 Update a Presence Definition
 
+Wraps PUT /api/v2/presencedefinitions/{presenceId}
 
+Requires ALL permissions:
 
-Wraps PUT /api/v2/presencedefinitions/{presenceId}  
-
-Requires ALL permissions: 
-
-* presence:presenceDefinition:edit
+- presence:presenceDefinition:edit
 
 ### Example
 
@@ -774,35 +721,30 @@ try {
 
 ### Parameters
 
+| Name           | Type                                                | Description                        | Notes |
+| -------------- | --------------------------------------------------- | ---------------------------------- | ----- |
+| **presenceId** | **String**                                          | Organization Presence ID           |
+| **body**       | [**OrganizationPresence**](OrganizationPresence.md) | The OrganizationPresence to update |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **presenceId** | **String**| Organization Presence ID | 
-| **body** | [**OrganizationPresence**](OrganizationPresence.html)| The OrganizationPresence to update | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OrganizationPresence**](OrganizationPresence.html)
+[**OrganizationPresence**](OrganizationPresence.md)
 
 <a name="putUsersPresencesBulk"></a>
 
 # **putUsersPresencesBulk**
 
-
-
-> [List&lt;UserPresence&gt;](UserPresence.html) putUsersPresencesBulk(body)
+> [List&lt;UserPresence&gt;](UserPresence.md) putUsersPresencesBulk(body)
 
 Update bulk user Presences
 
+Wraps PUT /api/v2/users/presences/bulk
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/users/presences/bulk  
-
-Requires ANY permissions: 
-
-* presence:userPresence:edit
+- presence:userPresence:edit
 
 ### Example
 
@@ -838,14 +780,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                                            | Description            | Notes |
+| -------- | ----------------------------------------------- | ---------------------- | ----- |
+| **body** | [**List&lt;UserPresence&gt;**](UserPresence.md) | List of User presences |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**List&lt;UserPresence&gt;**](UserPresence.html)| List of User presences | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**List&lt;UserPresence&gt;**](UserPresence.html)
-
+[**List&lt;UserPresence&gt;**](UserPresence.md)

@@ -1,20 +1,18 @@
 ---
 title: CampaignInteractions
 ---
-## CampaignInteractions
 
+## CampaignInteractions
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **campaign** | <!----><!---->[**DomainEntityRef**](DomainEntityRef.html)<!----> |  |  [optional] |
-| **pendingInteractions** | <!----><!---->[**List&lt;CampaignInteraction&gt;**](CampaignInteraction.html)<!----> |  |  [optional] |
-| **proceedingInteractions** | <!----><!---->[**List&lt;CampaignInteraction&gt;**](CampaignInteraction.html)<!----> |  |  [optional] |
-| **previewingInteractions** | <!----><!---->[**List&lt;CampaignInteraction&gt;**](CampaignInteraction.html)<!----> |  |  [optional] |
-| **interactingInteractions** | <!----><!---->[**List&lt;CampaignInteraction&gt;**](CampaignInteraction.html)<!----> |  |  [optional] |
-| **scheduledInteractions** | <!----><!---->[**List&lt;CampaignInteraction&gt;**](CampaignInteraction.html)<!----> |  |  [optional] |
+| Name                        | Type                                                                               | Description | Notes      |
+| --------------------------- | ---------------------------------------------------------------------------------- | ----------- | ---------- |
+| **campaign**                | <!----><!---->[**DomainEntityRef**](DomainEntityRef.md)<!---->                     |             | [optional] |
+| **pendingInteractions**     | <!----><!---->[**List&lt;CampaignInteraction&gt;**](CampaignInteraction.md)<!----> |             | [optional] |
+| **proceedingInteractions**  | <!----><!---->[**List&lt;CampaignInteraction&gt;**](CampaignInteraction.md)<!----> |             | [optional] |
+| **previewingInteractions**  | <!----><!---->[**List&lt;CampaignInteraction&gt;**](CampaignInteraction.md)<!----> |             | [optional] |
+| **interactingInteractions** | <!----><!---->[**List&lt;CampaignInteraction&gt;**](CampaignInteraction.md)<!----> |             | [optional] |
+| **scheduledInteractions**   | <!----><!---->[**List&lt;CampaignInteraction&gt;**](CampaignInteraction.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

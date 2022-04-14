@@ -1,18 +1,16 @@
 ---
 title: ConversationCallbackEventTopicCallbackConversation
 ---
-## ConversationCallbackEventTopicCallbackConversation
 
+## ConversationCallbackEventTopicCallbackConversation
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **id** | <!----><!---->**String**<!----> |  |  [optional] |
-| **name** | <!----><!---->**String**<!----> |  |  [optional] |
-| **participants** | <!----><!---->[**List&lt;ConversationCallbackEventTopicCallbackMediaParticipant&gt;**](ConversationCallbackEventTopicCallbackMediaParticipant.html)<!----> |  |  [optional] |
-| **otherMediaUris** | <!----><!---->**List&lt;String&gt;**<!----> |  |  [optional] |
+| Name               | Type                                                                                                                                                     | Description | Notes      |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **id**             | <!----><!---->**String**<!---->                                                                                                                          |             | [optional] |
+| **name**           | <!----><!---->**String**<!---->                                                                                                                          |             | [optional] |
+| **participants**   | <!----><!---->[**List&lt;ConversationCallbackEventTopicCallbackMediaParticipant&gt;**](ConversationCallbackEventTopicCallbackMediaParticipant.md)<!----> |             | [optional] |
+| **otherMediaUris** | <!----><!---->**List&lt;String&gt;**<!---->                                                                                                              |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

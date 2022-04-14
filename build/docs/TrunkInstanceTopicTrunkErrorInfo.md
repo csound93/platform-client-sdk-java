@@ -1,17 +1,15 @@
 ---
 title: TrunkInstanceTopicTrunkErrorInfo
 ---
-## TrunkInstanceTopicTrunkErrorInfo
 
+## TrunkInstanceTopicTrunkErrorInfo
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **text** | <!----><!---->**String**<!----> |  |  [optional] |
-| **code** | <!----><!---->**String**<!----> |  |  [optional] |
-| **details** | <!----><!---->[**TrunkInstanceTopicTrunkErrorInfoDetails**](TrunkInstanceTopicTrunkErrorInfoDetails.html)<!----> |  |  [optional] |
+| Name        | Type                                                                                                           | Description | Notes      |
+| ----------- | -------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **text**    | <!----><!---->**String**<!---->                                                                                |             | [optional] |
+| **code**    | <!----><!---->**String**<!---->                                                                                |             | [optional] |
+| **details** | <!----><!---->[**TrunkInstanceTopicTrunkErrorInfoDetails**](TrunkInstanceTopicTrunkErrorInfoDetails.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

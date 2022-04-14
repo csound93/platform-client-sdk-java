@@ -1,44 +1,42 @@
 ---
 title: WebDeploymentsApi
 ---
+
 ## WebDeploymentsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteWebdeploymentsConfiguration**](WebDeploymentsApi.html#deleteWebdeploymentsConfiguration) | Delete all versions of a configuration |
-| [**deleteWebdeploymentsDeployment**](WebDeploymentsApi.html#deleteWebdeploymentsDeployment) | Delete a deployment |
-| [**getWebdeploymentsConfigurationVersion**](WebDeploymentsApi.html#getWebdeploymentsConfigurationVersion) | Get a configuration version |
-| [**getWebdeploymentsConfigurationVersions**](WebDeploymentsApi.html#getWebdeploymentsConfigurationVersions) | Get the versions of a configuration |
-| [**getWebdeploymentsConfigurationVersionsDraft**](WebDeploymentsApi.html#getWebdeploymentsConfigurationVersionsDraft) | Get the configuration draft |
-| [**getWebdeploymentsConfigurations**](WebDeploymentsApi.html#getWebdeploymentsConfigurations) | View configuration drafts |
-| [**getWebdeploymentsDeployment**](WebDeploymentsApi.html#getWebdeploymentsDeployment) | Get a deployment |
-| [**getWebdeploymentsDeployments**](WebDeploymentsApi.html#getWebdeploymentsDeployments) | Get deployments |
-| [**postWebdeploymentsConfigurationVersionsDraftPublish**](WebDeploymentsApi.html#postWebdeploymentsConfigurationVersionsDraftPublish) | Publish the configuration draft and create a new version |
-| [**postWebdeploymentsConfigurations**](WebDeploymentsApi.html#postWebdeploymentsConfigurations) | Create a configuration draft |
-| [**postWebdeploymentsDeployments**](WebDeploymentsApi.html#postWebdeploymentsDeployments) | Create a deployment |
-| [**putWebdeploymentsConfigurationVersionsDraft**](WebDeploymentsApi.html#putWebdeploymentsConfigurationVersionsDraft) | Update the configuration draft |
-| [**putWebdeploymentsDeployment**](WebDeploymentsApi.html#putWebdeploymentsDeployment) | Update a deployment |
+| Method                                                                                                                              | Description                                              |
+| ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| [**deleteWebdeploymentsConfiguration**](WebDeploymentsApi.md#deleteWebdeploymentsConfiguration)                                     | Delete all versions of a configuration                   |
+| [**deleteWebdeploymentsDeployment**](WebDeploymentsApi.md#deleteWebdeploymentsDeployment)                                           | Delete a deployment                                      |
+| [**getWebdeploymentsConfigurationVersion**](WebDeploymentsApi.md#getWebdeploymentsConfigurationVersion)                             | Get a configuration version                              |
+| [**getWebdeploymentsConfigurationVersions**](WebDeploymentsApi.md#getWebdeploymentsConfigurationVersions)                           | Get the versions of a configuration                      |
+| [**getWebdeploymentsConfigurationVersionsDraft**](WebDeploymentsApi.md#getWebdeploymentsConfigurationVersionsDraft)                 | Get the configuration draft                              |
+| [**getWebdeploymentsConfigurations**](WebDeploymentsApi.md#getWebdeploymentsConfigurations)                                         | View configuration drafts                                |
+| [**getWebdeploymentsDeployment**](WebDeploymentsApi.md#getWebdeploymentsDeployment)                                                 | Get a deployment                                         |
+| [**getWebdeploymentsDeployments**](WebDeploymentsApi.md#getWebdeploymentsDeployments)                                               | Get deployments                                          |
+| [**postWebdeploymentsConfigurationVersionsDraftPublish**](WebDeploymentsApi.md#postWebdeploymentsConfigurationVersionsDraftPublish) | Publish the configuration draft and create a new version |
+| [**postWebdeploymentsConfigurations**](WebDeploymentsApi.md#postWebdeploymentsConfigurations)                                       | Create a configuration draft                             |
+| [**postWebdeploymentsDeployments**](WebDeploymentsApi.md#postWebdeploymentsDeployments)                                             | Create a deployment                                      |
+| [**putWebdeploymentsConfigurationVersionsDraft**](WebDeploymentsApi.md#putWebdeploymentsConfigurationVersionsDraft)                 | Update the configuration draft                           |
+| [**putWebdeploymentsDeployment**](WebDeploymentsApi.md#putWebdeploymentsDeployment)                                                 | Update a deployment                                      |
+
 {: class="table-striped"}
 
 <a name="deleteWebdeploymentsConfiguration"></a>
 
 # **deleteWebdeploymentsConfiguration**
 
-
-
 > Void deleteWebdeploymentsConfiguration(configurationId)
 
 Delete all versions of a configuration
 
+Wraps DELETE /api/v2/webdeployments/configurations/{configurationId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/webdeployments/configurations/{configurationId}  
-
-Requires ALL permissions: 
-
-* webDeployments:configuration:delete
+- webDeployments:configuration:delete
 
 ### Example
 
@@ -73,12 +71,11 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                  | Notes |
+| ------------------- | ---------- | ---------------------------- | ----- |
+| **configurationId** | **String** | The configuration version ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **configurationId** | **String**| The configuration version ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -88,19 +85,15 @@ null (empty response body)
 
 # **deleteWebdeploymentsDeployment**
 
-
-
 > Void deleteWebdeploymentsDeployment(deploymentId)
 
 Delete a deployment
 
+Wraps DELETE /api/v2/webdeployments/deployments/{deploymentId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/webdeployments/deployments/{deploymentId}  
-
-Requires ALL permissions: 
-
-* webDeployments:deployment:delete
+- webDeployments:deployment:delete
 
 ### Example
 
@@ -135,12 +128,11 @@ try {
 
 ### Parameters
 
+| Name             | Type       | Description       | Notes |
+| ---------------- | ---------- | ----------------- | ----- |
+| **deploymentId** | **String** | The deployment ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **deploymentId** | **String**| The deployment ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -150,19 +142,15 @@ null (empty response body)
 
 # **getWebdeploymentsConfigurationVersion**
 
-
-
-> [WebDeploymentConfigurationVersion](WebDeploymentConfigurationVersion.html) getWebdeploymentsConfigurationVersion(configurationId, versionId)
+> [WebDeploymentConfigurationVersion](WebDeploymentConfigurationVersion.md) getWebdeploymentsConfigurationVersion(configurationId, versionId)
 
 Get a configuration version
 
+Wraps GET /api/v2/webdeployments/configurations/{configurationId}/versions/{versionId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/webdeployments/configurations/{configurationId}/versions/{versionId}  
-
-Requires ALL permissions: 
-
-* webDeployments:configuration:view
+- webDeployments:configuration:view
 
 ### Example
 
@@ -199,35 +187,32 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                             | Notes |
+| ------------------- | ---------- | --------------------------------------- | ----- |
+| **configurationId** | **String** | The configuration version ID            |
+| **versionId**       | **String** | The version of the configuration to get |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **configurationId** | **String**| The configuration version ID | 
-| **versionId** | **String**| The version of the configuration to get | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.html)
+[**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.md)
 
 <a name="getWebdeploymentsConfigurationVersions"></a>
 
 # **getWebdeploymentsConfigurationVersions**
 
-
-
-> [WebDeploymentConfigurationVersionEntityListing](WebDeploymentConfigurationVersionEntityListing.html) getWebdeploymentsConfigurationVersions(configurationId)
+> [WebDeploymentConfigurationVersionEntityListing](WebDeploymentConfigurationVersionEntityListing.md) getWebdeploymentsConfigurationVersions(configurationId)
 
 Get the versions of a configuration
 
 This returns the 50 most recent versions for this configuration
 
-Wraps GET /api/v2/webdeployments/configurations/{configurationId}/versions  
+Wraps GET /api/v2/webdeployments/configurations/{configurationId}/versions
 
-Requires ALL permissions: 
+Requires ALL permissions:
 
-* webDeployments:configuration:view
+- webDeployments:configuration:view
 
 ### Example
 
@@ -263,34 +248,29 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                  | Notes |
+| ------------------- | ---------- | ---------------------------- | ----- |
+| **configurationId** | **String** | The configuration version ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **configurationId** | **String**| The configuration version ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WebDeploymentConfigurationVersionEntityListing**](WebDeploymentConfigurationVersionEntityListing.html)
+[**WebDeploymentConfigurationVersionEntityListing**](WebDeploymentConfigurationVersionEntityListing.md)
 
 <a name="getWebdeploymentsConfigurationVersionsDraft"></a>
 
 # **getWebdeploymentsConfigurationVersionsDraft**
 
-
-
-> [WebDeploymentConfigurationVersion](WebDeploymentConfigurationVersion.html) getWebdeploymentsConfigurationVersionsDraft(configurationId)
+> [WebDeploymentConfigurationVersion](WebDeploymentConfigurationVersion.md) getWebdeploymentsConfigurationVersionsDraft(configurationId)
 
 Get the configuration draft
 
+Wraps GET /api/v2/webdeployments/configurations/{configurationId}/versions/draft
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/webdeployments/configurations/{configurationId}/versions/draft  
-
-Requires ALL permissions: 
-
-* webDeployments:configuration:view
+- webDeployments:configuration:view
 
 ### Example
 
@@ -326,34 +306,29 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                  | Notes |
+| ------------------- | ---------- | ---------------------------- | ----- |
+| **configurationId** | **String** | The configuration version ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **configurationId** | **String**| The configuration version ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.html)
+[**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.md)
 
 <a name="getWebdeploymentsConfigurations"></a>
 
 # **getWebdeploymentsConfigurations**
 
-
-
-> [WebDeploymentConfigurationVersionEntityListing](WebDeploymentConfigurationVersionEntityListing.html) getWebdeploymentsConfigurations(showOnlyPublished)
+> [WebDeploymentConfigurationVersionEntityListing](WebDeploymentConfigurationVersionEntityListing.md) getWebdeploymentsConfigurations(showOnlyPublished)
 
 View configuration drafts
 
+Wraps GET /api/v2/webdeployments/configurations
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/webdeployments/configurations  
-
-Requires ALL permissions: 
-
-* webDeployments:configuration:view
+- webDeployments:configuration:view
 
 ### Example
 
@@ -389,34 +364,29 @@ try {
 
 ### Parameters
 
+| Name                  | Type        | Description                                           | Notes                         |
+| --------------------- | ----------- | ----------------------------------------------------- | ----------------------------- |
+| **showOnlyPublished** | **Boolean** | Get only configuration drafts with published versions | [optional] [default to false] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **showOnlyPublished** | **Boolean**| Get only configuration drafts with published versions | [optional] [default to false] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WebDeploymentConfigurationVersionEntityListing**](WebDeploymentConfigurationVersionEntityListing.html)
+[**WebDeploymentConfigurationVersionEntityListing**](WebDeploymentConfigurationVersionEntityListing.md)
 
 <a name="getWebdeploymentsDeployment"></a>
 
 # **getWebdeploymentsDeployment**
 
-
-
-> [WebDeployment](WebDeployment.html) getWebdeploymentsDeployment(deploymentId)
+> [WebDeployment](WebDeployment.md) getWebdeploymentsDeployment(deploymentId)
 
 Get a deployment
 
+Wraps GET /api/v2/webdeployments/deployments/{deploymentId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/webdeployments/deployments/{deploymentId}  
-
-Requires ALL permissions: 
-
-* webDeployments:deployment:view
+- webDeployments:deployment:view
 
 ### Example
 
@@ -452,34 +422,29 @@ try {
 
 ### Parameters
 
+| Name             | Type       | Description       | Notes |
+| ---------------- | ---------- | ----------------- | ----- |
+| **deploymentId** | **String** | The deployment ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **deploymentId** | **String**| The deployment ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WebDeployment**](WebDeployment.html)
+[**WebDeployment**](WebDeployment.md)
 
 <a name="getWebdeploymentsDeployments"></a>
 
 # **getWebdeploymentsDeployments**
 
-
-
-> [WebDeploymentEntityListing](WebDeploymentEntityListing.html) getWebdeploymentsDeployments()
+> [WebDeploymentEntityListing](WebDeploymentEntityListing.md) getWebdeploymentsDeployments()
 
 Get deployments
 
+Wraps GET /api/v2/webdeployments/deployments
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/webdeployments/deployments  
-
-Requires ALL permissions: 
-
-* webDeployments:deployment:view
+- webDeployments:deployment:view
 
 ### Example
 
@@ -516,30 +481,24 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**WebDeploymentEntityListing**](WebDeploymentEntityListing.html)
+[**WebDeploymentEntityListing**](WebDeploymentEntityListing.md)
 
 <a name="postWebdeploymentsConfigurationVersionsDraftPublish"></a>
 
 # **postWebdeploymentsConfigurationVersionsDraftPublish**
 
-
-
-> [WebDeploymentConfigurationVersion](WebDeploymentConfigurationVersion.html) postWebdeploymentsConfigurationVersionsDraftPublish(configurationId)
+> [WebDeploymentConfigurationVersion](WebDeploymentConfigurationVersion.md) postWebdeploymentsConfigurationVersionsDraftPublish(configurationId)
 
 Publish the configuration draft and create a new version
 
+Wraps POST /api/v2/webdeployments/configurations/{configurationId}/versions/draft/publish
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/webdeployments/configurations/{configurationId}/versions/draft/publish  
-
-Requires ALL permissions: 
-
-* webDeployments:configuration:edit
-* webDeployments:configuration:add
+- webDeployments:configuration:edit
+- webDeployments:configuration:add
 
 ### Example
 
@@ -575,34 +534,29 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                  | Notes |
+| ------------------- | ---------- | ---------------------------- | ----- |
+| **configurationId** | **String** | The configuration version ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **configurationId** | **String**| The configuration version ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.html)
+[**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.md)
 
 <a name="postWebdeploymentsConfigurations"></a>
 
 # **postWebdeploymentsConfigurations**
 
-
-
-> [WebDeploymentConfigurationVersion](WebDeploymentConfigurationVersion.html) postWebdeploymentsConfigurations(configurationVersion)
+> [WebDeploymentConfigurationVersion](WebDeploymentConfigurationVersion.md) postWebdeploymentsConfigurations(configurationVersion)
 
 Create a configuration draft
 
+Wraps POST /api/v2/webdeployments/configurations
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/webdeployments/configurations  
-
-Requires ALL permissions: 
-
-* webDeployments:configuration:add
+- webDeployments:configuration:add
 
 ### Example
 
@@ -626,7 +580,7 @@ ApiClient apiClient = ApiClient.Builder.standard()
 Configuration.setDefaultApiClient(apiClient);
 
 WebDeploymentsApi apiInstance = new WebDeploymentsApi();
-WebDeploymentConfigurationVersion configurationVersion = new WebDeploymentConfigurationVersion(); // WebDeploymentConfigurationVersion | 
+WebDeploymentConfigurationVersion configurationVersion = new WebDeploymentConfigurationVersion(); // WebDeploymentConfigurationVersion |
 try {
     WebDeploymentConfigurationVersion result = apiInstance.postWebdeploymentsConfigurations(configurationVersion);
     System.out.println(result);
@@ -638,34 +592,29 @@ try {
 
 ### Parameters
 
+| Name                     | Type                                                                          | Description | Notes |
+| ------------------------ | ----------------------------------------------------------------------------- | ----------- | ----- |
+| **configurationVersion** | [**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.md) |             |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **configurationVersion** | [**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.html)
+[**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.md)
 
 <a name="postWebdeploymentsDeployments"></a>
 
 # **postWebdeploymentsDeployments**
 
-
-
-> [WebDeployment](WebDeployment.html) postWebdeploymentsDeployments(deployment)
+> [WebDeployment](WebDeployment.md) postWebdeploymentsDeployments(deployment)
 
 Create a deployment
 
+Wraps POST /api/v2/webdeployments/deployments
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/webdeployments/deployments  
-
-Requires ALL permissions: 
-
-* webDeployments:deployment:add
+- webDeployments:deployment:add
 
 ### Example
 
@@ -689,7 +638,7 @@ ApiClient apiClient = ApiClient.Builder.standard()
 Configuration.setDefaultApiClient(apiClient);
 
 WebDeploymentsApi apiInstance = new WebDeploymentsApi();
-WebDeployment deployment = new WebDeployment(); // WebDeployment | 
+WebDeployment deployment = new WebDeployment(); // WebDeployment |
 try {
     WebDeployment result = apiInstance.postWebdeploymentsDeployments(deployment);
     System.out.println(result);
@@ -701,34 +650,29 @@ try {
 
 ### Parameters
 
+| Name           | Type                                  | Description | Notes |
+| -------------- | ------------------------------------- | ----------- | ----- |
+| **deployment** | [**WebDeployment**](WebDeployment.md) |             |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **deployment** | [**WebDeployment**](WebDeployment.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WebDeployment**](WebDeployment.html)
+[**WebDeployment**](WebDeployment.md)
 
 <a name="putWebdeploymentsConfigurationVersionsDraft"></a>
 
 # **putWebdeploymentsConfigurationVersionsDraft**
 
-
-
-> [WebDeploymentConfigurationVersion](WebDeploymentConfigurationVersion.html) putWebdeploymentsConfigurationVersionsDraft(configurationId, configurationVersion)
+> [WebDeploymentConfigurationVersion](WebDeploymentConfigurationVersion.md) putWebdeploymentsConfigurationVersionsDraft(configurationId, configurationVersion)
 
 Update the configuration draft
 
+Wraps PUT /api/v2/webdeployments/configurations/{configurationId}/versions/draft
 
+Requires ALL permissions:
 
-Wraps PUT /api/v2/webdeployments/configurations/{configurationId}/versions/draft  
-
-Requires ALL permissions: 
-
-* webDeployments:configuration:edit
+- webDeployments:configuration:edit
 
 ### Example
 
@@ -753,7 +697,7 @@ Configuration.setDefaultApiClient(apiClient);
 
 WebDeploymentsApi apiInstance = new WebDeploymentsApi();
 String configurationId = "configurationId_example"; // String | The configuration version ID
-WebDeploymentConfigurationVersion configurationVersion = new WebDeploymentConfigurationVersion(); // WebDeploymentConfigurationVersion | 
+WebDeploymentConfigurationVersion configurationVersion = new WebDeploymentConfigurationVersion(); // WebDeploymentConfigurationVersion |
 try {
     WebDeploymentConfigurationVersion result = apiInstance.putWebdeploymentsConfigurationVersionsDraft(configurationId, configurationVersion);
     System.out.println(result);
@@ -765,35 +709,30 @@ try {
 
 ### Parameters
 
+| Name                     | Type                                                                          | Description                  | Notes |
+| ------------------------ | ----------------------------------------------------------------------------- | ---------------------------- | ----- |
+| **configurationId**      | **String**                                                                    | The configuration version ID |
+| **configurationVersion** | [**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.md) |                              |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **configurationId** | **String**| The configuration version ID | 
-| **configurationVersion** | [**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.html)
+[**WebDeploymentConfigurationVersion**](WebDeploymentConfigurationVersion.md)
 
 <a name="putWebdeploymentsDeployment"></a>
 
 # **putWebdeploymentsDeployment**
 
-
-
-> [WebDeployment](WebDeployment.html) putWebdeploymentsDeployment(deploymentId, deployment)
+> [WebDeployment](WebDeployment.md) putWebdeploymentsDeployment(deploymentId, deployment)
 
 Update a deployment
 
+Wraps PUT /api/v2/webdeployments/deployments/{deploymentId}
 
+Requires ALL permissions:
 
-Wraps PUT /api/v2/webdeployments/deployments/{deploymentId}  
-
-Requires ALL permissions: 
-
-* webDeployments:deployment:edit
+- webDeployments:deployment:edit
 
 ### Example
 
@@ -818,7 +757,7 @@ Configuration.setDefaultApiClient(apiClient);
 
 WebDeploymentsApi apiInstance = new WebDeploymentsApi();
 String deploymentId = "deploymentId_example"; // String | The deployment ID
-WebDeployment deployment = new WebDeployment(); // WebDeployment | 
+WebDeployment deployment = new WebDeployment(); // WebDeployment |
 try {
     WebDeployment result = apiInstance.putWebdeploymentsDeployment(deploymentId, deployment);
     System.out.println(result);
@@ -830,15 +769,13 @@ try {
 
 ### Parameters
 
+| Name             | Type                                  | Description       | Notes |
+| ---------------- | ------------------------------------- | ----------------- | ----- |
+| **deploymentId** | **String**                            | The deployment ID |
+| **deployment**   | [**WebDeployment**](WebDeployment.md) |                   |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **deploymentId** | **String**| The deployment ID | 
-| **deployment** | [**WebDeployment**](WebDeployment.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WebDeployment**](WebDeployment.html)
-
+[**WebDeployment**](WebDeployment.md)

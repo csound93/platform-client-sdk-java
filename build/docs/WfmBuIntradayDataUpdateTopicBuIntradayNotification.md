@@ -1,16 +1,14 @@
 ---
 title: WfmBuIntradayDataUpdateTopicBuIntradayNotification
 ---
-## WfmBuIntradayDataUpdateTopicBuIntradayNotification
 
+## WfmBuIntradayDataUpdateTopicBuIntradayNotification
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **operationId** | <!----><!---->**String**<!----> |  |  [optional] |
-| **result** | <!----><!---->[**WfmBuIntradayDataUpdateTopicBuIntradayResult**](WfmBuIntradayDataUpdateTopicBuIntradayResult.html)<!----> |  |  [optional] |
+| Name            | Type                                                                                                                     | Description | Notes      |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| **operationId** | <!----><!---->**String**<!---->                                                                                          |             | [optional] |
+| **result**      | <!----><!---->[**WfmBuIntradayDataUpdateTopicBuIntradayResult**](WfmBuIntradayDataUpdateTopicBuIntradayResult.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

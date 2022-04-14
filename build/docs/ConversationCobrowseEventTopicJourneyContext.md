@@ -1,17 +1,15 @@
 ---
 title: ConversationCobrowseEventTopicJourneyContext
 ---
-## ConversationCobrowseEventTopicJourneyContext
 
+## ConversationCobrowseEventTopicJourneyContext
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **customer** | <!----><!---->[**ConversationCobrowseEventTopicJourneyCustomer**](ConversationCobrowseEventTopicJourneyCustomer.html)<!----> |  |  [optional] |
-| **customerSession** | <!----><!---->[**ConversationCobrowseEventTopicJourneyCustomerSession**](ConversationCobrowseEventTopicJourneyCustomerSession.html)<!----> |  |  [optional] |
-| **triggeringAction** | <!----><!---->[**ConversationCobrowseEventTopicJourneyAction**](ConversationCobrowseEventTopicJourneyAction.html)<!----> |  |  [optional] |
+| Name                 | Type                                                                                                                                     | Description | Notes      |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **customer**         | <!----><!---->[**ConversationCobrowseEventTopicJourneyCustomer**](ConversationCobrowseEventTopicJourneyCustomer.md)<!---->               |             | [optional] |
+| **customerSession**  | <!----><!---->[**ConversationCobrowseEventTopicJourneyCustomerSession**](ConversationCobrowseEventTopicJourneyCustomerSession.md)<!----> |             | [optional] |
+| **triggeringAction** | <!----><!---->[**ConversationCobrowseEventTopicJourneyAction**](ConversationCobrowseEventTopicJourneyAction.md)<!---->                   |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

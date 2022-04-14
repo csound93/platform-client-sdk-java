@@ -1,17 +1,15 @@
 ---
 title: QueueConversationMessageEventTopicJourneyContext
 ---
-## QueueConversationMessageEventTopicJourneyContext
 
+## QueueConversationMessageEventTopicJourneyContext
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **customer** | <!----><!---->[**QueueConversationMessageEventTopicJourneyCustomer**](QueueConversationMessageEventTopicJourneyCustomer.html)<!----> |  |  [optional] |
-| **customerSession** | <!----><!---->[**QueueConversationMessageEventTopicJourneyCustomerSession**](QueueConversationMessageEventTopicJourneyCustomerSession.html)<!----> |  |  [optional] |
-| **triggeringAction** | <!----><!---->[**QueueConversationMessageEventTopicJourneyAction**](QueueConversationMessageEventTopicJourneyAction.html)<!----> |  |  [optional] |
+| Name                 | Type                                                                                                                                             | Description | Notes      |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| **customer**         | <!----><!---->[**QueueConversationMessageEventTopicJourneyCustomer**](QueueConversationMessageEventTopicJourneyCustomer.md)<!---->               |             | [optional] |
+| **customerSession**  | <!----><!---->[**QueueConversationMessageEventTopicJourneyCustomerSession**](QueueConversationMessageEventTopicJourneyCustomerSession.md)<!----> |             | [optional] |
+| **triggeringAction** | <!----><!---->[**QueueConversationMessageEventTopicJourneyAction**](QueueConversationMessageEventTopicJourneyAction.md)<!---->                   |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

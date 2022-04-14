@@ -1,19 +1,17 @@
 ---
 title: OutOfOfficeEventOutOfOffice
 ---
-## OutOfOfficeEventOutOfOffice
 
+## OutOfOfficeEventOutOfOffice
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **user** | <!----><!---->[**OutOfOfficeEventUser**](OutOfOfficeEventUser.html)<!----> |  |  [optional] |
-| **active** | <!----><!---->**Boolean**<!----> |  |  [optional] |
-| **indefinite** | <!----><!---->**Boolean**<!----> |  |  [optional] |
-| **startDate** | <!----><!---->[**Date**](Date.html)<!----> |  |  [optional] |
-| **endDate** | <!----><!---->[**Date**](Date.html)<!----> |  |  [optional] |
+| Name           | Type                                                                     | Description | Notes      |
+| -------------- | ------------------------------------------------------------------------ | ----------- | ---------- |
+| **user**       | <!----><!---->[**OutOfOfficeEventUser**](OutOfOfficeEventUser.md)<!----> |             | [optional] |
+| **active**     | <!----><!---->**Boolean**<!---->                                         |             | [optional] |
+| **indefinite** | <!----><!---->**Boolean**<!---->                                         |             | [optional] |
+| **startDate**  | <!----><!---->[**Date**](Date.md)<!---->                                 |             | [optional] |
+| **endDate**    | <!----><!---->[**Date**](Date.md)<!---->                                 |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

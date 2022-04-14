@@ -1,15 +1,13 @@
 ---
 title: QueryTimeOffLimitValuesResponse
 ---
-## QueryTimeOffLimitValuesResponse
 
+## QueryTimeOffLimitValuesResponse
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **values** | <!----><!---->[**List&lt;TimeOffLimitValueRange&gt;**](TimeOffLimitValueRange.html)<!----> |  |  [optional] |
+| Name       | Type                                                                                     | Description | Notes      |
+| ---------- | ---------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **values** | <!----><!---->[**List&lt;TimeOffLimitValueRange&gt;**](TimeOffLimitValueRange.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

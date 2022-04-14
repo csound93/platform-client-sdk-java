@@ -1,18 +1,16 @@
 ---
 title: CursorOrganizationListing
 ---
-## CursorOrganizationListing
 
+## CursorOrganizationListing
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **entities** | <!----><!---->[**List&lt;ExternalOrganization&gt;**](ExternalOrganization.html)<!----> |  |  [optional] |
-| **nextUri** | <!----><!---->**String**<!----> |  |  [optional] |
-| **selfUri** | <!----><!---->**String**<!----> |  |  [optional] |
-| **previousUri** | <!----><!---->**String**<!----> |  |  [optional] |
+| Name            | Type                                                                                 | Description | Notes      |
+| --------------- | ------------------------------------------------------------------------------------ | ----------- | ---------- |
+| **entities**    | <!----><!---->[**List&lt;ExternalOrganization&gt;**](ExternalOrganization.md)<!----> |             | [optional] |
+| **nextUri**     | <!----><!---->**String**<!---->                                                      |             | [optional] |
+| **selfUri**     | <!----><!---->**String**<!---->                                                      |             | [optional] |
+| **previousUri** | <!----><!---->**String**<!---->                                                      |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

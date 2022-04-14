@@ -1,17 +1,15 @@
 ---
 title: WfmIntradayDataUpdateTopicIntradayForecastData
 ---
-## WfmIntradayDataUpdateTopicIntradayForecastData
 
+## WfmIntradayDataUpdateTopicIntradayForecastData
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **offered** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
-| **averageTalkTimeSeconds** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
-| **averageAfterCallWorkSeconds** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
+| Name                            | Type                                                 | Description | Notes      |
+| ------------------------------- | ---------------------------------------------------- | ----------- | ---------- |
+| **offered**                     | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+| **averageTalkTimeSeconds**      | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+| **averageAfterCallWorkSeconds** | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

@@ -1,15 +1,13 @@
 ---
 title: WfmIntradayDataUpdateTopicIntradayPerformancePredictionAgentData
 ---
-## WfmIntradayDataUpdateTopicIntradayPerformancePredictionAgentData
 
+## WfmIntradayDataUpdateTopicIntradayPerformancePredictionAgentData
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **interactingTimeSeconds** | <!----><!---->[**BigDecimal**](BigDecimal.html)<!----> |  |  [optional] |
+| Name                       | Type                                                 | Description | Notes      |
+| -------------------------- | ---------------------------------------------------- | ----------- | ---------- |
+| **interactingTimeSeconds** | <!----><!---->[**BigDecimal**](BigDecimal.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

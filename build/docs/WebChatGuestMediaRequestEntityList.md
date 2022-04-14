@@ -1,15 +1,13 @@
 ---
 title: WebChatGuestMediaRequestEntityList
 ---
-## WebChatGuestMediaRequestEntityList
 
+## WebChatGuestMediaRequestEntityList
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **entities** | <!----><!---->[**List&lt;WebChatGuestMediaRequest&gt;**](WebChatGuestMediaRequest.html)<!----> |  |  [optional] |
+| Name         | Type                                                                                         | Description | Notes      |
+| ------------ | -------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **entities** | <!----><!---->[**List&lt;WebChatGuestMediaRequest&gt;**](WebChatGuestMediaRequest.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

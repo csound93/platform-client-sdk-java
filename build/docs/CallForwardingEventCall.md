@@ -1,15 +1,13 @@
 ---
 title: CallForwardingEventCall
 ---
-## CallForwardingEventCall
 
+## CallForwardingEventCall
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **targets** | <!----><!---->[**List&lt;CallForwardingEventTarget&gt;**](CallForwardingEventTarget.html)<!----> |  |  [optional] |
+| Name        | Type                                                                                           | Description | Notes      |
+| ----------- | ---------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **targets** | <!----><!---->[**List&lt;CallForwardingEventTarget&gt;**](CallForwardingEventTarget.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

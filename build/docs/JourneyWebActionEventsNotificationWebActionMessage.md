@@ -1,27 +1,25 @@
 ---
 title: JourneyWebActionEventsNotificationWebActionMessage
 ---
-## JourneyWebActionEventsNotificationWebActionMessage
 
+## JourneyWebActionEventsNotificationWebActionMessage
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **action** | <!----><!---->[**JourneyWebActionEventsNotificationEventAction**](JourneyWebActionEventsNotificationEventAction.html)<!----> |  |  [optional] |
-| **actionTarget** | <!----><!---->[**JourneyWebActionEventsNotificationActionTarget**](JourneyWebActionEventsNotificationActionTarget.html)<!----> |  |  [optional] |
-| **actionMap** | <!----><!---->[**JourneyWebActionEventsNotificationActionMap**](JourneyWebActionEventsNotificationActionMap.html)<!----> |  |  [optional] |
-| **errorCode** | <!----><!---->**String**<!----> |  |  [optional] |
-| **errorMessage** | <!----><!---->**String**<!----> |  |  [optional] |
-| **userAgentString** | <!----><!---->**String**<!----> |  |  [optional] |
-| **ipAddress** | <!----><!---->**String**<!----> |  |  [optional] |
-| **ipOrganization** | <!----><!---->**String**<!----> |  |  [optional] |
-| **browser** | <!----><!---->[**JourneyWebActionEventsNotificationBrowser**](JourneyWebActionEventsNotificationBrowser.html)<!----> |  |  [optional] |
-| **device** | <!----><!---->[**JourneyWebActionEventsNotificationDevice**](JourneyWebActionEventsNotificationDevice.html)<!----> |  |  [optional] |
-| **geolocation** | <!----><!---->[**JourneyWebActionEventsNotificationGeoLocation**](JourneyWebActionEventsNotificationGeoLocation.html)<!----> |  |  [optional] |
-| **mktCampaign** | <!----><!---->[**JourneyWebActionEventsNotificationMktCampaign**](JourneyWebActionEventsNotificationMktCampaign.html)<!----> |  |  [optional] |
-| **visitReferrer** | <!----><!---->[**JourneyWebActionEventsNotificationReferrer**](JourneyWebActionEventsNotificationReferrer.html)<!----> |  |  [optional] |
+| Name                | Type                                                                                                                         | Description | Notes      |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **action**          | <!----><!---->[**JourneyWebActionEventsNotificationEventAction**](JourneyWebActionEventsNotificationEventAction.md)<!---->   |             | [optional] |
+| **actionTarget**    | <!----><!---->[**JourneyWebActionEventsNotificationActionTarget**](JourneyWebActionEventsNotificationActionTarget.md)<!----> |             | [optional] |
+| **actionMap**       | <!----><!---->[**JourneyWebActionEventsNotificationActionMap**](JourneyWebActionEventsNotificationActionMap.md)<!---->       |             | [optional] |
+| **errorCode**       | <!----><!---->**String**<!---->                                                                                              |             | [optional] |
+| **errorMessage**    | <!----><!---->**String**<!---->                                                                                              |             | [optional] |
+| **userAgentString** | <!----><!---->**String**<!---->                                                                                              |             | [optional] |
+| **ipAddress**       | <!----><!---->**String**<!---->                                                                                              |             | [optional] |
+| **ipOrganization**  | <!----><!---->**String**<!---->                                                                                              |             | [optional] |
+| **browser**         | <!----><!---->[**JourneyWebActionEventsNotificationBrowser**](JourneyWebActionEventsNotificationBrowser.md)<!---->           |             | [optional] |
+| **device**          | <!----><!---->[**JourneyWebActionEventsNotificationDevice**](JourneyWebActionEventsNotificationDevice.md)<!---->             |             | [optional] |
+| **geolocation**     | <!----><!---->[**JourneyWebActionEventsNotificationGeoLocation**](JourneyWebActionEventsNotificationGeoLocation.md)<!---->   |             | [optional] |
+| **mktCampaign**     | <!----><!---->[**JourneyWebActionEventsNotificationMktCampaign**](JourneyWebActionEventsNotificationMktCampaign.md)<!---->   |             | [optional] |
+| **visitReferrer**   | <!----><!---->[**JourneyWebActionEventsNotificationReferrer**](JourneyWebActionEventsNotificationReferrer.md)<!---->         |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

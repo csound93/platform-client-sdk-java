@@ -1,16 +1,14 @@
 ---
 title: EvaluationAssignment
 ---
-## EvaluationAssignment
 
+## EvaluationAssignment
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **evaluationForm** | <!----><!---->[**EvaluationForm**](EvaluationForm.html)<!----> |  |  [optional] |
-| **user** | <!----><!---->[**User**](User.html)<!----> |  |  [optional] |
+| Name               | Type                                                         | Description | Notes      |
+| ------------------ | ------------------------------------------------------------ | ----------- | ---------- |
+| **evaluationForm** | <!----><!---->[**EvaluationForm**](EvaluationForm.md)<!----> |             | [optional] |
+| **user**           | <!----><!---->[**User**](User.md)<!---->                     |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

@@ -1,36 +1,34 @@
 ---
 title: MessagingApi
 ---
+
 ## MessagingApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteMessagingSupportedcontentSupportedContentId**](MessagingApi.html#deleteMessagingSupportedcontentSupportedContentId) | Delete a supported content profile |
-| [**getMessagingSupportedcontent**](MessagingApi.html#getMessagingSupportedcontent) | Get a list of Supported Content profiles |
-| [**getMessagingSupportedcontentSupportedContentId**](MessagingApi.html#getMessagingSupportedcontentSupportedContentId) | Get a supported content profile |
-| [**patchMessagingSupportedcontentSupportedContentId**](MessagingApi.html#patchMessagingSupportedcontentSupportedContentId) | Update a supported content profile |
-| [**postMessagingSupportedcontent**](MessagingApi.html#postMessagingSupportedcontent) | Create a Supported Content profile |
+| Method                                                                                                                     | Description                              |
+| -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| [**deleteMessagingSupportedcontentSupportedContentId**](MessagingApi.md#deleteMessagingSupportedcontentSupportedContentId) | Delete a supported content profile       |
+| [**getMessagingSupportedcontent**](MessagingApi.md#getMessagingSupportedcontent)                                           | Get a list of Supported Content profiles |
+| [**getMessagingSupportedcontentSupportedContentId**](MessagingApi.md#getMessagingSupportedcontentSupportedContentId)       | Get a supported content profile          |
+| [**patchMessagingSupportedcontentSupportedContentId**](MessagingApi.md#patchMessagingSupportedcontentSupportedContentId)   | Update a supported content profile       |
+| [**postMessagingSupportedcontent**](MessagingApi.md#postMessagingSupportedcontent)                                         | Create a Supported Content profile       |
+
 {: class="table-striped"}
 
 <a name="deleteMessagingSupportedcontentSupportedContentId"></a>
 
 # **deleteMessagingSupportedcontentSupportedContentId**
 
-
-
 > Void deleteMessagingSupportedcontentSupportedContentId(supportedContentId)
 
 Delete a supported content profile
 
+Wraps DELETE /api/v2/messaging/supportedcontent/{supportedContentId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/messaging/supportedcontent/{supportedContentId}  
-
-Requires ALL permissions: 
-
-* messaging:supportedContent:delete
+- messaging:supportedContent:delete
 
 ### Example
 
@@ -65,12 +63,11 @@ try {
 
 ### Parameters
 
+| Name                   | Type       | Description          | Notes |
+| ---------------------- | ---------- | -------------------- | ----- |
+| **supportedContentId** | **String** | Supported Content ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **supportedContentId** | **String**| Supported Content ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -80,19 +77,15 @@ null (empty response body)
 
 # **getMessagingSupportedcontent**
 
-
-
-> [SupportedContentListing](SupportedContentListing.html) getMessagingSupportedcontent(pageSize, pageNumber)
+> [SupportedContentListing](SupportedContentListing.md) getMessagingSupportedcontent(pageSize, pageNumber)
 
 Get a list of Supported Content profiles
 
+Wraps GET /api/v2/messaging/supportedcontent
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/messaging/supportedcontent  
-
-Requires ALL permissions: 
-
-* messaging:supportedContent:view
+- messaging:supportedContent:view
 
 ### Example
 
@@ -129,35 +122,30 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SupportedContentListing**](SupportedContentListing.html)
+[**SupportedContentListing**](SupportedContentListing.md)
 
 <a name="getMessagingSupportedcontentSupportedContentId"></a>
 
 # **getMessagingSupportedcontentSupportedContentId**
 
-
-
-> [SupportedContent](SupportedContent.html) getMessagingSupportedcontentSupportedContentId(supportedContentId)
+> [SupportedContent](SupportedContent.md) getMessagingSupportedcontentSupportedContentId(supportedContentId)
 
 Get a supported content profile
 
+Wraps GET /api/v2/messaging/supportedcontent/{supportedContentId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/messaging/supportedcontent/{supportedContentId}  
-
-Requires ALL permissions: 
-
-* messaging:supportedContent:view
+- messaging:supportedContent:view
 
 ### Example
 
@@ -193,34 +181,29 @@ try {
 
 ### Parameters
 
+| Name                   | Type       | Description          | Notes |
+| ---------------------- | ---------- | -------------------- | ----- |
+| **supportedContentId** | **String** | Supported Content ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **supportedContentId** | **String**| Supported Content ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SupportedContent**](SupportedContent.html)
+[**SupportedContent**](SupportedContent.md)
 
 <a name="patchMessagingSupportedcontentSupportedContentId"></a>
 
 # **patchMessagingSupportedcontentSupportedContentId**
 
-
-
-> [SupportedContent](SupportedContent.html) patchMessagingSupportedcontentSupportedContentId(supportedContentId, body)
+> [SupportedContent](SupportedContent.md) patchMessagingSupportedcontentSupportedContentId(supportedContentId, body)
 
 Update a supported content profile
 
+Wraps PATCH /api/v2/messaging/supportedcontent/{supportedContentId}
 
+Requires ALL permissions:
 
-Wraps PATCH /api/v2/messaging/supportedcontent/{supportedContentId}  
-
-Requires ALL permissions: 
-
-* messaging:supportedContent:edit
+- messaging:supportedContent:edit
 
 ### Example
 
@@ -257,35 +240,30 @@ try {
 
 ### Parameters
 
+| Name                   | Type                                        | Description          | Notes |
+| ---------------------- | ------------------------------------------- | -------------------- | ----- |
+| **supportedContentId** | **String**                                  | Supported Content ID |
+| **body**               | [**SupportedContent**](SupportedContent.md) | SupportedContent     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **supportedContentId** | **String**| Supported Content ID | 
-| **body** | [**SupportedContent**](SupportedContent.html)| SupportedContent | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SupportedContent**](SupportedContent.html)
+[**SupportedContent**](SupportedContent.md)
 
 <a name="postMessagingSupportedcontent"></a>
 
 # **postMessagingSupportedcontent**
 
-
-
-> [SupportedContent](SupportedContent.html) postMessagingSupportedcontent(body)
+> [SupportedContent](SupportedContent.md) postMessagingSupportedcontent(body)
 
 Create a Supported Content profile
 
+Wraps POST /api/v2/messaging/supportedcontent
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/messaging/supportedcontent  
-
-Requires ANY permissions: 
-
-* messaging:supportedContent:add
+- messaging:supportedContent:add
 
 ### Example
 
@@ -321,14 +299,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                                        | Description      | Notes |
+| -------- | ------------------------------------------- | ---------------- | ----- |
+| **body** | [**SupportedContent**](SupportedContent.md) | SupportedContent |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**SupportedContent**](SupportedContent.html)| SupportedContent | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SupportedContent**](SupportedContent.html)
-
+[**SupportedContent**](SupportedContent.md)

@@ -1,42 +1,40 @@
 ---
 title: AlertingApi
 ---
+
 ## AlertingApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteAlertingInteractionstatsAlert**](AlertingApi.html#deleteAlertingInteractionstatsAlert) | Delete an interaction stats alert |
-| [**deleteAlertingInteractionstatsRule**](AlertingApi.html#deleteAlertingInteractionstatsRule) | Delete an interaction stats rule. |
-| [**getAlertingAlertsActive**](AlertingApi.html#getAlertingAlertsActive) | Gets active alert count for a user. |
-| [**getAlertingInteractionstatsAlert**](AlertingApi.html#getAlertingInteractionstatsAlert) | Get an interaction stats alert |
-| [**getAlertingInteractionstatsAlerts**](AlertingApi.html#getAlertingInteractionstatsAlerts) | Get interaction stats alert list. |
-| [**getAlertingInteractionstatsAlertsUnread**](AlertingApi.html#getAlertingInteractionstatsAlertsUnread) | Gets user unread count of interaction stats alerts. |
-| [**getAlertingInteractionstatsRule**](AlertingApi.html#getAlertingInteractionstatsRule) | Get an interaction stats rule. |
-| [**getAlertingInteractionstatsRules**](AlertingApi.html#getAlertingInteractionstatsRules) | Get an interaction stats rule list. |
-| [**postAlertingInteractionstatsRules**](AlertingApi.html#postAlertingInteractionstatsRules) | Create an interaction stats rule. |
-| [**putAlertingInteractionstatsAlert**](AlertingApi.html#putAlertingInteractionstatsAlert) | Update an interaction stats alert read status |
-| [**putAlertingInteractionstatsRule**](AlertingApi.html#putAlertingInteractionstatsRule) | Update an interaction stats rule |
+| Method                                                                                                | Description                                         |
+| ----------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| [**deleteAlertingInteractionstatsAlert**](AlertingApi.md#deleteAlertingInteractionstatsAlert)         | Delete an interaction stats alert                   |
+| [**deleteAlertingInteractionstatsRule**](AlertingApi.md#deleteAlertingInteractionstatsRule)           | Delete an interaction stats rule.                   |
+| [**getAlertingAlertsActive**](AlertingApi.md#getAlertingAlertsActive)                                 | Gets active alert count for a user.                 |
+| [**getAlertingInteractionstatsAlert**](AlertingApi.md#getAlertingInteractionstatsAlert)               | Get an interaction stats alert                      |
+| [**getAlertingInteractionstatsAlerts**](AlertingApi.md#getAlertingInteractionstatsAlerts)             | Get interaction stats alert list.                   |
+| [**getAlertingInteractionstatsAlertsUnread**](AlertingApi.md#getAlertingInteractionstatsAlertsUnread) | Gets user unread count of interaction stats alerts. |
+| [**getAlertingInteractionstatsRule**](AlertingApi.md#getAlertingInteractionstatsRule)                 | Get an interaction stats rule.                      |
+| [**getAlertingInteractionstatsRules**](AlertingApi.md#getAlertingInteractionstatsRules)               | Get an interaction stats rule list.                 |
+| [**postAlertingInteractionstatsRules**](AlertingApi.md#postAlertingInteractionstatsRules)             | Create an interaction stats rule.                   |
+| [**putAlertingInteractionstatsAlert**](AlertingApi.md#putAlertingInteractionstatsAlert)               | Update an interaction stats alert read status       |
+| [**putAlertingInteractionstatsRule**](AlertingApi.md#putAlertingInteractionstatsRule)                 | Update an interaction stats rule                    |
+
 {: class="table-striped"}
 
 <a name="deleteAlertingInteractionstatsAlert"></a>
 
 # **deleteAlertingInteractionstatsAlert**
 
-
-
 > Void deleteAlertingInteractionstatsAlert(alertId)
 
 Delete an interaction stats alert
 
+Wraps DELETE /api/v2/alerting/interactionstats/alerts/{alertId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/alerting/interactionstats/alerts/{alertId}  
-
-Requires ALL permissions: 
-
-* alerting:alert:delete
+- alerting:alert:delete
 
 ### Example
 
@@ -71,12 +69,11 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **alertId** | **String** | Alert ID    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **alertId** | **String**| Alert ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -86,19 +83,15 @@ null (empty response body)
 
 # **deleteAlertingInteractionstatsRule**
 
-
-
 > Void deleteAlertingInteractionstatsRule(ruleId)
 
 Delete an interaction stats rule.
 
+Wraps DELETE /api/v2/alerting/interactionstats/rules/{ruleId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/alerting/interactionstats/rules/{ruleId}  
-
-Requires ALL permissions: 
-
-* alerting:rule:delete
+- alerting:rule:delete
 
 ### Example
 
@@ -133,12 +126,11 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **ruleId** | **String** | Rule ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **ruleId** | **String**| Rule ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -148,18 +140,13 @@ null (empty response body)
 
 # **getAlertingAlertsActive**
 
-
-
-> [ActiveAlertCount](ActiveAlertCount.html) getAlertingAlertsActive()
+> [ActiveAlertCount](ActiveAlertCount.md) getAlertingAlertsActive()
 
 Gets active alert count for a user.
 
+Wraps GET /api/v2/alerting/alerts/active
 
-
-Wraps GET /api/v2/alerting/alerts/active  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -196,29 +183,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**ActiveAlertCount**](ActiveAlertCount.html)
+[**ActiveAlertCount**](ActiveAlertCount.md)
 
 <a name="getAlertingInteractionstatsAlert"></a>
 
 # **getAlertingInteractionstatsAlert**
 
-
-
-> [InteractionStatsAlert](InteractionStatsAlert.html) getAlertingInteractionstatsAlert(alertId, expand)
+> [InteractionStatsAlert](InteractionStatsAlert.md) getAlertingInteractionstatsAlert(alertId, expand)
 
 Get an interaction stats alert
 
+Wraps GET /api/v2/alerting/interactionstats/alerts/{alertId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/alerting/interactionstats/alerts/{alertId}  
-
-Requires ALL permissions: 
-
-* alerting:alert:view
+- alerting:alert:view
 
 ### Example
 
@@ -255,35 +236,30 @@ try {
 
 ### Parameters
 
+| Name        | Type                                | Description                     | Notes                                         |
+| ----------- | ----------------------------------- | ------------------------------- | --------------------------------------------- |
+| **alertId** | **String**                          | Alert ID                        |
+| **expand**  | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **alertId** | **String**| Alert ID | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**InteractionStatsAlert**](InteractionStatsAlert.html)
+[**InteractionStatsAlert**](InteractionStatsAlert.md)
 
 <a name="getAlertingInteractionstatsAlerts"></a>
 
 # **getAlertingInteractionstatsAlerts**
 
-
-
-> [InteractionStatsAlertContainer](InteractionStatsAlertContainer.html) getAlertingInteractionstatsAlerts(expand)
+> [InteractionStatsAlertContainer](InteractionStatsAlertContainer.md) getAlertingInteractionstatsAlerts(expand)
 
 Get interaction stats alert list.
 
+Wraps GET /api/v2/alerting/interactionstats/alerts
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/alerting/interactionstats/alerts  
-
-Requires ALL permissions: 
-
-* alerting:alert:view
+- alerting:alert:view
 
 ### Example
 
@@ -319,33 +295,27 @@ try {
 
 ### Parameters
 
+| Name       | Type                                | Description                     | Notes                                         |
+| ---------- | ----------------------------------- | ------------------------------- | --------------------------------------------- |
+| **expand** | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**InteractionStatsAlertContainer**](InteractionStatsAlertContainer.html)
+[**InteractionStatsAlertContainer**](InteractionStatsAlertContainer.md)
 
 <a name="getAlertingInteractionstatsAlertsUnread"></a>
 
 # **getAlertingInteractionstatsAlertsUnread**
 
-
-
-> [UnreadMetric](UnreadMetric.html) getAlertingInteractionstatsAlertsUnread()
+> [UnreadMetric](UnreadMetric.md) getAlertingInteractionstatsAlertsUnread()
 
 Gets user unread count of interaction stats alerts.
 
+Wraps GET /api/v2/alerting/interactionstats/alerts/unread
 
-
-Wraps GET /api/v2/alerting/interactionstats/alerts/unread  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -382,29 +352,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**UnreadMetric**](UnreadMetric.html)
+[**UnreadMetric**](UnreadMetric.md)
 
 <a name="getAlertingInteractionstatsRule"></a>
 
 # **getAlertingInteractionstatsRule**
 
-
-
-> [InteractionStatsRule](InteractionStatsRule.html) getAlertingInteractionstatsRule(ruleId, expand)
+> [InteractionStatsRule](InteractionStatsRule.md) getAlertingInteractionstatsRule(ruleId, expand)
 
 Get an interaction stats rule.
 
+Wraps GET /api/v2/alerting/interactionstats/rules/{ruleId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/alerting/interactionstats/rules/{ruleId}  
-
-Requires ALL permissions: 
-
-* alerting:rule:view
+- alerting:rule:view
 
 ### Example
 
@@ -441,35 +405,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                | Description                     | Notes                                         |
+| ---------- | ----------------------------------- | ------------------------------- | --------------------------------------------- |
+| **ruleId** | **String**                          | Rule ID                         |
+| **expand** | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **ruleId** | **String**| Rule ID | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**InteractionStatsRule**](InteractionStatsRule.html)
+[**InteractionStatsRule**](InteractionStatsRule.md)
 
 <a name="getAlertingInteractionstatsRules"></a>
 
 # **getAlertingInteractionstatsRules**
 
-
-
-> [InteractionStatsRuleContainer](InteractionStatsRuleContainer.html) getAlertingInteractionstatsRules(expand)
+> [InteractionStatsRuleContainer](InteractionStatsRuleContainer.md) getAlertingInteractionstatsRules(expand)
 
 Get an interaction stats rule list.
 
+Wraps GET /api/v2/alerting/interactionstats/rules
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/alerting/interactionstats/rules  
-
-Requires ALL permissions: 
-
-* alerting:rule:view
+- alerting:rule:view
 
 ### Example
 
@@ -505,34 +464,29 @@ try {
 
 ### Parameters
 
+| Name       | Type                                | Description                     | Notes                                         |
+| ---------- | ----------------------------------- | ------------------------------- | --------------------------------------------- |
+| **expand** | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**InteractionStatsRuleContainer**](InteractionStatsRuleContainer.html)
+[**InteractionStatsRuleContainer**](InteractionStatsRuleContainer.md)
 
 <a name="postAlertingInteractionstatsRules"></a>
 
 # **postAlertingInteractionstatsRules**
 
-
-
-> [InteractionStatsRule](InteractionStatsRule.html) postAlertingInteractionstatsRules(body, expand)
+> [InteractionStatsRule](InteractionStatsRule.md) postAlertingInteractionstatsRules(body, expand)
 
 Create an interaction stats rule.
 
+Wraps POST /api/v2/alerting/interactionstats/rules
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/alerting/interactionstats/rules  
-
-Requires ALL permissions: 
-
-* alerting:rule:add
+- alerting:rule:add
 
 ### Example
 
@@ -569,35 +523,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                                | Description                     | Notes                                         |
+| ---------- | --------------------------------------------------- | ------------------------------- | --------------------------------------------- |
+| **body**   | [**InteractionStatsRule**](InteractionStatsRule.md) | AlertingRule                    |
+| **expand** | [**List&lt;String&gt;**](String.md)                 | Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**InteractionStatsRule**](InteractionStatsRule.html)| AlertingRule | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**InteractionStatsRule**](InteractionStatsRule.html)
+[**InteractionStatsRule**](InteractionStatsRule.md)
 
 <a name="putAlertingInteractionstatsAlert"></a>
 
 # **putAlertingInteractionstatsAlert**
 
-
-
-> [UnreadStatus](UnreadStatus.html) putAlertingInteractionstatsAlert(alertId, body, expand)
+> [UnreadStatus](UnreadStatus.md) putAlertingInteractionstatsAlert(alertId, body, expand)
 
 Update an interaction stats alert read status
 
+Wraps PUT /api/v2/alerting/interactionstats/alerts/{alertId}
 
+Requires ALL permissions:
 
-Wraps PUT /api/v2/alerting/interactionstats/alerts/{alertId}  
-
-Requires ALL permissions: 
-
-* alerting:alert:edit
+- alerting:alert:edit
 
 ### Example
 
@@ -635,36 +584,31 @@ try {
 
 ### Parameters
 
+| Name        | Type                                | Description                     | Notes                                         |
+| ----------- | ----------------------------------- | ------------------------------- | --------------------------------------------- |
+| **alertId** | **String**                          | Alert ID                        |
+| **body**    | [**UnreadStatus**](UnreadStatus.md) | InteractionStatsAlert           |
+| **expand**  | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **alertId** | **String**| Alert ID | 
-| **body** | [**UnreadStatus**](UnreadStatus.html)| InteractionStatsAlert | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UnreadStatus**](UnreadStatus.html)
+[**UnreadStatus**](UnreadStatus.md)
 
 <a name="putAlertingInteractionstatsRule"></a>
 
 # **putAlertingInteractionstatsRule**
 
-
-
-> [InteractionStatsRule](InteractionStatsRule.html) putAlertingInteractionstatsRule(ruleId, body, expand)
+> [InteractionStatsRule](InteractionStatsRule.md) putAlertingInteractionstatsRule(ruleId, body, expand)
 
 Update an interaction stats rule
 
+Wraps PUT /api/v2/alerting/interactionstats/rules/{ruleId}
 
+Requires ALL permissions:
 
-Wraps PUT /api/v2/alerting/interactionstats/rules/{ruleId}  
-
-Requires ALL permissions: 
-
-* alerting:rule:edit
+- alerting:rule:edit
 
 ### Example
 
@@ -702,16 +646,14 @@ try {
 
 ### Parameters
 
+| Name       | Type                                                | Description                     | Notes                                         |
+| ---------- | --------------------------------------------------- | ------------------------------- | --------------------------------------------- |
+| **ruleId** | **String**                                          | Rule ID                         |
+| **body**   | [**InteractionStatsRule**](InteractionStatsRule.md) | AlertingRule                    |
+| **expand** | [**List&lt;String&gt;**](String.md)                 | Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **ruleId** | **String**| Rule ID | 
-| **body** | [**InteractionStatsRule**](InteractionStatsRule.html)| AlertingRule | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: notificationUsers 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**InteractionStatsRule**](InteractionStatsRule.html)
-
+[**InteractionStatsRule**](InteractionStatsRule.md)

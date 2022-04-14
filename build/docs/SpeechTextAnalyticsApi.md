@@ -1,64 +1,62 @@
 ---
 title: SpeechTextAnalyticsApi
 ---
+
 ## SpeechTextAnalyticsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteSpeechandtextanalyticsProgram**](SpeechTextAnalyticsApi.html#deleteSpeechandtextanalyticsProgram) | Delete a Speech &amp; Text Analytics program by id |
-| [**deleteSpeechandtextanalyticsSentimentfeedback**](SpeechTextAnalyticsApi.html#deleteSpeechandtextanalyticsSentimentfeedback) | Delete All Speech &amp; Text Analytics SentimentFeedback |
-| [**deleteSpeechandtextanalyticsSentimentfeedbackSentimentFeedbackId**](SpeechTextAnalyticsApi.html#deleteSpeechandtextanalyticsSentimentfeedbackSentimentFeedbackId) | Delete a Speech &amp; Text Analytics SentimentFeedback by Id |
-| [**deleteSpeechandtextanalyticsTopic**](SpeechTextAnalyticsApi.html#deleteSpeechandtextanalyticsTopic) | Delete a Speech &amp; Text Analytics topic by id |
-| [**getSpeechandtextanalyticsConversation**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsConversation) | Get Speech and Text Analytics for a specific conversation |
-| [**getSpeechandtextanalyticsConversationCommunicationTranscripturl**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsConversationCommunicationTranscripturl) | Get the pre-signed S3 URL for the transcript of a specific communication of a conversation |
-| [**getSpeechandtextanalyticsProgram**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsProgram) | Get a Speech &amp; Text Analytics program by id |
-| [**getSpeechandtextanalyticsProgramMappings**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsProgramMappings) | Get Speech &amp; Text Analytics program mappings to queues and flows by id |
-| [**getSpeechandtextanalyticsPrograms**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsPrograms) | Get the list of Speech &amp; Text Analytics programs |
-| [**getSpeechandtextanalyticsProgramsGeneralJob**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsProgramsGeneralJob) | Get a Speech &amp; Text Analytics general program job by id |
-| [**getSpeechandtextanalyticsProgramsMappings**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsProgramsMappings) | Get the list of Speech &amp; Text Analytics programs mappings to queues and flows |
-| [**getSpeechandtextanalyticsProgramsPublishjob**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsProgramsPublishjob) | Get a Speech &amp; Text Analytics publish programs job by id |
-| [**getSpeechandtextanalyticsProgramsUnpublished**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsProgramsUnpublished) | Get the list of Speech &amp; Text Analytics unpublished programs |
-| [**getSpeechandtextanalyticsSentimentDialects**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsSentimentDialects) | Get the list of Speech &amp; Text Analytics sentiment supported dialects |
-| [**getSpeechandtextanalyticsSentimentfeedback**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsSentimentfeedback) | Get the list of Speech &amp; Text Analytics SentimentFeedback |
-| [**getSpeechandtextanalyticsSettings**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsSettings) | Get Speech And Text Analytics Settings |
-| [**getSpeechandtextanalyticsTopic**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsTopic) | Get a Speech &amp; Text Analytics topic by id |
-| [**getSpeechandtextanalyticsTopics**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsTopics) | Get the list of Speech &amp; Text Analytics topics |
-| [**getSpeechandtextanalyticsTopicsDialects**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsTopicsDialects) | Get list of supported Speech &amp; Text Analytics topics dialects |
-| [**getSpeechandtextanalyticsTopicsGeneral**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsTopicsGeneral) | Get the Speech &amp; Text Analytics general topics for a given dialect |
-| [**getSpeechandtextanalyticsTopicsPublishjob**](SpeechTextAnalyticsApi.html#getSpeechandtextanalyticsTopicsPublishjob) | Get a Speech &amp; Text Analytics publish topics job by id |
-| [**patchSpeechandtextanalyticsSettings**](SpeechTextAnalyticsApi.html#patchSpeechandtextanalyticsSettings) | Patch Speech And Text Analytics Settings |
-| [**postSpeechandtextanalyticsPrograms**](SpeechTextAnalyticsApi.html#postSpeechandtextanalyticsPrograms) | Create new Speech &amp; Text Analytics program |
-| [**postSpeechandtextanalyticsProgramsGeneralJobs**](SpeechTextAnalyticsApi.html#postSpeechandtextanalyticsProgramsGeneralJobs) | Create new Speech &amp; Text Analytics general program job |
-| [**postSpeechandtextanalyticsProgramsPublishjobs**](SpeechTextAnalyticsApi.html#postSpeechandtextanalyticsProgramsPublishjobs) | Create new Speech &amp; Text Analytics publish programs job |
-| [**postSpeechandtextanalyticsSentimentfeedback**](SpeechTextAnalyticsApi.html#postSpeechandtextanalyticsSentimentfeedback) | Create a Speech &amp; Text Analytics SentimentFeedback |
-| [**postSpeechandtextanalyticsTopics**](SpeechTextAnalyticsApi.html#postSpeechandtextanalyticsTopics) | Create new Speech &amp; Text Analytics topic |
-| [**postSpeechandtextanalyticsTopicsPublishjobs**](SpeechTextAnalyticsApi.html#postSpeechandtextanalyticsTopicsPublishjobs) | Create new Speech &amp; Text Analytics publish topics job |
-| [**postSpeechandtextanalyticsTranscriptsSearch**](SpeechTextAnalyticsApi.html#postSpeechandtextanalyticsTranscriptsSearch) | Search resources. |
-| [**putSpeechandtextanalyticsProgram**](SpeechTextAnalyticsApi.html#putSpeechandtextanalyticsProgram) | Update existing Speech &amp; Text Analytics program |
-| [**putSpeechandtextanalyticsProgramMappings**](SpeechTextAnalyticsApi.html#putSpeechandtextanalyticsProgramMappings) | Set Speech &amp; Text Analytics program mappings to queues and flows |
-| [**putSpeechandtextanalyticsSettings**](SpeechTextAnalyticsApi.html#putSpeechandtextanalyticsSettings) | Update Speech And Text Analytics Settings |
-| [**putSpeechandtextanalyticsTopic**](SpeechTextAnalyticsApi.html#putSpeechandtextanalyticsTopic) | Update existing Speech &amp; Text Analytics topic |
+| Method                                                                                                                                                             | Description                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| [**deleteSpeechandtextanalyticsProgram**](SpeechTextAnalyticsApi.md#deleteSpeechandtextanalyticsProgram)                                                           | Delete a Speech &amp; Text Analytics program by id                                         |
+| [**deleteSpeechandtextanalyticsSentimentfeedback**](SpeechTextAnalyticsApi.md#deleteSpeechandtextanalyticsSentimentfeedback)                                       | Delete All Speech &amp; Text Analytics SentimentFeedback                                   |
+| [**deleteSpeechandtextanalyticsSentimentfeedbackSentimentFeedbackId**](SpeechTextAnalyticsApi.md#deleteSpeechandtextanalyticsSentimentfeedbackSentimentFeedbackId) | Delete a Speech &amp; Text Analytics SentimentFeedback by Id                               |
+| [**deleteSpeechandtextanalyticsTopic**](SpeechTextAnalyticsApi.md#deleteSpeechandtextanalyticsTopic)                                                               | Delete a Speech &amp; Text Analytics topic by id                                           |
+| [**getSpeechandtextanalyticsConversation**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsConversation)                                                       | Get Speech and Text Analytics for a specific conversation                                  |
+| [**getSpeechandtextanalyticsConversationCommunicationTranscripturl**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsConversationCommunicationTranscripturl)   | Get the pre-signed S3 URL for the transcript of a specific communication of a conversation |
+| [**getSpeechandtextanalyticsProgram**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsProgram)                                                                 | Get a Speech &amp; Text Analytics program by id                                            |
+| [**getSpeechandtextanalyticsProgramMappings**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsProgramMappings)                                                 | Get Speech &amp; Text Analytics program mappings to queues and flows by id                 |
+| [**getSpeechandtextanalyticsPrograms**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsPrograms)                                                               | Get the list of Speech &amp; Text Analytics programs                                       |
+| [**getSpeechandtextanalyticsProgramsGeneralJob**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsProgramsGeneralJob)                                           | Get a Speech &amp; Text Analytics general program job by id                                |
+| [**getSpeechandtextanalyticsProgramsMappings**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsProgramsMappings)                                               | Get the list of Speech &amp; Text Analytics programs mappings to queues and flows          |
+| [**getSpeechandtextanalyticsProgramsPublishjob**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsProgramsPublishjob)                                           | Get a Speech &amp; Text Analytics publish programs job by id                               |
+| [**getSpeechandtextanalyticsProgramsUnpublished**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsProgramsUnpublished)                                         | Get the list of Speech &amp; Text Analytics unpublished programs                           |
+| [**getSpeechandtextanalyticsSentimentDialects**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsSentimentDialects)                                             | Get the list of Speech &amp; Text Analytics sentiment supported dialects                   |
+| [**getSpeechandtextanalyticsSentimentfeedback**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsSentimentfeedback)                                             | Get the list of Speech &amp; Text Analytics SentimentFeedback                              |
+| [**getSpeechandtextanalyticsSettings**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsSettings)                                                               | Get Speech And Text Analytics Settings                                                     |
+| [**getSpeechandtextanalyticsTopic**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsTopic)                                                                     | Get a Speech &amp; Text Analytics topic by id                                              |
+| [**getSpeechandtextanalyticsTopics**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsTopics)                                                                   | Get the list of Speech &amp; Text Analytics topics                                         |
+| [**getSpeechandtextanalyticsTopicsDialects**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsTopicsDialects)                                                   | Get list of supported Speech &amp; Text Analytics topics dialects                          |
+| [**getSpeechandtextanalyticsTopicsGeneral**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsTopicsGeneral)                                                     | Get the Speech &amp; Text Analytics general topics for a given dialect                     |
+| [**getSpeechandtextanalyticsTopicsPublishjob**](SpeechTextAnalyticsApi.md#getSpeechandtextanalyticsTopicsPublishjob)                                               | Get a Speech &amp; Text Analytics publish topics job by id                                 |
+| [**patchSpeechandtextanalyticsSettings**](SpeechTextAnalyticsApi.md#patchSpeechandtextanalyticsSettings)                                                           | Patch Speech And Text Analytics Settings                                                   |
+| [**postSpeechandtextanalyticsPrograms**](SpeechTextAnalyticsApi.md#postSpeechandtextanalyticsPrograms)                                                             | Create new Speech &amp; Text Analytics program                                             |
+| [**postSpeechandtextanalyticsProgramsGeneralJobs**](SpeechTextAnalyticsApi.md#postSpeechandtextanalyticsProgramsGeneralJobs)                                       | Create new Speech &amp; Text Analytics general program job                                 |
+| [**postSpeechandtextanalyticsProgramsPublishjobs**](SpeechTextAnalyticsApi.md#postSpeechandtextanalyticsProgramsPublishjobs)                                       | Create new Speech &amp; Text Analytics publish programs job                                |
+| [**postSpeechandtextanalyticsSentimentfeedback**](SpeechTextAnalyticsApi.md#postSpeechandtextanalyticsSentimentfeedback)                                           | Create a Speech &amp; Text Analytics SentimentFeedback                                     |
+| [**postSpeechandtextanalyticsTopics**](SpeechTextAnalyticsApi.md#postSpeechandtextanalyticsTopics)                                                                 | Create new Speech &amp; Text Analytics topic                                               |
+| [**postSpeechandtextanalyticsTopicsPublishjobs**](SpeechTextAnalyticsApi.md#postSpeechandtextanalyticsTopicsPublishjobs)                                           | Create new Speech &amp; Text Analytics publish topics job                                  |
+| [**postSpeechandtextanalyticsTranscriptsSearch**](SpeechTextAnalyticsApi.md#postSpeechandtextanalyticsTranscriptsSearch)                                           | Search resources.                                                                          |
+| [**putSpeechandtextanalyticsProgram**](SpeechTextAnalyticsApi.md#putSpeechandtextanalyticsProgram)                                                                 | Update existing Speech &amp; Text Analytics program                                        |
+| [**putSpeechandtextanalyticsProgramMappings**](SpeechTextAnalyticsApi.md#putSpeechandtextanalyticsProgramMappings)                                                 | Set Speech &amp; Text Analytics program mappings to queues and flows                       |
+| [**putSpeechandtextanalyticsSettings**](SpeechTextAnalyticsApi.md#putSpeechandtextanalyticsSettings)                                                               | Update Speech And Text Analytics Settings                                                  |
+| [**putSpeechandtextanalyticsTopic**](SpeechTextAnalyticsApi.md#putSpeechandtextanalyticsTopic)                                                                     | Update existing Speech &amp; Text Analytics topic                                          |
+
 {: class="table-striped"}
 
 <a name="deleteSpeechandtextanalyticsProgram"></a>
 
 # **deleteSpeechandtextanalyticsProgram**
 
-
-
 > Void deleteSpeechandtextanalyticsProgram(programId, forceDelete)
 
 Delete a Speech &amp; Text Analytics program by id
 
+Wraps DELETE /api/v2/speechandtextanalytics/programs/{programId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/speechandtextanalytics/programs/{programId}  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:program:delete
+- speechAndTextAnalytics:program:delete
 
 ### Example
 
@@ -94,13 +92,12 @@ try {
 
 ### Parameters
 
+| Name            | Type        | Description                                                                                                               | Notes                         |
+| --------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| **programId**   | **String**  | The id of the program                                                                                                     |
+| **forceDelete** | **Boolean** | Indicates whether the program is forced to be deleted or not. Required when the program to delete is the default program. | [optional] [default to false] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **programId** | **String**| The id of the program | 
-| **forceDelete** | **Boolean**| Indicates whether the program is forced to be deleted or not. Required when the program to delete is the default program. | [optional] [default to false] 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -110,19 +107,15 @@ null (empty response body)
 
 # **deleteSpeechandtextanalyticsSentimentfeedback**
 
-
-
 > Void deleteSpeechandtextanalyticsSentimentfeedback()
 
 Delete All Speech &amp; Text Analytics SentimentFeedback
 
+Wraps DELETE /api/v2/speechandtextanalytics/sentimentfeedback
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/speechandtextanalytics/sentimentfeedback  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:feedback:delete
+- speechAndTextAnalytics:feedback:delete
 
 ### Example
 
@@ -158,8 +151,6 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
 null (empty response body)
@@ -168,19 +159,15 @@ null (empty response body)
 
 # **deleteSpeechandtextanalyticsSentimentfeedbackSentimentFeedbackId**
 
-
-
 > Void deleteSpeechandtextanalyticsSentimentfeedbackSentimentFeedbackId(sentimentFeedbackId)
 
 Delete a Speech &amp; Text Analytics SentimentFeedback by Id
 
+Wraps DELETE /api/v2/speechandtextanalytics/sentimentfeedback/{sentimentFeedbackId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/speechandtextanalytics/sentimentfeedback/{sentimentFeedbackId}  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:feedback:delete
+- speechAndTextAnalytics:feedback:delete
 
 ### Example
 
@@ -215,12 +202,11 @@ try {
 
 ### Parameters
 
+| Name                    | Type       | Description                     | Notes |
+| ----------------------- | ---------- | ------------------------------- | ----- |
+| **sentimentFeedbackId** | **String** | The Id of the SentimentFeedback |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **sentimentFeedbackId** | **String**| The Id of the SentimentFeedback | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -230,19 +216,15 @@ null (empty response body)
 
 # **deleteSpeechandtextanalyticsTopic**
 
-
-
 > Void deleteSpeechandtextanalyticsTopic(topicId)
 
 Delete a Speech &amp; Text Analytics topic by id
 
+Wraps DELETE /api/v2/speechandtextanalytics/topics/{topicId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/speechandtextanalytics/topics/{topicId}  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:topic:delete
+- speechAndTextAnalytics:topic:delete
 
 ### Example
 
@@ -277,12 +259,11 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description         | Notes |
+| ----------- | ---------- | ------------------- | ----- |
+| **topicId** | **String** | The id of the topic |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **topicId** | **String**| The id of the topic | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -292,19 +273,15 @@ null (empty response body)
 
 # **getSpeechandtextanalyticsConversation**
 
-
-
-> [ConversationMetrics](ConversationMetrics.html) getSpeechandtextanalyticsConversation(conversationId)
+> [ConversationMetrics](ConversationMetrics.md) getSpeechandtextanalyticsConversation(conversationId)
 
 Get Speech and Text Analytics for a specific conversation
 
+Wraps GET /api/v2/speechandtextanalytics/conversations/{conversationId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/conversations/{conversationId}  
-
-Requires ANY permissions: 
-
-* recording:recording:view
+- recording:recording:view
 
 ### Example
 
@@ -340,34 +317,29 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description     | Notes |
+| ------------------ | ---------- | --------------- | ----- |
+| **conversationId** | **String** | Conversation Id |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **conversationId** | **String**| Conversation Id | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ConversationMetrics**](ConversationMetrics.html)
+[**ConversationMetrics**](ConversationMetrics.md)
 
 <a name="getSpeechandtextanalyticsConversationCommunicationTranscripturl"></a>
 
 # **getSpeechandtextanalyticsConversationCommunicationTranscripturl**
 
-
-
-> [TranscriptUrl](TranscriptUrl.html) getSpeechandtextanalyticsConversationCommunicationTranscripturl(conversationId, communicationId)
+> [TranscriptUrl](TranscriptUrl.md) getSpeechandtextanalyticsConversationCommunicationTranscripturl(conversationId, communicationId)
 
 Get the pre-signed S3 URL for the transcript of a specific communication of a conversation
 
+Wraps GET /api/v2/speechandtextanalytics/conversations/{conversationId}/communications/{communicationId}/transcripturl
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/conversations/{conversationId}/communications/{communicationId}/transcripturl  
-
-Requires ANY permissions: 
-
-* recording:recording:view
+- recording:recording:view
 
 ### Example
 
@@ -404,35 +376,30 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description      | Notes |
+| ------------------- | ---------- | ---------------- | ----- |
+| **conversationId**  | **String** | Conversation ID  |
+| **communicationId** | **String** | Communication ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **conversationId** | **String**| Conversation ID | 
-| **communicationId** | **String**| Communication ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TranscriptUrl**](TranscriptUrl.html)
+[**TranscriptUrl**](TranscriptUrl.md)
 
 <a name="getSpeechandtextanalyticsProgram"></a>
 
 # **getSpeechandtextanalyticsProgram**
 
-
-
-> [Program](Program.html) getSpeechandtextanalyticsProgram(programId)
+> [Program](Program.md) getSpeechandtextanalyticsProgram(programId)
 
 Get a Speech &amp; Text Analytics program by id
 
+Wraps GET /api/v2/speechandtextanalytics/programs/{programId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/programs/{programId}  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:program:view
+- speechAndTextAnalytics:program:view
 
 ### Example
 
@@ -468,34 +435,29 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description           | Notes |
+| ------------- | ---------- | --------------------- | ----- |
+| **programId** | **String** | The id of the program |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **programId** | **String**| The id of the program | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Program**](Program.html)
+[**Program**](Program.md)
 
 <a name="getSpeechandtextanalyticsProgramMappings"></a>
 
 # **getSpeechandtextanalyticsProgramMappings**
 
-
-
-> [ProgramMappings](ProgramMappings.html) getSpeechandtextanalyticsProgramMappings(programId)
+> [ProgramMappings](ProgramMappings.md) getSpeechandtextanalyticsProgramMappings(programId)
 
 Get Speech &amp; Text Analytics program mappings to queues and flows by id
 
+Wraps GET /api/v2/speechandtextanalytics/programs/{programId}/mappings
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/programs/{programId}/mappings  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:program:view
+- speechAndTextAnalytics:program:view
 
 ### Example
 
@@ -531,34 +493,29 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description           | Notes |
+| ------------- | ---------- | --------------------- | ----- |
+| **programId** | **String** | The id of the program |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **programId** | **String**| The id of the program | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ProgramMappings**](ProgramMappings.html)
+[**ProgramMappings**](ProgramMappings.md)
 
 <a name="getSpeechandtextanalyticsPrograms"></a>
 
 # **getSpeechandtextanalyticsPrograms**
 
-
-
-> [ProgramsEntityListing](ProgramsEntityListing.html) getSpeechandtextanalyticsPrograms(nextPage, pageSize)
+> [ProgramsEntityListing](ProgramsEntityListing.md) getSpeechandtextanalyticsPrograms(nextPage, pageSize)
 
 Get the list of Speech &amp; Text Analytics programs
 
+Wraps GET /api/v2/speechandtextanalytics/programs
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/programs  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:program:view
+- speechAndTextAnalytics:program:view
 
 ### Example
 
@@ -595,38 +552,33 @@ try {
 
 ### Parameters
 
+| Name         | Type        | Description                       | Notes                      |
+| ------------ | ----------- | --------------------------------- | -------------------------- |
+| **nextPage** | **String**  | The key for listing the next page | [optional]                 |
+| **pageSize** | **Integer** | The page size for the listing     | [optional] [default to 20] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **nextPage** | **String**| The key for listing the next page | [optional] 
-| **pageSize** | **Integer**| The page size for the listing | [optional] [default to 20] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ProgramsEntityListing**](ProgramsEntityListing.html)
+[**ProgramsEntityListing**](ProgramsEntityListing.md)
 
 <a name="getSpeechandtextanalyticsProgramsGeneralJob"></a>
 
 # **getSpeechandtextanalyticsProgramsGeneralJob**
 
-
-
-> [GeneralProgramJob](GeneralProgramJob.html) getSpeechandtextanalyticsProgramsGeneralJob(jobId)
+> [GeneralProgramJob](GeneralProgramJob.md) getSpeechandtextanalyticsProgramsGeneralJob(jobId)
 
 Get a Speech &amp; Text Analytics general program job by id
 
+Wraps GET /api/v2/speechandtextanalytics/programs/general/jobs/{jobId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/programs/general/jobs/{jobId}  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:program:add
-* speechAndTextAnalytics:program:edit
-* speechAndTextAnalytics:topic:add
-* speechAndTextAnalytics:topic:edit
+- speechAndTextAnalytics:program:add
+- speechAndTextAnalytics:program:edit
+- speechAndTextAnalytics:topic:add
+- speechAndTextAnalytics:topic:edit
 
 ### Example
 
@@ -662,34 +614,29 @@ try {
 
 ### Parameters
 
+| Name      | Type       | Description                        | Notes |
+| --------- | ---------- | ---------------------------------- | ----- |
+| **jobId** | **String** | The id of the publish programs job |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **jobId** | **String**| The id of the publish programs job | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GeneralProgramJob**](GeneralProgramJob.html)
+[**GeneralProgramJob**](GeneralProgramJob.md)
 
 <a name="getSpeechandtextanalyticsProgramsMappings"></a>
 
 # **getSpeechandtextanalyticsProgramsMappings**
 
-
-
-> [ProgramsMappingsEntityListing](ProgramsMappingsEntityListing.html) getSpeechandtextanalyticsProgramsMappings(nextPage, pageSize)
+> [ProgramsMappingsEntityListing](ProgramsMappingsEntityListing.md) getSpeechandtextanalyticsProgramsMappings(nextPage, pageSize)
 
 Get the list of Speech &amp; Text Analytics programs mappings to queues and flows
 
+Wraps GET /api/v2/speechandtextanalytics/programs/mappings
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/programs/mappings  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:program:view
+- speechAndTextAnalytics:program:view
 
 ### Example
 
@@ -726,35 +673,30 @@ try {
 
 ### Parameters
 
+| Name         | Type        | Description                       | Notes                      |
+| ------------ | ----------- | --------------------------------- | -------------------------- |
+| **nextPage** | **String**  | The key for listing the next page | [optional]                 |
+| **pageSize** | **Integer** | The page size for the listing     | [optional] [default to 20] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **nextPage** | **String**| The key for listing the next page | [optional] 
-| **pageSize** | **Integer**| The page size for the listing | [optional] [default to 20] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ProgramsMappingsEntityListing**](ProgramsMappingsEntityListing.html)
+[**ProgramsMappingsEntityListing**](ProgramsMappingsEntityListing.md)
 
 <a name="getSpeechandtextanalyticsProgramsPublishjob"></a>
 
 # **getSpeechandtextanalyticsProgramsPublishjob**
 
-
-
-> [ProgramJob](ProgramJob.html) getSpeechandtextanalyticsProgramsPublishjob(jobId)
+> [ProgramJob](ProgramJob.md) getSpeechandtextanalyticsProgramsPublishjob(jobId)
 
 Get a Speech &amp; Text Analytics publish programs job by id
 
+Wraps GET /api/v2/speechandtextanalytics/programs/publishjobs/{jobId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/programs/publishjobs/{jobId}  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:program:publish
+- speechAndTextAnalytics:program:publish
 
 ### Example
 
@@ -790,34 +732,29 @@ try {
 
 ### Parameters
 
+| Name      | Type       | Description                        | Notes |
+| --------- | ---------- | ---------------------------------- | ----- |
+| **jobId** | **String** | The id of the publish programs job |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **jobId** | **String**| The id of the publish programs job | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ProgramJob**](ProgramJob.html)
+[**ProgramJob**](ProgramJob.md)
 
 <a name="getSpeechandtextanalyticsProgramsUnpublished"></a>
 
 # **getSpeechandtextanalyticsProgramsUnpublished**
 
-
-
-> [UnpublishedProgramsEntityListing](UnpublishedProgramsEntityListing.html) getSpeechandtextanalyticsProgramsUnpublished(nextPage, pageSize)
+> [UnpublishedProgramsEntityListing](UnpublishedProgramsEntityListing.md) getSpeechandtextanalyticsProgramsUnpublished(nextPage, pageSize)
 
 Get the list of Speech &amp; Text Analytics unpublished programs
 
+Wraps GET /api/v2/speechandtextanalytics/programs/unpublished
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/programs/unpublished  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:program:view
+- speechAndTextAnalytics:program:view
 
 ### Example
 
@@ -854,34 +791,28 @@ try {
 
 ### Parameters
 
+| Name         | Type        | Description                       | Notes                      |
+| ------------ | ----------- | --------------------------------- | -------------------------- |
+| **nextPage** | **String**  | The key for listing the next page | [optional]                 |
+| **pageSize** | **Integer** | The page size for the listing     | [optional] [default to 20] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **nextPage** | **String**| The key for listing the next page | [optional] 
-| **pageSize** | **Integer**| The page size for the listing | [optional] [default to 20] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UnpublishedProgramsEntityListing**](UnpublishedProgramsEntityListing.html)
+[**UnpublishedProgramsEntityListing**](UnpublishedProgramsEntityListing.md)
 
 <a name="getSpeechandtextanalyticsSentimentDialects"></a>
 
 # **getSpeechandtextanalyticsSentimentDialects**
 
-
-
-> [EntityListing](EntityListing.html) getSpeechandtextanalyticsSentimentDialects()
+> [EntityListing](EntityListing.md) getSpeechandtextanalyticsSentimentDialects()
 
 Get the list of Speech &amp; Text Analytics sentiment supported dialects
 
+Wraps GET /api/v2/speechandtextanalytics/sentiment/dialects
 
-
-Wraps GET /api/v2/speechandtextanalytics/sentiment/dialects  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -918,29 +849,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**EntityListing**](EntityListing.html)
+[**EntityListing**](EntityListing.md)
 
 <a name="getSpeechandtextanalyticsSentimentfeedback"></a>
 
 # **getSpeechandtextanalyticsSentimentfeedback**
 
-
-
-> [SentimentFeedbackEntityListing](SentimentFeedbackEntityListing.html) getSpeechandtextanalyticsSentimentfeedback(dialect)
+> [SentimentFeedbackEntityListing](SentimentFeedbackEntityListing.md) getSpeechandtextanalyticsSentimentfeedback(dialect)
 
 Get the list of Speech &amp; Text Analytics SentimentFeedback
 
+Wraps GET /api/v2/speechandtextanalytics/sentimentfeedback
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/sentimentfeedback  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:feedback:view
+- speechAndTextAnalytics:feedback:view
 
 ### Example
 
@@ -976,34 +901,29 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description                                                                                                                                                                 | Notes      |
+| ----------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| **dialect** | **String** | The key for filter the listing by dialect, dialect format is {language}-{country} where language follows ISO 639-1 standard and country follows ISO 3166-1 alpha 2 standard | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **dialect** | **String**| The key for filter the listing by dialect, dialect format is {language}-{country} where language follows ISO 639-1 standard and country follows ISO 3166-1 alpha 2 standard | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SentimentFeedbackEntityListing**](SentimentFeedbackEntityListing.html)
+[**SentimentFeedbackEntityListing**](SentimentFeedbackEntityListing.md)
 
 <a name="getSpeechandtextanalyticsSettings"></a>
 
 # **getSpeechandtextanalyticsSettings**
 
-
-
-> [SpeechTextAnalyticsSettingsResponse](SpeechTextAnalyticsSettingsResponse.html) getSpeechandtextanalyticsSettings()
+> [SpeechTextAnalyticsSettingsResponse](SpeechTextAnalyticsSettingsResponse.md) getSpeechandtextanalyticsSettings()
 
 Get Speech And Text Analytics Settings
 
+Wraps GET /api/v2/speechandtextanalytics/settings
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/settings  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:settings:view
+- speechAndTextAnalytics:settings:view
 
 ### Example
 
@@ -1040,29 +960,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**SpeechTextAnalyticsSettingsResponse**](SpeechTextAnalyticsSettingsResponse.html)
+[**SpeechTextAnalyticsSettingsResponse**](SpeechTextAnalyticsSettingsResponse.md)
 
 <a name="getSpeechandtextanalyticsTopic"></a>
 
 # **getSpeechandtextanalyticsTopic**
 
-
-
-> [Topic](Topic.html) getSpeechandtextanalyticsTopic(topicId)
+> [Topic](Topic.md) getSpeechandtextanalyticsTopic(topicId)
 
 Get a Speech &amp; Text Analytics topic by id
 
+Wraps GET /api/v2/speechandtextanalytics/topics/{topicId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/topics/{topicId}  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:topic:view
+- speechAndTextAnalytics:topic:view
 
 ### Example
 
@@ -1098,34 +1012,29 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description         | Notes |
+| ----------- | ---------- | ------------------- | ----- |
+| **topicId** | **String** | The id of the topic |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **topicId** | **String**| The id of the topic | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Topic**](Topic.html)
+[**Topic**](Topic.md)
 
 <a name="getSpeechandtextanalyticsTopics"></a>
 
 # **getSpeechandtextanalyticsTopics**
 
-
-
-> [TopicsEntityListing](TopicsEntityListing.html) getSpeechandtextanalyticsTopics(nextPage, pageSize, state, name, ids, sortBy, sortOrder)
+> [TopicsEntityListing](TopicsEntityListing.md) getSpeechandtextanalyticsTopics(nextPage, pageSize, state, name, ids, sortBy, sortOrder)
 
 Get the list of Speech &amp; Text Analytics topics
 
+Wraps GET /api/v2/speechandtextanalytics/topics
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/topics  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:topic:view
+- speechAndTextAnalytics:topic:view
 
 ### Example
 
@@ -1167,39 +1076,33 @@ try {
 
 ### Parameters
 
+| Name          | Type                                | Description                                                                                           | Notes                                         |
+| ------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| **nextPage**  | **String**                          | The key for listing the next page                                                                     | [optional]                                    |
+| **pageSize**  | **Integer**                         | The page size for the listing                                                                         | [optional] [default to 20]                    |
+| **state**     | **String**                          | Topic state. Defaults to latest                                                                       | [optional]<br />**Values**: latest, published |
+| **name**      | **String**                          | Case insensitive partial name to filter by                                                            | [optional]                                    |
+| **ids**       | [**List&lt;String&gt;**](String.md) | Comma separated Topic IDs to filter by. Cannot be used with other filters. Maximum of 50 IDs allowed. | [optional]                                    |
+| **sortBy**    | **String**                          | Sort results by. Defaults to name                                                                     | [optional]<br />**Values**: name              |
+| **sortOrder** | **String**                          | Sort order. Defaults to asc                                                                           | [optional]<br />**Values**: asc, desc         |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **nextPage** | **String**| The key for listing the next page | [optional] 
-| **pageSize** | **Integer**| The page size for the listing | [optional] [default to 20] 
-| **state** | **String**| Topic state. Defaults to latest | [optional]<br />**Values**: latest, published 
-| **name** | **String**| Case insensitive partial name to filter by | [optional] 
-| **ids** | [**List&lt;String&gt;**](String.html)| Comma separated Topic IDs to filter by. Cannot be used with other filters. Maximum of 50 IDs allowed. | [optional] 
-| **sortBy** | **String**| Sort results by. Defaults to name | [optional]<br />**Values**: name 
-| **sortOrder** | **String**| Sort order. Defaults to asc | [optional]<br />**Values**: asc, desc 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TopicsEntityListing**](TopicsEntityListing.html)
+[**TopicsEntityListing**](TopicsEntityListing.md)
 
 <a name="getSpeechandtextanalyticsTopicsDialects"></a>
 
 # **getSpeechandtextanalyticsTopicsDialects**
 
-
-
-> [EntityListing](EntityListing.html) getSpeechandtextanalyticsTopicsDialects()
+> [EntityListing](EntityListing.md) getSpeechandtextanalyticsTopicsDialects()
 
 Get list of supported Speech &amp; Text Analytics topics dialects
 
+Wraps GET /api/v2/speechandtextanalytics/topics/dialects
 
-
-Wraps GET /api/v2/speechandtextanalytics/topics/dialects  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1236,29 +1139,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**EntityListing**](EntityListing.html)
+[**EntityListing**](EntityListing.md)
 
 <a name="getSpeechandtextanalyticsTopicsGeneral"></a>
 
 # **getSpeechandtextanalyticsTopicsGeneral**
 
-
-
-> [GeneralTopicsEntityListing](GeneralTopicsEntityListing.html) getSpeechandtextanalyticsTopicsGeneral(dialect)
+> [GeneralTopicsEntityListing](GeneralTopicsEntityListing.md) getSpeechandtextanalyticsTopicsGeneral(dialect)
 
 Get the Speech &amp; Text Analytics general topics for a given dialect
 
+Wraps GET /api/v2/speechandtextanalytics/topics/general
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/topics/general  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:topic:view
+- speechAndTextAnalytics:topic:view
 
 ### Example
 
@@ -1294,34 +1191,29 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description                                                                                                                                                         | Notes                                                                                                                        |
+| ----------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **dialect** | **String** | The dialect of the general topics, dialect format is {language}-{country} where language follows ISO 639-1 standard and country follows ISO 3166-1 alpha 2 standard | [optional]<br />**Values**: en-US, es-US, en-AU, en-GB, en-ZA, es-ES, en-IN, fr-FR, fr-CA, it-IT, de-DE, pt-BR, pl-PL, pt-PT |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **dialect** | **String**| The dialect of the general topics, dialect format is {language}-{country} where language follows ISO 639-1 standard and country follows ISO 3166-1 alpha 2 standard | [optional]<br />**Values**: en-US, es-US, en-AU, en-GB, en-ZA, es-ES, en-IN, fr-FR, fr-CA, it-IT, de-DE, pt-BR, pl-PL, pt-PT 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GeneralTopicsEntityListing**](GeneralTopicsEntityListing.html)
+[**GeneralTopicsEntityListing**](GeneralTopicsEntityListing.md)
 
 <a name="getSpeechandtextanalyticsTopicsPublishjob"></a>
 
 # **getSpeechandtextanalyticsTopicsPublishjob**
 
-
-
-> [TopicJob](TopicJob.html) getSpeechandtextanalyticsTopicsPublishjob(jobId)
+> [TopicJob](TopicJob.md) getSpeechandtextanalyticsTopicsPublishjob(jobId)
 
 Get a Speech &amp; Text Analytics publish topics job by id
 
+Wraps GET /api/v2/speechandtextanalytics/topics/publishjobs/{jobId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/speechandtextanalytics/topics/publishjobs/{jobId}  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:topic:publish
+- speechAndTextAnalytics:topic:publish
 
 ### Example
 
@@ -1357,34 +1249,29 @@ try {
 
 ### Parameters
 
+| Name      | Type       | Description                      | Notes |
+| --------- | ---------- | -------------------------------- | ----- |
+| **jobId** | **String** | The id of the publish topics job |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **jobId** | **String**| The id of the publish topics job | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TopicJob**](TopicJob.html)
+[**TopicJob**](TopicJob.md)
 
 <a name="patchSpeechandtextanalyticsSettings"></a>
 
 # **patchSpeechandtextanalyticsSettings**
 
-
-
-> [SpeechTextAnalyticsSettingsResponse](SpeechTextAnalyticsSettingsResponse.html) patchSpeechandtextanalyticsSettings(body)
+> [SpeechTextAnalyticsSettingsResponse](SpeechTextAnalyticsSettingsResponse.md) patchSpeechandtextanalyticsSettings(body)
 
 Patch Speech And Text Analytics Settings
 
+Wraps PATCH /api/v2/speechandtextanalytics/settings
 
+Requires ALL permissions:
 
-Wraps PATCH /api/v2/speechandtextanalytics/settings  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:settings:edit
+- speechAndTextAnalytics:settings:edit
 
 ### Example
 
@@ -1420,34 +1307,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                                            | Description                        | Notes |
+| -------- | ------------------------------------------------------------------------------- | ---------------------------------- | ----- |
+| **body** | [**SpeechTextAnalyticsSettingsRequest**](SpeechTextAnalyticsSettingsRequest.md) | Speech And Text Analytics Settings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**SpeechTextAnalyticsSettingsRequest**](SpeechTextAnalyticsSettingsRequest.html)| Speech And Text Analytics Settings | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SpeechTextAnalyticsSettingsResponse**](SpeechTextAnalyticsSettingsResponse.html)
+[**SpeechTextAnalyticsSettingsResponse**](SpeechTextAnalyticsSettingsResponse.md)
 
 <a name="postSpeechandtextanalyticsPrograms"></a>
 
 # **postSpeechandtextanalyticsPrograms**
 
-
-
-> [Program](Program.html) postSpeechandtextanalyticsPrograms(body)
+> [Program](Program.md) postSpeechandtextanalyticsPrograms(body)
 
 Create new Speech &amp; Text Analytics program
 
+Wraps POST /api/v2/speechandtextanalytics/programs
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/speechandtextanalytics/programs  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:program:add
+- speechAndTextAnalytics:program:add
 
 ### Example
 
@@ -1483,37 +1365,32 @@ try {
 
 ### Parameters
 
+| Name     | Type                                    | Description           | Notes |
+| -------- | --------------------------------------- | --------------------- | ----- |
+| **body** | [**ProgramRequest**](ProgramRequest.md) | The program to create |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ProgramRequest**](ProgramRequest.html)| The program to create | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Program**](Program.html)
+[**Program**](Program.md)
 
 <a name="postSpeechandtextanalyticsProgramsGeneralJobs"></a>
 
 # **postSpeechandtextanalyticsProgramsGeneralJobs**
 
-
-
-> [GeneralProgramJob](GeneralProgramJob.html) postSpeechandtextanalyticsProgramsGeneralJobs(body)
+> [GeneralProgramJob](GeneralProgramJob.md) postSpeechandtextanalyticsProgramsGeneralJobs(body)
 
 Create new Speech &amp; Text Analytics general program job
 
+Wraps POST /api/v2/speechandtextanalytics/programs/general/jobs
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/speechandtextanalytics/programs/general/jobs  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:program:add
-* speechAndTextAnalytics:program:edit
-* speechAndTextAnalytics:topic:add
-* speechAndTextAnalytics:topic:edit
+- speechAndTextAnalytics:program:add
+- speechAndTextAnalytics:program:edit
+- speechAndTextAnalytics:topic:add
+- speechAndTextAnalytics:topic:edit
 
 ### Example
 
@@ -1549,34 +1426,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                        | Description                        | Notes |
+| -------- | ----------------------------------------------------------- | ---------------------------------- | ----- |
+| **body** | [**GeneralProgramJobRequest**](GeneralProgramJobRequest.md) | The general programs job to create |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**GeneralProgramJobRequest**](GeneralProgramJobRequest.html)| The general programs job to create | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GeneralProgramJob**](GeneralProgramJob.html)
+[**GeneralProgramJob**](GeneralProgramJob.md)
 
 <a name="postSpeechandtextanalyticsProgramsPublishjobs"></a>
 
 # **postSpeechandtextanalyticsProgramsPublishjobs**
 
-
-
-> [ProgramJob](ProgramJob.html) postSpeechandtextanalyticsProgramsPublishjobs(body)
+> [ProgramJob](ProgramJob.md) postSpeechandtextanalyticsProgramsPublishjobs(body)
 
 Create new Speech &amp; Text Analytics publish programs job
 
+Wraps POST /api/v2/speechandtextanalytics/programs/publishjobs
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/speechandtextanalytics/programs/publishjobs  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:program:publish
+- speechAndTextAnalytics:program:publish
 
 ### Example
 
@@ -1612,34 +1484,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                          | Description                        | Notes |
+| -------- | --------------------------------------------- | ---------------------------------- | ----- |
+| **body** | [**ProgramJobRequest**](ProgramJobRequest.md) | The publish programs job to create |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ProgramJobRequest**](ProgramJobRequest.html)| The publish programs job to create | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ProgramJob**](ProgramJob.html)
+[**ProgramJob**](ProgramJob.md)
 
 <a name="postSpeechandtextanalyticsSentimentfeedback"></a>
 
 # **postSpeechandtextanalyticsSentimentfeedback**
 
-
-
-> [SentimentFeedback](SentimentFeedback.html) postSpeechandtextanalyticsSentimentfeedback(body)
+> [SentimentFeedback](SentimentFeedback.md) postSpeechandtextanalyticsSentimentfeedback(body)
 
 Create a Speech &amp; Text Analytics SentimentFeedback
 
+Wraps POST /api/v2/speechandtextanalytics/sentimentfeedback
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/speechandtextanalytics/sentimentfeedback  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:feedback:add
+- speechAndTextAnalytics:feedback:add
 
 ### Example
 
@@ -1675,34 +1542,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                          | Description                     | Notes |
+| -------- | --------------------------------------------- | ------------------------------- | ----- |
+| **body** | [**SentimentFeedback**](SentimentFeedback.md) | The SentimentFeedback to create |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**SentimentFeedback**](SentimentFeedback.html)| The SentimentFeedback to create | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SentimentFeedback**](SentimentFeedback.html)
+[**SentimentFeedback**](SentimentFeedback.md)
 
 <a name="postSpeechandtextanalyticsTopics"></a>
 
 # **postSpeechandtextanalyticsTopics**
 
-
-
-> [Topic](Topic.html) postSpeechandtextanalyticsTopics(body)
+> [Topic](Topic.md) postSpeechandtextanalyticsTopics(body)
 
 Create new Speech &amp; Text Analytics topic
 
+Wraps POST /api/v2/speechandtextanalytics/topics
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/speechandtextanalytics/topics  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:topic:add
+- speechAndTextAnalytics:topic:add
 
 ### Example
 
@@ -1738,34 +1600,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                | Description         | Notes |
+| -------- | ----------------------------------- | ------------------- | ----- |
+| **body** | [**TopicRequest**](TopicRequest.md) | The topic to create |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**TopicRequest**](TopicRequest.html)| The topic to create | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Topic**](Topic.html)
+[**Topic**](Topic.md)
 
 <a name="postSpeechandtextanalyticsTopicsPublishjobs"></a>
 
 # **postSpeechandtextanalyticsTopicsPublishjobs**
 
-
-
-> [TopicJob](TopicJob.html) postSpeechandtextanalyticsTopicsPublishjobs(body)
+> [TopicJob](TopicJob.md) postSpeechandtextanalyticsTopicsPublishjobs(body)
 
 Create new Speech &amp; Text Analytics publish topics job
 
+Wraps POST /api/v2/speechandtextanalytics/topics/publishjobs
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/speechandtextanalytics/topics/publishjobs  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:topic:publish
+- speechAndTextAnalytics:topic:publish
 
 ### Example
 
@@ -1801,35 +1658,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                                      | Description                      | Notes |
+| -------- | ----------------------------------------- | -------------------------------- | ----- |
+| **body** | [**TopicJobRequest**](TopicJobRequest.md) | The publish topics job to create |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**TopicJobRequest**](TopicJobRequest.html)| The publish topics job to create | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TopicJob**](TopicJob.html)
+[**TopicJob**](TopicJob.md)
 
 <a name="postSpeechandtextanalyticsTranscriptsSearch"></a>
 
 # **postSpeechandtextanalyticsTranscriptsSearch**
 
-
-
-> [JsonSearchResponse](JsonSearchResponse.html) postSpeechandtextanalyticsTranscriptsSearch(body)
+> [JsonSearchResponse](JsonSearchResponse.md) postSpeechandtextanalyticsTranscriptsSearch(body)
 
 Search resources.
 
+Wraps POST /api/v2/speechandtextanalytics/transcripts/search
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/speechandtextanalytics/transcripts/search  
-
-Requires ANY permissions: 
-
-* analytics:conversationDetail:view
-* recording:recording:view
+- analytics:conversationDetail:view
+- recording:recording:view
 
 ### Example
 
@@ -1865,34 +1717,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                      | Description            | Notes |
+| -------- | --------------------------------------------------------- | ---------------------- | ----- |
+| **body** | [**TranscriptSearchRequest**](TranscriptSearchRequest.md) | Search request options |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**TranscriptSearchRequest**](TranscriptSearchRequest.html)| Search request options | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JsonSearchResponse**](JsonSearchResponse.html)
+[**JsonSearchResponse**](JsonSearchResponse.md)
 
 <a name="putSpeechandtextanalyticsProgram"></a>
 
 # **putSpeechandtextanalyticsProgram**
 
-
-
-> [Program](Program.html) putSpeechandtextanalyticsProgram(programId, body)
+> [Program](Program.md) putSpeechandtextanalyticsProgram(programId, body)
 
 Update existing Speech &amp; Text Analytics program
 
+Wraps PUT /api/v2/speechandtextanalytics/programs/{programId}
 
+Requires ALL permissions:
 
-Wraps PUT /api/v2/speechandtextanalytics/programs/{programId}  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:program:edit
+- speechAndTextAnalytics:program:edit
 
 ### Example
 
@@ -1929,35 +1776,30 @@ try {
 
 ### Parameters
 
+| Name          | Type                                    | Description           | Notes |
+| ------------- | --------------------------------------- | --------------------- | ----- |
+| **programId** | **String**                              | The id of the program |
+| **body**      | [**ProgramRequest**](ProgramRequest.md) | The program to update |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **programId** | **String**| The id of the program | 
-| **body** | [**ProgramRequest**](ProgramRequest.html)| The program to update | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Program**](Program.html)
+[**Program**](Program.md)
 
 <a name="putSpeechandtextanalyticsProgramMappings"></a>
 
 # **putSpeechandtextanalyticsProgramMappings**
 
-
-
-> [ProgramMappings](ProgramMappings.html) putSpeechandtextanalyticsProgramMappings(programId, body)
+> [ProgramMappings](ProgramMappings.md) putSpeechandtextanalyticsProgramMappings(programId, body)
 
 Set Speech &amp; Text Analytics program mappings to queues and flows
 
+Wraps PUT /api/v2/speechandtextanalytics/programs/{programId}/mappings
 
+Requires ALL permissions:
 
-Wraps PUT /api/v2/speechandtextanalytics/programs/{programId}/mappings  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:program:edit
+- speechAndTextAnalytics:program:edit
 
 ### Example
 
@@ -1994,35 +1836,30 @@ try {
 
 ### Parameters
 
+| Name          | Type                                                    | Description                     | Notes |
+| ------------- | ------------------------------------------------------- | ------------------------------- | ----- |
+| **programId** | **String**                                              | The id of the program           |
+| **body**      | [**ProgramMappingsRequest**](ProgramMappingsRequest.md) | The program to set mappings for |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **programId** | **String**| The id of the program | 
-| **body** | [**ProgramMappingsRequest**](ProgramMappingsRequest.html)| The program to set mappings for | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ProgramMappings**](ProgramMappings.html)
+[**ProgramMappings**](ProgramMappings.md)
 
 <a name="putSpeechandtextanalyticsSettings"></a>
 
 # **putSpeechandtextanalyticsSettings**
 
-
-
-> [SpeechTextAnalyticsSettingsResponse](SpeechTextAnalyticsSettingsResponse.html) putSpeechandtextanalyticsSettings(body)
+> [SpeechTextAnalyticsSettingsResponse](SpeechTextAnalyticsSettingsResponse.md) putSpeechandtextanalyticsSettings(body)
 
 Update Speech And Text Analytics Settings
 
+Wraps PUT /api/v2/speechandtextanalytics/settings
 
+Requires ALL permissions:
 
-Wraps PUT /api/v2/speechandtextanalytics/settings  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:settings:edit
+- speechAndTextAnalytics:settings:edit
 
 ### Example
 
@@ -2058,34 +1895,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                                            | Description                        | Notes |
+| -------- | ------------------------------------------------------------------------------- | ---------------------------------- | ----- |
+| **body** | [**SpeechTextAnalyticsSettingsRequest**](SpeechTextAnalyticsSettingsRequest.md) | Speech And Text Analytics Settings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**SpeechTextAnalyticsSettingsRequest**](SpeechTextAnalyticsSettingsRequest.html)| Speech And Text Analytics Settings | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SpeechTextAnalyticsSettingsResponse**](SpeechTextAnalyticsSettingsResponse.html)
+[**SpeechTextAnalyticsSettingsResponse**](SpeechTextAnalyticsSettingsResponse.md)
 
 <a name="putSpeechandtextanalyticsTopic"></a>
 
 # **putSpeechandtextanalyticsTopic**
 
-
-
-> [Topic](Topic.html) putSpeechandtextanalyticsTopic(topicId, body)
+> [Topic](Topic.md) putSpeechandtextanalyticsTopic(topicId, body)
 
 Update existing Speech &amp; Text Analytics topic
 
+Wraps PUT /api/v2/speechandtextanalytics/topics/{topicId}
 
+Requires ALL permissions:
 
-Wraps PUT /api/v2/speechandtextanalytics/topics/{topicId}  
-
-Requires ALL permissions: 
-
-* speechAndTextAnalytics:topic:edit
+- speechAndTextAnalytics:topic:edit
 
 ### Example
 
@@ -2122,15 +1954,13 @@ try {
 
 ### Parameters
 
+| Name        | Type                                | Description         | Notes |
+| ----------- | ----------------------------------- | ------------------- | ----- |
+| **topicId** | **String**                          | The id of the topic |
+| **body**    | [**TopicRequest**](TopicRequest.md) | The topic to update |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **topicId** | **String**| The id of the topic | 
-| **body** | [**TopicRequest**](TopicRequest.html)| The topic to update | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Topic**](Topic.html)
-
+[**Topic**](Topic.md)

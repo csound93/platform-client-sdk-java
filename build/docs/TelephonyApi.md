@@ -1,34 +1,34 @@
 ---
 title: TelephonyApi
 ---
+
 ## TelephonyApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**getTelephonySiptraces**](TelephonyApi.html#getTelephonySiptraces) | Fetch SIP metadata |
-| [**getTelephonySiptracesDownloadDownloadId**](TelephonyApi.html#getTelephonySiptracesDownloadDownloadId) | Get signed S3 URL for a pcap download |
-| [**postTelephonySiptracesDownload**](TelephonyApi.html#postTelephonySiptracesDownload) | Request a download of a pcap file to S3 |
+| Method                                                                                                 | Description                             |
+| ------------------------------------------------------------------------------------------------------ | --------------------------------------- |
+| [**getTelephonySiptraces**](TelephonyApi.md#getTelephonySiptraces)                                     | Fetch SIP metadata                      |
+| [**getTelephonySiptracesDownloadDownloadId**](TelephonyApi.md#getTelephonySiptracesDownloadDownloadId) | Get signed S3 URL for a pcap download   |
+| [**postTelephonySiptracesDownload**](TelephonyApi.md#postTelephonySiptracesDownload)                   | Request a download of a pcap file to S3 |
+
 {: class="table-striped"}
 
 <a name="getTelephonySiptraces"></a>
 
 # **getTelephonySiptraces**
 
-
-
-> [SipSearchResult](SipSearchResult.html) getTelephonySiptraces(dateStart, dateEnd, callId, toUser, fromUser, conversationId)
+> [SipSearchResult](SipSearchResult.md) getTelephonySiptraces(dateStart, dateEnd, callId, toUser, fromUser, conversationId)
 
 Fetch SIP metadata
 
 Fetch SIP metadata that matches a given parameter. If exactMatch is passed as a parameter only sip records that have exactly that value will be returned. For example, some records contain conversationId but not all relevant records for that call may contain the conversationId so only a partial view of the call will be reflected
 
-Wraps GET /api/v2/telephony/siptraces  
+Wraps GET /api/v2/telephony/siptraces
 
-Requires ALL permissions: 
+Requires ALL permissions:
 
-* telephony:pcap:view
+- telephony:pcap:view
 
 ### Example
 
@@ -69,39 +69,34 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description                                                                                                       | Notes      |
+| ------------------ | ---------- | ----------------------------------------------------------------------------------------------------------------- | ---------- |
+| **dateStart**      | **Date**   | Start date of the search. Date time is represented as an ISO-8601 string. For example: yyyy-MM-ddTHH:mm:ss[.mmm]Z |
+| **dateEnd**        | **Date**   | End date of the search. Date time is represented as an ISO-8601 string. For example: yyyy-MM-ddTHH:mm:ss[.mmm]Z   |
+| **callId**         | **String** | unique identification of the placed call                                                                          | [optional] |
+| **toUser**         | **String** | User to who the call was placed                                                                                   | [optional] |
+| **fromUser**       | **String** | user who placed the call                                                                                          | [optional] |
+| **conversationId** | **String** | Unique identification of the conversation                                                                         | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **dateStart** | **Date**| Start date of the search. Date time is represented as an ISO-8601 string. For example: yyyy-MM-ddTHH:mm:ss[.mmm]Z | 
-| **dateEnd** | **Date**| End date of the search. Date time is represented as an ISO-8601 string. For example: yyyy-MM-ddTHH:mm:ss[.mmm]Z | 
-| **callId** | **String**| unique identification of the placed call | [optional] 
-| **toUser** | **String**| User to who the call was placed | [optional] 
-| **fromUser** | **String**| user who placed the call | [optional] 
-| **conversationId** | **String**| Unique identification of the conversation | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SipSearchResult**](SipSearchResult.html)
+[**SipSearchResult**](SipSearchResult.md)
 
 <a name="getTelephonySiptracesDownloadDownloadId"></a>
 
 # **getTelephonySiptracesDownloadDownloadId**
 
-
-
-> [SignedUrlResponse](SignedUrlResponse.html) getTelephonySiptracesDownloadDownloadId(downloadId)
+> [SignedUrlResponse](SignedUrlResponse.md) getTelephonySiptracesDownloadDownloadId(downloadId)
 
 Get signed S3 URL for a pcap download
 
+Wraps GET /api/v2/telephony/siptraces/download/{downloadId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/telephony/siptraces/download/{downloadId}  
-
-Requires ALL permissions: 
-
-* telephony:pcap:view
+- telephony:pcap:view
 
 ### Example
 
@@ -137,34 +132,29 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description                             | Notes |
+| -------------- | ---------- | --------------------------------------- | ----- |
+| **downloadId** | **String** | unique id for the downloaded file in S3 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **downloadId** | **String**| unique id for the downloaded file in S3 | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SignedUrlResponse**](SignedUrlResponse.html)
+[**SignedUrlResponse**](SignedUrlResponse.md)
 
 <a name="postTelephonySiptracesDownload"></a>
 
 # **postTelephonySiptracesDownload**
 
-
-
-> [SipDownloadResponse](SipDownloadResponse.html) postTelephonySiptracesDownload(sIPSearchPublicRequest)
+> [SipDownloadResponse](SipDownloadResponse.md) postTelephonySiptracesDownload(sIPSearchPublicRequest)
 
 Request a download of a pcap file to S3
 
+Wraps POST /api/v2/telephony/siptraces/download
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/telephony/siptraces/download  
-
-Requires ALL permissions: 
-
-* telephony:pcap:add
+- telephony:pcap:add
 
 ### Example
 
@@ -188,7 +178,7 @@ ApiClient apiClient = ApiClient.Builder.standard()
 Configuration.setDefaultApiClient(apiClient);
 
 TelephonyApi apiInstance = new TelephonyApi();
-SIPSearchPublicRequest sIPSearchPublicRequest = new SIPSearchPublicRequest(); // SIPSearchPublicRequest | 
+SIPSearchPublicRequest sIPSearchPublicRequest = new SIPSearchPublicRequest(); // SIPSearchPublicRequest |
 try {
     SipDownloadResponse result = apiInstance.postTelephonySiptracesDownload(sIPSearchPublicRequest);
     System.out.println(result);
@@ -200,14 +190,12 @@ try {
 
 ### Parameters
 
+| Name                       | Type                                                    | Description | Notes |
+| -------------------------- | ------------------------------------------------------- | ----------- | ----- |
+| **sIPSearchPublicRequest** | [**SIPSearchPublicRequest**](SIPSearchPublicRequest.md) |             |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **sIPSearchPublicRequest** | [**SIPSearchPublicRequest**](SIPSearchPublicRequest.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SipDownloadResponse**](SipDownloadResponse.html)
-
+[**SipDownloadResponse**](SipDownloadResponse.md)

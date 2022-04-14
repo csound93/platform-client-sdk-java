@@ -1,31 +1,29 @@
 ---
 title: WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateNotification
 ---
-## WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateNotification
 
+## WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateNotification
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **status** | [**StatusEnum**](#StatusEnum)<!----> |  |  [optional] |
-| **operationId** | <!----><!---->**String**<!----> |  |  [optional] |
-| **result** | <!----><!---->[**WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateResultListing**](WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateResultListing.html)<!----> |  |  [optional] |
-{: class="table table-striped"}
+| Name            | Type                                                                                                                                                                                                   | Description | Notes      |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| **status**      | [**StatusEnum**](#StatusEnum)<!---->                                                                                                                                                                   |             | [optional] |
+| **operationId** | <!----><!---->**String**<!---->                                                                                                                                                                        |             | [optional] |
+| **result**      | <!----><!---->[**WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateResultListing**](WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateResultListing.md)<!----> |             | [optional] |
 
+{: class="table table-striped"}
 
 <a name="StatusEnum"></a>
 
 ## Enum: StatusEnum
 
-| Name | Value |
-| ---- | ----- |
+| Name               | Value                          |
+| ------------------ | ------------------------------ |
 | OUTDATEDSDKVERSION | &quot;OutdatedSdkVersion&quot; |
-| PROCESSING | &quot;Processing&quot; |
-| COMPLETE | &quot;Complete&quot; |
-| CANCELED | &quot;Canceled&quot; |
-| ERROR | &quot;Error&quot; |
+| PROCESSING         | &quot;Processing&quot;         |
+| COMPLETE           | &quot;Complete&quot;           |
+| CANCELED           | &quot;Canceled&quot;           |
+| ERROR              | &quot;Error&quot;              |
+
 {: class="table table-striped"}
-
-
-

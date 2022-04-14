@@ -1,15 +1,13 @@
 ---
 title: ResponseQueryResults
 ---
-## ResponseQueryResults
 
+## ResponseQueryResults
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **results** | <!----><!---->[**ResponseEntityList**](ResponseEntityList.html)<!----> | Contains the query results |  |
+| Name        | Type                                                                 | Description                | Notes |
+| ----------- | -------------------------------------------------------------------- | -------------------------- | ----- |
+| **results** | <!----><!---->[**ResponseEntityList**](ResponseEntityList.md)<!----> | Contains the query results |       |
+
 {: class="table table-striped"}
-
-
-

@@ -1,40 +1,38 @@
 ---
 title: LicenseApi
 ---
+
 ## LicenseApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**getLicenseDefinition**](LicenseApi.html#getLicenseDefinition) | Get PureCloud license definition. |
-| [**getLicenseDefinitions**](LicenseApi.html#getLicenseDefinitions) | Get all PureCloud license definitions available for the organization. |
-| [**getLicenseToggle**](LicenseApi.html#getLicenseToggle) | Get PureCloud license feature toggle value. |
-| [**getLicenseUser**](LicenseApi.html#getLicenseUser) | Get licenses for specified user. |
-| [**getLicenseUsers**](LicenseApi.html#getLicenseUsers) | Get a page of users and their licenses |
-| [**postLicenseInfer**](LicenseApi.html#postLicenseInfer) | Get a list of licenses inferred based on a list of roleIds |
-| [**postLicenseOrganization**](LicenseApi.html#postLicenseOrganization) | Update the organization&#39;s license assignments in a batch. |
-| [**postLicenseToggle**](LicenseApi.html#postLicenseToggle) | Switch PureCloud license feature toggle value. |
-| [**postLicenseUsers**](LicenseApi.html#postLicenseUsers) | Fetch user licenses in a batch. |
+| Method                                                               | Description                                                           |
+| -------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [**getLicenseDefinition**](LicenseApi.md#getLicenseDefinition)       | Get PureCloud license definition.                                     |
+| [**getLicenseDefinitions**](LicenseApi.md#getLicenseDefinitions)     | Get all PureCloud license definitions available for the organization. |
+| [**getLicenseToggle**](LicenseApi.md#getLicenseToggle)               | Get PureCloud license feature toggle value.                           |
+| [**getLicenseUser**](LicenseApi.md#getLicenseUser)                   | Get licenses for specified user.                                      |
+| [**getLicenseUsers**](LicenseApi.md#getLicenseUsers)                 | Get a page of users and their licenses                                |
+| [**postLicenseInfer**](LicenseApi.md#postLicenseInfer)               | Get a list of licenses inferred based on a list of roleIds            |
+| [**postLicenseOrganization**](LicenseApi.md#postLicenseOrganization) | Update the organization&#39;s license assignments in a batch.         |
+| [**postLicenseToggle**](LicenseApi.md#postLicenseToggle)             | Switch PureCloud license feature toggle value.                        |
+| [**postLicenseUsers**](LicenseApi.md#postLicenseUsers)               | Fetch user licenses in a batch.                                       |
+
 {: class="table-striped"}
 
 <a name="getLicenseDefinition"></a>
 
 # **getLicenseDefinition**
 
-
-
-> [LicenseDefinition](LicenseDefinition.html) getLicenseDefinition(licenseId)
+> [LicenseDefinition](LicenseDefinition.md) getLicenseDefinition(licenseId)
 
 Get PureCloud license definition.
 
+Wraps GET /api/v2/license/definitions/{licenseId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/license/definitions/{licenseId}  
-
-Requires ANY permissions: 
-
-* authorization:grant:add
+- authorization:grant:add
 
 ### Example
 
@@ -70,34 +68,29 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **licenseId** | **String** | ID          |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **licenseId** | **String**| ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LicenseDefinition**](LicenseDefinition.html)
+[**LicenseDefinition**](LicenseDefinition.md)
 
 <a name="getLicenseDefinitions"></a>
 
 # **getLicenseDefinitions**
 
-
-
-> [List&lt;LicenseDefinition&gt;](LicenseDefinition.html) getLicenseDefinitions()
+> [List&lt;LicenseDefinition&gt;](LicenseDefinition.md) getLicenseDefinitions()
 
 Get all PureCloud license definitions available for the organization.
 
+Wraps GET /api/v2/license/definitions
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/license/definitions  
-
-Requires ANY permissions: 
-
-* authorization:grant:add
+- authorization:grant:add
 
 ### Example
 
@@ -134,29 +127,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**List&lt;LicenseDefinition&gt;**](LicenseDefinition.html)
+[**List&lt;LicenseDefinition&gt;**](LicenseDefinition.md)
 
 <a name="getLicenseToggle"></a>
 
 # **getLicenseToggle**
 
-
-
-> [LicenseOrgToggle](LicenseOrgToggle.html) getLicenseToggle(featureName)
+> [LicenseOrgToggle](LicenseOrgToggle.md) getLicenseToggle(featureName)
 
 Get PureCloud license feature toggle value.
 
+Wraps GET /api/v2/license/toggles/{featureName}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/license/toggles/{featureName}  
-
-Requires ANY permissions: 
-
-* authorization:grant:add
+- authorization:grant:add
 
 ### Example
 
@@ -192,34 +179,29 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description | Notes |
+| --------------- | ---------- | ----------- | ----- |
+| **featureName** | **String** | featureName |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **featureName** | **String**| featureName | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LicenseOrgToggle**](LicenseOrgToggle.html)
+[**LicenseOrgToggle**](LicenseOrgToggle.md)
 
 <a name="getLicenseUser"></a>
 
 # **getLicenseUser**
 
-
-
-> [LicenseUser](LicenseUser.html) getLicenseUser(userId)
+> [LicenseUser](LicenseUser.md) getLicenseUser(userId)
 
 Get licenses for specified user.
 
+Wraps GET /api/v2/license/users/{userId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/license/users/{userId}  
-
-Requires ANY permissions: 
-
-* authorization:grant:add
+- authorization:grant:add
 
 ### Example
 
@@ -255,33 +237,29 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **userId** | **String** | ID          |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LicenseUser**](LicenseUser.html)
+[**LicenseUser**](LicenseUser.md)
 
 <a name="getLicenseUsers"></a>
 
 # **getLicenseUsers**
 
-
-
-> [UserLicensesEntityListing](UserLicensesEntityListing.html) getLicenseUsers(pageSize, pageNumber)
+> [UserLicensesEntityListing](UserLicensesEntityListing.md) getLicenseUsers(pageSize, pageNumber)
 
 Get a page of users and their licenses
 
 Retrieve a page of users in an organization along with the licenses they possess.
 
-Wraps GET /api/v2/license/users  
+Wraps GET /api/v2/license/users
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -318,34 +296,28 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserLicensesEntityListing**](UserLicensesEntityListing.html)
+[**UserLicensesEntityListing**](UserLicensesEntityListing.md)
 
 <a name="postLicenseInfer"></a>
 
 # **postLicenseInfer**
 
-
-
 > List&lt;String&gt; postLicenseInfer(body)
 
 Get a list of licenses inferred based on a list of roleIds
 
+Wraps POST /api/v2/license/infer
 
-
-Wraps POST /api/v2/license/infer  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -381,12 +353,11 @@ try {
 
 ### Parameters
 
+| Name     | Type                   | Description                                 | Notes      |
+| -------- | ---------------------- | ------------------------------------------- | ---------- |
+| **body** | **List&lt;String&gt;** | The roleIds to use while inferring licenses | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | **List&lt;String&gt;**| The roleIds to use while inferring licenses | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -396,19 +367,15 @@ try {
 
 # **postLicenseOrganization**
 
-
-
-> [List&lt;LicenseUpdateStatus&gt;](LicenseUpdateStatus.html) postLicenseOrganization(body)
+> [List&lt;LicenseUpdateStatus&gt;](LicenseUpdateStatus.md) postLicenseOrganization(body)
 
 Update the organization&#39;s license assignments in a batch.
 
+Wraps POST /api/v2/license/organization
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/license/organization  
-
-Requires ANY permissions: 
-
-* authorization:grant:add
+- authorization:grant:add
 
 ### Example
 
@@ -444,34 +411,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                                  | Description                        | Notes      |
+| -------- | --------------------------------------------------------------------- | ---------------------------------- | ---------- |
+| **body** | [**LicenseBatchAssignmentRequest**](LicenseBatchAssignmentRequest.md) | The license assignments to update. | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**LicenseBatchAssignmentRequest**](LicenseBatchAssignmentRequest.html)| The license assignments to update. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**List&lt;LicenseUpdateStatus&gt;**](LicenseUpdateStatus.html)
+[**List&lt;LicenseUpdateStatus&gt;**](LicenseUpdateStatus.md)
 
 <a name="postLicenseToggle"></a>
 
 # **postLicenseToggle**
 
-
-
-> [LicenseOrgToggle](LicenseOrgToggle.html) postLicenseToggle(featureName)
+> [LicenseOrgToggle](LicenseOrgToggle.md) postLicenseToggle(featureName)
 
 Switch PureCloud license feature toggle value.
 
+Wraps POST /api/v2/license/toggles/{featureName}
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/license/toggles/{featureName}  
-
-Requires ANY permissions: 
-
-* authorization:grant:add
+- authorization:grant:add
 
 ### Example
 
@@ -507,34 +469,29 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description | Notes |
+| --------------- | ---------- | ----------- | ----- |
+| **featureName** | **String** | featureName |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **featureName** | **String**| featureName | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LicenseOrgToggle**](LicenseOrgToggle.html)
+[**LicenseOrgToggle**](LicenseOrgToggle.md)
 
 <a name="postLicenseUsers"></a>
 
 # **postLicenseUsers**
 
-
-
-> [Map&lt;String, Object&gt;](Map.html) postLicenseUsers(body)
+> [Map&lt;String, Object&gt;](Map.md) postLicenseUsers(body)
 
 Fetch user licenses in a batch.
 
+Wraps POST /api/v2/license/users
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/license/users  
-
-Requires ANY permissions: 
-
-* authorization:grant:add
+- authorization:grant:add
 
 ### Example
 
@@ -570,14 +527,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                   | Description            | Notes      |
+| -------- | ---------------------- | ---------------------- | ---------- |
+| **body** | **List&lt;String&gt;** | The user IDs to fetch. | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | **List&lt;String&gt;**| The user IDs to fetch. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Map&lt;String, Object&gt;**](Map.html)
-
+[**Map&lt;String, Object&gt;**](Map.md)

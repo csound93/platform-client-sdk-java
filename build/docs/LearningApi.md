@@ -1,51 +1,49 @@
 ---
 title: LearningApi
 ---
+
 ## LearningApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteLearningAssignment**](LearningApi.html#deleteLearningAssignment) | Delete a learning assignment |
-| [**deleteLearningModule**](LearningApi.html#deleteLearningModule) | Delete a learning module |
-| [**getLearningAssignment**](LearningApi.html#getLearningAssignment) | Get Learning Assignment |
-| [**getLearningAssignments**](LearningApi.html#getLearningAssignments) | List of Learning module Assignments |
-| [**getLearningAssignmentsMe**](LearningApi.html#getLearningAssignmentsMe) | List of Learning Assignments assigned to current user |
-| [**getLearningModule**](LearningApi.html#getLearningModule) | Get a learning module |
-| [**getLearningModuleRule**](LearningApi.html#getLearningModuleRule) | Get a learning module rule |
-| [**getLearningModuleVersion**](LearningApi.html#getLearningModuleVersion) | Get specific version of a published module |
-| [**getLearningModules**](LearningApi.html#getLearningModules) | Get all learning modules of an organization |
-| [**patchLearningAssignment**](LearningApi.html#patchLearningAssignment) | Update Learning Assignment |
-| [**postLearningAssessmentsScoring**](LearningApi.html#postLearningAssessmentsScoring) | Score learning assessment for preview |
-| [**postLearningAssignments**](LearningApi.html#postLearningAssignments) | Create Learning Assignment |
-| [**postLearningAssignmentsAggregatesQuery**](LearningApi.html#postLearningAssignmentsAggregatesQuery) | Retrieve aggregated assignment data |
-| [**postLearningAssignmentsBulkadd**](LearningApi.html#postLearningAssignmentsBulkadd) | Add multiple learning assignments |
-| [**postLearningAssignmentsBulkremove**](LearningApi.html#postLearningAssignmentsBulkremove) | Remove multiple Learning Assignments |
-| [**postLearningModulePublish**](LearningApi.html#postLearningModulePublish) | Publish a Learning module |
-| [**postLearningModules**](LearningApi.html#postLearningModules) | Create a new learning module |
-| [**postLearningRulesQuery**](LearningApi.html#postLearningRulesQuery) | Get users for learning module rule |
-| [**putLearningModule**](LearningApi.html#putLearningModule) | Update a learning module |
-| [**putLearningModuleRule**](LearningApi.html#putLearningModuleRule) | Update a learning module rule |
+| Method                                                                                              | Description                                           |
+| --------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [**deleteLearningAssignment**](LearningApi.md#deleteLearningAssignment)                             | Delete a learning assignment                          |
+| [**deleteLearningModule**](LearningApi.md#deleteLearningModule)                                     | Delete a learning module                              |
+| [**getLearningAssignment**](LearningApi.md#getLearningAssignment)                                   | Get Learning Assignment                               |
+| [**getLearningAssignments**](LearningApi.md#getLearningAssignments)                                 | List of Learning module Assignments                   |
+| [**getLearningAssignmentsMe**](LearningApi.md#getLearningAssignmentsMe)                             | List of Learning Assignments assigned to current user |
+| [**getLearningModule**](LearningApi.md#getLearningModule)                                           | Get a learning module                                 |
+| [**getLearningModuleRule**](LearningApi.md#getLearningModuleRule)                                   | Get a learning module rule                            |
+| [**getLearningModuleVersion**](LearningApi.md#getLearningModuleVersion)                             | Get specific version of a published module            |
+| [**getLearningModules**](LearningApi.md#getLearningModules)                                         | Get all learning modules of an organization           |
+| [**patchLearningAssignment**](LearningApi.md#patchLearningAssignment)                               | Update Learning Assignment                            |
+| [**postLearningAssessmentsScoring**](LearningApi.md#postLearningAssessmentsScoring)                 | Score learning assessment for preview                 |
+| [**postLearningAssignments**](LearningApi.md#postLearningAssignments)                               | Create Learning Assignment                            |
+| [**postLearningAssignmentsAggregatesQuery**](LearningApi.md#postLearningAssignmentsAggregatesQuery) | Retrieve aggregated assignment data                   |
+| [**postLearningAssignmentsBulkadd**](LearningApi.md#postLearningAssignmentsBulkadd)                 | Add multiple learning assignments                     |
+| [**postLearningAssignmentsBulkremove**](LearningApi.md#postLearningAssignmentsBulkremove)           | Remove multiple Learning Assignments                  |
+| [**postLearningModulePublish**](LearningApi.md#postLearningModulePublish)                           | Publish a Learning module                             |
+| [**postLearningModules**](LearningApi.md#postLearningModules)                                       | Create a new learning module                          |
+| [**postLearningRulesQuery**](LearningApi.md#postLearningRulesQuery)                                 | Get users for learning module rule                    |
+| [**putLearningModule**](LearningApi.md#putLearningModule)                                           | Update a learning module                              |
+| [**putLearningModuleRule**](LearningApi.md#putLearningModuleRule)                                   | Update a learning module rule                         |
+
 {: class="table-striped"}
 
 <a name="deleteLearningAssignment"></a>
 
 # **deleteLearningAssignment**
 
-
-
 > Void deleteLearningAssignment(assignmentId)
 
 Delete a learning assignment
 
+Wraps DELETE /api/v2/learning/assignments/{assignmentId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/learning/assignments/{assignmentId}  
-
-Requires ANY permissions: 
-
-* learning:assignment:delete
+- learning:assignment:delete
 
 ### Example
 
@@ -80,12 +78,11 @@ try {
 
 ### Parameters
 
+| Name             | Type       | Description                | Notes |
+| ---------------- | ---------- | -------------------------- | ----- |
+| **assignmentId** | **String** | The Learning Assignment ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **assignmentId** | **String**| The Learning Assignment ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -95,19 +92,17 @@ null (empty response body)
 
 # **deleteLearningModule**
 
-
-
 > Void deleteLearningModule(moduleId)
 
 Delete a learning module
 
 This will delete a learning module if it is unpublished or it will delete a published and archived learning module
 
-Wraps DELETE /api/v2/learning/modules/{moduleId}  
+Wraps DELETE /api/v2/learning/modules/{moduleId}
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* learning:module:delete
+- learning:module:delete
 
 ### Example
 
@@ -142,12 +137,11 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                   | Notes |
+| ------------ | ---------- | ----------------------------- | ----- |
+| **moduleId** | **String** | The ID of the learning module |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **moduleId** | **String**| The ID of the learning module | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -157,19 +151,17 @@ null (empty response body)
 
 # **getLearningAssignment**
 
-
-
-> [LearningAssignment](LearningAssignment.html) getLearningAssignment(assignmentId, expand)
+> [LearningAssignment](LearningAssignment.md) getLearningAssignment(assignmentId, expand)
 
 Get Learning Assignment
 
 Permission not required if you are the assigned user of the learning assignment
 
-Wraps GET /api/v2/learning/assignments/{assignmentId}  
+Wraps GET /api/v2/learning/assignments/{assignmentId}
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* learning:assignment:view
+- learning:assignment:view
 
 ### Example
 
@@ -206,35 +198,32 @@ try {
 
 ### Parameters
 
+| Name             | Type                                | Description                   | Notes                                                          |
+| ---------------- | ----------------------------------- | ----------------------------- | -------------------------------------------------------------- |
+| **assignmentId** | **String**                          | The ID of Learning Assignment |
+| **expand**       | [**List&lt;String&gt;**](String.md) | Fields to expand in response  | [optional]<br />**Values**: module, assessment, assessmentForm |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **assignmentId** | **String**| The ID of Learning Assignment | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Fields to expand in response | [optional]<br />**Values**: module, assessment, assessmentForm 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningAssignment**](LearningAssignment.html)
+[**LearningAssignment**](LearningAssignment.md)
 
 <a name="getLearningAssignments"></a>
 
 # **getLearningAssignments**
 
-
-
-> [LearningAssignmentsDomainEntity](LearningAssignmentsDomainEntity.html) getLearningAssignments(moduleId, interval, completionInterval, overdue, pageSize, pageNumber, pass, minPercentageScore, maxPercentageScore, sortOrder, sortBy, userId, types, states, expand)
+> [LearningAssignmentsDomainEntity](LearningAssignmentsDomainEntity.md) getLearningAssignments(moduleId, interval, completionInterval, overdue, pageSize, pageNumber, pass, minPercentageScore, maxPercentageScore, sortOrder, sortBy, userId, types, states, expand)
 
 List of Learning module Assignments
 
 Either moduleId or user value is required
 
-Wraps GET /api/v2/learning/assignments  
+Wraps GET /api/v2/learning/assignments
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* learning:assignment:view
+- learning:assignment:view
 
 ### Example
 
@@ -284,47 +273,41 @@ try {
 
 ### Parameters
 
+| Name                   | Type                                | Description                                                                                                                                                                                                                                                        | Notes                                                                     |
+| ---------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| **moduleId**           | **String**                          | Specifies the ID of the learning module. Fetch assignments for learning module ID                                                                                                                                                                                  | [optional]                                                                |
+| **interval**           | **String**                          | Specifies the range of dueDates to be queried. Milliseconds will be truncated. A maximum of 1 year can be specified in the range. End date is not inclusive. Intervals are represented as an ISO-8601 string. For example: YYYY-MM-DDThh:mm:ss/YYYY-MM-DDThh:mm:ss | [optional]                                                                |
+| **completionInterval** | **String**                          | Specifies the range of completion dates to be used for filtering. A maximum of 1 year can be specified in the range. End date is not inclusive. Intervals are represented as an ISO-8601 string. For example: YYYY-MM-DDThh:mm:ss/YYYY-MM-DDThh:mm:ss              | [optional]                                                                |
+| **overdue**            | **String**                          | Specifies if only the non-overdue (overdue is \&quot;False\&quot;) or overdue (overdue is \&quot;True\&quot;) assignments are returned. If overdue is \&quot;Any\&quot; or if the overdue parameter is not supplied, all assignments are returned                  | [optional] [default to Any]<br />**Values**: True, False, Any             |
+| **pageSize**           | **Integer**                         | Page size                                                                                                                                                                                                                                                          | [optional] [default to 25]                                                |
+| **pageNumber**         | **Integer**                         | Page number                                                                                                                                                                                                                                                        | [optional] [default to 1]                                                 |
+| **pass**               | **String**                          | Specifies if only the failed (pass is \&quot;False\&quot;) or passed (pass is \&quot;True\&quot;) assignments (completed with assessment)are returned. If pass is \&quot;Any\&quot; or if the pass parameter is not supplied, all assignments are returned         | [optional] [default to Any]<br />**Values**: True, False, Any             |
+| **minPercentageScore** | **Float**                           | The minimum assessment score for an assignment (completed with assessment) to be included in the results (inclusive)                                                                                                                                               | [optional]                                                                |
+| **maxPercentageScore** | **Float**                           | The maximum assessment score for an assignment (completed with assessment) to be included in the results (inclusive)                                                                                                                                               | [optional]                                                                |
+| **sortOrder**          | **String**                          | Specifies result set sort order; if not specified, default sort order is descending (Desc)                                                                                                                                                                         | [optional] [default to Desc]<br />**Values**: Asc, Desc                   |
+| **sortBy**             | **String**                          | Specifies which field to sort the results by, default sort is by recommendedCompletionDate                                                                                                                                                                         | [optional]<br />**Values**: RecommendedCompletionDate, DateModified       |
+| **userId**             | [**List&lt;String&gt;**](String.md) | Specifies the list of user IDs to be queried, up to 100 user IDs.                                                                                                                                                                                                  | [optional]                                                                |
+| **types**              | [**List&lt;String&gt;**](String.md) | Specifies the assignment types, currently not supported and will be ignored. For now, all learning assignments regardless of types will be returned                                                                                                                | [optional]<br />**Values**: Informational, AssessedContent, Assessment    |
+| **states**             | [**List&lt;String&gt;**](String.md) | Specifies the assignment states to filter by                                                                                                                                                                                                                       | [optional]<br />**Values**: Assigned, InProgress, Completed, NotCompleted |
+| **expand**             | [**List&lt;String&gt;**](String.md) | Specifies the expand option for returning additional information                                                                                                                                                                                                   | [optional]<br />**Values**: ModuleSummary                                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **moduleId** | **String**| Specifies the ID of the learning module. Fetch assignments for learning module ID | [optional] 
-| **interval** | **String**| Specifies the range of dueDates to be queried. Milliseconds will be truncated. A maximum of 1 year can be specified in the range. End date is not inclusive. Intervals are represented as an ISO-8601 string. For example: YYYY-MM-DDThh:mm:ss/YYYY-MM-DDThh:mm:ss | [optional] 
-| **completionInterval** | **String**| Specifies the range of completion dates to be used for filtering. A maximum of 1 year can be specified in the range. End date is not inclusive. Intervals are represented as an ISO-8601 string. For example: YYYY-MM-DDThh:mm:ss/YYYY-MM-DDThh:mm:ss | [optional] 
-| **overdue** | **String**| Specifies if only the non-overdue (overdue is \&quot;False\&quot;) or overdue (overdue is \&quot;True\&quot;) assignments are returned. If overdue is \&quot;Any\&quot; or if the overdue parameter is not supplied, all assignments are returned | [optional] [default to Any]<br />**Values**: True, False, Any 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pass** | **String**| Specifies if only the failed (pass is \&quot;False\&quot;) or passed (pass is \&quot;True\&quot;) assignments (completed with assessment)are returned. If pass is \&quot;Any\&quot; or if the pass parameter is not supplied, all assignments are returned | [optional] [default to Any]<br />**Values**: True, False, Any 
-| **minPercentageScore** | **Float**| The minimum assessment score for an assignment (completed with assessment) to be included in the results (inclusive) | [optional] 
-| **maxPercentageScore** | **Float**| The maximum assessment score for an assignment (completed with assessment) to be included in the results (inclusive) | [optional] 
-| **sortOrder** | **String**| Specifies result set sort order; if not specified, default sort order is descending (Desc) | [optional] [default to Desc]<br />**Values**: Asc, Desc 
-| **sortBy** | **String**| Specifies which field to sort the results by, default sort is by recommendedCompletionDate | [optional]<br />**Values**: RecommendedCompletionDate, DateModified 
-| **userId** | [**List&lt;String&gt;**](String.html)| Specifies the list of user IDs to be queried, up to 100 user IDs. | [optional] 
-| **types** | [**List&lt;String&gt;**](String.html)| Specifies the assignment types, currently not supported and will be ignored. For now, all learning assignments regardless of types will be returned | [optional]<br />**Values**: Informational, AssessedContent, Assessment 
-| **states** | [**List&lt;String&gt;**](String.html)| Specifies the assignment states to filter by | [optional]<br />**Values**: Assigned, InProgress, Completed, NotCompleted 
-| **expand** | [**List&lt;String&gt;**](String.html)| Specifies the expand option for returning additional information | [optional]<br />**Values**: ModuleSummary 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningAssignmentsDomainEntity**](LearningAssignmentsDomainEntity.html)
+[**LearningAssignmentsDomainEntity**](LearningAssignmentsDomainEntity.md)
 
 <a name="getLearningAssignmentsMe"></a>
 
 # **getLearningAssignmentsMe**
 
-
-
-> [LearningAssignmentsDomainEntity](LearningAssignmentsDomainEntity.html) getLearningAssignmentsMe(moduleId, interval, completionInterval, overdue, pageSize, pageNumber, pass, minPercentageScore, maxPercentageScore, sortOrder, sortBy, types, states, expand)
+> [LearningAssignmentsDomainEntity](LearningAssignmentsDomainEntity.md) getLearningAssignmentsMe(moduleId, interval, completionInterval, overdue, pageSize, pageNumber, pass, minPercentageScore, maxPercentageScore, sortOrder, sortBy, types, states, expand)
 
 List of Learning Assignments assigned to current user
 
+Wraps GET /api/v2/learning/assignments/me
 
-
-Wraps GET /api/v2/learning/assignments/me  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -373,47 +356,42 @@ try {
 
 ### Parameters
 
+| Name                   | Type                                | Description                                                                                                                                                                                                                                                        | Notes                                                                     |
+| ---------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| **moduleId**           | **String**                          | Specifies the ID of the learning module. Fetch assignments for learning module ID                                                                                                                                                                                  | [optional]                                                                |
+| **interval**           | **String**                          | Specifies the range of dueDates to be queried. Milliseconds will be truncated. A maximum of 1 year can be specified in the range. End date is not inclusive. Intervals are represented as an ISO-8601 string. For example: YYYY-MM-DDThh:mm:ss/YYYY-MM-DDThh:mm:ss | [optional]                                                                |
+| **completionInterval** | **String**                          | Specifies the range of completion dates to be used for filtering. A maximum of 1 year can be specified in the range. End date is not inclusive. Intervals are represented as an ISO-8601 string. For example: YYYY-MM-DDThh:mm:ss/YYYY-MM-DDThh:mm:ss              | [optional]                                                                |
+| **overdue**            | **String**                          | Specifies if only the non-overdue (overdue is \&quot;False\&quot;) or overdue (overdue is \&quot;True\&quot;) assignments are returned. If overdue is \&quot;Any\&quot; or if the overdue parameter is not supplied, all assignments are returned                  | [optional] [default to Any]<br />**Values**: True, False, Any             |
+| **pageSize**           | **Integer**                         | Page size                                                                                                                                                                                                                                                          | [optional] [default to 25]                                                |
+| **pageNumber**         | **Integer**                         | Page number                                                                                                                                                                                                                                                        | [optional] [default to 1]                                                 |
+| **pass**               | **String**                          | Specifies if only the failed (pass is \&quot;False\&quot;) or passed (pass is \&quot;True\&quot;) assignments (completed with assessment)are returned. If pass is \&quot;Any\&quot; or if the pass parameter is not supplied, all assignments are returned         | [optional] [default to Any]<br />**Values**: True, False, Any             |
+| **minPercentageScore** | **Float**                           | The minimum assessment score for an assignment (completed with assessment) to be included in the results (inclusive)                                                                                                                                               | [optional]                                                                |
+| **maxPercentageScore** | **Float**                           | The maximum assessment score for an assignment (completed with assessment) to be included in the results (inclusive)                                                                                                                                               | [optional]                                                                |
+| **sortOrder**          | **String**                          | Specifies result set sort order; if not specified, default sort order is descending (Desc)                                                                                                                                                                         | [optional] [default to Desc]<br />**Values**: Asc, Desc                   |
+| **sortBy**             | **String**                          | Specifies which field to sort the results by, default sort is by recommendedCompletionDate                                                                                                                                                                         | [optional]<br />**Values**: RecommendedCompletionDate, DateModified       |
+| **types**              | [**List&lt;String&gt;**](String.md) | Specifies the assignment types, currently not supported and will be ignored. For now, all learning assignments regardless of types will be returned                                                                                                                | [optional]<br />**Values**: Informational, AssessedContent, Assessment    |
+| **states**             | [**List&lt;String&gt;**](String.md) | Specifies the assignment states to filter by                                                                                                                                                                                                                       | [optional]<br />**Values**: Assigned, InProgress, Completed, NotCompleted |
+| **expand**             | [**List&lt;String&gt;**](String.md) | Specifies the expand option for returning additional information                                                                                                                                                                                                   | [optional]<br />**Values**: ModuleSummary                                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **moduleId** | **String**| Specifies the ID of the learning module. Fetch assignments for learning module ID | [optional] 
-| **interval** | **String**| Specifies the range of dueDates to be queried. Milliseconds will be truncated. A maximum of 1 year can be specified in the range. End date is not inclusive. Intervals are represented as an ISO-8601 string. For example: YYYY-MM-DDThh:mm:ss/YYYY-MM-DDThh:mm:ss | [optional] 
-| **completionInterval** | **String**| Specifies the range of completion dates to be used for filtering. A maximum of 1 year can be specified in the range. End date is not inclusive. Intervals are represented as an ISO-8601 string. For example: YYYY-MM-DDThh:mm:ss/YYYY-MM-DDThh:mm:ss | [optional] 
-| **overdue** | **String**| Specifies if only the non-overdue (overdue is \&quot;False\&quot;) or overdue (overdue is \&quot;True\&quot;) assignments are returned. If overdue is \&quot;Any\&quot; or if the overdue parameter is not supplied, all assignments are returned | [optional] [default to Any]<br />**Values**: True, False, Any 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pass** | **String**| Specifies if only the failed (pass is \&quot;False\&quot;) or passed (pass is \&quot;True\&quot;) assignments (completed with assessment)are returned. If pass is \&quot;Any\&quot; or if the pass parameter is not supplied, all assignments are returned | [optional] [default to Any]<br />**Values**: True, False, Any 
-| **minPercentageScore** | **Float**| The minimum assessment score for an assignment (completed with assessment) to be included in the results (inclusive) | [optional] 
-| **maxPercentageScore** | **Float**| The maximum assessment score for an assignment (completed with assessment) to be included in the results (inclusive) | [optional] 
-| **sortOrder** | **String**| Specifies result set sort order; if not specified, default sort order is descending (Desc) | [optional] [default to Desc]<br />**Values**: Asc, Desc 
-| **sortBy** | **String**| Specifies which field to sort the results by, default sort is by recommendedCompletionDate | [optional]<br />**Values**: RecommendedCompletionDate, DateModified 
-| **types** | [**List&lt;String&gt;**](String.html)| Specifies the assignment types, currently not supported and will be ignored. For now, all learning assignments regardless of types will be returned | [optional]<br />**Values**: Informational, AssessedContent, Assessment 
-| **states** | [**List&lt;String&gt;**](String.html)| Specifies the assignment states to filter by | [optional]<br />**Values**: Assigned, InProgress, Completed, NotCompleted 
-| **expand** | [**List&lt;String&gt;**](String.html)| Specifies the expand option for returning additional information | [optional]<br />**Values**: ModuleSummary 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningAssignmentsDomainEntity**](LearningAssignmentsDomainEntity.html)
+[**LearningAssignmentsDomainEntity**](LearningAssignmentsDomainEntity.md)
 
 <a name="getLearningModule"></a>
 
 # **getLearningModule**
 
-
-
-> [LearningModule](LearningModule.html) getLearningModule(moduleId, expand)
+> [LearningModule](LearningModule.md) getLearningModule(moduleId, expand)
 
 Get a learning module
 
+Wraps GET /api/v2/learning/modules/{moduleId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/learning/modules/{moduleId}  
-
-Requires ANY permissions: 
-
-* learning:module:view
+- learning:module:view
 
 ### Example
 
@@ -450,35 +428,30 @@ try {
 
 ### Parameters
 
+| Name         | Type                                | Description                                    | Notes                                      |
+| ------------ | ----------------------------------- | ---------------------------------------------- | ------------------------------------------ |
+| **moduleId** | **String**                          | The ID of the learning module                  |
+| **expand**   | [**List&lt;String&gt;**](String.md) | Fields to expand in response(case insensitive) | [optional]<br />**Values**: assessmentForm |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **moduleId** | **String**| The ID of the learning module | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Fields to expand in response(case insensitive) | [optional]<br />**Values**: assessmentForm 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningModule**](LearningModule.html)
+[**LearningModule**](LearningModule.md)
 
 <a name="getLearningModuleRule"></a>
 
 # **getLearningModuleRule**
 
-
-
-> [LearningModuleRule](LearningModuleRule.html) getLearningModuleRule(moduleId)
+> [LearningModuleRule](LearningModuleRule.md) getLearningModuleRule(moduleId)
 
 Get a learning module rule
 
+Wraps GET /api/v2/learning/modules/{moduleId}/rule
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/learning/modules/{moduleId}/rule  
-
-Requires ANY permissions: 
-
-* learning:rule:view
+- learning:rule:view
 
 ### Example
 
@@ -514,34 +487,29 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                   | Notes |
+| ------------ | ---------- | ----------------------------- | ----- |
+| **moduleId** | **String** | The ID of the learning module |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **moduleId** | **String**| The ID of the learning module | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningModuleRule**](LearningModuleRule.html)
+[**LearningModuleRule**](LearningModuleRule.md)
 
 <a name="getLearningModuleVersion"></a>
 
 # **getLearningModuleVersion**
 
-
-
-> [LearningModule](LearningModule.html) getLearningModuleVersion(moduleId, versionId, expand)
+> [LearningModule](LearningModule.md) getLearningModuleVersion(moduleId, versionId, expand)
 
 Get specific version of a published module
 
+Wraps GET /api/v2/learning/modules/{moduleId}/versions/{versionId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/learning/modules/{moduleId}/versions/{versionId}  
-
-Requires ANY permissions: 
-
-* learning:module:view
+- learning:module:view
 
 ### Example
 
@@ -579,36 +547,31 @@ try {
 
 ### Parameters
 
+| Name          | Type                                | Description                                    | Notes                                      |
+| ------------- | ----------------------------------- | ---------------------------------------------- | ------------------------------------------ |
+| **moduleId**  | **String**                          | The ID of the learning module                  |
+| **versionId** | **String**                          | The version of learning module                 |
+| **expand**    | [**List&lt;String&gt;**](String.md) | Fields to expand in response(case insensitive) | [optional]<br />**Values**: assessmentForm |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **moduleId** | **String**| The ID of the learning module | 
-| **versionId** | **String**| The version of learning module | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Fields to expand in response(case insensitive) | [optional]<br />**Values**: assessmentForm 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningModule**](LearningModule.html)
+[**LearningModule**](LearningModule.md)
 
 <a name="getLearningModules"></a>
 
 # **getLearningModules**
 
-
-
-> [LearningModulesDomainEntityListing](LearningModulesDomainEntityListing.html) getLearningModules(isArchived, types, pageSize, pageNumber, sortOrder, sortBy, searchTerm, expand, isPublished)
+> [LearningModulesDomainEntityListing](LearningModulesDomainEntityListing.md) getLearningModules(isArchived, types, pageSize, pageNumber, sortOrder, sortBy, searchTerm, expand, isPublished)
 
 Get all learning modules of an organization
 
+Wraps GET /api/v2/learning/modules
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/learning/modules  
-
-Requires ANY permissions: 
-
-* learning:module:view
+- learning:module:view
 
 ### Example
 
@@ -652,41 +615,35 @@ try {
 
 ### Parameters
 
+| Name            | Type                                | Description                                                                                                                                                                                                           | Notes                                                                    |
+| --------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| **isArchived**  | **Boolean**                         | Archive status                                                                                                                                                                                                        | [optional] [default to false]                                            |
+| **types**       | [**List&lt;String&gt;**](String.md) | Specifies the module types.                                                                                                                                                                                           | [optional]<br />**Values**: Informational, AssessedContent, Assessment   |
+| **pageSize**    | **Integer**                         | Page size                                                                                                                                                                                                             | [optional] [default to 25]                                               |
+| **pageNumber**  | **Integer**                         | Page number                                                                                                                                                                                                           | [optional] [default to 1]                                                |
+| **sortOrder**   | **String**                          | Sort order                                                                                                                                                                                                            | [optional] [default to ascending]<br />**Values**: ascending, descending |
+| **sortBy**      | **String**                          | Sort by                                                                                                                                                                                                               | [optional] [default to name]<br />**Values**: name                       |
+| **searchTerm**  | **String**                          | Search Term (searchable by name)                                                                                                                                                                                      | [optional]                                                               |
+| **expand**      | [**List&lt;String&gt;**](String.md) | Fields to expand in response(case insensitive)                                                                                                                                                                        | [optional]<br />**Values**: rule, summaryData                            |
+| **isPublished** | **String**                          | Specifies if only the Unpublished (isPublished is \&quot;False\&quot;) or Published (isPublished is \&quot;True\&quot;) modules are returned. If isPublished is \&quot;Any\&quot; or omitted, both types are returned | [optional] [default to Any]<br />**Values**: True, False, Any            |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **isArchived** | **Boolean**| Archive status | [optional] [default to false] 
-| **types** | [**List&lt;String&gt;**](String.html)| Specifies the module types. | [optional]<br />**Values**: Informational, AssessedContent, Assessment 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortOrder** | **String**| Sort order | [optional] [default to ascending]<br />**Values**: ascending, descending 
-| **sortBy** | **String**| Sort by | [optional] [default to name]<br />**Values**: name 
-| **searchTerm** | **String**| Search Term (searchable by name) | [optional] 
-| **expand** | [**List&lt;String&gt;**](String.html)| Fields to expand in response(case insensitive) | [optional]<br />**Values**: rule, summaryData 
-| **isPublished** | **String**| Specifies if only the Unpublished (isPublished is \&quot;False\&quot;) or Published (isPublished is \&quot;True\&quot;) modules are returned. If isPublished is \&quot;Any\&quot; or omitted, both types are returned | [optional] [default to Any]<br />**Values**: True, False, Any 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningModulesDomainEntityListing**](LearningModulesDomainEntityListing.html)
+[**LearningModulesDomainEntityListing**](LearningModulesDomainEntityListing.md)
 
 <a name="patchLearningAssignment"></a>
 
 # **patchLearningAssignment**
 
-
-
-> [LearningAssignment](LearningAssignment.html) patchLearningAssignment(assignmentId, body)
+> [LearningAssignment](LearningAssignment.md) patchLearningAssignment(assignmentId, body)
 
 Update Learning Assignment
 
+Wraps PATCH /api/v2/learning/assignments/{assignmentId}
 
-
-Wraps PATCH /api/v2/learning/assignments/{assignmentId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -723,37 +680,32 @@ try {
 
 ### Parameters
 
+| Name             | Type                                                        | Description                           | Notes      |
+| ---------------- | ----------------------------------------------------------- | ------------------------------------- | ---------- |
+| **assignmentId** | **String**                                                  | The ID of Learning Assignment         |
+| **body**         | [**LearningAssignmentUpdate**](LearningAssignmentUpdate.md) | The Learning Assignment to be updated | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **assignmentId** | **String**| The ID of Learning Assignment | 
-| **body** | [**LearningAssignmentUpdate**](LearningAssignmentUpdate.html)| The Learning Assignment to be updated | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningAssignment**](LearningAssignment.html)
+[**LearningAssignment**](LearningAssignment.md)
 
 <a name="postLearningAssessmentsScoring"></a>
 
 # **postLearningAssessmentsScoring**
 
-
-
-> [AssessmentScoringSet](AssessmentScoringSet.html) postLearningAssessmentsScoring(body)
+> [AssessmentScoringSet](AssessmentScoringSet.md) postLearningAssessmentsScoring(body)
 
 Score learning assessment for preview
 
+Wraps POST /api/v2/learning/assessments/scoring
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/learning/assessments/scoring  
-
-Requires ANY permissions: 
-
-* learning:module:view
-* learning:module:add
-* learning:module:edit
+- learning:module:view
+- learning:module:add
+- learning:module:edit
 
 ### Example
 
@@ -789,34 +741,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                                        | Description                          | Notes |
+| -------- | --------------------------------------------------------------------------- | ------------------------------------ | ----- |
+| **body** | [**LearningAssessmentScoringRequest**](LearningAssessmentScoringRequest.md) | Assessment form and answers to score |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**LearningAssessmentScoringRequest**](LearningAssessmentScoringRequest.html)| Assessment form and answers to score | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AssessmentScoringSet**](AssessmentScoringSet.html)
+[**AssessmentScoringSet**](AssessmentScoringSet.md)
 
 <a name="postLearningAssignments"></a>
 
 # **postLearningAssignments**
 
-
-
-> [LearningAssignment](LearningAssignment.html) postLearningAssignments(body)
+> [LearningAssignment](LearningAssignment.md) postLearningAssignments(body)
 
 Create Learning Assignment
 
+Wraps POST /api/v2/learning/assignments
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/learning/assignments  
-
-Requires ANY permissions: 
-
-* learning:assignment:add
+- learning:assignment:add
 
 ### Example
 
@@ -852,34 +799,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                        | Description                           | Notes      |
+| -------- | ----------------------------------------------------------- | ------------------------------------- | ---------- |
+| **body** | [**LearningAssignmentCreate**](LearningAssignmentCreate.md) | The Learning Assignment to be created | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**LearningAssignmentCreate**](LearningAssignmentCreate.html)| The Learning Assignment to be created | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningAssignment**](LearningAssignment.html)
+[**LearningAssignment**](LearningAssignment.md)
 
 <a name="postLearningAssignmentsAggregatesQuery"></a>
 
 # **postLearningAssignmentsAggregatesQuery**
 
-
-
-> [LearningAssignmentAggregateResponse](LearningAssignmentAggregateResponse.html) postLearningAssignmentsAggregatesQuery(body)
+> [LearningAssignmentAggregateResponse](LearningAssignmentAggregateResponse.md) postLearningAssignmentsAggregatesQuery(body)
 
 Retrieve aggregated assignment data
 
+Wraps POST /api/v2/learning/assignments/aggregates/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/learning/assignments/aggregates/query  
-
-Requires ANY permissions: 
-
-* learning:assignment:view
+- learning:assignment:view
 
 ### Example
 
@@ -915,34 +857,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                                        | Description       | Notes |
+| -------- | --------------------------------------------------------------------------- | ----------------- | ----- |
+| **body** | [**LearningAssignmentAggregateParam**](LearningAssignmentAggregateParam.md) | Aggregate Request |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**LearningAssignmentAggregateParam**](LearningAssignmentAggregateParam.html)| Aggregate Request | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningAssignmentAggregateResponse**](LearningAssignmentAggregateResponse.html)
+[**LearningAssignmentAggregateResponse**](LearningAssignmentAggregateResponse.md)
 
 <a name="postLearningAssignmentsBulkadd"></a>
 
 # **postLearningAssignmentsBulkadd**
 
-
-
-> [LearningAssignmentBulkAddResponse](LearningAssignmentBulkAddResponse.html) postLearningAssignmentsBulkadd(body)
+> [LearningAssignmentBulkAddResponse](LearningAssignmentBulkAddResponse.md) postLearningAssignmentsBulkadd(body)
 
 Add multiple learning assignments
 
+Wraps POST /api/v2/learning/assignments/bulkadd
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/learning/assignments/bulkadd  
-
-Requires ANY permissions: 
-
-* learning:assignment:add
+- learning:assignment:add
 
 ### Example
 
@@ -978,34 +915,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                                | Description                            | Notes      |
+| -------- | ------------------------------------------------------------------- | -------------------------------------- | ---------- |
+| **body** | [**List&lt;LearningAssignmentItem&gt;**](LearningAssignmentItem.md) | The learning assignments to be created | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**List&lt;LearningAssignmentItem&gt;**](LearningAssignmentItem.html)| The learning assignments to be created | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningAssignmentBulkAddResponse**](LearningAssignmentBulkAddResponse.html)
+[**LearningAssignmentBulkAddResponse**](LearningAssignmentBulkAddResponse.md)
 
 <a name="postLearningAssignmentsBulkremove"></a>
 
 # **postLearningAssignmentsBulkremove**
 
-
-
-> [LearningAssignmentBulkRemoveResponse](LearningAssignmentBulkRemoveResponse.html) postLearningAssignmentsBulkremove(body)
+> [LearningAssignmentBulkRemoveResponse](LearningAssignmentBulkRemoveResponse.md) postLearningAssignmentsBulkremove(body)
 
 Remove multiple Learning Assignments
 
+Wraps POST /api/v2/learning/assignments/bulkremove
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/learning/assignments/bulkremove  
-
-Requires ANY permissions: 
-
-* learning:assignment:delete
+- learning:assignment:delete
 
 ### Example
 
@@ -1041,34 +973,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                   | Description                                       | Notes      |
+| -------- | ---------------------- | ------------------------------------------------- | ---------- |
+| **body** | **List&lt;String&gt;** | The IDs of the learning assignments to be removed | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | **List&lt;String&gt;**| The IDs of the learning assignments to be removed | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningAssignmentBulkRemoveResponse**](LearningAssignmentBulkRemoveResponse.html)
+[**LearningAssignmentBulkRemoveResponse**](LearningAssignmentBulkRemoveResponse.md)
 
 <a name="postLearningModulePublish"></a>
 
 # **postLearningModulePublish**
 
-
-
-> [LearningModulePublishResponse](LearningModulePublishResponse.html) postLearningModulePublish(moduleId)
+> [LearningModulePublishResponse](LearningModulePublishResponse.md) postLearningModulePublish(moduleId)
 
 Publish a Learning module
 
+Wraps POST /api/v2/learning/modules/{moduleId}/publish
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/learning/modules/{moduleId}/publish  
-
-Requires ANY permissions: 
-
-* learning:module:publish
+- learning:module:publish
 
 ### Example
 
@@ -1104,34 +1031,31 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                   | Notes |
+| ------------ | ---------- | ----------------------------- | ----- |
+| **moduleId** | **String** | The ID of the learning module |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **moduleId** | **String**| The ID of the learning module | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningModulePublishResponse**](LearningModulePublishResponse.html)
+[**LearningModulePublishResponse**](LearningModulePublishResponse.md)
 
 <a name="postLearningModules"></a>
 
 # **postLearningModules**
 
-
-
-> [LearningModule](LearningModule.html) postLearningModules(body)
+> [LearningModule](LearningModule.md) postLearningModules(body)
 
 Create a new learning module
 
 This will create a new unpublished learning module with the specified fields.
 
-Wraps POST /api/v2/learning/modules  
+Wraps POST /api/v2/learning/modules
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* learning:module:add
+- learning:module:add
 
 ### Example
 
@@ -1167,34 +1091,31 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                  | Description                       | Notes |
+| -------- | ----------------------------------------------------- | --------------------------------- | ----- |
+| **body** | [**LearningModuleRequest**](LearningModuleRequest.md) | The learning module to be created |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**LearningModuleRequest**](LearningModuleRequest.html)| The learning module to be created | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningModule**](LearningModule.html)
+[**LearningModule**](LearningModule.md)
 
 <a name="postLearningRulesQuery"></a>
 
 # **postLearningRulesQuery**
 
-
-
-> [LearningAssignmentUserListing](LearningAssignmentUserListing.html) postLearningRulesQuery(pageSize, pageNumber, body)
+> [LearningAssignmentUserListing](LearningAssignmentUserListing.md) postLearningRulesQuery(pageSize, pageNumber, body)
 
 Get users for learning module rule
 
 This will get the users who matches the given rule.
 
-Wraps POST /api/v2/learning/rules/query  
+Wraps POST /api/v2/learning/rules/query
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* learning:rule:view
+- learning:rule:view
 
 ### Example
 
@@ -1232,36 +1153,33 @@ try {
 
 ### Parameters
 
+| Name           | Type                                                              | Description                             | Notes           |
+| -------------- | ----------------------------------------------------------------- | --------------------------------------- | --------------- |
+| **pageSize**   | **Integer**                                                       | Page size                               | [default to 50] |
+| **pageNumber** | **Integer**                                                       | Page number                             | [default to 1]  |
+| **body**       | [**LearningAssignmentUserQuery**](LearningAssignmentUserQuery.md) | The learning module rule to fetch users |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [default to 50] 
-| **pageNumber** | **Integer**| Page number | [default to 1] 
-| **body** | [**LearningAssignmentUserQuery**](LearningAssignmentUserQuery.html)| The learning module rule to fetch users | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningAssignmentUserListing**](LearningAssignmentUserListing.html)
+[**LearningAssignmentUserListing**](LearningAssignmentUserListing.md)
 
 <a name="putLearningModule"></a>
 
 # **putLearningModule**
 
-
-
-> [LearningModule](LearningModule.html) putLearningModule(moduleId, body)
+> [LearningModule](LearningModule.md) putLearningModule(moduleId, body)
 
 Update a learning module
 
 This will update the name, description, completion time in days and inform steps for a learning module
 
-Wraps PUT /api/v2/learning/modules/{moduleId}  
+Wraps PUT /api/v2/learning/modules/{moduleId}
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* learning:module:edit
+- learning:module:edit
 
 ### Example
 
@@ -1298,35 +1216,32 @@ try {
 
 ### Parameters
 
+| Name         | Type                                                  | Description                       | Notes |
+| ------------ | ----------------------------------------------------- | --------------------------------- | ----- |
+| **moduleId** | **String**                                            | The ID of the learning module     |
+| **body**     | [**LearningModuleRequest**](LearningModuleRequest.md) | The learning module to be updated |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **moduleId** | **String**| The ID of the learning module | 
-| **body** | [**LearningModuleRequest**](LearningModuleRequest.html)| The learning module to be updated | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningModule**](LearningModule.html)
+[**LearningModule**](LearningModule.md)
 
 <a name="putLearningModuleRule"></a>
 
 # **putLearningModuleRule**
 
-
-
-> [LearningModuleRule](LearningModuleRule.html) putLearningModuleRule(moduleId, body)
+> [LearningModuleRule](LearningModuleRule.md) putLearningModuleRule(moduleId, body)
 
 Update a learning module rule
 
 This will update a learning module rule with the specified fields.
 
-Wraps PUT /api/v2/learning/modules/{moduleId}/rule  
+Wraps PUT /api/v2/learning/modules/{moduleId}/rule
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* learning:rule:edit
+- learning:rule:edit
 
 ### Example
 
@@ -1363,15 +1278,13 @@ try {
 
 ### Parameters
 
+| Name         | Type                                            | Description                            | Notes |
+| ------------ | ----------------------------------------------- | -------------------------------------- | ----- |
+| **moduleId** | **String**                                      | The ID of the learning module          |
+| **body**     | [**LearningModuleRule**](LearningModuleRule.md) | The learning module rule to be updated |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **moduleId** | **String**| The ID of the learning module | 
-| **body** | [**LearningModuleRule**](LearningModuleRule.html)| The learning module rule to be updated | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LearningModuleRule**](LearningModuleRule.html)
-
+[**LearningModuleRule**](LearningModuleRule.md)

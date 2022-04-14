@@ -1,35 +1,32 @@
 ---
 title: StationsApi
 ---
+
 ## StationsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteStationAssociateduser**](StationsApi.html#deleteStationAssociateduser) | Unassigns the user assigned to this station |
-| [**getStation**](StationsApi.html#getStation) | Get station. |
-| [**getStations**](StationsApi.html#getStations) | Get the list of available stations. |
-| [**getStationsSettings**](StationsApi.html#getStationsSettings) | Get an organization&#39;s StationSettings |
-| [**patchStationsSettings**](StationsApi.html#patchStationsSettings) | Patch an organization&#39;s StationSettings |
+| Method                                                                        | Description                                 |
+| ----------------------------------------------------------------------------- | ------------------------------------------- |
+| [**deleteStationAssociateduser**](StationsApi.md#deleteStationAssociateduser) | Unassigns the user assigned to this station |
+| [**getStation**](StationsApi.md#getStation)                                   | Get station.                                |
+| [**getStations**](StationsApi.md#getStations)                                 | Get the list of available stations.         |
+| [**getStationsSettings**](StationsApi.md#getStationsSettings)                 | Get an organization&#39;s StationSettings   |
+| [**patchStationsSettings**](StationsApi.md#patchStationsSettings)             | Patch an organization&#39;s StationSettings |
+
 {: class="table-striped"}
 
 <a name="deleteStationAssociateduser"></a>
 
 # **deleteStationAssociateduser**
 
-
-
 > Void deleteStationAssociateduser(stationId)
 
 Unassigns the user assigned to this station
 
+Wraps DELETE /api/v2/stations/{stationId}/associateduser
 
-
-Wraps DELETE /api/v2/stations/{stationId}/associateduser  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -64,12 +61,11 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **stationId** | **String** | Station ID  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **stationId** | **String**| Station ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -79,18 +75,13 @@ null (empty response body)
 
 # **getStation**
 
-
-
-> [Station](Station.html) getStation(stationId)
+> [Station](Station.md) getStation(stationId)
 
 Get station.
 
+Wraps GET /api/v2/stations/{stationId}
 
-
-Wraps GET /api/v2/stations/{stationId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -126,33 +117,27 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **stationId** | **String** | Station ID  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **stationId** | **String**| Station ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Station**](Station.html)
+[**Station**](Station.md)
 
 <a name="getStations"></a>
 
 # **getStations**
 
-
-
-> [StationEntityListing](StationEntityListing.html) getStations(pageSize, pageNumber, sortBy, name, userSelectable, webRtcUserId, id, lineAppearanceId)
+> [StationEntityListing](StationEntityListing.md) getStations(pageSize, pageNumber, sortBy, name, userSelectable, webRtcUserId, id, lineAppearanceId)
 
 Get the list of available stations.
 
+Wraps GET /api/v2/stations
 
-
-Wraps GET /api/v2/stations  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -195,40 +180,34 @@ try {
 
 ### Parameters
 
+| Name                 | Type        | Description                                                | Notes                        |
+| -------------------- | ----------- | ---------------------------------------------------------- | ---------------------------- |
+| **pageSize**         | **Integer** | Page size                                                  | [optional] [default to 25]   |
+| **pageNumber**       | **Integer** | Page number                                                | [optional] [default to 1]    |
+| **sortBy**           | **String**  | Sort by                                                    | [optional] [default to name] |
+| **name**             | **String**  | Name                                                       | [optional]                   |
+| **userSelectable**   | **String**  | True for stations that the user can select otherwise false | [optional]                   |
+| **webRtcUserId**     | **String**  | Filter for the webRtc station of the webRtcUserId          | [optional]                   |
+| **id**               | **String**  | Comma separated list of stationIds                         | [optional]                   |
+| **lineAppearanceId** | **String**  | lineAppearanceId                                           | [optional]                   |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortBy** | **String**| Sort by | [optional] [default to name] 
-| **name** | **String**| Name | [optional] 
-| **userSelectable** | **String**| True for stations that the user can select otherwise false | [optional] 
-| **webRtcUserId** | **String**| Filter for the webRtc station of the webRtcUserId | [optional] 
-| **id** | **String**| Comma separated list of stationIds | [optional] 
-| **lineAppearanceId** | **String**| lineAppearanceId | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**StationEntityListing**](StationEntityListing.html)
+[**StationEntityListing**](StationEntityListing.md)
 
 <a name="getStationsSettings"></a>
 
 # **getStationsSettings**
 
-
-
-> [StationSettings](StationSettings.html) getStationsSettings()
+> [StationSettings](StationSettings.md) getStationsSettings()
 
 Get an organization&#39;s StationSettings
 
+Wraps GET /api/v2/stations/settings
 
-
-Wraps GET /api/v2/stations/settings  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -265,29 +244,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**StationSettings**](StationSettings.html)
+[**StationSettings**](StationSettings.md)
 
 <a name="patchStationsSettings"></a>
 
 # **patchStationsSettings**
 
-
-
-> [StationSettings](StationSettings.html) patchStationsSettings(body)
+> [StationSettings](StationSettings.md) patchStationsSettings(body)
 
 Patch an organization&#39;s StationSettings
 
+Wraps PATCH /api/v2/stations/settings
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/stations/settings  
-
-Requires ANY permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -323,14 +296,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                                      | Description      | Notes |
+| -------- | ----------------------------------------- | ---------------- | ----- |
+| **body** | [**StationSettings**](StationSettings.md) | Station settings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**StationSettings**](StationSettings.html)| Station settings | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**StationSettings**](StationSettings.html)
-
+[**StationSettings**](StationSettings.md)

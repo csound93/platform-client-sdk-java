@@ -1,57 +1,55 @@
 ---
 title: KnowledgeApi
 ---
+
 ## KnowledgeApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteKnowledgeKnowledgebase**](KnowledgeApi.html#deleteKnowledgeKnowledgebase) | Delete knowledge base |
-| [**deleteKnowledgeKnowledgebaseLanguageCategory**](KnowledgeApi.html#deleteKnowledgeKnowledgebaseLanguageCategory) | Delete category |
-| [**deleteKnowledgeKnowledgebaseLanguageDocument**](KnowledgeApi.html#deleteKnowledgeKnowledgebaseLanguageDocument) | Delete document |
-| [**deleteKnowledgeKnowledgebaseLanguageDocumentsImport**](KnowledgeApi.html#deleteKnowledgeKnowledgebaseLanguageDocumentsImport) | Delete import operation |
-| [**getKnowledgeKnowledgebase**](KnowledgeApi.html#getKnowledgeKnowledgebase) | Get knowledge base |
-| [**getKnowledgeKnowledgebaseLanguageCategories**](KnowledgeApi.html#getKnowledgeKnowledgebaseLanguageCategories) | Get categories |
-| [**getKnowledgeKnowledgebaseLanguageCategory**](KnowledgeApi.html#getKnowledgeKnowledgebaseLanguageCategory) | Get category |
-| [**getKnowledgeKnowledgebaseLanguageDocument**](KnowledgeApi.html#getKnowledgeKnowledgebaseLanguageDocument) | Get document |
-| [**getKnowledgeKnowledgebaseLanguageDocuments**](KnowledgeApi.html#getKnowledgeKnowledgebaseLanguageDocuments) | Get documents |
-| [**getKnowledgeKnowledgebaseLanguageDocumentsImport**](KnowledgeApi.html#getKnowledgeKnowledgebaseLanguageDocumentsImport) | Get import operation report |
-| [**getKnowledgeKnowledgebaseLanguageTraining**](KnowledgeApi.html#getKnowledgeKnowledgebaseLanguageTraining) | Get training detail |
-| [**getKnowledgeKnowledgebaseLanguageTrainings**](KnowledgeApi.html#getKnowledgeKnowledgebaseLanguageTrainings) | Get all trainings information for a knowledgebase |
-| [**getKnowledgeKnowledgebases**](KnowledgeApi.html#getKnowledgeKnowledgebases) | Get knowledge bases |
-| [**patchKnowledgeKnowledgebase**](KnowledgeApi.html#patchKnowledgeKnowledgebase) | Update knowledge base |
-| [**patchKnowledgeKnowledgebaseLanguageCategory**](KnowledgeApi.html#patchKnowledgeKnowledgebaseLanguageCategory) | Update category |
-| [**patchKnowledgeKnowledgebaseLanguageDocument**](KnowledgeApi.html#patchKnowledgeKnowledgebaseLanguageDocument) | Update document |
-| [**patchKnowledgeKnowledgebaseLanguageDocuments**](KnowledgeApi.html#patchKnowledgeKnowledgebaseLanguageDocuments) | Update documents collection |
-| [**patchKnowledgeKnowledgebaseLanguageDocumentsImport**](KnowledgeApi.html#patchKnowledgeKnowledgebaseLanguageDocumentsImport) | Start import operation |
-| [**postKnowledgeDocumentuploads**](KnowledgeApi.html#postKnowledgeDocumentuploads) | Creates a presigned URL for uploading a knowledge import file with a set of documents |
-| [**postKnowledgeKnowledgebaseLanguageCategories**](KnowledgeApi.html#postKnowledgeKnowledgebaseLanguageCategories) | Create new category |
-| [**postKnowledgeKnowledgebaseLanguageDocuments**](KnowledgeApi.html#postKnowledgeKnowledgebaseLanguageDocuments) | Create document |
-| [**postKnowledgeKnowledgebaseLanguageDocumentsImports**](KnowledgeApi.html#postKnowledgeKnowledgebaseLanguageDocumentsImports) | Create import operation |
-| [**postKnowledgeKnowledgebaseLanguageTrainingPromote**](KnowledgeApi.html#postKnowledgeKnowledgebaseLanguageTrainingPromote) | Promote trained documents from draft state to active. |
-| [**postKnowledgeKnowledgebaseLanguageTrainings**](KnowledgeApi.html#postKnowledgeKnowledgebaseLanguageTrainings) | Trigger training |
-| [**postKnowledgeKnowledgebaseSearch**](KnowledgeApi.html#postKnowledgeKnowledgebaseSearch) | Search Documents |
-| [**postKnowledgeKnowledgebases**](KnowledgeApi.html#postKnowledgeKnowledgebases) | Create new knowledge base |
+| Method                                                                                                                         | Description                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| [**deleteKnowledgeKnowledgebase**](KnowledgeApi.md#deleteKnowledgeKnowledgebase)                                               | Delete knowledge base                                                                 |
+| [**deleteKnowledgeKnowledgebaseLanguageCategory**](KnowledgeApi.md#deleteKnowledgeKnowledgebaseLanguageCategory)               | Delete category                                                                       |
+| [**deleteKnowledgeKnowledgebaseLanguageDocument**](KnowledgeApi.md#deleteKnowledgeKnowledgebaseLanguageDocument)               | Delete document                                                                       |
+| [**deleteKnowledgeKnowledgebaseLanguageDocumentsImport**](KnowledgeApi.md#deleteKnowledgeKnowledgebaseLanguageDocumentsImport) | Delete import operation                                                               |
+| [**getKnowledgeKnowledgebase**](KnowledgeApi.md#getKnowledgeKnowledgebase)                                                     | Get knowledge base                                                                    |
+| [**getKnowledgeKnowledgebaseLanguageCategories**](KnowledgeApi.md#getKnowledgeKnowledgebaseLanguageCategories)                 | Get categories                                                                        |
+| [**getKnowledgeKnowledgebaseLanguageCategory**](KnowledgeApi.md#getKnowledgeKnowledgebaseLanguageCategory)                     | Get category                                                                          |
+| [**getKnowledgeKnowledgebaseLanguageDocument**](KnowledgeApi.md#getKnowledgeKnowledgebaseLanguageDocument)                     | Get document                                                                          |
+| [**getKnowledgeKnowledgebaseLanguageDocuments**](KnowledgeApi.md#getKnowledgeKnowledgebaseLanguageDocuments)                   | Get documents                                                                         |
+| [**getKnowledgeKnowledgebaseLanguageDocumentsImport**](KnowledgeApi.md#getKnowledgeKnowledgebaseLanguageDocumentsImport)       | Get import operation report                                                           |
+| [**getKnowledgeKnowledgebaseLanguageTraining**](KnowledgeApi.md#getKnowledgeKnowledgebaseLanguageTraining)                     | Get training detail                                                                   |
+| [**getKnowledgeKnowledgebaseLanguageTrainings**](KnowledgeApi.md#getKnowledgeKnowledgebaseLanguageTrainings)                   | Get all trainings information for a knowledgebase                                     |
+| [**getKnowledgeKnowledgebases**](KnowledgeApi.md#getKnowledgeKnowledgebases)                                                   | Get knowledge bases                                                                   |
+| [**patchKnowledgeKnowledgebase**](KnowledgeApi.md#patchKnowledgeKnowledgebase)                                                 | Update knowledge base                                                                 |
+| [**patchKnowledgeKnowledgebaseLanguageCategory**](KnowledgeApi.md#patchKnowledgeKnowledgebaseLanguageCategory)                 | Update category                                                                       |
+| [**patchKnowledgeKnowledgebaseLanguageDocument**](KnowledgeApi.md#patchKnowledgeKnowledgebaseLanguageDocument)                 | Update document                                                                       |
+| [**patchKnowledgeKnowledgebaseLanguageDocuments**](KnowledgeApi.md#patchKnowledgeKnowledgebaseLanguageDocuments)               | Update documents collection                                                           |
+| [**patchKnowledgeKnowledgebaseLanguageDocumentsImport**](KnowledgeApi.md#patchKnowledgeKnowledgebaseLanguageDocumentsImport)   | Start import operation                                                                |
+| [**postKnowledgeDocumentuploads**](KnowledgeApi.md#postKnowledgeDocumentuploads)                                               | Creates a presigned URL for uploading a knowledge import file with a set of documents |
+| [**postKnowledgeKnowledgebaseLanguageCategories**](KnowledgeApi.md#postKnowledgeKnowledgebaseLanguageCategories)               | Create new category                                                                   |
+| [**postKnowledgeKnowledgebaseLanguageDocuments**](KnowledgeApi.md#postKnowledgeKnowledgebaseLanguageDocuments)                 | Create document                                                                       |
+| [**postKnowledgeKnowledgebaseLanguageDocumentsImports**](KnowledgeApi.md#postKnowledgeKnowledgebaseLanguageDocumentsImports)   | Create import operation                                                               |
+| [**postKnowledgeKnowledgebaseLanguageTrainingPromote**](KnowledgeApi.md#postKnowledgeKnowledgebaseLanguageTrainingPromote)     | Promote trained documents from draft state to active.                                 |
+| [**postKnowledgeKnowledgebaseLanguageTrainings**](KnowledgeApi.md#postKnowledgeKnowledgebaseLanguageTrainings)                 | Trigger training                                                                      |
+| [**postKnowledgeKnowledgebaseSearch**](KnowledgeApi.md#postKnowledgeKnowledgebaseSearch)                                       | Search Documents                                                                      |
+| [**postKnowledgeKnowledgebases**](KnowledgeApi.md#postKnowledgeKnowledgebases)                                                 | Create new knowledge base                                                             |
+
 {: class="table-striped"}
 
 <a name="deleteKnowledgeKnowledgebase"></a>
 
 # **deleteKnowledgeKnowledgebase**
 
-
-
-> [KnowledgeBase](KnowledgeBase.html) deleteKnowledgeKnowledgebase(knowledgeBaseId)
+> [KnowledgeBase](KnowledgeBase.md) deleteKnowledgeKnowledgebase(knowledgeBaseId)
 
 Delete knowledge base
 
+Wraps DELETE /api/v2/knowledge/knowledgebases/{knowledgeBaseId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/knowledge/knowledgebases/{knowledgeBaseId}  
-
-Requires ALL permissions: 
-
-* knowledge:knowledgebase:delete
+- knowledge:knowledgebase:delete
 
 ### Example
 
@@ -87,34 +85,29 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description       | Notes |
+| ------------------- | ---------- | ----------------- | ----- |
+| **knowledgeBaseId** | **String** | Knowledge base ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeBase**](KnowledgeBase.html)
+[**KnowledgeBase**](KnowledgeBase.md)
 
 <a name="deleteKnowledgeKnowledgebaseLanguageCategory"></a>
 
 # **deleteKnowledgeKnowledgebaseLanguageCategory**
 
-
-
-> [KnowledgeCategory](KnowledgeCategory.html) deleteKnowledgeKnowledgebaseLanguageCategory(categoryId, knowledgeBaseId, languageCode)
+> [KnowledgeCategory](KnowledgeCategory.md) deleteKnowledgeKnowledgebaseLanguageCategory(categoryId, knowledgeBaseId, languageCode)
 
 Delete category
 
+Wraps DELETE /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/categories/{categoryId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/categories/{categoryId}  
-
-Requires ALL permissions: 
-
-* knowledge:category:delete
+- knowledge:category:delete
 
 ### Example
 
@@ -152,36 +145,31 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                        | Notes                                                                                  |
+| ------------------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **categoryId**      | **String** | Category ID                        |
+| **knowledgeBaseId** | **String** | Knowledge base ID                  |
+| **languageCode**    | **String** | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **categoryId** | **String**| Category ID | 
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeCategory**](KnowledgeCategory.html)
+[**KnowledgeCategory**](KnowledgeCategory.md)
 
 <a name="deleteKnowledgeKnowledgebaseLanguageDocument"></a>
 
 # **deleteKnowledgeKnowledgebaseLanguageDocument**
 
-
-
-> [KnowledgeDocument](KnowledgeDocument.html) deleteKnowledgeKnowledgebaseLanguageDocument(documentId, knowledgeBaseId, languageCode)
+> [KnowledgeDocument](KnowledgeDocument.md) deleteKnowledgeKnowledgebaseLanguageDocument(documentId, knowledgeBaseId, languageCode)
 
 Delete document
 
+Wraps DELETE /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/{documentId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/{documentId}  
-
-Requires ALL permissions: 
-
-* knowledge:document:delete
+- knowledge:document:delete
 
 ### Example
 
@@ -219,36 +207,31 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                        | Notes                                                                                  |
+| ------------------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **documentId**      | **String** | Document ID                        |
+| **knowledgeBaseId** | **String** | Knowledge base ID                  |
+| **languageCode**    | **String** | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **documentId** | **String**| Document ID | 
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeDocument**](KnowledgeDocument.html)
+[**KnowledgeDocument**](KnowledgeDocument.md)
 
 <a name="deleteKnowledgeKnowledgebaseLanguageDocumentsImport"></a>
 
 # **deleteKnowledgeKnowledgebaseLanguageDocumentsImport**
 
-
-
 > Void deleteKnowledgeKnowledgebaseLanguageDocumentsImport(knowledgeBaseId, languageCode, importId)
 
 Delete import operation
 
+Wraps DELETE /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/imports/{importId}
 
+Requires ALL permissions:
 
-Wraps DELETE /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/imports/{importId}  
-
-Requires ALL permissions: 
-
-* knowledge:document:add
+- knowledge:document:add
 
 ### Example
 
@@ -285,14 +268,13 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                        | Notes                                                                                  |
+| ------------------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **knowledgeBaseId** | **String** | Knowledge base ID                  |
+| **languageCode**    | **String** | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **importId**        | **String** | Import ID                          |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **importId** | **String**| Import ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -302,19 +284,15 @@ null (empty response body)
 
 # **getKnowledgeKnowledgebase**
 
-
-
-> [KnowledgeBase](KnowledgeBase.html) getKnowledgeKnowledgebase(knowledgeBaseId)
+> [KnowledgeBase](KnowledgeBase.md) getKnowledgeKnowledgebase(knowledgeBaseId)
 
 Get knowledge base
 
+Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}  
-
-Requires ALL permissions: 
-
-* knowledge:knowledgebase:view
+- knowledge:knowledgebase:view
 
 ### Example
 
@@ -350,34 +328,29 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description       | Notes |
+| ------------------- | ---------- | ----------------- | ----- |
+| **knowledgeBaseId** | **String** | Knowledge base ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeBase**](KnowledgeBase.html)
+[**KnowledgeBase**](KnowledgeBase.md)
 
 <a name="getKnowledgeKnowledgebaseLanguageCategories"></a>
 
 # **getKnowledgeKnowledgebaseLanguageCategories**
 
-
-
-> [CategoryListing](CategoryListing.html) getKnowledgeKnowledgebaseLanguageCategories(knowledgeBaseId, languageCode, before, after, limit, pageSize, name)
+> [CategoryListing](CategoryListing.md) getKnowledgeKnowledgebaseLanguageCategories(knowledgeBaseId, languageCode, before, after, limit, pageSize, name)
 
 Get categories
 
+Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/categories
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/categories  
-
-Requires ALL permissions: 
-
-* knowledge:category:view
+- knowledge:category:view
 
 ### Example
 
@@ -419,40 +392,35 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                                                                                                        | Notes                                                                                  |
+| ------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| **knowledgeBaseId** | **String** | Knowledge base ID                                                                                                  |
+| **languageCode**    | **String** | Language code, format: iso2-LOCALE                                                                                 | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **before**          | **String** | The cursor that points to the start of the set of entities that has been returned.                                 | [optional]                                                                             |
+| **after**           | **String** | The cursor that points to the end of the set of entities that has been returned.                                   | [optional]                                                                             |
+| **limit**           | **String** | Number of entities to return. Maximum of 200. Deprecated in favour of pageSize, use CursorQueryParameters instead. | [optional]                                                                             |
+| **pageSize**        | **String** | Number of entities to return. Maximum of 200.                                                                      | [optional]                                                                             |
+| **name**            | **String** | Filter to return the categories that starts with the given category name.                                          | [optional]                                                                             |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **before** | **String**| The cursor that points to the start of the set of entities that has been returned. | [optional] 
-| **after** | **String**| The cursor that points to the end of the set of entities that has been returned. | [optional] 
-| **limit** | **String**| Number of entities to return. Maximum of 200. Deprecated in favour of pageSize, use CursorQueryParameters instead. | [optional] 
-| **pageSize** | **String**| Number of entities to return. Maximum of 200. | [optional] 
-| **name** | **String**| Filter to return the categories that starts with the given category name. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CategoryListing**](CategoryListing.html)
+[**CategoryListing**](CategoryListing.md)
 
 <a name="getKnowledgeKnowledgebaseLanguageCategory"></a>
 
 # **getKnowledgeKnowledgebaseLanguageCategory**
 
-
-
-> [KnowledgeExtendedCategory](KnowledgeExtendedCategory.html) getKnowledgeKnowledgebaseLanguageCategory(categoryId, knowledgeBaseId, languageCode)
+> [KnowledgeExtendedCategory](KnowledgeExtendedCategory.md) getKnowledgeKnowledgebaseLanguageCategory(categoryId, knowledgeBaseId, languageCode)
 
 Get category
 
+Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/categories/{categoryId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/categories/{categoryId}  
-
-Requires ALL permissions: 
-
-* knowledge:category:view
+- knowledge:category:view
 
 ### Example
 
@@ -490,36 +458,31 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                        | Notes                                                                                  |
+| ------------------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **categoryId**      | **String** | Category ID                        |
+| **knowledgeBaseId** | **String** | Knowledge base ID                  |
+| **languageCode**    | **String** | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **categoryId** | **String**| Category ID | 
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeExtendedCategory**](KnowledgeExtendedCategory.html)
+[**KnowledgeExtendedCategory**](KnowledgeExtendedCategory.md)
 
 <a name="getKnowledgeKnowledgebaseLanguageDocument"></a>
 
 # **getKnowledgeKnowledgebaseLanguageDocument**
 
-
-
-> [KnowledgeDocument](KnowledgeDocument.html) getKnowledgeKnowledgebaseLanguageDocument(documentId, knowledgeBaseId, languageCode)
+> [KnowledgeDocument](KnowledgeDocument.md) getKnowledgeKnowledgebaseLanguageDocument(documentId, knowledgeBaseId, languageCode)
 
 Get document
 
+Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/{documentId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/{documentId}  
-
-Requires ALL permissions: 
-
-* knowledge:document:view
+- knowledge:document:view
 
 ### Example
 
@@ -557,36 +520,31 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                        | Notes                                                                                  |
+| ------------------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **documentId**      | **String** | Document ID                        |
+| **knowledgeBaseId** | **String** | Knowledge base ID                  |
+| **languageCode**    | **String** | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **documentId** | **String**| Document ID | 
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeDocument**](KnowledgeDocument.html)
+[**KnowledgeDocument**](KnowledgeDocument.md)
 
 <a name="getKnowledgeKnowledgebaseLanguageDocuments"></a>
 
 # **getKnowledgeKnowledgebaseLanguageDocuments**
 
-
-
-> [DocumentListing](DocumentListing.html) getKnowledgeKnowledgebaseLanguageDocuments(knowledgeBaseId, languageCode, before, after, limit, pageSize, categories, title, sortBy, sortOrder, documentIds)
+> [DocumentListing](DocumentListing.md) getKnowledgeKnowledgebaseLanguageDocuments(knowledgeBaseId, languageCode, before, after, limit, pageSize, categories, title, sortBy, sortOrder, documentIds)
 
 Get documents
 
+Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents  
-
-Requires ALL permissions: 
-
-* knowledge:document:view
+- knowledge:document:view
 
 ### Example
 
@@ -632,44 +590,39 @@ try {
 
 ### Parameters
 
+| Name                | Type                                | Description                                                                                                        | Notes                                                                                  |
+| ------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| **knowledgeBaseId** | **String**                          | Knowledge base ID                                                                                                  |
+| **languageCode**    | **String**                          | Language code, format: iso2-LOCALE                                                                                 | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **before**          | **String**                          | The cursor that points to the start of the set of entities that has been returned.                                 | [optional]                                                                             |
+| **after**           | **String**                          | The cursor that points to the end of the set of entities that has been returned.                                   | [optional]                                                                             |
+| **limit**           | **String**                          | Number of entities to return. Maximum of 200. Deprecated in favour of pageSize, use CursorQueryParameters instead. | [optional]                                                                             |
+| **pageSize**        | **String**                          | Number of entities to return. Maximum of 200.                                                                      | [optional]                                                                             |
+| **categories**      | **String**                          | Filter by categories ids, comma separated values expected.                                                         | [optional]                                                                             |
+| **title**           | **String**                          | Filter by document title.                                                                                          | [optional]                                                                             |
+| **sortBy**          | **String**                          | Sort by.                                                                                                           | [optional]<br />**Values**: Title, Date                                                |
+| **sortOrder**       | **String**                          | Sort Order.                                                                                                        | [optional]<br />**Values**: ASC, ascending, DESC, descending                           |
+| **documentIds**     | [**List&lt;String&gt;**](String.md) | Comma-separated list of document identifiers to fetch by.                                                          | [optional]                                                                             |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **before** | **String**| The cursor that points to the start of the set of entities that has been returned. | [optional] 
-| **after** | **String**| The cursor that points to the end of the set of entities that has been returned. | [optional] 
-| **limit** | **String**| Number of entities to return. Maximum of 200. Deprecated in favour of pageSize, use CursorQueryParameters instead. | [optional] 
-| **pageSize** | **String**| Number of entities to return. Maximum of 200. | [optional] 
-| **categories** | **String**| Filter by categories ids, comma separated values expected. | [optional] 
-| **title** | **String**| Filter by document title. | [optional] 
-| **sortBy** | **String**| Sort by. | [optional]<br />**Values**: Title, Date 
-| **sortOrder** | **String**| Sort Order. | [optional]<br />**Values**: ASC, ascending, DESC, descending 
-| **documentIds** | [**List&lt;String&gt;**](String.html)| Comma-separated list of document identifiers to fetch by. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DocumentListing**](DocumentListing.html)
+[**DocumentListing**](DocumentListing.md)
 
 <a name="getKnowledgeKnowledgebaseLanguageDocumentsImport"></a>
 
 # **getKnowledgeKnowledgebaseLanguageDocumentsImport**
 
-
-
-> [KnowledgeImport](KnowledgeImport.html) getKnowledgeKnowledgebaseLanguageDocumentsImport(knowledgeBaseId, languageCode, importId)
+> [KnowledgeImport](KnowledgeImport.md) getKnowledgeKnowledgebaseLanguageDocumentsImport(knowledgeBaseId, languageCode, importId)
 
 Get import operation report
 
+Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/imports/{importId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/imports/{importId}  
-
-Requires ALL permissions: 
-
-* knowledge:document:add
+- knowledge:document:add
 
 ### Example
 
@@ -707,36 +660,31 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                        | Notes                                                                                  |
+| ------------------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **knowledgeBaseId** | **String** | Knowledge base ID                  |
+| **languageCode**    | **String** | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **importId**        | **String** | Import ID                          |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **importId** | **String**| Import ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeImport**](KnowledgeImport.html)
+[**KnowledgeImport**](KnowledgeImport.md)
 
 <a name="getKnowledgeKnowledgebaseLanguageTraining"></a>
 
 # **getKnowledgeKnowledgebaseLanguageTraining**
 
-
-
-> [KnowledgeTraining](KnowledgeTraining.html) getKnowledgeKnowledgebaseLanguageTraining(knowledgeBaseId, languageCode, trainingId)
+> [KnowledgeTraining](KnowledgeTraining.md) getKnowledgeKnowledgebaseLanguageTraining(knowledgeBaseId, languageCode, trainingId)
 
 Get training detail
 
+Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/trainings/{trainingId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/trainings/{trainingId}  
-
-Requires ALL permissions: 
-
-* knowledge:training:view
+- knowledge:training:view
 
 ### Example
 
@@ -774,36 +722,31 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                        | Notes                                                                                  |
+| ------------------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **knowledgeBaseId** | **String** | Knowledge base ID                  |
+| **languageCode**    | **String** | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **trainingId**      | **String** | Training ID                        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **trainingId** | **String**| Training ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeTraining**](KnowledgeTraining.html)
+[**KnowledgeTraining**](KnowledgeTraining.md)
 
 <a name="getKnowledgeKnowledgebaseLanguageTrainings"></a>
 
 # **getKnowledgeKnowledgebaseLanguageTrainings**
 
-
-
-> [TrainingListing](TrainingListing.html) getKnowledgeKnowledgebaseLanguageTrainings(knowledgeBaseId, languageCode, before, after, limit, pageSize, knowledgeDocumentsState)
+> [TrainingListing](TrainingListing.md) getKnowledgeKnowledgebaseLanguageTrainings(knowledgeBaseId, languageCode, before, after, limit, pageSize, knowledgeDocumentsState)
 
 Get all trainings information for a knowledgebase
 
+Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/trainings
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/trainings  
-
-Requires ALL permissions: 
-
-* knowledge:training:view
+- knowledge:training:view
 
 ### Example
 
@@ -845,40 +788,35 @@ try {
 
 ### Parameters
 
+| Name                        | Type       | Description                                                                                                        | Notes                                                                                  |
+| --------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| **knowledgeBaseId**         | **String** | Knowledge base ID                                                                                                  |
+| **languageCode**            | **String** | Language code, format: iso2-LOCALE                                                                                 | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **before**                  | **String** | The cursor that points to the start of the set of entities that has been returned.                                 | [optional]                                                                             |
+| **after**                   | **String** | The cursor that points to the end of the set of entities that has been returned.                                   | [optional]                                                                             |
+| **limit**                   | **String** | Number of entities to return. Maximum of 200. Deprecated in favour of pageSize, use CursorQueryParameters instead. | [optional]                                                                             |
+| **pageSize**                | **String** | Number of entities to return. Maximum of 200.                                                                      | [optional]                                                                             |
+| **knowledgeDocumentsState** | **String** | Return the training with the specified state of the trained documents.                                             | [optional]<br />**Values**: Draft, Active, Discarded, Archived                         |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **before** | **String**| The cursor that points to the start of the set of entities that has been returned. | [optional] 
-| **after** | **String**| The cursor that points to the end of the set of entities that has been returned. | [optional] 
-| **limit** | **String**| Number of entities to return. Maximum of 200. Deprecated in favour of pageSize, use CursorQueryParameters instead. | [optional] 
-| **pageSize** | **String**| Number of entities to return. Maximum of 200. | [optional] 
-| **knowledgeDocumentsState** | **String**| Return the training with the specified state of the trained documents. | [optional]<br />**Values**: Draft, Active, Discarded, Archived 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TrainingListing**](TrainingListing.html)
+[**TrainingListing**](TrainingListing.md)
 
 <a name="getKnowledgeKnowledgebases"></a>
 
 # **getKnowledgeKnowledgebases**
 
-
-
-> [KnowledgeBaseListing](KnowledgeBaseListing.html) getKnowledgeKnowledgebases(before, after, limit, pageSize, name, coreLanguage, published, sortBy, sortOrder)
+> [KnowledgeBaseListing](KnowledgeBaseListing.md) getKnowledgeKnowledgebases(before, after, limit, pageSize, name, coreLanguage, published, sortBy, sortOrder)
 
 Get knowledge bases
 
+Wraps GET /api/v2/knowledge/knowledgebases
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/knowledge/knowledgebases  
-
-Requires ALL permissions: 
-
-* knowledge:knowledgebase:view
+- knowledge:knowledgebase:view
 
 ### Example
 
@@ -922,42 +860,37 @@ try {
 
 ### Parameters
 
+| Name             | Type        | Description                                                                                                        | Notes                                                                                            |
+| ---------------- | ----------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| **before**       | **String**  | The cursor that points to the start of the set of entities that has been returned.                                 | [optional]                                                                                       |
+| **after**        | **String**  | The cursor that points to the end of the set of entities that has been returned.                                   | [optional]                                                                                       |
+| **limit**        | **String**  | Number of entities to return. Maximum of 200. Deprecated in favour of pageSize, use CursorQueryParameters instead. | [optional]                                                                                       |
+| **pageSize**     | **String**  | Number of entities to return. Maximum of 200.                                                                      | [optional]                                                                                       |
+| **name**         | **String**  | Filter by Name.                                                                                                    | [optional]                                                                                       |
+| **coreLanguage** | **String**  | Filter by core language.                                                                                           | [optional]<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **published**    | **Boolean** | Filter by published status.                                                                                        | [optional]                                                                                       |
+| **sortBy**       | **String**  | Sort by.                                                                                                           | [optional]<br />**Values**: Name, Date                                                           |
+| **sortOrder**    | **String**  | Sort Order.                                                                                                        | [optional]<br />**Values**: ASC, ascending, DESC, descending                                     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **before** | **String**| The cursor that points to the start of the set of entities that has been returned. | [optional] 
-| **after** | **String**| The cursor that points to the end of the set of entities that has been returned. | [optional] 
-| **limit** | **String**| Number of entities to return. Maximum of 200. Deprecated in favour of pageSize, use CursorQueryParameters instead. | [optional] 
-| **pageSize** | **String**| Number of entities to return. Maximum of 200. | [optional] 
-| **name** | **String**| Filter by Name. | [optional] 
-| **coreLanguage** | **String**| Filter by core language. | [optional]<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **published** | **Boolean**| Filter by published status. | [optional] 
-| **sortBy** | **String**| Sort by. | [optional]<br />**Values**: Name, Date 
-| **sortOrder** | **String**| Sort Order. | [optional]<br />**Values**: ASC, ascending, DESC, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeBaseListing**](KnowledgeBaseListing.html)
+[**KnowledgeBaseListing**](KnowledgeBaseListing.md)
 
 <a name="patchKnowledgeKnowledgebase"></a>
 
 # **patchKnowledgeKnowledgebase**
 
-
-
-> [KnowledgeBase](KnowledgeBase.html) patchKnowledgeKnowledgebase(knowledgeBaseId, body)
+> [KnowledgeBase](KnowledgeBase.md) patchKnowledgeKnowledgebase(knowledgeBaseId, body)
 
 Update knowledge base
 
+Wraps PATCH /api/v2/knowledge/knowledgebases/{knowledgeBaseId}
 
+Requires ALL permissions:
 
-Wraps PATCH /api/v2/knowledge/knowledgebases/{knowledgeBaseId}  
-
-Requires ALL permissions: 
-
-* knowledge:knowledgebase:edit
+- knowledge:knowledgebase:edit
 
 ### Example
 
@@ -982,7 +915,7 @@ Configuration.setDefaultApiClient(apiClient);
 
 KnowledgeApi apiInstance = new KnowledgeApi();
 String knowledgeBaseId = "knowledgeBaseId_example"; // String | Knowledge base ID
-KnowledgeBase body = new KnowledgeBase(); // KnowledgeBase | 
+KnowledgeBase body = new KnowledgeBase(); // KnowledgeBase |
 try {
     KnowledgeBase result = apiInstance.patchKnowledgeKnowledgebase(knowledgeBaseId, body);
     System.out.println(result);
@@ -994,35 +927,30 @@ try {
 
 ### Parameters
 
+| Name                | Type                                  | Description       | Notes |
+| ------------------- | ------------------------------------- | ----------------- | ----- |
+| **knowledgeBaseId** | **String**                            | Knowledge base ID |
+| **body**            | [**KnowledgeBase**](KnowledgeBase.md) |                   |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **body** | [**KnowledgeBase**](KnowledgeBase.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeBase**](KnowledgeBase.html)
+[**KnowledgeBase**](KnowledgeBase.md)
 
 <a name="patchKnowledgeKnowledgebaseLanguageCategory"></a>
 
 # **patchKnowledgeKnowledgebaseLanguageCategory**
 
-
-
-> [KnowledgeExtendedCategory](KnowledgeExtendedCategory.html) patchKnowledgeKnowledgebaseLanguageCategory(categoryId, knowledgeBaseId, languageCode, body)
+> [KnowledgeExtendedCategory](KnowledgeExtendedCategory.md) patchKnowledgeKnowledgebaseLanguageCategory(categoryId, knowledgeBaseId, languageCode, body)
 
 Update category
 
+Wraps PATCH /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/categories/{categoryId}
 
+Requires ALL permissions:
 
-Wraps PATCH /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/categories/{categoryId}  
-
-Requires ALL permissions: 
-
-* knowledge:category:edit
+- knowledge:category:edit
 
 ### Example
 
@@ -1049,7 +977,7 @@ KnowledgeApi apiInstance = new KnowledgeApi();
 String categoryId = "categoryId_example"; // String | Category ID
 String knowledgeBaseId = "knowledgeBaseId_example"; // String | Knowledge base ID
 String languageCode = "en-US"; // String | Language code, format: iso2-LOCALE
-KnowledgeCategoryRequest body = new KnowledgeCategoryRequest(); // KnowledgeCategoryRequest | 
+KnowledgeCategoryRequest body = new KnowledgeCategoryRequest(); // KnowledgeCategoryRequest |
 try {
     KnowledgeExtendedCategory result = apiInstance.patchKnowledgeKnowledgebaseLanguageCategory(categoryId, knowledgeBaseId, languageCode, body);
     System.out.println(result);
@@ -1061,37 +989,32 @@ try {
 
 ### Parameters
 
+| Name                | Type                                                        | Description                        | Notes                                                                                  |
+| ------------------- | ----------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **categoryId**      | **String**                                                  | Category ID                        |
+| **knowledgeBaseId** | **String**                                                  | Knowledge base ID                  |
+| **languageCode**    | **String**                                                  | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **body**            | [**KnowledgeCategoryRequest**](KnowledgeCategoryRequest.md) |                                    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **categoryId** | **String**| Category ID | 
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **body** | [**KnowledgeCategoryRequest**](KnowledgeCategoryRequest.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeExtendedCategory**](KnowledgeExtendedCategory.html)
+[**KnowledgeExtendedCategory**](KnowledgeExtendedCategory.md)
 
 <a name="patchKnowledgeKnowledgebaseLanguageDocument"></a>
 
 # **patchKnowledgeKnowledgebaseLanguageDocument**
 
-
-
-> [KnowledgeDocument](KnowledgeDocument.html) patchKnowledgeKnowledgebaseLanguageDocument(documentId, knowledgeBaseId, languageCode, body)
+> [KnowledgeDocument](KnowledgeDocument.md) patchKnowledgeKnowledgebaseLanguageDocument(documentId, knowledgeBaseId, languageCode, body)
 
 Update document
 
+Wraps PATCH /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/{documentId}
 
+Requires ALL permissions:
 
-Wraps PATCH /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/{documentId}  
-
-Requires ALL permissions: 
-
-* knowledge:document:edit
+- knowledge:document:edit
 
 ### Example
 
@@ -1118,7 +1041,7 @@ KnowledgeApi apiInstance = new KnowledgeApi();
 String documentId = "documentId_example"; // String | Document ID
 String knowledgeBaseId = "knowledgeBaseId_example"; // String | Knowledge base ID
 String languageCode = "en-US"; // String | Language code, format: iso2-LOCALE
-KnowledgeDocumentRequest body = new KnowledgeDocumentRequest(); // KnowledgeDocumentRequest | 
+KnowledgeDocumentRequest body = new KnowledgeDocumentRequest(); // KnowledgeDocumentRequest |
 try {
     KnowledgeDocument result = apiInstance.patchKnowledgeKnowledgebaseLanguageDocument(documentId, knowledgeBaseId, languageCode, body);
     System.out.println(result);
@@ -1130,37 +1053,32 @@ try {
 
 ### Parameters
 
+| Name                | Type                                                        | Description                        | Notes                                                                                  |
+| ------------------- | ----------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **documentId**      | **String**                                                  | Document ID                        |
+| **knowledgeBaseId** | **String**                                                  | Knowledge base ID                  |
+| **languageCode**    | **String**                                                  | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **body**            | [**KnowledgeDocumentRequest**](KnowledgeDocumentRequest.md) |                                    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **documentId** | **String**| Document ID | 
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **body** | [**KnowledgeDocumentRequest**](KnowledgeDocumentRequest.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeDocument**](KnowledgeDocument.html)
+[**KnowledgeDocument**](KnowledgeDocument.md)
 
 <a name="patchKnowledgeKnowledgebaseLanguageDocuments"></a>
 
 # **patchKnowledgeKnowledgebaseLanguageDocuments**
 
-
-
-> [DocumentListing](DocumentListing.html) patchKnowledgeKnowledgebaseLanguageDocuments(knowledgeBaseId, languageCode, body)
+> [DocumentListing](DocumentListing.md) patchKnowledgeKnowledgebaseLanguageDocuments(knowledgeBaseId, languageCode, body)
 
 Update documents collection
 
+Wraps PATCH /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents
 
+Requires ALL permissions:
 
-Wraps PATCH /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents  
-
-Requires ALL permissions: 
-
-* knowledge:document:edit
+- knowledge:document:edit
 
 ### Example
 
@@ -1186,7 +1104,7 @@ Configuration.setDefaultApiClient(apiClient);
 KnowledgeApi apiInstance = new KnowledgeApi();
 String knowledgeBaseId = "knowledgeBaseId_example"; // String | Knowledge base ID
 String languageCode = "en-US"; // String | Language code, format: iso2-LOCALE
-List<KnowledgeDocumentBulkRequest> body = Arrays.asList(new KnowledgeDocumentBulkRequest()); // List<KnowledgeDocumentBulkRequest> | 
+List<KnowledgeDocumentBulkRequest> body = Arrays.asList(new KnowledgeDocumentBulkRequest()); // List<KnowledgeDocumentBulkRequest> |
 try {
     DocumentListing result = apiInstance.patchKnowledgeKnowledgebaseLanguageDocuments(knowledgeBaseId, languageCode, body);
     System.out.println(result);
@@ -1198,37 +1116,32 @@ try {
 
 ### Parameters
 
+| Name                | Type                                                                            | Description                        | Notes                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **knowledgeBaseId** | **String**                                                                      | Knowledge base ID                  |
+| **languageCode**    | **String**                                                                      | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **body**            | [**List&lt;KnowledgeDocumentBulkRequest&gt;**](KnowledgeDocumentBulkRequest.md) |                                    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **body** | [**List&lt;KnowledgeDocumentBulkRequest&gt;**](KnowledgeDocumentBulkRequest.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DocumentListing**](DocumentListing.html)
+[**DocumentListing**](DocumentListing.md)
 
 <a name="patchKnowledgeKnowledgebaseLanguageDocumentsImport"></a>
 
 # **patchKnowledgeKnowledgebaseLanguageDocumentsImport**
 
-
-
-> [KnowledgeImport](KnowledgeImport.html) patchKnowledgeKnowledgebaseLanguageDocumentsImport(knowledgeBaseId, languageCode, importId, body)
+> [KnowledgeImport](KnowledgeImport.md) patchKnowledgeKnowledgebaseLanguageDocumentsImport(knowledgeBaseId, languageCode, importId, body)
 
 Start import operation
 
+Wraps PATCH /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/imports/{importId}
 
+Requires ALL permissions:
 
-Wraps PATCH /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/imports/{importId}  
-
-Requires ALL permissions: 
-
-* knowledge:document:edit
-* knowledge:document:add
+- knowledge:document:edit
+- knowledge:document:add
 
 ### Example
 
@@ -1255,7 +1168,7 @@ KnowledgeApi apiInstance = new KnowledgeApi();
 String knowledgeBaseId = "knowledgeBaseId_example"; // String | Knowledge base ID
 String languageCode = "en-US"; // String | Language code, format: iso2-LOCALE
 String importId = "importId_example"; // String | Import ID
-ImportStatusRequest body = new ImportStatusRequest(); // ImportStatusRequest | 
+ImportStatusRequest body = new ImportStatusRequest(); // ImportStatusRequest |
 try {
     KnowledgeImport result = apiInstance.patchKnowledgeKnowledgebaseLanguageDocumentsImport(knowledgeBaseId, languageCode, importId, body);
     System.out.println(result);
@@ -1267,37 +1180,32 @@ try {
 
 ### Parameters
 
+| Name                | Type                                              | Description                        | Notes                                                                                  |
+| ------------------- | ------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **knowledgeBaseId** | **String**                                        | Knowledge base ID                  |
+| **languageCode**    | **String**                                        | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **importId**        | **String**                                        | Import ID                          |
+| **body**            | [**ImportStatusRequest**](ImportStatusRequest.md) |                                    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **importId** | **String**| Import ID | 
-| **body** | [**ImportStatusRequest**](ImportStatusRequest.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeImport**](KnowledgeImport.html)
+[**KnowledgeImport**](KnowledgeImport.md)
 
 <a name="postKnowledgeDocumentuploads"></a>
 
 # **postKnowledgeDocumentuploads**
 
-
-
-> [UploadUrlResponse](UploadUrlResponse.html) postKnowledgeDocumentuploads(body)
+> [UploadUrlResponse](UploadUrlResponse.md) postKnowledgeDocumentuploads(body)
 
 Creates a presigned URL for uploading a knowledge import file with a set of documents
 
+Wraps POST /api/v2/knowledge/documentuploads
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/knowledge/documentuploads  
-
-Requires ALL permissions: 
-
-* knowledge:document:upload
+- knowledge:document:upload
 
 ### Example
 
@@ -1333,34 +1241,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                        | Description | Notes |
+| -------- | ------------------------------------------- | ----------- | ----- |
+| **body** | [**UploadUrlRequest**](UploadUrlRequest.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**UploadUrlRequest**](UploadUrlRequest.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UploadUrlResponse**](UploadUrlResponse.html)
+[**UploadUrlResponse**](UploadUrlResponse.md)
 
 <a name="postKnowledgeKnowledgebaseLanguageCategories"></a>
 
 # **postKnowledgeKnowledgebaseLanguageCategories**
 
-
-
-> [KnowledgeExtendedCategory](KnowledgeExtendedCategory.html) postKnowledgeKnowledgebaseLanguageCategories(knowledgeBaseId, languageCode, body)
+> [KnowledgeExtendedCategory](KnowledgeExtendedCategory.md) postKnowledgeKnowledgebaseLanguageCategories(knowledgeBaseId, languageCode, body)
 
 Create new category
 
+Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/categories
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/categories  
-
-Requires ALL permissions: 
-
-* knowledge:category:add
+- knowledge:category:add
 
 ### Example
 
@@ -1386,7 +1289,7 @@ Configuration.setDefaultApiClient(apiClient);
 KnowledgeApi apiInstance = new KnowledgeApi();
 String knowledgeBaseId = "knowledgeBaseId_example"; // String | Knowledge base ID
 String languageCode = "en-US"; // String | Language code, format: iso2-LOCALE
-KnowledgeCategoryRequest body = new KnowledgeCategoryRequest(); // KnowledgeCategoryRequest | 
+KnowledgeCategoryRequest body = new KnowledgeCategoryRequest(); // KnowledgeCategoryRequest |
 try {
     KnowledgeExtendedCategory result = apiInstance.postKnowledgeKnowledgebaseLanguageCategories(knowledgeBaseId, languageCode, body);
     System.out.println(result);
@@ -1398,36 +1301,31 @@ try {
 
 ### Parameters
 
+| Name                | Type                                                        | Description                        | Notes                                                                                  |
+| ------------------- | ----------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **knowledgeBaseId** | **String**                                                  | Knowledge base ID                  |
+| **languageCode**    | **String**                                                  | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **body**            | [**KnowledgeCategoryRequest**](KnowledgeCategoryRequest.md) |                                    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **body** | [**KnowledgeCategoryRequest**](KnowledgeCategoryRequest.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeExtendedCategory**](KnowledgeExtendedCategory.html)
+[**KnowledgeExtendedCategory**](KnowledgeExtendedCategory.md)
 
 <a name="postKnowledgeKnowledgebaseLanguageDocuments"></a>
 
 # **postKnowledgeKnowledgebaseLanguageDocuments**
 
-
-
-> [KnowledgeDocument](KnowledgeDocument.html) postKnowledgeKnowledgebaseLanguageDocuments(knowledgeBaseId, languageCode, body)
+> [KnowledgeDocument](KnowledgeDocument.md) postKnowledgeKnowledgebaseLanguageDocuments(knowledgeBaseId, languageCode, body)
 
 Create document
 
+Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents  
-
-Requires ALL permissions: 
-
-* knowledge:document:add
+- knowledge:document:add
 
 ### Example
 
@@ -1453,7 +1351,7 @@ Configuration.setDefaultApiClient(apiClient);
 KnowledgeApi apiInstance = new KnowledgeApi();
 String knowledgeBaseId = "knowledgeBaseId_example"; // String | Knowledge base ID
 String languageCode = "en-US"; // String | Language code, format: iso2-LOCALE
-KnowledgeDocumentRequest body = new KnowledgeDocumentRequest(); // KnowledgeDocumentRequest | 
+KnowledgeDocumentRequest body = new KnowledgeDocumentRequest(); // KnowledgeDocumentRequest |
 try {
     KnowledgeDocument result = apiInstance.postKnowledgeKnowledgebaseLanguageDocuments(knowledgeBaseId, languageCode, body);
     System.out.println(result);
@@ -1465,36 +1363,31 @@ try {
 
 ### Parameters
 
+| Name                | Type                                                        | Description                        | Notes                                                                                  |
+| ------------------- | ----------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **knowledgeBaseId** | **String**                                                  | Knowledge base ID                  |
+| **languageCode**    | **String**                                                  | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **body**            | [**KnowledgeDocumentRequest**](KnowledgeDocumentRequest.md) |                                    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **body** | [**KnowledgeDocumentRequest**](KnowledgeDocumentRequest.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeDocument**](KnowledgeDocument.html)
+[**KnowledgeDocument**](KnowledgeDocument.md)
 
 <a name="postKnowledgeKnowledgebaseLanguageDocumentsImports"></a>
 
 # **postKnowledgeKnowledgebaseLanguageDocumentsImports**
 
-
-
-> [KnowledgeImport](KnowledgeImport.html) postKnowledgeKnowledgebaseLanguageDocumentsImports(knowledgeBaseId, languageCode, body)
+> [KnowledgeImport](KnowledgeImport.md) postKnowledgeKnowledgebaseLanguageDocumentsImports(knowledgeBaseId, languageCode, body)
 
 Create import operation
 
+Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/imports
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/documents/imports  
-
-Requires ALL permissions: 
-
-* knowledge:document:add
+- knowledge:document:add
 
 ### Example
 
@@ -1520,7 +1413,7 @@ Configuration.setDefaultApiClient(apiClient);
 KnowledgeApi apiInstance = new KnowledgeApi();
 String knowledgeBaseId = "knowledgeBaseId_example"; // String | Knowledge base ID
 String languageCode = "en-US"; // String | Language code, format: iso2-LOCALE
-KnowledgeImport body = new KnowledgeImport(); // KnowledgeImport | 
+KnowledgeImport body = new KnowledgeImport(); // KnowledgeImport |
 try {
     KnowledgeImport result = apiInstance.postKnowledgeKnowledgebaseLanguageDocumentsImports(knowledgeBaseId, languageCode, body);
     System.out.println(result);
@@ -1532,36 +1425,31 @@ try {
 
 ### Parameters
 
+| Name                | Type                                      | Description                        | Notes                                                                                  |
+| ------------------- | ----------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **knowledgeBaseId** | **String**                                | Knowledge base ID                  |
+| **languageCode**    | **String**                                | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **body**            | [**KnowledgeImport**](KnowledgeImport.md) |                                    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **body** | [**KnowledgeImport**](KnowledgeImport.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeImport**](KnowledgeImport.html)
+[**KnowledgeImport**](KnowledgeImport.md)
 
 <a name="postKnowledgeKnowledgebaseLanguageTrainingPromote"></a>
 
 # **postKnowledgeKnowledgebaseLanguageTrainingPromote**
 
-
-
-> [KnowledgeTraining](KnowledgeTraining.html) postKnowledgeKnowledgebaseLanguageTrainingPromote(knowledgeBaseId, languageCode, trainingId)
+> [KnowledgeTraining](KnowledgeTraining.md) postKnowledgeKnowledgebaseLanguageTrainingPromote(knowledgeBaseId, languageCode, trainingId)
 
 Promote trained documents from draft state to active.
 
+Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/trainings/{trainingId}/promote
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/trainings/{trainingId}/promote  
-
-Requires ALL permissions: 
-
-* knowledge:training:edit
+- knowledge:training:edit
 
 ### Example
 
@@ -1599,36 +1487,31 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                        | Notes                                                                                  |
+| ------------------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **knowledgeBaseId** | **String** | Knowledge base ID                  |
+| **languageCode**    | **String** | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
+| **trainingId**      | **String** | Training ID                        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
-| **trainingId** | **String**| Training ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeTraining**](KnowledgeTraining.html)
+[**KnowledgeTraining**](KnowledgeTraining.md)
 
 <a name="postKnowledgeKnowledgebaseLanguageTrainings"></a>
 
 # **postKnowledgeKnowledgebaseLanguageTrainings**
 
-
-
-> [KnowledgeTraining](KnowledgeTraining.html) postKnowledgeKnowledgebaseLanguageTrainings(knowledgeBaseId, languageCode)
+> [KnowledgeTraining](KnowledgeTraining.md) postKnowledgeKnowledgebaseLanguageTrainings(knowledgeBaseId, languageCode)
 
 Trigger training
 
+Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/trainings
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/languages/{languageCode}/trainings  
-
-Requires ALL permissions: 
-
-* knowledge:training:create
+- knowledge:training:create
 
 ### Example
 
@@ -1665,35 +1548,30 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                        | Notes                                                                                  |
+| ------------------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **knowledgeBaseId** | **String** | Knowledge base ID                  |
+| **languageCode**    | **String** | Language code, format: iso2-LOCALE | <br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **languageCode** | **String**| Language code, format: iso2-LOCALE |<br />**Values**: en-US, en-UK, en-AU, de-DE, es-US, es-ES, fr-FR, pt-BR, nl-NL, it-IT 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeTraining**](KnowledgeTraining.html)
+[**KnowledgeTraining**](KnowledgeTraining.md)
 
 <a name="postKnowledgeKnowledgebaseSearch"></a>
 
 # **postKnowledgeKnowledgebaseSearch**
 
-
-
-> [KnowledgeSearchResponse](KnowledgeSearchResponse.html) postKnowledgeKnowledgebaseSearch(knowledgeBaseId, body)
+> [KnowledgeSearchResponse](KnowledgeSearchResponse.md) postKnowledgeKnowledgebaseSearch(knowledgeBaseId, body)
 
 Search Documents
 
+Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/search
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/search  
-
-Requires ALL permissions: 
-
-* knowledge:knowledgebase:search
+- knowledge:knowledgebase:search
 
 ### Example
 
@@ -1718,7 +1596,7 @@ Configuration.setDefaultApiClient(apiClient);
 
 KnowledgeApi apiInstance = new KnowledgeApi();
 String knowledgeBaseId = "knowledgeBaseId_example"; // String | Knowledge base ID
-KnowledgeSearchRequest body = new KnowledgeSearchRequest(); // KnowledgeSearchRequest | 
+KnowledgeSearchRequest body = new KnowledgeSearchRequest(); // KnowledgeSearchRequest |
 try {
     KnowledgeSearchResponse result = apiInstance.postKnowledgeKnowledgebaseSearch(knowledgeBaseId, body);
     System.out.println(result);
@@ -1730,35 +1608,30 @@ try {
 
 ### Parameters
 
+| Name                | Type                                                    | Description       | Notes      |
+| ------------------- | ------------------------------------------------------- | ----------------- | ---------- |
+| **knowledgeBaseId** | **String**                                              | Knowledge base ID |
+| **body**            | [**KnowledgeSearchRequest**](KnowledgeSearchRequest.md) |                   | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **body** | [**KnowledgeSearchRequest**](KnowledgeSearchRequest.html)|  | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeSearchResponse**](KnowledgeSearchResponse.html)
+[**KnowledgeSearchResponse**](KnowledgeSearchResponse.md)
 
 <a name="postKnowledgeKnowledgebases"></a>
 
 # **postKnowledgeKnowledgebases**
 
-
-
-> [KnowledgeBase](KnowledgeBase.html) postKnowledgeKnowledgebases(body)
+> [KnowledgeBase](KnowledgeBase.md) postKnowledgeKnowledgebases(body)
 
 Create new knowledge base
 
+Wraps POST /api/v2/knowledge/knowledgebases
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/knowledge/knowledgebases  
-
-Requires ALL permissions: 
-
-* knowledge:knowledgebase:add
+- knowledge:knowledgebase:add
 
 ### Example
 
@@ -1782,7 +1655,7 @@ ApiClient apiClient = ApiClient.Builder.standard()
 Configuration.setDefaultApiClient(apiClient);
 
 KnowledgeApi apiInstance = new KnowledgeApi();
-KnowledgeBase body = new KnowledgeBase(); // KnowledgeBase | 
+KnowledgeBase body = new KnowledgeBase(); // KnowledgeBase |
 try {
     KnowledgeBase result = apiInstance.postKnowledgeKnowledgebases(body);
     System.out.println(result);
@@ -1794,14 +1667,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                                  | Description | Notes |
+| -------- | ------------------------------------- | ----------- | ----- |
+| **body** | [**KnowledgeBase**](KnowledgeBase.md) |             |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**KnowledgeBase**](KnowledgeBase.html)|  | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeBase**](KnowledgeBase.html)
-
+[**KnowledgeBase**](KnowledgeBase.md)

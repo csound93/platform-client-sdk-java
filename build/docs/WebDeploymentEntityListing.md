@@ -1,17 +1,15 @@
 ---
 title: WebDeploymentEntityListing
 ---
-## WebDeploymentEntityListing
 
+## WebDeploymentEntityListing
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **total** | <!----><!---->**Long**<!----> |  |  [optional] |
-| **entities** | <!----><!---->[**List&lt;WebDeployment&gt;**](WebDeployment.html)<!----> |  |  [optional] |
-| **selfUri** | <!----><!---->**String**<!----> |  |  [optional] |
+| Name         | Type                                                                   | Description | Notes      |
+| ------------ | ---------------------------------------------------------------------- | ----------- | ---------- |
+| **total**    | <!----><!---->**Long**<!---->                                          |             | [optional] |
+| **entities** | <!----><!---->[**List&lt;WebDeployment&gt;**](WebDeployment.md)<!----> |             | [optional] |
+| **selfUri**  | <!----><!---->**String**<!---->                                        |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

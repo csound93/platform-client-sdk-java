@@ -1,19 +1,17 @@
 ---
 title: TrunkInstanceTopicTrunk
 ---
-## TrunkInstanceTopicTrunk
 
+## TrunkInstanceTopicTrunk
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **id** | <!----><!---->**String**<!----> |  |  [optional] |
-| **connectedStatus** | <!----><!---->[**TrunkInstanceTopicTrunkConnectedStatus**](TrunkInstanceTopicTrunkConnectedStatus.html)<!----> |  |  [optional] |
-| **optionsStatus** | <!----><!---->[**List&lt;TrunkInstanceTopicTrunkMetricsOptions&gt;**](TrunkInstanceTopicTrunkMetricsOptions.html)<!----> |  |  [optional] |
-| **registersStatus** | <!----><!---->[**List&lt;TrunkInstanceTopicTrunkMetricsRegisters&gt;**](TrunkInstanceTopicTrunkMetricsRegisters.html)<!----> |  |  [optional] |
-| **ipStatus** | <!----><!---->[**TrunkInstanceTopicTrunkMetricsNetworkTypeIp**](TrunkInstanceTopicTrunkMetricsNetworkTypeIp.html)<!----> |  |  [optional] |
+| Name                | Type                                                                                                                       | Description | Notes      |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **id**              | <!----><!---->**String**<!---->                                                                                            |             | [optional] |
+| **connectedStatus** | <!----><!---->[**TrunkInstanceTopicTrunkConnectedStatus**](TrunkInstanceTopicTrunkConnectedStatus.md)<!---->               |             | [optional] |
+| **optionsStatus**   | <!----><!---->[**List&lt;TrunkInstanceTopicTrunkMetricsOptions&gt;**](TrunkInstanceTopicTrunkMetricsOptions.md)<!---->     |             | [optional] |
+| **registersStatus** | <!----><!---->[**List&lt;TrunkInstanceTopicTrunkMetricsRegisters&gt;**](TrunkInstanceTopicTrunkMetricsRegisters.md)<!----> |             | [optional] |
+| **ipStatus**        | <!----><!---->[**TrunkInstanceTopicTrunkMetricsNetworkTypeIp**](TrunkInstanceTopicTrunkMetricsNetworkTypeIp.md)<!---->     |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

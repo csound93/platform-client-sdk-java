@@ -1,17 +1,15 @@
 ---
 title: SurveyScoringSet
 ---
-## SurveyScoringSet
 
+## SurveyScoringSet
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **totalScore** | <!----><!---->**Float**<!----> |  |  [optional] |
-| **npsScore** | <!----><!---->**Integer**<!----> |  |  [optional] |
-| **questionGroupScores** | <!----><!---->[**List&lt;SurveyQuestionGroupScore&gt;**](SurveyQuestionGroupScore.html)<!----> |  |  [optional] |
+| Name                    | Type                                                                                         | Description | Notes      |
+| ----------------------- | -------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **totalScore**          | <!----><!---->**Float**<!---->                                                               |             | [optional] |
+| **npsScore**            | <!----><!---->**Integer**<!---->                                                             |             | [optional] |
+| **questionGroupScores** | <!----><!---->[**List&lt;SurveyQuestionGroupScore&gt;**](SurveyQuestionGroupScore.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

@@ -1,16 +1,14 @@
 ---
 title: CreateCallbackResponse
 ---
-## CreateCallbackResponse
 
+## CreateCallbackResponse
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **conversation** | <!----><!---->[**DomainEntityRef**](DomainEntityRef.html)<!----> | The conversation associated with the callback |  |
-| **callbackIdentifiers** | <!----><!---->[**List&lt;CallbackIdentifier&gt;**](CallbackIdentifier.html)<!----> | The list of communication identifiers for the callback participants |  |
+| Name                    | Type                                                                             | Description                                                         | Notes |
+| ----------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----- |
+| **conversation**        | <!----><!---->[**DomainEntityRef**](DomainEntityRef.md)<!---->                   | The conversation associated with the callback                       |       |
+| **callbackIdentifiers** | <!----><!---->[**List&lt;CallbackIdentifier&gt;**](CallbackIdentifier.md)<!----> | The list of communication identifiers for the callback participants |       |
+
 {: class="table table-striped"}
-
-
-

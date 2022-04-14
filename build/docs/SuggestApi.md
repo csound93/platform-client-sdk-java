@@ -1,35 +1,33 @@
 ---
 title: SuggestApi
 ---
+
 ## SuggestApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**getSearch**](SuggestApi.html#getSearch) | Search using the q64 value returned from a previous search. |
-| [**getSearchSuggest**](SuggestApi.html#getSearchSuggest) | Suggest resources using the q64 value returned from a previous suggest query. |
-| [**postSearch**](SuggestApi.html#postSearch) | Search resources. |
-| [**postSearchSuggest**](SuggestApi.html#postSearchSuggest) | Suggest resources. |
+| Method                                                   | Description                                                                   |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| [**getSearch**](SuggestApi.md#getSearch)                 | Search using the q64 value returned from a previous search.                   |
+| [**getSearchSuggest**](SuggestApi.md#getSearchSuggest)   | Suggest resources using the q64 value returned from a previous suggest query. |
+| [**postSearch**](SuggestApi.md#postSearch)               | Search resources.                                                             |
+| [**postSearchSuggest**](SuggestApi.md#postSearchSuggest) | Suggest resources.                                                            |
+
 {: class="table-striped"}
 
 <a name="getSearch"></a>
 
 # **getSearch**
 
-
-
-> [JsonNodeSearchResponse](JsonNodeSearchResponse.html) getSearch(q64, expand, profile)
+> [JsonNodeSearchResponse](JsonNodeSearchResponse.md) getSearch(q64, expand, profile)
 
 Search using the q64 value returned from a previous search.
 
+Wraps GET /api/v2/search
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/search  
-
-Requires ANY permissions: 
-
-* directory:user:view
+- directory:user:view
 
 ### Example
 
@@ -67,36 +65,31 @@ try {
 
 ### Parameters
 
+| Name        | Type                                | Description                     | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ----------- | ----------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **q64**     | **String**                          | q64                             |
+| **expand**  | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand | [optional]<br />**Values**: routingStatus, presence, conversationSummary, outOfOffice, geolocation, station, authorization, lasttokenissued, dateLastLogin, authorization.unusedRoles, team, profileSkills, certifications, locations, groups, skills, languages, languagePreference, employerInfo, biography, callerUser.routingStatus, callerUser.primaryPresence, callerUser.conversationSummary, callerUser.outOfOffice, callerUser.geolocation, images, addressVerificationDetails |
+| **profile** | **Boolean**                         | profile                         | [optional] [default to true]                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **q64** | **String**| q64 | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: routingStatus, presence, conversationSummary, outOfOffice, geolocation, station, authorization, lasttokenissued, dateLastLogin, authorization.unusedRoles, team, profileSkills, certifications, locations, groups, skills, languages, languagePreference, employerInfo, biography, callerUser.routingStatus, callerUser.primaryPresence, callerUser.conversationSummary, callerUser.outOfOffice, callerUser.geolocation, images, addressVerificationDetails 
-| **profile** | **Boolean**| profile | [optional] [default to true] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JsonNodeSearchResponse**](JsonNodeSearchResponse.html)
+[**JsonNodeSearchResponse**](JsonNodeSearchResponse.md)
 
 <a name="getSearchSuggest"></a>
 
 # **getSearchSuggest**
 
-
-
-> [JsonNodeSearchResponse](JsonNodeSearchResponse.html) getSearchSuggest(q64, expand, profile)
+> [JsonNodeSearchResponse](JsonNodeSearchResponse.md) getSearchSuggest(q64, expand, profile)
 
 Suggest resources using the q64 value returned from a previous suggest query.
 
+Wraps GET /api/v2/search/suggest
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/search/suggest  
-
-Requires ANY permissions: 
-
-* directory:user:view
+- directory:user:view
 
 ### Example
 
@@ -134,36 +127,31 @@ try {
 
 ### Parameters
 
+| Name        | Type                                | Description                     | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ----------- | ----------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **q64**     | **String**                          | q64                             |
+| **expand**  | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand | [optional]<br />**Values**: routingStatus, presence, conversationSummary, outOfOffice, geolocation, station, authorization, lasttokenissued, dateLastLogin, authorization.unusedRoles, team, profileSkills, certifications, locations, groups, skills, languages, languagePreference, employerInfo, biography, callerUser.routingStatus, callerUser.primaryPresence, callerUser.conversationSummary, callerUser.outOfOffice, callerUser.geolocation, images, addressVerificationDetails |
+| **profile** | **Boolean**                         | profile                         | [optional] [default to true]                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **q64** | **String**| q64 | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: routingStatus, presence, conversationSummary, outOfOffice, geolocation, station, authorization, lasttokenissued, dateLastLogin, authorization.unusedRoles, team, profileSkills, certifications, locations, groups, skills, languages, languagePreference, employerInfo, biography, callerUser.routingStatus, callerUser.primaryPresence, callerUser.conversationSummary, callerUser.outOfOffice, callerUser.geolocation, images, addressVerificationDetails 
-| **profile** | **Boolean**| profile | [optional] [default to true] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JsonNodeSearchResponse**](JsonNodeSearchResponse.html)
+[**JsonNodeSearchResponse**](JsonNodeSearchResponse.md)
 
 <a name="postSearch"></a>
 
 # **postSearch**
 
-
-
-> [JsonNodeSearchResponse](JsonNodeSearchResponse.html) postSearch(body, profile)
+> [JsonNodeSearchResponse](JsonNodeSearchResponse.md) postSearch(body, profile)
 
 Search resources.
 
+Wraps POST /api/v2/search
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/search  
-
-Requires ANY permissions: 
-
-* directory:user:view
+- directory:user:view
 
 ### Example
 
@@ -200,35 +188,30 @@ try {
 
 ### Parameters
 
+| Name        | Type                                  | Description            | Notes                        |
+| ----------- | ------------------------------------- | ---------------------- | ---------------------------- |
+| **body**    | [**SearchRequest**](SearchRequest.md) | Search request options |
+| **profile** | **Boolean**                           | profile                | [optional] [default to true] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**SearchRequest**](SearchRequest.html)| Search request options | 
-| **profile** | **Boolean**| profile | [optional] [default to true] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JsonNodeSearchResponse**](JsonNodeSearchResponse.html)
+[**JsonNodeSearchResponse**](JsonNodeSearchResponse.md)
 
 <a name="postSearchSuggest"></a>
 
 # **postSearchSuggest**
 
-
-
-> [JsonNodeSearchResponse](JsonNodeSearchResponse.html) postSearchSuggest(body, profile)
+> [JsonNodeSearchResponse](JsonNodeSearchResponse.md) postSearchSuggest(body, profile)
 
 Suggest resources.
 
+Wraps POST /api/v2/search/suggest
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/search/suggest  
-
-Requires ANY permissions: 
-
-* directory:user:view
+- directory:user:view
 
 ### Example
 
@@ -265,15 +248,13 @@ try {
 
 ### Parameters
 
+| Name        | Type                                                | Description            | Notes                        |
+| ----------- | --------------------------------------------------- | ---------------------- | ---------------------------- |
+| **body**    | [**SuggestSearchRequest**](SuggestSearchRequest.md) | Search request options |
+| **profile** | **Boolean**                                         | profile                | [optional] [default to true] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**SuggestSearchRequest**](SuggestSearchRequest.html)| Search request options | 
-| **profile** | **Boolean**| profile | [optional] [default to true] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JsonNodeSearchResponse**](JsonNodeSearchResponse.html)
-
+[**JsonNodeSearchResponse**](JsonNodeSearchResponse.md)

@@ -1,17 +1,15 @@
 ---
 title: FilterPreviewResponse
 ---
-## FilterPreviewResponse
 
+## FilterPreviewResponse
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **filteredContacts** | <!----><!---->**Long**<!----> |  |  [optional] |
-| **totalContacts** | <!----><!---->**Long**<!----> |  |  [optional] |
-| **preview** | <!----><!---->[**List&lt;DialerContact&gt;**](DialerContact.html)<!----> |  |  [optional] |
+| Name                 | Type                                                                   | Description | Notes      |
+| -------------------- | ---------------------------------------------------------------------- | ----------- | ---------- |
+| **filteredContacts** | <!----><!---->**Long**<!---->                                          |             | [optional] |
+| **totalContacts**    | <!----><!---->**Long**<!---->                                          |             | [optional] |
+| **preview**          | <!----><!---->[**List&lt;DialerContact&gt;**](DialerContact.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

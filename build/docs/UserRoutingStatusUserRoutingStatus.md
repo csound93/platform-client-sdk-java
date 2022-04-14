@@ -1,17 +1,15 @@
 ---
 title: UserRoutingStatusUserRoutingStatus
 ---
-## UserRoutingStatusUserRoutingStatus
 
+## UserRoutingStatusUserRoutingStatus
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **id** | <!----><!---->[**UserRoutingStatusObject**](UserRoutingStatusObject.html)<!----> |  |  [optional] |
-| **routingStatus** | <!----><!---->[**UserRoutingStatusRoutingStatus**](UserRoutingStatusRoutingStatus.html)<!----> |  |  [optional] |
-| **errorInfo** | <!----><!---->[**UserRoutingStatusErrorInfo**](UserRoutingStatusErrorInfo.html)<!----> |  |  [optional] |
+| Name              | Type                                                                                         | Description | Notes      |
+| ----------------- | -------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **id**            | <!----><!---->[**UserRoutingStatusObject**](UserRoutingStatusObject.md)<!---->               |             | [optional] |
+| **routingStatus** | <!----><!---->[**UserRoutingStatusRoutingStatus**](UserRoutingStatusRoutingStatus.md)<!----> |             | [optional] |
+| **errorInfo**     | <!----><!---->[**UserRoutingStatusErrorInfo**](UserRoutingStatusErrorInfo.md)<!---->         |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

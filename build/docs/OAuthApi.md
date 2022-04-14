@@ -1,44 +1,42 @@
 ---
 title: OAuthApi
 ---
+
 ## OAuthApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteOauthClient**](OAuthApi.html#deleteOauthClient) | Delete OAuth Client |
-| [**getOauthAuthorization**](OAuthApi.html#getOauthAuthorization) | Get a client that is authorized by the resource owner |
-| [**getOauthAuthorizations**](OAuthApi.html#getOauthAuthorizations) | List clients that have been authorized, requested, or revoked by the resource owner |
-| [**getOauthClient**](OAuthApi.html#getOauthClient) | Get OAuth Client |
-| [**getOauthClientUsageQueryResult**](OAuthApi.html#getOauthClientUsageQueryResult) | Get the results of a usage query |
-| [**getOauthClientUsageSummary**](OAuthApi.html#getOauthClientUsageSummary) | Get a summary of OAuth client API usage |
-| [**getOauthClients**](OAuthApi.html#getOauthClients) | The list of OAuth clients |
-| [**getOauthScope**](OAuthApi.html#getOauthScope) | An OAuth scope |
-| [**getOauthScopes**](OAuthApi.html#getOauthScopes) | The list of OAuth scopes |
-| [**postOauthClientSecret**](OAuthApi.html#postOauthClientSecret) | Regenerate Client Secret |
-| [**postOauthClientUsageQuery**](OAuthApi.html#postOauthClientUsageQuery) | Query for OAuth client API usage |
-| [**postOauthClients**](OAuthApi.html#postOauthClients) | Create OAuth client |
-| [**putOauthClient**](OAuthApi.html#putOauthClient) | Update OAuth Client |
+| Method                                                                           | Description                                                                         |
+| -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [**deleteOauthClient**](OAuthApi.md#deleteOauthClient)                           | Delete OAuth Client                                                                 |
+| [**getOauthAuthorization**](OAuthApi.md#getOauthAuthorization)                   | Get a client that is authorized by the resource owner                               |
+| [**getOauthAuthorizations**](OAuthApi.md#getOauthAuthorizations)                 | List clients that have been authorized, requested, or revoked by the resource owner |
+| [**getOauthClient**](OAuthApi.md#getOauthClient)                                 | Get OAuth Client                                                                    |
+| [**getOauthClientUsageQueryResult**](OAuthApi.md#getOauthClientUsageQueryResult) | Get the results of a usage query                                                    |
+| [**getOauthClientUsageSummary**](OAuthApi.md#getOauthClientUsageSummary)         | Get a summary of OAuth client API usage                                             |
+| [**getOauthClients**](OAuthApi.md#getOauthClients)                               | The list of OAuth clients                                                           |
+| [**getOauthScope**](OAuthApi.md#getOauthScope)                                   | An OAuth scope                                                                      |
+| [**getOauthScopes**](OAuthApi.md#getOauthScopes)                                 | The list of OAuth scopes                                                            |
+| [**postOauthClientSecret**](OAuthApi.md#postOauthClientSecret)                   | Regenerate Client Secret                                                            |
+| [**postOauthClientUsageQuery**](OAuthApi.md#postOauthClientUsageQuery)           | Query for OAuth client API usage                                                    |
+| [**postOauthClients**](OAuthApi.md#postOauthClients)                             | Create OAuth client                                                                 |
+| [**putOauthClient**](OAuthApi.md#putOauthClient)                                 | Update OAuth Client                                                                 |
+
 {: class="table-striped"}
 
 <a name="deleteOauthClient"></a>
 
 # **deleteOauthClient**
 
-
-
 > Void deleteOauthClient(clientId)
 
 Delete OAuth Client
 
+Wraps DELETE /api/v2/oauth/clients/{clientId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/oauth/clients/{clientId}  
-
-Requires ANY permissions: 
-
-* oauth:client:delete
+- oauth:client:delete
 
 ### Example
 
@@ -73,12 +71,11 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description | Notes |
+| ------------ | ---------- | ----------- | ----- |
+| **clientId** | **String** | Client ID   |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **clientId** | **String**| Client ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -88,19 +85,15 @@ null (empty response body)
 
 # **getOauthAuthorization**
 
-
-
-> [OAuthAuthorization](OAuthAuthorization.html) getOauthAuthorization(clientId, acceptLanguage)
+> [OAuthAuthorization](OAuthAuthorization.md) getOauthAuthorization(clientId, acceptLanguage)
 
 Get a client that is authorized by the resource owner
 
+Wraps GET /api/v2/oauth/authorizations/{clientId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/oauth/authorizations/{clientId}  
-
-Requires ANY permissions: 
-
-* oauth:client:authorize
+- oauth:client:authorize
 
 ### Example
 
@@ -137,35 +130,30 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description                                               | Notes                         |
+| ------------------ | ---------- | --------------------------------------------------------- | ----------------------------- |
+| **clientId**       | **String** | The ID of client                                          |
+| **acceptLanguage** | **String** | The language in which to display the client descriptions. | [optional] [default to en-us] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **clientId** | **String**| The ID of client | 
-| **acceptLanguage** | **String**| The language in which to display the client descriptions. | [optional] [default to en-us] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthAuthorization**](OAuthAuthorization.html)
+[**OAuthAuthorization**](OAuthAuthorization.md)
 
 <a name="getOauthAuthorizations"></a>
 
 # **getOauthAuthorizations**
 
-
-
-> [OAuthAuthorizationListing](OAuthAuthorizationListing.html) getOauthAuthorizations(acceptLanguage)
+> [OAuthAuthorizationListing](OAuthAuthorizationListing.md) getOauthAuthorizations(acceptLanguage)
 
 List clients that have been authorized, requested, or revoked by the resource owner
 
+Wraps GET /api/v2/oauth/authorizations
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/oauth/authorizations  
-
-Requires ANY permissions: 
-
-* oauth:client:authorize
+- oauth:client:authorize
 
 ### Example
 
@@ -201,34 +189,29 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description                                               | Notes                         |
+| ------------------ | ---------- | --------------------------------------------------------- | ----------------------------- |
+| **acceptLanguage** | **String** | The language in which to display the client descriptions. | [optional] [default to en-us] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **acceptLanguage** | **String**| The language in which to display the client descriptions. | [optional] [default to en-us] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthAuthorizationListing**](OAuthAuthorizationListing.html)
+[**OAuthAuthorizationListing**](OAuthAuthorizationListing.md)
 
 <a name="getOauthClient"></a>
 
 # **getOauthClient**
 
-
-
-> [OAuthClient](OAuthClient.html) getOauthClient(clientId)
+> [OAuthClient](OAuthClient.md) getOauthClient(clientId)
 
 Get OAuth Client
 
+Wraps GET /api/v2/oauth/clients/{clientId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/oauth/clients/{clientId}  
-
-Requires ANY permissions: 
-
-* oauth:client:view
+- oauth:client:view
 
 ### Example
 
@@ -264,34 +247,29 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description | Notes |
+| ------------ | ---------- | ----------- | ----- |
+| **clientId** | **String** | Client ID   |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **clientId** | **String**| Client ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthClient**](OAuthClient.html)
+[**OAuthClient**](OAuthClient.md)
 
 <a name="getOauthClientUsageQueryResult"></a>
 
 # **getOauthClientUsageQueryResult**
 
-
-
-> [ApiUsageQueryResult](ApiUsageQueryResult.html) getOauthClientUsageQueryResult(executionId, clientId)
+> [ApiUsageQueryResult](ApiUsageQueryResult.md) getOauthClientUsageQueryResult(executionId, clientId)
 
 Get the results of a usage query
 
+Wraps GET /api/v2/oauth/clients/{clientId}/usage/query/results/{executionId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/oauth/clients/{clientId}/usage/query/results/{executionId}  
-
-Requires ANY permissions: 
-
-* oauth:client:view
+- oauth:client:view
 
 ### Example
 
@@ -328,35 +306,32 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description               | Notes |
+| --------------- | ---------- | ------------------------- | ----- |
+| **executionId** | **String** | ID of the query execution |
+| **clientId**    | **String** | Client ID                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **executionId** | **String**| ID of the query execution | 
-| **clientId** | **String**| Client ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ApiUsageQueryResult**](ApiUsageQueryResult.html)
+[**ApiUsageQueryResult**](ApiUsageQueryResult.md)
 
 <a name="getOauthClientUsageSummary"></a>
 
 # **getOauthClientUsageSummary**
 
-
-
-> [UsageExecutionResult](UsageExecutionResult.html) getOauthClientUsageSummary(clientId, days)
+> [UsageExecutionResult](UsageExecutionResult.md) getOauthClientUsageSummary(clientId, days)
 
 Get a summary of OAuth client API usage
 
 After calling this method, you will then need to poll for the query results based on the returned execution Id
 
-Wraps GET /api/v2/oauth/clients/{clientId}/usage/summary  
+Wraps GET /api/v2/oauth/clients/{clientId}/usage/summary
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* oauth:client:view
+- oauth:client:view
 
 ### Example
 
@@ -393,35 +368,30 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description                      | Notes                     |
+| ------------ | ---------- | -------------------------------- | ------------------------- |
+| **clientId** | **String** | Client ID                        |
+| **days**     | **String** | Previous number of days to query | [optional] [default to 7] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **clientId** | **String**| Client ID | 
-| **days** | **String**| Previous number of days to query | [optional] [default to 7] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UsageExecutionResult**](UsageExecutionResult.html)
+[**UsageExecutionResult**](UsageExecutionResult.md)
 
 <a name="getOauthClients"></a>
 
 # **getOauthClients**
 
-
-
-> [OAuthClientEntityListing](OAuthClientEntityListing.html) getOauthClients()
+> [OAuthClientEntityListing](OAuthClientEntityListing.md) getOauthClients()
 
 The list of OAuth clients
 
+Wraps GET /api/v2/oauth/clients
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/oauth/clients  
-
-Requires ANY permissions: 
-
-* oauth:client:view
+- oauth:client:view
 
 ### Example
 
@@ -458,28 +428,21 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**OAuthClientEntityListing**](OAuthClientEntityListing.html)
+[**OAuthClientEntityListing**](OAuthClientEntityListing.md)
 
 <a name="getOauthScope"></a>
 
 # **getOauthScope**
 
-
-
-> [OAuthScope](OAuthScope.html) getOauthScope(scopeId, acceptLanguage)
+> [OAuthScope](OAuthScope.md) getOauthScope(scopeId, acceptLanguage)
 
 An OAuth scope
 
+Wraps GET /api/v2/oauth/scopes/{scopeId}
 
-
-Wraps GET /api/v2/oauth/scopes/{scopeId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -516,34 +479,28 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description                                               | Notes                         |
+| ------------------ | ---------- | --------------------------------------------------------- | ----------------------------- |
+| **scopeId**        | **String** | Scope ID                                                  |
+| **acceptLanguage** | **String** | The language with which to display the scope description. | [optional] [default to en-us] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **scopeId** | **String**| Scope ID | 
-| **acceptLanguage** | **String**| The language with which to display the scope description. | [optional] [default to en-us] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthScope**](OAuthScope.html)
+[**OAuthScope**](OAuthScope.md)
 
 <a name="getOauthScopes"></a>
 
 # **getOauthScopes**
 
-
-
-> [OAuthScopeListing](OAuthScopeListing.html) getOauthScopes(acceptLanguage)
+> [OAuthScopeListing](OAuthScopeListing.md) getOauthScopes(acceptLanguage)
 
 The list of OAuth scopes
 
+Wraps GET /api/v2/oauth/scopes
 
-
-Wraps GET /api/v2/oauth/scopes  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -579,34 +536,31 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description                                                | Notes                         |
+| ------------------ | ---------- | ---------------------------------------------------------- | ----------------------------- |
+| **acceptLanguage** | **String** | The language with which to display the scope descriptions. | [optional] [default to en-us] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **acceptLanguage** | **String**| The language with which to display the scope descriptions. | [optional] [default to en-us] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthScopeListing**](OAuthScopeListing.html)
+[**OAuthScopeListing**](OAuthScopeListing.md)
 
 <a name="postOauthClientSecret"></a>
 
 # **postOauthClientSecret**
 
-
-
-> [OAuthClient](OAuthClient.html) postOauthClientSecret(clientId)
+> [OAuthClient](OAuthClient.md) postOauthClientSecret(clientId)
 
 Regenerate Client Secret
 
 This operation will set the client secret to a randomly generated cryptographically random value. All clients must be updated with the new secret. This operation should be used with caution.
 
-Wraps POST /api/v2/oauth/clients/{clientId}/secret  
+Wraps POST /api/v2/oauth/clients/{clientId}/secret
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* oauth:client:edit
+- oauth:client:edit
 
 ### Example
 
@@ -642,34 +596,31 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description | Notes |
+| ------------ | ---------- | ----------- | ----- |
+| **clientId** | **String** | Client ID   |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **clientId** | **String**| Client ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthClient**](OAuthClient.html)
+[**OAuthClient**](OAuthClient.md)
 
 <a name="postOauthClientUsageQuery"></a>
 
 # **postOauthClientUsageQuery**
 
-
-
-> [UsageExecutionResult](UsageExecutionResult.html) postOauthClientUsageQuery(clientId, body)
+> [UsageExecutionResult](UsageExecutionResult.md) postOauthClientUsageQuery(clientId, body)
 
 Query for OAuth client API usage
 
 After calling this method, you will then need to poll for the query results based on the returned execution Id
 
-Wraps POST /api/v2/oauth/clients/{clientId}/usage/query  
+Wraps POST /api/v2/oauth/clients/{clientId}/usage/query
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* oauth:client:view
+- oauth:client:view
 
 ### Example
 
@@ -706,35 +657,32 @@ try {
 
 ### Parameters
 
+| Name         | Type                                  | Description | Notes |
+| ------------ | ------------------------------------- | ----------- | ----- |
+| **clientId** | **String**                            | Client ID   |
+| **body**     | [**ApiUsageQuery**](ApiUsageQuery.md) | Query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **clientId** | **String**| Client ID | 
-| **body** | [**ApiUsageQuery**](ApiUsageQuery.html)| Query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UsageExecutionResult**](UsageExecutionResult.html)
+[**UsageExecutionResult**](UsageExecutionResult.md)
 
 <a name="postOauthClients"></a>
 
 # **postOauthClients**
 
-
-
-> [OAuthClient](OAuthClient.html) postOauthClients(body)
+> [OAuthClient](OAuthClient.md) postOauthClients(body)
 
 Create OAuth client
 
-The OAuth Grant/Client is required in order to create an authentication token and gain access to PureCloud.  The preferred authorizedGrantTypes is &#39;CODE&#39; which requires applications to send a client ID and client secret. This is typically a web server.  If the client is unable to secure the client secret then the &#39;TOKEN&#39; grant type aka IMPLICIT should be used. This is would be for browser or mobile apps.  If a client is to be used outside of the context of a user then the &#39;CLIENT-CREDENTIALS&#39; grant may be used. In this case the client must be granted roles  via the &#39;roleIds&#39; field.
+The OAuth Grant/Client is required in order to create an authentication token and gain access to PureCloud. The preferred authorizedGrantTypes is &#39;CODE&#39; which requires applications to send a client ID and client secret. This is typically a web server. If the client is unable to secure the client secret then the &#39;TOKEN&#39; grant type aka IMPLICIT should be used. This is would be for browser or mobile apps. If a client is to be used outside of the context of a user then the &#39;CLIENT-CREDENTIALS&#39; grant may be used. In this case the client must be granted roles via the &#39;roleIds&#39; field.
 
-Wraps POST /api/v2/oauth/clients  
+Wraps POST /api/v2/oauth/clients
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* oauth:client:add
+- oauth:client:add
 
 ### Example
 
@@ -770,34 +718,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                            | Description | Notes |
+| -------- | ----------------------------------------------- | ----------- | ----- |
+| **body** | [**OAuthClientRequest**](OAuthClientRequest.md) | Client      |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**OAuthClientRequest**](OAuthClientRequest.html)| Client | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthClient**](OAuthClient.html)
+[**OAuthClient**](OAuthClient.md)
 
 <a name="putOauthClient"></a>
 
 # **putOauthClient**
 
-
-
-> [OAuthClient](OAuthClient.html) putOauthClient(clientId, body)
+> [OAuthClient](OAuthClient.md) putOauthClient(clientId, body)
 
 Update OAuth Client
 
+Wraps PUT /api/v2/oauth/clients/{clientId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/oauth/clients/{clientId}  
-
-Requires ANY permissions: 
-
-* oauth:client:edit
+- oauth:client:edit
 
 ### Example
 
@@ -834,15 +777,13 @@ try {
 
 ### Parameters
 
+| Name         | Type                                            | Description | Notes |
+| ------------ | ----------------------------------------------- | ----------- | ----- |
+| **clientId** | **String**                                      | Client ID   |
+| **body**     | [**OAuthClientRequest**](OAuthClientRequest.md) | Client      |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **clientId** | **String**| Client ID | 
-| **body** | [**OAuthClientRequest**](OAuthClientRequest.html)| Client | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OAuthClient**](OAuthClient.html)
-
+[**OAuthClient**](OAuthClient.md)

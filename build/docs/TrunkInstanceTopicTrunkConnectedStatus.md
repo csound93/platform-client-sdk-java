@@ -1,16 +1,14 @@
 ---
 title: TrunkInstanceTopicTrunkConnectedStatus
 ---
-## TrunkInstanceTopicTrunkConnectedStatus
 
+## TrunkInstanceTopicTrunkConnectedStatus
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **connected** | <!----><!---->**Boolean**<!----> |  |  [optional] |
-| **connectedStateTime** | <!----><!---->[**Date**](Date.html)<!----> |  |  [optional] |
+| Name                   | Type                                     | Description | Notes      |
+| ---------------------- | ---------------------------------------- | ----------- | ---------- |
+| **connected**          | <!----><!---->**Boolean**<!---->         |             | [optional] |
+| **connectedStateTime** | <!----><!---->[**Date**](Date.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

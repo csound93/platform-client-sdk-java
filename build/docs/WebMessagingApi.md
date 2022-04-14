@@ -1,31 +1,28 @@
 ---
 title: WebMessagingApi
 ---
+
 ## WebMessagingApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**getWebmessagingMessages**](WebMessagingApi.html#getWebmessagingMessages) | Get the messages for a web messaging session. |
+| Method                                                                    | Description                                   |
+| ------------------------------------------------------------------------- | --------------------------------------------- |
+| [**getWebmessagingMessages**](WebMessagingApi.md#getWebmessagingMessages) | Get the messages for a web messaging session. |
+
 {: class="table-striped"}
 
 <a name="getWebmessagingMessages"></a>
 
 # **getWebmessagingMessages**
 
-
-
-> [WebMessagingMessageEntityList](WebMessagingMessageEntityList.html) getWebmessagingMessages(pageSize, pageNumber)
+> [WebMessagingMessageEntityList](WebMessagingMessageEntityList.md) getWebmessagingMessages(pageSize, pageNumber)
 
 Get the messages for a web messaging session.
 
+Wraps GET /api/v2/webmessaging/messages
 
-
-Wraps GET /api/v2/webmessaging/messages  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -49,15 +46,13 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WebMessagingMessageEntityList**](WebMessagingMessageEntityList.html)
-
+[**WebMessagingMessageEntityList**](WebMessagingMessageEntityList.md)

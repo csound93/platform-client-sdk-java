@@ -1,16 +1,14 @@
 ---
 title: MediaSummary
 ---
-## MediaSummary
 
+## MediaSummary
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **contactCenter** | <!----><!---->[**MediaSummaryDetail**](MediaSummaryDetail.html)<!----> |  |  [optional] |
-| **enterprise** | <!----><!---->[**MediaSummaryDetail**](MediaSummaryDetail.html)<!----> |  |  [optional] |
+| Name              | Type                                                                 | Description | Notes      |
+| ----------------- | -------------------------------------------------------------------- | ----------- | ---------- |
+| **contactCenter** | <!----><!---->[**MediaSummaryDetail**](MediaSummaryDetail.md)<!----> |             | [optional] |
+| **enterprise**    | <!----><!---->[**MediaSummaryDetail**](MediaSummaryDetail.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

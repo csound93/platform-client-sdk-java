@@ -1,38 +1,35 @@
 ---
 title: NotificationsApi
 ---
+
 ## NotificationsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteNotificationsChannelSubscriptions**](NotificationsApi.html#deleteNotificationsChannelSubscriptions) | Remove all subscriptions |
-| [**getNotificationsAvailabletopics**](NotificationsApi.html#getNotificationsAvailabletopics) | Get available notification topics. |
-| [**getNotificationsChannelSubscriptions**](NotificationsApi.html#getNotificationsChannelSubscriptions) | The list of all subscriptions for this channel |
-| [**getNotificationsChannels**](NotificationsApi.html#getNotificationsChannels) | The list of existing channels |
-| [**headNotificationsChannel**](NotificationsApi.html#headNotificationsChannel) | Verify a channel still exists and is valid |
-| [**postNotificationsChannelSubscriptions**](NotificationsApi.html#postNotificationsChannelSubscriptions) | Add a list of subscriptions to the existing list of subscriptions |
-| [**postNotificationsChannels**](NotificationsApi.html#postNotificationsChannels) | Create a new channel |
-| [**putNotificationsChannelSubscriptions**](NotificationsApi.html#putNotificationsChannelSubscriptions) | Replace the current list of subscriptions with a new list. |
+| Method                                                                                                     | Description                                                       |
+| ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| [**deleteNotificationsChannelSubscriptions**](NotificationsApi.md#deleteNotificationsChannelSubscriptions) | Remove all subscriptions                                          |
+| [**getNotificationsAvailabletopics**](NotificationsApi.md#getNotificationsAvailabletopics)                 | Get available notification topics.                                |
+| [**getNotificationsChannelSubscriptions**](NotificationsApi.md#getNotificationsChannelSubscriptions)       | The list of all subscriptions for this channel                    |
+| [**getNotificationsChannels**](NotificationsApi.md#getNotificationsChannels)                               | The list of existing channels                                     |
+| [**headNotificationsChannel**](NotificationsApi.md#headNotificationsChannel)                               | Verify a channel still exists and is valid                        |
+| [**postNotificationsChannelSubscriptions**](NotificationsApi.md#postNotificationsChannelSubscriptions)     | Add a list of subscriptions to the existing list of subscriptions |
+| [**postNotificationsChannels**](NotificationsApi.md#postNotificationsChannels)                             | Create a new channel                                              |
+| [**putNotificationsChannelSubscriptions**](NotificationsApi.md#putNotificationsChannelSubscriptions)       | Replace the current list of subscriptions with a new list.        |
+
 {: class="table-striped"}
 
 <a name="deleteNotificationsChannelSubscriptions"></a>
 
 # **deleteNotificationsChannelSubscriptions**
 
-
-
 > Void deleteNotificationsChannelSubscriptions(channelId)
 
 Remove all subscriptions
 
+Wraps DELETE /api/v2/notifications/channels/{channelId}/subscriptions
 
-
-Wraps DELETE /api/v2/notifications/channels/{channelId}/subscriptions  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -67,12 +64,11 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **channelId** | **String** | Channel ID  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **channelId** | **String**| Channel ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -82,18 +78,13 @@ null (empty response body)
 
 # **getNotificationsAvailabletopics**
 
-
-
-> [AvailableTopicEntityListing](AvailableTopicEntityListing.html) getNotificationsAvailabletopics(expand, includePreview)
+> [AvailableTopicEntityListing](AvailableTopicEntityListing.md) getNotificationsAvailabletopics(expand, includePreview)
 
 Get available notification topics.
 
+Wraps GET /api/v2/notifications/availabletopics
 
-
-Wraps GET /api/v2/notifications/availabletopics  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -130,34 +121,28 @@ try {
 
 ### Parameters
 
+| Name               | Type                                | Description                              | Notes                                                                                                                                                                 |
+| ------------------ | ----------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **expand**         | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand          | [optional]<br />**Values**: description, enforced, schema, visibility, transports, publicApiTemplateUriPaths, requiresPermissions, permissionDetails, topicParameters |
+| **includePreview** | **Boolean**                         | Whether or not to include Preview topics | [optional] [default to true]                                                                                                                                          |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: description, enforced, schema, visibility, transports, publicApiTemplateUriPaths, requiresPermissions, permissionDetails, topicParameters 
-| **includePreview** | **Boolean**| Whether or not to include Preview topics | [optional] [default to true] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AvailableTopicEntityListing**](AvailableTopicEntityListing.html)
+[**AvailableTopicEntityListing**](AvailableTopicEntityListing.md)
 
 <a name="getNotificationsChannelSubscriptions"></a>
 
 # **getNotificationsChannelSubscriptions**
 
-
-
-> [ChannelTopicEntityListing](ChannelTopicEntityListing.html) getNotificationsChannelSubscriptions(channelId)
+> [ChannelTopicEntityListing](ChannelTopicEntityListing.md) getNotificationsChannelSubscriptions(channelId)
 
 The list of all subscriptions for this channel
 
+Wraps GET /api/v2/notifications/channels/{channelId}/subscriptions
 
-
-Wraps GET /api/v2/notifications/channels/{channelId}/subscriptions  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -193,33 +178,27 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **channelId** | **String** | Channel ID  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **channelId** | **String**| Channel ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ChannelTopicEntityListing**](ChannelTopicEntityListing.html)
+[**ChannelTopicEntityListing**](ChannelTopicEntityListing.md)
 
 <a name="getNotificationsChannels"></a>
 
 # **getNotificationsChannels**
 
-
-
-> [ChannelEntityListing](ChannelEntityListing.html) getNotificationsChannels(includechannels)
+> [ChannelEntityListing](ChannelEntityListing.md) getNotificationsChannels(includechannels)
 
 The list of existing channels
 
+Wraps GET /api/v2/notifications/channels
 
-
-Wraps GET /api/v2/notifications/channels  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -255,22 +234,19 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description                                                                                                                                                                                        | Notes                                                             |
+| ------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| **includechannels** | **String** | Show user&#39;s channels for this specific token or across all tokens for this user and app. Channel Ids for other access tokens will not be shown, but will be presented to show their existence. | [optional] [default to token]<br />**Values**: token, oauthclient |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **includechannels** | **String**| Show user&#39;s channels for this specific token or across all tokens for this user and app.  Channel Ids for other access tokens will not be shown, but will be presented to show their existence. | [optional] [default to token]<br />**Values**: token, oauthclient 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ChannelEntityListing**](ChannelEntityListing.html)
+[**ChannelEntityListing**](ChannelEntityListing.md)
 
 <a name="headNotificationsChannel"></a>
 
 # **headNotificationsChannel**
-
-
 
 > Void headNotificationsChannel(channelId)
 
@@ -278,10 +254,9 @@ Verify a channel still exists and is valid
 
 Returns a 200 OK if channel exists, and a 404 Not Found if it doesn&#39;t
 
-Wraps HEAD /api/v2/notifications/channels/{channelId}  
+Wraps HEAD /api/v2/notifications/channels/{channelId}
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -316,12 +291,11 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **channelId** | **String** | Channel ID  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **channelId** | **String**| Channel ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -331,18 +305,13 @@ null (empty response body)
 
 # **postNotificationsChannelSubscriptions**
 
-
-
-> [ChannelTopicEntityListing](ChannelTopicEntityListing.html) postNotificationsChannelSubscriptions(channelId, body)
+> [ChannelTopicEntityListing](ChannelTopicEntityListing.md) postNotificationsChannelSubscriptions(channelId, body)
 
 Add a list of subscriptions to the existing list of subscriptions
 
+Wraps POST /api/v2/notifications/channels/{channelId}/subscriptions
 
-
-Wraps POST /api/v2/notifications/channels/{channelId}/subscriptions  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -379,34 +348,30 @@ try {
 
 ### Parameters
 
+| Name          | Type                                            | Description | Notes |
+| ------------- | ----------------------------------------------- | ----------- | ----- |
+| **channelId** | **String**                                      | Channel ID  |
+| **body**      | [**List&lt;ChannelTopic&gt;**](ChannelTopic.md) | Body        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **channelId** | **String**| Channel ID | 
-| **body** | [**List&lt;ChannelTopic&gt;**](ChannelTopic.html)| Body | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ChannelTopicEntityListing**](ChannelTopicEntityListing.html)
+[**ChannelTopicEntityListing**](ChannelTopicEntityListing.md)
 
 <a name="postNotificationsChannels"></a>
 
 # **postNotificationsChannels**
 
-
-
-> [Channel](Channel.html) postNotificationsChannels()
+> [Channel](Channel.md) postNotificationsChannels()
 
 Create a new channel
 
 There is a limit of 20 channels per user/app combination. Creating a 21st channel will remove the channel with oldest last used date. Channels without an active connection will be removed first.
 
-Wraps POST /api/v2/notifications/channels  
+Wraps POST /api/v2/notifications/channels
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -443,28 +408,21 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Channel**](Channel.html)
+[**Channel**](Channel.md)
 
 <a name="putNotificationsChannelSubscriptions"></a>
 
 # **putNotificationsChannelSubscriptions**
 
-
-
-> [ChannelTopicEntityListing](ChannelTopicEntityListing.html) putNotificationsChannelSubscriptions(channelId, body)
+> [ChannelTopicEntityListing](ChannelTopicEntityListing.md) putNotificationsChannelSubscriptions(channelId, body)
 
 Replace the current list of subscriptions with a new list.
 
+Wraps PUT /api/v2/notifications/channels/{channelId}/subscriptions
 
-
-Wraps PUT /api/v2/notifications/channels/{channelId}/subscriptions  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -501,15 +459,13 @@ try {
 
 ### Parameters
 
+| Name          | Type                                            | Description | Notes |
+| ------------- | ----------------------------------------------- | ----------- | ----- |
+| **channelId** | **String**                                      | Channel ID  |
+| **body**      | [**List&lt;ChannelTopic&gt;**](ChannelTopic.md) | Body        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **channelId** | **String**| Channel ID | 
-| **body** | [**List&lt;ChannelTopic&gt;**](ChannelTopic.html)| Body | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ChannelTopicEntityListing**](ChannelTopicEntityListing.html)
-
+[**ChannelTopicEntityListing**](ChannelTopicEntityListing.md)

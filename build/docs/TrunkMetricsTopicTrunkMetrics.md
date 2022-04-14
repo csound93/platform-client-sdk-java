@@ -1,17 +1,15 @@
 ---
 title: TrunkMetricsTopicTrunkMetrics
 ---
-## TrunkMetricsTopicTrunkMetrics
 
+## TrunkMetricsTopicTrunkMetrics
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **calls** | <!----><!---->[**TrunkMetricsTopicTrunkMetricsCalls**](TrunkMetricsTopicTrunkMetricsCalls.html)<!----> |  |  [optional] |
-| **qos** | <!----><!---->[**TrunkMetricsTopicTrunkMetricsQoS**](TrunkMetricsTopicTrunkMetricsQoS.html)<!----> |  |  [optional] |
-| **trunk** | <!----><!---->[**TrunkMetricsTopicUriReference**](TrunkMetricsTopicUriReference.html)<!----> |  |  [optional] |
+| Name      | Type                                                                                                 | Description | Notes      |
+| --------- | ---------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **calls** | <!----><!---->[**TrunkMetricsTopicTrunkMetricsCalls**](TrunkMetricsTopicTrunkMetricsCalls.md)<!----> |             | [optional] |
+| **qos**   | <!----><!---->[**TrunkMetricsTopicTrunkMetricsQoS**](TrunkMetricsTopicTrunkMetricsQoS.md)<!---->     |             | [optional] |
+| **trunk** | <!----><!---->[**TrunkMetricsTopicUriReference**](TrunkMetricsTopicUriReference.md)<!---->           |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

@@ -1,15 +1,13 @@
 ---
 title: UpdateNotificationsResponse
 ---
-## UpdateNotificationsResponse
 
+## UpdateNotificationsResponse
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **entities** | <!----><!---->[**List&lt;UpdateNotificationResponse&gt;**](UpdateNotificationResponse.html)<!----> |  |  [optional] |
+| Name         | Type                                                                                             | Description | Notes      |
+| ------------ | ------------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| **entities** | <!----><!---->[**List&lt;UpdateNotificationResponse&gt;**](UpdateNotificationResponse.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

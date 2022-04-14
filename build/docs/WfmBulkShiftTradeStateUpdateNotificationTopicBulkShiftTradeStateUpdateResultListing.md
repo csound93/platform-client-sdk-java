@@ -1,15 +1,13 @@
 ---
 title: WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateResultListing
 ---
-## WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateResultListing
 
+## WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateResultListing
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **entities** | <!----><!---->[**List&lt;WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateResult&gt;**](WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateResult.html)<!----> |  |  [optional] |
+| Name         | Type                                                                                                                                                                                                 | Description | Notes      |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **entities** | <!----><!---->[**List&lt;WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateResult&gt;**](WfmBulkShiftTradeStateUpdateNotificationTopicBulkShiftTradeStateUpdateResult.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

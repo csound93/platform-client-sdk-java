@@ -1,38 +1,36 @@
 ---
 title: JourneyWebEventsNotificationWebEventsNotification
 ---
-## JourneyWebEventsNotificationWebEventsNotification
 
+## JourneyWebEventsNotificationWebEventsNotification
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **id** | <!----><!---->**String**<!----> |  |  [optional] |
-| **correlationId** | <!----><!---->**String**<!----> |  |  [optional] |
-| **externalContact** | <!----><!---->[**JourneyWebEventsNotificationExternalContact**](JourneyWebEventsNotificationExternalContact.html)<!----> |  |  [optional] |
-| **createdDate** | <!----><!---->[**Date**](Date.html)<!----> |  |  [optional] |
-| **customerId** | <!----><!---->**String**<!----> |  |  [optional] |
-| **customerIdType** | <!----><!---->**String**<!----> |  |  [optional] |
-| **session** | <!----><!---->[**JourneyWebEventsNotificationSession**](JourneyWebEventsNotificationSession.html)<!----> |  |  [optional] |
-| **eventType** | [**EventTypeEnum**](#EventTypeEnum)<!----> |  |  [optional] |
-| **webEvent** | <!----><!---->[**JourneyWebEventsNotificationWebMessage**](JourneyWebEventsNotificationWebMessage.html)<!----> |  |  [optional] |
-| **webActionEvent** | <!----><!---->[**JourneyWebEventsNotificationWebActionMessage**](JourneyWebEventsNotificationWebActionMessage.html)<!----> |  |  [optional] |
-| **outcomeAchievedEvent** | <!----><!---->[**JourneyWebEventsNotificationOutcomeAchievedMessage**](JourneyWebEventsNotificationOutcomeAchievedMessage.html)<!----> |  |  [optional] |
-{: class="table table-striped"}
+| Name                     | Type                                                                                                                                 | Description | Notes      |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| **id**                   | <!----><!---->**String**<!---->                                                                                                      |             | [optional] |
+| **correlationId**        | <!----><!---->**String**<!---->                                                                                                      |             | [optional] |
+| **externalContact**      | <!----><!---->[**JourneyWebEventsNotificationExternalContact**](JourneyWebEventsNotificationExternalContact.md)<!---->               |             | [optional] |
+| **createdDate**          | <!----><!---->[**Date**](Date.md)<!---->                                                                                             |             | [optional] |
+| **customerId**           | <!----><!---->**String**<!---->                                                                                                      |             | [optional] |
+| **customerIdType**       | <!----><!---->**String**<!---->                                                                                                      |             | [optional] |
+| **session**              | <!----><!---->[**JourneyWebEventsNotificationSession**](JourneyWebEventsNotificationSession.md)<!---->                               |             | [optional] |
+| **eventType**            | [**EventTypeEnum**](#EventTypeEnum)<!---->                                                                                           |             | [optional] |
+| **webEvent**             | <!----><!---->[**JourneyWebEventsNotificationWebMessage**](JourneyWebEventsNotificationWebMessage.md)<!---->                         |             | [optional] |
+| **webActionEvent**       | <!----><!---->[**JourneyWebEventsNotificationWebActionMessage**](JourneyWebEventsNotificationWebActionMessage.md)<!---->             |             | [optional] |
+| **outcomeAchievedEvent** | <!----><!---->[**JourneyWebEventsNotificationOutcomeAchievedMessage**](JourneyWebEventsNotificationOutcomeAchievedMessage.md)<!----> |             | [optional] |
 
+{: class="table table-striped"}
 
 <a name="EventTypeEnum"></a>
 
 ## Enum: EventTypeEnum
 
-| Name | Value |
-| ---- | ----- |
-| OUTDATEDSDKVERSION | &quot;OutdatedSdkVersion&quot; |
-| WEBEVENT | &quot;WebEvent&quot; |
-| WEBACTIONEVENT | &quot;WebActionEvent&quot; |
+| Name                 | Value                            |
+| -------------------- | -------------------------------- |
+| OUTDATEDSDKVERSION   | &quot;OutdatedSdkVersion&quot;   |
+| WEBEVENT             | &quot;WebEvent&quot;             |
+| WEBACTIONEVENT       | &quot;WebActionEvent&quot;       |
 | OUTCOMEACHIEVEDEVENT | &quot;OutcomeAchievedEvent&quot; |
+
 {: class="table table-striped"}
-
-
-

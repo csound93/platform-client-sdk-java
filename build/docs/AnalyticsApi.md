@@ -1,78 +1,76 @@
 ---
 title: AnalyticsApi
 ---
+
 ## AnalyticsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteAnalyticsConversationsDetailsJob**](AnalyticsApi.html#deleteAnalyticsConversationsDetailsJob) | Delete/cancel an async request |
-| [**deleteAnalyticsReportingSchedule**](AnalyticsApi.html#deleteAnalyticsReportingSchedule) | Delete a scheduled report job. |
-| [**deleteAnalyticsUsersDetailsJob**](AnalyticsApi.html#deleteAnalyticsUsersDetailsJob) | Delete/cancel an async request |
-| [**getAnalyticsBotflowReportingturns**](AnalyticsApi.html#getAnalyticsBotflowReportingturns) | Get Reporting Turns. |
-| [**getAnalyticsConversationDetails**](AnalyticsApi.html#getAnalyticsConversationDetails) | Get a conversation by id |
-| [**getAnalyticsConversationsDetails**](AnalyticsApi.html#getAnalyticsConversationsDetails) | Gets multiple conversations by id |
-| [**getAnalyticsConversationsDetailsJob**](AnalyticsApi.html#getAnalyticsConversationsDetailsJob) | Get status for async query for conversation details |
-| [**getAnalyticsConversationsDetailsJobResults**](AnalyticsApi.html#getAnalyticsConversationsDetailsJobResults) | Fetch a page of results for an async query |
-| [**getAnalyticsConversationsDetailsJobsAvailability**](AnalyticsApi.html#getAnalyticsConversationsDetailsJobsAvailability) | Lookup the datalake availability date and time |
-| [**getAnalyticsReportingExports**](AnalyticsApi.html#getAnalyticsReportingExports) | Get all view export requests for a user |
-| [**getAnalyticsReportingExportsMetadata**](AnalyticsApi.html#getAnalyticsReportingExportsMetadata) | Get all export metadata |
-| [**getAnalyticsReportingMetadata**](AnalyticsApi.html#getAnalyticsReportingMetadata) | Get list of reporting metadata. |
-| [**getAnalyticsReportingReportIdMetadata**](AnalyticsApi.html#getAnalyticsReportingReportIdMetadata) | Get a reporting metadata. |
-| [**getAnalyticsReportingReportformats**](AnalyticsApi.html#getAnalyticsReportingReportformats) | Get a list of report formats |
-| [**getAnalyticsReportingSchedule**](AnalyticsApi.html#getAnalyticsReportingSchedule) | Get a scheduled report job. |
-| [**getAnalyticsReportingScheduleHistory**](AnalyticsApi.html#getAnalyticsReportingScheduleHistory) | Get list of completed scheduled report jobs. |
-| [**getAnalyticsReportingScheduleHistoryLatest**](AnalyticsApi.html#getAnalyticsReportingScheduleHistoryLatest) | Get most recently completed scheduled report job. |
-| [**getAnalyticsReportingScheduleHistoryRunId**](AnalyticsApi.html#getAnalyticsReportingScheduleHistoryRunId) | A completed scheduled report job |
-| [**getAnalyticsReportingSchedules**](AnalyticsApi.html#getAnalyticsReportingSchedules) | Get a list of scheduled report jobs |
-| [**getAnalyticsReportingSettings**](AnalyticsApi.html#getAnalyticsReportingSettings) | Get AnalyticsReportingSettings for an organization |
-| [**getAnalyticsReportingTimeperiods**](AnalyticsApi.html#getAnalyticsReportingTimeperiods) | Get a list of report time periods. |
-| [**getAnalyticsUsersDetailsJob**](AnalyticsApi.html#getAnalyticsUsersDetailsJob) | Get status for async query for user details |
-| [**getAnalyticsUsersDetailsJobResults**](AnalyticsApi.html#getAnalyticsUsersDetailsJobResults) | Fetch a page of results for an async query |
-| [**getAnalyticsUsersDetailsJobsAvailability**](AnalyticsApi.html#getAnalyticsUsersDetailsJobsAvailability) | Lookup the datalake availability date and time |
-| [**patchAnalyticsReportingSettings**](AnalyticsApi.html#patchAnalyticsReportingSettings) | Patch AnalyticsReportingSettings values for an organization |
-| [**postAnalyticsBotsAggregatesQuery**](AnalyticsApi.html#postAnalyticsBotsAggregatesQuery) | Query for bot aggregates |
-| [**postAnalyticsConversationDetailsProperties**](AnalyticsApi.html#postAnalyticsConversationDetailsProperties) | Index conversation properties |
-| [**postAnalyticsConversationsAggregatesQuery**](AnalyticsApi.html#postAnalyticsConversationsAggregatesQuery) | Query for conversation aggregates |
-| [**postAnalyticsConversationsDetailsJobs**](AnalyticsApi.html#postAnalyticsConversationsDetailsJobs) | Query for conversation details asynchronously |
-| [**postAnalyticsConversationsDetailsQuery**](AnalyticsApi.html#postAnalyticsConversationsDetailsQuery) | Query for conversation details |
-| [**postAnalyticsConversationsTranscriptsQuery**](AnalyticsApi.html#postAnalyticsConversationsTranscriptsQuery) | Search resources. |
-| [**postAnalyticsEvaluationsAggregatesQuery**](AnalyticsApi.html#postAnalyticsEvaluationsAggregatesQuery) | Query for evaluation aggregates |
-| [**postAnalyticsFlowsAggregatesQuery**](AnalyticsApi.html#postAnalyticsFlowsAggregatesQuery) | Query for flow aggregates |
-| [**postAnalyticsFlowsObservationsQuery**](AnalyticsApi.html#postAnalyticsFlowsObservationsQuery) | Query for flow observations |
-| [**postAnalyticsJourneysAggregatesQuery**](AnalyticsApi.html#postAnalyticsJourneysAggregatesQuery) | Query for journey aggregates |
-| [**postAnalyticsQueuesObservationsQuery**](AnalyticsApi.html#postAnalyticsQueuesObservationsQuery) | Query for queue observations |
-| [**postAnalyticsReportingExports**](AnalyticsApi.html#postAnalyticsReportingExports) | Generate a view export request |
-| [**postAnalyticsReportingScheduleRunreport**](AnalyticsApi.html#postAnalyticsReportingScheduleRunreport) | Place a scheduled report immediately into the reporting queue |
-| [**postAnalyticsReportingSchedules**](AnalyticsApi.html#postAnalyticsReportingSchedules) | Create a scheduled report job |
-| [**postAnalyticsSurveysAggregatesQuery**](AnalyticsApi.html#postAnalyticsSurveysAggregatesQuery) | Query for survey aggregates |
-| [**postAnalyticsTranscriptsAggregatesQuery**](AnalyticsApi.html#postAnalyticsTranscriptsAggregatesQuery) | Query for transcript aggregates |
-| [**postAnalyticsUsersAggregatesQuery**](AnalyticsApi.html#postAnalyticsUsersAggregatesQuery) | Query for user aggregates |
-| [**postAnalyticsUsersDetailsJobs**](AnalyticsApi.html#postAnalyticsUsersDetailsJobs) | Query for user details asynchronously |
-| [**postAnalyticsUsersDetailsQuery**](AnalyticsApi.html#postAnalyticsUsersDetailsQuery) | Query for user details |
-| [**postAnalyticsUsersObservationsQuery**](AnalyticsApi.html#postAnalyticsUsersObservationsQuery) | Query for user observations |
-| [**putAnalyticsReportingSchedule**](AnalyticsApi.html#putAnalyticsReportingSchedule) | Update a scheduled report job. |
+| Method                                                                                                                   | Description                                                   |
+| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- |
+| [**deleteAnalyticsConversationsDetailsJob**](AnalyticsApi.md#deleteAnalyticsConversationsDetailsJob)                     | Delete/cancel an async request                                |
+| [**deleteAnalyticsReportingSchedule**](AnalyticsApi.md#deleteAnalyticsReportingSchedule)                                 | Delete a scheduled report job.                                |
+| [**deleteAnalyticsUsersDetailsJob**](AnalyticsApi.md#deleteAnalyticsUsersDetailsJob)                                     | Delete/cancel an async request                                |
+| [**getAnalyticsBotflowReportingturns**](AnalyticsApi.md#getAnalyticsBotflowReportingturns)                               | Get Reporting Turns.                                          |
+| [**getAnalyticsConversationDetails**](AnalyticsApi.md#getAnalyticsConversationDetails)                                   | Get a conversation by id                                      |
+| [**getAnalyticsConversationsDetails**](AnalyticsApi.md#getAnalyticsConversationsDetails)                                 | Gets multiple conversations by id                             |
+| [**getAnalyticsConversationsDetailsJob**](AnalyticsApi.md#getAnalyticsConversationsDetailsJob)                           | Get status for async query for conversation details           |
+| [**getAnalyticsConversationsDetailsJobResults**](AnalyticsApi.md#getAnalyticsConversationsDetailsJobResults)             | Fetch a page of results for an async query                    |
+| [**getAnalyticsConversationsDetailsJobsAvailability**](AnalyticsApi.md#getAnalyticsConversationsDetailsJobsAvailability) | Lookup the datalake availability date and time                |
+| [**getAnalyticsReportingExports**](AnalyticsApi.md#getAnalyticsReportingExports)                                         | Get all view export requests for a user                       |
+| [**getAnalyticsReportingExportsMetadata**](AnalyticsApi.md#getAnalyticsReportingExportsMetadata)                         | Get all export metadata                                       |
+| [**getAnalyticsReportingMetadata**](AnalyticsApi.md#getAnalyticsReportingMetadata)                                       | Get list of reporting metadata.                               |
+| [**getAnalyticsReportingReportIdMetadata**](AnalyticsApi.md#getAnalyticsReportingReportIdMetadata)                       | Get a reporting metadata.                                     |
+| [**getAnalyticsReportingReportformats**](AnalyticsApi.md#getAnalyticsReportingReportformats)                             | Get a list of report formats                                  |
+| [**getAnalyticsReportingSchedule**](AnalyticsApi.md#getAnalyticsReportingSchedule)                                       | Get a scheduled report job.                                   |
+| [**getAnalyticsReportingScheduleHistory**](AnalyticsApi.md#getAnalyticsReportingScheduleHistory)                         | Get list of completed scheduled report jobs.                  |
+| [**getAnalyticsReportingScheduleHistoryLatest**](AnalyticsApi.md#getAnalyticsReportingScheduleHistoryLatest)             | Get most recently completed scheduled report job.             |
+| [**getAnalyticsReportingScheduleHistoryRunId**](AnalyticsApi.md#getAnalyticsReportingScheduleHistoryRunId)               | A completed scheduled report job                              |
+| [**getAnalyticsReportingSchedules**](AnalyticsApi.md#getAnalyticsReportingSchedules)                                     | Get a list of scheduled report jobs                           |
+| [**getAnalyticsReportingSettings**](AnalyticsApi.md#getAnalyticsReportingSettings)                                       | Get AnalyticsReportingSettings for an organization            |
+| [**getAnalyticsReportingTimeperiods**](AnalyticsApi.md#getAnalyticsReportingTimeperiods)                                 | Get a list of report time periods.                            |
+| [**getAnalyticsUsersDetailsJob**](AnalyticsApi.md#getAnalyticsUsersDetailsJob)                                           | Get status for async query for user details                   |
+| [**getAnalyticsUsersDetailsJobResults**](AnalyticsApi.md#getAnalyticsUsersDetailsJobResults)                             | Fetch a page of results for an async query                    |
+| [**getAnalyticsUsersDetailsJobsAvailability**](AnalyticsApi.md#getAnalyticsUsersDetailsJobsAvailability)                 | Lookup the datalake availability date and time                |
+| [**patchAnalyticsReportingSettings**](AnalyticsApi.md#patchAnalyticsReportingSettings)                                   | Patch AnalyticsReportingSettings values for an organization   |
+| [**postAnalyticsBotsAggregatesQuery**](AnalyticsApi.md#postAnalyticsBotsAggregatesQuery)                                 | Query for bot aggregates                                      |
+| [**postAnalyticsConversationDetailsProperties**](AnalyticsApi.md#postAnalyticsConversationDetailsProperties)             | Index conversation properties                                 |
+| [**postAnalyticsConversationsAggregatesQuery**](AnalyticsApi.md#postAnalyticsConversationsAggregatesQuery)               | Query for conversation aggregates                             |
+| [**postAnalyticsConversationsDetailsJobs**](AnalyticsApi.md#postAnalyticsConversationsDetailsJobs)                       | Query for conversation details asynchronously                 |
+| [**postAnalyticsConversationsDetailsQuery**](AnalyticsApi.md#postAnalyticsConversationsDetailsQuery)                     | Query for conversation details                                |
+| [**postAnalyticsConversationsTranscriptsQuery**](AnalyticsApi.md#postAnalyticsConversationsTranscriptsQuery)             | Search resources.                                             |
+| [**postAnalyticsEvaluationsAggregatesQuery**](AnalyticsApi.md#postAnalyticsEvaluationsAggregatesQuery)                   | Query for evaluation aggregates                               |
+| [**postAnalyticsFlowsAggregatesQuery**](AnalyticsApi.md#postAnalyticsFlowsAggregatesQuery)                               | Query for flow aggregates                                     |
+| [**postAnalyticsFlowsObservationsQuery**](AnalyticsApi.md#postAnalyticsFlowsObservationsQuery)                           | Query for flow observations                                   |
+| [**postAnalyticsJourneysAggregatesQuery**](AnalyticsApi.md#postAnalyticsJourneysAggregatesQuery)                         | Query for journey aggregates                                  |
+| [**postAnalyticsQueuesObservationsQuery**](AnalyticsApi.md#postAnalyticsQueuesObservationsQuery)                         | Query for queue observations                                  |
+| [**postAnalyticsReportingExports**](AnalyticsApi.md#postAnalyticsReportingExports)                                       | Generate a view export request                                |
+| [**postAnalyticsReportingScheduleRunreport**](AnalyticsApi.md#postAnalyticsReportingScheduleRunreport)                   | Place a scheduled report immediately into the reporting queue |
+| [**postAnalyticsReportingSchedules**](AnalyticsApi.md#postAnalyticsReportingSchedules)                                   | Create a scheduled report job                                 |
+| [**postAnalyticsSurveysAggregatesQuery**](AnalyticsApi.md#postAnalyticsSurveysAggregatesQuery)                           | Query for survey aggregates                                   |
+| [**postAnalyticsTranscriptsAggregatesQuery**](AnalyticsApi.md#postAnalyticsTranscriptsAggregatesQuery)                   | Query for transcript aggregates                               |
+| [**postAnalyticsUsersAggregatesQuery**](AnalyticsApi.md#postAnalyticsUsersAggregatesQuery)                               | Query for user aggregates                                     |
+| [**postAnalyticsUsersDetailsJobs**](AnalyticsApi.md#postAnalyticsUsersDetailsJobs)                                       | Query for user details asynchronously                         |
+| [**postAnalyticsUsersDetailsQuery**](AnalyticsApi.md#postAnalyticsUsersDetailsQuery)                                     | Query for user details                                        |
+| [**postAnalyticsUsersObservationsQuery**](AnalyticsApi.md#postAnalyticsUsersObservationsQuery)                           | Query for user observations                                   |
+| [**putAnalyticsReportingSchedule**](AnalyticsApi.md#putAnalyticsReportingSchedule)                                       | Update a scheduled report job.                                |
+
 {: class="table-striped"}
 
 <a name="deleteAnalyticsConversationsDetailsJob"></a>
 
 # **deleteAnalyticsConversationsDetailsJob**
 
-
-
 > Void deleteAnalyticsConversationsDetailsJob(jobId)
 
 Delete/cancel an async request
 
+Wraps DELETE /api/v2/analytics/conversations/details/jobs/{jobId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/analytics/conversations/details/jobs/{jobId}  
-
-Requires ANY permissions: 
-
-* analytics:conversationDetail:view
-* analytics:agentConversationDetail:view
+- analytics:conversationDetail:view
+- analytics:agentConversationDetail:view
 
 ### Example
 
@@ -107,12 +105,11 @@ try {
 
 ### Parameters
 
+| Name      | Type       | Description | Notes |
+| --------- | ---------- | ----------- | ----- |
+| **jobId** | **String** | jobId       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **jobId** | **String**| jobId | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -122,18 +119,13 @@ null (empty response body)
 
 # **deleteAnalyticsReportingSchedule**
 
-
-
 > Void deleteAnalyticsReportingSchedule(scheduleId)
 
 Delete a scheduled report job.
 
+Wraps DELETE /api/v2/analytics/reporting/schedules/{scheduleId}
 
-
-Wraps DELETE /api/v2/analytics/reporting/schedules/{scheduleId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -168,12 +160,11 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **scheduleId** | **String** | Schedule ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **scheduleId** | **String**| Schedule ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -183,19 +174,15 @@ null (empty response body)
 
 # **deleteAnalyticsUsersDetailsJob**
 
-
-
 > Void deleteAnalyticsUsersDetailsJob(jobId)
 
 Delete/cancel an async request
 
+Wraps DELETE /api/v2/analytics/users/details/jobs/{jobId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/analytics/users/details/jobs/{jobId}  
-
-Requires ANY permissions: 
-
-* analytics:userDetail:view
+- analytics:userDetail:view
 
 ### Example
 
@@ -230,12 +217,11 @@ try {
 
 ### Parameters
 
+| Name      | Type       | Description | Notes |
+| --------- | ---------- | ----------- | ----- |
+| **jobId** | **String** | jobId       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **jobId** | **String**| jobId | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -245,19 +231,15 @@ null (empty response body)
 
 # **getAnalyticsBotflowReportingturns**
 
-
-
-> [ReportingTurnsResponse](ReportingTurnsResponse.html) getAnalyticsBotflowReportingturns(botFlowId, after, pageSize, actionId, sessionId)
+> [ReportingTurnsResponse](ReportingTurnsResponse.md) getAnalyticsBotflowReportingturns(botFlowId, after, pageSize, actionId, sessionId)
 
 Get Reporting Turns.
 
+Wraps GET /api/v2/analytics/botflows/{botFlowId}/reportingturns
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/analytics/botflows/{botFlowId}/reportingturns  
-
-Requires ANY permissions: 
-
-* analytics:botFlowReportingTurn:view
+- analytics:botFlowReportingTurn:view
 
 ### Example
 
@@ -297,39 +279,34 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description                                                                                       | Notes                      |
+| ------------- | ---------- | ------------------------------------------------------------------------------------------------- | -------------------------- |
+| **botFlowId** | **String** | ID of the bot flow.                                                                               |
+| **after**     | **String** | The cursor that points to the ID of the last item in the list of entities that has been returned. | [optional]                 |
+| **pageSize**  | **String** | Max number of entities to return. Maximum of 250                                                  | [optional] [default to 50] |
+| **actionId**  | **String** | Optional action ID to get the reporting turns associated to a particular flow action              | [optional]                 |
+| **sessionId** | **String** | Optional session ID to get the reporting turns for a particular session                           | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **botFlowId** | **String**| ID of the bot flow. | 
-| **after** | **String**| The cursor that points to the ID of the last item in the list of entities that has been returned. | [optional] 
-| **pageSize** | **String**| Max number of entities to return. Maximum of 250 | [optional] [default to 50] 
-| **actionId** | **String**| Optional action ID to get the reporting turns associated to a particular flow action | [optional] 
-| **sessionId** | **String**| Optional session ID to get the reporting turns for a particular session | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ReportingTurnsResponse**](ReportingTurnsResponse.html)
+[**ReportingTurnsResponse**](ReportingTurnsResponse.md)
 
 <a name="getAnalyticsConversationDetails"></a>
 
 # **getAnalyticsConversationDetails**
 
-
-
-> [AnalyticsConversationWithoutAttributes](AnalyticsConversationWithoutAttributes.html) getAnalyticsConversationDetails(conversationId)
+> [AnalyticsConversationWithoutAttributes](AnalyticsConversationWithoutAttributes.md) getAnalyticsConversationDetails(conversationId)
 
 Get a conversation by id
 
+Wraps GET /api/v2/analytics/conversations/{conversationId}/details
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/analytics/conversations/{conversationId}/details  
-
-Requires ANY permissions: 
-
-* analytics:conversationDetail:view
-* analytics:agentConversationDetail:view
+- analytics:conversationDetail:view
+- analytics:agentConversationDetail:view
 
 ### Example
 
@@ -365,35 +342,30 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description    | Notes |
+| ------------------ | ---------- | -------------- | ----- |
+| **conversationId** | **String** | conversationId |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **conversationId** | **String**| conversationId | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AnalyticsConversationWithoutAttributes**](AnalyticsConversationWithoutAttributes.html)
+[**AnalyticsConversationWithoutAttributes**](AnalyticsConversationWithoutAttributes.md)
 
 <a name="getAnalyticsConversationsDetails"></a>
 
 # **getAnalyticsConversationsDetails**
 
-
-
-> [AnalyticsConversationWithoutAttributesMultiGetResponse](AnalyticsConversationWithoutAttributesMultiGetResponse.html) getAnalyticsConversationsDetails(id)
+> [AnalyticsConversationWithoutAttributesMultiGetResponse](AnalyticsConversationWithoutAttributesMultiGetResponse.md) getAnalyticsConversationsDetails(id)
 
 Gets multiple conversations by id
 
+Wraps GET /api/v2/analytics/conversations/details
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/analytics/conversations/details  
-
-Requires ANY permissions: 
-
-* analytics:conversationDetail:view
-* analytics:agentConversationDetail:view
+- analytics:conversationDetail:view
+- analytics:agentConversationDetail:view
 
 ### Example
 
@@ -429,35 +401,30 @@ try {
 
 ### Parameters
 
+| Name   | Type                                | Description                      | Notes      |
+| ------ | ----------------------------------- | -------------------------------- | ---------- |
+| **id** | [**List&lt;String&gt;**](String.md) | Comma-separated conversation ids | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | [**List&lt;String&gt;**](String.html)| Comma-separated conversation ids | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AnalyticsConversationWithoutAttributesMultiGetResponse**](AnalyticsConversationWithoutAttributesMultiGetResponse.html)
+[**AnalyticsConversationWithoutAttributesMultiGetResponse**](AnalyticsConversationWithoutAttributesMultiGetResponse.md)
 
 <a name="getAnalyticsConversationsDetailsJob"></a>
 
 # **getAnalyticsConversationsDetailsJob**
 
-
-
-> [AsyncQueryStatus](AsyncQueryStatus.html) getAnalyticsConversationsDetailsJob(jobId)
+> [AsyncQueryStatus](AsyncQueryStatus.md) getAnalyticsConversationsDetailsJob(jobId)
 
 Get status for async query for conversation details
 
+Wraps GET /api/v2/analytics/conversations/details/jobs/{jobId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/analytics/conversations/details/jobs/{jobId}  
-
-Requires ANY permissions: 
-
-* analytics:conversationDetail:view
-* analytics:agentConversationDetail:view
+- analytics:conversationDetail:view
+- analytics:agentConversationDetail:view
 
 ### Example
 
@@ -493,35 +460,30 @@ try {
 
 ### Parameters
 
+| Name      | Type       | Description | Notes |
+| --------- | ---------- | ----------- | ----- |
+| **jobId** | **String** | jobId       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **jobId** | **String**| jobId | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AsyncQueryStatus**](AsyncQueryStatus.html)
+[**AsyncQueryStatus**](AsyncQueryStatus.md)
 
 <a name="getAnalyticsConversationsDetailsJobResults"></a>
 
 # **getAnalyticsConversationsDetailsJobResults**
 
-
-
-> [AnalyticsConversationAsyncQueryResponse](AnalyticsConversationAsyncQueryResponse.html) getAnalyticsConversationsDetailsJobResults(jobId, cursor, pageSize)
+> [AnalyticsConversationAsyncQueryResponse](AnalyticsConversationAsyncQueryResponse.md) getAnalyticsConversationsDetailsJobResults(jobId, cursor, pageSize)
 
 Fetch a page of results for an async query
 
+Wraps GET /api/v2/analytics/conversations/details/jobs/{jobId}/results
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/analytics/conversations/details/jobs/{jobId}/results  
-
-Requires ANY permissions: 
-
-* analytics:conversationDetail:view
-* analytics:agentConversationDetail:view
+- analytics:conversationDetail:view
+- analytics:agentConversationDetail:view
 
 ### Example
 
@@ -559,36 +521,31 @@ try {
 
 ### Parameters
 
+| Name         | Type        | Description                                                           | Notes      |
+| ------------ | ----------- | --------------------------------------------------------------------- | ---------- |
+| **jobId**    | **String**  | jobId                                                                 |
+| **cursor**   | **String**  | Indicates where to resume query results (not required for first page) | [optional] |
+| **pageSize** | **Integer** | The desired maximum number of results                                 | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **jobId** | **String**| jobId | 
-| **cursor** | **String**| Indicates where to resume query results (not required for first page) | [optional] 
-| **pageSize** | **Integer**| The desired maximum number of results | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AnalyticsConversationAsyncQueryResponse**](AnalyticsConversationAsyncQueryResponse.html)
+[**AnalyticsConversationAsyncQueryResponse**](AnalyticsConversationAsyncQueryResponse.md)
 
 <a name="getAnalyticsConversationsDetailsJobsAvailability"></a>
 
 # **getAnalyticsConversationsDetailsJobsAvailability**
 
-
-
-> [DataAvailabilityResponse](DataAvailabilityResponse.html) getAnalyticsConversationsDetailsJobsAvailability()
+> [DataAvailabilityResponse](DataAvailabilityResponse.md) getAnalyticsConversationsDetailsJobsAvailability()
 
 Lookup the datalake availability date and time
 
+Wraps GET /api/v2/analytics/conversations/details/jobs/availability
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/analytics/conversations/details/jobs/availability  
-
-Requires ANY permissions: 
-
-* analytics:conversationDetail:view
+- analytics:conversationDetail:view
 
 ### Example
 
@@ -625,29 +582,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**DataAvailabilityResponse**](DataAvailabilityResponse.html)
+[**DataAvailabilityResponse**](DataAvailabilityResponse.md)
 
 <a name="getAnalyticsReportingExports"></a>
 
 # **getAnalyticsReportingExports**
 
-
-
-> [ReportingExportJobListing](ReportingExportJobListing.html) getAnalyticsReportingExports(pageNumber, pageSize)
+> [ReportingExportJobListing](ReportingExportJobListing.md) getAnalyticsReportingExports(pageNumber, pageSize)
 
 Get all view export requests for a user
 
+Wraps GET /api/v2/analytics/reporting/exports
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/analytics/reporting/exports  
-
-Requires ALL permissions: 
-
-* analytics:dataExport:view
+- analytics:dataExport:view
 
 ### Example
 
@@ -684,35 +635,30 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ReportingExportJobListing**](ReportingExportJobListing.html)
+[**ReportingExportJobListing**](ReportingExportJobListing.md)
 
 <a name="getAnalyticsReportingExportsMetadata"></a>
 
 # **getAnalyticsReportingExportsMetadata**
 
-
-
-> [ReportingExportMetadataJobListing](ReportingExportMetadataJobListing.html) getAnalyticsReportingExportsMetadata()
+> [ReportingExportMetadataJobListing](ReportingExportMetadataJobListing.md) getAnalyticsReportingExportsMetadata()
 
 Get all export metadata
 
+Wraps GET /api/v2/analytics/reporting/exports/metadata
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/analytics/reporting/exports/metadata  
-
-Requires ALL permissions: 
-
-* analytics:dataExport:view
+- analytics:dataExport:view
 
 ### Example
 
@@ -749,29 +695,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**ReportingExportMetadataJobListing**](ReportingExportMetadataJobListing.html)
+[**ReportingExportMetadataJobListing**](ReportingExportMetadataJobListing.md)
 
 <a name="getAnalyticsReportingMetadata"></a>
 
 # **getAnalyticsReportingMetadata**
 
-
-
-> [ReportMetaDataEntityListing](ReportMetaDataEntityListing.html) getAnalyticsReportingMetadata(pageNumber, pageSize, locale)
+> [ReportMetaDataEntityListing](ReportMetaDataEntityListing.md) getAnalyticsReportingMetadata(pageNumber, pageSize, locale)
 
 Get list of reporting metadata.
 
+Wraps GET /api/v2/analytics/reporting/metadata
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/analytics/reporting/metadata  
-
-Requires ANY permissions: 
-
-* reporting:acd:view, reporting:status:view, reporting:interactions:view, reporting:outbound:view, reporting:quality:view, employee
+- reporting:acd:view, reporting:status:view, reporting:interactions:view, reporting:outbound:view, reporting:quality:view, employee
 
 ### Example
 
@@ -809,36 +749,31 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **locale**     | **String**  | Locale      | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **locale** | **String**| Locale | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ReportMetaDataEntityListing**](ReportMetaDataEntityListing.html)
+[**ReportMetaDataEntityListing**](ReportMetaDataEntityListing.md)
 
 <a name="getAnalyticsReportingReportIdMetadata"></a>
 
 # **getAnalyticsReportingReportIdMetadata**
 
-
-
-> [ReportMetaData](ReportMetaData.html) getAnalyticsReportingReportIdMetadata(reportId, locale)
+> [ReportMetaData](ReportMetaData.md) getAnalyticsReportingReportIdMetadata(reportId, locale)
 
 Get a reporting metadata.
 
+Wraps GET /api/v2/analytics/reporting/{reportId}/metadata
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/analytics/reporting/{reportId}/metadata  
-
-Requires ANY permissions: 
-
-* reporting:acd:view, reporting:status:view, reporting:interactions:view, reporting:outbound:view, reporting:quality:view, employee
+- reporting:acd:view, reporting:status:view, reporting:interactions:view, reporting:outbound:view, reporting:quality:view, employee
 
 ### Example
 
@@ -875,23 +810,20 @@ try {
 
 ### Parameters
 
+| Name         | Type       | Description | Notes      |
+| ------------ | ---------- | ----------- | ---------- |
+| **reportId** | **String** | Report ID   |
+| **locale**   | **String** | Locale      | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **reportId** | **String**| Report ID | 
-| **locale** | **String**| Locale | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ReportMetaData**](ReportMetaData.html)
+[**ReportMetaData**](ReportMetaData.md)
 
 <a name="getAnalyticsReportingReportformats"></a>
 
 # **getAnalyticsReportingReportformats**
-
-
 
 > List&lt;String&gt; getAnalyticsReportingReportformats()
 
@@ -899,10 +831,9 @@ Get a list of report formats
 
 Get a list of report formats.
 
-Wraps GET /api/v2/analytics/reporting/reportformats  
+Wraps GET /api/v2/analytics/reporting/reportformats
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -939,8 +870,6 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
 **List&lt;String&gt;**
@@ -949,18 +878,13 @@ This endpoint does not require any parameters.
 
 # **getAnalyticsReportingSchedule**
 
-
-
-> [ReportSchedule](ReportSchedule.html) getAnalyticsReportingSchedule(scheduleId)
+> [ReportSchedule](ReportSchedule.md) getAnalyticsReportingSchedule(scheduleId)
 
 Get a scheduled report job.
 
+Wraps GET /api/v2/analytics/reporting/schedules/{scheduleId}
 
-
-Wraps GET /api/v2/analytics/reporting/schedules/{scheduleId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -996,33 +920,27 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **scheduleId** | **String** | Schedule ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **scheduleId** | **String**| Schedule ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ReportSchedule**](ReportSchedule.html)
+[**ReportSchedule**](ReportSchedule.md)
 
 <a name="getAnalyticsReportingScheduleHistory"></a>
 
 # **getAnalyticsReportingScheduleHistory**
 
-
-
-> [ReportRunEntryEntityDomainListing](ReportRunEntryEntityDomainListing.html) getAnalyticsReportingScheduleHistory(scheduleId, pageNumber, pageSize)
+> [ReportRunEntryEntityDomainListing](ReportRunEntryEntityDomainListing.md) getAnalyticsReportingScheduleHistory(scheduleId, pageNumber, pageSize)
 
 Get list of completed scheduled report jobs.
 
+Wraps GET /api/v2/analytics/reporting/schedules/{scheduleId}/history
 
-
-Wraps GET /api/v2/analytics/reporting/schedules/{scheduleId}/history  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1047,8 +965,8 @@ Configuration.setDefaultApiClient(apiClient);
 
 AnalyticsApi apiInstance = new AnalyticsApi();
 String scheduleId = "scheduleId_example"; // String | Schedule ID
-Integer pageNumber = 1; // Integer | 
-Integer pageSize = 25; // Integer | 
+Integer pageNumber = 1; // Integer |
+Integer pageSize = 25; // Integer |
 try {
     ReportRunEntryEntityDomainListing result = apiInstance.getAnalyticsReportingScheduleHistory(scheduleId, pageNumber, pageSize);
     System.out.println(result);
@@ -1060,35 +978,29 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **scheduleId** | **String**  | Schedule ID |
+| **pageNumber** | **Integer** |             | [optional] [default to 1]  |
+| **pageSize**   | **Integer** |             | [optional] [default to 25] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **scheduleId** | **String**| Schedule ID | 
-| **pageNumber** | **Integer**|  | [optional] [default to 1] 
-| **pageSize** | **Integer**|  | [optional] [default to 25] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ReportRunEntryEntityDomainListing**](ReportRunEntryEntityDomainListing.html)
+[**ReportRunEntryEntityDomainListing**](ReportRunEntryEntityDomainListing.md)
 
 <a name="getAnalyticsReportingScheduleHistoryLatest"></a>
 
 # **getAnalyticsReportingScheduleHistoryLatest**
 
-
-
-> [ReportRunEntry](ReportRunEntry.html) getAnalyticsReportingScheduleHistoryLatest(scheduleId)
+> [ReportRunEntry](ReportRunEntry.md) getAnalyticsReportingScheduleHistoryLatest(scheduleId)
 
 Get most recently completed scheduled report job.
 
+Wraps GET /api/v2/analytics/reporting/schedules/{scheduleId}/history/latest
 
-
-Wraps GET /api/v2/analytics/reporting/schedules/{scheduleId}/history/latest  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1124,33 +1036,29 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **scheduleId** | **String** | Schedule ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **scheduleId** | **String**| Schedule ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ReportRunEntry**](ReportRunEntry.html)
+[**ReportRunEntry**](ReportRunEntry.md)
 
 <a name="getAnalyticsReportingScheduleHistoryRunId"></a>
 
 # **getAnalyticsReportingScheduleHistoryRunId**
 
-
-
-> [ReportRunEntry](ReportRunEntry.html) getAnalyticsReportingScheduleHistoryRunId(runId, scheduleId)
+> [ReportRunEntry](ReportRunEntry.md) getAnalyticsReportingScheduleHistoryRunId(runId, scheduleId)
 
 A completed scheduled report job
 
 A completed scheduled report job.
 
-Wraps GET /api/v2/analytics/reporting/schedules/{scheduleId}/history/{runId}  
+Wraps GET /api/v2/analytics/reporting/schedules/{scheduleId}/history/{runId}
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1187,35 +1095,32 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **runId**      | **String** | Run ID      |
+| **scheduleId** | **String** | Schedule ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **runId** | **String**| Run ID | 
-| **scheduleId** | **String**| Schedule ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ReportRunEntry**](ReportRunEntry.html)
+[**ReportRunEntry**](ReportRunEntry.md)
 
 <a name="getAnalyticsReportingSchedules"></a>
 
 # **getAnalyticsReportingSchedules**
 
-
-
-> [ReportScheduleEntityListing](ReportScheduleEntityListing.html) getAnalyticsReportingSchedules(pageNumber, pageSize)
+> [ReportScheduleEntityListing](ReportScheduleEntityListing.md) getAnalyticsReportingSchedules(pageNumber, pageSize)
 
 Get a list of scheduled report jobs
 
 Get a list of scheduled report jobs.
 
-Wraps GET /api/v2/analytics/reporting/schedules  
+Wraps GET /api/v2/analytics/reporting/schedules
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* reporting:acd:view, reporting:status:view, reporting:interactions:view, reporting:outbound:view, reporting:quality:view, employee
+- reporting:acd:view, reporting:status:view, reporting:interactions:view, reporting:outbound:view, reporting:quality:view, employee
 
 ### Example
 
@@ -1252,34 +1157,28 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ReportScheduleEntityListing**](ReportScheduleEntityListing.html)
+[**ReportScheduleEntityListing**](ReportScheduleEntityListing.md)
 
 <a name="getAnalyticsReportingSettings"></a>
 
 # **getAnalyticsReportingSettings**
 
-
-
-> [AnalyticsReportingSettings](AnalyticsReportingSettings.html) getAnalyticsReportingSettings()
+> [AnalyticsReportingSettings](AnalyticsReportingSettings.md) getAnalyticsReportingSettings()
 
 Get AnalyticsReportingSettings for an organization
 
+Wraps GET /api/v2/analytics/reporting/settings
 
-
-Wraps GET /api/v2/analytics/reporting/settings  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1316,28 +1215,21 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**AnalyticsReportingSettings**](AnalyticsReportingSettings.html)
+[**AnalyticsReportingSettings**](AnalyticsReportingSettings.md)
 
 <a name="getAnalyticsReportingTimeperiods"></a>
 
 # **getAnalyticsReportingTimeperiods**
 
-
-
 > List&lt;String&gt; getAnalyticsReportingTimeperiods()
 
 Get a list of report time periods.
 
+Wraps GET /api/v2/analytics/reporting/timeperiods
 
-
-Wraps GET /api/v2/analytics/reporting/timeperiods  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1374,8 +1266,6 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
 **List&lt;String&gt;**
@@ -1384,19 +1274,15 @@ This endpoint does not require any parameters.
 
 # **getAnalyticsUsersDetailsJob**
 
-
-
-> [AsyncQueryStatus](AsyncQueryStatus.html) getAnalyticsUsersDetailsJob(jobId)
+> [AsyncQueryStatus](AsyncQueryStatus.md) getAnalyticsUsersDetailsJob(jobId)
 
 Get status for async query for user details
 
+Wraps GET /api/v2/analytics/users/details/jobs/{jobId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/analytics/users/details/jobs/{jobId}  
-
-Requires ANY permissions: 
-
-* analytics:userDetail:view
+- analytics:userDetail:view
 
 ### Example
 
@@ -1432,34 +1318,29 @@ try {
 
 ### Parameters
 
+| Name      | Type       | Description | Notes |
+| --------- | ---------- | ----------- | ----- |
+| **jobId** | **String** | jobId       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **jobId** | **String**| jobId | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AsyncQueryStatus**](AsyncQueryStatus.html)
+[**AsyncQueryStatus**](AsyncQueryStatus.md)
 
 <a name="getAnalyticsUsersDetailsJobResults"></a>
 
 # **getAnalyticsUsersDetailsJobResults**
 
-
-
-> [AnalyticsUserDetailsAsyncQueryResponse](AnalyticsUserDetailsAsyncQueryResponse.html) getAnalyticsUsersDetailsJobResults(jobId, cursor, pageSize)
+> [AnalyticsUserDetailsAsyncQueryResponse](AnalyticsUserDetailsAsyncQueryResponse.md) getAnalyticsUsersDetailsJobResults(jobId, cursor, pageSize)
 
 Fetch a page of results for an async query
 
+Wraps GET /api/v2/analytics/users/details/jobs/{jobId}/results
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/analytics/users/details/jobs/{jobId}/results  
-
-Requires ANY permissions: 
-
-* analytics:userDetail:view
+- analytics:userDetail:view
 
 ### Example
 
@@ -1497,36 +1378,31 @@ try {
 
 ### Parameters
 
+| Name         | Type        | Description                                                           | Notes      |
+| ------------ | ----------- | --------------------------------------------------------------------- | ---------- |
+| **jobId**    | **String**  | jobId                                                                 |
+| **cursor**   | **String**  | Indicates where to resume query results (not required for first page) | [optional] |
+| **pageSize** | **Integer** | The desired maximum number of results                                 | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **jobId** | **String**| jobId | 
-| **cursor** | **String**| Indicates where to resume query results (not required for first page) | [optional] 
-| **pageSize** | **Integer**| The desired maximum number of results | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AnalyticsUserDetailsAsyncQueryResponse**](AnalyticsUserDetailsAsyncQueryResponse.html)
+[**AnalyticsUserDetailsAsyncQueryResponse**](AnalyticsUserDetailsAsyncQueryResponse.md)
 
 <a name="getAnalyticsUsersDetailsJobsAvailability"></a>
 
 # **getAnalyticsUsersDetailsJobsAvailability**
 
-
-
-> [DataAvailabilityResponse](DataAvailabilityResponse.html) getAnalyticsUsersDetailsJobsAvailability()
+> [DataAvailabilityResponse](DataAvailabilityResponse.md) getAnalyticsUsersDetailsJobsAvailability()
 
 Lookup the datalake availability date and time
 
+Wraps GET /api/v2/analytics/users/details/jobs/availability
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/analytics/users/details/jobs/availability  
-
-Requires ANY permissions: 
-
-* analytics:userDetail:view
+- analytics:userDetail:view
 
 ### Example
 
@@ -1563,32 +1439,26 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**DataAvailabilityResponse**](DataAvailabilityResponse.html)
+[**DataAvailabilityResponse**](DataAvailabilityResponse.md)
 
 <a name="patchAnalyticsReportingSettings"></a>
 
 # **patchAnalyticsReportingSettings**
 
-
-
-> [AnalyticsReportingSettings](AnalyticsReportingSettings.html) patchAnalyticsReportingSettings(body)
+> [AnalyticsReportingSettings](AnalyticsReportingSettings.md) patchAnalyticsReportingSettings(body)
 
 Patch AnalyticsReportingSettings values for an organization
 
+Wraps PATCH /api/v2/analytics/reporting/settings
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/analytics/reporting/settings  
-
-Requires ANY permissions: 
-
-* recording:recordingSegment:view
-* analytics:conversationDetail:view
-* analytics:conversationAggregate:view
-* analytics:dashboardConfigurations:view
+- recording:recordingSegment:view
+- analytics:conversationDetail:view
+- analytics:conversationAggregate:view
+- analytics:dashboardConfigurations:view
 
 ### Example
 
@@ -1624,34 +1494,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                            | Description                       | Notes |
+| -------- | --------------------------------------------------------------- | --------------------------------- | ----- |
+| **body** | [**AnalyticsReportingSettings**](AnalyticsReportingSettings.md) | AnalyticsReportingSettingsRequest |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**AnalyticsReportingSettings**](AnalyticsReportingSettings.html)| AnalyticsReportingSettingsRequest | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AnalyticsReportingSettings**](AnalyticsReportingSettings.html)
+[**AnalyticsReportingSettings**](AnalyticsReportingSettings.md)
 
 <a name="postAnalyticsBotsAggregatesQuery"></a>
 
 # **postAnalyticsBotsAggregatesQuery**
 
-
-
-> [BotAggregateQueryResponse](BotAggregateQueryResponse.html) postAnalyticsBotsAggregatesQuery(body)
+> [BotAggregateQueryResponse](BotAggregateQueryResponse.md) postAnalyticsBotsAggregatesQuery(body)
 
 Query for bot aggregates
 
+Wraps POST /api/v2/analytics/bots/aggregates/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/bots/aggregates/query  
-
-Requires ANY permissions: 
-
-* analytics:botAggregate:view
+- analytics:botAggregate:view
 
 ### Example
 
@@ -1687,34 +1552,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                              | Description | Notes |
+| -------- | ------------------------------------------------- | ----------- | ----- |
+| **body** | [**BotAggregationQuery**](BotAggregationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**BotAggregationQuery**](BotAggregationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**BotAggregateQueryResponse**](BotAggregateQueryResponse.html)
+[**BotAggregateQueryResponse**](BotAggregateQueryResponse.md)
 
 <a name="postAnalyticsConversationDetailsProperties"></a>
 
 # **postAnalyticsConversationDetailsProperties**
 
-
-
-> [PropertyIndexRequest](PropertyIndexRequest.html) postAnalyticsConversationDetailsProperties(conversationId, body)
+> [PropertyIndexRequest](PropertyIndexRequest.md) postAnalyticsConversationDetailsProperties(conversationId, body)
 
 Index conversation properties
 
+Wraps POST /api/v2/analytics/conversations/{conversationId}/details/properties
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/conversations/{conversationId}/details/properties  
-
-Requires ANY permissions: 
-
-* analytics:conversationProperties:index
+- analytics:conversationProperties:index
 
 ### Example
 
@@ -1751,35 +1611,30 @@ try {
 
 ### Parameters
 
+| Name               | Type                                                | Description    | Notes |
+| ------------------ | --------------------------------------------------- | -------------- | ----- |
+| **conversationId** | **String**                                          | conversationId |
+| **body**           | [**PropertyIndexRequest**](PropertyIndexRequest.md) | request        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **conversationId** | **String**| conversationId | 
-| **body** | [**PropertyIndexRequest**](PropertyIndexRequest.html)| request | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**PropertyIndexRequest**](PropertyIndexRequest.html)
+[**PropertyIndexRequest**](PropertyIndexRequest.md)
 
 <a name="postAnalyticsConversationsAggregatesQuery"></a>
 
 # **postAnalyticsConversationsAggregatesQuery**
 
-
-
-> [ConversationAggregateQueryResponse](ConversationAggregateQueryResponse.html) postAnalyticsConversationsAggregatesQuery(body)
+> [ConversationAggregateQueryResponse](ConversationAggregateQueryResponse.md) postAnalyticsConversationsAggregatesQuery(body)
 
 Query for conversation aggregates
 
+Wraps POST /api/v2/analytics/conversations/aggregates/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/conversations/aggregates/query  
-
-Requires ANY permissions: 
-
-* analytics:conversationAggregate:view
+- analytics:conversationAggregate:view
 
 ### Example
 
@@ -1815,35 +1670,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                                | Description | Notes |
+| -------- | ------------------------------------------------------------------- | ----------- | ----- |
+| **body** | [**ConversationAggregationQuery**](ConversationAggregationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ConversationAggregationQuery**](ConversationAggregationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ConversationAggregateQueryResponse**](ConversationAggregateQueryResponse.html)
+[**ConversationAggregateQueryResponse**](ConversationAggregateQueryResponse.md)
 
 <a name="postAnalyticsConversationsDetailsJobs"></a>
 
 # **postAnalyticsConversationsDetailsJobs**
 
-
-
-> [AsyncQueryResponse](AsyncQueryResponse.html) postAnalyticsConversationsDetailsJobs(body)
+> [AsyncQueryResponse](AsyncQueryResponse.md) postAnalyticsConversationsDetailsJobs(body)
 
 Query for conversation details asynchronously
 
+Wraps POST /api/v2/analytics/conversations/details/jobs
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/conversations/details/jobs  
-
-Requires ANY permissions: 
-
-* analytics:conversationDetail:view
-* analytics:agentConversationDetail:view
+- analytics:conversationDetail:view
+- analytics:agentConversationDetail:view
 
 ### Example
 
@@ -1879,35 +1729,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                    | Description | Notes |
+| -------- | ------------------------------------------------------- | ----------- | ----- |
+| **body** | [**AsyncConversationQuery**](AsyncConversationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**AsyncConversationQuery**](AsyncConversationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AsyncQueryResponse**](AsyncQueryResponse.html)
+[**AsyncQueryResponse**](AsyncQueryResponse.md)
 
 <a name="postAnalyticsConversationsDetailsQuery"></a>
 
 # **postAnalyticsConversationsDetailsQuery**
 
-
-
-> [AnalyticsConversationQueryResponse](AnalyticsConversationQueryResponse.html) postAnalyticsConversationsDetailsQuery(body)
+> [AnalyticsConversationQueryResponse](AnalyticsConversationQueryResponse.md) postAnalyticsConversationsDetailsQuery(body)
 
 Query for conversation details
 
+Wraps POST /api/v2/analytics/conversations/details/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/conversations/details/query  
-
-Requires ANY permissions: 
-
-* analytics:conversationDetail:view
-* analytics:agentConversationDetail:view
+- analytics:conversationDetail:view
+- analytics:agentConversationDetail:view
 
 ### Example
 
@@ -1943,34 +1788,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                          | Description | Notes |
+| -------- | --------------------------------------------- | ----------- | ----- |
+| **body** | [**ConversationQuery**](ConversationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ConversationQuery**](ConversationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AnalyticsConversationQueryResponse**](AnalyticsConversationQueryResponse.html)
+[**AnalyticsConversationQueryResponse**](AnalyticsConversationQueryResponse.md)
 
 <a name="postAnalyticsConversationsTranscriptsQuery"></a>
 
 # **postAnalyticsConversationsTranscriptsQuery**
 
-
-
-> [AnalyticsConversationWithoutAttributesMultiGetResponse](AnalyticsConversationWithoutAttributesMultiGetResponse.html) postAnalyticsConversationsTranscriptsQuery(body)
+> [AnalyticsConversationWithoutAttributesMultiGetResponse](AnalyticsConversationWithoutAttributesMultiGetResponse.md) postAnalyticsConversationsTranscriptsQuery(body)
 
 Search resources.
 
+Wraps POST /api/v2/analytics/conversations/transcripts/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/conversations/transcripts/query  
-
-Requires ANY permissions: 
-
-* analytics:conversationDetail:view
+- analytics:conversationDetail:view
 
 ### Example
 
@@ -2006,34 +1846,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                                                          | Description            | Notes |
+| -------- | --------------------------------------------------------------------------------------------- | ---------------------- | ----- |
+| **body** | [**TranscriptConversationDetailSearchRequest**](TranscriptConversationDetailSearchRequest.md) | Search request options |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**TranscriptConversationDetailSearchRequest**](TranscriptConversationDetailSearchRequest.html)| Search request options | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AnalyticsConversationWithoutAttributesMultiGetResponse**](AnalyticsConversationWithoutAttributesMultiGetResponse.html)
+[**AnalyticsConversationWithoutAttributesMultiGetResponse**](AnalyticsConversationWithoutAttributesMultiGetResponse.md)
 
 <a name="postAnalyticsEvaluationsAggregatesQuery"></a>
 
 # **postAnalyticsEvaluationsAggregatesQuery**
 
-
-
-> [EvaluationAggregateQueryResponse](EvaluationAggregateQueryResponse.html) postAnalyticsEvaluationsAggregatesQuery(body)
+> [EvaluationAggregateQueryResponse](EvaluationAggregateQueryResponse.md) postAnalyticsEvaluationsAggregatesQuery(body)
 
 Query for evaluation aggregates
 
+Wraps POST /api/v2/analytics/evaluations/aggregates/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/evaluations/aggregates/query  
-
-Requires ANY permissions: 
-
-* analytics:evaluationAggregate:view
+- analytics:evaluationAggregate:view
 
 ### Example
 
@@ -2069,34 +1904,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                            | Description | Notes |
+| -------- | --------------------------------------------------------------- | ----------- | ----- |
+| **body** | [**EvaluationAggregationQuery**](EvaluationAggregationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**EvaluationAggregationQuery**](EvaluationAggregationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EvaluationAggregateQueryResponse**](EvaluationAggregateQueryResponse.html)
+[**EvaluationAggregateQueryResponse**](EvaluationAggregateQueryResponse.md)
 
 <a name="postAnalyticsFlowsAggregatesQuery"></a>
 
 # **postAnalyticsFlowsAggregatesQuery**
 
-
-
-> [FlowAggregateQueryResponse](FlowAggregateQueryResponse.html) postAnalyticsFlowsAggregatesQuery(body)
+> [FlowAggregateQueryResponse](FlowAggregateQueryResponse.md) postAnalyticsFlowsAggregatesQuery(body)
 
 Query for flow aggregates
 
+Wraps POST /api/v2/analytics/flows/aggregates/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/flows/aggregates/query  
-
-Requires ANY permissions: 
-
-* analytics:flowAggregate:view
+- analytics:flowAggregate:view
 
 ### Example
 
@@ -2132,34 +1962,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                | Description | Notes |
+| -------- | --------------------------------------------------- | ----------- | ----- |
+| **body** | [**FlowAggregationQuery**](FlowAggregationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**FlowAggregationQuery**](FlowAggregationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**FlowAggregateQueryResponse**](FlowAggregateQueryResponse.html)
+[**FlowAggregateQueryResponse**](FlowAggregateQueryResponse.md)
 
 <a name="postAnalyticsFlowsObservationsQuery"></a>
 
 # **postAnalyticsFlowsObservationsQuery**
 
-
-
-> [FlowObservationQueryResponse](FlowObservationQueryResponse.html) postAnalyticsFlowsObservationsQuery(body)
+> [FlowObservationQueryResponse](FlowObservationQueryResponse.md) postAnalyticsFlowsObservationsQuery(body)
 
 Query for flow observations
 
+Wraps POST /api/v2/analytics/flows/observations/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/flows/observations/query  
-
-Requires ANY permissions: 
-
-* analytics:flowObservation:view
+- analytics:flowObservation:view
 
 ### Example
 
@@ -2195,34 +2020,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                | Description | Notes |
+| -------- | --------------------------------------------------- | ----------- | ----- |
+| **body** | [**FlowObservationQuery**](FlowObservationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**FlowObservationQuery**](FlowObservationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**FlowObservationQueryResponse**](FlowObservationQueryResponse.html)
+[**FlowObservationQueryResponse**](FlowObservationQueryResponse.md)
 
 <a name="postAnalyticsJourneysAggregatesQuery"></a>
 
 # **postAnalyticsJourneysAggregatesQuery**
 
-
-
-> [JourneyAggregateQueryResponse](JourneyAggregateQueryResponse.html) postAnalyticsJourneysAggregatesQuery(body)
+> [JourneyAggregateQueryResponse](JourneyAggregateQueryResponse.md) postAnalyticsJourneysAggregatesQuery(body)
 
 Query for journey aggregates
 
+Wraps POST /api/v2/analytics/journeys/aggregates/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/journeys/aggregates/query  
-
-Requires ANY permissions: 
-
-* analytics:journeyAggregate:view
+- analytics:journeyAggregate:view
 
 ### Example
 
@@ -2258,34 +2078,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                      | Description | Notes |
+| -------- | --------------------------------------------------------- | ----------- | ----- |
+| **body** | [**JourneyAggregationQuery**](JourneyAggregationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**JourneyAggregationQuery**](JourneyAggregationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JourneyAggregateQueryResponse**](JourneyAggregateQueryResponse.html)
+[**JourneyAggregateQueryResponse**](JourneyAggregateQueryResponse.md)
 
 <a name="postAnalyticsQueuesObservationsQuery"></a>
 
 # **postAnalyticsQueuesObservationsQuery**
 
-
-
-> [QueueObservationQueryResponse](QueueObservationQueryResponse.html) postAnalyticsQueuesObservationsQuery(body)
+> [QueueObservationQueryResponse](QueueObservationQueryResponse.md) postAnalyticsQueuesObservationsQuery(body)
 
 Query for queue observations
 
+Wraps POST /api/v2/analytics/queues/observations/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/queues/observations/query  
-
-Requires ANY permissions: 
-
-* analytics:queueObservation:view
+- analytics:queueObservation:view
 
 ### Example
 
@@ -2321,34 +2136,31 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                  | Description | Notes |
+| -------- | ----------------------------------------------------- | ----------- | ----- |
+| **body** | [**QueueObservationQuery**](QueueObservationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**QueueObservationQuery**](QueueObservationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**QueueObservationQueryResponse**](QueueObservationQueryResponse.html)
+[**QueueObservationQueryResponse**](QueueObservationQueryResponse.md)
 
 <a name="postAnalyticsReportingExports"></a>
 
 # **postAnalyticsReportingExports**
 
-
-
-> [ReportingExportJobResponse](ReportingExportJobResponse.html) postAnalyticsReportingExports(body)
+> [ReportingExportJobResponse](ReportingExportJobResponse.md) postAnalyticsReportingExports(body)
 
 Generate a view export request
 
 This API creates a reporting export but the desired way to export analytics data is to use the analytics query APIs instead
 
-Wraps POST /api/v2/analytics/reporting/exports  
+Wraps POST /api/v2/analytics/reporting/exports
 
-Requires ALL permissions: 
+Requires ALL permissions:
 
-* analytics:dataExport:add
+- analytics:dataExport:add
 
 ### Example
 
@@ -2384,34 +2196,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                          | Description               | Notes |
+| -------- | ------------------------------------------------------------- | ------------------------- | ----- |
+| **body** | [**ReportingExportJobRequest**](ReportingExportJobRequest.md) | ReportingExportJobRequest |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ReportingExportJobRequest**](ReportingExportJobRequest.html)| ReportingExportJobRequest | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ReportingExportJobResponse**](ReportingExportJobResponse.html)
+[**ReportingExportJobResponse**](ReportingExportJobResponse.md)
 
 <a name="postAnalyticsReportingScheduleRunreport"></a>
 
 # **postAnalyticsReportingScheduleRunreport**
 
-
-
-> [RunNowResponse](RunNowResponse.html) postAnalyticsReportingScheduleRunreport(scheduleId)
+> [RunNowResponse](RunNowResponse.md) postAnalyticsReportingScheduleRunreport(scheduleId)
 
 Place a scheduled report immediately into the reporting queue
 
+Wraps POST /api/v2/analytics/reporting/schedules/{scheduleId}/runreport
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/reporting/schedules/{scheduleId}/runreport  
-
-Requires ANY permissions: 
-
-* reporting:acd:view, reporting:status:view, reporting:interactions:view, reporting:outbound:view, reporting:quality:view, employee
+- reporting:acd:view, reporting:status:view, reporting:interactions:view, reporting:outbound:view, reporting:quality:view, employee
 
 ### Example
 
@@ -2447,34 +2254,31 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **scheduleId** | **String** | Schedule ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **scheduleId** | **String**| Schedule ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**RunNowResponse**](RunNowResponse.html)
+[**RunNowResponse**](RunNowResponse.md)
 
 <a name="postAnalyticsReportingSchedules"></a>
 
 # **postAnalyticsReportingSchedules**
 
-
-
-> [ReportSchedule](ReportSchedule.html) postAnalyticsReportingSchedules(body)
+> [ReportSchedule](ReportSchedule.md) postAnalyticsReportingSchedules(body)
 
 Create a scheduled report job
 
 Create a scheduled report job.
 
-Wraps POST /api/v2/analytics/reporting/schedules  
+Wraps POST /api/v2/analytics/reporting/schedules
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* reporting:acd:view, reporting:status:view, reporting:interactions:view, reporting:outbound:view, reporting:quality:view, employee
+- reporting:acd:view, reporting:status:view, reporting:interactions:view, reporting:outbound:view, reporting:quality:view, employee
 
 ### Example
 
@@ -2510,34 +2314,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                    | Description    | Notes |
+| -------- | --------------------------------------- | -------------- | ----- |
+| **body** | [**ReportSchedule**](ReportSchedule.md) | ReportSchedule |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ReportSchedule**](ReportSchedule.html)| ReportSchedule | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ReportSchedule**](ReportSchedule.html)
+[**ReportSchedule**](ReportSchedule.md)
 
 <a name="postAnalyticsSurveysAggregatesQuery"></a>
 
 # **postAnalyticsSurveysAggregatesQuery**
 
-
-
-> [SurveyAggregateQueryResponse](SurveyAggregateQueryResponse.html) postAnalyticsSurveysAggregatesQuery(body)
+> [SurveyAggregateQueryResponse](SurveyAggregateQueryResponse.md) postAnalyticsSurveysAggregatesQuery(body)
 
 Query for survey aggregates
 
+Wraps POST /api/v2/analytics/surveys/aggregates/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/surveys/aggregates/query  
-
-Requires ANY permissions: 
-
-* analytics:surveyAggregate:view
+- analytics:surveyAggregate:view
 
 ### Example
 
@@ -2573,34 +2372,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                    | Description | Notes |
+| -------- | ------------------------------------------------------- | ----------- | ----- |
+| **body** | [**SurveyAggregationQuery**](SurveyAggregationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**SurveyAggregationQuery**](SurveyAggregationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SurveyAggregateQueryResponse**](SurveyAggregateQueryResponse.html)
+[**SurveyAggregateQueryResponse**](SurveyAggregateQueryResponse.md)
 
 <a name="postAnalyticsTranscriptsAggregatesQuery"></a>
 
 # **postAnalyticsTranscriptsAggregatesQuery**
 
-
-
-> [TranscriptAggregateQueryResponse](TranscriptAggregateQueryResponse.html) postAnalyticsTranscriptsAggregatesQuery(body)
+> [TranscriptAggregateQueryResponse](TranscriptAggregateQueryResponse.md) postAnalyticsTranscriptsAggregatesQuery(body)
 
 Query for transcript aggregates
 
+Wraps POST /api/v2/analytics/transcripts/aggregates/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/transcripts/aggregates/query  
-
-Requires ANY permissions: 
-
-* analytics:speechAndTextAnalyticsAggregates:view
+- analytics:speechAndTextAnalyticsAggregates:view
 
 ### Example
 
@@ -2636,34 +2430,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                            | Description | Notes |
+| -------- | --------------------------------------------------------------- | ----------- | ----- |
+| **body** | [**TranscriptAggregationQuery**](TranscriptAggregationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**TranscriptAggregationQuery**](TranscriptAggregationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TranscriptAggregateQueryResponse**](TranscriptAggregateQueryResponse.html)
+[**TranscriptAggregateQueryResponse**](TranscriptAggregateQueryResponse.md)
 
 <a name="postAnalyticsUsersAggregatesQuery"></a>
 
 # **postAnalyticsUsersAggregatesQuery**
 
-
-
-> [UserAggregateQueryResponse](UserAggregateQueryResponse.html) postAnalyticsUsersAggregatesQuery(body)
+> [UserAggregateQueryResponse](UserAggregateQueryResponse.md) postAnalyticsUsersAggregatesQuery(body)
 
 Query for user aggregates
 
+Wraps POST /api/v2/analytics/users/aggregates/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/users/aggregates/query  
-
-Requires ANY permissions: 
-
-* analytics:userAggregate:view
+- analytics:userAggregate:view
 
 ### Example
 
@@ -2699,34 +2488,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                | Description | Notes |
+| -------- | --------------------------------------------------- | ----------- | ----- |
+| **body** | [**UserAggregationQuery**](UserAggregationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**UserAggregationQuery**](UserAggregationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserAggregateQueryResponse**](UserAggregateQueryResponse.html)
+[**UserAggregateQueryResponse**](UserAggregateQueryResponse.md)
 
 <a name="postAnalyticsUsersDetailsJobs"></a>
 
 # **postAnalyticsUsersDetailsJobs**
 
-
-
-> [AsyncQueryResponse](AsyncQueryResponse.html) postAnalyticsUsersDetailsJobs(body)
+> [AsyncQueryResponse](AsyncQueryResponse.md) postAnalyticsUsersDetailsJobs(body)
 
 Query for user details asynchronously
 
+Wraps POST /api/v2/analytics/users/details/jobs
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/users/details/jobs  
-
-Requires ANY permissions: 
-
-* analytics:userDetail:view
+- analytics:userDetail:view
 
 ### Example
 
@@ -2762,34 +2546,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                  | Description | Notes |
+| -------- | ----------------------------------------------------- | ----------- | ----- |
+| **body** | [**AsyncUserDetailsQuery**](AsyncUserDetailsQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**AsyncUserDetailsQuery**](AsyncUserDetailsQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AsyncQueryResponse**](AsyncQueryResponse.html)
+[**AsyncQueryResponse**](AsyncQueryResponse.md)
 
 <a name="postAnalyticsUsersDetailsQuery"></a>
 
 # **postAnalyticsUsersDetailsQuery**
 
-
-
-> [AnalyticsUserDetailsQueryResponse](AnalyticsUserDetailsQueryResponse.html) postAnalyticsUsersDetailsQuery(body)
+> [AnalyticsUserDetailsQueryResponse](AnalyticsUserDetailsQueryResponse.md) postAnalyticsUsersDetailsQuery(body)
 
 Query for user details
 
+Wraps POST /api/v2/analytics/users/details/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/users/details/query  
-
-Requires ANY permissions: 
-
-* analytics:userDetail:view
+- analytics:userDetail:view
 
 ### Example
 
@@ -2825,34 +2604,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                        | Description | Notes |
+| -------- | ------------------------------------------- | ----------- | ----- |
+| **body** | [**UserDetailsQuery**](UserDetailsQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**UserDetailsQuery**](UserDetailsQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AnalyticsUserDetailsQueryResponse**](AnalyticsUserDetailsQueryResponse.html)
+[**AnalyticsUserDetailsQueryResponse**](AnalyticsUserDetailsQueryResponse.md)
 
 <a name="postAnalyticsUsersObservationsQuery"></a>
 
 # **postAnalyticsUsersObservationsQuery**
 
-
-
-> [UserObservationQueryResponse](UserObservationQueryResponse.html) postAnalyticsUsersObservationsQuery(body)
+> [UserObservationQueryResponse](UserObservationQueryResponse.md) postAnalyticsUsersObservationsQuery(body)
 
 Query for user observations
 
+Wraps POST /api/v2/analytics/users/observations/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/users/observations/query  
-
-Requires ANY permissions: 
-
-* analytics:userObservation:view
+- analytics:userObservation:view
 
 ### Example
 
@@ -2888,34 +2662,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                | Description | Notes |
+| -------- | --------------------------------------------------- | ----------- | ----- |
+| **body** | [**UserObservationQuery**](UserObservationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**UserObservationQuery**](UserObservationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UserObservationQueryResponse**](UserObservationQueryResponse.html)
+[**UserObservationQueryResponse**](UserObservationQueryResponse.md)
 
 <a name="putAnalyticsReportingSchedule"></a>
 
 # **putAnalyticsReportingSchedule**
 
-
-
-> [ReportSchedule](ReportSchedule.html) putAnalyticsReportingSchedule(scheduleId, body)
+> [ReportSchedule](ReportSchedule.md) putAnalyticsReportingSchedule(scheduleId, body)
 
 Update a scheduled report job.
 
+Wraps PUT /api/v2/analytics/reporting/schedules/{scheduleId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/analytics/reporting/schedules/{scheduleId}  
-
-Requires ANY permissions: 
-
-* reporting:acd:view, reporting:status:view, reporting:interactions:view, reporting:outbound:view, reporting:quality:view, employee
+- reporting:acd:view, reporting:status:view, reporting:interactions:view, reporting:outbound:view, reporting:quality:view, employee
 
 ### Example
 
@@ -2952,15 +2721,13 @@ try {
 
 ### Parameters
 
+| Name           | Type                                    | Description    | Notes |
+| -------------- | --------------------------------------- | -------------- | ----- |
+| **scheduleId** | **String**                              | Schedule ID    |
+| **body**       | [**ReportSchedule**](ReportSchedule.md) | ReportSchedule |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **scheduleId** | **String**| Schedule ID | 
-| **body** | [**ReportSchedule**](ReportSchedule.html)| ReportSchedule | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ReportSchedule**](ReportSchedule.html)
-
+[**ReportSchedule**](ReportSchedule.md)

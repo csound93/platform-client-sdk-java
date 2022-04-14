@@ -1,33 +1,31 @@
 ---
 title: FlowsApi
 ---
+
 ## FlowsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**postAnalyticsFlowsAggregatesQuery**](FlowsApi.html#postAnalyticsFlowsAggregatesQuery) | Query for flow aggregates |
-| [**postAnalyticsFlowsObservationsQuery**](FlowsApi.html#postAnalyticsFlowsObservationsQuery) | Query for flow observations |
+| Method                                                                                     | Description                 |
+| ------------------------------------------------------------------------------------------ | --------------------------- |
+| [**postAnalyticsFlowsAggregatesQuery**](FlowsApi.md#postAnalyticsFlowsAggregatesQuery)     | Query for flow aggregates   |
+| [**postAnalyticsFlowsObservationsQuery**](FlowsApi.md#postAnalyticsFlowsObservationsQuery) | Query for flow observations |
+
 {: class="table-striped"}
 
 <a name="postAnalyticsFlowsAggregatesQuery"></a>
 
 # **postAnalyticsFlowsAggregatesQuery**
 
-
-
-> [FlowAggregateQueryResponse](FlowAggregateQueryResponse.html) postAnalyticsFlowsAggregatesQuery(body)
+> [FlowAggregateQueryResponse](FlowAggregateQueryResponse.md) postAnalyticsFlowsAggregatesQuery(body)
 
 Query for flow aggregates
 
+Wraps POST /api/v2/analytics/flows/aggregates/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/flows/aggregates/query  
-
-Requires ANY permissions: 
-
-* analytics:flowAggregate:view
+- analytics:flowAggregate:view
 
 ### Example
 
@@ -63,34 +61,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                | Description | Notes |
+| -------- | --------------------------------------------------- | ----------- | ----- |
+| **body** | [**FlowAggregationQuery**](FlowAggregationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**FlowAggregationQuery**](FlowAggregationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**FlowAggregateQueryResponse**](FlowAggregateQueryResponse.html)
+[**FlowAggregateQueryResponse**](FlowAggregateQueryResponse.md)
 
 <a name="postAnalyticsFlowsObservationsQuery"></a>
 
 # **postAnalyticsFlowsObservationsQuery**
 
-
-
-> [FlowObservationQueryResponse](FlowObservationQueryResponse.html) postAnalyticsFlowsObservationsQuery(body)
+> [FlowObservationQueryResponse](FlowObservationQueryResponse.md) postAnalyticsFlowsObservationsQuery(body)
 
 Query for flow observations
 
+Wraps POST /api/v2/analytics/flows/observations/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/flows/observations/query  
-
-Requires ANY permissions: 
-
-* analytics:flowObservation:view
+- analytics:flowObservation:view
 
 ### Example
 
@@ -126,14 +119,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                | Description | Notes |
+| -------- | --------------------------------------------------- | ----------- | ----- |
+| **body** | [**FlowObservationQuery**](FlowObservationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**FlowObservationQuery**](FlowObservationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**FlowObservationQueryResponse**](FlowObservationQueryResponse.html)
-
+[**FlowObservationQueryResponse**](FlowObservationQueryResponse.md)

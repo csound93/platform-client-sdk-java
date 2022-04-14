@@ -1,17 +1,15 @@
 ---
 title: InitiateScreenRecording
 ---
-## InitiateScreenRecording
 
+## InitiateScreenRecording
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **recordACW** | <!----><!---->**Boolean**<!----> |  |  [optional] |
-| **archiveRetention** | <!----><!---->[**ArchiveRetention**](ArchiveRetention.html)<!----> |  |  [optional] |
-| **deleteRetention** | <!----><!---->[**DeleteRetention**](DeleteRetention.html)<!----> |  |  [optional] |
+| Name                 | Type                                                             | Description | Notes      |
+| -------------------- | ---------------------------------------------------------------- | ----------- | ---------- |
+| **recordACW**        | <!----><!---->**Boolean**<!---->                                 |             | [optional] |
+| **archiveRetention** | <!----><!---->[**ArchiveRetention**](ArchiveRetention.md)<!----> |             | [optional] |
+| **deleteRetention**  | <!----><!---->[**DeleteRetention**](DeleteRetention.md)<!---->   |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

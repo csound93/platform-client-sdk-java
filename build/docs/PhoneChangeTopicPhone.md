@@ -1,18 +1,16 @@
 ---
 title: PhoneChangeTopicPhone
 ---
-## PhoneChangeTopicPhone
 
+## PhoneChangeTopicPhone
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **userAgentInfo** | <!----><!---->[**PhoneChangeTopicUserAgentInfo**](PhoneChangeTopicUserAgentInfo.html)<!----> |  |  [optional] |
-| **id** | <!----><!---->**String**<!----> |  |  [optional] |
-| **status** | <!----><!---->[**PhoneChangeTopicPhoneStatus**](PhoneChangeTopicPhoneStatus.html)<!----> |  |  [optional] |
-| **secondaryStatus** | <!----><!---->[**PhoneChangeTopicPhoneStatus**](PhoneChangeTopicPhoneStatus.html)<!----> |  |  [optional] |
+| Name                | Type                                                                                       | Description | Notes      |
+| ------------------- | ------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| **userAgentInfo**   | <!----><!---->[**PhoneChangeTopicUserAgentInfo**](PhoneChangeTopicUserAgentInfo.md)<!----> |             | [optional] |
+| **id**              | <!----><!---->**String**<!---->                                                            |             | [optional] |
+| **status**          | <!----><!---->[**PhoneChangeTopicPhoneStatus**](PhoneChangeTopicPhoneStatus.md)<!---->     |             | [optional] |
+| **secondaryStatus** | <!----><!---->[**PhoneChangeTopicPhoneStatus**](PhoneChangeTopicPhoneStatus.md)<!---->     |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

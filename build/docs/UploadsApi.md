@@ -1,36 +1,34 @@
 ---
 title: UploadsApi
 ---
+
 ## UploadsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**postKnowledgeDocumentuploads**](UploadsApi.html#postKnowledgeDocumentuploads) | Creates a presigned URL for uploading a knowledge import file with a set of documents |
-| [**postLanguageunderstandingMinerUploads**](UploadsApi.html#postLanguageunderstandingMinerUploads) | Creates a presigned URL for uploading a chat corpus which will be used for mining by intent miner |
-| [**postUploadsPublicassetsImages**](UploadsApi.html#postUploadsPublicassetsImages) | Creates presigned url for uploading a public asset image |
-| [**postUploadsRecordings**](UploadsApi.html#postUploadsRecordings) | Creates presigned url for uploading a recording file |
-| [**postUploadsWorkforcemanagementHistoricaldataCsv**](UploadsApi.html#postUploadsWorkforcemanagementHistoricaldataCsv) | Creates presigned url for uploading WFM historical data file. Requires data in csv format. |
+| Method                                                                                                               | Description                                                                                       |
+| -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [**postKnowledgeDocumentuploads**](UploadsApi.md#postKnowledgeDocumentuploads)                                       | Creates a presigned URL for uploading a knowledge import file with a set of documents             |
+| [**postLanguageunderstandingMinerUploads**](UploadsApi.md#postLanguageunderstandingMinerUploads)                     | Creates a presigned URL for uploading a chat corpus which will be used for mining by intent miner |
+| [**postUploadsPublicassetsImages**](UploadsApi.md#postUploadsPublicassetsImages)                                     | Creates presigned url for uploading a public asset image                                          |
+| [**postUploadsRecordings**](UploadsApi.md#postUploadsRecordings)                                                     | Creates presigned url for uploading a recording file                                              |
+| [**postUploadsWorkforcemanagementHistoricaldataCsv**](UploadsApi.md#postUploadsWorkforcemanagementHistoricaldataCsv) | Creates presigned url for uploading WFM historical data file. Requires data in csv format.        |
+
 {: class="table-striped"}
 
 <a name="postKnowledgeDocumentuploads"></a>
 
 # **postKnowledgeDocumentuploads**
 
-
-
-> [UploadUrlResponse](UploadUrlResponse.html) postKnowledgeDocumentuploads(body)
+> [UploadUrlResponse](UploadUrlResponse.md) postKnowledgeDocumentuploads(body)
 
 Creates a presigned URL for uploading a knowledge import file with a set of documents
 
+Wraps POST /api/v2/knowledge/documentuploads
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/knowledge/documentuploads  
-
-Requires ALL permissions: 
-
-* knowledge:document:upload
+- knowledge:document:upload
 
 ### Example
 
@@ -66,34 +64,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                        | Description | Notes |
+| -------- | ------------------------------------------- | ----------- | ----- |
+| **body** | [**UploadUrlRequest**](UploadUrlRequest.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**UploadUrlRequest**](UploadUrlRequest.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UploadUrlResponse**](UploadUrlResponse.html)
+[**UploadUrlResponse**](UploadUrlResponse.md)
 
 <a name="postLanguageunderstandingMinerUploads"></a>
 
 # **postLanguageunderstandingMinerUploads**
 
-
-
-> [UploadUrlResponse](UploadUrlResponse.html) postLanguageunderstandingMinerUploads(minerId, body)
+> [UploadUrlResponse](UploadUrlResponse.md) postLanguageunderstandingMinerUploads(minerId, body)
 
 Creates a presigned URL for uploading a chat corpus which will be used for mining by intent miner
 
+Wraps POST /api/v2/languageunderstanding/miners/{minerId}/uploads
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/languageunderstanding/miners/{minerId}/uploads  
-
-Requires ALL permissions: 
-
-* languageUnderstanding:miner:upload
+- languageUnderstanding:miner:upload
 
 ### Example
 
@@ -130,35 +123,30 @@ try {
 
 ### Parameters
 
+| Name        | Type                  | Description | Notes |
+| ----------- | --------------------- | ----------- | ----- |
+| **minerId** | **String**            | Miner ID    |
+| **body**    | [**Empty**](Empty.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **minerId** | **String**| Miner ID | 
-| **body** | [**Empty**](Empty.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UploadUrlResponse**](UploadUrlResponse.html)
+[**UploadUrlResponse**](UploadUrlResponse.md)
 
 <a name="postUploadsPublicassetsImages"></a>
 
 # **postUploadsPublicassetsImages**
 
-
-
-> [UploadUrlResponse](UploadUrlResponse.html) postUploadsPublicassetsImages(body)
+> [UploadUrlResponse](UploadUrlResponse.md) postUploadsPublicassetsImages(body)
 
 Creates presigned url for uploading a public asset image
 
+Wraps POST /api/v2/uploads/publicassets/images
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/uploads/publicassets/images  
-
-Requires ALL permissions: 
-
-* uploads:publicasset:upload
+- uploads:publicasset:upload
 
 ### Example
 
@@ -194,34 +182,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                        | Description | Notes |
+| -------- | ------------------------------------------- | ----------- | ----- |
+| **body** | [**UploadUrlRequest**](UploadUrlRequest.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**UploadUrlRequest**](UploadUrlRequest.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UploadUrlResponse**](UploadUrlResponse.html)
+[**UploadUrlResponse**](UploadUrlResponse.md)
 
 <a name="postUploadsRecordings"></a>
 
 # **postUploadsRecordings**
 
-
-
-> [UploadUrlResponse](UploadUrlResponse.html) postUploadsRecordings(body)
+> [UploadUrlResponse](UploadUrlResponse.md) postUploadsRecordings(body)
 
 Creates presigned url for uploading a recording file
 
+Wraps POST /api/v2/uploads/recordings
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/uploads/recordings  
-
-Requires ALL permissions: 
-
-* recording:recording:upload
+- recording:recording:upload
 
 ### Example
 
@@ -257,34 +240,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                        | Description | Notes |
+| -------- | ------------------------------------------- | ----------- | ----- |
+| **body** | [**UploadUrlRequest**](UploadUrlRequest.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**UploadUrlRequest**](UploadUrlRequest.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UploadUrlResponse**](UploadUrlResponse.html)
+[**UploadUrlResponse**](UploadUrlResponse.md)
 
 <a name="postUploadsWorkforcemanagementHistoricaldataCsv"></a>
 
 # **postUploadsWorkforcemanagementHistoricaldataCsv**
 
-
-
-> [UploadUrlResponse](UploadUrlResponse.html) postUploadsWorkforcemanagementHistoricaldataCsv(body)
+> [UploadUrlResponse](UploadUrlResponse.md) postUploadsWorkforcemanagementHistoricaldataCsv(body)
 
 Creates presigned url for uploading WFM historical data file. Requires data in csv format.
 
+Wraps POST /api/v2/uploads/workforcemanagement/historicaldata/csv
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/uploads/workforcemanagement/historicaldata/csv  
-
-Requires ALL permissions: 
-
-* wfm:historicalData:upload
+- wfm:historicalData:upload
 
 ### Example
 
@@ -320,14 +298,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                                        | Description | Notes |
+| -------- | ------------------------------------------- | ----------- | ----- |
+| **body** | [**UploadUrlRequest**](UploadUrlRequest.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**UploadUrlRequest**](UploadUrlRequest.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UploadUrlResponse**](UploadUrlResponse.html)
-
+[**UploadUrlResponse**](UploadUrlResponse.md)

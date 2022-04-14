@@ -1,36 +1,33 @@
 ---
 title: FaxApi
 ---
+
 ## FaxApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteFaxDocument**](FaxApi.html#deleteFaxDocument) | Delete a fax document. |
-| [**getFaxDocument**](FaxApi.html#getFaxDocument) | Get a document. |
-| [**getFaxDocumentContent**](FaxApi.html#getFaxDocumentContent) | Download a fax document. |
-| [**getFaxDocuments**](FaxApi.html#getFaxDocuments) | Get a list of fax documents. |
-| [**getFaxSummary**](FaxApi.html#getFaxSummary) | Get fax summary |
-| [**putFaxDocument**](FaxApi.html#putFaxDocument) | Update a fax document. |
+| Method                                                       | Description                  |
+| ------------------------------------------------------------ | ---------------------------- |
+| [**deleteFaxDocument**](FaxApi.md#deleteFaxDocument)         | Delete a fax document.       |
+| [**getFaxDocument**](FaxApi.md#getFaxDocument)               | Get a document.              |
+| [**getFaxDocumentContent**](FaxApi.md#getFaxDocumentContent) | Download a fax document.     |
+| [**getFaxDocuments**](FaxApi.md#getFaxDocuments)             | Get a list of fax documents. |
+| [**getFaxSummary**](FaxApi.md#getFaxSummary)                 | Get fax summary              |
+| [**putFaxDocument**](FaxApi.md#putFaxDocument)               | Update a fax document.       |
+
 {: class="table-striped"}
 
 <a name="deleteFaxDocument"></a>
 
 # **deleteFaxDocument**
 
-
-
 > Void deleteFaxDocument(documentId)
 
 Delete a fax document.
 
+Wraps DELETE /api/v2/fax/documents/{documentId}
 
-
-Wraps DELETE /api/v2/fax/documents/{documentId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -65,12 +62,11 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **documentId** | **String** | Document ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **documentId** | **String**| Document ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -80,18 +76,13 @@ null (empty response body)
 
 # **getFaxDocument**
 
-
-
-> [FaxDocument](FaxDocument.html) getFaxDocument(documentId)
+> [FaxDocument](FaxDocument.md) getFaxDocument(documentId)
 
 Get a document.
 
+Wraps GET /api/v2/fax/documents/{documentId}
 
-
-Wraps GET /api/v2/fax/documents/{documentId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -127,33 +118,27 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **documentId** | **String** | Document ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **documentId** | **String**| Document ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**FaxDocument**](FaxDocument.html)
+[**FaxDocument**](FaxDocument.md)
 
 <a name="getFaxDocumentContent"></a>
 
 # **getFaxDocumentContent**
 
-
-
-> [DownloadResponse](DownloadResponse.html) getFaxDocumentContent(documentId)
+> [DownloadResponse](DownloadResponse.md) getFaxDocumentContent(documentId)
 
 Download a fax document.
 
+Wraps GET /api/v2/fax/documents/{documentId}/content
 
-
-Wraps GET /api/v2/fax/documents/{documentId}/content  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -189,33 +174,27 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **documentId** | **String** | Document ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **documentId** | **String**| Document ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DownloadResponse**](DownloadResponse.html)
+[**DownloadResponse**](DownloadResponse.md)
 
 <a name="getFaxDocuments"></a>
 
 # **getFaxDocuments**
 
-
-
-> [FaxDocumentEntityListing](FaxDocumentEntityListing.html) getFaxDocuments(pageSize, pageNumber)
+> [FaxDocumentEntityListing](FaxDocumentEntityListing.md) getFaxDocuments(pageSize, pageNumber)
 
 Get a list of fax documents.
 
+Wraps GET /api/v2/fax/documents
 
-
-Wraps GET /api/v2/fax/documents  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -252,34 +231,28 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**FaxDocumentEntityListing**](FaxDocumentEntityListing.html)
+[**FaxDocumentEntityListing**](FaxDocumentEntityListing.md)
 
 <a name="getFaxSummary"></a>
 
 # **getFaxSummary**
 
-
-
-> [FaxSummary](FaxSummary.html) getFaxSummary()
+> [FaxSummary](FaxSummary.md) getFaxSummary()
 
 Get fax summary
 
+Wraps GET /api/v2/fax/summary
 
-
-Wraps GET /api/v2/fax/summary  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -316,28 +289,21 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**FaxSummary**](FaxSummary.html)
+[**FaxSummary**](FaxSummary.md)
 
 <a name="putFaxDocument"></a>
 
 # **putFaxDocument**
 
-
-
-> [FaxDocument](FaxDocument.html) putFaxDocument(documentId, body)
+> [FaxDocument](FaxDocument.md) putFaxDocument(documentId, body)
 
 Update a fax document.
 
+Wraps PUT /api/v2/fax/documents/{documentId}
 
-
-Wraps PUT /api/v2/fax/documents/{documentId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -374,15 +340,13 @@ try {
 
 ### Parameters
 
+| Name           | Type                              | Description | Notes |
+| -------------- | --------------------------------- | ----------- | ----- |
+| **documentId** | **String**                        | Document ID |
+| **body**       | [**FaxDocument**](FaxDocument.md) | Document    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **documentId** | **String**| Document ID | 
-| **body** | [**FaxDocument**](FaxDocument.html)| Document | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**FaxDocument**](FaxDocument.html)
-
+[**FaxDocument**](FaxDocument.md)

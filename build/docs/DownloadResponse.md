@@ -1,17 +1,15 @@
 ---
 title: DownloadResponse
 ---
-## DownloadResponse
 
+## DownloadResponse
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **contentLocationUri** | <!----><!---->**String**<!----> |  |  [optional] |
-| **imageUri** | <!----><!---->**String**<!----> |  |  [optional] |
-| **thumbnails** | <!----><!---->[**List&lt;DocumentThumbnail&gt;**](DocumentThumbnail.html)<!----> |  |  [optional] |
+| Name                   | Type                                                                           | Description | Notes      |
+| ---------------------- | ------------------------------------------------------------------------------ | ----------- | ---------- |
+| **contentLocationUri** | <!----><!---->**String**<!---->                                                |             | [optional] |
+| **imageUri**           | <!----><!---->**String**<!---->                                                |             | [optional] |
+| **thumbnails**         | <!----><!---->[**List&lt;DocumentThumbnail&gt;**](DocumentThumbnail.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

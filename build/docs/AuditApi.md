@@ -1,37 +1,35 @@
 ---
 title: AuditApi
 ---
+
 ## AuditApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**getAuditsQueryRealtimeServicemapping**](AuditApi.html#getAuditsQueryRealtimeServicemapping) | Get service mapping information used in realtime audits. |
-| [**getAuditsQueryServicemapping**](AuditApi.html#getAuditsQueryServicemapping) | Get service mapping information used in audits. |
-| [**getAuditsQueryTransactionId**](AuditApi.html#getAuditsQueryTransactionId) | Get status of audit query execution |
-| [**getAuditsQueryTransactionIdResults**](AuditApi.html#getAuditsQueryTransactionIdResults) | Get results of audit query |
-| [**postAuditsQuery**](AuditApi.html#postAuditsQuery) | Create audit query execution |
-| [**postAuditsQueryRealtime**](AuditApi.html#postAuditsQueryRealtime) | This endpoint will only retrieve 14 days worth of audits for certain services. Please use /query to get a full list and older audits. |
+| Method                                                                                       | Description                                                                                                                           |
+| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| [**getAuditsQueryRealtimeServicemapping**](AuditApi.md#getAuditsQueryRealtimeServicemapping) | Get service mapping information used in realtime audits.                                                                              |
+| [**getAuditsQueryServicemapping**](AuditApi.md#getAuditsQueryServicemapping)                 | Get service mapping information used in audits.                                                                                       |
+| [**getAuditsQueryTransactionId**](AuditApi.md#getAuditsQueryTransactionId)                   | Get status of audit query execution                                                                                                   |
+| [**getAuditsQueryTransactionIdResults**](AuditApi.md#getAuditsQueryTransactionIdResults)     | Get results of audit query                                                                                                            |
+| [**postAuditsQuery**](AuditApi.md#postAuditsQuery)                                           | Create audit query execution                                                                                                          |
+| [**postAuditsQueryRealtime**](AuditApi.md#postAuditsQueryRealtime)                           | This endpoint will only retrieve 14 days worth of audits for certain services. Please use /query to get a full list and older audits. |
+
 {: class="table-striped"}
 
 <a name="getAuditsQueryRealtimeServicemapping"></a>
 
 # **getAuditsQueryRealtimeServicemapping**
 
-
-
-> [AuditQueryServiceMapping](AuditQueryServiceMapping.html) getAuditsQueryRealtimeServicemapping()
+> [AuditQueryServiceMapping](AuditQueryServiceMapping.md) getAuditsQueryRealtimeServicemapping()
 
 Get service mapping information used in realtime audits.
 
+Wraps GET /api/v2/audits/query/realtime/servicemapping
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/audits/query/realtime/servicemapping  
-
-Requires ALL permissions: 
-
-* audits:audit:view
+- audits:audit:view
 
 ### Example
 
@@ -68,29 +66,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**AuditQueryServiceMapping**](AuditQueryServiceMapping.html)
+[**AuditQueryServiceMapping**](AuditQueryServiceMapping.md)
 
 <a name="getAuditsQueryServicemapping"></a>
 
 # **getAuditsQueryServicemapping**
 
-
-
-> [AuditQueryServiceMapping](AuditQueryServiceMapping.html) getAuditsQueryServicemapping()
+> [AuditQueryServiceMapping](AuditQueryServiceMapping.md) getAuditsQueryServicemapping()
 
 Get service mapping information used in audits.
 
+Wraps GET /api/v2/audits/query/servicemapping
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/audits/query/servicemapping  
-
-Requires ALL permissions: 
-
-* audits:audit:view
+- audits:audit:view
 
 ### Example
 
@@ -127,29 +119,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**AuditQueryServiceMapping**](AuditQueryServiceMapping.html)
+[**AuditQueryServiceMapping**](AuditQueryServiceMapping.md)
 
 <a name="getAuditsQueryTransactionId"></a>
 
 # **getAuditsQueryTransactionId**
 
-
-
-> [AuditQueryExecutionStatusResponse](AuditQueryExecutionStatusResponse.html) getAuditsQueryTransactionId(transactionId)
+> [AuditQueryExecutionStatusResponse](AuditQueryExecutionStatusResponse.md) getAuditsQueryTransactionId(transactionId)
 
 Get status of audit query execution
 
+Wraps GET /api/v2/audits/query/{transactionId}
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/audits/query/{transactionId}  
-
-Requires ALL permissions: 
-
-* audits:audit:view
+- audits:audit:view
 
 ### Example
 
@@ -185,34 +171,29 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description    | Notes |
+| ----------------- | ---------- | -------------- | ----- |
+| **transactionId** | **String** | Transaction ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **transactionId** | **String**| Transaction ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AuditQueryExecutionStatusResponse**](AuditQueryExecutionStatusResponse.html)
+[**AuditQueryExecutionStatusResponse**](AuditQueryExecutionStatusResponse.md)
 
 <a name="getAuditsQueryTransactionIdResults"></a>
 
 # **getAuditsQueryTransactionIdResults**
 
-
-
-> [AuditQueryExecutionResultsResponse](AuditQueryExecutionResultsResponse.html) getAuditsQueryTransactionIdResults(transactionId, cursor, pageSize, expand)
+> [AuditQueryExecutionResultsResponse](AuditQueryExecutionResultsResponse.md) getAuditsQueryTransactionIdResults(transactionId, cursor, pageSize, expand)
 
 Get results of audit query
 
+Wraps GET /api/v2/audits/query/{transactionId}/results
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/audits/query/{transactionId}/results  
-
-Requires ALL permissions: 
-
-* audits:audit:view
+- audits:audit:view
 
 ### Example
 
@@ -251,37 +232,32 @@ try {
 
 ### Parameters
 
+| Name              | Type                                | Description                                                           | Notes                            |
+| ----------------- | ----------------------------------- | --------------------------------------------------------------------- | -------------------------------- |
+| **transactionId** | **String**                          | Transaction ID                                                        |
+| **cursor**        | **String**                          | Indicates where to resume query results (not required for first page) | [optional]                       |
+| **pageSize**      | **Integer**                         | Page size                                                             | [optional] [default to 25]       |
+| **expand**        | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand                                       | [optional]<br />**Values**: user |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **transactionId** | **String**| Transaction ID | 
-| **cursor** | **String**| Indicates where to resume query results (not required for first page) | [optional] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: user 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AuditQueryExecutionResultsResponse**](AuditQueryExecutionResultsResponse.html)
+[**AuditQueryExecutionResultsResponse**](AuditQueryExecutionResultsResponse.md)
 
 <a name="postAuditsQuery"></a>
 
 # **postAuditsQuery**
 
-
-
-> [AuditQueryExecutionStatusResponse](AuditQueryExecutionStatusResponse.html) postAuditsQuery(body)
+> [AuditQueryExecutionStatusResponse](AuditQueryExecutionStatusResponse.md) postAuditsQuery(body)
 
 Create audit query execution
 
+Wraps POST /api/v2/audits/query
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/audits/query  
-
-Requires ALL permissions: 
-
-* audits:audit:view
+- audits:audit:view
 
 ### Example
 
@@ -317,34 +293,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                          | Description | Notes |
+| -------- | --------------------------------------------- | ----------- | ----- |
+| **body** | [**AuditQueryRequest**](AuditQueryRequest.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**AuditQueryRequest**](AuditQueryRequest.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AuditQueryExecutionStatusResponse**](AuditQueryExecutionStatusResponse.html)
+[**AuditQueryExecutionStatusResponse**](AuditQueryExecutionStatusResponse.md)
 
 <a name="postAuditsQueryRealtime"></a>
 
 # **postAuditsQueryRealtime**
 
-
-
-> [AuditRealtimeQueryResultsResponse](AuditRealtimeQueryResultsResponse.html) postAuditsQueryRealtime(body, expand)
+> [AuditRealtimeQueryResultsResponse](AuditRealtimeQueryResultsResponse.md) postAuditsQueryRealtime(body, expand)
 
 This endpoint will only retrieve 14 days worth of audits for certain services. Please use /query to get a full list and older audits.
 
+Wraps POST /api/v2/audits/query/realtime
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/audits/query/realtime  
-
-Requires ALL permissions: 
-
-* audits:audit:view
+- audits:audit:view
 
 ### Example
 
@@ -381,15 +352,13 @@ try {
 
 ### Parameters
 
+| Name       | Type                                                          | Description                     | Notes                            |
+| ---------- | ------------------------------------------------------------- | ------------------------------- | -------------------------------- |
+| **body**   | [**AuditRealtimeQueryRequest**](AuditRealtimeQueryRequest.md) | query                           |
+| **expand** | [**List&lt;String&gt;**](String.md)                           | Which fields, if any, to expand | [optional]<br />**Values**: user |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**AuditRealtimeQueryRequest**](AuditRealtimeQueryRequest.html)| query | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: user 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AuditRealtimeQueryResultsResponse**](AuditRealtimeQueryResultsResponse.html)
-
+[**AuditRealtimeQueryResultsResponse**](AuditRealtimeQueryResultsResponse.md)

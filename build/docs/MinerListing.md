@@ -1,18 +1,16 @@
 ---
 title: MinerListing
 ---
-## MinerListing
 
+## MinerListing
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **entities** | <!----><!---->[**List&lt;Miner&gt;**](Miner.html)<!----> |  |  [optional] |
-| **nextUri** | <!----><!---->**String**<!----> |  |  [optional] |
-| **selfUri** | <!----><!---->**String**<!----> |  |  [optional] |
-| **previousUri** | <!----><!---->**String**<!----> |  |  [optional] |
+| Name            | Type                                                   | Description | Notes      |
+| --------------- | ------------------------------------------------------ | ----------- | ---------- |
+| **entities**    | <!----><!---->[**List&lt;Miner&gt;**](Miner.md)<!----> |             | [optional] |
+| **nextUri**     | <!----><!---->**String**<!---->                        |             | [optional] |
+| **selfUri**     | <!----><!---->**String**<!---->                        |             | [optional] |
+| **previousUri** | <!----><!---->**String**<!---->                        |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

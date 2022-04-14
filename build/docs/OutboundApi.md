@@ -1,141 +1,139 @@
 ---
 title: OutboundApi
 ---
+
 ## OutboundApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteOutboundAttemptlimit**](OutboundApi.html#deleteOutboundAttemptlimit) | Delete attempt limits |
-| [**deleteOutboundCallabletimeset**](OutboundApi.html#deleteOutboundCallabletimeset) | Delete callable time set |
-| [**deleteOutboundCallanalysisresponseset**](OutboundApi.html#deleteOutboundCallanalysisresponseset) | Delete a dialer call analysis response set. |
-| [**deleteOutboundCampaign**](OutboundApi.html#deleteOutboundCampaign) | Delete a campaign. |
-| [**deleteOutboundCampaignProgress**](OutboundApi.html#deleteOutboundCampaignProgress) | Reset campaign progress and recycle the campaign |
-| [**deleteOutboundCampaignrule**](OutboundApi.html#deleteOutboundCampaignrule) | Delete Campaign Rule |
-| [**deleteOutboundContactlist**](OutboundApi.html#deleteOutboundContactlist) | Delete a contact list. |
-| [**deleteOutboundContactlistContact**](OutboundApi.html#deleteOutboundContactlistContact) | Delete a contact. |
-| [**deleteOutboundContactlistContacts**](OutboundApi.html#deleteOutboundContactlistContacts) | Delete contacts from a contact list. |
-| [**deleteOutboundContactlistfilter**](OutboundApi.html#deleteOutboundContactlistfilter) | Delete Contact List Filter |
-| [**deleteOutboundContactlists**](OutboundApi.html#deleteOutboundContactlists) | Delete multiple contact lists. |
-| [**deleteOutboundDnclist**](OutboundApi.html#deleteOutboundDnclist) | Delete dialer DNC list |
-| [**deleteOutboundMessagingcampaign**](OutboundApi.html#deleteOutboundMessagingcampaign) | Delete an Outbound Messaging Campaign |
-| [**deleteOutboundRuleset**](OutboundApi.html#deleteOutboundRuleset) | Delete a Rule Set. |
-| [**deleteOutboundSchedulesCampaign**](OutboundApi.html#deleteOutboundSchedulesCampaign) | Delete a dialer campaign schedule. |
-| [**deleteOutboundSchedulesSequence**](OutboundApi.html#deleteOutboundSchedulesSequence) | Delete a dialer sequence schedule. |
-| [**deleteOutboundSequence**](OutboundApi.html#deleteOutboundSequence) | Delete a dialer campaign sequence. |
-| [**getOutboundAttemptlimit**](OutboundApi.html#getOutboundAttemptlimit) | Get attempt limits |
-| [**getOutboundAttemptlimits**](OutboundApi.html#getOutboundAttemptlimits) | Query attempt limits list |
-| [**getOutboundCallabletimeset**](OutboundApi.html#getOutboundCallabletimeset) | Get callable time set |
-| [**getOutboundCallabletimesets**](OutboundApi.html#getOutboundCallabletimesets) | Query callable time set list |
-| [**getOutboundCallanalysisresponseset**](OutboundApi.html#getOutboundCallanalysisresponseset) | Get a dialer call analysis response set. |
-| [**getOutboundCallanalysisresponsesets**](OutboundApi.html#getOutboundCallanalysisresponsesets) | Query a list of dialer call analysis response sets. |
-| [**getOutboundCampaign**](OutboundApi.html#getOutboundCampaign) | Get dialer campaign. |
-| [**getOutboundCampaignAgentownedmappingpreviewResults**](OutboundApi.html#getOutboundCampaignAgentownedmappingpreviewResults) | Get a preview of how agents will be mapped to this campaign&#39;s contact list. |
-| [**getOutboundCampaignDiagnostics**](OutboundApi.html#getOutboundCampaignDiagnostics) | Get campaign diagnostics |
-| [**getOutboundCampaignInteractions**](OutboundApi.html#getOutboundCampaignInteractions) | Get dialer campaign interactions. |
-| [**getOutboundCampaignProgress**](OutboundApi.html#getOutboundCampaignProgress) | Get campaign progress |
-| [**getOutboundCampaignStats**](OutboundApi.html#getOutboundCampaignStats) | Get statistics about a Dialer Campaign |
-| [**getOutboundCampaignrule**](OutboundApi.html#getOutboundCampaignrule) | Get Campaign Rule |
-| [**getOutboundCampaignrules**](OutboundApi.html#getOutboundCampaignrules) | Query Campaign Rule list |
-| [**getOutboundCampaigns**](OutboundApi.html#getOutboundCampaigns) | Query a list of dialer campaigns. |
-| [**getOutboundCampaignsAll**](OutboundApi.html#getOutboundCampaignsAll) | Query across all types of campaigns by division |
-| [**getOutboundCampaignsAllDivisionviews**](OutboundApi.html#getOutboundCampaignsAllDivisionviews) | Query across all types of campaigns |
-| [**getOutboundCampaignsDivisionview**](OutboundApi.html#getOutboundCampaignsDivisionview) | Get a basic Campaign information object |
-| [**getOutboundCampaignsDivisionviews**](OutboundApi.html#getOutboundCampaignsDivisionviews) | Query a list of basic Campaign information objects |
-| [**getOutboundContactlist**](OutboundApi.html#getOutboundContactlist) | Get a dialer contact list. |
-| [**getOutboundContactlistContact**](OutboundApi.html#getOutboundContactlistContact) | Get a contact. |
-| [**getOutboundContactlistExport**](OutboundApi.html#getOutboundContactlistExport) | Get the URI of a contact list export. |
-| [**getOutboundContactlistImportstatus**](OutboundApi.html#getOutboundContactlistImportstatus) | Get dialer contactList import status. |
-| [**getOutboundContactlistTimezonemappingpreview**](OutboundApi.html#getOutboundContactlistTimezonemappingpreview) | Preview the result of applying Automatic Time Zone Mapping to a contact list |
-| [**getOutboundContactlistfilter**](OutboundApi.html#getOutboundContactlistfilter) | Get Contact list filter |
-| [**getOutboundContactlistfilters**](OutboundApi.html#getOutboundContactlistfilters) | Query Contact list filters |
-| [**getOutboundContactlists**](OutboundApi.html#getOutboundContactlists) | Query a list of contact lists. |
-| [**getOutboundContactlistsDivisionview**](OutboundApi.html#getOutboundContactlistsDivisionview) | Get a basic ContactList information object |
-| [**getOutboundContactlistsDivisionviews**](OutboundApi.html#getOutboundContactlistsDivisionviews) | Query a list of simplified contact list objects. |
-| [**getOutboundDnclist**](OutboundApi.html#getOutboundDnclist) | Get dialer DNC list |
-| [**getOutboundDnclistExport**](OutboundApi.html#getOutboundDnclistExport) | Get the URI of a DNC list export. |
-| [**getOutboundDnclistImportstatus**](OutboundApi.html#getOutboundDnclistImportstatus) | Get dialer dncList import status. |
-| [**getOutboundDnclists**](OutboundApi.html#getOutboundDnclists) | Query dialer DNC lists |
-| [**getOutboundDnclistsDivisionview**](OutboundApi.html#getOutboundDnclistsDivisionview) | Get a basic DncList information object |
-| [**getOutboundDnclistsDivisionviews**](OutboundApi.html#getOutboundDnclistsDivisionviews) | Query a list of simplified dnc list objects. |
-| [**getOutboundEvent**](OutboundApi.html#getOutboundEvent) | Get Dialer Event |
-| [**getOutboundEvents**](OutboundApi.html#getOutboundEvents) | Query Event Logs |
-| [**getOutboundMessagingcampaign**](OutboundApi.html#getOutboundMessagingcampaign) | Get an Outbound Messaging Campaign |
-| [**getOutboundMessagingcampaignProgress**](OutboundApi.html#getOutboundMessagingcampaignProgress) | Get messaging campaign&#39;s progress |
-| [**getOutboundMessagingcampaigns**](OutboundApi.html#getOutboundMessagingcampaigns) | Query a list of Messaging Campaigns |
-| [**getOutboundMessagingcampaignsDivisionview**](OutboundApi.html#getOutboundMessagingcampaignsDivisionview) | Get a basic Messaging Campaign information object |
-| [**getOutboundMessagingcampaignsDivisionviews**](OutboundApi.html#getOutboundMessagingcampaignsDivisionviews) | Query a list of basic Messaging Campaign information objects |
-| [**getOutboundRuleset**](OutboundApi.html#getOutboundRuleset) | Get a Rule Set by ID. |
-| [**getOutboundRulesets**](OutboundApi.html#getOutboundRulesets) | Query a list of Rule Sets. |
-| [**getOutboundSchedulesCampaign**](OutboundApi.html#getOutboundSchedulesCampaign) | Get a dialer campaign schedule. |
-| [**getOutboundSchedulesCampaigns**](OutboundApi.html#getOutboundSchedulesCampaigns) | Query for a list of dialer campaign schedules. |
-| [**getOutboundSchedulesSequence**](OutboundApi.html#getOutboundSchedulesSequence) | Get a dialer sequence schedule. |
-| [**getOutboundSchedulesSequences**](OutboundApi.html#getOutboundSchedulesSequences) | Query for a list of dialer sequence schedules. |
-| [**getOutboundSequence**](OutboundApi.html#getOutboundSequence) | Get a dialer campaign sequence. |
-| [**getOutboundSequences**](OutboundApi.html#getOutboundSequences) | Query a list of dialer campaign sequences. |
-| [**getOutboundSettings**](OutboundApi.html#getOutboundSettings) | Get the outbound settings for this organization |
-| [**getOutboundWrapupcodemappings**](OutboundApi.html#getOutboundWrapupcodemappings) | Get the Dialer wrap up code mapping. |
-| [**patchOutboundSettings**](OutboundApi.html#patchOutboundSettings) | Update the outbound settings for this organization |
-| [**postOutboundAttemptlimits**](OutboundApi.html#postOutboundAttemptlimits) | Create attempt limits |
-| [**postOutboundAudits**](OutboundApi.html#postOutboundAudits) | Retrieves audits for dialer. |
-| [**postOutboundCallabletimesets**](OutboundApi.html#postOutboundCallabletimesets) | Create callable time set |
-| [**postOutboundCallanalysisresponsesets**](OutboundApi.html#postOutboundCallanalysisresponsesets) | Create a dialer call analysis response set. |
-| [**postOutboundCampaignAgentownedmappingpreview**](OutboundApi.html#postOutboundCampaignAgentownedmappingpreview) | Initiate request for a preview of how agents will be mapped to this campaign&#39;s contact list. |
-| [**postOutboundCampaignCallbackSchedule**](OutboundApi.html#postOutboundCampaignCallbackSchedule) | Schedule a Callback for a Dialer Campaign (Deprecated) |
-| [**postOutboundCampaignrules**](OutboundApi.html#postOutboundCampaignrules) | Create Campaign Rule |
-| [**postOutboundCampaigns**](OutboundApi.html#postOutboundCampaigns) | Create a campaign. |
-| [**postOutboundCampaignsProgress**](OutboundApi.html#postOutboundCampaignsProgress) | Get progress for a list of campaigns |
-| [**postOutboundContactlistClear**](OutboundApi.html#postOutboundContactlistClear) | Deletes all contacts out of a list. All outstanding recalls or rule-scheduled callbacks for non-preview campaigns configured with the contactlist will be cancelled. |
-| [**postOutboundContactlistContacts**](OutboundApi.html#postOutboundContactlistContacts) | Add contacts to a contact list. |
-| [**postOutboundContactlistContactsBulk**](OutboundApi.html#postOutboundContactlistContactsBulk) | Get contacts from a contact list. |
-| [**postOutboundContactlistExport**](OutboundApi.html#postOutboundContactlistExport) | Initiate the export of a contact list. |
-| [**postOutboundContactlistfilters**](OutboundApi.html#postOutboundContactlistfilters) | Create Contact List Filter |
-| [**postOutboundContactlistfiltersPreview**](OutboundApi.html#postOutboundContactlistfiltersPreview) | Get a preview of the output of a contact list filter |
-| [**postOutboundContactlists**](OutboundApi.html#postOutboundContactlists) | Create a contact List. |
-| [**postOutboundConversationDnc**](OutboundApi.html#postOutboundConversationDnc) | Add phone numbers to a Dialer DNC list. |
-| [**postOutboundDnclistExport**](OutboundApi.html#postOutboundDnclistExport) | Initiate the export of a dnc list. |
-| [**postOutboundDnclistPhonenumbers**](OutboundApi.html#postOutboundDnclistPhonenumbers) | Add phone numbers to a DNC list. |
-| [**postOutboundDnclists**](OutboundApi.html#postOutboundDnclists) | Create dialer DNC list |
-| [**postOutboundMessagingcampaigns**](OutboundApi.html#postOutboundMessagingcampaigns) | Create a Messaging Campaign |
-| [**postOutboundMessagingcampaignsProgress**](OutboundApi.html#postOutboundMessagingcampaignsProgress) | Get progress for a list of messaging campaigns |
-| [**postOutboundRulesets**](OutboundApi.html#postOutboundRulesets) | Create a Rule Set. |
-| [**postOutboundSequences**](OutboundApi.html#postOutboundSequences) | Create a new campaign sequence. |
-| [**putOutboundAttemptlimit**](OutboundApi.html#putOutboundAttemptlimit) | Update attempt limits |
-| [**putOutboundCallabletimeset**](OutboundApi.html#putOutboundCallabletimeset) | Update callable time set |
-| [**putOutboundCallanalysisresponseset**](OutboundApi.html#putOutboundCallanalysisresponseset) | Update a dialer call analysis response set. |
-| [**putOutboundCampaign**](OutboundApi.html#putOutboundCampaign) | Update a campaign. |
-| [**putOutboundCampaignAgent**](OutboundApi.html#putOutboundCampaignAgent) | Send notification that an agent&#39;s state changed  |
-| [**putOutboundCampaignrule**](OutboundApi.html#putOutboundCampaignrule) | Update Campaign Rule |
-| [**putOutboundContactlist**](OutboundApi.html#putOutboundContactlist) | Update a contact list. |
-| [**putOutboundContactlistContact**](OutboundApi.html#putOutboundContactlistContact) | Update a contact. |
-| [**putOutboundContactlistfilter**](OutboundApi.html#putOutboundContactlistfilter) | Update Contact List Filter |
-| [**putOutboundDnclist**](OutboundApi.html#putOutboundDnclist) | Update dialer DNC list |
-| [**putOutboundMessagingcampaign**](OutboundApi.html#putOutboundMessagingcampaign) | Update an Outbound Messaging Campaign |
-| [**putOutboundRuleset**](OutboundApi.html#putOutboundRuleset) | Update a Rule Set. |
-| [**putOutboundSchedulesCampaign**](OutboundApi.html#putOutboundSchedulesCampaign) | Update a new campaign schedule. |
-| [**putOutboundSchedulesSequence**](OutboundApi.html#putOutboundSchedulesSequence) | Update a new sequence schedule. |
-| [**putOutboundSequence**](OutboundApi.html#putOutboundSequence) | Update a new campaign sequence. |
-| [**putOutboundWrapupcodemappings**](OutboundApi.html#putOutboundWrapupcodemappings) | Update the Dialer wrap up code mapping. |
+| Method                                                                                                                      | Description                                                                                                                                                          |
+| --------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**deleteOutboundAttemptlimit**](OutboundApi.md#deleteOutboundAttemptlimit)                                                 | Delete attempt limits                                                                                                                                                |
+| [**deleteOutboundCallabletimeset**](OutboundApi.md#deleteOutboundCallabletimeset)                                           | Delete callable time set                                                                                                                                             |
+| [**deleteOutboundCallanalysisresponseset**](OutboundApi.md#deleteOutboundCallanalysisresponseset)                           | Delete a dialer call analysis response set.                                                                                                                          |
+| [**deleteOutboundCampaign**](OutboundApi.md#deleteOutboundCampaign)                                                         | Delete a campaign.                                                                                                                                                   |
+| [**deleteOutboundCampaignProgress**](OutboundApi.md#deleteOutboundCampaignProgress)                                         | Reset campaign progress and recycle the campaign                                                                                                                     |
+| [**deleteOutboundCampaignrule**](OutboundApi.md#deleteOutboundCampaignrule)                                                 | Delete Campaign Rule                                                                                                                                                 |
+| [**deleteOutboundContactlist**](OutboundApi.md#deleteOutboundContactlist)                                                   | Delete a contact list.                                                                                                                                               |
+| [**deleteOutboundContactlistContact**](OutboundApi.md#deleteOutboundContactlistContact)                                     | Delete a contact.                                                                                                                                                    |
+| [**deleteOutboundContactlistContacts**](OutboundApi.md#deleteOutboundContactlistContacts)                                   | Delete contacts from a contact list.                                                                                                                                 |
+| [**deleteOutboundContactlistfilter**](OutboundApi.md#deleteOutboundContactlistfilter)                                       | Delete Contact List Filter                                                                                                                                           |
+| [**deleteOutboundContactlists**](OutboundApi.md#deleteOutboundContactlists)                                                 | Delete multiple contact lists.                                                                                                                                       |
+| [**deleteOutboundDnclist**](OutboundApi.md#deleteOutboundDnclist)                                                           | Delete dialer DNC list                                                                                                                                               |
+| [**deleteOutboundMessagingcampaign**](OutboundApi.md#deleteOutboundMessagingcampaign)                                       | Delete an Outbound Messaging Campaign                                                                                                                                |
+| [**deleteOutboundRuleset**](OutboundApi.md#deleteOutboundRuleset)                                                           | Delete a Rule Set.                                                                                                                                                   |
+| [**deleteOutboundSchedulesCampaign**](OutboundApi.md#deleteOutboundSchedulesCampaign)                                       | Delete a dialer campaign schedule.                                                                                                                                   |
+| [**deleteOutboundSchedulesSequence**](OutboundApi.md#deleteOutboundSchedulesSequence)                                       | Delete a dialer sequence schedule.                                                                                                                                   |
+| [**deleteOutboundSequence**](OutboundApi.md#deleteOutboundSequence)                                                         | Delete a dialer campaign sequence.                                                                                                                                   |
+| [**getOutboundAttemptlimit**](OutboundApi.md#getOutboundAttemptlimit)                                                       | Get attempt limits                                                                                                                                                   |
+| [**getOutboundAttemptlimits**](OutboundApi.md#getOutboundAttemptlimits)                                                     | Query attempt limits list                                                                                                                                            |
+| [**getOutboundCallabletimeset**](OutboundApi.md#getOutboundCallabletimeset)                                                 | Get callable time set                                                                                                                                                |
+| [**getOutboundCallabletimesets**](OutboundApi.md#getOutboundCallabletimesets)                                               | Query callable time set list                                                                                                                                         |
+| [**getOutboundCallanalysisresponseset**](OutboundApi.md#getOutboundCallanalysisresponseset)                                 | Get a dialer call analysis response set.                                                                                                                             |
+| [**getOutboundCallanalysisresponsesets**](OutboundApi.md#getOutboundCallanalysisresponsesets)                               | Query a list of dialer call analysis response sets.                                                                                                                  |
+| [**getOutboundCampaign**](OutboundApi.md#getOutboundCampaign)                                                               | Get dialer campaign.                                                                                                                                                 |
+| [**getOutboundCampaignAgentownedmappingpreviewResults**](OutboundApi.md#getOutboundCampaignAgentownedmappingpreviewResults) | Get a preview of how agents will be mapped to this campaign&#39;s contact list.                                                                                      |
+| [**getOutboundCampaignDiagnostics**](OutboundApi.md#getOutboundCampaignDiagnostics)                                         | Get campaign diagnostics                                                                                                                                             |
+| [**getOutboundCampaignInteractions**](OutboundApi.md#getOutboundCampaignInteractions)                                       | Get dialer campaign interactions.                                                                                                                                    |
+| [**getOutboundCampaignProgress**](OutboundApi.md#getOutboundCampaignProgress)                                               | Get campaign progress                                                                                                                                                |
+| [**getOutboundCampaignStats**](OutboundApi.md#getOutboundCampaignStats)                                                     | Get statistics about a Dialer Campaign                                                                                                                               |
+| [**getOutboundCampaignrule**](OutboundApi.md#getOutboundCampaignrule)                                                       | Get Campaign Rule                                                                                                                                                    |
+| [**getOutboundCampaignrules**](OutboundApi.md#getOutboundCampaignrules)                                                     | Query Campaign Rule list                                                                                                                                             |
+| [**getOutboundCampaigns**](OutboundApi.md#getOutboundCampaigns)                                                             | Query a list of dialer campaigns.                                                                                                                                    |
+| [**getOutboundCampaignsAll**](OutboundApi.md#getOutboundCampaignsAll)                                                       | Query across all types of campaigns by division                                                                                                                      |
+| [**getOutboundCampaignsAllDivisionviews**](OutboundApi.md#getOutboundCampaignsAllDivisionviews)                             | Query across all types of campaigns                                                                                                                                  |
+| [**getOutboundCampaignsDivisionview**](OutboundApi.md#getOutboundCampaignsDivisionview)                                     | Get a basic Campaign information object                                                                                                                              |
+| [**getOutboundCampaignsDivisionviews**](OutboundApi.md#getOutboundCampaignsDivisionviews)                                   | Query a list of basic Campaign information objects                                                                                                                   |
+| [**getOutboundContactlist**](OutboundApi.md#getOutboundContactlist)                                                         | Get a dialer contact list.                                                                                                                                           |
+| [**getOutboundContactlistContact**](OutboundApi.md#getOutboundContactlistContact)                                           | Get a contact.                                                                                                                                                       |
+| [**getOutboundContactlistExport**](OutboundApi.md#getOutboundContactlistExport)                                             | Get the URI of a contact list export.                                                                                                                                |
+| [**getOutboundContactlistImportstatus**](OutboundApi.md#getOutboundContactlistImportstatus)                                 | Get dialer contactList import status.                                                                                                                                |
+| [**getOutboundContactlistTimezonemappingpreview**](OutboundApi.md#getOutboundContactlistTimezonemappingpreview)             | Preview the result of applying Automatic Time Zone Mapping to a contact list                                                                                         |
+| [**getOutboundContactlistfilter**](OutboundApi.md#getOutboundContactlistfilter)                                             | Get Contact list filter                                                                                                                                              |
+| [**getOutboundContactlistfilters**](OutboundApi.md#getOutboundContactlistfilters)                                           | Query Contact list filters                                                                                                                                           |
+| [**getOutboundContactlists**](OutboundApi.md#getOutboundContactlists)                                                       | Query a list of contact lists.                                                                                                                                       |
+| [**getOutboundContactlistsDivisionview**](OutboundApi.md#getOutboundContactlistsDivisionview)                               | Get a basic ContactList information object                                                                                                                           |
+| [**getOutboundContactlistsDivisionviews**](OutboundApi.md#getOutboundContactlistsDivisionviews)                             | Query a list of simplified contact list objects.                                                                                                                     |
+| [**getOutboundDnclist**](OutboundApi.md#getOutboundDnclist)                                                                 | Get dialer DNC list                                                                                                                                                  |
+| [**getOutboundDnclistExport**](OutboundApi.md#getOutboundDnclistExport)                                                     | Get the URI of a DNC list export.                                                                                                                                    |
+| [**getOutboundDnclistImportstatus**](OutboundApi.md#getOutboundDnclistImportstatus)                                         | Get dialer dncList import status.                                                                                                                                    |
+| [**getOutboundDnclists**](OutboundApi.md#getOutboundDnclists)                                                               | Query dialer DNC lists                                                                                                                                               |
+| [**getOutboundDnclistsDivisionview**](OutboundApi.md#getOutboundDnclistsDivisionview)                                       | Get a basic DncList information object                                                                                                                               |
+| [**getOutboundDnclistsDivisionviews**](OutboundApi.md#getOutboundDnclistsDivisionviews)                                     | Query a list of simplified dnc list objects.                                                                                                                         |
+| [**getOutboundEvent**](OutboundApi.md#getOutboundEvent)                                                                     | Get Dialer Event                                                                                                                                                     |
+| [**getOutboundEvents**](OutboundApi.md#getOutboundEvents)                                                                   | Query Event Logs                                                                                                                                                     |
+| [**getOutboundMessagingcampaign**](OutboundApi.md#getOutboundMessagingcampaign)                                             | Get an Outbound Messaging Campaign                                                                                                                                   |
+| [**getOutboundMessagingcampaignProgress**](OutboundApi.md#getOutboundMessagingcampaignProgress)                             | Get messaging campaign&#39;s progress                                                                                                                                |
+| [**getOutboundMessagingcampaigns**](OutboundApi.md#getOutboundMessagingcampaigns)                                           | Query a list of Messaging Campaigns                                                                                                                                  |
+| [**getOutboundMessagingcampaignsDivisionview**](OutboundApi.md#getOutboundMessagingcampaignsDivisionview)                   | Get a basic Messaging Campaign information object                                                                                                                    |
+| [**getOutboundMessagingcampaignsDivisionviews**](OutboundApi.md#getOutboundMessagingcampaignsDivisionviews)                 | Query a list of basic Messaging Campaign information objects                                                                                                         |
+| [**getOutboundRuleset**](OutboundApi.md#getOutboundRuleset)                                                                 | Get a Rule Set by ID.                                                                                                                                                |
+| [**getOutboundRulesets**](OutboundApi.md#getOutboundRulesets)                                                               | Query a list of Rule Sets.                                                                                                                                           |
+| [**getOutboundSchedulesCampaign**](OutboundApi.md#getOutboundSchedulesCampaign)                                             | Get a dialer campaign schedule.                                                                                                                                      |
+| [**getOutboundSchedulesCampaigns**](OutboundApi.md#getOutboundSchedulesCampaigns)                                           | Query for a list of dialer campaign schedules.                                                                                                                       |
+| [**getOutboundSchedulesSequence**](OutboundApi.md#getOutboundSchedulesSequence)                                             | Get a dialer sequence schedule.                                                                                                                                      |
+| [**getOutboundSchedulesSequences**](OutboundApi.md#getOutboundSchedulesSequences)                                           | Query for a list of dialer sequence schedules.                                                                                                                       |
+| [**getOutboundSequence**](OutboundApi.md#getOutboundSequence)                                                               | Get a dialer campaign sequence.                                                                                                                                      |
+| [**getOutboundSequences**](OutboundApi.md#getOutboundSequences)                                                             | Query a list of dialer campaign sequences.                                                                                                                           |
+| [**getOutboundSettings**](OutboundApi.md#getOutboundSettings)                                                               | Get the outbound settings for this organization                                                                                                                      |
+| [**getOutboundWrapupcodemappings**](OutboundApi.md#getOutboundWrapupcodemappings)                                           | Get the Dialer wrap up code mapping.                                                                                                                                 |
+| [**patchOutboundSettings**](OutboundApi.md#patchOutboundSettings)                                                           | Update the outbound settings for this organization                                                                                                                   |
+| [**postOutboundAttemptlimits**](OutboundApi.md#postOutboundAttemptlimits)                                                   | Create attempt limits                                                                                                                                                |
+| [**postOutboundAudits**](OutboundApi.md#postOutboundAudits)                                                                 | Retrieves audits for dialer.                                                                                                                                         |
+| [**postOutboundCallabletimesets**](OutboundApi.md#postOutboundCallabletimesets)                                             | Create callable time set                                                                                                                                             |
+| [**postOutboundCallanalysisresponsesets**](OutboundApi.md#postOutboundCallanalysisresponsesets)                             | Create a dialer call analysis response set.                                                                                                                          |
+| [**postOutboundCampaignAgentownedmappingpreview**](OutboundApi.md#postOutboundCampaignAgentownedmappingpreview)             | Initiate request for a preview of how agents will be mapped to this campaign&#39;s contact list.                                                                     |
+| [**postOutboundCampaignCallbackSchedule**](OutboundApi.md#postOutboundCampaignCallbackSchedule)                             | Schedule a Callback for a Dialer Campaign (Deprecated)                                                                                                               |
+| [**postOutboundCampaignrules**](OutboundApi.md#postOutboundCampaignrules)                                                   | Create Campaign Rule                                                                                                                                                 |
+| [**postOutboundCampaigns**](OutboundApi.md#postOutboundCampaigns)                                                           | Create a campaign.                                                                                                                                                   |
+| [**postOutboundCampaignsProgress**](OutboundApi.md#postOutboundCampaignsProgress)                                           | Get progress for a list of campaigns                                                                                                                                 |
+| [**postOutboundContactlistClear**](OutboundApi.md#postOutboundContactlistClear)                                             | Deletes all contacts out of a list. All outstanding recalls or rule-scheduled callbacks for non-preview campaigns configured with the contactlist will be cancelled. |
+| [**postOutboundContactlistContacts**](OutboundApi.md#postOutboundContactlistContacts)                                       | Add contacts to a contact list.                                                                                                                                      |
+| [**postOutboundContactlistContactsBulk**](OutboundApi.md#postOutboundContactlistContactsBulk)                               | Get contacts from a contact list.                                                                                                                                    |
+| [**postOutboundContactlistExport**](OutboundApi.md#postOutboundContactlistExport)                                           | Initiate the export of a contact list.                                                                                                                               |
+| [**postOutboundContactlistfilters**](OutboundApi.md#postOutboundContactlistfilters)                                         | Create Contact List Filter                                                                                                                                           |
+| [**postOutboundContactlistfiltersPreview**](OutboundApi.md#postOutboundContactlistfiltersPreview)                           | Get a preview of the output of a contact list filter                                                                                                                 |
+| [**postOutboundContactlists**](OutboundApi.md#postOutboundContactlists)                                                     | Create a contact List.                                                                                                                                               |
+| [**postOutboundConversationDnc**](OutboundApi.md#postOutboundConversationDnc)                                               | Add phone numbers to a Dialer DNC list.                                                                                                                              |
+| [**postOutboundDnclistExport**](OutboundApi.md#postOutboundDnclistExport)                                                   | Initiate the export of a dnc list.                                                                                                                                   |
+| [**postOutboundDnclistPhonenumbers**](OutboundApi.md#postOutboundDnclistPhonenumbers)                                       | Add phone numbers to a DNC list.                                                                                                                                     |
+| [**postOutboundDnclists**](OutboundApi.md#postOutboundDnclists)                                                             | Create dialer DNC list                                                                                                                                               |
+| [**postOutboundMessagingcampaigns**](OutboundApi.md#postOutboundMessagingcampaigns)                                         | Create a Messaging Campaign                                                                                                                                          |
+| [**postOutboundMessagingcampaignsProgress**](OutboundApi.md#postOutboundMessagingcampaignsProgress)                         | Get progress for a list of messaging campaigns                                                                                                                       |
+| [**postOutboundRulesets**](OutboundApi.md#postOutboundRulesets)                                                             | Create a Rule Set.                                                                                                                                                   |
+| [**postOutboundSequences**](OutboundApi.md#postOutboundSequences)                                                           | Create a new campaign sequence.                                                                                                                                      |
+| [**putOutboundAttemptlimit**](OutboundApi.md#putOutboundAttemptlimit)                                                       | Update attempt limits                                                                                                                                                |
+| [**putOutboundCallabletimeset**](OutboundApi.md#putOutboundCallabletimeset)                                                 | Update callable time set                                                                                                                                             |
+| [**putOutboundCallanalysisresponseset**](OutboundApi.md#putOutboundCallanalysisresponseset)                                 | Update a dialer call analysis response set.                                                                                                                          |
+| [**putOutboundCampaign**](OutboundApi.md#putOutboundCampaign)                                                               | Update a campaign.                                                                                                                                                   |
+| [**putOutboundCampaignAgent**](OutboundApi.md#putOutboundCampaignAgent)                                                     | Send notification that an agent&#39;s state changed                                                                                                                  |
+| [**putOutboundCampaignrule**](OutboundApi.md#putOutboundCampaignrule)                                                       | Update Campaign Rule                                                                                                                                                 |
+| [**putOutboundContactlist**](OutboundApi.md#putOutboundContactlist)                                                         | Update a contact list.                                                                                                                                               |
+| [**putOutboundContactlistContact**](OutboundApi.md#putOutboundContactlistContact)                                           | Update a contact.                                                                                                                                                    |
+| [**putOutboundContactlistfilter**](OutboundApi.md#putOutboundContactlistfilter)                                             | Update Contact List Filter                                                                                                                                           |
+| [**putOutboundDnclist**](OutboundApi.md#putOutboundDnclist)                                                                 | Update dialer DNC list                                                                                                                                               |
+| [**putOutboundMessagingcampaign**](OutboundApi.md#putOutboundMessagingcampaign)                                             | Update an Outbound Messaging Campaign                                                                                                                                |
+| [**putOutboundRuleset**](OutboundApi.md#putOutboundRuleset)                                                                 | Update a Rule Set.                                                                                                                                                   |
+| [**putOutboundSchedulesCampaign**](OutboundApi.md#putOutboundSchedulesCampaign)                                             | Update a new campaign schedule.                                                                                                                                      |
+| [**putOutboundSchedulesSequence**](OutboundApi.md#putOutboundSchedulesSequence)                                             | Update a new sequence schedule.                                                                                                                                      |
+| [**putOutboundSequence**](OutboundApi.md#putOutboundSequence)                                                               | Update a new campaign sequence.                                                                                                                                      |
+| [**putOutboundWrapupcodemappings**](OutboundApi.md#putOutboundWrapupcodemappings)                                           | Update the Dialer wrap up code mapping.                                                                                                                              |
+
 {: class="table-striped"}
 
 <a name="deleteOutboundAttemptlimit"></a>
 
 # **deleteOutboundAttemptlimit**
 
-
-
 > Void deleteOutboundAttemptlimit(attemptLimitsId)
 
 Delete attempt limits
 
+Wraps DELETE /api/v2/outbound/attemptlimits/{attemptLimitsId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/attemptlimits/{attemptLimitsId}  
-
-Requires ANY permissions: 
-
-* outbound:attemptLimits:delete
+- outbound:attemptLimits:delete
 
 ### Example
 
@@ -170,12 +168,11 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description       | Notes |
+| ------------------- | ---------- | ----------------- | ----- |
+| **attemptLimitsId** | **String** | Attempt limits ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **attemptLimitsId** | **String**| Attempt limits ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -185,19 +182,15 @@ null (empty response body)
 
 # **deleteOutboundCallabletimeset**
 
-
-
 > Void deleteOutboundCallabletimeset(callableTimeSetId)
 
 Delete callable time set
 
+Wraps DELETE /api/v2/outbound/callabletimesets/{callableTimeSetId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/callabletimesets/{callableTimeSetId}  
-
-Requires ANY permissions: 
-
-* outbound:callableTimeSet:delete
+- outbound:callableTimeSet:delete
 
 ### Example
 
@@ -232,12 +225,11 @@ try {
 
 ### Parameters
 
+| Name                  | Type       | Description          | Notes |
+| --------------------- | ---------- | -------------------- | ----- |
+| **callableTimeSetId** | **String** | Callable Time Set ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **callableTimeSetId** | **String**| Callable Time Set ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -247,19 +239,15 @@ null (empty response body)
 
 # **deleteOutboundCallanalysisresponseset**
 
-
-
 > Void deleteOutboundCallanalysisresponseset(callAnalysisSetId)
 
 Delete a dialer call analysis response set.
 
+Wraps DELETE /api/v2/outbound/callanalysisresponsesets/{callAnalysisSetId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/callanalysisresponsesets/{callAnalysisSetId}  
-
-Requires ANY permissions: 
-
-* outbound:responseSet:delete
+- outbound:responseSet:delete
 
 ### Example
 
@@ -294,12 +282,11 @@ try {
 
 ### Parameters
 
+| Name                  | Type       | Description                   | Notes |
+| --------------------- | ---------- | ----------------------------- | ----- |
+| **callAnalysisSetId** | **String** | Call Analysis Response Set ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **callAnalysisSetId** | **String**| Call Analysis Response Set ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -309,19 +296,15 @@ null (empty response body)
 
 # **deleteOutboundCampaign**
 
-
-
-> [Campaign](Campaign.html) deleteOutboundCampaign(campaignId)
+> [Campaign](Campaign.md) deleteOutboundCampaign(campaignId)
 
 Delete a campaign.
 
+Wraps DELETE /api/v2/outbound/campaigns/{campaignId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/campaigns/{campaignId}  
-
-Requires ANY permissions: 
-
-* outbound:campaign:delete
+- outbound:campaign:delete
 
 ### Example
 
@@ -357,34 +340,29 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **campaignId** | **String** | Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Campaign**](Campaign.html)
+[**Campaign**](Campaign.md)
 
 <a name="deleteOutboundCampaignProgress"></a>
 
 # **deleteOutboundCampaignProgress**
 
-
-
 > Void deleteOutboundCampaignProgress(campaignId)
 
 Reset campaign progress and recycle the campaign
 
+Wraps DELETE /api/v2/outbound/campaigns/{campaignId}/progress
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/campaigns/{campaignId}/progress  
-
-Requires ANY permissions: 
-
-* outbound:campaign:edit
+- outbound:campaign:edit
 
 ### Example
 
@@ -419,12 +397,11 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **campaignId** | **String** | Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -434,19 +411,15 @@ null (empty response body)
 
 # **deleteOutboundCampaignrule**
 
-
-
 > Void deleteOutboundCampaignrule(campaignRuleId)
 
 Delete Campaign Rule
 
+Wraps DELETE /api/v2/outbound/campaignrules/{campaignRuleId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/campaignrules/{campaignRuleId}  
-
-Requires ANY permissions: 
-
-* outbound:campaignRule:delete
+- outbound:campaignRule:delete
 
 ### Example
 
@@ -481,12 +454,11 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description      | Notes |
+| ------------------ | ---------- | ---------------- | ----- |
+| **campaignRuleId** | **String** | Campaign Rule ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignRuleId** | **String**| Campaign Rule ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -496,19 +468,15 @@ null (empty response body)
 
 # **deleteOutboundContactlist**
 
-
-
 > Void deleteOutboundContactlist(contactListId)
 
 Delete a contact list.
 
+Wraps DELETE /api/v2/outbound/contactlists/{contactListId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/contactlists/{contactListId}  
-
-Requires ANY permissions: 
-
-* outbound:contactList:delete
+- outbound:contactList:delete
 
 ### Example
 
@@ -543,12 +511,11 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description    | Notes |
+| ----------------- | ---------- | -------------- | ----- |
+| **contactListId** | **String** | ContactList ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| ContactList ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -558,19 +525,15 @@ null (empty response body)
 
 # **deleteOutboundContactlistContact**
 
-
-
 > Void deleteOutboundContactlistContact(contactListId, contactId)
 
 Delete a contact.
 
+Wraps DELETE /api/v2/outbound/contactlists/{contactListId}/contacts/{contactId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/contactlists/{contactListId}/contacts/{contactId}  
-
-Requires ANY permissions: 
-
-* outbound:contact:delete
+- outbound:contact:delete
 
 ### Example
 
@@ -606,13 +569,12 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description     | Notes |
+| ----------------- | ---------- | --------------- | ----- |
+| **contactListId** | **String** | Contact List ID |
+| **contactId**     | **String** | Contact ID      |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| Contact List ID | 
-| **contactId** | **String**| Contact ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -622,19 +584,15 @@ null (empty response body)
 
 # **deleteOutboundContactlistContacts**
 
-
-
 > Void deleteOutboundContactlistContacts(contactListId, contactIds)
 
 Delete contacts from a contact list.
 
+Wraps DELETE /api/v2/outbound/contactlists/{contactListId}/contacts
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/contactlists/{contactListId}/contacts  
-
-Requires ANY permissions: 
-
-* outbound:contact:delete
+- outbound:contact:delete
 
 ### Example
 
@@ -670,13 +628,12 @@ try {
 
 ### Parameters
 
+| Name              | Type                                | Description           | Notes |
+| ----------------- | ----------------------------------- | --------------------- | ----- |
+| **contactListId** | **String**                          | Contact List ID       |
+| **contactIds**    | [**List&lt;String&gt;**](String.md) | ContactIds to delete. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| Contact List ID | 
-| **contactIds** | [**List&lt;String&gt;**](String.html)| ContactIds to delete. | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -686,19 +643,15 @@ null (empty response body)
 
 # **deleteOutboundContactlistfilter**
 
-
-
 > Void deleteOutboundContactlistfilter(contactListFilterId)
 
 Delete Contact List Filter
 
+Wraps DELETE /api/v2/outbound/contactlistfilters/{contactListFilterId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/contactlistfilters/{contactListFilterId}  
-
-Requires ANY permissions: 
-
-* outbound:contactListFilter:delete
+- outbound:contactListFilter:delete
 
 ### Example
 
@@ -733,12 +686,11 @@ try {
 
 ### Parameters
 
+| Name                    | Type       | Description            | Notes |
+| ----------------------- | ---------- | ---------------------- | ----- |
+| **contactListFilterId** | **String** | Contact List Filter ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListFilterId** | **String**| Contact List Filter ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -748,19 +700,15 @@ null (empty response body)
 
 # **deleteOutboundContactlists**
 
-
-
 > Void deleteOutboundContactlists(id)
 
 Delete multiple contact lists.
 
+Wraps DELETE /api/v2/outbound/contactlists
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/contactlists  
-
-Requires ANY permissions: 
-
-* outbound:contactList:delete
+- outbound:contactList:delete
 
 ### Example
 
@@ -795,12 +743,11 @@ try {
 
 ### Parameters
 
+| Name   | Type                                | Description                  | Notes |
+| ------ | ----------------------------------- | ---------------------------- | ----- |
+| **id** | [**List&lt;String&gt;**](String.md) | contact list id(s) to delete |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | [**List&lt;String&gt;**](String.html)| contact list id(s) to delete | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -810,19 +757,15 @@ null (empty response body)
 
 # **deleteOutboundDnclist**
 
-
-
 > Void deleteOutboundDnclist(dncListId)
 
 Delete dialer DNC list
 
+Wraps DELETE /api/v2/outbound/dnclists/{dncListId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/dnclists/{dncListId}  
-
-Requires ANY permissions: 
-
-* outbound:dncList:delete
+- outbound:dncList:delete
 
 ### Example
 
@@ -857,12 +800,11 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **dncListId** | **String** | DncList ID  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **dncListId** | **String**| DncList ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -872,20 +814,16 @@ null (empty response body)
 
 # **deleteOutboundMessagingcampaign**
 
-
-
-> [MessagingCampaign](MessagingCampaign.html) deleteOutboundMessagingcampaign(messagingCampaignId)
+> [MessagingCampaign](MessagingCampaign.md) deleteOutboundMessagingcampaign(messagingCampaignId)
 
 Delete an Outbound Messaging Campaign
 
+Wraps DELETE /api/v2/outbound/messagingcampaigns/{messagingCampaignId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/messagingcampaigns/{messagingCampaignId}  
-
-Requires ANY permissions: 
-
-* outbound:messagingCampaign:delete
-* outbound:emailCampaign:delete
+- outbound:messagingCampaign:delete
+- outbound:emailCampaign:delete
 
 ### Example
 
@@ -921,34 +859,29 @@ try {
 
 ### Parameters
 
+| Name                    | Type       | Description               | Notes |
+| ----------------------- | ---------- | ------------------------- | ----- |
+| **messagingCampaignId** | **String** | The Messaging Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **messagingCampaignId** | **String**| The Messaging Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**MessagingCampaign**](MessagingCampaign.html)
+[**MessagingCampaign**](MessagingCampaign.md)
 
 <a name="deleteOutboundRuleset"></a>
 
 # **deleteOutboundRuleset**
 
-
-
 > Void deleteOutboundRuleset(ruleSetId)
 
 Delete a Rule Set.
 
+Wraps DELETE /api/v2/outbound/rulesets/{ruleSetId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/rulesets/{ruleSetId}  
-
-Requires ANY permissions: 
-
-* outbound:ruleSet:delete
+- outbound:ruleSet:delete
 
 ### Example
 
@@ -983,12 +916,11 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **ruleSetId** | **String** | Rule Set ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **ruleSetId** | **String**| Rule Set ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -998,19 +930,15 @@ null (empty response body)
 
 # **deleteOutboundSchedulesCampaign**
 
-
-
 > Void deleteOutboundSchedulesCampaign(campaignId)
 
 Delete a dialer campaign schedule.
 
+Wraps DELETE /api/v2/outbound/schedules/campaigns/{campaignId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/schedules/campaigns/{campaignId}  
-
-Requires ANY permissions: 
-
-* outbound:schedule:delete
+- outbound:schedule:delete
 
 ### Example
 
@@ -1045,12 +973,11 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **campaignId** | **String** | Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -1060,19 +987,15 @@ null (empty response body)
 
 # **deleteOutboundSchedulesSequence**
 
-
-
 > Void deleteOutboundSchedulesSequence(sequenceId)
 
 Delete a dialer sequence schedule.
 
+Wraps DELETE /api/v2/outbound/schedules/sequences/{sequenceId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/schedules/sequences/{sequenceId}  
-
-Requires ANY permissions: 
-
-* outbound:schedule:delete
+- outbound:schedule:delete
 
 ### Example
 
@@ -1107,12 +1030,11 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **sequenceId** | **String** | Sequence ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **sequenceId** | **String**| Sequence ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -1122,19 +1044,15 @@ null (empty response body)
 
 # **deleteOutboundSequence**
 
-
-
 > Void deleteOutboundSequence(sequenceId)
 
 Delete a dialer campaign sequence.
 
+Wraps DELETE /api/v2/outbound/sequences/{sequenceId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/outbound/sequences/{sequenceId}  
-
-Requires ANY permissions: 
-
-* outbound:campaignSequence:delete
+- outbound:campaignSequence:delete
 
 ### Example
 
@@ -1169,12 +1087,11 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description          | Notes |
+| -------------- | ---------- | -------------------- | ----- |
+| **sequenceId** | **String** | Campaign Sequence ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **sequenceId** | **String**| Campaign Sequence ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -1184,19 +1101,15 @@ null (empty response body)
 
 # **getOutboundAttemptlimit**
 
-
-
-> [AttemptLimits](AttemptLimits.html) getOutboundAttemptlimit(attemptLimitsId)
+> [AttemptLimits](AttemptLimits.md) getOutboundAttemptlimit(attemptLimitsId)
 
 Get attempt limits
 
+Wraps GET /api/v2/outbound/attemptlimits/{attemptLimitsId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/attemptlimits/{attemptLimitsId}  
-
-Requires ANY permissions: 
-
-* outbound:attemptLimits:view
+- outbound:attemptLimits:view
 
 ### Example
 
@@ -1232,34 +1145,29 @@ try {
 
 ### Parameters
 
+| Name                | Type       | Description       | Notes |
+| ------------------- | ---------- | ----------------- | ----- |
+| **attemptLimitsId** | **String** | Attempt limits ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **attemptLimitsId** | **String**| Attempt limits ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AttemptLimits**](AttemptLimits.html)
+[**AttemptLimits**](AttemptLimits.md)
 
 <a name="getOutboundAttemptlimits"></a>
 
 # **getOutboundAttemptlimits**
 
-
-
-> [AttemptLimitsEntityListing](AttemptLimitsEntityListing.html) getOutboundAttemptlimits(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder)
+> [AttemptLimitsEntityListing](AttemptLimitsEntityListing.md) getOutboundAttemptlimits(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder)
 
 Query attempt limits list
 
+Wraps GET /api/v2/outbound/attemptlimits
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/attemptlimits  
-
-Requires ANY permissions: 
-
-* outbound:attemptLimits:view
+- outbound:attemptLimits:view
 
 ### Example
 
@@ -1301,40 +1209,35 @@ try {
 
 ### Parameters
 
+| Name                 | Type        | Description                                                             | Notes                                                                                                                                                             |
+| -------------------- | ----------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **pageSize**         | **Integer** | Page size. The max that will be returned is 100.                        | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber**       | **Integer** | Page number                                                             | [optional] [default to 1]                                                                                                                                         |
+| **allowEmptyResult** | **Boolean** | Whether to return an empty page when there are no results for that page | [optional] [default to false]                                                                                                                                     |
+| **filterType**       | **String**  | Filter type                                                             | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **name**             | **String**  | Name                                                                    | [optional]                                                                                                                                                        |
+| **sortBy**           | **String**  | Sort by                                                                 | [optional]                                                                                                                                                        |
+| **sortOrder**        | **String**  | Sort order                                                              | [optional] [default to a]<br />**Values**: ascending, descending                                                                                                  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **allowEmptyResult** | **Boolean**| Whether to return an empty page when there are no results for that page | [optional] [default to false] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **name** | **String**| Name | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AttemptLimitsEntityListing**](AttemptLimitsEntityListing.html)
+[**AttemptLimitsEntityListing**](AttemptLimitsEntityListing.md)
 
 <a name="getOutboundCallabletimeset"></a>
 
 # **getOutboundCallabletimeset**
 
-
-
-> [CallableTimeSet](CallableTimeSet.html) getOutboundCallabletimeset(callableTimeSetId)
+> [CallableTimeSet](CallableTimeSet.md) getOutboundCallabletimeset(callableTimeSetId)
 
 Get callable time set
 
+Wraps GET /api/v2/outbound/callabletimesets/{callableTimeSetId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/callabletimesets/{callableTimeSetId}  
-
-Requires ANY permissions: 
-
-* outbound:callableTimeSet:view
+- outbound:callableTimeSet:view
 
 ### Example
 
@@ -1370,34 +1273,29 @@ try {
 
 ### Parameters
 
+| Name                  | Type       | Description          | Notes |
+| --------------------- | ---------- | -------------------- | ----- |
+| **callableTimeSetId** | **String** | Callable Time Set ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **callableTimeSetId** | **String**| Callable Time Set ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CallableTimeSet**](CallableTimeSet.html)
+[**CallableTimeSet**](CallableTimeSet.md)
 
 <a name="getOutboundCallabletimesets"></a>
 
 # **getOutboundCallabletimesets**
 
-
-
-> [CallableTimeSetEntityListing](CallableTimeSetEntityListing.html) getOutboundCallabletimesets(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder)
+> [CallableTimeSetEntityListing](CallableTimeSetEntityListing.md) getOutboundCallabletimesets(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder)
 
 Query callable time set list
 
+Wraps GET /api/v2/outbound/callabletimesets
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/callabletimesets  
-
-Requires ANY permissions: 
-
-* outbound:callableTimeSet:view
+- outbound:callableTimeSet:view
 
 ### Example
 
@@ -1439,40 +1337,35 @@ try {
 
 ### Parameters
 
+| Name                 | Type        | Description                                                             | Notes                                                                                                                                                             |
+| -------------------- | ----------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **pageSize**         | **Integer** | Page size. The max that will be returned is 100.                        | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber**       | **Integer** | Page number                                                             | [optional] [default to 1]                                                                                                                                         |
+| **allowEmptyResult** | **Boolean** | Whether to return an empty page when there are no results for that page | [optional] [default to false]                                                                                                                                     |
+| **filterType**       | **String**  | Filter type                                                             | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **name**             | **String**  | Name                                                                    | [optional]                                                                                                                                                        |
+| **sortBy**           | **String**  | Sort by                                                                 | [optional]                                                                                                                                                        |
+| **sortOrder**        | **String**  | Sort order                                                              | [optional] [default to a]<br />**Values**: ascending, descending                                                                                                  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **allowEmptyResult** | **Boolean**| Whether to return an empty page when there are no results for that page | [optional] [default to false] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **name** | **String**| Name | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CallableTimeSetEntityListing**](CallableTimeSetEntityListing.html)
+[**CallableTimeSetEntityListing**](CallableTimeSetEntityListing.md)
 
 <a name="getOutboundCallanalysisresponseset"></a>
 
 # **getOutboundCallanalysisresponseset**
 
-
-
-> [ResponseSet](ResponseSet.html) getOutboundCallanalysisresponseset(callAnalysisSetId)
+> [ResponseSet](ResponseSet.md) getOutboundCallanalysisresponseset(callAnalysisSetId)
 
 Get a dialer call analysis response set.
 
+Wraps GET /api/v2/outbound/callanalysisresponsesets/{callAnalysisSetId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/callanalysisresponsesets/{callAnalysisSetId}  
-
-Requires ANY permissions: 
-
-* outbound:responseSet:view
+- outbound:responseSet:view
 
 ### Example
 
@@ -1508,34 +1401,29 @@ try {
 
 ### Parameters
 
+| Name                  | Type       | Description                   | Notes |
+| --------------------- | ---------- | ----------------------------- | ----- |
+| **callAnalysisSetId** | **String** | Call Analysis Response Set ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **callAnalysisSetId** | **String**| Call Analysis Response Set ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ResponseSet**](ResponseSet.html)
+[**ResponseSet**](ResponseSet.md)
 
 <a name="getOutboundCallanalysisresponsesets"></a>
 
 # **getOutboundCallanalysisresponsesets**
 
-
-
-> [ResponseSetEntityListing](ResponseSetEntityListing.html) getOutboundCallanalysisresponsesets(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder)
+> [ResponseSetEntityListing](ResponseSetEntityListing.md) getOutboundCallanalysisresponsesets(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder)
 
 Query a list of dialer call analysis response sets.
 
+Wraps GET /api/v2/outbound/callanalysisresponsesets
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/callanalysisresponsesets  
-
-Requires ANY permissions: 
-
-* outbound:responseSet:view
+- outbound:responseSet:view
 
 ### Example
 
@@ -1577,40 +1465,35 @@ try {
 
 ### Parameters
 
+| Name                 | Type        | Description                                                             | Notes                                                                                                                                                             |
+| -------------------- | ----------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **pageSize**         | **Integer** | Page size. The max that will be returned is 100.                        | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber**       | **Integer** | Page number                                                             | [optional] [default to 1]                                                                                                                                         |
+| **allowEmptyResult** | **Boolean** | Whether to return an empty page when there are no results for that page | [optional] [default to false]                                                                                                                                     |
+| **filterType**       | **String**  | Filter type                                                             | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **name**             | **String**  | Name                                                                    | [optional]                                                                                                                                                        |
+| **sortBy**           | **String**  | Sort by                                                                 | [optional]                                                                                                                                                        |
+| **sortOrder**        | **String**  | Sort order                                                              | [optional] [default to a]<br />**Values**: ascending, descending                                                                                                  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **allowEmptyResult** | **Boolean**| Whether to return an empty page when there are no results for that page | [optional] [default to false] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **name** | **String**| Name | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ResponseSetEntityListing**](ResponseSetEntityListing.html)
+[**ResponseSetEntityListing**](ResponseSetEntityListing.md)
 
 <a name="getOutboundCampaign"></a>
 
 # **getOutboundCampaign**
 
-
-
-> [Campaign](Campaign.html) getOutboundCampaign(campaignId)
+> [Campaign](Campaign.md) getOutboundCampaign(campaignId)
 
 Get dialer campaign.
 
+Wraps GET /api/v2/outbound/campaigns/{campaignId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/campaigns/{campaignId}  
-
-Requires ANY permissions: 
-
-* outbound:campaign:view
+- outbound:campaign:view
 
 ### Example
 
@@ -1646,36 +1529,31 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **campaignId** | **String** | Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Campaign**](Campaign.html)
+[**Campaign**](Campaign.md)
 
 <a name="getOutboundCampaignAgentownedmappingpreviewResults"></a>
 
 # **getOutboundCampaignAgentownedmappingpreviewResults**
 
-
-
-> [AgentOwnedMappingPreviewListing](AgentOwnedMappingPreviewListing.html) getOutboundCampaignAgentownedmappingpreviewResults(campaignId)
+> [AgentOwnedMappingPreviewListing](AgentOwnedMappingPreviewListing.md) getOutboundCampaignAgentownedmappingpreviewResults(campaignId)
 
 Get a preview of how agents will be mapped to this campaign&#39;s contact list.
 
+Wraps GET /api/v2/outbound/campaigns/{campaignId}/agentownedmappingpreview/results
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/outbound/campaigns/{campaignId}/agentownedmappingpreview/results  
-
-Requires ALL permissions: 
-
-* outbound:campaign:view
-* outbound:contact:view
-* routing:queue:view
+- outbound:campaign:view
+- outbound:contact:view
+- routing:queue:view
 
 ### Example
 
@@ -1711,34 +1589,29 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **campaignId** | **String** | Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AgentOwnedMappingPreviewListing**](AgentOwnedMappingPreviewListing.html)
+[**AgentOwnedMappingPreviewListing**](AgentOwnedMappingPreviewListing.md)
 
 <a name="getOutboundCampaignDiagnostics"></a>
 
 # **getOutboundCampaignDiagnostics**
 
-
-
-> [CampaignDiagnostics](CampaignDiagnostics.html) getOutboundCampaignDiagnostics(campaignId)
+> [CampaignDiagnostics](CampaignDiagnostics.md) getOutboundCampaignDiagnostics(campaignId)
 
 Get campaign diagnostics
 
+Wraps GET /api/v2/outbound/campaigns/{campaignId}/diagnostics
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/campaigns/{campaignId}/diagnostics  
-
-Requires ANY permissions: 
-
-* outbound:campaign:view
+- outbound:campaign:view
 
 ### Example
 
@@ -1774,34 +1647,29 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **campaignId** | **String** | Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignDiagnostics**](CampaignDiagnostics.html)
+[**CampaignDiagnostics**](CampaignDiagnostics.md)
 
 <a name="getOutboundCampaignInteractions"></a>
 
 # **getOutboundCampaignInteractions**
 
-
-
-> [CampaignInteractions](CampaignInteractions.html) getOutboundCampaignInteractions(campaignId)
+> [CampaignInteractions](CampaignInteractions.md) getOutboundCampaignInteractions(campaignId)
 
 Get dialer campaign interactions.
 
+Wraps GET /api/v2/outbound/campaigns/{campaignId}/interactions
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/campaigns/{campaignId}/interactions  
-
-Requires ANY permissions: 
-
-* outbound:campaign:view
+- outbound:campaign:view
 
 ### Example
 
@@ -1837,34 +1705,29 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **campaignId** | **String** | Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignInteractions**](CampaignInteractions.html)
+[**CampaignInteractions**](CampaignInteractions.md)
 
 <a name="getOutboundCampaignProgress"></a>
 
 # **getOutboundCampaignProgress**
 
-
-
-> [CampaignProgress](CampaignProgress.html) getOutboundCampaignProgress(campaignId)
+> [CampaignProgress](CampaignProgress.md) getOutboundCampaignProgress(campaignId)
 
 Get campaign progress
 
+Wraps GET /api/v2/outbound/campaigns/{campaignId}/progress
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/campaigns/{campaignId}/progress  
-
-Requires ANY permissions: 
-
-* outbound:campaign:view
+- outbound:campaign:view
 
 ### Example
 
@@ -1900,34 +1763,29 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **campaignId** | **String** | Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignProgress**](CampaignProgress.html)
+[**CampaignProgress**](CampaignProgress.md)
 
 <a name="getOutboundCampaignStats"></a>
 
 # **getOutboundCampaignStats**
 
-
-
-> [CampaignStats](CampaignStats.html) getOutboundCampaignStats(campaignId)
+> [CampaignStats](CampaignStats.md) getOutboundCampaignStats(campaignId)
 
 Get statistics about a Dialer Campaign
 
+Wraps GET /api/v2/outbound/campaigns/{campaignId}/stats
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/campaigns/{campaignId}/stats  
-
-Requires ANY permissions: 
-
-* outbound:campaign:view
+- outbound:campaign:view
 
 ### Example
 
@@ -1963,34 +1821,29 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **campaignId** | **String** | Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignStats**](CampaignStats.html)
+[**CampaignStats**](CampaignStats.md)
 
 <a name="getOutboundCampaignrule"></a>
 
 # **getOutboundCampaignrule**
 
-
-
-> [CampaignRule](CampaignRule.html) getOutboundCampaignrule(campaignRuleId)
+> [CampaignRule](CampaignRule.md) getOutboundCampaignrule(campaignRuleId)
 
 Get Campaign Rule
 
+Wraps GET /api/v2/outbound/campaignrules/{campaignRuleId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/campaignrules/{campaignRuleId}  
-
-Requires ANY permissions: 
-
-* outbound:campaignRule:view
+- outbound:campaignRule:view
 
 ### Example
 
@@ -2026,34 +1879,29 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description      | Notes |
+| ------------------ | ---------- | ---------------- | ----- |
+| **campaignRuleId** | **String** | Campaign Rule ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignRuleId** | **String**| Campaign Rule ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignRule**](CampaignRule.html)
+[**CampaignRule**](CampaignRule.md)
 
 <a name="getOutboundCampaignrules"></a>
 
 # **getOutboundCampaignrules**
 
-
-
-> [CampaignRuleEntityListing](CampaignRuleEntityListing.html) getOutboundCampaignrules(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder)
+> [CampaignRuleEntityListing](CampaignRuleEntityListing.md) getOutboundCampaignrules(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder)
 
 Query Campaign Rule list
 
+Wraps GET /api/v2/outbound/campaignrules
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/campaignrules  
-
-Requires ANY permissions: 
-
-* outbound:campaignRule:view
+- outbound:campaignRule:view
 
 ### Example
 
@@ -2095,40 +1943,35 @@ try {
 
 ### Parameters
 
+| Name                 | Type        | Description                                                             | Notes                                                                                                                                                             |
+| -------------------- | ----------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **pageSize**         | **Integer** | Page size. The max that will be returned is 100.                        | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber**       | **Integer** | Page number                                                             | [optional] [default to 1]                                                                                                                                         |
+| **allowEmptyResult** | **Boolean** | Whether to return an empty page when there are no results for that page | [optional] [default to false]                                                                                                                                     |
+| **filterType**       | **String**  | Filter type                                                             | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **name**             | **String**  | Name                                                                    | [optional]                                                                                                                                                        |
+| **sortBy**           | **String**  | Sort by                                                                 | [optional]                                                                                                                                                        |
+| **sortOrder**        | **String**  | Sort order                                                              | [optional] [default to a]<br />**Values**: ascending, descending                                                                                                  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **allowEmptyResult** | **Boolean**| Whether to return an empty page when there are no results for that page | [optional] [default to false] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **name** | **String**| Name | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignRuleEntityListing**](CampaignRuleEntityListing.html)
+[**CampaignRuleEntityListing**](CampaignRuleEntityListing.md)
 
 <a name="getOutboundCampaigns"></a>
 
 # **getOutboundCampaigns**
 
-
-
-> [CampaignEntityListing](CampaignEntityListing.html) getOutboundCampaigns(pageSize, pageNumber, filterType, name, id, contactListId, dncListIds, distributionQueueId, edgeGroupId, callAnalysisResponseSetId, divisionId, sortBy, sortOrder)
+> [CampaignEntityListing](CampaignEntityListing.md) getOutboundCampaigns(pageSize, pageNumber, filterType, name, id, contactListId, dncListIds, distributionQueueId, edgeGroupId, callAnalysisResponseSetId, divisionId, sortBy, sortOrder)
 
 Query a list of dialer campaigns.
 
+Wraps GET /api/v2/outbound/campaigns
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/campaigns  
-
-Requires ANY permissions: 
-
-* outbound:campaign:view
+- outbound:campaign:view
 
 ### Example
 
@@ -2176,48 +2019,43 @@ try {
 
 ### Parameters
 
+| Name                          | Type                                | Description                                      | Notes                                                                                                                                                             |
+| ----------------------------- | ----------------------------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **pageSize**                  | **Integer**                         | Page size. The max that will be returned is 100. | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber**                | **Integer**                         | Page number                                      | [optional] [default to 1]                                                                                                                                         |
+| **filterType**                | **String**                          | Filter type                                      | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **name**                      | **String**                          | Name                                             | [optional]                                                                                                                                                        |
+| **id**                        | [**List&lt;String&gt;**](String.md) | id                                               | [optional]                                                                                                                                                        |
+| **contactListId**             | **String**                          | Contact List ID                                  | [optional]                                                                                                                                                        |
+| **dncListIds**                | **String**                          | DNC list ID                                      | [optional]                                                                                                                                                        |
+| **distributionQueueId**       | **String**                          | Distribution queue ID                            | [optional]                                                                                                                                                        |
+| **edgeGroupId**               | **String**                          | Edge group ID                                    | [optional]                                                                                                                                                        |
+| **callAnalysisResponseSetId** | **String**                          | Call analysis response set ID                    | [optional]                                                                                                                                                        |
+| **divisionId**                | [**List&lt;String&gt;**](String.md) | Division ID(s)                                   | [optional]                                                                                                                                                        |
+| **sortBy**                    | **String**                          | Sort by                                          | [optional]                                                                                                                                                        |
+| **sortOrder**                 | **String**                          | Sort order                                       | [optional] [default to a]<br />**Values**: ascending, descending                                                                                                  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **name** | **String**| Name | [optional] 
-| **id** | [**List&lt;String&gt;**](String.html)| id | [optional] 
-| **contactListId** | **String**| Contact List ID | [optional] 
-| **dncListIds** | **String**| DNC list ID | [optional] 
-| **distributionQueueId** | **String**| Distribution queue ID | [optional] 
-| **edgeGroupId** | **String**| Edge group ID | [optional] 
-| **callAnalysisResponseSetId** | **String**| Call analysis response set ID | [optional] 
-| **divisionId** | [**List&lt;String&gt;**](String.html)| Division ID(s) | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignEntityListing**](CampaignEntityListing.html)
+[**CampaignEntityListing**](CampaignEntityListing.md)
 
 <a name="getOutboundCampaignsAll"></a>
 
 # **getOutboundCampaignsAll**
 
-
-
-> [CommonCampaignEntityListing](CommonCampaignEntityListing.html) getOutboundCampaignsAll(pageSize, pageNumber, id, name, divisionId, mediaType, sortOrder)
+> [CommonCampaignEntityListing](CommonCampaignEntityListing.md) getOutboundCampaignsAll(pageSize, pageNumber, id, name, divisionId, mediaType, sortOrder)
 
 Query across all types of campaigns by division
 
+Wraps GET /api/v2/outbound/campaigns/all
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/campaigns/all  
-
-Requires ANY permissions: 
-
-* outbound:campaign:view
-* outbound:messagingCampaign:view
-* outbound:emailCampaign:view
+- outbound:campaign:view
+- outbound:messagingCampaign:view
+- outbound:emailCampaign:view
 
 ### Example
 
@@ -2259,42 +2097,37 @@ try {
 
 ### Parameters
 
+| Name           | Type                                | Description      | Notes                                                            |
+| -------------- | ----------------------------------- | ---------------- | ---------------------------------------------------------------- |
+| **pageSize**   | **Integer**                         | Page size        | [optional] [default to 25]                                       |
+| **pageNumber** | **Integer**                         | Page number      | [optional] [default to 1]                                        |
+| **id**         | [**List&lt;String&gt;**](String.md) | Campaign ID(s)   | [optional]                                                       |
+| **name**       | **String**                          | Campaign name(s) | [optional]                                                       |
+| **divisionId** | [**List&lt;String&gt;**](String.md) | Division ID(s)   | [optional]                                                       |
+| **mediaType**  | [**List&lt;String&gt;**](String.md) | Media type(s)    | [optional]<br />**Values**: email, sms, voice                    |
+| **sortOrder**  | **String**                          | Sort order       | [optional] [default to a]<br />**Values**: ascending, descending |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **id** | [**List&lt;String&gt;**](String.html)| Campaign ID(s) | [optional] 
-| **name** | **String**| Campaign name(s) | [optional] 
-| **divisionId** | [**List&lt;String&gt;**](String.html)| Division ID(s) | [optional] 
-| **mediaType** | [**List&lt;String&gt;**](String.html)| Media type(s) | [optional]<br />**Values**: email, sms, voice 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CommonCampaignEntityListing**](CommonCampaignEntityListing.html)
+[**CommonCampaignEntityListing**](CommonCampaignEntityListing.md)
 
 <a name="getOutboundCampaignsAllDivisionviews"></a>
 
 # **getOutboundCampaignsAllDivisionviews**
 
-
-
-> [CommonCampaignDivisionViewEntityListing](CommonCampaignDivisionViewEntityListing.html) getOutboundCampaignsAllDivisionviews(pageSize, pageNumber, id, name, divisionId, mediaType, sortOrder)
+> [CommonCampaignDivisionViewEntityListing](CommonCampaignDivisionViewEntityListing.md) getOutboundCampaignsAllDivisionviews(pageSize, pageNumber, id, name, divisionId, mediaType, sortOrder)
 
 Query across all types of campaigns
 
+Wraps GET /api/v2/outbound/campaigns/all/divisionviews
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/campaigns/all/divisionviews  
-
-Requires ANY permissions: 
-
-* outbound:campaign:search
-* outbound:messagingCampaign:search
-* outbound:emailCampaign:search
+- outbound:campaign:search
+- outbound:messagingCampaign:search
+- outbound:emailCampaign:search
 
 ### Example
 
@@ -2336,40 +2169,37 @@ try {
 
 ### Parameters
 
+| Name           | Type                                | Description      | Notes                                                            |
+| -------------- | ----------------------------------- | ---------------- | ---------------------------------------------------------------- |
+| **pageSize**   | **Integer**                         | Page size        | [optional] [default to 25]                                       |
+| **pageNumber** | **Integer**                         | Page number      | [optional] [default to 1]                                        |
+| **id**         | [**List&lt;String&gt;**](String.md) | Campaign ID(s)   | [optional]                                                       |
+| **name**       | **String**                          | Campaign name(s) | [optional]                                                       |
+| **divisionId** | [**List&lt;String&gt;**](String.md) | Division ID(s)   | [optional]                                                       |
+| **mediaType**  | [**List&lt;String&gt;**](String.md) | Media type(s)    | [optional]<br />**Values**: email, sms, voice                    |
+| **sortOrder**  | **String**                          | Sort order       | [optional] [default to a]<br />**Values**: ascending, descending |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **id** | [**List&lt;String&gt;**](String.html)| Campaign ID(s) | [optional] 
-| **name** | **String**| Campaign name(s) | [optional] 
-| **divisionId** | [**List&lt;String&gt;**](String.html)| Division ID(s) | [optional] 
-| **mediaType** | [**List&lt;String&gt;**](String.html)| Media type(s) | [optional]<br />**Values**: email, sms, voice 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CommonCampaignDivisionViewEntityListing**](CommonCampaignDivisionViewEntityListing.html)
+[**CommonCampaignDivisionViewEntityListing**](CommonCampaignDivisionViewEntityListing.md)
 
 <a name="getOutboundCampaignsDivisionview"></a>
 
 # **getOutboundCampaignsDivisionview**
 
-
-
-> [CampaignDivisionView](CampaignDivisionView.html) getOutboundCampaignsDivisionview(campaignId)
+> [CampaignDivisionView](CampaignDivisionView.md) getOutboundCampaignsDivisionview(campaignId)
 
 Get a basic Campaign information object
 
 This returns a simplified version of a Campaign, consisting of name and division.
 
-Wraps GET /api/v2/outbound/campaigns/divisionviews/{campaignId}  
+Wraps GET /api/v2/outbound/campaigns/divisionviews/{campaignId}
 
-Requires ALL permissions: 
+Requires ALL permissions:
 
-* outbound:campaign:search
+- outbound:campaign:search
 
 ### Example
 
@@ -2405,34 +2235,31 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **campaignId** | **String** | Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignDivisionView**](CampaignDivisionView.html)
+[**CampaignDivisionView**](CampaignDivisionView.md)
 
 <a name="getOutboundCampaignsDivisionviews"></a>
 
 # **getOutboundCampaignsDivisionviews**
 
-
-
-> [CampaignDivisionViewListing](CampaignDivisionViewListing.html) getOutboundCampaignsDivisionviews(pageSize, pageNumber, filterType, name, id, sortBy, sortOrder)
+> [CampaignDivisionViewListing](CampaignDivisionViewListing.md) getOutboundCampaignsDivisionviews(pageSize, pageNumber, filterType, name, id, sortBy, sortOrder)
 
 Query a list of basic Campaign information objects
 
 This returns a simplified version of a Campaign, consisting of name and division.
 
-Wraps GET /api/v2/outbound/campaigns/divisionviews  
+Wraps GET /api/v2/outbound/campaigns/divisionviews
 
-Requires ALL permissions: 
+Requires ALL permissions:
 
-* outbound:campaign:search
+- outbound:campaign:search
 
 ### Example
 
@@ -2474,40 +2301,35 @@ try {
 
 ### Parameters
 
+| Name           | Type                                | Description                                      | Notes                                                                                                                                                             |
+| -------------- | ----------------------------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **pageSize**   | **Integer**                         | Page size. The max that will be returned is 100. | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber** | **Integer**                         | Page number                                      | [optional] [default to 1]                                                                                                                                         |
+| **filterType** | **String**                          | Filter type                                      | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **name**       | **String**                          | Name                                             | [optional]                                                                                                                                                        |
+| **id**         | [**List&lt;String&gt;**](String.md) | id                                               | [optional]                                                                                                                                                        |
+| **sortBy**     | **String**                          | Sort by                                          | [optional]                                                                                                                                                        |
+| **sortOrder**  | **String**                          | Sort order                                       | [optional] [default to a]<br />**Values**: ascending, descending                                                                                                  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **name** | **String**| Name | [optional] 
-| **id** | [**List&lt;String&gt;**](String.html)| id | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignDivisionViewListing**](CampaignDivisionViewListing.html)
+[**CampaignDivisionViewListing**](CampaignDivisionViewListing.md)
 
 <a name="getOutboundContactlist"></a>
 
 # **getOutboundContactlist**
 
-
-
-> [ContactList](ContactList.html) getOutboundContactlist(contactListId, includeImportStatus, includeSize)
+> [ContactList](ContactList.md) getOutboundContactlist(contactListId, includeImportStatus, includeSize)
 
 Get a dialer contact list.
 
+Wraps GET /api/v2/outbound/contactlists/{contactListId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/contactlists/{contactListId}  
-
-Requires ANY permissions: 
-
-* outbound:contactList:view
+- outbound:contactList:view
 
 ### Example
 
@@ -2545,36 +2367,31 @@ try {
 
 ### Parameters
 
+| Name                    | Type        | Description    | Notes                         |
+| ----------------------- | ----------- | -------------- | ----------------------------- |
+| **contactListId**       | **String**  | ContactList ID |
+| **includeImportStatus** | **Boolean** | Import status  | [optional] [default to false] |
+| **includeSize**         | **Boolean** | Include size   | [optional] [default to false] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| ContactList ID | 
-| **includeImportStatus** | **Boolean**| Import status | [optional] [default to false] 
-| **includeSize** | **Boolean**| Include size | [optional] [default to false] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ContactList**](ContactList.html)
+[**ContactList**](ContactList.md)
 
 <a name="getOutboundContactlistContact"></a>
 
 # **getOutboundContactlistContact**
 
-
-
-> [DialerContact](DialerContact.html) getOutboundContactlistContact(contactListId, contactId)
+> [DialerContact](DialerContact.md) getOutboundContactlistContact(contactListId, contactId)
 
 Get a contact.
 
+Wraps GET /api/v2/outbound/contactlists/{contactListId}/contacts/{contactId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/contactlists/{contactListId}/contacts/{contactId}  
-
-Requires ANY permissions: 
-
-* outbound:contact:view
+- outbound:contact:view
 
 ### Example
 
@@ -2611,36 +2428,31 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description     | Notes |
+| ----------------- | ---------- | --------------- | ----- |
+| **contactListId** | **String** | Contact List ID |
+| **contactId**     | **String** | Contact ID      |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| Contact List ID | 
-| **contactId** | **String**| Contact ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DialerContact**](DialerContact.html)
+[**DialerContact**](DialerContact.md)
 
 <a name="getOutboundContactlistExport"></a>
 
 # **getOutboundContactlistExport**
 
-
-
-> [ExportUri](ExportUri.html) getOutboundContactlistExport(contactListId, download)
+> [ExportUri](ExportUri.md) getOutboundContactlistExport(contactListId, download)
 
 Get the URI of a contact list export.
 
+Wraps GET /api/v2/outbound/contactlists/{contactListId}/export
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/outbound/contactlists/{contactListId}/export  
-
-Requires ALL permissions: 
-
-* outbound:contact:view
-* outbound:contactList:view
+- outbound:contact:view
+- outbound:contactList:view
 
 ### Example
 
@@ -2677,35 +2489,30 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description              | Notes                         |
+| ----------------- | ---------- | ------------------------ | ----------------------------- |
+| **contactListId** | **String** | ContactList ID           |
+| **download**      | **String** | Redirect to download uri | [optional] [default to false] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| ContactList ID | 
-| **download** | **String**| Redirect to download uri | [optional] [default to false] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ExportUri**](ExportUri.html)
+[**ExportUri**](ExportUri.md)
 
 <a name="getOutboundContactlistImportstatus"></a>
 
 # **getOutboundContactlistImportstatus**
 
-
-
-> [ImportStatus](ImportStatus.html) getOutboundContactlistImportstatus(contactListId)
+> [ImportStatus](ImportStatus.md) getOutboundContactlistImportstatus(contactListId)
 
 Get dialer contactList import status.
 
+Wraps GET /api/v2/outbound/contactlists/{contactListId}/importstatus
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/contactlists/{contactListId}/importstatus  
-
-Requires ANY permissions: 
-
-* outbound:contactList:view
+- outbound:contactList:view
 
 ### Example
 
@@ -2741,34 +2548,29 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description    | Notes |
+| ----------------- | ---------- | -------------- | ----- |
+| **contactListId** | **String** | ContactList ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| ContactList ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ImportStatus**](ImportStatus.html)
+[**ImportStatus**](ImportStatus.md)
 
 <a name="getOutboundContactlistTimezonemappingpreview"></a>
 
 # **getOutboundContactlistTimezonemappingpreview**
 
-
-
-> [TimeZoneMappingPreview](TimeZoneMappingPreview.html) getOutboundContactlistTimezonemappingpreview(contactListId)
+> [TimeZoneMappingPreview](TimeZoneMappingPreview.md) getOutboundContactlistTimezonemappingpreview(contactListId)
 
 Preview the result of applying Automatic Time Zone Mapping to a contact list
 
+Wraps GET /api/v2/outbound/contactlists/{contactListId}/timezonemappingpreview
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/contactlists/{contactListId}/timezonemappingpreview  
-
-Requires ANY permissions: 
-
-* outbound:contactList:view
+- outbound:contactList:view
 
 ### Example
 
@@ -2804,34 +2606,29 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description    | Notes |
+| ----------------- | ---------- | -------------- | ----- |
+| **contactListId** | **String** | ContactList ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| ContactList ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**TimeZoneMappingPreview**](TimeZoneMappingPreview.html)
+[**TimeZoneMappingPreview**](TimeZoneMappingPreview.md)
 
 <a name="getOutboundContactlistfilter"></a>
 
 # **getOutboundContactlistfilter**
 
-
-
-> [ContactListFilter](ContactListFilter.html) getOutboundContactlistfilter(contactListFilterId)
+> [ContactListFilter](ContactListFilter.md) getOutboundContactlistfilter(contactListFilterId)
 
 Get Contact list filter
 
+Wraps GET /api/v2/outbound/contactlistfilters/{contactListFilterId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/contactlistfilters/{contactListFilterId}  
-
-Requires ANY permissions: 
-
-* outbound:contactListFilter:view
+- outbound:contactListFilter:view
 
 ### Example
 
@@ -2867,34 +2664,29 @@ try {
 
 ### Parameters
 
+| Name                    | Type       | Description            | Notes |
+| ----------------------- | ---------- | ---------------------- | ----- |
+| **contactListFilterId** | **String** | Contact List Filter ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListFilterId** | **String**| Contact List Filter ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ContactListFilter**](ContactListFilter.html)
+[**ContactListFilter**](ContactListFilter.md)
 
 <a name="getOutboundContactlistfilters"></a>
 
 # **getOutboundContactlistfilters**
 
-
-
-> [ContactListFilterEntityListing](ContactListFilterEntityListing.html) getOutboundContactlistfilters(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder, contactListId)
+> [ContactListFilterEntityListing](ContactListFilterEntityListing.md) getOutboundContactlistfilters(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder, contactListId)
 
 Query Contact list filters
 
+Wraps GET /api/v2/outbound/contactlistfilters
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/contactlistfilters  
-
-Requires ANY permissions: 
-
-* outbound:contactListFilter:view
+- outbound:contactListFilter:view
 
 ### Example
 
@@ -2937,41 +2729,36 @@ try {
 
 ### Parameters
 
+| Name                 | Type        | Description                                                             | Notes                                                                                                                                                             |
+| -------------------- | ----------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **pageSize**         | **Integer** | Page size. The max that will be returned is 100.                        | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber**       | **Integer** | Page number                                                             | [optional] [default to 1]                                                                                                                                         |
+| **allowEmptyResult** | **Boolean** | Whether to return an empty page when there are no results for that page | [optional] [default to false]                                                                                                                                     |
+| **filterType**       | **String**  | Filter type                                                             | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **name**             | **String**  | Name                                                                    | [optional]                                                                                                                                                        |
+| **sortBy**           | **String**  | Sort by                                                                 | [optional]                                                                                                                                                        |
+| **sortOrder**        | **String**  | Sort order                                                              | [optional] [default to a]<br />**Values**: ascending, descending                                                                                                  |
+| **contactListId**    | **String**  | Contact List ID                                                         | [optional]                                                                                                                                                        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **allowEmptyResult** | **Boolean**| Whether to return an empty page when there are no results for that page | [optional] [default to false] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **name** | **String**| Name | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
-| **contactListId** | **String**| Contact List ID | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ContactListFilterEntityListing**](ContactListFilterEntityListing.html)
+[**ContactListFilterEntityListing**](ContactListFilterEntityListing.md)
 
 <a name="getOutboundContactlists"></a>
 
 # **getOutboundContactlists**
 
-
-
-> [ContactListEntityListing](ContactListEntityListing.html) getOutboundContactlists(includeImportStatus, includeSize, pageSize, pageNumber, allowEmptyResult, filterType, name, id, divisionId, sortBy, sortOrder)
+> [ContactListEntityListing](ContactListEntityListing.md) getOutboundContactlists(includeImportStatus, includeSize, pageSize, pageNumber, allowEmptyResult, filterType, name, id, divisionId, sortBy, sortOrder)
 
 Query a list of contact lists.
 
+Wraps GET /api/v2/outbound/contactlists
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/contactlists  
-
-Requires ANY permissions: 
-
-* outbound:contactList:view
+- outbound:contactList:view
 
 ### Example
 
@@ -3017,44 +2804,41 @@ try {
 
 ### Parameters
 
+| Name                    | Type                                | Description                                                             | Notes                                                                                                                                                             |
+| ----------------------- | ----------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **includeImportStatus** | **Boolean**                         | Include import status                                                   | [optional] [default to false]                                                                                                                                     |
+| **includeSize**         | **Boolean**                         | Include size                                                            | [optional] [default to false]                                                                                                                                     |
+| **pageSize**            | **Integer**                         | Page size. The max that will be returned is 100.                        | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber**          | **Integer**                         | Page number                                                             | [optional] [default to 1]                                                                                                                                         |
+| **allowEmptyResult**    | **Boolean**                         | Whether to return an empty page when there are no results for that page | [optional] [default to false]                                                                                                                                     |
+| **filterType**          | **String**                          | Filter type                                                             | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **name**                | **String**                          | Name                                                                    | [optional]                                                                                                                                                        |
+| **id**                  | [**List&lt;String&gt;**](String.md) | id                                                                      | [optional]                                                                                                                                                        |
+| **divisionId**          | [**List&lt;String&gt;**](String.md) | Division ID(s)                                                          | [optional]                                                                                                                                                        |
+| **sortBy**              | **String**                          | Sort by                                                                 | [optional]                                                                                                                                                        |
+| **sortOrder**           | **String**                          | Sort order                                                              | [optional] [default to a]<br />**Values**: ascending, descending                                                                                                  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **includeImportStatus** | **Boolean**| Include import status | [optional] [default to false] 
-| **includeSize** | **Boolean**| Include size | [optional] [default to false] 
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **allowEmptyResult** | **Boolean**| Whether to return an empty page when there are no results for that page | [optional] [default to false] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **name** | **String**| Name | [optional] 
-| **id** | [**List&lt;String&gt;**](String.html)| id | [optional] 
-| **divisionId** | [**List&lt;String&gt;**](String.html)| Division ID(s) | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ContactListEntityListing**](ContactListEntityListing.html)
+[**ContactListEntityListing**](ContactListEntityListing.md)
 
 <a name="getOutboundContactlistsDivisionview"></a>
 
 # **getOutboundContactlistsDivisionview**
 
-
-
-> [ContactListDivisionView](ContactListDivisionView.html) getOutboundContactlistsDivisionview(contactListId, includeImportStatus, includeSize)
+> [ContactListDivisionView](ContactListDivisionView.md) getOutboundContactlistsDivisionview(contactListId, includeImportStatus, includeSize)
 
 Get a basic ContactList information object
 
 This returns a simplified version of a ContactList, consisting of the name, division, column names, phone columns, import status, and size.
 
-Wraps GET /api/v2/outbound/contactlists/divisionviews/{contactListId}  
+Wraps GET /api/v2/outbound/contactlists/divisionviews/{contactListId}
 
-Requires ALL permissions: 
+Requires ALL permissions:
 
-* outbound:contactList:search
+- outbound:contactList:search
 
 ### Example
 
@@ -3092,36 +2876,33 @@ try {
 
 ### Parameters
 
+| Name                    | Type        | Description           | Notes                         |
+| ----------------------- | ----------- | --------------------- | ----------------------------- |
+| **contactListId**       | **String**  | Contactlist ID        |
+| **includeImportStatus** | **Boolean** | Include import status | [optional] [default to false] |
+| **includeSize**         | **Boolean** | Include size          | [optional] [default to false] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| Contactlist ID | 
-| **includeImportStatus** | **Boolean**| Include import status | [optional] [default to false] 
-| **includeSize** | **Boolean**| Include size | [optional] [default to false] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ContactListDivisionView**](ContactListDivisionView.html)
+[**ContactListDivisionView**](ContactListDivisionView.md)
 
 <a name="getOutboundContactlistsDivisionviews"></a>
 
 # **getOutboundContactlistsDivisionviews**
 
-
-
-> [ContactListDivisionViewListing](ContactListDivisionViewListing.html) getOutboundContactlistsDivisionviews(includeImportStatus, includeSize, pageSize, pageNumber, filterType, name, id, sortBy, sortOrder)
+> [ContactListDivisionViewListing](ContactListDivisionViewListing.md) getOutboundContactlistsDivisionviews(includeImportStatus, includeSize, pageSize, pageNumber, filterType, name, id, sortBy, sortOrder)
 
 Query a list of simplified contact list objects.
 
 This return a simplified version of contact lists, consisting of the name, division, column names, phone columns, import status, and size.
 
-Wraps GET /api/v2/outbound/contactlists/divisionviews  
+Wraps GET /api/v2/outbound/contactlists/divisionviews
 
-Requires ALL permissions: 
+Requires ALL permissions:
 
-* outbound:contactList:search
+- outbound:contactList:search
 
 ### Example
 
@@ -3165,42 +2946,37 @@ try {
 
 ### Parameters
 
+| Name                    | Type                                | Description                                      | Notes                                                                                                                                                             |
+| ----------------------- | ----------------------------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **includeImportStatus** | **Boolean**                         | Include import status                            | [optional] [default to false]                                                                                                                                     |
+| **includeSize**         | **Boolean**                         | Include size                                     | [optional] [default to false]                                                                                                                                     |
+| **pageSize**            | **Integer**                         | Page size. The max that will be returned is 100. | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber**          | **Integer**                         | Page number                                      | [optional] [default to 1]                                                                                                                                         |
+| **filterType**          | **String**                          | Filter type                                      | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **name**                | **String**                          | Name                                             | [optional]                                                                                                                                                        |
+| **id**                  | [**List&lt;String&gt;**](String.md) | id                                               | [optional]                                                                                                                                                        |
+| **sortBy**              | **String**                          | Sort by                                          | [optional]                                                                                                                                                        |
+| **sortOrder**           | **String**                          | Sort order                                       | [optional] [default to a]<br />**Values**: ascending, descending                                                                                                  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **includeImportStatus** | **Boolean**| Include import status | [optional] [default to false] 
-| **includeSize** | **Boolean**| Include size | [optional] [default to false] 
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **name** | **String**| Name | [optional] 
-| **id** | [**List&lt;String&gt;**](String.html)| id | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ContactListDivisionViewListing**](ContactListDivisionViewListing.html)
+[**ContactListDivisionViewListing**](ContactListDivisionViewListing.md)
 
 <a name="getOutboundDnclist"></a>
 
 # **getOutboundDnclist**
 
-
-
-> [DncList](DncList.html) getOutboundDnclist(dncListId, includeImportStatus, includeSize)
+> [DncList](DncList.md) getOutboundDnclist(dncListId, includeImportStatus, includeSize)
 
 Get dialer DNC list
 
+Wraps GET /api/v2/outbound/dnclists/{dncListId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/dnclists/{dncListId}  
-
-Requires ANY permissions: 
-
-* outbound:dncList:view
+- outbound:dncList:view
 
 ### Example
 
@@ -3238,37 +3014,32 @@ try {
 
 ### Parameters
 
+| Name                    | Type        | Description   | Notes                         |
+| ----------------------- | ----------- | ------------- | ----------------------------- |
+| **dncListId**           | **String**  | DncList ID    |
+| **includeImportStatus** | **Boolean** | Import status | [optional] [default to false] |
+| **includeSize**         | **Boolean** | Include size  | [optional] [default to false] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **dncListId** | **String**| DncList ID | 
-| **includeImportStatus** | **Boolean**| Import status | [optional] [default to false] 
-| **includeSize** | **Boolean**| Include size | [optional] [default to false] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DncList**](DncList.html)
+[**DncList**](DncList.md)
 
 <a name="getOutboundDnclistExport"></a>
 
 # **getOutboundDnclistExport**
 
-
-
-> [ExportUri](ExportUri.html) getOutboundDnclistExport(dncListId, download)
+> [ExportUri](ExportUri.md) getOutboundDnclistExport(dncListId, download)
 
 Get the URI of a DNC list export.
 
+Wraps GET /api/v2/outbound/dnclists/{dncListId}/export
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/outbound/dnclists/{dncListId}/export  
-
-Requires ALL permissions: 
-
-* outbound:dnc:view
-* outbound:dncList:view
+- outbound:dnc:view
+- outbound:dncList:view
 
 ### Example
 
@@ -3305,35 +3076,30 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description              | Notes                         |
+| ------------- | ---------- | ------------------------ | ----------------------------- |
+| **dncListId** | **String** | DncList ID               |
+| **download**  | **String** | Redirect to download uri | [optional] [default to false] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **dncListId** | **String**| DncList ID | 
-| **download** | **String**| Redirect to download uri | [optional] [default to false] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ExportUri**](ExportUri.html)
+[**ExportUri**](ExportUri.md)
 
 <a name="getOutboundDnclistImportstatus"></a>
 
 # **getOutboundDnclistImportstatus**
 
-
-
-> [ImportStatus](ImportStatus.html) getOutboundDnclistImportstatus(dncListId)
+> [ImportStatus](ImportStatus.md) getOutboundDnclistImportstatus(dncListId)
 
 Get dialer dncList import status.
 
+Wraps GET /api/v2/outbound/dnclists/{dncListId}/importstatus
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/dnclists/{dncListId}/importstatus  
-
-Requires ANY permissions: 
-
-* outbound:dncList:view
+- outbound:dncList:view
 
 ### Example
 
@@ -3369,34 +3135,29 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **dncListId** | **String** | DncList ID  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **dncListId** | **String**| DncList ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ImportStatus**](ImportStatus.html)
+[**ImportStatus**](ImportStatus.md)
 
 <a name="getOutboundDnclists"></a>
 
 # **getOutboundDnclists**
 
-
-
-> [DncListEntityListing](DncListEntityListing.html) getOutboundDnclists(includeImportStatus, includeSize, pageSize, pageNumber, allowEmptyResult, filterType, name, dncSourceType, divisionId, sortBy, sortOrder)
+> [DncListEntityListing](DncListEntityListing.md) getOutboundDnclists(includeImportStatus, includeSize, pageSize, pageNumber, allowEmptyResult, filterType, name, dncSourceType, divisionId, sortBy, sortOrder)
 
 Query dialer DNC lists
 
+Wraps GET /api/v2/outbound/dnclists
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/dnclists  
-
-Requires ANY permissions: 
-
-* outbound:dncList:view
+- outbound:dncList:view
 
 ### Example
 
@@ -3442,44 +3203,41 @@ try {
 
 ### Parameters
 
+| Name                    | Type                                | Description                                                             | Notes                                                                                                                                                             |
+| ----------------------- | ----------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **includeImportStatus** | **Boolean**                         | Import status                                                           | [optional] [default to false]                                                                                                                                     |
+| **includeSize**         | **Boolean**                         | Include size                                                            | [optional] [default to false]                                                                                                                                     |
+| **pageSize**            | **Integer**                         | Page size. The max that will be returned is 100.                        | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber**          | **Integer**                         | Page number                                                             | [optional] [default to 1]                                                                                                                                         |
+| **allowEmptyResult**    | **Boolean**                         | Whether to return an empty page when there are no results for that page | [optional] [default to false]                                                                                                                                     |
+| **filterType**          | **String**                          | Filter type                                                             | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **name**                | **String**                          | Name                                                                    | [optional]                                                                                                                                                        |
+| **dncSourceType**       | **String**                          | DncSourceType                                                           | [optional]<br />**Values**: rds, dnc.com, gryphon                                                                                                                 |
+| **divisionId**          | [**List&lt;String&gt;**](String.md) | Division ID(s)                                                          | [optional]                                                                                                                                                        |
+| **sortBy**              | **String**                          | Sort by                                                                 | [optional]                                                                                                                                                        |
+| **sortOrder**           | **String**                          | Sort order                                                              | [optional]<br />**Values**: ascending, descending                                                                                                                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **includeImportStatus** | **Boolean**| Import status | [optional] [default to false] 
-| **includeSize** | **Boolean**| Include size | [optional] [default to false] 
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **allowEmptyResult** | **Boolean**| Whether to return an empty page when there are no results for that page | [optional] [default to false] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **name** | **String**| Name | [optional] 
-| **dncSourceType** | **String**| DncSourceType | [optional]<br />**Values**: rds, dnc.com, gryphon 
-| **divisionId** | [**List&lt;String&gt;**](String.html)| Division ID(s) | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DncListEntityListing**](DncListEntityListing.html)
+[**DncListEntityListing**](DncListEntityListing.md)
 
 <a name="getOutboundDnclistsDivisionview"></a>
 
 # **getOutboundDnclistsDivisionview**
 
-
-
-> [DncListDivisionView](DncListDivisionView.html) getOutboundDnclistsDivisionview(dncListId, includeImportStatus, includeSize)
+> [DncListDivisionView](DncListDivisionView.md) getOutboundDnclistsDivisionview(dncListId, includeImportStatus, includeSize)
 
 Get a basic DncList information object
 
 This returns a simplified version of a DncList, consisting of the name, division, import status, and size.
 
-Wraps GET /api/v2/outbound/dnclists/divisionviews/{dncListId}  
+Wraps GET /api/v2/outbound/dnclists/divisionviews/{dncListId}
 
-Requires ALL permissions: 
+Requires ALL permissions:
 
-* outbound:dncList:search
+- outbound:dncList:search
 
 ### Example
 
@@ -3517,36 +3275,33 @@ try {
 
 ### Parameters
 
+| Name                    | Type        | Description           | Notes                         |
+| ----------------------- | ----------- | --------------------- | ----------------------------- |
+| **dncListId**           | **String**  | Dnclist ID            |
+| **includeImportStatus** | **Boolean** | Include import status | [optional] [default to false] |
+| **includeSize**         | **Boolean** | Include size          | [optional] [default to false] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **dncListId** | **String**| Dnclist ID | 
-| **includeImportStatus** | **Boolean**| Include import status | [optional] [default to false] 
-| **includeSize** | **Boolean**| Include size | [optional] [default to false] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DncListDivisionView**](DncListDivisionView.html)
+[**DncListDivisionView**](DncListDivisionView.md)
 
 <a name="getOutboundDnclistsDivisionviews"></a>
 
 # **getOutboundDnclistsDivisionviews**
 
-
-
-> [DncListDivisionViewListing](DncListDivisionViewListing.html) getOutboundDnclistsDivisionviews(includeImportStatus, includeSize, pageSize, pageNumber, filterType, name, dncSourceType, id, sortBy, sortOrder)
+> [DncListDivisionViewListing](DncListDivisionViewListing.md) getOutboundDnclistsDivisionviews(includeImportStatus, includeSize, pageSize, pageNumber, filterType, name, dncSourceType, id, sortBy, sortOrder)
 
 Query a list of simplified dnc list objects.
 
 This return a simplified version of dnc lists, consisting of the name, division, import status, and size.
 
-Wraps GET /api/v2/outbound/dnclists/divisionviews  
+Wraps GET /api/v2/outbound/dnclists/divisionviews
 
-Requires ALL permissions: 
+Requires ALL permissions:
 
-* outbound:dncList:search
+- outbound:dncList:search
 
 ### Example
 
@@ -3591,43 +3346,38 @@ try {
 
 ### Parameters
 
+| Name                    | Type                                | Description                                      | Notes                                                                                                                                                             |
+| ----------------------- | ----------------------------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **includeImportStatus** | **Boolean**                         | Include import status                            | [optional] [default to false]                                                                                                                                     |
+| **includeSize**         | **Boolean**                         | Include size                                     | [optional] [default to false]                                                                                                                                     |
+| **pageSize**            | **Integer**                         | Page size. The max that will be returned is 100. | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber**          | **Integer**                         | Page number                                      | [optional] [default to 1]                                                                                                                                         |
+| **filterType**          | **String**                          | Filter type                                      | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **name**                | **String**                          | Name                                             | [optional]                                                                                                                                                        |
+| **dncSourceType**       | **String**                          | DncSourceType                                    | [optional]<br />**Values**: rds, dnc.com, gryphon                                                                                                                 |
+| **id**                  | [**List&lt;String&gt;**](String.md) | id                                               | [optional]                                                                                                                                                        |
+| **sortBy**              | **String**                          | Sort by                                          | [optional]                                                                                                                                                        |
+| **sortOrder**           | **String**                          | Sort order                                       | [optional] [default to a]<br />**Values**: ascending, descending                                                                                                  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **includeImportStatus** | **Boolean**| Include import status | [optional] [default to false] 
-| **includeSize** | **Boolean**| Include size | [optional] [default to false] 
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **name** | **String**| Name | [optional] 
-| **dncSourceType** | **String**| DncSourceType | [optional]<br />**Values**: rds, dnc.com, gryphon 
-| **id** | [**List&lt;String&gt;**](String.html)| id | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DncListDivisionViewListing**](DncListDivisionViewListing.html)
+[**DncListDivisionViewListing**](DncListDivisionViewListing.md)
 
 <a name="getOutboundEvent"></a>
 
 # **getOutboundEvent**
 
-
-
-> [EventLog](EventLog.html) getOutboundEvent(eventId)
+> [EventLog](EventLog.md) getOutboundEvent(eventId)
 
 Get Dialer Event
 
+Wraps GET /api/v2/outbound/events/{eventId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/events/{eventId}  
-
-Requires ANY permissions: 
-
-* outbound:eventLog:view
+- outbound:eventLog:view
 
 ### Example
 
@@ -3663,34 +3413,29 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description  | Notes |
+| ----------- | ---------- | ------------ | ----- |
+| **eventId** | **String** | Event Log ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **eventId** | **String**| Event Log ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EventLog**](EventLog.html)
+[**EventLog**](EventLog.md)
 
 <a name="getOutboundEvents"></a>
 
 # **getOutboundEvents**
 
-
-
-> [DialerEventEntityListing](DialerEventEntityListing.html) getOutboundEvents(pageSize, pageNumber, filterType, category, level, sortBy, sortOrder)
+> [DialerEventEntityListing](DialerEventEntityListing.md) getOutboundEvents(pageSize, pageNumber, filterType, category, level, sortBy, sortOrder)
 
 Query Event Logs
 
+Wraps GET /api/v2/outbound/events
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/events  
-
-Requires ANY permissions: 
-
-* outbound:eventLog:view
+- outbound:eventLog:view
 
 ### Example
 
@@ -3732,41 +3477,36 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                                                                                                                                                             |
+| -------------- | ----------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]                                                                                                                                         |
+| **filterType** | **String**  | Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **category**   | **String**  | Category    | [optional]                                                                                                                                                        |
+| **level**      | **String**  | Level       | [optional]                                                                                                                                                        |
+| **sortBy**     | **String**  | Sort by     | [optional]                                                                                                                                                        |
+| **sortOrder**  | **String**  | Sort order  | [optional] [default to a]<br />**Values**: ascending, descending                                                                                                  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **category** | **String**| Category | [optional] 
-| **level** | **String**| Level | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DialerEventEntityListing**](DialerEventEntityListing.html)
+[**DialerEventEntityListing**](DialerEventEntityListing.md)
 
 <a name="getOutboundMessagingcampaign"></a>
 
 # **getOutboundMessagingcampaign**
 
-
-
-> [MessagingCampaign](MessagingCampaign.html) getOutboundMessagingcampaign(messagingCampaignId)
+> [MessagingCampaign](MessagingCampaign.md) getOutboundMessagingcampaign(messagingCampaignId)
 
 Get an Outbound Messaging Campaign
 
+Wraps GET /api/v2/outbound/messagingcampaigns/{messagingCampaignId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/messagingcampaigns/{messagingCampaignId}  
-
-Requires ANY permissions: 
-
-* outbound:messagingCampaign:view
-* outbound:emailCampaign:view
+- outbound:messagingCampaign:view
+- outbound:emailCampaign:view
 
 ### Example
 
@@ -3802,35 +3542,30 @@ try {
 
 ### Parameters
 
+| Name                    | Type       | Description               | Notes |
+| ----------------------- | ---------- | ------------------------- | ----- |
+| **messagingCampaignId** | **String** | The Messaging Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **messagingCampaignId** | **String**| The Messaging Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**MessagingCampaign**](MessagingCampaign.html)
+[**MessagingCampaign**](MessagingCampaign.md)
 
 <a name="getOutboundMessagingcampaignProgress"></a>
 
 # **getOutboundMessagingcampaignProgress**
 
-
-
-> [CampaignProgress](CampaignProgress.html) getOutboundMessagingcampaignProgress(messagingCampaignId)
+> [CampaignProgress](CampaignProgress.md) getOutboundMessagingcampaignProgress(messagingCampaignId)
 
 Get messaging campaign&#39;s progress
 
+Wraps GET /api/v2/outbound/messagingcampaigns/{messagingCampaignId}/progress
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/messagingcampaigns/{messagingCampaignId}/progress  
-
-Requires ANY permissions: 
-
-* outbound:messagingCampaign:view
-* outbound:emailCampaign:view
+- outbound:messagingCampaign:view
+- outbound:emailCampaign:view
 
 ### Example
 
@@ -3866,35 +3601,30 @@ try {
 
 ### Parameters
 
+| Name                    | Type       | Description               | Notes |
+| ----------------------- | ---------- | ------------------------- | ----- |
+| **messagingCampaignId** | **String** | The Messaging Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **messagingCampaignId** | **String**| The Messaging Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignProgress**](CampaignProgress.html)
+[**CampaignProgress**](CampaignProgress.md)
 
 <a name="getOutboundMessagingcampaigns"></a>
 
 # **getOutboundMessagingcampaigns**
 
-
-
-> [MessagingCampaignEntityListing](MessagingCampaignEntityListing.html) getOutboundMessagingcampaigns(pageSize, pageNumber, sortBy, sortOrder, name, contactListId, divisionId, type, senderSmsPhoneNumber, id)
+> [MessagingCampaignEntityListing](MessagingCampaignEntityListing.md) getOutboundMessagingcampaigns(pageSize, pageNumber, sortBy, sortOrder, name, contactListId, divisionId, type, senderSmsPhoneNumber, id)
 
 Query a list of Messaging Campaigns
 
+Wraps GET /api/v2/outbound/messagingcampaigns
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/messagingcampaigns  
-
-Requires ANY permissions: 
-
-* outbound:messagingCampaign:view
-* outbound:emailCampaign:view
+- outbound:messagingCampaign:view
+- outbound:emailCampaign:view
 
 ### Example
 
@@ -3939,44 +3669,41 @@ try {
 
 ### Parameters
 
+| Name                     | Type                                | Description                                      | Notes                                                                    |
+| ------------------------ | ----------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------ |
+| **pageSize**             | **Integer**                         | Page size. The max that will be returned is 100. | [optional] [default to 25]                                               |
+| **pageNumber**           | **Integer**                         | Page number                                      | [optional] [default to 1]                                                |
+| **sortBy**               | **String**                          | The field to sort by                             | [optional] [default to name]<br />**Values**: campaignStatus, name, type |
+| **sortOrder**            | **String**                          | The direction to sort                            | [optional] [default to ascending]<br />**Values**: ascending, descending |
+| **name**                 | **String**                          | Name                                             | [optional]                                                               |
+| **contactListId**        | **String**                          | Contact List ID                                  | [optional]                                                               |
+| **divisionId**           | [**List&lt;String&gt;**](String.md) | Division ID(s)                                   | [optional]                                                               |
+| **type**                 | **String**                          | Campaign Type                                    | [optional]<br />**Values**: EMAIL, SMS                                   |
+| **senderSmsPhoneNumber** | **String**                          | Sender SMS Phone Number                          | [optional]                                                               |
+| **id**                   | [**List&lt;String&gt;**](String.md) | A list of messaging campaign ids to bulk fetch   | [optional]                                                               |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortBy** | **String**| The field to sort by | [optional] [default to name]<br />**Values**: campaignStatus, name, type 
-| **sortOrder** | **String**| The direction to sort | [optional] [default to ascending]<br />**Values**: ascending, descending 
-| **name** | **String**| Name | [optional] 
-| **contactListId** | **String**| Contact List ID | [optional] 
-| **divisionId** | [**List&lt;String&gt;**](String.html)| Division ID(s) | [optional] 
-| **type** | **String**| Campaign Type | [optional]<br />**Values**: EMAIL, SMS 
-| **senderSmsPhoneNumber** | **String**| Sender SMS Phone Number | [optional] 
-| **id** | [**List&lt;String&gt;**](String.html)| A list of messaging campaign ids to bulk fetch | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**MessagingCampaignEntityListing**](MessagingCampaignEntityListing.html)
+[**MessagingCampaignEntityListing**](MessagingCampaignEntityListing.md)
 
 <a name="getOutboundMessagingcampaignsDivisionview"></a>
 
 # **getOutboundMessagingcampaignsDivisionview**
 
-
-
-> [MessagingCampaignDivisionView](MessagingCampaignDivisionView.html) getOutboundMessagingcampaignsDivisionview(messagingCampaignId)
+> [MessagingCampaignDivisionView](MessagingCampaignDivisionView.md) getOutboundMessagingcampaignsDivisionview(messagingCampaignId)
 
 Get a basic Messaging Campaign information object
 
 This returns a simplified version of a Messaging Campaign, consisting of id, name, and division.
 
-Wraps GET /api/v2/outbound/messagingcampaigns/divisionviews/{messagingCampaignId}  
+Wraps GET /api/v2/outbound/messagingcampaigns/divisionviews/{messagingCampaignId}
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* outbound:messagingCampaign:search
-* outbound:emailCampaign:search
+- outbound:messagingCampaign:search
+- outbound:emailCampaign:search
 
 ### Example
 
@@ -4012,35 +3739,32 @@ try {
 
 ### Parameters
 
+| Name                    | Type       | Description               | Notes |
+| ----------------------- | ---------- | ------------------------- | ----- |
+| **messagingCampaignId** | **String** | The Messaging Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **messagingCampaignId** | **String**| The Messaging Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**MessagingCampaignDivisionView**](MessagingCampaignDivisionView.html)
+[**MessagingCampaignDivisionView**](MessagingCampaignDivisionView.md)
 
 <a name="getOutboundMessagingcampaignsDivisionviews"></a>
 
 # **getOutboundMessagingcampaignsDivisionviews**
 
-
-
-> [MessagingCampaignDivisionViewEntityListing](MessagingCampaignDivisionViewEntityListing.html) getOutboundMessagingcampaignsDivisionviews(pageSize, pageNumber, sortOrder, name, type, id, senderSmsPhoneNumber)
+> [MessagingCampaignDivisionViewEntityListing](MessagingCampaignDivisionViewEntityListing.md) getOutboundMessagingcampaignsDivisionviews(pageSize, pageNumber, sortOrder, name, type, id, senderSmsPhoneNumber)
 
 Query a list of basic Messaging Campaign information objects
 
 This returns a listing of simplified Messaging Campaigns, each consisting of id, name, and division.
 
-Wraps GET /api/v2/outbound/messagingcampaigns/divisionviews  
+Wraps GET /api/v2/outbound/messagingcampaigns/divisionviews
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* outbound:messagingCampaign:search
-* outbound:emailCampaign:search
+- outbound:messagingCampaign:search
+- outbound:emailCampaign:search
 
 ### Example
 
@@ -4082,40 +3806,35 @@ try {
 
 ### Parameters
 
+| Name                     | Type                                | Description                                      | Notes                                                            |
+| ------------------------ | ----------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------- |
+| **pageSize**             | **Integer**                         | Page size. The max that will be returned is 100. | [optional] [default to 25]                                       |
+| **pageNumber**           | **Integer**                         | Page number                                      | [optional] [default to 1]                                        |
+| **sortOrder**            | **String**                          | The direction to sort                            | [optional] [default to a]<br />**Values**: ascending, descending |
+| **name**                 | **String**                          | Name                                             | [optional]                                                       |
+| **type**                 | **String**                          | Campaign Type                                    | [optional]<br />**Values**: EMAIL, SMS                           |
+| **id**                   | [**List&lt;String&gt;**](String.md) | id                                               | [optional]                                                       |
+| **senderSmsPhoneNumber** | **String**                          | Sender SMS Phone Number                          | [optional]                                                       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortOrder** | **String**| The direction to sort | [optional] [default to a]<br />**Values**: ascending, descending 
-| **name** | **String**| Name | [optional] 
-| **type** | **String**| Campaign Type | [optional]<br />**Values**: EMAIL, SMS 
-| **id** | [**List&lt;String&gt;**](String.html)| id | [optional] 
-| **senderSmsPhoneNumber** | **String**| Sender SMS Phone Number | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**MessagingCampaignDivisionViewEntityListing**](MessagingCampaignDivisionViewEntityListing.html)
+[**MessagingCampaignDivisionViewEntityListing**](MessagingCampaignDivisionViewEntityListing.md)
 
 <a name="getOutboundRuleset"></a>
 
 # **getOutboundRuleset**
 
-
-
-> [RuleSet](RuleSet.html) getOutboundRuleset(ruleSetId)
+> [RuleSet](RuleSet.md) getOutboundRuleset(ruleSetId)
 
 Get a Rule Set by ID.
 
+Wraps GET /api/v2/outbound/rulesets/{ruleSetId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/rulesets/{ruleSetId}  
-
-Requires ANY permissions: 
-
-* outbound:ruleSet:view
+- outbound:ruleSet:view
 
 ### Example
 
@@ -4151,34 +3870,29 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **ruleSetId** | **String** | Rule Set ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **ruleSetId** | **String**| Rule Set ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**RuleSet**](RuleSet.html)
+[**RuleSet**](RuleSet.md)
 
 <a name="getOutboundRulesets"></a>
 
 # **getOutboundRulesets**
 
-
-
-> [RuleSetEntityListing](RuleSetEntityListing.html) getOutboundRulesets(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder)
+> [RuleSetEntityListing](RuleSetEntityListing.md) getOutboundRulesets(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder)
 
 Query a list of Rule Sets.
 
+Wraps GET /api/v2/outbound/rulesets
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/rulesets  
-
-Requires ANY permissions: 
-
-* outbound:ruleSet:view
+- outbound:ruleSet:view
 
 ### Example
 
@@ -4220,40 +3934,35 @@ try {
 
 ### Parameters
 
+| Name                 | Type        | Description                                                             | Notes                                                                                                                                                             |
+| -------------------- | ----------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **pageSize**         | **Integer** | Page size. The max that will be returned is 100.                        | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber**       | **Integer** | Page number                                                             | [optional] [default to 1]                                                                                                                                         |
+| **allowEmptyResult** | **Boolean** | Whether to return an empty page when there are no results for that page | [optional] [default to false]                                                                                                                                     |
+| **filterType**       | **String**  | Filter type                                                             | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **name**             | **String**  | Name                                                                    | [optional]                                                                                                                                                        |
+| **sortBy**           | **String**  | Sort by                                                                 | [optional]                                                                                                                                                        |
+| **sortOrder**        | **String**  | Sort order                                                              | [optional] [default to a]<br />**Values**: ascending, descending                                                                                                  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **allowEmptyResult** | **Boolean**| Whether to return an empty page when there are no results for that page | [optional] [default to false] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **name** | **String**| Name | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**RuleSetEntityListing**](RuleSetEntityListing.html)
+[**RuleSetEntityListing**](RuleSetEntityListing.md)
 
 <a name="getOutboundSchedulesCampaign"></a>
 
 # **getOutboundSchedulesCampaign**
 
-
-
-> [CampaignSchedule](CampaignSchedule.html) getOutboundSchedulesCampaign(campaignId)
+> [CampaignSchedule](CampaignSchedule.md) getOutboundSchedulesCampaign(campaignId)
 
 Get a dialer campaign schedule.
 
+Wraps GET /api/v2/outbound/schedules/campaigns/{campaignId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/schedules/campaigns/{campaignId}  
-
-Requires ANY permissions: 
-
-* outbound:schedule:view
+- outbound:schedule:view
 
 ### Example
 
@@ -4289,34 +3998,29 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **campaignId** | **String** | Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignSchedule**](CampaignSchedule.html)
+[**CampaignSchedule**](CampaignSchedule.md)
 
 <a name="getOutboundSchedulesCampaigns"></a>
 
 # **getOutboundSchedulesCampaigns**
 
-
-
-> [List&lt;CampaignSchedule&gt;](CampaignSchedule.html) getOutboundSchedulesCampaigns()
+> [List&lt;CampaignSchedule&gt;](CampaignSchedule.md) getOutboundSchedulesCampaigns()
 
 Query for a list of dialer campaign schedules.
 
+Wraps GET /api/v2/outbound/schedules/campaigns
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/schedules/campaigns  
-
-Requires ANY permissions: 
-
-* outbound:schedule:view
+- outbound:schedule:view
 
 ### Example
 
@@ -4353,29 +4057,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**List&lt;CampaignSchedule&gt;**](CampaignSchedule.html)
+[**List&lt;CampaignSchedule&gt;**](CampaignSchedule.md)
 
 <a name="getOutboundSchedulesSequence"></a>
 
 # **getOutboundSchedulesSequence**
 
-
-
-> [SequenceSchedule](SequenceSchedule.html) getOutboundSchedulesSequence(sequenceId)
+> [SequenceSchedule](SequenceSchedule.md) getOutboundSchedulesSequence(sequenceId)
 
 Get a dialer sequence schedule.
 
+Wraps GET /api/v2/outbound/schedules/sequences/{sequenceId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/schedules/sequences/{sequenceId}  
-
-Requires ANY permissions: 
-
-* outbound:schedule:view
+- outbound:schedule:view
 
 ### Example
 
@@ -4411,34 +4109,29 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **sequenceId** | **String** | Sequence ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **sequenceId** | **String**| Sequence ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SequenceSchedule**](SequenceSchedule.html)
+[**SequenceSchedule**](SequenceSchedule.md)
 
 <a name="getOutboundSchedulesSequences"></a>
 
 # **getOutboundSchedulesSequences**
 
-
-
-> [List&lt;SequenceSchedule&gt;](SequenceSchedule.html) getOutboundSchedulesSequences()
+> [List&lt;SequenceSchedule&gt;](SequenceSchedule.md) getOutboundSchedulesSequences()
 
 Query for a list of dialer sequence schedules.
 
+Wraps GET /api/v2/outbound/schedules/sequences
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/schedules/sequences  
-
-Requires ANY permissions: 
-
-* outbound:schedule:view
+- outbound:schedule:view
 
 ### Example
 
@@ -4475,29 +4168,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**List&lt;SequenceSchedule&gt;**](SequenceSchedule.html)
+[**List&lt;SequenceSchedule&gt;**](SequenceSchedule.md)
 
 <a name="getOutboundSequence"></a>
 
 # **getOutboundSequence**
 
-
-
-> [CampaignSequence](CampaignSequence.html) getOutboundSequence(sequenceId)
+> [CampaignSequence](CampaignSequence.md) getOutboundSequence(sequenceId)
 
 Get a dialer campaign sequence.
 
+Wraps GET /api/v2/outbound/sequences/{sequenceId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/sequences/{sequenceId}  
-
-Requires ANY permissions: 
-
-* outbound:campaignSequence:view
+- outbound:campaignSequence:view
 
 ### Example
 
@@ -4533,34 +4220,29 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description          | Notes |
+| -------------- | ---------- | -------------------- | ----- |
+| **sequenceId** | **String** | Campaign Sequence ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **sequenceId** | **String**| Campaign Sequence ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignSequence**](CampaignSequence.html)
+[**CampaignSequence**](CampaignSequence.md)
 
 <a name="getOutboundSequences"></a>
 
 # **getOutboundSequences**
 
-
-
-> [CampaignSequenceEntityListing](CampaignSequenceEntityListing.html) getOutboundSequences(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder)
+> [CampaignSequenceEntityListing](CampaignSequenceEntityListing.md) getOutboundSequences(pageSize, pageNumber, allowEmptyResult, filterType, name, sortBy, sortOrder)
 
 Query a list of dialer campaign sequences.
 
+Wraps GET /api/v2/outbound/sequences
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/sequences  
-
-Requires ANY permissions: 
-
-* outbound:campaignSequence:view
+- outbound:campaignSequence:view
 
 ### Example
 
@@ -4602,40 +4284,35 @@ try {
 
 ### Parameters
 
+| Name                 | Type        | Description                                                             | Notes                                                                                                                                                             |
+| -------------------- | ----------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **pageSize**         | **Integer** | Page size. The max that will be returned is 100.                        | [optional] [default to 25]                                                                                                                                        |
+| **pageNumber**       | **Integer** | Page number                                                             | [optional] [default to 1]                                                                                                                                         |
+| **allowEmptyResult** | **Boolean** | Whether to return an empty page when there are no results for that page | [optional] [default to false]                                                                                                                                     |
+| **filterType**       | **String**  | Filter type                                                             | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith |
+| **name**             | **String**  | Name                                                                    | [optional]                                                                                                                                                        |
+| **sortBy**           | **String**  | Sort by                                                                 | [optional]                                                                                                                                                        |
+| **sortOrder**        | **String**  | Sort order                                                              | [optional] [default to a]<br />**Values**: ascending, descending                                                                                                  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size. The max that will be returned is 100. | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **allowEmptyResult** | **Boolean**| Whether to return an empty page when there are no results for that page | [optional] [default to false] 
-| **filterType** | **String**| Filter type | [optional] [default to Prefix]<br />**Values**: Equals, RegEx, Contains, Prefix, LessThan, LessThanEqualTo, GreaterThan, GreaterThanEqualTo, BeginsWith, EndsWith 
-| **name** | **String**| Name | [optional] 
-| **sortBy** | **String**| Sort by | [optional] 
-| **sortOrder** | **String**| Sort order | [optional] [default to a]<br />**Values**: ascending, descending 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignSequenceEntityListing**](CampaignSequenceEntityListing.html)
+[**CampaignSequenceEntityListing**](CampaignSequenceEntityListing.md)
 
 <a name="getOutboundSettings"></a>
 
 # **getOutboundSettings**
 
-
-
-> [OutboundSettings](OutboundSettings.html) getOutboundSettings()
+> [OutboundSettings](OutboundSettings.md) getOutboundSettings()
 
 Get the outbound settings for this organization
 
+Wraps GET /api/v2/outbound/settings
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/settings  
-
-Requires ANY permissions: 
-
-* outbound:settings:view
+- outbound:settings:view
 
 ### Example
 
@@ -4672,29 +4349,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**OutboundSettings**](OutboundSettings.html)
+[**OutboundSettings**](OutboundSettings.md)
 
 <a name="getOutboundWrapupcodemappings"></a>
 
 # **getOutboundWrapupcodemappings**
 
-
-
-> [WrapUpCodeMapping](WrapUpCodeMapping.html) getOutboundWrapupcodemappings()
+> [WrapUpCodeMapping](WrapUpCodeMapping.md) getOutboundWrapupcodemappings()
 
 Get the Dialer wrap up code mapping.
 
+Wraps GET /api/v2/outbound/wrapupcodemappings
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/outbound/wrapupcodemappings  
-
-Requires ANY permissions: 
-
-* outbound:wrapUpCodeMapping:view
+- outbound:wrapUpCodeMapping:view
 
 ### Example
 
@@ -4731,29 +4402,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**WrapUpCodeMapping**](WrapUpCodeMapping.html)
+[**WrapUpCodeMapping**](WrapUpCodeMapping.md)
 
 <a name="patchOutboundSettings"></a>
 
 # **patchOutboundSettings**
 
-
-
 > Void patchOutboundSettings(body)
 
 Update the outbound settings for this organization
 
+Wraps PATCH /api/v2/outbound/settings
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/outbound/settings  
-
-Requires ANY permissions: 
-
-* outbound:settings:edit
+- outbound:settings:edit
 
 ### Example
 
@@ -4788,12 +4453,11 @@ try {
 
 ### Parameters
 
+| Name     | Type                                        | Description      | Notes |
+| -------- | ------------------------------------------- | ---------------- | ----- |
+| **body** | [**OutboundSettings**](OutboundSettings.md) | outboundSettings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**OutboundSettings**](OutboundSettings.html)| outboundSettings | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -4803,19 +4467,15 @@ null (empty response body)
 
 # **postOutboundAttemptlimits**
 
-
-
-> [AttemptLimits](AttemptLimits.html) postOutboundAttemptlimits(body)
+> [AttemptLimits](AttemptLimits.md) postOutboundAttemptlimits(body)
 
 Create attempt limits
 
+Wraps POST /api/v2/outbound/attemptlimits
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/attemptlimits  
-
-Requires ANY permissions: 
-
-* outbound:attemptLimits:add
+- outbound:attemptLimits:add
 
 ### Example
 
@@ -4851,34 +4511,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                  | Description   | Notes |
+| -------- | ------------------------------------- | ------------- | ----- |
+| **body** | [**AttemptLimits**](AttemptLimits.md) | AttemptLimits |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**AttemptLimits**](AttemptLimits.html)| AttemptLimits | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AttemptLimits**](AttemptLimits.html)
+[**AttemptLimits**](AttemptLimits.md)
 
 <a name="postOutboundAudits"></a>
 
 # **postOutboundAudits**
 
-
-
-> [AuditSearchResult](AuditSearchResult.html) postOutboundAudits(body, pageSize, pageNumber, sortBy, sortOrder, facetsOnly)
+> [AuditSearchResult](AuditSearchResult.md) postOutboundAudits(body, pageSize, pageNumber, sortBy, sortOrder, facetsOnly)
 
 Retrieves audits for dialer.
 
+Wraps POST /api/v2/outbound/audits
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/audits  
-
-Requires ANY permissions: 
-
-* outbound:audit:view
+- outbound:audit:view
 
 ### Example
 
@@ -4919,39 +4574,34 @@ try {
 
 ### Parameters
 
+| Name           | Type                                            | Description | Notes                               |
+| -------------- | ----------------------------------------------- | ----------- | ----------------------------------- |
+| **body**       | [**DialerAuditRequest**](DialerAuditRequest.md) | AuditSearch |
+| **pageSize**   | **Integer**                                     | Page size   | [optional] [default to 25]          |
+| **pageNumber** | **Integer**                                     | Page number | [optional] [default to 1]           |
+| **sortBy**     | **String**                                      | Sort by     | [optional] [default to entity.name] |
+| **sortOrder**  | **String**                                      | Sort order  | [optional] [default to ascending]   |
+| **facetsOnly** | **Boolean**                                     | Facets only | [optional] [default to false]       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**DialerAuditRequest**](DialerAuditRequest.html)| AuditSearch | 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **sortBy** | **String**| Sort by | [optional] [default to entity.name] 
-| **sortOrder** | **String**| Sort order | [optional] [default to ascending] 
-| **facetsOnly** | **Boolean**| Facets only | [optional] [default to false] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AuditSearchResult**](AuditSearchResult.html)
+[**AuditSearchResult**](AuditSearchResult.md)
 
 <a name="postOutboundCallabletimesets"></a>
 
 # **postOutboundCallabletimesets**
 
-
-
-> [CallableTimeSet](CallableTimeSet.html) postOutboundCallabletimesets(body)
+> [CallableTimeSet](CallableTimeSet.md) postOutboundCallabletimesets(body)
 
 Create callable time set
 
+Wraps POST /api/v2/outbound/callabletimesets
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/callabletimesets  
-
-Requires ANY permissions: 
-
-* outbound:callableTimeSet:add
+- outbound:callableTimeSet:add
 
 ### Example
 
@@ -4987,34 +4637,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                      | Description           | Notes |
+| -------- | ----------------------------------------- | --------------------- | ----- |
+| **body** | [**CallableTimeSet**](CallableTimeSet.md) | DialerCallableTimeSet |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**CallableTimeSet**](CallableTimeSet.html)| DialerCallableTimeSet | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CallableTimeSet**](CallableTimeSet.html)
+[**CallableTimeSet**](CallableTimeSet.md)
 
 <a name="postOutboundCallanalysisresponsesets"></a>
 
 # **postOutboundCallanalysisresponsesets**
 
-
-
-> [ResponseSet](ResponseSet.html) postOutboundCallanalysisresponsesets(body)
+> [ResponseSet](ResponseSet.md) postOutboundCallanalysisresponsesets(body)
 
 Create a dialer call analysis response set.
 
+Wraps POST /api/v2/outbound/callanalysisresponsesets
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/callanalysisresponsesets  
-
-Requires ANY permissions: 
-
-* outbound:responseSet:add
+- outbound:responseSet:add
 
 ### Example
 
@@ -5050,36 +4695,31 @@ try {
 
 ### Parameters
 
+| Name     | Type                              | Description | Notes |
+| -------- | --------------------------------- | ----------- | ----- |
+| **body** | [**ResponseSet**](ResponseSet.md) | ResponseSet |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ResponseSet**](ResponseSet.html)| ResponseSet | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ResponseSet**](ResponseSet.html)
+[**ResponseSet**](ResponseSet.md)
 
 <a name="postOutboundCampaignAgentownedmappingpreview"></a>
 
 # **postOutboundCampaignAgentownedmappingpreview**
 
-
-
-> [Empty](Empty.html) postOutboundCampaignAgentownedmappingpreview(campaignId)
+> [Empty](Empty.md) postOutboundCampaignAgentownedmappingpreview(campaignId)
 
 Initiate request for a preview of how agents will be mapped to this campaign&#39;s contact list.
 
+Wraps POST /api/v2/outbound/campaigns/{campaignId}/agentownedmappingpreview
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/outbound/campaigns/{campaignId}/agentownedmappingpreview  
-
-Requires ALL permissions: 
-
-* outbound:campaign:view
-* outbound:contact:view
-* directory:user:view
+- outbound:campaign:view
+- outbound:contact:view
+- directory:user:view
 
 ### Example
 
@@ -5115,16 +4755,15 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **campaignId** | **String** | Campaign ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Empty**](Empty.html)
+[**Empty**](Empty.md)
 
 <a name="postOutboundCampaignCallbackSchedule"></a>
 
@@ -5132,16 +4771,15 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [ContactCallbackRequest](ContactCallbackRequest.html) postOutboundCampaignCallbackSchedule(campaignId, body)
+> [ContactCallbackRequest](ContactCallbackRequest.md) postOutboundCampaignCallbackSchedule(campaignId, body)
 
 Schedule a Callback for a Dialer Campaign (Deprecated)
 
 This endpoint is deprecated and may have unexpected results. Please use \&quot;/conversations/{conversationId}/participants/{participantId}/callbacks instead.\&quot;
 
-Wraps POST /api/v2/outbound/campaigns/{campaignId}/callback/schedule  
+Wraps POST /api/v2/outbound/campaigns/{campaignId}/callback/schedule
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -5178,35 +4816,30 @@ try {
 
 ### Parameters
 
+| Name           | Type                                                    | Description            | Notes |
+| -------------- | ------------------------------------------------------- | ---------------------- | ----- |
+| **campaignId** | **String**                                              | Campaign ID            |
+| **body**       | [**ContactCallbackRequest**](ContactCallbackRequest.md) | ContactCallbackRequest |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
-| **body** | [**ContactCallbackRequest**](ContactCallbackRequest.html)| ContactCallbackRequest | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ContactCallbackRequest**](ContactCallbackRequest.html)
+[**ContactCallbackRequest**](ContactCallbackRequest.md)
 
 <a name="postOutboundCampaignrules"></a>
 
 # **postOutboundCampaignrules**
 
-
-
-> [CampaignRule](CampaignRule.html) postOutboundCampaignrules(body)
+> [CampaignRule](CampaignRule.md) postOutboundCampaignrules(body)
 
 Create Campaign Rule
 
+Wraps POST /api/v2/outbound/campaignrules
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/campaignrules  
-
-Requires ANY permissions: 
-
-* outbound:campaignRule:add
+- outbound:campaignRule:add
 
 ### Example
 
@@ -5242,34 +4875,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                | Description  | Notes |
+| -------- | ----------------------------------- | ------------ | ----- |
+| **body** | [**CampaignRule**](CampaignRule.md) | CampaignRule |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**CampaignRule**](CampaignRule.html)| CampaignRule | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignRule**](CampaignRule.html)
+[**CampaignRule**](CampaignRule.md)
 
 <a name="postOutboundCampaigns"></a>
 
 # **postOutboundCampaigns**
 
-
-
-> [Campaign](Campaign.html) postOutboundCampaigns(body)
+> [Campaign](Campaign.md) postOutboundCampaigns(body)
 
 Create a campaign.
 
+Wraps POST /api/v2/outbound/campaigns
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/campaigns  
-
-Requires ANY permissions: 
-
-* outbound:campaign:add
+- outbound:campaign:add
 
 ### Example
 
@@ -5305,34 +4933,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                        | Description | Notes |
+| -------- | --------------------------- | ----------- | ----- |
+| **body** | [**Campaign**](Campaign.md) | Campaign    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**Campaign**](Campaign.html)| Campaign | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Campaign**](Campaign.html)
+[**Campaign**](Campaign.md)
 
 <a name="postOutboundCampaignsProgress"></a>
 
 # **postOutboundCampaignsProgress**
 
-
-
-> [List&lt;CampaignProgress&gt;](CampaignProgress.html) postOutboundCampaignsProgress(body)
+> [List&lt;CampaignProgress&gt;](CampaignProgress.md) postOutboundCampaignsProgress(body)
 
 Get progress for a list of campaigns
 
+Wraps POST /api/v2/outbound/campaigns/progress
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/campaigns/progress  
-
-Requires ANY permissions: 
-
-* outbound:campaign:view
+- outbound:campaign:view
 
 ### Example
 
@@ -5368,34 +4991,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                   | Description  | Notes |
+| -------- | ---------------------- | ------------ | ----- |
+| **body** | **List&lt;String&gt;** | Campaign IDs |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | **List&lt;String&gt;**| Campaign IDs | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**List&lt;CampaignProgress&gt;**](CampaignProgress.html)
+[**List&lt;CampaignProgress&gt;**](CampaignProgress.md)
 
 <a name="postOutboundContactlistClear"></a>
 
 # **postOutboundContactlistClear**
 
-
-
 > Void postOutboundContactlistClear(contactListId)
 
 Deletes all contacts out of a list. All outstanding recalls or rule-scheduled callbacks for non-preview campaigns configured with the contactlist will be cancelled.
 
+Wraps POST /api/v2/outbound/contactlists/{contactListId}/clear
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/contactlists/{contactListId}/clear  
-
-Requires ANY permissions: 
-
-* outbound:contact:delete
+- outbound:contact:delete
 
 ### Example
 
@@ -5430,12 +5048,11 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description     | Notes |
+| ----------------- | ---------- | --------------- | ----- |
+| **contactListId** | **String** | Contact List ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| Contact List ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -5445,19 +5062,15 @@ null (empty response body)
 
 # **postOutboundContactlistContacts**
 
-
-
-> [List&lt;DialerContact&gt;](DialerContact.html) postOutboundContactlistContacts(contactListId, body, priority, clearSystemData, doNotQueue)
+> [List&lt;DialerContact&gt;](DialerContact.md) postOutboundContactlistContacts(contactListId, body, priority, clearSystemData, doNotQueue)
 
 Add contacts to a contact list.
 
+Wraps POST /api/v2/outbound/contactlists/{contactListId}/contacts
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/contactlists/{contactListId}/contacts  
-
-Requires ANY permissions: 
-
-* outbound:contact:add
+- outbound:contact:add
 
 ### Example
 
@@ -5497,38 +5110,33 @@ try {
 
 ### Parameters
 
+| Name                | Type                                                              | Description                                                                                                                                                                                                                                                                                                            | Notes      |
+| ------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| **contactListId**   | **String**                                                        | Contact List ID                                                                                                                                                                                                                                                                                                        |
+| **body**            | [**List&lt;WritableDialerContact&gt;**](WritableDialerContact.md) | Contact                                                                                                                                                                                                                                                                                                                |
+| **priority**        | **Boolean**                                                       | Contact priority. True means the contact(s) will be dialed next; false means the contact will go to the end of the contact queue.                                                                                                                                                                                      | [optional] |
+| **clearSystemData** | **Boolean**                                                       | Clear system data. True means the system columns (attempts, callable status, etc) stored on the contact will be cleared if the contact already exists; false means they won&#39;t.                                                                                                                                     | [optional] |
+| **doNotQueue**      | **Boolean**                                                       | Do not queue. True means that updated contacts will not have their positions in the queue altered, so contacts that have already been dialed will not be redialed. For new contacts, this parameter has no effect; False means that updated contacts will be re-queued, according to the &#39;priority&#39; parameter. | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| Contact List ID | 
-| **body** | [**List&lt;WritableDialerContact&gt;**](WritableDialerContact.html)| Contact | 
-| **priority** | **Boolean**| Contact priority. True means the contact(s) will be dialed next; false means the contact will go to the end of the contact queue. | [optional] 
-| **clearSystemData** | **Boolean**| Clear system data. True means the system columns (attempts, callable status, etc) stored on the contact will be cleared if the contact already exists; false means they won&#39;t. | [optional] 
-| **doNotQueue** | **Boolean**| Do not queue. True means that updated contacts will not have their positions in the queue altered, so contacts that have already been dialed will not be redialed. For new contacts, this parameter has no effect; False means that updated contacts will be re-queued, according to the &#39;priority&#39; parameter. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**List&lt;DialerContact&gt;**](DialerContact.html)
+[**List&lt;DialerContact&gt;**](DialerContact.md)
 
 <a name="postOutboundContactlistContactsBulk"></a>
 
 # **postOutboundContactlistContactsBulk**
 
-
-
-> [List&lt;DialerContact&gt;](DialerContact.html) postOutboundContactlistContactsBulk(contactListId, body)
+> [List&lt;DialerContact&gt;](DialerContact.md) postOutboundContactlistContactsBulk(contactListId, body)
 
 Get contacts from a contact list.
 
+Wraps POST /api/v2/outbound/contactlists/{contactListId}/contacts/bulk
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/contactlists/{contactListId}/contacts/bulk  
-
-Requires ANY permissions: 
-
-* outbound:contact:view
+- outbound:contact:view
 
 ### Example
 
@@ -5565,36 +5173,33 @@ try {
 
 ### Parameters
 
+| Name              | Type                   | Description        | Notes |
+| ----------------- | ---------------------- | ------------------ | ----- |
+| **contactListId** | **String**             | Contact List ID    |
+| **body**          | **List&lt;String&gt;** | ContactIds to get. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| Contact List ID | 
-| **body** | **List&lt;String&gt;**| ContactIds to get. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**List&lt;DialerContact&gt;**](DialerContact.html)
+[**List&lt;DialerContact&gt;**](DialerContact.md)
 
 <a name="postOutboundContactlistExport"></a>
 
 # **postOutboundContactlistExport**
 
-
-
-> [DomainEntityRef](DomainEntityRef.html) postOutboundContactlistExport(contactListId)
+> [DomainEntityRef](DomainEntityRef.md) postOutboundContactlistExport(contactListId)
 
 Initiate the export of a contact list.
 
 Returns 200 if received OK.
 
-Wraps POST /api/v2/outbound/contactlists/{contactListId}/export  
+Wraps POST /api/v2/outbound/contactlists/{contactListId}/export
 
-Requires ALL permissions: 
+Requires ALL permissions:
 
-* outbound:contact:view
-* outbound:contactList:view
+- outbound:contact:view
+- outbound:contactList:view
 
 ### Example
 
@@ -5630,34 +5235,29 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description    | Notes |
+| ----------------- | ---------- | -------------- | ----- |
+| **contactListId** | **String** | ContactList ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| ContactList ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainEntityRef**](DomainEntityRef.html)
+[**DomainEntityRef**](DomainEntityRef.md)
 
 <a name="postOutboundContactlistfilters"></a>
 
 # **postOutboundContactlistfilters**
 
-
-
-> [ContactListFilter](ContactListFilter.html) postOutboundContactlistfilters(body)
+> [ContactListFilter](ContactListFilter.md) postOutboundContactlistfilters(body)
 
 Create Contact List Filter
 
+Wraps POST /api/v2/outbound/contactlistfilters
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/contactlistfilters  
-
-Requires ANY permissions: 
-
-* outbound:contactListFilter:add
+- outbound:contactListFilter:add
 
 ### Example
 
@@ -5693,34 +5293,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                          | Description       | Notes |
+| -------- | --------------------------------------------- | ----------------- | ----- |
+| **body** | [**ContactListFilter**](ContactListFilter.md) | ContactListFilter |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ContactListFilter**](ContactListFilter.html)| ContactListFilter | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ContactListFilter**](ContactListFilter.html)
+[**ContactListFilter**](ContactListFilter.md)
 
 <a name="postOutboundContactlistfiltersPreview"></a>
 
 # **postOutboundContactlistfiltersPreview**
 
-
-
-> [FilterPreviewResponse](FilterPreviewResponse.html) postOutboundContactlistfiltersPreview(body)
+> [FilterPreviewResponse](FilterPreviewResponse.md) postOutboundContactlistfiltersPreview(body)
 
 Get a preview of the output of a contact list filter
 
+Wraps POST /api/v2/outbound/contactlistfilters/preview
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/contactlistfilters/preview  
-
-Requires ANY permissions: 
-
-* outbound:contact:view
+- outbound:contact:view
 
 ### Example
 
@@ -5756,34 +5351,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                          | Description       | Notes |
+| -------- | --------------------------------------------- | ----------------- | ----- |
+| **body** | [**ContactListFilter**](ContactListFilter.md) | ContactListFilter |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ContactListFilter**](ContactListFilter.html)| ContactListFilter | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**FilterPreviewResponse**](FilterPreviewResponse.html)
+[**FilterPreviewResponse**](FilterPreviewResponse.md)
 
 <a name="postOutboundContactlists"></a>
 
 # **postOutboundContactlists**
 
-
-
-> [ContactList](ContactList.html) postOutboundContactlists(body)
+> [ContactList](ContactList.md) postOutboundContactlists(body)
 
 Create a contact List.
 
+Wraps POST /api/v2/outbound/contactlists
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/contactlists  
-
-Requires ANY permissions: 
-
-* outbound:contactList:add
+- outbound:contactList:add
 
 ### Example
 
@@ -5819,34 +5409,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                              | Description | Notes |
+| -------- | --------------------------------- | ----------- | ----- |
+| **body** | [**ContactList**](ContactList.md) | ContactList |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ContactList**](ContactList.html)| ContactList | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ContactList**](ContactList.html)
+[**ContactList**](ContactList.md)
 
 <a name="postOutboundConversationDnc"></a>
 
 # **postOutboundConversationDnc**
 
-
-
 > Void postOutboundConversationDnc(conversationId)
 
 Add phone numbers to a Dialer DNC list.
 
+Wraps POST /api/v2/outbound/conversations/{conversationId}/dnc
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/conversations/{conversationId}/dnc  
-
-Requires ANY permissions: 
-
-* outbound:dnc:add
+- outbound:dnc:add
 
 ### Example
 
@@ -5881,12 +5466,11 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description     | Notes |
+| ------------------ | ---------- | --------------- | ----- |
+| **conversationId** | **String** | Conversation ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **conversationId** | **String**| Conversation ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -5896,20 +5480,18 @@ null (empty response body)
 
 # **postOutboundDnclistExport**
 
-
-
-> [DomainEntityRef](DomainEntityRef.html) postOutboundDnclistExport(dncListId)
+> [DomainEntityRef](DomainEntityRef.md) postOutboundDnclistExport(dncListId)
 
 Initiate the export of a dnc list.
 
 Returns 200 if received OK.
 
-Wraps POST /api/v2/outbound/dnclists/{dncListId}/export  
+Wraps POST /api/v2/outbound/dnclists/{dncListId}/export
 
-Requires ALL permissions: 
+Requires ALL permissions:
 
-* outbound:dnc:view
-* outbound:dncList:view
+- outbound:dnc:view
+- outbound:dncList:view
 
 ### Example
 
@@ -5945,22 +5527,19 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **dncListId** | **String** | DncList ID  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **dncListId** | **String**| DncList ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainEntityRef**](DomainEntityRef.html)
+[**DomainEntityRef**](DomainEntityRef.md)
 
 <a name="postOutboundDnclistPhonenumbers"></a>
 
 # **postOutboundDnclistPhonenumbers**
-
-
 
 > Void postOutboundDnclistPhonenumbers(dncListId, body, expirationDateTime)
 
@@ -5968,11 +5547,11 @@ Add phone numbers to a DNC list.
 
 Only Internal DNC lists may be appended to
 
-Wraps POST /api/v2/outbound/dnclists/{dncListId}/phonenumbers  
+Wraps POST /api/v2/outbound/dnclists/{dncListId}/phonenumbers
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* outbound:dnc:add
+- outbound:dnc:add
 
 ### Example
 
@@ -6009,14 +5588,13 @@ try {
 
 ### Parameters
 
+| Name                   | Type                   | Description                                                       | Notes      |
+| ---------------------- | ---------------------- | ----------------------------------------------------------------- | ---------- |
+| **dncListId**          | **String**             | DncList ID                                                        |
+| **body**               | **List&lt;String&gt;** | DNC Phone Numbers                                                 |
+| **expirationDateTime** | **String**             | Expiration date for DNC phone numbers in yyyy-MM-ddTHH:mmZ format | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **dncListId** | **String**| DncList ID | 
-| **body** | **List&lt;String&gt;**| DNC Phone Numbers | 
-| **expirationDateTime** | **String**| Expiration date for DNC phone numbers in yyyy-MM-ddTHH:mmZ format | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -6026,19 +5604,15 @@ null (empty response body)
 
 # **postOutboundDnclists**
 
-
-
-> [DncList](DncList.html) postOutboundDnclists(body)
+> [DncList](DncList.md) postOutboundDnclists(body)
 
 Create dialer DNC list
 
+Wraps POST /api/v2/outbound/dnclists
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/dnclists  
-
-Requires ANY permissions: 
-
-* outbound:dncList:add
+- outbound:dncList:add
 
 ### Example
 
@@ -6074,35 +5648,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                                  | Description | Notes |
+| -------- | ------------------------------------- | ----------- | ----- |
+| **body** | [**DncListCreate**](DncListCreate.md) | DncList     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**DncListCreate**](DncListCreate.html)| DncList | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DncList**](DncList.html)
+[**DncList**](DncList.md)
 
 <a name="postOutboundMessagingcampaigns"></a>
 
 # **postOutboundMessagingcampaigns**
 
-
-
-> [MessagingCampaign](MessagingCampaign.html) postOutboundMessagingcampaigns(body)
+> [MessagingCampaign](MessagingCampaign.md) postOutboundMessagingcampaigns(body)
 
 Create a Messaging Campaign
 
+Wraps POST /api/v2/outbound/messagingcampaigns
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/messagingcampaigns  
-
-Requires ANY permissions: 
-
-* outbound:messagingCampaign:add
-* outbound:emailCampaign:add
+- outbound:messagingCampaign:add
+- outbound:emailCampaign:add
 
 ### Example
 
@@ -6138,35 +5707,30 @@ try {
 
 ### Parameters
 
+| Name     | Type                                          | Description        | Notes |
+| -------- | --------------------------------------------- | ------------------ | ----- |
+| **body** | [**MessagingCampaign**](MessagingCampaign.md) | Messaging Campaign |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**MessagingCampaign**](MessagingCampaign.html)| Messaging Campaign | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**MessagingCampaign**](MessagingCampaign.html)
+[**MessagingCampaign**](MessagingCampaign.md)
 
 <a name="postOutboundMessagingcampaignsProgress"></a>
 
 # **postOutboundMessagingcampaignsProgress**
 
-
-
-> [List&lt;CampaignProgress&gt;](CampaignProgress.html) postOutboundMessagingcampaignsProgress(body)
+> [List&lt;CampaignProgress&gt;](CampaignProgress.md) postOutboundMessagingcampaignsProgress(body)
 
 Get progress for a list of messaging campaigns
 
+Wraps POST /api/v2/outbound/messagingcampaigns/progress
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/messagingcampaigns/progress  
-
-Requires ANY permissions: 
-
-* outbound:messagingCampaign:view
-* outbound:emailCampaign:view
+- outbound:messagingCampaign:view
+- outbound:emailCampaign:view
 
 ### Example
 
@@ -6202,34 +5766,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                   | Description            | Notes |
+| -------- | ---------------------- | ---------------------- | ----- |
+| **body** | **List&lt;String&gt;** | Messaging Campaign IDs |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | **List&lt;String&gt;**| Messaging Campaign IDs | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**List&lt;CampaignProgress&gt;**](CampaignProgress.html)
+[**List&lt;CampaignProgress&gt;**](CampaignProgress.md)
 
 <a name="postOutboundRulesets"></a>
 
 # **postOutboundRulesets**
 
-
-
-> [RuleSet](RuleSet.html) postOutboundRulesets(body)
+> [RuleSet](RuleSet.md) postOutboundRulesets(body)
 
 Create a Rule Set.
 
+Wraps POST /api/v2/outbound/rulesets
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/rulesets  
-
-Requires ANY permissions: 
-
-* outbound:ruleSet:add
+- outbound:ruleSet:add
 
 ### Example
 
@@ -6265,34 +5824,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                      | Description | Notes |
+| -------- | ------------------------- | ----------- | ----- |
+| **body** | [**RuleSet**](RuleSet.md) | RuleSet     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**RuleSet**](RuleSet.html)| RuleSet | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**RuleSet**](RuleSet.html)
+[**RuleSet**](RuleSet.md)
 
 <a name="postOutboundSequences"></a>
 
 # **postOutboundSequences**
 
-
-
-> [CampaignSequence](CampaignSequence.html) postOutboundSequences(body)
+> [CampaignSequence](CampaignSequence.md) postOutboundSequences(body)
 
 Create a new campaign sequence.
 
+Wraps POST /api/v2/outbound/sequences
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/outbound/sequences  
-
-Requires ANY permissions: 
-
-* outbound:campaignSequence:add
+- outbound:campaignSequence:add
 
 ### Example
 
@@ -6328,34 +5882,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                        | Description  | Notes |
+| -------- | ------------------------------------------- | ------------ | ----- |
+| **body** | [**CampaignSequence**](CampaignSequence.md) | Organization |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**CampaignSequence**](CampaignSequence.html)| Organization | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignSequence**](CampaignSequence.html)
+[**CampaignSequence**](CampaignSequence.md)
 
 <a name="putOutboundAttemptlimit"></a>
 
 # **putOutboundAttemptlimit**
 
-
-
-> [AttemptLimits](AttemptLimits.html) putOutboundAttemptlimit(attemptLimitsId, body)
+> [AttemptLimits](AttemptLimits.md) putOutboundAttemptlimit(attemptLimitsId, body)
 
 Update attempt limits
 
+Wraps PUT /api/v2/outbound/attemptlimits/{attemptLimitsId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/attemptlimits/{attemptLimitsId}  
-
-Requires ANY permissions: 
-
-* outbound:attemptLimits:edit
+- outbound:attemptLimits:edit
 
 ### Example
 
@@ -6392,35 +5941,30 @@ try {
 
 ### Parameters
 
+| Name                | Type                                  | Description       | Notes |
+| ------------------- | ------------------------------------- | ----------------- | ----- |
+| **attemptLimitsId** | **String**                            | Attempt limits ID |
+| **body**            | [**AttemptLimits**](AttemptLimits.md) | AttemptLimits     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **attemptLimitsId** | **String**| Attempt limits ID | 
-| **body** | [**AttemptLimits**](AttemptLimits.html)| AttemptLimits | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AttemptLimits**](AttemptLimits.html)
+[**AttemptLimits**](AttemptLimits.md)
 
 <a name="putOutboundCallabletimeset"></a>
 
 # **putOutboundCallabletimeset**
 
-
-
-> [CallableTimeSet](CallableTimeSet.html) putOutboundCallabletimeset(callableTimeSetId, body)
+> [CallableTimeSet](CallableTimeSet.md) putOutboundCallabletimeset(callableTimeSetId, body)
 
 Update callable time set
 
+Wraps PUT /api/v2/outbound/callabletimesets/{callableTimeSetId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/callabletimesets/{callableTimeSetId}  
-
-Requires ANY permissions: 
-
-* outbound:callableTimeSet:edit
+- outbound:callableTimeSet:edit
 
 ### Example
 
@@ -6457,35 +6001,30 @@ try {
 
 ### Parameters
 
+| Name                  | Type                                      | Description           | Notes |
+| --------------------- | ----------------------------------------- | --------------------- | ----- |
+| **callableTimeSetId** | **String**                                | Callable Time Set ID  |
+| **body**              | [**CallableTimeSet**](CallableTimeSet.md) | DialerCallableTimeSet |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **callableTimeSetId** | **String**| Callable Time Set ID | 
-| **body** | [**CallableTimeSet**](CallableTimeSet.html)| DialerCallableTimeSet | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CallableTimeSet**](CallableTimeSet.html)
+[**CallableTimeSet**](CallableTimeSet.md)
 
 <a name="putOutboundCallanalysisresponseset"></a>
 
 # **putOutboundCallanalysisresponseset**
 
-
-
-> [ResponseSet](ResponseSet.html) putOutboundCallanalysisresponseset(callAnalysisSetId, body)
+> [ResponseSet](ResponseSet.md) putOutboundCallanalysisresponseset(callAnalysisSetId, body)
 
 Update a dialer call analysis response set.
 
+Wraps PUT /api/v2/outbound/callanalysisresponsesets/{callAnalysisSetId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/callanalysisresponsesets/{callAnalysisSetId}  
-
-Requires ANY permissions: 
-
-* outbound:responseSet:edit
+- outbound:responseSet:edit
 
 ### Example
 
@@ -6522,35 +6061,30 @@ try {
 
 ### Parameters
 
+| Name                  | Type                              | Description                   | Notes |
+| --------------------- | --------------------------------- | ----------------------------- | ----- |
+| **callAnalysisSetId** | **String**                        | Call Analysis Response Set ID |
+| **body**              | [**ResponseSet**](ResponseSet.md) | ResponseSet                   |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **callAnalysisSetId** | **String**| Call Analysis Response Set ID | 
-| **body** | [**ResponseSet**](ResponseSet.html)| ResponseSet | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ResponseSet**](ResponseSet.html)
+[**ResponseSet**](ResponseSet.md)
 
 <a name="putOutboundCampaign"></a>
 
 # **putOutboundCampaign**
 
-
-
-> [Campaign](Campaign.html) putOutboundCampaign(campaignId, body)
+> [Campaign](Campaign.md) putOutboundCampaign(campaignId, body)
 
 Update a campaign.
 
+Wraps PUT /api/v2/outbound/campaigns/{campaignId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/campaigns/{campaignId}  
-
-Requires ANY permissions: 
-
-* outbound:campaign:edit
+- outbound:campaign:edit
 
 ### Example
 
@@ -6587,34 +6121,30 @@ try {
 
 ### Parameters
 
+| Name           | Type                        | Description | Notes |
+| -------------- | --------------------------- | ----------- | ----- |
+| **campaignId** | **String**                  | Campaign ID |
+| **body**       | [**Campaign**](Campaign.md) | Campaign    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
-| **body** | [**Campaign**](Campaign.html)| Campaign | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Campaign**](Campaign.html)
+[**Campaign**](Campaign.md)
 
 <a name="putOutboundCampaignAgent"></a>
 
 # **putOutboundCampaignAgent**
 
-
-
 > String putOutboundCampaignAgent(campaignId, userId, body)
 
-Send notification that an agent&#39;s state changed 
+Send notification that an agent&#39;s state changed
 
 New agent state.
 
-Wraps PUT /api/v2/outbound/campaigns/{campaignId}/agents/{userId}  
+Wraps PUT /api/v2/outbound/campaigns/{campaignId}/agents/{userId}
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -6652,14 +6182,13 @@ try {
 
 ### Parameters
 
+| Name           | Type                  | Description         | Notes |
+| -------------- | --------------------- | ------------------- | ----- |
+| **campaignId** | **String**            | Campaign ID         |
+| **userId**     | **String**            | Agent&#39;s user ID |
+| **body**       | [**Agent**](Agent.md) | agent               |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
-| **userId** | **String**| Agent&#39;s user ID | 
-| **body** | [**Agent**](Agent.html)| agent | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -6669,19 +6198,15 @@ try {
 
 # **putOutboundCampaignrule**
 
-
-
-> [CampaignRule](CampaignRule.html) putOutboundCampaignrule(campaignRuleId, body)
+> [CampaignRule](CampaignRule.md) putOutboundCampaignrule(campaignRuleId, body)
 
 Update Campaign Rule
 
+Wraps PUT /api/v2/outbound/campaignrules/{campaignRuleId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/campaignrules/{campaignRuleId}  
-
-Requires ANY permissions: 
-
-* outbound:campaignRule:edit
+- outbound:campaignRule:edit
 
 ### Example
 
@@ -6718,35 +6243,30 @@ try {
 
 ### Parameters
 
+| Name               | Type                                | Description      | Notes |
+| ------------------ | ----------------------------------- | ---------------- | ----- |
+| **campaignRuleId** | **String**                          | Campaign Rule ID |
+| **body**           | [**CampaignRule**](CampaignRule.md) | CampaignRule     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignRuleId** | **String**| Campaign Rule ID | 
-| **body** | [**CampaignRule**](CampaignRule.html)| CampaignRule | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignRule**](CampaignRule.html)
+[**CampaignRule**](CampaignRule.md)
 
 <a name="putOutboundContactlist"></a>
 
 # **putOutboundContactlist**
 
-
-
-> [ContactList](ContactList.html) putOutboundContactlist(contactListId, body)
+> [ContactList](ContactList.md) putOutboundContactlist(contactListId, body)
 
 Update a contact list.
 
+Wraps PUT /api/v2/outbound/contactlists/{contactListId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/contactlists/{contactListId}  
-
-Requires ANY permissions: 
-
-* outbound:contactList:edit
+- outbound:contactList:edit
 
 ### Example
 
@@ -6783,35 +6303,30 @@ try {
 
 ### Parameters
 
+| Name              | Type                              | Description    | Notes |
+| ----------------- | --------------------------------- | -------------- | ----- |
+| **contactListId** | **String**                        | ContactList ID |
+| **body**          | [**ContactList**](ContactList.md) | ContactList    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| ContactList ID | 
-| **body** | [**ContactList**](ContactList.html)| ContactList | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ContactList**](ContactList.html)
+[**ContactList**](ContactList.md)
 
 <a name="putOutboundContactlistContact"></a>
 
 # **putOutboundContactlistContact**
 
-
-
-> [DialerContact](DialerContact.html) putOutboundContactlistContact(contactListId, contactId, body)
+> [DialerContact](DialerContact.md) putOutboundContactlistContact(contactListId, contactId, body)
 
 Update a contact.
 
+Wraps PUT /api/v2/outbound/contactlists/{contactListId}/contacts/{contactId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/contactlists/{contactListId}/contacts/{contactId}  
-
-Requires ANY permissions: 
-
-* outbound:contact:edit
+- outbound:contact:edit
 
 ### Example
 
@@ -6849,36 +6364,31 @@ try {
 
 ### Parameters
 
+| Name              | Type                                  | Description     | Notes |
+| ----------------- | ------------------------------------- | --------------- | ----- |
+| **contactListId** | **String**                            | Contact List ID |
+| **contactId**     | **String**                            | Contact ID      |
+| **body**          | [**DialerContact**](DialerContact.md) | Contact         |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListId** | **String**| Contact List ID | 
-| **contactId** | **String**| Contact ID | 
-| **body** | [**DialerContact**](DialerContact.html)| Contact | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DialerContact**](DialerContact.html)
+[**DialerContact**](DialerContact.md)
 
 <a name="putOutboundContactlistfilter"></a>
 
 # **putOutboundContactlistfilter**
 
-
-
-> [ContactListFilter](ContactListFilter.html) putOutboundContactlistfilter(contactListFilterId, body)
+> [ContactListFilter](ContactListFilter.md) putOutboundContactlistfilter(contactListFilterId, body)
 
 Update Contact List Filter
 
+Wraps PUT /api/v2/outbound/contactlistfilters/{contactListFilterId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/contactlistfilters/{contactListFilterId}  
-
-Requires ANY permissions: 
-
-* outbound:contactListFilter:edit
+- outbound:contactListFilter:edit
 
 ### Example
 
@@ -6915,35 +6425,30 @@ try {
 
 ### Parameters
 
+| Name                    | Type                                          | Description            | Notes |
+| ----------------------- | --------------------------------------------- | ---------------------- | ----- |
+| **contactListFilterId** | **String**                                    | Contact List Filter ID |
+| **body**                | [**ContactListFilter**](ContactListFilter.md) | ContactListFilter      |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **contactListFilterId** | **String**| Contact List Filter ID | 
-| **body** | [**ContactListFilter**](ContactListFilter.html)| ContactListFilter | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ContactListFilter**](ContactListFilter.html)
+[**ContactListFilter**](ContactListFilter.md)
 
 <a name="putOutboundDnclist"></a>
 
 # **putOutboundDnclist**
 
-
-
-> [DncList](DncList.html) putOutboundDnclist(dncListId, body)
+> [DncList](DncList.md) putOutboundDnclist(dncListId, body)
 
 Update dialer DNC list
 
+Wraps PUT /api/v2/outbound/dnclists/{dncListId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/dnclists/{dncListId}  
-
-Requires ANY permissions: 
-
-* outbound:dncList:edit
+- outbound:dncList:edit
 
 ### Example
 
@@ -6980,36 +6485,31 @@ try {
 
 ### Parameters
 
+| Name          | Type                      | Description | Notes |
+| ------------- | ------------------------- | ----------- | ----- |
+| **dncListId** | **String**                | DncList ID  |
+| **body**      | [**DncList**](DncList.md) | DncList     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **dncListId** | **String**| DncList ID | 
-| **body** | [**DncList**](DncList.html)| DncList | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DncList**](DncList.html)
+[**DncList**](DncList.md)
 
 <a name="putOutboundMessagingcampaign"></a>
 
 # **putOutboundMessagingcampaign**
 
-
-
-> [MessagingCampaign](MessagingCampaign.html) putOutboundMessagingcampaign(messagingCampaignId, body)
+> [MessagingCampaign](MessagingCampaign.md) putOutboundMessagingcampaign(messagingCampaignId, body)
 
 Update an Outbound Messaging Campaign
 
+Wraps PUT /api/v2/outbound/messagingcampaigns/{messagingCampaignId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/messagingcampaigns/{messagingCampaignId}  
-
-Requires ANY permissions: 
-
-* outbound:messagingCampaign:edit
-* outbound:emailCampaign:edit
+- outbound:messagingCampaign:edit
+- outbound:emailCampaign:edit
 
 ### Example
 
@@ -7046,35 +6546,30 @@ try {
 
 ### Parameters
 
+| Name                    | Type                                          | Description               | Notes |
+| ----------------------- | --------------------------------------------- | ------------------------- | ----- |
+| **messagingCampaignId** | **String**                                    | The Messaging Campaign ID |
+| **body**                | [**MessagingCampaign**](MessagingCampaign.md) | MessagingCampaign         |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **messagingCampaignId** | **String**| The Messaging Campaign ID | 
-| **body** | [**MessagingCampaign**](MessagingCampaign.html)| MessagingCampaign | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**MessagingCampaign**](MessagingCampaign.html)
+[**MessagingCampaign**](MessagingCampaign.md)
 
 <a name="putOutboundRuleset"></a>
 
 # **putOutboundRuleset**
 
-
-
-> [RuleSet](RuleSet.html) putOutboundRuleset(ruleSetId, body)
+> [RuleSet](RuleSet.md) putOutboundRuleset(ruleSetId, body)
 
 Update a Rule Set.
 
+Wraps PUT /api/v2/outbound/rulesets/{ruleSetId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/rulesets/{ruleSetId}  
-
-Requires ANY permissions: 
-
-* outbound:ruleSet:edit
+- outbound:ruleSet:edit
 
 ### Example
 
@@ -7111,35 +6606,30 @@ try {
 
 ### Parameters
 
+| Name          | Type                      | Description | Notes |
+| ------------- | ------------------------- | ----------- | ----- |
+| **ruleSetId** | **String**                | Rule Set ID |
+| **body**      | [**RuleSet**](RuleSet.md) | RuleSet     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **ruleSetId** | **String**| Rule Set ID | 
-| **body** | [**RuleSet**](RuleSet.html)| RuleSet | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**RuleSet**](RuleSet.html)
+[**RuleSet**](RuleSet.md)
 
 <a name="putOutboundSchedulesCampaign"></a>
 
 # **putOutboundSchedulesCampaign**
 
-
-
-> [CampaignSchedule](CampaignSchedule.html) putOutboundSchedulesCampaign(campaignId, body)
+> [CampaignSchedule](CampaignSchedule.md) putOutboundSchedulesCampaign(campaignId, body)
 
 Update a new campaign schedule.
 
+Wraps PUT /api/v2/outbound/schedules/campaigns/{campaignId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/schedules/campaigns/{campaignId}  
-
-Requires ANY permissions: 
-
-* outbound:schedule:edit
+- outbound:schedule:edit
 
 ### Example
 
@@ -7176,35 +6666,30 @@ try {
 
 ### Parameters
 
+| Name           | Type                                        | Description      | Notes |
+| -------------- | ------------------------------------------- | ---------------- | ----- |
+| **campaignId** | **String**                                  | Campaign ID      |
+| **body**       | [**CampaignSchedule**](CampaignSchedule.md) | CampaignSchedule |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **campaignId** | **String**| Campaign ID | 
-| **body** | [**CampaignSchedule**](CampaignSchedule.html)| CampaignSchedule | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignSchedule**](CampaignSchedule.html)
+[**CampaignSchedule**](CampaignSchedule.md)
 
 <a name="putOutboundSchedulesSequence"></a>
 
 # **putOutboundSchedulesSequence**
 
-
-
-> [SequenceSchedule](SequenceSchedule.html) putOutboundSchedulesSequence(sequenceId, body)
+> [SequenceSchedule](SequenceSchedule.md) putOutboundSchedulesSequence(sequenceId, body)
 
 Update a new sequence schedule.
 
+Wraps PUT /api/v2/outbound/schedules/sequences/{sequenceId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/schedules/sequences/{sequenceId}  
-
-Requires ANY permissions: 
-
-* outbound:schedule:edit
+- outbound:schedule:edit
 
 ### Example
 
@@ -7241,35 +6726,30 @@ try {
 
 ### Parameters
 
+| Name           | Type                                        | Description      | Notes |
+| -------------- | ------------------------------------------- | ---------------- | ----- |
+| **sequenceId** | **String**                                  | Sequence ID      |
+| **body**       | [**SequenceSchedule**](SequenceSchedule.md) | SequenceSchedule |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **sequenceId** | **String**| Sequence ID | 
-| **body** | [**SequenceSchedule**](SequenceSchedule.html)| SequenceSchedule | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SequenceSchedule**](SequenceSchedule.html)
+[**SequenceSchedule**](SequenceSchedule.md)
 
 <a name="putOutboundSequence"></a>
 
 # **putOutboundSequence**
 
-
-
-> [CampaignSequence](CampaignSequence.html) putOutboundSequence(sequenceId, body)
+> [CampaignSequence](CampaignSequence.md) putOutboundSequence(sequenceId, body)
 
 Update a new campaign sequence.
 
+Wraps PUT /api/v2/outbound/sequences/{sequenceId}
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/sequences/{sequenceId}  
-
-Requires ANY permissions: 
-
-* outbound:campaignSequence:edit
+- outbound:campaignSequence:edit
 
 ### Example
 
@@ -7306,35 +6786,30 @@ try {
 
 ### Parameters
 
+| Name           | Type                                        | Description          | Notes |
+| -------------- | ------------------------------------------- | -------------------- | ----- |
+| **sequenceId** | **String**                                  | Campaign Sequence ID |
+| **body**       | [**CampaignSequence**](CampaignSequence.md) | Organization         |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **sequenceId** | **String**| Campaign Sequence ID | 
-| **body** | [**CampaignSequence**](CampaignSequence.html)| Organization | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**CampaignSequence**](CampaignSequence.html)
+[**CampaignSequence**](CampaignSequence.md)
 
 <a name="putOutboundWrapupcodemappings"></a>
 
 # **putOutboundWrapupcodemappings**
 
-
-
-> [WrapUpCodeMapping](WrapUpCodeMapping.html) putOutboundWrapupcodemappings(body)
+> [WrapUpCodeMapping](WrapUpCodeMapping.md) putOutboundWrapupcodemappings(body)
 
 Update the Dialer wrap up code mapping.
 
+Wraps PUT /api/v2/outbound/wrapupcodemappings
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/outbound/wrapupcodemappings  
-
-Requires ANY permissions: 
-
-* outbound:wrapUpCodeMapping:edit
+- outbound:wrapUpCodeMapping:edit
 
 ### Example
 
@@ -7370,14 +6845,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                                          | Description       | Notes |
+| -------- | --------------------------------------------- | ----------------- | ----- |
+| **body** | [**WrapUpCodeMapping**](WrapUpCodeMapping.md) | wrapUpCodeMapping |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**WrapUpCodeMapping**](WrapUpCodeMapping.html)| wrapUpCodeMapping | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**WrapUpCodeMapping**](WrapUpCodeMapping.html)
-
+[**WrapUpCodeMapping**](WrapUpCodeMapping.md)

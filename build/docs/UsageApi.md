@@ -1,33 +1,31 @@
 ---
 title: UsageApi
 ---
+
 ## UsageApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**getUsageQueryExecutionIdResults**](UsageApi.html#getUsageQueryExecutionIdResults) | Get the results of a usage query |
-| [**postUsageQuery**](UsageApi.html#postUsageQuery) | Query organization API Usage -  |
+| Method                                                                             | Description                      |
+| ---------------------------------------------------------------------------------- | -------------------------------- |
+| [**getUsageQueryExecutionIdResults**](UsageApi.md#getUsageQueryExecutionIdResults) | Get the results of a usage query |
+| [**postUsageQuery**](UsageApi.md#postUsageQuery)                                   | Query organization API Usage -   |
+
 {: class="table-striped"}
 
 <a name="getUsageQueryExecutionIdResults"></a>
 
 # **getUsageQueryExecutionIdResults**
 
-
-
-> [ApiUsageQueryResult](ApiUsageQueryResult.html) getUsageQueryExecutionIdResults(executionId)
+> [ApiUsageQueryResult](ApiUsageQueryResult.md) getUsageQueryExecutionIdResults(executionId)
 
 Get the results of a usage query
 
+Wraps GET /api/v2/usage/query/{executionId}/results
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/usage/query/{executionId}/results  
-
-Requires ANY permissions: 
-
-* oauth:client:view
+- oauth:client:view
 
 ### Example
 
@@ -63,34 +61,31 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description               | Notes |
+| --------------- | ---------- | ------------------------- | ----- |
+| **executionId** | **String** | ID of the query execution |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **executionId** | **String**| ID of the query execution | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ApiUsageQueryResult**](ApiUsageQueryResult.html)
+[**ApiUsageQueryResult**](ApiUsageQueryResult.md)
 
 <a name="postUsageQuery"></a>
 
 # **postUsageQuery**
 
+> [UsageExecutionResult](UsageExecutionResult.md) postUsageQuery(body)
 
-
-> [UsageExecutionResult](UsageExecutionResult.html) postUsageQuery(body)
-
-Query organization API Usage - 
+Query organization API Usage -
 
 After calling this method, you will then need to poll for the query results based on the returned execution Id
 
-Wraps POST /api/v2/usage/query  
+Wraps POST /api/v2/usage/query
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* oauth:client:view
+- oauth:client:view
 
 ### Example
 
@@ -126,14 +121,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                                  | Description | Notes |
+| -------- | ------------------------------------- | ----------- | ----- |
+| **body** | [**ApiUsageQuery**](ApiUsageQuery.md) | Query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ApiUsageQuery**](ApiUsageQuery.html)| Query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UsageExecutionResult**](UsageExecutionResult.html)
-
+[**UsageExecutionResult**](UsageExecutionResult.md)

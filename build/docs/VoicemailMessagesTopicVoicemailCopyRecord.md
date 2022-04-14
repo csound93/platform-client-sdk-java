@@ -1,16 +1,14 @@
 ---
 title: VoicemailMessagesTopicVoicemailCopyRecord
 ---
-## VoicemailMessagesTopicVoicemailCopyRecord
 
+## VoicemailMessagesTopicVoicemailCopyRecord
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **user** | <!----><!---->[**VoicemailMessagesTopicOwner**](VoicemailMessagesTopicOwner.html)<!----> |  |  [optional] |
-| **group** | <!----><!---->[**VoicemailMessagesTopicOwner**](VoicemailMessagesTopicOwner.html)<!----> |  |  [optional] |
+| Name      | Type                                                                                   | Description | Notes      |
+| --------- | -------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **user**  | <!----><!---->[**VoicemailMessagesTopicOwner**](VoicemailMessagesTopicOwner.md)<!----> |             | [optional] |
+| **group** | <!----><!---->[**VoicemailMessagesTopicOwner**](VoicemailMessagesTopicOwner.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

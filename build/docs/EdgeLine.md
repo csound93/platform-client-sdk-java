@@ -1,62 +1,60 @@
 ---
 title: EdgeLine
 ---
-## EdgeLine
 
+## EdgeLine
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **id** | <!----><!---->**String**<!----> | The globally unique identifier for the object. |  [optional] |
-| **name** | <!----><!---->**String**<!----> | The name of the entity. |  |
-| **division** | <!----><!---->[**Division**](Division.html)<!----> | The division to which this entity belongs. |  [optional] |
-| **description** | <!----><!---->**String**<!----> | The resource&#39;s description. |  [optional] |
-| **version** | <!----><!---->**Integer**<!----> | The current version of the resource. |  [optional] |
-| **dateCreated** | <!----><!---->[**Date**](Date.html)<!----> | The date the resource was created. Date time is represented as an ISO-8601 string. For example: yyyy-MM-ddTHH:mm:ss[.mmm]Z |  [optional] |
-| **dateModified** | <!----><!---->[**Date**](Date.html)<!----> | The date of the last modification to the resource. Date time is represented as an ISO-8601 string. For example: yyyy-MM-ddTHH:mm:ss[.mmm]Z |  [optional] |
-| **modifiedBy** | <!----><!---->**String**<!----> | The ID of the user that last modified the resource. |  [optional] |
-| **createdBy** | <!----><!---->**String**<!----> | The ID of the user that created the resource. |  [optional] |
-| **state** | [**StateEnum**](#StateEnum)<!----> | Indicates if the resource is active, inactive, or deleted. |  [optional] |
-| **modifiedByApp** | <!----><!---->**String**<!----> | The application that last modified the resource. |  [optional] |
-| **createdByApp** | <!----><!---->**String**<!----> | The application that created the resource. |  [optional] |
-| **schema** | <!----><!---->[**DomainEntityRef**](DomainEntityRef.html)<!----> |  |  [optional] |
-| **properties** | <!----><!---->**Map&lt;String, Object&gt;**<!----> |  |  [optional] |
-| **edge** | <!----><!---->[**Edge**](Edge.html)<!----> |  |  [optional] |
-| **edgeGroup** | <!----><!---->[**EdgeGroup**](EdgeGroup.html)<!----> |  |  [optional] |
-| **lineType** | [**LineTypeEnum**](#LineTypeEnum)<!----> |  |  [optional] |
-| **endpoint** | <!----><!---->[**Endpoint**](Endpoint.html)<!----> |  |  [optional] |
-| **ipAddress** | <!----><!---->**String**<!----> |  |  [optional] |
-| **logicalInterfaceId** | <!----><!---->**String**<!----> |  |  [optional] |
-| **selfUri** | <!----><!---->**String**<!----> | The URI for this object |  [optional] |
-{: class="table table-striped"}
+| Name                   | Type                                                           | Description                                                                                                                                | Notes      |
+| ---------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
+| **id**                 | <!----><!---->**String**<!---->                                | The globally unique identifier for the object.                                                                                             | [optional] |
+| **name**               | <!----><!---->**String**<!---->                                | The name of the entity.                                                                                                                    |            |
+| **division**           | <!----><!---->[**Division**](Division.md)<!---->               | The division to which this entity belongs.                                                                                                 | [optional] |
+| **description**        | <!----><!---->**String**<!---->                                | The resource&#39;s description.                                                                                                            | [optional] |
+| **version**            | <!----><!---->**Integer**<!---->                               | The current version of the resource.                                                                                                       | [optional] |
+| **dateCreated**        | <!----><!---->[**Date**](Date.md)<!---->                       | The date the resource was created. Date time is represented as an ISO-8601 string. For example: yyyy-MM-ddTHH:mm:ss[.mmm]Z                 | [optional] |
+| **dateModified**       | <!----><!---->[**Date**](Date.md)<!---->                       | The date of the last modification to the resource. Date time is represented as an ISO-8601 string. For example: yyyy-MM-ddTHH:mm:ss[.mmm]Z | [optional] |
+| **modifiedBy**         | <!----><!---->**String**<!---->                                | The ID of the user that last modified the resource.                                                                                        | [optional] |
+| **createdBy**          | <!----><!---->**String**<!---->                                | The ID of the user that created the resource.                                                                                              | [optional] |
+| **state**              | [**StateEnum**](#StateEnum)<!---->                             | Indicates if the resource is active, inactive, or deleted.                                                                                 | [optional] |
+| **modifiedByApp**      | <!----><!---->**String**<!---->                                | The application that last modified the resource.                                                                                           | [optional] |
+| **createdByApp**       | <!----><!---->**String**<!---->                                | The application that created the resource.                                                                                                 | [optional] |
+| **schema**             | <!----><!---->[**DomainEntityRef**](DomainEntityRef.md)<!----> |                                                                                                                                            | [optional] |
+| **properties**         | <!----><!---->**Map&lt;String, Object&gt;**<!---->             |                                                                                                                                            | [optional] |
+| **edge**               | <!----><!---->[**Edge**](Edge.md)<!---->                       |                                                                                                                                            | [optional] |
+| **edgeGroup**          | <!----><!---->[**EdgeGroup**](EdgeGroup.md)<!---->             |                                                                                                                                            | [optional] |
+| **lineType**           | [**LineTypeEnum**](#LineTypeEnum)<!---->                       |                                                                                                                                            | [optional] |
+| **endpoint**           | <!----><!---->[**Endpoint**](Endpoint.md)<!---->               |                                                                                                                                            | [optional] |
+| **ipAddress**          | <!----><!---->**String**<!---->                                |                                                                                                                                            | [optional] |
+| **logicalInterfaceId** | <!----><!---->**String**<!---->                                |                                                                                                                                            | [optional] |
+| **selfUri**            | <!----><!---->**String**<!---->                                | The URI for this object                                                                                                                    | [optional] |
 
+{: class="table table-striped"}
 
 <a name="StateEnum"></a>
 
 ## Enum: StateEnum
 
-| Name | Value |
-| ---- | ----- |
+| Name               | Value                          |
+| ------------------ | ------------------------------ |
 | OUTDATEDSDKVERSION | &quot;OutdatedSdkVersion&quot; |
-| ACTIVE | &quot;active&quot; |
-| INACTIVE | &quot;inactive&quot; |
-| DELETED | &quot;deleted&quot; |
-{: class="table table-striped"}
+| ACTIVE             | &quot;active&quot;             |
+| INACTIVE           | &quot;inactive&quot;           |
+| DELETED            | &quot;deleted&quot;            |
 
+{: class="table table-striped"}
 
 <a name="LineTypeEnum"></a>
 
 ## Enum: LineTypeEnum
 
-| Name | Value |
-| ---- | ----- |
+| Name               | Value                          |
+| ------------------ | ------------------------------ |
 | OUTDATEDSDKVERSION | &quot;OutdatedSdkVersion&quot; |
-| TIE | &quot;TIE&quot; |
-| NETWORK | &quot;NETWORK&quot; |
-| TRUNK | &quot;TRUNK&quot; |
-| STATION | &quot;STATION&quot; |
+| TIE                | &quot;TIE&quot;                |
+| NETWORK            | &quot;NETWORK&quot;            |
+| TRUNK              | &quot;TRUNK&quot;              |
+| STATION            | &quot;STATION&quot;            |
+
 {: class="table table-striped"}
-
-
-

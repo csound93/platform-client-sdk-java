@@ -1,21 +1,19 @@
 ---
 title: WfmIntradayDataUpdateTopicIntradayDataUpdate
 ---
-## WfmIntradayDataUpdateTopicIntradayDataUpdate
 
+## WfmIntradayDataUpdateTopicIntradayDataUpdate
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **startDate** | <!----><!---->[**Date**](Date.html)<!----> |  |  [optional] |
-| **endDate** | <!----><!---->[**Date**](Date.html)<!----> |  |  [optional] |
-| **intervalLengthMinutes** | <!----><!---->**Integer**<!----> |  |  [optional] |
-| **numberOfIntervals** | <!----><!---->**Integer**<!----> |  |  [optional] |
-| **metrics** | <!----><!---->[**List&lt;WfmIntradayDataUpdateTopicIntradayMetric&gt;**](WfmIntradayDataUpdateTopicIntradayMetric.html)<!----> |  |  [optional] |
-| **queueIds** | <!----><!---->**List&lt;String&gt;**<!----> |  |  [optional] |
-| **intradayDataGroupings** | <!----><!---->[**List&lt;WfmIntradayDataUpdateTopicIntradayDataGroup&gt;**](WfmIntradayDataUpdateTopicIntradayDataGroup.html)<!----> |  |  [optional] |
+| Name                      | Type                                                                                                                               | Description | Notes      |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **startDate**             | <!----><!---->[**Date**](Date.md)<!---->                                                                                           |             | [optional] |
+| **endDate**               | <!----><!---->[**Date**](Date.md)<!---->                                                                                           |             | [optional] |
+| **intervalLengthMinutes** | <!----><!---->**Integer**<!---->                                                                                                   |             | [optional] |
+| **numberOfIntervals**     | <!----><!---->**Integer**<!---->                                                                                                   |             | [optional] |
+| **metrics**               | <!----><!---->[**List&lt;WfmIntradayDataUpdateTopicIntradayMetric&gt;**](WfmIntradayDataUpdateTopicIntradayMetric.md)<!---->       |             | [optional] |
+| **queueIds**              | <!----><!---->**List&lt;String&gt;**<!---->                                                                                        |             | [optional] |
+| **intradayDataGroupings** | <!----><!---->[**List&lt;WfmIntradayDataUpdateTopicIntradayDataGroup&gt;**](WfmIntradayDataUpdateTopicIntradayDataGroup.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

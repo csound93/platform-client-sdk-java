@@ -1,28 +1,30 @@
 ---
 title: OrganizationApi
 ---
+
 ## OrganizationApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**getFieldconfig**](OrganizationApi.html#getFieldconfig) | Fetch field config for an entity type |
-| [**getOrganizationsEmbeddedintegration**](OrganizationApi.html#getOrganizationsEmbeddedintegration) | Get the list of domains that will be allowed to embed PureCloud applications |
-| [**getOrganizationsIpaddressauthentication**](OrganizationApi.html#getOrganizationsIpaddressauthentication) | Get organization IP address whitelist settings |
-| [**getOrganizationsLimitsChangerequest**](OrganizationApi.html#getOrganizationsLimitsChangerequest) | Get a limit change request |
-| [**getOrganizationsLimitsChangerequests**](OrganizationApi.html#getOrganizationsLimitsChangerequests) | Get the available limit change requests |
-| [**getOrganizationsLimitsDocs**](OrganizationApi.html#getOrganizationsLimitsDocs) | Get a link to the limit documentation |
-| [**getOrganizationsLimitsNamespace**](OrganizationApi.html#getOrganizationsLimitsNamespace) | Get the effective limits in a namespace for an organization |
-| [**getOrganizationsLimitsNamespaceDefaults**](OrganizationApi.html#getOrganizationsLimitsNamespaceDefaults) | Get the default limits in a namespace for an organization |
-| [**getOrganizationsLimitsNamespaces**](OrganizationApi.html#getOrganizationsLimitsNamespaces) | Get the available limit namespaces |
-| [**getOrganizationsMe**](OrganizationApi.html#getOrganizationsMe) | Get organization. |
-| [**getOrganizationsWhitelist**](OrganizationApi.html#getOrganizationsWhitelist) | Use PUT /api/v2/organizations/embeddedintegration instead |
-| [**patchOrganizationsFeature**](OrganizationApi.html#patchOrganizationsFeature) | Update organization |
-| [**putOrganizationsEmbeddedintegration**](OrganizationApi.html#putOrganizationsEmbeddedintegration) | Update the list of domains that will be allowed to embed PureCloud applications |
-| [**putOrganizationsIpaddressauthentication**](OrganizationApi.html#putOrganizationsIpaddressauthentication) | Update organization IP address whitelist settings |
-| [**putOrganizationsMe**](OrganizationApi.html#putOrganizationsMe) | Update organization. |
-| [**putOrganizationsWhitelist**](OrganizationApi.html#putOrganizationsWhitelist) | Use PUT /api/v2/organizations/embeddedintegration instead |
+| Method                                                                                                    | Description                                                                     |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| [**getFieldconfig**](OrganizationApi.md#getFieldconfig)                                                   | Fetch field config for an entity type                                           |
+| [**getOrganizationsEmbeddedintegration**](OrganizationApi.md#getOrganizationsEmbeddedintegration)         | Get the list of domains that will be allowed to embed PureCloud applications    |
+| [**getOrganizationsIpaddressauthentication**](OrganizationApi.md#getOrganizationsIpaddressauthentication) | Get organization IP address whitelist settings                                  |
+| [**getOrganizationsLimitsChangerequest**](OrganizationApi.md#getOrganizationsLimitsChangerequest)         | Get a limit change request                                                      |
+| [**getOrganizationsLimitsChangerequests**](OrganizationApi.md#getOrganizationsLimitsChangerequests)       | Get the available limit change requests                                         |
+| [**getOrganizationsLimitsDocs**](OrganizationApi.md#getOrganizationsLimitsDocs)                           | Get a link to the limit documentation                                           |
+| [**getOrganizationsLimitsNamespace**](OrganizationApi.md#getOrganizationsLimitsNamespace)                 | Get the effective limits in a namespace for an organization                     |
+| [**getOrganizationsLimitsNamespaceDefaults**](OrganizationApi.md#getOrganizationsLimitsNamespaceDefaults) | Get the default limits in a namespace for an organization                       |
+| [**getOrganizationsLimitsNamespaces**](OrganizationApi.md#getOrganizationsLimitsNamespaces)               | Get the available limit namespaces                                              |
+| [**getOrganizationsMe**](OrganizationApi.md#getOrganizationsMe)                                           | Get organization.                                                               |
+| [**getOrganizationsWhitelist**](OrganizationApi.md#getOrganizationsWhitelist)                             | Use PUT /api/v2/organizations/embeddedintegration instead                       |
+| [**patchOrganizationsFeature**](OrganizationApi.md#patchOrganizationsFeature)                             | Update organization                                                             |
+| [**putOrganizationsEmbeddedintegration**](OrganizationApi.md#putOrganizationsEmbeddedintegration)         | Update the list of domains that will be allowed to embed PureCloud applications |
+| [**putOrganizationsIpaddressauthentication**](OrganizationApi.md#putOrganizationsIpaddressauthentication) | Update organization IP address whitelist settings                               |
+| [**putOrganizationsMe**](OrganizationApi.md#putOrganizationsMe)                                           | Update organization.                                                            |
+| [**putOrganizationsWhitelist**](OrganizationApi.md#putOrganizationsWhitelist)                             | Use PUT /api/v2/organizations/embeddedintegration instead                       |
+
 {: class="table-striped"}
 
 <a name="getFieldconfig"></a>
@@ -31,16 +33,13 @@ All URIs are relative to *https://api.mypurecloud.com*
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [FieldConfig](FieldConfig.html) getFieldconfig(type)
+> [FieldConfig](FieldConfig.md) getFieldconfig(type)
 
 Fetch field config for an entity type
 
+Wraps GET /api/v2/fieldconfig
 
-
-Wraps GET /api/v2/fieldconfig  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -76,33 +75,27 @@ try {
 
 ### Parameters
 
+| Name     | Type       | Description | Notes                                                 |
+| -------- | ---------- | ----------- | ----------------------------------------------------- |
+| **type** | **String** | Field type  | <br />**Values**: person, group, org, externalContact |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **type** | **String**| Field type |<br />**Values**: person, group, org, externalContact 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**FieldConfig**](FieldConfig.html)
+[**FieldConfig**](FieldConfig.md)
 
 <a name="getOrganizationsEmbeddedintegration"></a>
 
 # **getOrganizationsEmbeddedintegration**
 
-
-
-> [EmbeddedIntegration](EmbeddedIntegration.html) getOrganizationsEmbeddedintegration()
+> [EmbeddedIntegration](EmbeddedIntegration.md) getOrganizationsEmbeddedintegration()
 
 Get the list of domains that will be allowed to embed PureCloud applications
 
+Wraps GET /api/v2/organizations/embeddedintegration
 
-
-Wraps GET /api/v2/organizations/embeddedintegration  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -139,29 +132,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**EmbeddedIntegration**](EmbeddedIntegration.html)
+[**EmbeddedIntegration**](EmbeddedIntegration.md)
 
 <a name="getOrganizationsIpaddressauthentication"></a>
 
 # **getOrganizationsIpaddressauthentication**
 
-
-
-> [IpAddressAuthentication](IpAddressAuthentication.html) getOrganizationsIpaddressauthentication()
+> [IpAddressAuthentication](IpAddressAuthentication.md) getOrganizationsIpaddressauthentication()
 
 Get organization IP address whitelist settings
 
+Wraps GET /api/v2/organizations/ipaddressauthentication
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/organizations/ipaddressauthentication  
-
-Requires ANY permissions: 
-
-* directory:organization:admin
+- directory:organization:admin
 
 ### Example
 
@@ -198,29 +185,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**IpAddressAuthentication**](IpAddressAuthentication.html)
+[**IpAddressAuthentication**](IpAddressAuthentication.md)
 
 <a name="getOrganizationsLimitsChangerequest"></a>
 
 # **getOrganizationsLimitsChangerequest**
 
-
-
-> [LimitChangeRequestDetails](LimitChangeRequestDetails.html) getOrganizationsLimitsChangerequest(requestId)
+> [LimitChangeRequestDetails](LimitChangeRequestDetails.md) getOrganizationsLimitsChangerequest(requestId)
 
 Get a limit change request
 
+Wraps GET /api/v2/organizations/limits/changerequests/{requestId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/organizations/limits/changerequests/{requestId}  
-
-Requires ANY permissions: 
-
-* limits:organization:view
+- limits:organization:view
 
 ### Example
 
@@ -256,34 +237,31 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description                            | Notes |
+| ------------- | ---------- | -------------------------------------- | ----- |
+| **requestId** | **String** | Unique id for the limit change request |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **requestId** | **String**| Unique id for the limit change request | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LimitChangeRequestDetails**](LimitChangeRequestDetails.html)
+[**LimitChangeRequestDetails**](LimitChangeRequestDetails.md)
 
 <a name="getOrganizationsLimitsChangerequests"></a>
 
 # **getOrganizationsLimitsChangerequests**
 
-
-
-> [LimitChangeRequestsEntityListing](LimitChangeRequestsEntityListing.html) getOrganizationsLimitsChangerequests(after, before, status, pageSize, expand)
+> [LimitChangeRequestsEntityListing](LimitChangeRequestsEntityListing.md) getOrganizationsLimitsChangerequests(after, before, status, pageSize, expand)
 
 Get the available limit change requests
 
 Timestamp interval defaults to the last 365 days if both query parameters are omitted. If only one parameter is omitted, the interval will default to a 180 day range in the specified direction.
 
-Wraps GET /api/v2/organizations/limits/changerequests  
+Wraps GET /api/v2/organizations/limits/changerequests
 
-Requires ANY permissions: 
+Requires ANY permissions:
 
-* limits:organization:view
+- limits:organization:view
 
 ### Example
 
@@ -323,37 +301,31 @@ try {
 
 ### Parameters
 
+| Name         | Type                                | Description                                                               | Notes                                                                                                                                            |
+| ------------ | ----------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **after**    | **Long**                            | Timestamp indicating the date to begin after when searching for requests. | [optional]                                                                                                                                       |
+| **before**   | **Long**                            | Timestamp indicating the date to end before when searching for requests.  | [optional]                                                                                                                                       |
+| **status**   | **String**                          | Status of the request to be filtered by                                   | [optional]<br />**Values**: Open, Approved, ImplementingChange, ChangeImplemented, Rejected, Rollback, ImplementingRollback, RollbackImplemented |
+| **pageSize** | **Integer**                         | Page Size                                                                 | [optional] [default to 25]                                                                                                                       |
+| **expand**   | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand.                                          | [optional]<br />**Values**: statusHistory                                                                                                        |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **after** | **Long**| Timestamp indicating the date to begin after when searching for requests. | [optional] 
-| **before** | **Long**| Timestamp indicating the date to end before when searching for requests. | [optional] 
-| **status** | **String**| Status of the request to be filtered by | [optional]<br />**Values**: Open, Approved, ImplementingChange, ChangeImplemented, Rejected, Rollback, ImplementingRollback, RollbackImplemented 
-| **pageSize** | **Integer**| Page Size | [optional] [default to 25] 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand. | [optional]<br />**Values**: statusHistory 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LimitChangeRequestsEntityListing**](LimitChangeRequestsEntityListing.html)
+[**LimitChangeRequestsEntityListing**](LimitChangeRequestsEntityListing.md)
 
 <a name="getOrganizationsLimitsDocs"></a>
 
 # **getOrganizationsLimitsDocs**
 
-
-
-> [UrlResponse](UrlResponse.html) getOrganizationsLimitsDocs()
+> [UrlResponse](UrlResponse.md) getOrganizationsLimitsDocs()
 
 Get a link to the limit documentation
 
+Wraps GET /api/v2/organizations/limits/docs
 
-
-Wraps GET /api/v2/organizations/limits/docs  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -390,29 +362,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**UrlResponse**](UrlResponse.html)
+[**UrlResponse**](UrlResponse.md)
 
 <a name="getOrganizationsLimitsNamespace"></a>
 
 # **getOrganizationsLimitsNamespace**
 
-
-
-> [LimitsEntityListing](LimitsEntityListing.html) getOrganizationsLimitsNamespace(namespaceName)
+> [LimitsEntityListing](LimitsEntityListing.md) getOrganizationsLimitsNamespace(namespaceName)
 
 Get the effective limits in a namespace for an organization
 
+Wraps GET /api/v2/organizations/limits/namespaces/{namespaceName}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/organizations/limits/namespaces/{namespaceName}  
-
-Requires ANY permissions: 
-
-* limits:organization:view
+- limits:organization:view
 
 ### Example
 
@@ -448,33 +414,27 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description                       | Notes |
+| ----------------- | ---------- | --------------------------------- | ----- |
+| **namespaceName** | **String** | The namespace to fetch limits for |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **namespaceName** | **String**| The namespace to fetch limits for | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LimitsEntityListing**](LimitsEntityListing.html)
+[**LimitsEntityListing**](LimitsEntityListing.md)
 
 <a name="getOrganizationsLimitsNamespaceDefaults"></a>
 
 # **getOrganizationsLimitsNamespaceDefaults**
 
-
-
-> [LimitsEntityListing](LimitsEntityListing.html) getOrganizationsLimitsNamespaceDefaults(namespaceName)
+> [LimitsEntityListing](LimitsEntityListing.md) getOrganizationsLimitsNamespaceDefaults(namespaceName)
 
 Get the default limits in a namespace for an organization
 
+Wraps GET /api/v2/organizations/limits/namespaces/{namespaceName}/defaults
 
-
-Wraps GET /api/v2/organizations/limits/namespaces/{namespaceName}/defaults  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -510,34 +470,29 @@ try {
 
 ### Parameters
 
+| Name              | Type       | Description                                | Notes |
+| ----------------- | ---------- | ------------------------------------------ | ----- |
+| **namespaceName** | **String** | The namespace to fetch defaults limits for |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **namespaceName** | **String**| The namespace to fetch defaults limits for | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LimitsEntityListing**](LimitsEntityListing.html)
+[**LimitsEntityListing**](LimitsEntityListing.md)
 
 <a name="getOrganizationsLimitsNamespaces"></a>
 
 # **getOrganizationsLimitsNamespaces**
 
-
-
-> [PagedNamespaceListing](PagedNamespaceListing.html) getOrganizationsLimitsNamespaces(pageSize, pageNumber)
+> [PagedNamespaceListing](PagedNamespaceListing.md) getOrganizationsLimitsNamespaces(pageSize, pageNumber)
 
 Get the available limit namespaces
 
+Wraps GET /api/v2/organizations/limits/namespaces
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/organizations/limits/namespaces  
-
-Requires ANY permissions: 
-
-* limits:organization:view
+- limits:organization:view
 
 ### Example
 
@@ -574,34 +529,28 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                       |
+| -------------- | ----------- | ----------- | --------------------------- |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 100] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]   |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 100] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**PagedNamespaceListing**](PagedNamespaceListing.html)
+[**PagedNamespaceListing**](PagedNamespaceListing.md)
 
 <a name="getOrganizationsMe"></a>
 
 # **getOrganizationsMe**
 
-
-
-> [Organization](Organization.html) getOrganizationsMe()
+> [Organization](Organization.md) getOrganizationsMe()
 
 Get organization.
 
+Wraps GET /api/v2/organizations/me
 
-
-Wraps GET /api/v2/organizations/me  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -638,11 +587,9 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**Organization**](Organization.html)
+[**Organization**](Organization.md)
 
 <a name="getOrganizationsWhitelist"></a>
 
@@ -650,16 +597,13 @@ This endpoint does not require any parameters.
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [OrgWhitelistSettings](OrgWhitelistSettings.html) getOrganizationsWhitelist()
+> [OrgWhitelistSettings](OrgWhitelistSettings.md) getOrganizationsWhitelist()
 
 Use PUT /api/v2/organizations/embeddedintegration instead
 
+Wraps GET /api/v2/organizations/whitelist
 
-
-Wraps GET /api/v2/organizations/whitelist  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -696,29 +640,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**OrgWhitelistSettings**](OrgWhitelistSettings.html)
+[**OrgWhitelistSettings**](OrgWhitelistSettings.md)
 
 <a name="patchOrganizationsFeature"></a>
 
 # **patchOrganizationsFeature**
 
-
-
-> [OrganizationFeatures](OrganizationFeatures.html) patchOrganizationsFeature(featureName, enabled)
+> [OrganizationFeatures](OrganizationFeatures.md) patchOrganizationsFeature(featureName, enabled)
 
 Update organization
 
+Wraps PATCH /api/v2/organizations/features/{featureName}
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/organizations/features/{featureName}  
-
-Requires ANY permissions: 
-
-* directory:organization:admin
+- directory:organization:admin
 
 ### Example
 
@@ -755,35 +693,30 @@ try {
 
 ### Parameters
 
+| Name            | Type                                | Description          | Notes                                                                                                                                                                            |
+| --------------- | ----------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **featureName** | **String**                          | Organization feature | <br />**Values**: realtimeCIC, purecloud, hipaa, ucEnabled, pci, purecloudVoice, xmppFederation, chat, informalPhotos, directory, contactCenter, unifiedCommunications, custserv |
+| **enabled**     | [**FeatureState**](FeatureState.md) | New state of feature |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **featureName** | **String**| Organization feature |<br />**Values**: realtimeCIC, purecloud, hipaa, ucEnabled, pci, purecloudVoice, xmppFederation, chat, informalPhotos, directory, contactCenter, unifiedCommunications, custserv 
-| **enabled** | [**FeatureState**](FeatureState.html)| New state of feature | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OrganizationFeatures**](OrganizationFeatures.html)
+[**OrganizationFeatures**](OrganizationFeatures.md)
 
 <a name="putOrganizationsEmbeddedintegration"></a>
 
 # **putOrganizationsEmbeddedintegration**
 
-
-
-> [EmbeddedIntegration](EmbeddedIntegration.html) putOrganizationsEmbeddedintegration(body)
+> [EmbeddedIntegration](EmbeddedIntegration.md) putOrganizationsEmbeddedintegration(body)
 
 Update the list of domains that will be allowed to embed PureCloud applications
 
+Wraps PUT /api/v2/organizations/embeddedintegration
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/organizations/embeddedintegration  
-
-Requires ANY permissions: 
-
-* directory:organization:admin
+- directory:organization:admin
 
 ### Example
 
@@ -819,34 +752,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                              | Description        | Notes |
+| -------- | ------------------------------------------------- | ------------------ | ----- |
+| **body** | [**EmbeddedIntegration**](EmbeddedIntegration.md) | Whitelist settings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**EmbeddedIntegration**](EmbeddedIntegration.html)| Whitelist settings | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**EmbeddedIntegration**](EmbeddedIntegration.html)
+[**EmbeddedIntegration**](EmbeddedIntegration.md)
 
 <a name="putOrganizationsIpaddressauthentication"></a>
 
 # **putOrganizationsIpaddressauthentication**
 
-
-
-> [IpAddressAuthentication](IpAddressAuthentication.html) putOrganizationsIpaddressauthentication(body)
+> [IpAddressAuthentication](IpAddressAuthentication.md) putOrganizationsIpaddressauthentication(body)
 
 Update organization IP address whitelist settings
 
+Wraps PUT /api/v2/organizations/ipaddressauthentication
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/organizations/ipaddressauthentication  
-
-Requires ANY permissions: 
-
-* directory:organization:admin
+- directory:organization:admin
 
 ### Example
 
@@ -882,34 +810,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                      | Description                   | Notes |
+| -------- | --------------------------------------------------------- | ----------------------------- | ----- |
+| **body** | [**IpAddressAuthentication**](IpAddressAuthentication.md) | IP address Whitelist settings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**IpAddressAuthentication**](IpAddressAuthentication.html)| IP address Whitelist settings | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**IpAddressAuthentication**](IpAddressAuthentication.html)
+[**IpAddressAuthentication**](IpAddressAuthentication.md)
 
 <a name="putOrganizationsMe"></a>
 
 # **putOrganizationsMe**
 
-
-
-> [Organization](Organization.html) putOrganizationsMe(body)
+> [Organization](Organization.md) putOrganizationsMe(body)
 
 Update organization.
 
+Wraps PUT /api/v2/organizations/me
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/organizations/me  
-
-Requires ANY permissions: 
-
-* directory:organization:admin
+- directory:organization:admin
 
 ### Example
 
@@ -945,16 +868,15 @@ try {
 
 ### Parameters
 
+| Name     | Type                                | Description  | Notes      |
+| -------- | ----------------------------------- | ------------ | ---------- |
+| **body** | [**Organization**](Organization.md) | Organization | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**Organization**](Organization.html)| Organization | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Organization**](Organization.html)
+[**Organization**](Organization.md)
 
 <a name="putOrganizationsWhitelist"></a>
 
@@ -962,17 +884,15 @@ try {
 
 <span style="background-color: #f0ad4e;display: inline-block;padding: 7px;font-weight: bold;line-height: 1;color: #ffffff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;margin: 10px 0;">DEPRECATED</span>
 
-> [OrgWhitelistSettings](OrgWhitelistSettings.html) putOrganizationsWhitelist(body)
+> [OrgWhitelistSettings](OrgWhitelistSettings.md) putOrganizationsWhitelist(body)
 
 Use PUT /api/v2/organizations/embeddedintegration instead
 
+Wraps PUT /api/v2/organizations/whitelist
 
+Requires ANY permissions:
 
-Wraps PUT /api/v2/organizations/whitelist  
-
-Requires ANY permissions: 
-
-* directory:organization:admin
+- directory:organization:admin
 
 ### Example
 
@@ -1008,14 +928,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                | Description        | Notes |
+| -------- | --------------------------------------------------- | ------------------ | ----- |
+| **body** | [**OrgWhitelistSettings**](OrgWhitelistSettings.md) | Whitelist settings |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**OrgWhitelistSettings**](OrgWhitelistSettings.html)| Whitelist settings | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OrgWhitelistSettings**](OrgWhitelistSettings.html)
-
+[**OrgWhitelistSettings**](OrgWhitelistSettings.md)

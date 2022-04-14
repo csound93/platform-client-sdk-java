@@ -1,18 +1,16 @@
 ---
 title: AssessmentListing
 ---
-## AssessmentListing
 
+## AssessmentListing
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **entities** | <!----><!---->[**List&lt;BenefitAssessment&gt;**](BenefitAssessment.html)<!----> |  |  [optional] |
-| **nextUri** | <!----><!---->**String**<!----> |  |  [optional] |
-| **selfUri** | <!----><!---->**String**<!----> |  |  [optional] |
-| **previousUri** | <!----><!---->**String**<!----> |  |  [optional] |
+| Name            | Type                                                                           | Description | Notes      |
+| --------------- | ------------------------------------------------------------------------------ | ----------- | ---------- |
+| **entities**    | <!----><!---->[**List&lt;BenefitAssessment&gt;**](BenefitAssessment.md)<!----> |             | [optional] |
+| **nextUri**     | <!----><!---->**String**<!---->                                                |             | [optional] |
+| **selfUri**     | <!----><!---->**String**<!---->                                                |             | [optional] |
+| **previousUri** | <!----><!---->**String**<!---->                                                |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

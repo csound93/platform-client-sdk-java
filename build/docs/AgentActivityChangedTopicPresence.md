@@ -1,17 +1,15 @@
 ---
 title: AgentActivityChangedTopicPresence
 ---
-## AgentActivityChangedTopicPresence
 
+## AgentActivityChangedTopicPresence
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **presenceDefinition** | <!----><!---->[**AgentActivityChangedTopicOrganizationPresence**](AgentActivityChangedTopicOrganizationPresence.html)<!----> |  |  [optional] |
-| **presenceMessage** | <!----><!---->**String**<!----> |  |  [optional] |
-| **modifiedDate** | <!----><!---->[**Date**](Date.html)<!----> |  |  [optional] |
+| Name                   | Type                                                                                                                       | Description | Notes      |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **presenceDefinition** | <!----><!---->[**AgentActivityChangedTopicOrganizationPresence**](AgentActivityChangedTopicOrganizationPresence.md)<!----> |             | [optional] |
+| **presenceMessage**    | <!----><!---->**String**<!---->                                                                                            |             | [optional] |
+| **modifiedDate**       | <!----><!---->[**Date**](Date.md)<!---->                                                                                   |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

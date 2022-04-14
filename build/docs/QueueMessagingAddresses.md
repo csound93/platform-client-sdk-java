@@ -1,15 +1,13 @@
 ---
 title: QueueMessagingAddresses
 ---
-## QueueMessagingAddresses
 
+## QueueMessagingAddresses
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **smsAddress** | <!----><!---->[**DomainEntityRef**](DomainEntityRef.html)<!----> |  |  [optional] |
+| Name           | Type                                                           | Description | Notes      |
+| -------------- | -------------------------------------------------------------- | ----------- | ---------- |
+| **smsAddress** | <!----><!---->[**DomainEntityRef**](DomainEntityRef.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

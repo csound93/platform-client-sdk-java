@@ -1,57 +1,55 @@
 ---
 title: JourneyApi
 ---
+
 ## JourneyApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteJourneyActionmap**](JourneyApi.html#deleteJourneyActionmap) | Delete single action map. |
-| [**deleteJourneyActiontemplate**](JourneyApi.html#deleteJourneyActiontemplate) | Delete a single action template. |
-| [**deleteJourneyOutcome**](JourneyApi.html#deleteJourneyOutcome) | Delete an outcome. |
-| [**deleteJourneySegment**](JourneyApi.html#deleteJourneySegment) | Delete a segment. |
-| [**getJourneyActionmap**](JourneyApi.html#getJourneyActionmap) | Retrieve a single action map. |
-| [**getJourneyActionmaps**](JourneyApi.html#getJourneyActionmaps) | Retrieve all action maps. |
-| [**getJourneyActiontarget**](JourneyApi.html#getJourneyActiontarget) | Retrieve a single action target. |
-| [**getJourneyActiontargets**](JourneyApi.html#getJourneyActiontargets) | Retrieve all action targets. |
-| [**getJourneyActiontemplate**](JourneyApi.html#getJourneyActiontemplate) | Retrieve a single action template. |
-| [**getJourneyActiontemplates**](JourneyApi.html#getJourneyActiontemplates) | Retrieve all action templates. |
-| [**getJourneyOutcome**](JourneyApi.html#getJourneyOutcome) | Retrieve a single outcome. |
-| [**getJourneyOutcomes**](JourneyApi.html#getJourneyOutcomes) | Retrieve all outcomes. |
-| [**getJourneySegment**](JourneyApi.html#getJourneySegment) | Retrieve a single segment. |
-| [**getJourneySegments**](JourneyApi.html#getJourneySegments) | Retrieve all segments. |
-| [**getJourneySession**](JourneyApi.html#getJourneySession) | Retrieve a single session. |
-| [**getJourneySessionOutcomescores**](JourneyApi.html#getJourneySessionOutcomescores) | Retrieve latest outcome score associated with a session for all outcomes. |
-| [**patchJourneyActionmap**](JourneyApi.html#patchJourneyActionmap) | Update single action map. |
-| [**patchJourneyActiontarget**](JourneyApi.html#patchJourneyActiontarget) | Update a single action target. |
-| [**patchJourneyActiontemplate**](JourneyApi.html#patchJourneyActiontemplate) | Update a single action template. |
-| [**patchJourneyOutcome**](JourneyApi.html#patchJourneyOutcome) | Update an outcome. |
-| [**patchJourneySegment**](JourneyApi.html#patchJourneySegment) | Update a segment. |
-| [**postAnalyticsJourneysAggregatesQuery**](JourneyApi.html#postAnalyticsJourneysAggregatesQuery) | Query for journey aggregates |
-| [**postJourneyActionmaps**](JourneyApi.html#postJourneyActionmaps) | Create an action map. |
-| [**postJourneyActiontemplates**](JourneyApi.html#postJourneyActiontemplates) | Create a single action template. |
-| [**postJourneyOutcomes**](JourneyApi.html#postJourneyOutcomes) | Create an outcome. |
-| [**postJourneySegments**](JourneyApi.html#postJourneySegments) | Create a segment. |
+| Method                                                                                         | Description                                                               |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| [**deleteJourneyActionmap**](JourneyApi.md#deleteJourneyActionmap)                             | Delete single action map.                                                 |
+| [**deleteJourneyActiontemplate**](JourneyApi.md#deleteJourneyActiontemplate)                   | Delete a single action template.                                          |
+| [**deleteJourneyOutcome**](JourneyApi.md#deleteJourneyOutcome)                                 | Delete an outcome.                                                        |
+| [**deleteJourneySegment**](JourneyApi.md#deleteJourneySegment)                                 | Delete a segment.                                                         |
+| [**getJourneyActionmap**](JourneyApi.md#getJourneyActionmap)                                   | Retrieve a single action map.                                             |
+| [**getJourneyActionmaps**](JourneyApi.md#getJourneyActionmaps)                                 | Retrieve all action maps.                                                 |
+| [**getJourneyActiontarget**](JourneyApi.md#getJourneyActiontarget)                             | Retrieve a single action target.                                          |
+| [**getJourneyActiontargets**](JourneyApi.md#getJourneyActiontargets)                           | Retrieve all action targets.                                              |
+| [**getJourneyActiontemplate**](JourneyApi.md#getJourneyActiontemplate)                         | Retrieve a single action template.                                        |
+| [**getJourneyActiontemplates**](JourneyApi.md#getJourneyActiontemplates)                       | Retrieve all action templates.                                            |
+| [**getJourneyOutcome**](JourneyApi.md#getJourneyOutcome)                                       | Retrieve a single outcome.                                                |
+| [**getJourneyOutcomes**](JourneyApi.md#getJourneyOutcomes)                                     | Retrieve all outcomes.                                                    |
+| [**getJourneySegment**](JourneyApi.md#getJourneySegment)                                       | Retrieve a single segment.                                                |
+| [**getJourneySegments**](JourneyApi.md#getJourneySegments)                                     | Retrieve all segments.                                                    |
+| [**getJourneySession**](JourneyApi.md#getJourneySession)                                       | Retrieve a single session.                                                |
+| [**getJourneySessionOutcomescores**](JourneyApi.md#getJourneySessionOutcomescores)             | Retrieve latest outcome score associated with a session for all outcomes. |
+| [**patchJourneyActionmap**](JourneyApi.md#patchJourneyActionmap)                               | Update single action map.                                                 |
+| [**patchJourneyActiontarget**](JourneyApi.md#patchJourneyActiontarget)                         | Update a single action target.                                            |
+| [**patchJourneyActiontemplate**](JourneyApi.md#patchJourneyActiontemplate)                     | Update a single action template.                                          |
+| [**patchJourneyOutcome**](JourneyApi.md#patchJourneyOutcome)                                   | Update an outcome.                                                        |
+| [**patchJourneySegment**](JourneyApi.md#patchJourneySegment)                                   | Update a segment.                                                         |
+| [**postAnalyticsJourneysAggregatesQuery**](JourneyApi.md#postAnalyticsJourneysAggregatesQuery) | Query for journey aggregates                                              |
+| [**postJourneyActionmaps**](JourneyApi.md#postJourneyActionmaps)                               | Create an action map.                                                     |
+| [**postJourneyActiontemplates**](JourneyApi.md#postJourneyActiontemplates)                     | Create a single action template.                                          |
+| [**postJourneyOutcomes**](JourneyApi.md#postJourneyOutcomes)                                   | Create an outcome.                                                        |
+| [**postJourneySegments**](JourneyApi.md#postJourneySegments)                                   | Create a segment.                                                         |
+
 {: class="table-striped"}
 
 <a name="deleteJourneyActionmap"></a>
 
 # **deleteJourneyActionmap**
 
-
-
 > Void deleteJourneyActionmap(actionMapId)
 
 Delete single action map.
 
+Wraps DELETE /api/v2/journey/actionmaps/{actionMapId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/journey/actionmaps/{actionMapId}  
-
-Requires ANY permissions: 
-
-* journey:actionmap:delete
+- journey:actionmap:delete
 
 ### Example
 
@@ -86,12 +84,11 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description           | Notes |
+| --------------- | ---------- | --------------------- | ----- |
+| **actionMapId** | **String** | ID of the action map. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionMapId** | **String**| ID of the action map. | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -101,19 +98,15 @@ null (empty response body)
 
 # **deleteJourneyActiontemplate**
 
-
-
 > Void deleteJourneyActiontemplate(actionTemplateId, hardDelete)
 
 Delete a single action template.
 
+Wraps DELETE /api/v2/journey/actiontemplates/{actionTemplateId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/journey/actiontemplates/{actionTemplateId}  
-
-Requires ANY permissions: 
-
-* journey:actiontemplate:delete
+- journey:actiontemplate:delete
 
 ### Example
 
@@ -149,13 +142,12 @@ try {
 
 ### Parameters
 
+| Name                 | Type        | Description                                                                                                                                                                  | Notes      |
+| -------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| **actionTemplateId** | **String**  | ID of the action template.                                                                                                                                                   |
+| **hardDelete**       | **Boolean** | Determines whether Action Template should be soft-deleted (have it&#39;s state set to deleted) or hard-deleted (permanently removed). Set to false (soft-delete) by default. | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionTemplateId** | **String**| ID of the action template. | 
-| **hardDelete** | **Boolean**| Determines whether Action Template should be soft-deleted (have it&#39;s state set to deleted) or hard-deleted (permanently removed). Set to false (soft-delete) by default. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -165,19 +157,15 @@ null (empty response body)
 
 # **deleteJourneyOutcome**
 
-
-
 > Void deleteJourneyOutcome(outcomeId)
 
 Delete an outcome.
 
+Wraps DELETE /api/v2/journey/outcomes/{outcomeId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/journey/outcomes/{outcomeId}  
-
-Requires ANY permissions: 
-
-* journey:outcome:delete
+- journey:outcome:delete
 
 ### Example
 
@@ -212,12 +200,11 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description        | Notes |
+| ------------- | ---------- | ------------------ | ----- |
+| **outcomeId** | **String** | ID of the outcome. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **outcomeId** | **String**| ID of the outcome. | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -227,19 +214,15 @@ null (empty response body)
 
 # **deleteJourneySegment**
 
-
-
 > Void deleteJourneySegment(segmentId)
 
 Delete a segment.
 
+Wraps DELETE /api/v2/journey/segments/{segmentId}
 
+Requires ANY permissions:
 
-Wraps DELETE /api/v2/journey/segments/{segmentId}  
-
-Requires ANY permissions: 
-
-* journey:segment:delete
+- journey:segment:delete
 
 ### Example
 
@@ -274,12 +257,11 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description        | Notes |
+| ------------- | ---------- | ------------------ | ----- |
+| **segmentId** | **String** | ID of the segment. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **segmentId** | **String**| ID of the segment. | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -289,19 +271,15 @@ null (empty response body)
 
 # **getJourneyActionmap**
 
-
-
-> [ActionMap](ActionMap.html) getJourneyActionmap(actionMapId)
+> [ActionMap](ActionMap.md) getJourneyActionmap(actionMapId)
 
 Retrieve a single action map.
 
+Wraps GET /api/v2/journey/actionmaps/{actionMapId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/journey/actionmaps/{actionMapId}  
-
-Requires ANY permissions: 
-
-* journey:actionmap:view
+- journey:actionmap:view
 
 ### Example
 
@@ -337,34 +315,29 @@ try {
 
 ### Parameters
 
+| Name            | Type       | Description           | Notes |
+| --------------- | ---------- | --------------------- | ----- |
+| **actionMapId** | **String** | ID of the action map. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionMapId** | **String**| ID of the action map. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ActionMap**](ActionMap.html)
+[**ActionMap**](ActionMap.md)
 
 <a name="getJourneyActionmaps"></a>
 
 # **getJourneyActionmaps**
 
-
-
-> [ActionMapListing](ActionMapListing.html) getJourneyActionmaps(pageNumber, pageSize, sortBy, filterField, filterValue, actionMapIds, queryFields, queryValue)
+> [ActionMapListing](ActionMapListing.md) getJourneyActionmaps(pageNumber, pageSize, sortBy, filterField, filterValue, actionMapIds, queryFields, queryValue)
 
 Retrieve all action maps.
 
+Wraps GET /api/v2/journey/actionmaps
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/journey/actionmaps  
-
-Requires ANY permissions: 
-
-* journey:actionmap:view
+- journey:actionmap:view
 
 ### Example
 
@@ -407,41 +380,36 @@ try {
 
 ### Parameters
 
+| Name             | Type                                | Description                                                                                                                                                                  | Notes                      |
+| ---------------- | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| **pageNumber**   | **Integer**                         | Page number                                                                                                                                                                  | [optional] [default to 1]  |
+| **pageSize**     | **Integer**                         | Page size                                                                                                                                                                    | [optional] [default to 25] |
+| **sortBy**       | **String**                          | Field(s) to sort by. Prefix with &#39;-&#39; for descending (e.g. sortBy=displayName,-createdDate).                                                                          | [optional]                 |
+| **filterField**  | **String**                          | Field to filter by (e.g. filterField=weight or filterField=action.actionTemplate.id). Requires &#39;filterField&#39; to also be set.                                         | [optional]                 |
+| **filterValue**  | **String**                          | Value to filter by. Requires &#39;filterValue&#39; to also be set.                                                                                                           | [optional]                 |
+| **actionMapIds** | [**List&lt;String&gt;**](String.md) | IDs of action maps to return. Use of this parameter is not compatible with pagination, filtering, sorting or querying. A maximum of 100 action maps are allowed per request. | [optional]                 |
+| **queryFields**  | [**List&lt;String&gt;**](String.md) | Action Map field(s) to query on. Requires &#39;queryValue&#39; to also be set.                                                                                               | [optional]                 |
+| **queryValue**   | **String**                          | Value to query on. Requires &#39;queryFields&#39; to also be set.                                                                                                            | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **sortBy** | **String**| Field(s) to sort by. Prefix with &#39;-&#39; for descending (e.g. sortBy=displayName,-createdDate). | [optional] 
-| **filterField** | **String**| Field to filter by (e.g. filterField=weight or filterField=action.actionTemplate.id). Requires &#39;filterField&#39; to also be set. | [optional] 
-| **filterValue** | **String**| Value to filter by. Requires &#39;filterValue&#39; to also be set. | [optional] 
-| **actionMapIds** | [**List&lt;String&gt;**](String.html)| IDs of action maps to return. Use of this parameter is not compatible with pagination, filtering, sorting or querying. A maximum of 100 action maps are allowed per request. | [optional] 
-| **queryFields** | [**List&lt;String&gt;**](String.html)| Action Map field(s) to query on. Requires &#39;queryValue&#39; to also be set. | [optional] 
-| **queryValue** | **String**| Value to query on. Requires &#39;queryFields&#39; to also be set. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ActionMapListing**](ActionMapListing.html)
+[**ActionMapListing**](ActionMapListing.md)
 
 <a name="getJourneyActiontarget"></a>
 
 # **getJourneyActiontarget**
 
-
-
-> [ActionTarget](ActionTarget.html) getJourneyActiontarget(actionTargetId)
+> [ActionTarget](ActionTarget.md) getJourneyActiontarget(actionTargetId)
 
 Retrieve a single action target.
 
+Wraps GET /api/v2/journey/actiontargets/{actionTargetId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/journey/actiontargets/{actionTargetId}  
-
-Requires ANY permissions: 
-
-* journey:actiontarget:view
+- journey:actiontarget:view
 
 ### Example
 
@@ -477,34 +445,29 @@ try {
 
 ### Parameters
 
+| Name               | Type       | Description              | Notes |
+| ------------------ | ---------- | ------------------------ | ----- |
+| **actionTargetId** | **String** | ID of the action target. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionTargetId** | **String**| ID of the action target. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ActionTarget**](ActionTarget.html)
+[**ActionTarget**](ActionTarget.md)
 
 <a name="getJourneyActiontargets"></a>
 
 # **getJourneyActiontargets**
 
-
-
-> [ActionTargetListing](ActionTargetListing.html) getJourneyActiontargets(pageNumber, pageSize)
+> [ActionTargetListing](ActionTargetListing.md) getJourneyActiontargets(pageNumber, pageSize)
 
 Retrieve all action targets.
 
+Wraps GET /api/v2/journey/actiontargets
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/journey/actiontargets  
-
-Requires ANY permissions: 
-
-* journey:actiontarget:view
+- journey:actiontarget:view
 
 ### Example
 
@@ -541,35 +504,30 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ActionTargetListing**](ActionTargetListing.html)
+[**ActionTargetListing**](ActionTargetListing.md)
 
 <a name="getJourneyActiontemplate"></a>
 
 # **getJourneyActiontemplate**
 
-
-
-> [ActionTemplate](ActionTemplate.html) getJourneyActiontemplate(actionTemplateId)
+> [ActionTemplate](ActionTemplate.md) getJourneyActiontemplate(actionTemplateId)
 
 Retrieve a single action template.
 
+Wraps GET /api/v2/journey/actiontemplates/{actionTemplateId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/journey/actiontemplates/{actionTemplateId}  
-
-Requires ANY permissions: 
-
-* journey:actiontemplate:view
+- journey:actiontemplate:view
 
 ### Example
 
@@ -605,34 +563,29 @@ try {
 
 ### Parameters
 
+| Name                 | Type       | Description                | Notes |
+| -------------------- | ---------- | -------------------------- | ----- |
+| **actionTemplateId** | **String** | ID of the action template. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionTemplateId** | **String**| ID of the action template. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ActionTemplate**](ActionTemplate.html)
+[**ActionTemplate**](ActionTemplate.md)
 
 <a name="getJourneyActiontemplates"></a>
 
 # **getJourneyActiontemplates**
 
-
-
-> [ActionTemplateListing](ActionTemplateListing.html) getJourneyActiontemplates(pageNumber, pageSize, sortBy, mediaType, state, queryFields, queryValue)
+> [ActionTemplateListing](ActionTemplateListing.md) getJourneyActiontemplates(pageNumber, pageSize, sortBy, mediaType, state, queryFields, queryValue)
 
 Retrieve all action templates.
 
+Wraps GET /api/v2/journey/actiontemplates
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/journey/actiontemplates  
-
-Requires ANY permissions: 
-
-* journey:actiontemplate:view
+- journey:actiontemplate:view
 
 ### Example
 
@@ -674,40 +627,35 @@ try {
 
 ### Parameters
 
+| Name            | Type                                | Description                                                                                  | Notes                                                                                                              |
+| --------------- | ----------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **pageNumber**  | **Integer**                         | Page number                                                                                  | [optional] [default to 1]                                                                                          |
+| **pageSize**    | **Integer**                         | Page size                                                                                    | [optional] [default to 25]                                                                                         |
+| **sortBy**      | **String**                          | Field(s) to sort by. Prefix with &#39;-&#39; for descending (e.g. sortBy=name,-createdDate). | [optional]                                                                                                         |
+| **mediaType**   | **String**                          | Media type                                                                                   | [optional]<br />**Values**: webchat, webMessagingOffer, contentOffer, integrationAction, architectFlow, openAction |
+| **state**       | **String**                          | Action template state.                                                                       | [optional]<br />**Values**: Active, Inactive, Deleted                                                              |
+| **queryFields** | [**List&lt;String&gt;**](String.md) | ActionTemplate field(s) to query on. Requires &#39;queryValue&#39; to also be set.           | [optional]                                                                                                         |
+| **queryValue**  | **String**                          | Value to query on. Requires &#39;queryFields&#39; to also be set.                            | [optional]                                                                                                         |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **sortBy** | **String**| Field(s) to sort by. Prefix with &#39;-&#39; for descending (e.g. sortBy=name,-createdDate). | [optional] 
-| **mediaType** | **String**| Media type | [optional]<br />**Values**: webchat, webMessagingOffer, contentOffer, integrationAction, architectFlow, openAction 
-| **state** | **String**| Action template state. | [optional]<br />**Values**: Active, Inactive, Deleted 
-| **queryFields** | [**List&lt;String&gt;**](String.html)| ActionTemplate field(s) to query on. Requires &#39;queryValue&#39; to also be set. | [optional] 
-| **queryValue** | **String**| Value to query on. Requires &#39;queryFields&#39; to also be set. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ActionTemplateListing**](ActionTemplateListing.html)
+[**ActionTemplateListing**](ActionTemplateListing.md)
 
 <a name="getJourneyOutcome"></a>
 
 # **getJourneyOutcome**
 
-
-
-> [Outcome](Outcome.html) getJourneyOutcome(outcomeId)
+> [Outcome](Outcome.md) getJourneyOutcome(outcomeId)
 
 Retrieve a single outcome.
 
+Wraps GET /api/v2/journey/outcomes/{outcomeId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/journey/outcomes/{outcomeId}  
-
-Requires ANY permissions: 
-
-* journey:outcome:view
+- journey:outcome:view
 
 ### Example
 
@@ -743,34 +691,29 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description        | Notes |
+| ------------- | ---------- | ------------------ | ----- |
+| **outcomeId** | **String** | ID of the outcome. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **outcomeId** | **String**| ID of the outcome. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Outcome**](Outcome.html)
+[**Outcome**](Outcome.md)
 
 <a name="getJourneyOutcomes"></a>
 
 # **getJourneyOutcomes**
 
-
-
-> [OutcomeListing](OutcomeListing.html) getJourneyOutcomes(pageNumber, pageSize, sortBy, outcomeIds, queryFields, queryValue)
+> [OutcomeListing](OutcomeListing.md) getJourneyOutcomes(pageNumber, pageSize, sortBy, outcomeIds, queryFields, queryValue)
 
 Retrieve all outcomes.
 
+Wraps GET /api/v2/journey/outcomes
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/journey/outcomes  
-
-Requires ANY permissions: 
-
-* journey:outcome:view
+- journey:outcome:view
 
 ### Example
 
@@ -811,39 +754,34 @@ try {
 
 ### Parameters
 
+| Name            | Type                                | Description                                                                                                                                                                         | Notes                      |
+| --------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| **pageNumber**  | **Integer**                         | Page number                                                                                                                                                                         | [optional] [default to 1]  |
+| **pageSize**    | **Integer**                         | Page size                                                                                                                                                                           | [optional] [default to 25] |
+| **sortBy**      | **String**                          | Field(s) to sort by. The response can be sorted by any first level property on the Outcome response. Prefix with &#39;-&#39; for descending (e.g. sortBy=displayName,-createdDate). | [optional]                 |
+| **outcomeIds**  | [**List&lt;String&gt;**](String.md) | IDs of outcomes to return. Use of this parameter is not compatible with pagination, sorting or querying. A maximum of 20 outcomes are allowed per request.                          | [optional]                 |
+| **queryFields** | [**List&lt;String&gt;**](String.md) | Outcome field(s) to query on. Requires &#39;queryValue&#39; to also be set.                                                                                                         | [optional]                 |
+| **queryValue**  | **String**                          | Value to query on. Requires &#39;queryFields&#39; to also be set.                                                                                                                   | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **sortBy** | **String**| Field(s) to sort by. The response can be sorted by any first level property on the Outcome response. Prefix with &#39;-&#39; for descending (e.g. sortBy=displayName,-createdDate). | [optional] 
-| **outcomeIds** | [**List&lt;String&gt;**](String.html)| IDs of outcomes to return. Use of this parameter is not compatible with pagination, sorting or querying. A maximum of 20 outcomes are allowed per request. | [optional] 
-| **queryFields** | [**List&lt;String&gt;**](String.html)| Outcome field(s) to query on. Requires &#39;queryValue&#39; to also be set. | [optional] 
-| **queryValue** | **String**| Value to query on. Requires &#39;queryFields&#39; to also be set. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OutcomeListing**](OutcomeListing.html)
+[**OutcomeListing**](OutcomeListing.md)
 
 <a name="getJourneySegment"></a>
 
 # **getJourneySegment**
 
-
-
-> [JourneySegment](JourneySegment.html) getJourneySegment(segmentId)
+> [JourneySegment](JourneySegment.md) getJourneySegment(segmentId)
 
 Retrieve a single segment.
 
+Wraps GET /api/v2/journey/segments/{segmentId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/journey/segments/{segmentId}  
-
-Requires ANY permissions: 
-
-* journey:segment:view
+- journey:segment:view
 
 ### Example
 
@@ -879,34 +817,29 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description        | Notes |
+| ------------- | ---------- | ------------------ | ----- |
+| **segmentId** | **String** | ID of the segment. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **segmentId** | **String**| ID of the segment. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JourneySegment**](JourneySegment.html)
+[**JourneySegment**](JourneySegment.md)
 
 <a name="getJourneySegments"></a>
 
 # **getJourneySegments**
 
-
-
-> [SegmentListing](SegmentListing.html) getJourneySegments(sortBy, pageSize, pageNumber, isActive, segmentIds, queryFields, queryValue)
+> [SegmentListing](SegmentListing.md) getJourneySegments(sortBy, pageSize, pageNumber, isActive, segmentIds, queryFields, queryValue)
 
 Retrieve all segments.
 
+Wraps GET /api/v2/journey/segments
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/journey/segments  
-
-Requires ANY permissions: 
-
-* journey:segment:view
+- journey:segment:view
 
 ### Example
 
@@ -948,40 +881,35 @@ try {
 
 ### Parameters
 
+| Name            | Type                                | Description                                                                                                                                                                         | Notes                      |
+| --------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| **sortBy**      | **String**                          | Field(s) to sort by. The response can be sorted by any first level property on the Outcome response. Prefix with &#39;-&#39; for descending (e.g. sortBy=displayName,-createdDate). | [optional]                 |
+| **pageSize**    | **Integer**                         | Page size                                                                                                                                                                           | [optional] [default to 25] |
+| **pageNumber**  | **Integer**                         | Page number                                                                                                                                                                         | [optional] [default to 1]  |
+| **isActive**    | **Boolean**                         | Determines whether or not to show only active segments.                                                                                                                             | [optional]                 |
+| **segmentIds**  | [**List&lt;String&gt;**](String.md) | IDs of segments to return. Use of this parameter is not compatible with pagination, sorting or querying. A maximum of 100 segments are allowed per request.                         | [optional]                 |
+| **queryFields** | [**List&lt;String&gt;**](String.md) | Segment field(s) to query on. Requires &#39;queryValue&#39; to also be set.                                                                                                         | [optional]                 |
+| **queryValue**  | **String**                          | Value to query on. Requires &#39;queryFields&#39; to also be set.                                                                                                                   | [optional]                 |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **sortBy** | **String**| Field(s) to sort by. The response can be sorted by any first level property on the Outcome response. Prefix with &#39;-&#39; for descending (e.g. sortBy=displayName,-createdDate). | [optional] 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
-| **isActive** | **Boolean**| Determines whether or not to show only active segments. | [optional] 
-| **segmentIds** | [**List&lt;String&gt;**](String.html)| IDs of segments to return. Use of this parameter is not compatible with pagination, sorting or querying. A maximum of 100 segments are allowed per request. | [optional] 
-| **queryFields** | [**List&lt;String&gt;**](String.html)| Segment field(s) to query on. Requires &#39;queryValue&#39; to also be set. | [optional] 
-| **queryValue** | **String**| Value to query on. Requires &#39;queryFields&#39; to also be set. | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**SegmentListing**](SegmentListing.html)
+[**SegmentListing**](SegmentListing.md)
 
 <a name="getJourneySession"></a>
 
 # **getJourneySession**
 
-
-
-> [Session](Session.html) getJourneySession(sessionId)
+> [Session](Session.md) getJourneySession(sessionId)
 
 Retrieve a single session.
 
+Wraps GET /api/v2/journey/sessions/{sessionId}
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/journey/sessions/{sessionId}  
-
-Requires ANY permissions: 
-
-* journey:session:view
+- journey:session:view
 
 ### Example
 
@@ -1017,34 +945,29 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description        | Notes |
+| ------------- | ---------- | ------------------ | ----- |
+| **sessionId** | **String** | ID of the session. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **sessionId** | **String**| ID of the session. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Session**](Session.html)
+[**Session**](Session.md)
 
 <a name="getJourneySessionOutcomescores"></a>
 
 # **getJourneySessionOutcomescores**
 
-
-
-> [OutcomeScoresResult](OutcomeScoresResult.html) getJourneySessionOutcomescores(sessionId)
+> [OutcomeScoresResult](OutcomeScoresResult.md) getJourneySessionOutcomescores(sessionId)
 
 Retrieve latest outcome score associated with a session for all outcomes.
 
+Wraps GET /api/v2/journey/sessions/{sessionId}/outcomescores
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/journey/sessions/{sessionId}/outcomescores  
-
-Requires ANY permissions: 
-
-* journey:outcomescores:view
+- journey:outcomescores:view
 
 ### Example
 
@@ -1080,34 +1003,29 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description        | Notes |
+| ------------- | ---------- | ------------------ | ----- |
+| **sessionId** | **String** | ID of the session. |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **sessionId** | **String**| ID of the session. | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**OutcomeScoresResult**](OutcomeScoresResult.html)
+[**OutcomeScoresResult**](OutcomeScoresResult.md)
 
 <a name="patchJourneyActionmap"></a>
 
 # **patchJourneyActionmap**
 
-
-
-> [ActionMap](ActionMap.html) patchJourneyActionmap(actionMapId, body)
+> [ActionMap](ActionMap.md) patchJourneyActionmap(actionMapId, body)
 
 Update single action map.
 
+Wraps PATCH /api/v2/journey/actionmaps/{actionMapId}
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/journey/actionmaps/{actionMapId}  
-
-Requires ANY permissions: 
-
-* journey:actionmap:edit
+- journey:actionmap:edit
 
 ### Example
 
@@ -1132,7 +1050,7 @@ Configuration.setDefaultApiClient(apiClient);
 
 JourneyApi apiInstance = new JourneyApi();
 String actionMapId = "actionMapId_example"; // String | ID of the action map.
-PatchActionMap body = new PatchActionMap(); // PatchActionMap | 
+PatchActionMap body = new PatchActionMap(); // PatchActionMap |
 try {
     ActionMap result = apiInstance.patchJourneyActionmap(actionMapId, body);
     System.out.println(result);
@@ -1144,35 +1062,30 @@ try {
 
 ### Parameters
 
+| Name            | Type                                    | Description           | Notes      |
+| --------------- | --------------------------------------- | --------------------- | ---------- |
+| **actionMapId** | **String**                              | ID of the action map. |
+| **body**        | [**PatchActionMap**](PatchActionMap.md) |                       | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionMapId** | **String**| ID of the action map. | 
-| **body** | [**PatchActionMap**](PatchActionMap.html)|  | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ActionMap**](ActionMap.html)
+[**ActionMap**](ActionMap.md)
 
 <a name="patchJourneyActiontarget"></a>
 
 # **patchJourneyActiontarget**
 
-
-
-> [ActionTarget](ActionTarget.html) patchJourneyActiontarget(actionTargetId, body)
+> [ActionTarget](ActionTarget.md) patchJourneyActiontarget(actionTargetId, body)
 
 Update a single action target.
 
+Wraps PATCH /api/v2/journey/actiontargets/{actionTargetId}
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/journey/actiontargets/{actionTargetId}  
-
-Requires ANY permissions: 
-
-* journey:actiontarget:edit
+- journey:actiontarget:edit
 
 ### Example
 
@@ -1197,7 +1110,7 @@ Configuration.setDefaultApiClient(apiClient);
 
 JourneyApi apiInstance = new JourneyApi();
 String actionTargetId = "actionTargetId_example"; // String | ID of the action target.
-PatchActionTarget body = new PatchActionTarget(); // PatchActionTarget | 
+PatchActionTarget body = new PatchActionTarget(); // PatchActionTarget |
 try {
     ActionTarget result = apiInstance.patchJourneyActiontarget(actionTargetId, body);
     System.out.println(result);
@@ -1209,35 +1122,30 @@ try {
 
 ### Parameters
 
+| Name               | Type                                          | Description              | Notes      |
+| ------------------ | --------------------------------------------- | ------------------------ | ---------- |
+| **actionTargetId** | **String**                                    | ID of the action target. |
+| **body**           | [**PatchActionTarget**](PatchActionTarget.md) |                          | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionTargetId** | **String**| ID of the action target. | 
-| **body** | [**PatchActionTarget**](PatchActionTarget.html)|  | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ActionTarget**](ActionTarget.html)
+[**ActionTarget**](ActionTarget.md)
 
 <a name="patchJourneyActiontemplate"></a>
 
 # **patchJourneyActiontemplate**
 
-
-
-> [ActionTemplate](ActionTemplate.html) patchJourneyActiontemplate(actionTemplateId, body)
+> [ActionTemplate](ActionTemplate.md) patchJourneyActiontemplate(actionTemplateId, body)
 
 Update a single action template.
 
+Wraps PATCH /api/v2/journey/actiontemplates/{actionTemplateId}
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/journey/actiontemplates/{actionTemplateId}  
-
-Requires ANY permissions: 
-
-* journey:actiontemplate:edit
+- journey:actiontemplate:edit
 
 ### Example
 
@@ -1262,7 +1170,7 @@ Configuration.setDefaultApiClient(apiClient);
 
 JourneyApi apiInstance = new JourneyApi();
 String actionTemplateId = "actionTemplateId_example"; // String | ID of the action template.
-PatchActionTemplate body = new PatchActionTemplate(); // PatchActionTemplate | 
+PatchActionTemplate body = new PatchActionTemplate(); // PatchActionTemplate |
 try {
     ActionTemplate result = apiInstance.patchJourneyActiontemplate(actionTemplateId, body);
     System.out.println(result);
@@ -1274,35 +1182,30 @@ try {
 
 ### Parameters
 
+| Name                 | Type                                              | Description                | Notes      |
+| -------------------- | ------------------------------------------------- | -------------------------- | ---------- |
+| **actionTemplateId** | **String**                                        | ID of the action template. |
+| **body**             | [**PatchActionTemplate**](PatchActionTemplate.md) |                            | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **actionTemplateId** | **String**| ID of the action template. | 
-| **body** | [**PatchActionTemplate**](PatchActionTemplate.html)|  | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ActionTemplate**](ActionTemplate.html)
+[**ActionTemplate**](ActionTemplate.md)
 
 <a name="patchJourneyOutcome"></a>
 
 # **patchJourneyOutcome**
 
-
-
-> [Outcome](Outcome.html) patchJourneyOutcome(outcomeId, body)
+> [Outcome](Outcome.md) patchJourneyOutcome(outcomeId, body)
 
 Update an outcome.
 
+Wraps PATCH /api/v2/journey/outcomes/{outcomeId}
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/journey/outcomes/{outcomeId}  
-
-Requires ANY permissions: 
-
-* journey:outcome:edit
+- journey:outcome:edit
 
 ### Example
 
@@ -1327,7 +1230,7 @@ Configuration.setDefaultApiClient(apiClient);
 
 JourneyApi apiInstance = new JourneyApi();
 String outcomeId = "outcomeId_example"; // String | ID of the outcome.
-PatchOutcome body = new PatchOutcome(); // PatchOutcome | 
+PatchOutcome body = new PatchOutcome(); // PatchOutcome |
 try {
     Outcome result = apiInstance.patchJourneyOutcome(outcomeId, body);
     System.out.println(result);
@@ -1339,35 +1242,30 @@ try {
 
 ### Parameters
 
+| Name          | Type                                | Description        | Notes      |
+| ------------- | ----------------------------------- | ------------------ | ---------- |
+| **outcomeId** | **String**                          | ID of the outcome. |
+| **body**      | [**PatchOutcome**](PatchOutcome.md) |                    | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **outcomeId** | **String**| ID of the outcome. | 
-| **body** | [**PatchOutcome**](PatchOutcome.html)|  | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Outcome**](Outcome.html)
+[**Outcome**](Outcome.md)
 
 <a name="patchJourneySegment"></a>
 
 # **patchJourneySegment**
 
-
-
-> [JourneySegment](JourneySegment.html) patchJourneySegment(segmentId, body)
+> [JourneySegment](JourneySegment.md) patchJourneySegment(segmentId, body)
 
 Update a segment.
 
+Wraps PATCH /api/v2/journey/segments/{segmentId}
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/journey/segments/{segmentId}  
-
-Requires ANY permissions: 
-
-* journey:segment:edit
+- journey:segment:edit
 
 ### Example
 
@@ -1392,7 +1290,7 @@ Configuration.setDefaultApiClient(apiClient);
 
 JourneyApi apiInstance = new JourneyApi();
 String segmentId = "segmentId_example"; // String | ID of the segment.
-PatchSegment body = new PatchSegment(); // PatchSegment | 
+PatchSegment body = new PatchSegment(); // PatchSegment |
 try {
     JourneySegment result = apiInstance.patchJourneySegment(segmentId, body);
     System.out.println(result);
@@ -1404,35 +1302,30 @@ try {
 
 ### Parameters
 
+| Name          | Type                                | Description        | Notes      |
+| ------------- | ----------------------------------- | ------------------ | ---------- |
+| **segmentId** | **String**                          | ID of the segment. |
+| **body**      | [**PatchSegment**](PatchSegment.md) |                    | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **segmentId** | **String**| ID of the segment. | 
-| **body** | [**PatchSegment**](PatchSegment.html)|  | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JourneySegment**](JourneySegment.html)
+[**JourneySegment**](JourneySegment.md)
 
 <a name="postAnalyticsJourneysAggregatesQuery"></a>
 
 # **postAnalyticsJourneysAggregatesQuery**
 
-
-
-> [JourneyAggregateQueryResponse](JourneyAggregateQueryResponse.html) postAnalyticsJourneysAggregatesQuery(body)
+> [JourneyAggregateQueryResponse](JourneyAggregateQueryResponse.md) postAnalyticsJourneysAggregatesQuery(body)
 
 Query for journey aggregates
 
+Wraps POST /api/v2/analytics/journeys/aggregates/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/journeys/aggregates/query  
-
-Requires ANY permissions: 
-
-* analytics:journeyAggregate:view
+- analytics:journeyAggregate:view
 
 ### Example
 
@@ -1468,34 +1361,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                      | Description | Notes |
+| -------- | --------------------------------------------------------- | ----------- | ----- |
+| **body** | [**JourneyAggregationQuery**](JourneyAggregationQuery.md) | query       |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**JourneyAggregationQuery**](JourneyAggregationQuery.html)| query | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JourneyAggregateQueryResponse**](JourneyAggregateQueryResponse.html)
+[**JourneyAggregateQueryResponse**](JourneyAggregateQueryResponse.md)
 
 <a name="postJourneyActionmaps"></a>
 
 # **postJourneyActionmaps**
 
-
-
-> [ActionMap](ActionMap.html) postJourneyActionmaps(body)
+> [ActionMap](ActionMap.md) postJourneyActionmaps(body)
 
 Create an action map.
 
+Wraps POST /api/v2/journey/actionmaps
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/journey/actionmaps  
-
-Requires ANY permissions: 
-
-* journey:actionmap:add
+- journey:actionmap:add
 
 ### Example
 
@@ -1519,7 +1407,7 @@ ApiClient apiClient = ApiClient.Builder.standard()
 Configuration.setDefaultApiClient(apiClient);
 
 JourneyApi apiInstance = new JourneyApi();
-ActionMap body = new ActionMap(); // ActionMap | 
+ActionMap body = new ActionMap(); // ActionMap |
 try {
     ActionMap result = apiInstance.postJourneyActionmaps(body);
     System.out.println(result);
@@ -1531,34 +1419,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                          | Description | Notes      |
+| -------- | ----------------------------- | ----------- | ---------- |
+| **body** | [**ActionMap**](ActionMap.md) |             | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ActionMap**](ActionMap.html)|  | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ActionMap**](ActionMap.html)
+[**ActionMap**](ActionMap.md)
 
 <a name="postJourneyActiontemplates"></a>
 
 # **postJourneyActiontemplates**
 
-
-
-> [ActionTemplate](ActionTemplate.html) postJourneyActiontemplates(body)
+> [ActionTemplate](ActionTemplate.md) postJourneyActiontemplates(body)
 
 Create a single action template.
 
+Wraps POST /api/v2/journey/actiontemplates
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/journey/actiontemplates  
-
-Requires ANY permissions: 
-
-* journey:actiontemplate:add
+- journey:actiontemplate:add
 
 ### Example
 
@@ -1582,7 +1465,7 @@ ApiClient apiClient = ApiClient.Builder.standard()
 Configuration.setDefaultApiClient(apiClient);
 
 JourneyApi apiInstance = new JourneyApi();
-ActionTemplate body = new ActionTemplate(); // ActionTemplate | 
+ActionTemplate body = new ActionTemplate(); // ActionTemplate |
 try {
     ActionTemplate result = apiInstance.postJourneyActiontemplates(body);
     System.out.println(result);
@@ -1594,34 +1477,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                    | Description | Notes      |
+| -------- | --------------------------------------- | ----------- | ---------- |
+| **body** | [**ActionTemplate**](ActionTemplate.md) |             | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**ActionTemplate**](ActionTemplate.html)|  | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**ActionTemplate**](ActionTemplate.html)
+[**ActionTemplate**](ActionTemplate.md)
 
 <a name="postJourneyOutcomes"></a>
 
 # **postJourneyOutcomes**
 
-
-
-> [Outcome](Outcome.html) postJourneyOutcomes(body)
+> [Outcome](Outcome.md) postJourneyOutcomes(body)
 
 Create an outcome.
 
+Wraps POST /api/v2/journey/outcomes
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/journey/outcomes  
-
-Requires ANY permissions: 
-
-* journey:outcome:add
+- journey:outcome:add
 
 ### Example
 
@@ -1645,7 +1523,7 @@ ApiClient apiClient = ApiClient.Builder.standard()
 Configuration.setDefaultApiClient(apiClient);
 
 JourneyApi apiInstance = new JourneyApi();
-Outcome body = new Outcome(); // Outcome | 
+Outcome body = new Outcome(); // Outcome |
 try {
     Outcome result = apiInstance.postJourneyOutcomes(body);
     System.out.println(result);
@@ -1657,34 +1535,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                      | Description | Notes      |
+| -------- | ------------------------- | ----------- | ---------- |
+| **body** | [**Outcome**](Outcome.md) |             | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**Outcome**](Outcome.html)|  | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Outcome**](Outcome.html)
+[**Outcome**](Outcome.md)
 
 <a name="postJourneySegments"></a>
 
 # **postJourneySegments**
 
-
-
-> [JourneySegment](JourneySegment.html) postJourneySegments(body)
+> [JourneySegment](JourneySegment.md) postJourneySegments(body)
 
 Create a segment.
 
+Wraps POST /api/v2/journey/segments
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/journey/segments  
-
-Requires ANY permissions: 
-
-* journey:segment:add
+- journey:segment:add
 
 ### Example
 
@@ -1708,7 +1581,7 @@ ApiClient apiClient = ApiClient.Builder.standard()
 Configuration.setDefaultApiClient(apiClient);
 
 JourneyApi apiInstance = new JourneyApi();
-JourneySegment body = new JourneySegment(); // JourneySegment | 
+JourneySegment body = new JourneySegment(); // JourneySegment |
 try {
     JourneySegment result = apiInstance.postJourneySegments(body);
     System.out.println(result);
@@ -1720,14 +1593,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                                    | Description | Notes      |
+| -------- | --------------------------------------- | ----------- | ---------- |
+| **body** | [**JourneySegment**](JourneySegment.md) |             | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**JourneySegment**](JourneySegment.html)|  | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JourneySegment**](JourneySegment.html)
-
+[**JourneySegment**](JourneySegment.md)

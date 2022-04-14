@@ -1,15 +1,13 @@
 ---
 title: SecureSessionEntityListing
 ---
-## SecureSessionEntityListing
 
+## SecureSessionEntityListing
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **entities** | <!----><!---->[**List&lt;SecureSession&gt;**](SecureSession.html)<!----> |  |  [optional] |
+| Name         | Type                                                                   | Description | Notes      |
+| ------------ | ---------------------------------------------------------------------- | ----------- | ---------- |
+| **entities** | <!----><!---->[**List&lt;SecureSession&gt;**](SecureSession.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

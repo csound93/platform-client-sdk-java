@@ -1,19 +1,17 @@
 ---
 title: CallForwardingEventCallForwarding
 ---
-## CallForwardingEventCallForwarding
 
+## CallForwardingEventCallForwarding
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **user** | <!----><!---->[**CallForwardingEventUser**](CallForwardingEventUser.html)<!----> |  |  [optional] |
-| **enabled** | <!----><!---->**Boolean**<!----> |  |  [optional] |
-| **calls** | <!----><!---->[**List&lt;CallForwardingEventCall&gt;**](CallForwardingEventCall.html)<!----> |  |  [optional] |
-| **voicemail** | <!----><!---->**String**<!----> |  |  [optional] |
-| **modifiedDate** | <!----><!---->[**Date**](Date.html)<!----> |  |  [optional] |
+| Name             | Type                                                                                       | Description | Notes      |
+| ---------------- | ------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| **user**         | <!----><!---->[**CallForwardingEventUser**](CallForwardingEventUser.md)<!---->             |             | [optional] |
+| **enabled**      | <!----><!---->**Boolean**<!---->                                                           |             | [optional] |
+| **calls**        | <!----><!---->[**List&lt;CallForwardingEventCall&gt;**](CallForwardingEventCall.md)<!----> |             | [optional] |
+| **voicemail**    | <!----><!---->**String**<!---->                                                            |             | [optional] |
+| **modifiedDate** | <!----><!---->[**Date**](Date.md)<!---->                                                   |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

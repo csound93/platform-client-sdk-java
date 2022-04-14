@@ -1,15 +1,13 @@
 ---
 title: AnalyticsConversationWithoutAttributesMultiGetResponse
 ---
-## AnalyticsConversationWithoutAttributesMultiGetResponse
 
+## AnalyticsConversationWithoutAttributesMultiGetResponse
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **conversations** | <!----><!---->[**List&lt;AnalyticsConversationWithoutAttributes&gt;**](AnalyticsConversationWithoutAttributes.html)<!----> |  |  [optional] |
+| Name              | Type                                                                                                                     | Description | Notes      |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| **conversations** | <!----><!---->[**List&lt;AnalyticsConversationWithoutAttributes&gt;**](AnalyticsConversationWithoutAttributes.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

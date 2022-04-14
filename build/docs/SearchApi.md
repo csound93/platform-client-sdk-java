@@ -1,49 +1,46 @@
 ---
 title: SearchApi
 ---
+
 ## SearchApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**getDocumentationGknSearch**](SearchApi.html#getDocumentationGknSearch) | Search gkn documentation using the q64 value returned from a previous search |
-| [**getDocumentationSearch**](SearchApi.html#getDocumentationSearch) | Search documentation using the q64 value returned from a previous search |
-| [**getGroupsSearch**](SearchApi.html#getGroupsSearch) | Search groups using the q64 value returned from a previous search |
-| [**getLocationsSearch**](SearchApi.html#getLocationsSearch) | Search locations using the q64 value returned from a previous search |
-| [**getSearch**](SearchApi.html#getSearch) | Search using the q64 value returned from a previous search. |
-| [**getSearchSuggest**](SearchApi.html#getSearchSuggest) | Suggest resources using the q64 value returned from a previous suggest query. |
-| [**getUsersSearch**](SearchApi.html#getUsersSearch) | Search users using the q64 value returned from a previous search |
-| [**getVoicemailSearch**](SearchApi.html#getVoicemailSearch) | Search voicemails using the q64 value returned from a previous search |
-| [**postAnalyticsConversationsTranscriptsQuery**](SearchApi.html#postAnalyticsConversationsTranscriptsQuery) | Search resources. |
-| [**postDocumentationGknSearch**](SearchApi.html#postDocumentationGknSearch) | Search gkn documentation |
-| [**postDocumentationSearch**](SearchApi.html#postDocumentationSearch) | Search documentation |
-| [**postGroupsSearch**](SearchApi.html#postGroupsSearch) | Search groups |
-| [**postKnowledgeKnowledgebaseSearch**](SearchApi.html#postKnowledgeKnowledgebaseSearch) | Search Documents |
-| [**postLocationsSearch**](SearchApi.html#postLocationsSearch) | Search locations |
-| [**postSearch**](SearchApi.html#postSearch) | Search resources. |
-| [**postSearchSuggest**](SearchApi.html#postSearchSuggest) | Suggest resources. |
-| [**postSpeechandtextanalyticsTranscriptsSearch**](SearchApi.html#postSpeechandtextanalyticsTranscriptsSearch) | Search resources. |
-| [**postUsersSearch**](SearchApi.html#postUsersSearch) | Search users |
-| [**postVoicemailSearch**](SearchApi.html#postVoicemailSearch) | Search voicemails |
+| Method                                                                                                      | Description                                                                   |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| [**getDocumentationGknSearch**](SearchApi.md#getDocumentationGknSearch)                                     | Search gkn documentation using the q64 value returned from a previous search  |
+| [**getDocumentationSearch**](SearchApi.md#getDocumentationSearch)                                           | Search documentation using the q64 value returned from a previous search      |
+| [**getGroupsSearch**](SearchApi.md#getGroupsSearch)                                                         | Search groups using the q64 value returned from a previous search             |
+| [**getLocationsSearch**](SearchApi.md#getLocationsSearch)                                                   | Search locations using the q64 value returned from a previous search          |
+| [**getSearch**](SearchApi.md#getSearch)                                                                     | Search using the q64 value returned from a previous search.                   |
+| [**getSearchSuggest**](SearchApi.md#getSearchSuggest)                                                       | Suggest resources using the q64 value returned from a previous suggest query. |
+| [**getUsersSearch**](SearchApi.md#getUsersSearch)                                                           | Search users using the q64 value returned from a previous search              |
+| [**getVoicemailSearch**](SearchApi.md#getVoicemailSearch)                                                   | Search voicemails using the q64 value returned from a previous search         |
+| [**postAnalyticsConversationsTranscriptsQuery**](SearchApi.md#postAnalyticsConversationsTranscriptsQuery)   | Search resources.                                                             |
+| [**postDocumentationGknSearch**](SearchApi.md#postDocumentationGknSearch)                                   | Search gkn documentation                                                      |
+| [**postDocumentationSearch**](SearchApi.md#postDocumentationSearch)                                         | Search documentation                                                          |
+| [**postGroupsSearch**](SearchApi.md#postGroupsSearch)                                                       | Search groups                                                                 |
+| [**postKnowledgeKnowledgebaseSearch**](SearchApi.md#postKnowledgeKnowledgebaseSearch)                       | Search Documents                                                              |
+| [**postLocationsSearch**](SearchApi.md#postLocationsSearch)                                                 | Search locations                                                              |
+| [**postSearch**](SearchApi.md#postSearch)                                                                   | Search resources.                                                             |
+| [**postSearchSuggest**](SearchApi.md#postSearchSuggest)                                                     | Suggest resources.                                                            |
+| [**postSpeechandtextanalyticsTranscriptsSearch**](SearchApi.md#postSpeechandtextanalyticsTranscriptsSearch) | Search resources.                                                             |
+| [**postUsersSearch**](SearchApi.md#postUsersSearch)                                                         | Search users                                                                  |
+| [**postVoicemailSearch**](SearchApi.md#postVoicemailSearch)                                                 | Search voicemails                                                             |
+
 {: class="table-striped"}
 
 <a name="getDocumentationGknSearch"></a>
 
 # **getDocumentationGknSearch**
 
-
-
-> [GKNDocumentationSearchResponse](GKNDocumentationSearchResponse.html) getDocumentationGknSearch(q64)
+> [GKNDocumentationSearchResponse](GKNDocumentationSearchResponse.md) getDocumentationGknSearch(q64)
 
 Search gkn documentation using the q64 value returned from a previous search
 
+Wraps GET /api/v2/documentation/gkn/search
 
-
-Wraps GET /api/v2/documentation/gkn/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -66,33 +63,27 @@ try {
 
 ### Parameters
 
+| Name    | Type       | Description | Notes |
+| ------- | ---------- | ----------- | ----- |
+| **q64** | **String** | q64         |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **q64** | **String**| q64 | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GKNDocumentationSearchResponse**](GKNDocumentationSearchResponse.html)
+[**GKNDocumentationSearchResponse**](GKNDocumentationSearchResponse.md)
 
 <a name="getDocumentationSearch"></a>
 
 # **getDocumentationSearch**
 
-
-
-> [DocumentationSearchResponse](DocumentationSearchResponse.html) getDocumentationSearch(q64)
+> [DocumentationSearchResponse](DocumentationSearchResponse.md) getDocumentationSearch(q64)
 
 Search documentation using the q64 value returned from a previous search
 
+Wraps GET /api/v2/documentation/search
 
-
-Wraps GET /api/v2/documentation/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -115,33 +106,27 @@ try {
 
 ### Parameters
 
+| Name    | Type       | Description | Notes |
+| ------- | ---------- | ----------- | ----- |
+| **q64** | **String** | q64         |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **q64** | **String**| q64 | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DocumentationSearchResponse**](DocumentationSearchResponse.html)
+[**DocumentationSearchResponse**](DocumentationSearchResponse.md)
 
 <a name="getGroupsSearch"></a>
 
 # **getGroupsSearch**
 
-
-
-> [GroupsSearchResponse](GroupsSearchResponse.html) getGroupsSearch(q64, expand)
+> [GroupsSearchResponse](GroupsSearchResponse.md) getGroupsSearch(q64, expand)
 
 Search groups using the q64 value returned from a previous search
 
+Wraps GET /api/v2/groups/search
 
-
-Wraps GET /api/v2/groups/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -178,34 +163,28 @@ try {
 
 ### Parameters
 
+| Name       | Type                                | Description | Notes      |
+| ---------- | ----------------------------------- | ----------- | ---------- |
+| **q64**    | **String**                          | q64         |
+| **expand** | [**List&lt;String&gt;**](String.md) | expand      | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **q64** | **String**| q64 | 
-| **expand** | [**List&lt;String&gt;**](String.html)| expand | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GroupsSearchResponse**](GroupsSearchResponse.html)
+[**GroupsSearchResponse**](GroupsSearchResponse.md)
 
 <a name="getLocationsSearch"></a>
 
 # **getLocationsSearch**
 
-
-
-> [LocationsSearchResponse](LocationsSearchResponse.html) getLocationsSearch(q64, expand)
+> [LocationsSearchResponse](LocationsSearchResponse.md) getLocationsSearch(q64, expand)
 
 Search locations using the q64 value returned from a previous search
 
+Wraps GET /api/v2/locations/search
 
-
-Wraps GET /api/v2/locations/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -242,35 +221,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                | Description                                      | Notes                                                          |
+| ---------- | ----------------------------------- | ------------------------------------------------ | -------------------------------------------------------------- |
+| **q64**    | **String**                          | q64                                              |
+| **expand** | [**List&lt;String&gt;**](String.md) | Provides more details about a specified resource | [optional]<br />**Values**: images, addressVerificationDetails |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **q64** | **String**| q64 | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Provides more details about a specified resource | [optional]<br />**Values**: images, addressVerificationDetails 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LocationsSearchResponse**](LocationsSearchResponse.html)
+[**LocationsSearchResponse**](LocationsSearchResponse.md)
 
 <a name="getSearch"></a>
 
 # **getSearch**
 
-
-
-> [JsonNodeSearchResponse](JsonNodeSearchResponse.html) getSearch(q64, expand, profile)
+> [JsonNodeSearchResponse](JsonNodeSearchResponse.md) getSearch(q64, expand, profile)
 
 Search using the q64 value returned from a previous search.
 
+Wraps GET /api/v2/search
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/search  
-
-Requires ANY permissions: 
-
-* directory:user:view
+- directory:user:view
 
 ### Example
 
@@ -308,36 +282,31 @@ try {
 
 ### Parameters
 
+| Name        | Type                                | Description                     | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ----------- | ----------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **q64**     | **String**                          | q64                             |
+| **expand**  | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand | [optional]<br />**Values**: routingStatus, presence, conversationSummary, outOfOffice, geolocation, station, authorization, lasttokenissued, dateLastLogin, authorization.unusedRoles, team, profileSkills, certifications, locations, groups, skills, languages, languagePreference, employerInfo, biography, callerUser.routingStatus, callerUser.primaryPresence, callerUser.conversationSummary, callerUser.outOfOffice, callerUser.geolocation, images, addressVerificationDetails |
+| **profile** | **Boolean**                         | profile                         | [optional] [default to true]                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **q64** | **String**| q64 | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: routingStatus, presence, conversationSummary, outOfOffice, geolocation, station, authorization, lasttokenissued, dateLastLogin, authorization.unusedRoles, team, profileSkills, certifications, locations, groups, skills, languages, languagePreference, employerInfo, biography, callerUser.routingStatus, callerUser.primaryPresence, callerUser.conversationSummary, callerUser.outOfOffice, callerUser.geolocation, images, addressVerificationDetails 
-| **profile** | **Boolean**| profile | [optional] [default to true] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JsonNodeSearchResponse**](JsonNodeSearchResponse.html)
+[**JsonNodeSearchResponse**](JsonNodeSearchResponse.md)
 
 <a name="getSearchSuggest"></a>
 
 # **getSearchSuggest**
 
-
-
-> [JsonNodeSearchResponse](JsonNodeSearchResponse.html) getSearchSuggest(q64, expand, profile)
+> [JsonNodeSearchResponse](JsonNodeSearchResponse.md) getSearchSuggest(q64, expand, profile)
 
 Suggest resources using the q64 value returned from a previous suggest query.
 
+Wraps GET /api/v2/search/suggest
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/search/suggest  
-
-Requires ANY permissions: 
-
-* directory:user:view
+- directory:user:view
 
 ### Example
 
@@ -375,36 +344,31 @@ try {
 
 ### Parameters
 
+| Name        | Type                                | Description                     | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ----------- | ----------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **q64**     | **String**                          | q64                             |
+| **expand**  | [**List&lt;String&gt;**](String.md) | Which fields, if any, to expand | [optional]<br />**Values**: routingStatus, presence, conversationSummary, outOfOffice, geolocation, station, authorization, lasttokenissued, dateLastLogin, authorization.unusedRoles, team, profileSkills, certifications, locations, groups, skills, languages, languagePreference, employerInfo, biography, callerUser.routingStatus, callerUser.primaryPresence, callerUser.conversationSummary, callerUser.outOfOffice, callerUser.geolocation, images, addressVerificationDetails |
+| **profile** | **Boolean**                         | profile                         | [optional] [default to true]                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **q64** | **String**| q64 | 
-| **expand** | [**List&lt;String&gt;**](String.html)| Which fields, if any, to expand | [optional]<br />**Values**: routingStatus, presence, conversationSummary, outOfOffice, geolocation, station, authorization, lasttokenissued, dateLastLogin, authorization.unusedRoles, team, profileSkills, certifications, locations, groups, skills, languages, languagePreference, employerInfo, biography, callerUser.routingStatus, callerUser.primaryPresence, callerUser.conversationSummary, callerUser.outOfOffice, callerUser.geolocation, images, addressVerificationDetails 
-| **profile** | **Boolean**| profile | [optional] [default to true] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JsonNodeSearchResponse**](JsonNodeSearchResponse.html)
+[**JsonNodeSearchResponse**](JsonNodeSearchResponse.md)
 
 <a name="getUsersSearch"></a>
 
 # **getUsersSearch**
 
-
-
-> [UsersSearchResponse](UsersSearchResponse.html) getUsersSearch(q64, expand, integrationPresenceSource)
+> [UsersSearchResponse](UsersSearchResponse.md) getUsersSearch(q64, expand, integrationPresenceSource)
 
 Search users using the q64 value returned from a previous search
 
+Wraps GET /api/v2/users/search
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/users/search  
-
-Requires ANY permissions: 
-
-* directory:user:view
+- directory:user:view
 
 ### Example
 
@@ -442,35 +406,29 @@ try {
 
 ### Parameters
 
+| Name                          | Type                                | Description               | Notes                                                              |
+| ----------------------------- | ----------------------------------- | ------------------------- | ------------------------------------------------------------------ |
+| **q64**                       | **String**                          | q64                       |
+| **expand**                    | [**List&lt;String&gt;**](String.md) | expand                    | [optional]                                                         |
+| **integrationPresenceSource** | **String**                          | integrationPresenceSource | [optional]<br />**Values**: MicrosoftTeams, ZoomPhone, RingCentral |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **q64** | **String**| q64 | 
-| **expand** | [**List&lt;String&gt;**](String.html)| expand | [optional] 
-| **integrationPresenceSource** | **String**| integrationPresenceSource | [optional]<br />**Values**: MicrosoftTeams, ZoomPhone, RingCentral 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UsersSearchResponse**](UsersSearchResponse.html)
+[**UsersSearchResponse**](UsersSearchResponse.md)
 
 <a name="getVoicemailSearch"></a>
 
 # **getVoicemailSearch**
 
-
-
-> [VoicemailsSearchResponse](VoicemailsSearchResponse.html) getVoicemailSearch(q64, expand)
+> [VoicemailsSearchResponse](VoicemailsSearchResponse.md) getVoicemailSearch(q64, expand)
 
 Search voicemails using the q64 value returned from a previous search
 
+Wraps GET /api/v2/voicemail/search
 
-
-Wraps GET /api/v2/voicemail/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -507,35 +465,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                | Description | Notes      |
+| ---------- | ----------------------------------- | ----------- | ---------- |
+| **q64**    | **String**                          | q64         |
+| **expand** | [**List&lt;String&gt;**](String.md) | expand      | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **q64** | **String**| q64 | 
-| **expand** | [**List&lt;String&gt;**](String.html)| expand | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailsSearchResponse**](VoicemailsSearchResponse.html)
+[**VoicemailsSearchResponse**](VoicemailsSearchResponse.md)
 
 <a name="postAnalyticsConversationsTranscriptsQuery"></a>
 
 # **postAnalyticsConversationsTranscriptsQuery**
 
-
-
-> [AnalyticsConversationWithoutAttributesMultiGetResponse](AnalyticsConversationWithoutAttributesMultiGetResponse.html) postAnalyticsConversationsTranscriptsQuery(body)
+> [AnalyticsConversationWithoutAttributesMultiGetResponse](AnalyticsConversationWithoutAttributesMultiGetResponse.md) postAnalyticsConversationsTranscriptsQuery(body)
 
 Search resources.
 
+Wraps POST /api/v2/analytics/conversations/transcripts/query
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/analytics/conversations/transcripts/query  
-
-Requires ANY permissions: 
-
-* analytics:conversationDetail:view
+- analytics:conversationDetail:view
 
 ### Example
 
@@ -571,33 +524,27 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                                                          | Description            | Notes |
+| -------- | --------------------------------------------------------------------------------------------- | ---------------------- | ----- |
+| **body** | [**TranscriptConversationDetailSearchRequest**](TranscriptConversationDetailSearchRequest.md) | Search request options |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**TranscriptConversationDetailSearchRequest**](TranscriptConversationDetailSearchRequest.html)| Search request options | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**AnalyticsConversationWithoutAttributesMultiGetResponse**](AnalyticsConversationWithoutAttributesMultiGetResponse.html)
+[**AnalyticsConversationWithoutAttributesMultiGetResponse**](AnalyticsConversationWithoutAttributesMultiGetResponse.md)
 
 <a name="postDocumentationGknSearch"></a>
 
 # **postDocumentationGknSearch**
 
-
-
-> [GKNDocumentationSearchResponse](GKNDocumentationSearchResponse.html) postDocumentationGknSearch(body)
+> [GKNDocumentationSearchResponse](GKNDocumentationSearchResponse.md) postDocumentationGknSearch(body)
 
 Search gkn documentation
 
+Wraps POST /api/v2/documentation/gkn/search
 
-
-Wraps POST /api/v2/documentation/gkn/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -620,33 +567,27 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                                  | Description            | Notes |
+| -------- | --------------------------------------------------------------------- | ---------------------- | ----- |
+| **body** | [**GKNDocumentationSearchRequest**](GKNDocumentationSearchRequest.md) | Search request options |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**GKNDocumentationSearchRequest**](GKNDocumentationSearchRequest.html)| Search request options | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GKNDocumentationSearchResponse**](GKNDocumentationSearchResponse.html)
+[**GKNDocumentationSearchResponse**](GKNDocumentationSearchResponse.md)
 
 <a name="postDocumentationSearch"></a>
 
 # **postDocumentationSearch**
 
-
-
-> [DocumentationSearchResponse](DocumentationSearchResponse.html) postDocumentationSearch(body)
+> [DocumentationSearchResponse](DocumentationSearchResponse.md) postDocumentationSearch(body)
 
 Search documentation
 
+Wraps POST /api/v2/documentation/search
 
-
-Wraps POST /api/v2/documentation/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -669,33 +610,27 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                            | Description            | Notes |
+| -------- | --------------------------------------------------------------- | ---------------------- | ----- |
+| **body** | [**DocumentationSearchRequest**](DocumentationSearchRequest.md) | Search request options |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**DocumentationSearchRequest**](DocumentationSearchRequest.html)| Search request options | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DocumentationSearchResponse**](DocumentationSearchResponse.html)
+[**DocumentationSearchResponse**](DocumentationSearchResponse.md)
 
 <a name="postGroupsSearch"></a>
 
 # **postGroupsSearch**
 
-
-
-> [GroupsSearchResponse](GroupsSearchResponse.html) postGroupsSearch(body)
+> [GroupsSearchResponse](GroupsSearchResponse.md) postGroupsSearch(body)
 
 Search groups
 
+Wraps POST /api/v2/groups/search
 
-
-Wraps POST /api/v2/groups/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -731,34 +666,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                            | Description            | Notes |
+| -------- | ----------------------------------------------- | ---------------------- | ----- |
+| **body** | [**GroupSearchRequest**](GroupSearchRequest.md) | Search request options |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**GroupSearchRequest**](GroupSearchRequest.html)| Search request options | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GroupsSearchResponse**](GroupsSearchResponse.html)
+[**GroupsSearchResponse**](GroupsSearchResponse.md)
 
 <a name="postKnowledgeKnowledgebaseSearch"></a>
 
 # **postKnowledgeKnowledgebaseSearch**
 
-
-
-> [KnowledgeSearchResponse](KnowledgeSearchResponse.html) postKnowledgeKnowledgebaseSearch(knowledgeBaseId, body)
+> [KnowledgeSearchResponse](KnowledgeSearchResponse.md) postKnowledgeKnowledgebaseSearch(knowledgeBaseId, body)
 
 Search Documents
 
+Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/search
 
+Requires ALL permissions:
 
-Wraps POST /api/v2/knowledge/knowledgebases/{knowledgeBaseId}/search  
-
-Requires ALL permissions: 
-
-* knowledge:knowledgebase:search
+- knowledge:knowledgebase:search
 
 ### Example
 
@@ -783,7 +713,7 @@ Configuration.setDefaultApiClient(apiClient);
 
 SearchApi apiInstance = new SearchApi();
 String knowledgeBaseId = "knowledgeBaseId_example"; // String | Knowledge base ID
-KnowledgeSearchRequest body = new KnowledgeSearchRequest(); // KnowledgeSearchRequest | 
+KnowledgeSearchRequest body = new KnowledgeSearchRequest(); // KnowledgeSearchRequest |
 try {
     KnowledgeSearchResponse result = apiInstance.postKnowledgeKnowledgebaseSearch(knowledgeBaseId, body);
     System.out.println(result);
@@ -795,34 +725,28 @@ try {
 
 ### Parameters
 
+| Name                | Type                                                    | Description       | Notes      |
+| ------------------- | ------------------------------------------------------- | ----------------- | ---------- |
+| **knowledgeBaseId** | **String**                                              | Knowledge base ID |
+| **body**            | [**KnowledgeSearchRequest**](KnowledgeSearchRequest.md) |                   | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **knowledgeBaseId** | **String**| Knowledge base ID | 
-| **body** | [**KnowledgeSearchRequest**](KnowledgeSearchRequest.html)|  | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**KnowledgeSearchResponse**](KnowledgeSearchResponse.html)
+[**KnowledgeSearchResponse**](KnowledgeSearchResponse.md)
 
 <a name="postLocationsSearch"></a>
 
 # **postLocationsSearch**
 
-
-
-> [LocationsSearchResponse](LocationsSearchResponse.html) postLocationsSearch(body)
+> [LocationsSearchResponse](LocationsSearchResponse.md) postLocationsSearch(body)
 
 Search locations
 
+Wraps POST /api/v2/locations/search
 
-
-Wraps POST /api/v2/locations/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -858,34 +782,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                  | Description            | Notes |
+| -------- | ----------------------------------------------------- | ---------------------- | ----- |
+| **body** | [**LocationSearchRequest**](LocationSearchRequest.md) | Search request options |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**LocationSearchRequest**](LocationSearchRequest.html)| Search request options | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**LocationsSearchResponse**](LocationsSearchResponse.html)
+[**LocationsSearchResponse**](LocationsSearchResponse.md)
 
 <a name="postSearch"></a>
 
 # **postSearch**
 
-
-
-> [JsonNodeSearchResponse](JsonNodeSearchResponse.html) postSearch(body, profile)
+> [JsonNodeSearchResponse](JsonNodeSearchResponse.md) postSearch(body, profile)
 
 Search resources.
 
+Wraps POST /api/v2/search
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/search  
-
-Requires ANY permissions: 
-
-* directory:user:view
+- directory:user:view
 
 ### Example
 
@@ -922,35 +841,30 @@ try {
 
 ### Parameters
 
+| Name        | Type                                  | Description            | Notes                        |
+| ----------- | ------------------------------------- | ---------------------- | ---------------------------- |
+| **body**    | [**SearchRequest**](SearchRequest.md) | Search request options |
+| **profile** | **Boolean**                           | profile                | [optional] [default to true] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**SearchRequest**](SearchRequest.html)| Search request options | 
-| **profile** | **Boolean**| profile | [optional] [default to true] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JsonNodeSearchResponse**](JsonNodeSearchResponse.html)
+[**JsonNodeSearchResponse**](JsonNodeSearchResponse.md)
 
 <a name="postSearchSuggest"></a>
 
 # **postSearchSuggest**
 
-
-
-> [JsonNodeSearchResponse](JsonNodeSearchResponse.html) postSearchSuggest(body, profile)
+> [JsonNodeSearchResponse](JsonNodeSearchResponse.md) postSearchSuggest(body, profile)
 
 Suggest resources.
 
+Wraps POST /api/v2/search/suggest
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/search/suggest  
-
-Requires ANY permissions: 
-
-* directory:user:view
+- directory:user:view
 
 ### Example
 
@@ -987,36 +901,31 @@ try {
 
 ### Parameters
 
+| Name        | Type                                                | Description            | Notes                        |
+| ----------- | --------------------------------------------------- | ---------------------- | ---------------------------- |
+| **body**    | [**SuggestSearchRequest**](SuggestSearchRequest.md) | Search request options |
+| **profile** | **Boolean**                                         | profile                | [optional] [default to true] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**SuggestSearchRequest**](SuggestSearchRequest.html)| Search request options | 
-| **profile** | **Boolean**| profile | [optional] [default to true] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JsonNodeSearchResponse**](JsonNodeSearchResponse.html)
+[**JsonNodeSearchResponse**](JsonNodeSearchResponse.md)
 
 <a name="postSpeechandtextanalyticsTranscriptsSearch"></a>
 
 # **postSpeechandtextanalyticsTranscriptsSearch**
 
-
-
-> [JsonSearchResponse](JsonSearchResponse.html) postSpeechandtextanalyticsTranscriptsSearch(body)
+> [JsonSearchResponse](JsonSearchResponse.md) postSpeechandtextanalyticsTranscriptsSearch(body)
 
 Search resources.
 
+Wraps POST /api/v2/speechandtextanalytics/transcripts/search
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/speechandtextanalytics/transcripts/search  
-
-Requires ANY permissions: 
-
-* analytics:conversationDetail:view
-* recording:recording:view
+- analytics:conversationDetail:view
+- recording:recording:view
 
 ### Example
 
@@ -1052,34 +961,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                      | Description            | Notes |
+| -------- | --------------------------------------------------------- | ---------------------- | ----- |
+| **body** | [**TranscriptSearchRequest**](TranscriptSearchRequest.md) | Search request options |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**TranscriptSearchRequest**](TranscriptSearchRequest.html)| Search request options | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**JsonSearchResponse**](JsonSearchResponse.html)
+[**JsonSearchResponse**](JsonSearchResponse.md)
 
 <a name="postUsersSearch"></a>
 
 # **postUsersSearch**
 
-
-
-> [UsersSearchResponse](UsersSearchResponse.html) postUsersSearch(body)
+> [UsersSearchResponse](UsersSearchResponse.md) postUsersSearch(body)
 
 Search users
 
+Wraps POST /api/v2/users/search
 
+Requires ANY permissions:
 
-Wraps POST /api/v2/users/search  
-
-Requires ANY permissions: 
-
-* directory:user:view
+- directory:user:view
 
 ### Example
 
@@ -1115,33 +1019,27 @@ try {
 
 ### Parameters
 
+| Name     | Type                                          | Description            | Notes |
+| -------- | --------------------------------------------- | ---------------------- | ----- |
+| **body** | [**UserSearchRequest**](UserSearchRequest.md) | Search request options |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**UserSearchRequest**](UserSearchRequest.html)| Search request options | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**UsersSearchResponse**](UsersSearchResponse.html)
+[**UsersSearchResponse**](UsersSearchResponse.md)
 
 <a name="postVoicemailSearch"></a>
 
 # **postVoicemailSearch**
 
-
-
-> [VoicemailsSearchResponse](VoicemailsSearchResponse.html) postVoicemailSearch(body)
+> [VoicemailsSearchResponse](VoicemailsSearchResponse.md) postVoicemailSearch(body)
 
 Search voicemails
 
+Wraps POST /api/v2/voicemail/search
 
-
-Wraps POST /api/v2/voicemail/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1177,14 +1075,12 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                    | Description            | Notes |
+| -------- | ------------------------------------------------------- | ---------------------- | ----- |
+| **body** | [**VoicemailSearchRequest**](VoicemailSearchRequest.md) | Search request options |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**VoicemailSearchRequest**](VoicemailSearchRequest.html)| Search request options | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailsSearchResponse**](VoicemailsSearchResponse.html)
-
+[**VoicemailsSearchResponse**](VoicemailsSearchResponse.md)

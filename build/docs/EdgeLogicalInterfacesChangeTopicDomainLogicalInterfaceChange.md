@@ -1,16 +1,14 @@
 ---
 title: EdgeLogicalInterfacesChangeTopicDomainLogicalInterfaceChange
 ---
-## EdgeLogicalInterfacesChangeTopicDomainLogicalInterfaceChange
 
+## EdgeLogicalInterfacesChangeTopicDomainLogicalInterfaceChange
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **id** | <!----><!---->**String**<!----> |  |  [optional] |
-| **errorInfo** | <!----><!---->[**EdgeLogicalInterfacesChangeTopicErrorInfo**](EdgeLogicalInterfacesChangeTopicErrorInfo.html)<!----> |  |  [optional] |
+| Name          | Type                                                                                                               | Description | Notes      |
+| ------------- | ------------------------------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| **id**        | <!----><!---->**String**<!---->                                                                                    |             | [optional] |
+| **errorInfo** | <!----><!---->[**EdgeLogicalInterfacesChangeTopicErrorInfo**](EdgeLogicalInterfacesChangeTopicErrorInfo.md)<!----> |             | [optional] |
+
 {: class="table table-striped"}
-
-
-

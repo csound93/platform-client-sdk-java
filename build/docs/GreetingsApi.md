@@ -1,46 +1,43 @@
 ---
 title: GreetingsApi
 ---
+
 ## GreetingsApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteGreeting**](GreetingsApi.html#deleteGreeting) | Deletes a Greeting with the given GreetingId |
-| [**getGreeting**](GreetingsApi.html#getGreeting) | Get a Greeting with the given GreetingId |
-| [**getGreetingMedia**](GreetingsApi.html#getGreetingMedia) | Get media playback URI for this greeting |
-| [**getGreetings**](GreetingsApi.html#getGreetings) | Gets an Organization&#39;s Greetings |
-| [**getGreetingsDefaults**](GreetingsApi.html#getGreetingsDefaults) | Get an Organization&#39;s DefaultGreetingList |
-| [**getGroupGreetings**](GreetingsApi.html#getGroupGreetings) | Get a list of the Group&#39;s Greetings |
-| [**getGroupGreetingsDefaults**](GreetingsApi.html#getGroupGreetingsDefaults) | Grabs the list of Default Greetings given a Group&#39;s ID |
-| [**getUserGreetings**](GreetingsApi.html#getUserGreetings) | Get a list of the User&#39;s Greetings |
-| [**getUserGreetingsDefaults**](GreetingsApi.html#getUserGreetingsDefaults) | Grabs the list of Default Greetings given a User&#39;s ID |
-| [**postGreetings**](GreetingsApi.html#postGreetings) | Create a Greeting for an Organization |
-| [**postGroupGreetings**](GreetingsApi.html#postGroupGreetings) | Creates a Greeting for a Group |
-| [**postUserGreetings**](GreetingsApi.html#postUserGreetings) | Creates a Greeting for a User |
-| [**putGreeting**](GreetingsApi.html#putGreeting) | Updates the Greeting with the given GreetingId |
-| [**putGreetingsDefaults**](GreetingsApi.html#putGreetingsDefaults) | Update an Organization&#39;s DefaultGreetingList |
-| [**putGroupGreetingsDefaults**](GreetingsApi.html#putGroupGreetingsDefaults) | Updates the DefaultGreetingList of the specified Group |
-| [**putUserGreetingsDefaults**](GreetingsApi.html#putUserGreetingsDefaults) | Updates the DefaultGreetingList of the specified User |
+| Method                                                                     | Description                                                |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| [**deleteGreeting**](GreetingsApi.md#deleteGreeting)                       | Deletes a Greeting with the given GreetingId               |
+| [**getGreeting**](GreetingsApi.md#getGreeting)                             | Get a Greeting with the given GreetingId                   |
+| [**getGreetingMedia**](GreetingsApi.md#getGreetingMedia)                   | Get media playback URI for this greeting                   |
+| [**getGreetings**](GreetingsApi.md#getGreetings)                           | Gets an Organization&#39;s Greetings                       |
+| [**getGreetingsDefaults**](GreetingsApi.md#getGreetingsDefaults)           | Get an Organization&#39;s DefaultGreetingList              |
+| [**getGroupGreetings**](GreetingsApi.md#getGroupGreetings)                 | Get a list of the Group&#39;s Greetings                    |
+| [**getGroupGreetingsDefaults**](GreetingsApi.md#getGroupGreetingsDefaults) | Grabs the list of Default Greetings given a Group&#39;s ID |
+| [**getUserGreetings**](GreetingsApi.md#getUserGreetings)                   | Get a list of the User&#39;s Greetings                     |
+| [**getUserGreetingsDefaults**](GreetingsApi.md#getUserGreetingsDefaults)   | Grabs the list of Default Greetings given a User&#39;s ID  |
+| [**postGreetings**](GreetingsApi.md#postGreetings)                         | Create a Greeting for an Organization                      |
+| [**postGroupGreetings**](GreetingsApi.md#postGroupGreetings)               | Creates a Greeting for a Group                             |
+| [**postUserGreetings**](GreetingsApi.md#postUserGreetings)                 | Creates a Greeting for a User                              |
+| [**putGreeting**](GreetingsApi.md#putGreeting)                             | Updates the Greeting with the given GreetingId             |
+| [**putGreetingsDefaults**](GreetingsApi.md#putGreetingsDefaults)           | Update an Organization&#39;s DefaultGreetingList           |
+| [**putGroupGreetingsDefaults**](GreetingsApi.md#putGroupGreetingsDefaults) | Updates the DefaultGreetingList of the specified Group     |
+| [**putUserGreetingsDefaults**](GreetingsApi.md#putUserGreetingsDefaults)   | Updates the DefaultGreetingList of the specified User      |
+
 {: class="table-striped"}
 
 <a name="deleteGreeting"></a>
 
 # **deleteGreeting**
 
-
-
 > Void deleteGreeting(greetingId)
 
 Deletes a Greeting with the given GreetingId
 
+Wraps DELETE /api/v2/greetings/{greetingId}
 
-
-Wraps DELETE /api/v2/greetings/{greetingId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -75,12 +72,11 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **greetingId** | **String** | Greeting ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **greetingId** | **String**| Greeting ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -90,18 +86,13 @@ null (empty response body)
 
 # **getGreeting**
 
-
-
-> [Greeting](Greeting.html) getGreeting(greetingId)
+> [Greeting](Greeting.md) getGreeting(greetingId)
 
 Get a Greeting with the given GreetingId
 
+Wraps GET /api/v2/greetings/{greetingId}
 
-
-Wraps GET /api/v2/greetings/{greetingId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -137,33 +128,27 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description | Notes |
+| -------------- | ---------- | ----------- | ----- |
+| **greetingId** | **String** | Greeting ID |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **greetingId** | **String**| Greeting ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Greeting**](Greeting.html)
+[**Greeting**](Greeting.md)
 
 <a name="getGreetingMedia"></a>
 
 # **getGreetingMedia**
 
-
-
-> [GreetingMediaInfo](GreetingMediaInfo.html) getGreetingMedia(greetingId, formatId)
+> [GreetingMediaInfo](GreetingMediaInfo.md) getGreetingMedia(greetingId, formatId)
 
 Get media playback URI for this greeting
 
+Wraps GET /api/v2/greetings/{greetingId}/media
 
-
-Wraps GET /api/v2/greetings/{greetingId}/media  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -200,34 +185,28 @@ try {
 
 ### Parameters
 
+| Name           | Type       | Description               | Notes                                                                                             |
+| -------------- | ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- |
+| **greetingId** | **String** | Greeting ID               |
+| **formatId**   | **String** | The desired media format. | [optional] [default to WAV]<br />**Values**: WAV, WEBM, WAV_ULAW, OGG_VORBIS, OGG_OPUS, MP3, NONE |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **greetingId** | **String**| Greeting ID | 
-| **formatId** | **String**| The desired media format. | [optional] [default to WAV]<br />**Values**: WAV, WEBM, WAV_ULAW, OGG_VORBIS, OGG_OPUS, MP3, NONE 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GreetingMediaInfo**](GreetingMediaInfo.html)
+[**GreetingMediaInfo**](GreetingMediaInfo.md)
 
 <a name="getGreetings"></a>
 
 # **getGreetings**
 
-
-
-> [DomainEntityListing](DomainEntityListing.html) getGreetings(pageSize, pageNumber)
+> [DomainEntityListing](DomainEntityListing.md) getGreetings(pageSize, pageNumber)
 
 Gets an Organization&#39;s Greetings
 
+Wraps GET /api/v2/greetings
 
-
-Wraps GET /api/v2/greetings  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -264,34 +243,28 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainEntityListing**](DomainEntityListing.html)
+[**DomainEntityListing**](DomainEntityListing.md)
 
 <a name="getGreetingsDefaults"></a>
 
 # **getGreetingsDefaults**
 
-
-
-> [DefaultGreetingList](DefaultGreetingList.html) getGreetingsDefaults()
+> [DefaultGreetingList](DefaultGreetingList.md) getGreetingsDefaults()
 
 Get an Organization&#39;s DefaultGreetingList
 
+Wraps GET /api/v2/greetings/defaults
 
-
-Wraps GET /api/v2/greetings/defaults  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -328,28 +301,21 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**DefaultGreetingList**](DefaultGreetingList.html)
+[**DefaultGreetingList**](DefaultGreetingList.md)
 
 <a name="getGroupGreetings"></a>
 
 # **getGroupGreetings**
 
-
-
-> [GreetingListing](GreetingListing.html) getGroupGreetings(groupId, pageSize, pageNumber)
+> [GreetingListing](GreetingListing.md) getGroupGreetings(groupId, pageSize, pageNumber)
 
 Get a list of the Group&#39;s Greetings
 
+Wraps GET /api/v2/groups/{groupId}/greetings
 
-
-Wraps GET /api/v2/groups/{groupId}/greetings  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -387,35 +353,29 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **groupId**    | **String**  | Group ID    |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**GreetingListing**](GreetingListing.html)
+[**GreetingListing**](GreetingListing.md)
 
 <a name="getGroupGreetingsDefaults"></a>
 
 # **getGroupGreetingsDefaults**
 
-
-
-> [DefaultGreetingList](DefaultGreetingList.html) getGroupGreetingsDefaults(groupId)
+> [DefaultGreetingList](DefaultGreetingList.md) getGroupGreetingsDefaults(groupId)
 
 Grabs the list of Default Greetings given a Group&#39;s ID
 
+Wraps GET /api/v2/groups/{groupId}/greetings/defaults
 
-
-Wraps GET /api/v2/groups/{groupId}/greetings/defaults  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -451,33 +411,27 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **groupId** | **String** | Group ID    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DefaultGreetingList**](DefaultGreetingList.html)
+[**DefaultGreetingList**](DefaultGreetingList.md)
 
 <a name="getUserGreetings"></a>
 
 # **getUserGreetings**
 
-
-
-> [DomainEntityListing](DomainEntityListing.html) getUserGreetings(userId, pageSize, pageNumber)
+> [DomainEntityListing](DomainEntityListing.md) getUserGreetings(userId, pageSize, pageNumber)
 
 Get a list of the User&#39;s Greetings
 
+Wraps GET /api/v2/users/{userId}/greetings
 
-
-Wraps GET /api/v2/users/{userId}/greetings  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -515,35 +469,29 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **userId**     | **String**  | User ID     |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| User ID | 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DomainEntityListing**](DomainEntityListing.html)
+[**DomainEntityListing**](DomainEntityListing.md)
 
 <a name="getUserGreetingsDefaults"></a>
 
 # **getUserGreetingsDefaults**
 
-
-
-> [DefaultGreetingList](DefaultGreetingList.html) getUserGreetingsDefaults(userId)
+> [DefaultGreetingList](DefaultGreetingList.md) getUserGreetingsDefaults(userId)
 
 Grabs the list of Default Greetings given a User&#39;s ID
 
+Wraps GET /api/v2/users/{userId}/greetings/defaults
 
-
-Wraps GET /api/v2/users/{userId}/greetings/defaults  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -579,33 +527,27 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **userId** | **String** | User ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| User ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DefaultGreetingList**](DefaultGreetingList.html)
+[**DefaultGreetingList**](DefaultGreetingList.md)
 
 <a name="postGreetings"></a>
 
 # **postGreetings**
 
-
-
-> [Greeting](Greeting.html) postGreetings(body)
+> [Greeting](Greeting.md) postGreetings(body)
 
 Create a Greeting for an Organization
 
+Wraps POST /api/v2/greetings
 
-
-Wraps POST /api/v2/greetings  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -641,33 +583,27 @@ try {
 
 ### Parameters
 
+| Name     | Type                        | Description            | Notes |
+| -------- | --------------------------- | ---------------------- | ----- |
+| **body** | [**Greeting**](Greeting.md) | The Greeting to create |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**Greeting**](Greeting.html)| The Greeting to create | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Greeting**](Greeting.html)
+[**Greeting**](Greeting.md)
 
 <a name="postGroupGreetings"></a>
 
 # **postGroupGreetings**
 
-
-
-> [Greeting](Greeting.html) postGroupGreetings(groupId, body)
+> [Greeting](Greeting.md) postGroupGreetings(groupId, body)
 
 Creates a Greeting for a Group
 
+Wraps POST /api/v2/groups/{groupId}/greetings
 
-
-Wraps POST /api/v2/groups/{groupId}/greetings  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -704,34 +640,28 @@ try {
 
 ### Parameters
 
+| Name        | Type                        | Description            | Notes |
+| ----------- | --------------------------- | ---------------------- | ----- |
+| **groupId** | **String**                  | Group ID               |
+| **body**    | [**Greeting**](Greeting.md) | The Greeting to create |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
-| **body** | [**Greeting**](Greeting.html)| The Greeting to create | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Greeting**](Greeting.html)
+[**Greeting**](Greeting.md)
 
 <a name="postUserGreetings"></a>
 
 # **postUserGreetings**
 
-
-
-> [Greeting](Greeting.html) postUserGreetings(userId, body)
+> [Greeting](Greeting.md) postUserGreetings(userId, body)
 
 Creates a Greeting for a User
 
+Wraps POST /api/v2/users/{userId}/greetings
 
-
-Wraps POST /api/v2/users/{userId}/greetings  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -768,34 +698,28 @@ try {
 
 ### Parameters
 
+| Name       | Type                        | Description            | Notes |
+| ---------- | --------------------------- | ---------------------- | ----- |
+| **userId** | **String**                  | User ID                |
+| **body**   | [**Greeting**](Greeting.md) | The Greeting to create |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| User ID | 
-| **body** | [**Greeting**](Greeting.html)| The Greeting to create | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Greeting**](Greeting.html)
+[**Greeting**](Greeting.md)
 
 <a name="putGreeting"></a>
 
 # **putGreeting**
 
-
-
-> [Greeting](Greeting.html) putGreeting(greetingId, body)
+> [Greeting](Greeting.md) putGreeting(greetingId, body)
 
 Updates the Greeting with the given GreetingId
 
+Wraps PUT /api/v2/greetings/{greetingId}
 
-
-Wraps PUT /api/v2/greetings/{greetingId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -832,34 +756,28 @@ try {
 
 ### Parameters
 
+| Name           | Type                        | Description          | Notes |
+| -------------- | --------------------------- | -------------------- | ----- |
+| **greetingId** | **String**                  | Greeting ID          |
+| **body**       | [**Greeting**](Greeting.md) | The updated Greeting |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **greetingId** | **String**| Greeting ID | 
-| **body** | [**Greeting**](Greeting.html)| The updated Greeting | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**Greeting**](Greeting.html)
+[**Greeting**](Greeting.md)
 
 <a name="putGreetingsDefaults"></a>
 
 # **putGreetingsDefaults**
 
-
-
-> [DefaultGreetingList](DefaultGreetingList.html) putGreetingsDefaults(body)
+> [DefaultGreetingList](DefaultGreetingList.md) putGreetingsDefaults(body)
 
 Update an Organization&#39;s DefaultGreetingList
 
+Wraps PUT /api/v2/greetings/defaults
 
-
-Wraps PUT /api/v2/greetings/defaults  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -895,33 +813,27 @@ try {
 
 ### Parameters
 
+| Name     | Type                                              | Description                     | Notes |
+| -------- | ------------------------------------------------- | ------------------------------- | ----- |
+| **body** | [**DefaultGreetingList**](DefaultGreetingList.md) | The updated defaultGreetingList |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**DefaultGreetingList**](DefaultGreetingList.html)| The updated defaultGreetingList | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DefaultGreetingList**](DefaultGreetingList.html)
+[**DefaultGreetingList**](DefaultGreetingList.md)
 
 <a name="putGroupGreetingsDefaults"></a>
 
 # **putGroupGreetingsDefaults**
 
-
-
-> [DefaultGreetingList](DefaultGreetingList.html) putGroupGreetingsDefaults(groupId, body)
+> [DefaultGreetingList](DefaultGreetingList.md) putGroupGreetingsDefaults(groupId, body)
 
 Updates the DefaultGreetingList of the specified Group
 
+Wraps PUT /api/v2/groups/{groupId}/greetings/defaults
 
-
-Wraps PUT /api/v2/groups/{groupId}/greetings/defaults  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -958,34 +870,28 @@ try {
 
 ### Parameters
 
+| Name        | Type                                              | Description                     | Notes |
+| ----------- | ------------------------------------------------- | ------------------------------- | ----- |
+| **groupId** | **String**                                        | Group ID                        |
+| **body**    | [**DefaultGreetingList**](DefaultGreetingList.md) | The updated defaultGreetingList |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
-| **body** | [**DefaultGreetingList**](DefaultGreetingList.html)| The updated defaultGreetingList | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DefaultGreetingList**](DefaultGreetingList.html)
+[**DefaultGreetingList**](DefaultGreetingList.md)
 
 <a name="putUserGreetingsDefaults"></a>
 
 # **putUserGreetingsDefaults**
 
-
-
-> [DefaultGreetingList](DefaultGreetingList.html) putUserGreetingsDefaults(userId, body)
+> [DefaultGreetingList](DefaultGreetingList.md) putUserGreetingsDefaults(userId, body)
 
 Updates the DefaultGreetingList of the specified User
 
+Wraps PUT /api/v2/users/{userId}/greetings/defaults
 
-
-Wraps PUT /api/v2/users/{userId}/greetings/defaults  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1022,15 +928,13 @@ try {
 
 ### Parameters
 
+| Name       | Type                                              | Description                     | Notes |
+| ---------- | ------------------------------------------------- | ------------------------------- | ----- |
+| **userId** | **String**                                        | User ID                         |
+| **body**   | [**DefaultGreetingList**](DefaultGreetingList.md) | The updated defaultGreetingList |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| User ID | 
-| **body** | [**DefaultGreetingList**](DefaultGreetingList.html)| The updated defaultGreetingList | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**DefaultGreetingList**](DefaultGreetingList.html)
-
+[**DefaultGreetingList**](DefaultGreetingList.md)

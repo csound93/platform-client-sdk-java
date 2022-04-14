@@ -1,44 +1,44 @@
 ---
 title: VoicemailApi
 ---
+
 ## VoicemailApi
 
 All URIs are relative to *https://api.mypurecloud.com*
 
-| Method | Description |
-| ------------- | ------------- |
-| [**deleteVoicemailMessage**](VoicemailApi.html#deleteVoicemailMessage) | Delete a voicemail message. |
-| [**deleteVoicemailMessages**](VoicemailApi.html#deleteVoicemailMessages) | Delete all voicemail messages |
-| [**getVoicemailGroupMailbox**](VoicemailApi.html#getVoicemailGroupMailbox) | Get the group&#39;s mailbox information |
-| [**getVoicemailGroupMessages**](VoicemailApi.html#getVoicemailGroupMessages) | List voicemail messages |
-| [**getVoicemailGroupPolicy**](VoicemailApi.html#getVoicemailGroupPolicy) | Get a group&#39;s voicemail policy |
-| [**getVoicemailMailbox**](VoicemailApi.html#getVoicemailMailbox) | Get the current user&#39;s mailbox information |
-| [**getVoicemailMeMailbox**](VoicemailApi.html#getVoicemailMeMailbox) | Get the current user&#39;s mailbox information |
-| [**getVoicemailMeMessages**](VoicemailApi.html#getVoicemailMeMessages) | List voicemail messages |
-| [**getVoicemailMePolicy**](VoicemailApi.html#getVoicemailMePolicy) | Get the current user&#39;s voicemail policy |
-| [**getVoicemailMessage**](VoicemailApi.html#getVoicemailMessage) | Get a voicemail message |
-| [**getVoicemailMessageMedia**](VoicemailApi.html#getVoicemailMessageMedia) | Get media playback URI for this voicemail message |
-| [**getVoicemailMessages**](VoicemailApi.html#getVoicemailMessages) | List voicemail messages |
-| [**getVoicemailPolicy**](VoicemailApi.html#getVoicemailPolicy) | Get a policy |
-| [**getVoicemailQueueMessages**](VoicemailApi.html#getVoicemailQueueMessages) | List voicemail messages |
-| [**getVoicemailSearch**](VoicemailApi.html#getVoicemailSearch) | Search voicemails using the q64 value returned from a previous search |
-| [**getVoicemailUserpolicy**](VoicemailApi.html#getVoicemailUserpolicy) | Get a user&#39;s voicemail policy |
-| [**patchVoicemailGroupPolicy**](VoicemailApi.html#patchVoicemailGroupPolicy) | Update a group&#39;s voicemail policy |
-| [**patchVoicemailMePolicy**](VoicemailApi.html#patchVoicemailMePolicy) | Update the current user&#39;s voicemail policy |
-| [**patchVoicemailMessage**](VoicemailApi.html#patchVoicemailMessage) | Update a voicemail message |
-| [**patchVoicemailUserpolicy**](VoicemailApi.html#patchVoicemailUserpolicy) | Update a user&#39;s voicemail policy |
-| [**postVoicemailMessages**](VoicemailApi.html#postVoicemailMessages) | Copy a voicemail message to a user or group |
-| [**postVoicemailSearch**](VoicemailApi.html#postVoicemailSearch) | Search voicemails |
-| [**putVoicemailMessage**](VoicemailApi.html#putVoicemailMessage) | Update a voicemail message |
-| [**putVoicemailPolicy**](VoicemailApi.html#putVoicemailPolicy) | Update a policy |
-| [**putVoicemailUserpolicy**](VoicemailApi.html#putVoicemailUserpolicy) | Update a user&#39;s voicemail policy |
+| Method                                                                     | Description                                                           |
+| -------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [**deleteVoicemailMessage**](VoicemailApi.md#deleteVoicemailMessage)       | Delete a voicemail message.                                           |
+| [**deleteVoicemailMessages**](VoicemailApi.md#deleteVoicemailMessages)     | Delete all voicemail messages                                         |
+| [**getVoicemailGroupMailbox**](VoicemailApi.md#getVoicemailGroupMailbox)   | Get the group&#39;s mailbox information                               |
+| [**getVoicemailGroupMessages**](VoicemailApi.md#getVoicemailGroupMessages) | List voicemail messages                                               |
+| [**getVoicemailGroupPolicy**](VoicemailApi.md#getVoicemailGroupPolicy)     | Get a group&#39;s voicemail policy                                    |
+| [**getVoicemailMailbox**](VoicemailApi.md#getVoicemailMailbox)             | Get the current user&#39;s mailbox information                        |
+| [**getVoicemailMeMailbox**](VoicemailApi.md#getVoicemailMeMailbox)         | Get the current user&#39;s mailbox information                        |
+| [**getVoicemailMeMessages**](VoicemailApi.md#getVoicemailMeMessages)       | List voicemail messages                                               |
+| [**getVoicemailMePolicy**](VoicemailApi.md#getVoicemailMePolicy)           | Get the current user&#39;s voicemail policy                           |
+| [**getVoicemailMessage**](VoicemailApi.md#getVoicemailMessage)             | Get a voicemail message                                               |
+| [**getVoicemailMessageMedia**](VoicemailApi.md#getVoicemailMessageMedia)   | Get media playback URI for this voicemail message                     |
+| [**getVoicemailMessages**](VoicemailApi.md#getVoicemailMessages)           | List voicemail messages                                               |
+| [**getVoicemailPolicy**](VoicemailApi.md#getVoicemailPolicy)               | Get a policy                                                          |
+| [**getVoicemailQueueMessages**](VoicemailApi.md#getVoicemailQueueMessages) | List voicemail messages                                               |
+| [**getVoicemailSearch**](VoicemailApi.md#getVoicemailSearch)               | Search voicemails using the q64 value returned from a previous search |
+| [**getVoicemailUserpolicy**](VoicemailApi.md#getVoicemailUserpolicy)       | Get a user&#39;s voicemail policy                                     |
+| [**patchVoicemailGroupPolicy**](VoicemailApi.md#patchVoicemailGroupPolicy) | Update a group&#39;s voicemail policy                                 |
+| [**patchVoicemailMePolicy**](VoicemailApi.md#patchVoicemailMePolicy)       | Update the current user&#39;s voicemail policy                        |
+| [**patchVoicemailMessage**](VoicemailApi.md#patchVoicemailMessage)         | Update a voicemail message                                            |
+| [**patchVoicemailUserpolicy**](VoicemailApi.md#patchVoicemailUserpolicy)   | Update a user&#39;s voicemail policy                                  |
+| [**postVoicemailMessages**](VoicemailApi.md#postVoicemailMessages)         | Copy a voicemail message to a user or group                           |
+| [**postVoicemailSearch**](VoicemailApi.md#postVoicemailSearch)             | Search voicemails                                                     |
+| [**putVoicemailMessage**](VoicemailApi.md#putVoicemailMessage)             | Update a voicemail message                                            |
+| [**putVoicemailPolicy**](VoicemailApi.md#putVoicemailPolicy)               | Update a policy                                                       |
+| [**putVoicemailUserpolicy**](VoicemailApi.md#putVoicemailUserpolicy)       | Update a user&#39;s voicemail policy                                  |
+
 {: class="table-striped"}
 
 <a name="deleteVoicemailMessage"></a>
 
 # **deleteVoicemailMessage**
-
-
 
 > Void deleteVoicemailMessage(messageId)
 
@@ -46,10 +46,9 @@ Delete a voicemail message.
 
 A user voicemail can only be deleted by its associated user. A group voicemail can only be deleted by a user that is a member of the group. A queue voicemail can only be deleted by a user with the acd voicemail delete permission.
 
-Wraps DELETE /api/v2/voicemail/messages/{messageId}  
+Wraps DELETE /api/v2/voicemail/messages/{messageId}
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -84,12 +83,11 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description | Notes |
+| ------------- | ---------- | ----------- | ----- |
+| **messageId** | **String** | Message ID  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **messageId** | **String**| Message ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
@@ -99,18 +97,13 @@ null (empty response body)
 
 # **deleteVoicemailMessages**
 
-
-
 > Void deleteVoicemailMessages()
 
 Delete all voicemail messages
 
+Wraps DELETE /api/v2/voicemail/messages
 
-
-Wraps DELETE /api/v2/voicemail/messages  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -146,8 +139,6 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
 null (empty response body)
@@ -156,18 +147,13 @@ null (empty response body)
 
 # **getVoicemailGroupMailbox**
 
-
-
-> [VoicemailMailboxInfo](VoicemailMailboxInfo.html) getVoicemailGroupMailbox(groupId)
+> [VoicemailMailboxInfo](VoicemailMailboxInfo.md) getVoicemailGroupMailbox(groupId)
 
 Get the group&#39;s mailbox information
 
+Wraps GET /api/v2/voicemail/groups/{groupId}/mailbox
 
-
-Wraps GET /api/v2/voicemail/groups/{groupId}/mailbox  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -203,33 +189,27 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **groupId** | **String** | groupId     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| groupId | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailMailboxInfo**](VoicemailMailboxInfo.html)
+[**VoicemailMailboxInfo**](VoicemailMailboxInfo.md)
 
 <a name="getVoicemailGroupMessages"></a>
 
 # **getVoicemailGroupMessages**
 
-
-
-> [VoicemailMessageEntityListing](VoicemailMessageEntityListing.html) getVoicemailGroupMessages(groupId, pageSize, pageNumber)
+> [VoicemailMessageEntityListing](VoicemailMessageEntityListing.md) getVoicemailGroupMessages(groupId, pageSize, pageNumber)
 
 List voicemail messages
 
+Wraps GET /api/v2/voicemail/groups/{groupId}/messages
 
-
-Wraps GET /api/v2/voicemail/groups/{groupId}/messages  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -267,37 +247,32 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **groupId**    | **String**  | Group ID    |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailMessageEntityListing**](VoicemailMessageEntityListing.html)
+[**VoicemailMessageEntityListing**](VoicemailMessageEntityListing.md)
 
 <a name="getVoicemailGroupPolicy"></a>
 
 # **getVoicemailGroupPolicy**
 
-
-
-> [VoicemailGroupPolicy](VoicemailGroupPolicy.html) getVoicemailGroupPolicy(groupId)
+> [VoicemailGroupPolicy](VoicemailGroupPolicy.md) getVoicemailGroupPolicy(groupId)
 
 Get a group&#39;s voicemail policy
 
+Wraps GET /api/v2/voicemail/groups/{groupId}/policy
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/voicemail/groups/{groupId}/policy  
-
-Requires ANY permissions: 
-
-* directory:group:add
-* directory:group:edit
+- directory:group:add
+- directory:group:edit
 
 ### Example
 
@@ -333,33 +308,27 @@ try {
 
 ### Parameters
 
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **groupId** | **String** | Group ID    |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailGroupPolicy**](VoicemailGroupPolicy.html)
+[**VoicemailGroupPolicy**](VoicemailGroupPolicy.md)
 
 <a name="getVoicemailMailbox"></a>
 
 # **getVoicemailMailbox**
 
-
-
-> [VoicemailMailboxInfo](VoicemailMailboxInfo.html) getVoicemailMailbox()
+> [VoicemailMailboxInfo](VoicemailMailboxInfo.md) getVoicemailMailbox()
 
 Get the current user&#39;s mailbox information
 
+Wraps GET /api/v2/voicemail/mailbox
 
-
-Wraps GET /api/v2/voicemail/mailbox  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -396,28 +365,21 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**VoicemailMailboxInfo**](VoicemailMailboxInfo.html)
+[**VoicemailMailboxInfo**](VoicemailMailboxInfo.md)
 
 <a name="getVoicemailMeMailbox"></a>
 
 # **getVoicemailMeMailbox**
 
-
-
-> [VoicemailMailboxInfo](VoicemailMailboxInfo.html) getVoicemailMeMailbox()
+> [VoicemailMailboxInfo](VoicemailMailboxInfo.md) getVoicemailMeMailbox()
 
 Get the current user&#39;s mailbox information
 
+Wraps GET /api/v2/voicemail/me/mailbox
 
-
-Wraps GET /api/v2/voicemail/me/mailbox  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -454,28 +416,21 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**VoicemailMailboxInfo**](VoicemailMailboxInfo.html)
+[**VoicemailMailboxInfo**](VoicemailMailboxInfo.md)
 
 <a name="getVoicemailMeMessages"></a>
 
 # **getVoicemailMeMessages**
 
-
-
-> [VoicemailMessageEntityListing](VoicemailMessageEntityListing.html) getVoicemailMeMessages(pageSize, pageNumber)
+> [VoicemailMessageEntityListing](VoicemailMessageEntityListing.md) getVoicemailMeMessages(pageSize, pageNumber)
 
 List voicemail messages
 
+Wraps GET /api/v2/voicemail/me/messages
 
-
-Wraps GET /api/v2/voicemail/me/messages  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -512,34 +467,28 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailMessageEntityListing**](VoicemailMessageEntityListing.html)
+[**VoicemailMessageEntityListing**](VoicemailMessageEntityListing.md)
 
 <a name="getVoicemailMePolicy"></a>
 
 # **getVoicemailMePolicy**
 
-
-
-> [VoicemailUserPolicy](VoicemailUserPolicy.html) getVoicemailMePolicy()
+> [VoicemailUserPolicy](VoicemailUserPolicy.md) getVoicemailMePolicy()
 
 Get the current user&#39;s voicemail policy
 
+Wraps GET /api/v2/voicemail/me/policy
 
-
-Wraps GET /api/v2/voicemail/me/policy  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -576,28 +525,21 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**VoicemailUserPolicy**](VoicemailUserPolicy.html)
+[**VoicemailUserPolicy**](VoicemailUserPolicy.md)
 
 <a name="getVoicemailMessage"></a>
 
 # **getVoicemailMessage**
 
-
-
-> [VoicemailMessage](VoicemailMessage.html) getVoicemailMessage(messageId, expand)
+> [VoicemailMessage](VoicemailMessage.md) getVoicemailMessage(messageId, expand)
 
 Get a voicemail message
 
+Wraps GET /api/v2/voicemail/messages/{messageId}
 
-
-Wraps GET /api/v2/voicemail/messages/{messageId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -634,34 +576,28 @@ try {
 
 ### Parameters
 
+| Name          | Type                                | Description                                                    | Notes                                                                                                                                                            |
+| ------------- | ----------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **messageId** | **String**                          | Message ID                                                     |
+| **expand**    | [**List&lt;String&gt;**](String.md) | If the caller is a known user, which fields, if any, to expand | [optional]<br />**Values**: callerUser.routingStatus, callerUser.primaryPresence, callerUser.conversationSummary, callerUser.outOfOffice, callerUser.geolocation |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **messageId** | **String**| Message ID | 
-| **expand** | [**List&lt;String&gt;**](String.html)| If the caller is a known user, which fields, if any, to expand | [optional]<br />**Values**: callerUser.routingStatus, callerUser.primaryPresence, callerUser.conversationSummary, callerUser.outOfOffice, callerUser.geolocation 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailMessage**](VoicemailMessage.html)
+[**VoicemailMessage**](VoicemailMessage.md)
 
 <a name="getVoicemailMessageMedia"></a>
 
 # **getVoicemailMessageMedia**
 
-
-
-> [VoicemailMediaInfo](VoicemailMediaInfo.html) getVoicemailMessageMedia(messageId, formatId)
+> [VoicemailMediaInfo](VoicemailMediaInfo.md) getVoicemailMessageMedia(messageId, formatId)
 
 Get media playback URI for this voicemail message
 
+Wraps GET /api/v2/voicemail/messages/{messageId}/media
 
-
-Wraps GET /api/v2/voicemail/messages/{messageId}/media  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -698,34 +634,28 @@ try {
 
 ### Parameters
 
+| Name          | Type       | Description               | Notes                                                                                              |
+| ------------- | ---------- | ------------------------- | -------------------------------------------------------------------------------------------------- |
+| **messageId** | **String** | Message ID                |
+| **formatId**  | **String** | The desired media format. | [optional] [default to WEBM]<br />**Values**: WAV, WEBM, WAV_ULAW, OGG_VORBIS, OGG_OPUS, MP3, NONE |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **messageId** | **String**| Message ID | 
-| **formatId** | **String**| The desired media format. | [optional] [default to WEBM]<br />**Values**: WAV, WEBM, WAV_ULAW, OGG_VORBIS, OGG_OPUS, MP3, NONE 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailMediaInfo**](VoicemailMediaInfo.html)
+[**VoicemailMediaInfo**](VoicemailMediaInfo.md)
 
 <a name="getVoicemailMessages"></a>
 
 # **getVoicemailMessages**
 
-
-
-> [VoicemailMessageEntityListing](VoicemailMessageEntityListing.html) getVoicemailMessages(ids, expand)
+> [VoicemailMessageEntityListing](VoicemailMessageEntityListing.md) getVoicemailMessages(ids, expand)
 
 List voicemail messages
 
+Wraps GET /api/v2/voicemail/messages
 
-
-Wraps GET /api/v2/voicemail/messages  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -762,35 +692,30 @@ try {
 
 ### Parameters
 
+| Name       | Type                                | Description                                                    | Notes                                                                                                                                                            |
+| ---------- | ----------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ids**    | **String**                          | An optional comma separated list of VoicemailMessage ids       | [optional]                                                                                                                                                       |
+| **expand** | [**List&lt;String&gt;**](String.md) | If the caller is a known user, which fields, if any, to expand | [optional]<br />**Values**: callerUser.routingStatus, callerUser.primaryPresence, callerUser.conversationSummary, callerUser.outOfOffice, callerUser.geolocation |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **ids** | **String**| An optional comma separated list of VoicemailMessage ids | [optional] 
-| **expand** | [**List&lt;String&gt;**](String.html)| If the caller is a known user, which fields, if any, to expand | [optional]<br />**Values**: callerUser.routingStatus, callerUser.primaryPresence, callerUser.conversationSummary, callerUser.outOfOffice, callerUser.geolocation 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailMessageEntityListing**](VoicemailMessageEntityListing.html)
+[**VoicemailMessageEntityListing**](VoicemailMessageEntityListing.md)
 
 <a name="getVoicemailPolicy"></a>
 
 # **getVoicemailPolicy**
 
-
-
-> [VoicemailOrganizationPolicy](VoicemailOrganizationPolicy.html) getVoicemailPolicy()
+> [VoicemailOrganizationPolicy](VoicemailOrganizationPolicy.md) getVoicemailPolicy()
 
 Get a policy
 
+Wraps GET /api/v2/voicemail/policy
 
+Requires ALL permissions:
 
-Wraps GET /api/v2/voicemail/policy  
-
-Requires ALL permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -827,29 +752,23 @@ try {
 
 This endpoint does not require any parameters.
 
-
-
 ### Return type
 
-[**VoicemailOrganizationPolicy**](VoicemailOrganizationPolicy.html)
+[**VoicemailOrganizationPolicy**](VoicemailOrganizationPolicy.md)
 
 <a name="getVoicemailQueueMessages"></a>
 
 # **getVoicemailQueueMessages**
 
-
-
-> [VoicemailMessageEntityListing](VoicemailMessageEntityListing.html) getVoicemailQueueMessages(queueId, pageSize, pageNumber)
+> [VoicemailMessageEntityListing](VoicemailMessageEntityListing.md) getVoicemailQueueMessages(queueId, pageSize, pageNumber)
 
 List voicemail messages
 
+Wraps GET /api/v2/voicemail/queues/{queueId}/messages
 
+Requires ANY permissions:
 
-Wraps GET /api/v2/voicemail/queues/{queueId}/messages  
-
-Requires ANY permissions: 
-
-* voicemail:acdvoicemail:view
+- voicemail:acdvoicemail:view
 
 ### Example
 
@@ -887,35 +806,29 @@ try {
 
 ### Parameters
 
+| Name           | Type        | Description | Notes                      |
+| -------------- | ----------- | ----------- | -------------------------- |
+| **queueId**    | **String**  | Queue ID    |
+| **pageSize**   | **Integer** | Page size   | [optional] [default to 25] |
+| **pageNumber** | **Integer** | Page number | [optional] [default to 1]  |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **queueId** | **String**| Queue ID | 
-| **pageSize** | **Integer**| Page size | [optional] [default to 25] 
-| **pageNumber** | **Integer**| Page number | [optional] [default to 1] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailMessageEntityListing**](VoicemailMessageEntityListing.html)
+[**VoicemailMessageEntityListing**](VoicemailMessageEntityListing.md)
 
 <a name="getVoicemailSearch"></a>
 
 # **getVoicemailSearch**
 
-
-
-> [VoicemailsSearchResponse](VoicemailsSearchResponse.html) getVoicemailSearch(q64, expand)
+> [VoicemailsSearchResponse](VoicemailsSearchResponse.md) getVoicemailSearch(q64, expand)
 
 Search voicemails using the q64 value returned from a previous search
 
+Wraps GET /api/v2/voicemail/search
 
-
-Wraps GET /api/v2/voicemail/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -952,34 +865,28 @@ try {
 
 ### Parameters
 
+| Name       | Type                                | Description | Notes      |
+| ---------- | ----------------------------------- | ----------- | ---------- |
+| **q64**    | **String**                          | q64         |
+| **expand** | [**List&lt;String&gt;**](String.md) | expand      | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **q64** | **String**| q64 | 
-| **expand** | [**List&lt;String&gt;**](String.html)| expand | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailsSearchResponse**](VoicemailsSearchResponse.html)
+[**VoicemailsSearchResponse**](VoicemailsSearchResponse.md)
 
 <a name="getVoicemailUserpolicy"></a>
 
 # **getVoicemailUserpolicy**
 
-
-
-> [VoicemailUserPolicy](VoicemailUserPolicy.html) getVoicemailUserpolicy(userId)
+> [VoicemailUserPolicy](VoicemailUserPolicy.md) getVoicemailUserpolicy(userId)
 
 Get a user&#39;s voicemail policy
 
+Wraps GET /api/v2/voicemail/userpolicies/{userId}
 
-
-Wraps GET /api/v2/voicemail/userpolicies/{userId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1015,35 +922,30 @@ try {
 
 ### Parameters
 
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **userId** | **String** | User ID     |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| User ID | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailUserPolicy**](VoicemailUserPolicy.html)
+[**VoicemailUserPolicy**](VoicemailUserPolicy.md)
 
 <a name="patchVoicemailGroupPolicy"></a>
 
 # **patchVoicemailGroupPolicy**
 
-
-
-> [VoicemailGroupPolicy](VoicemailGroupPolicy.html) patchVoicemailGroupPolicy(groupId, body)
+> [VoicemailGroupPolicy](VoicemailGroupPolicy.md) patchVoicemailGroupPolicy(groupId, body)
 
 Update a group&#39;s voicemail policy
 
+Wraps PATCH /api/v2/voicemail/groups/{groupId}/policy
 
+Requires ANY permissions:
 
-Wraps PATCH /api/v2/voicemail/groups/{groupId}/policy  
-
-Requires ANY permissions: 
-
-* directory:group:add
-* directory:group:edit
+- directory:group:add
+- directory:group:edit
 
 ### Example
 
@@ -1080,34 +982,28 @@ try {
 
 ### Parameters
 
+| Name        | Type                                                | Description                      | Notes |
+| ----------- | --------------------------------------------------- | -------------------------------- | ----- |
+| **groupId** | **String**                                          | Group ID                         |
+| **body**    | [**VoicemailGroupPolicy**](VoicemailGroupPolicy.md) | The group&#39;s voicemail policy |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **groupId** | **String**| Group ID | 
-| **body** | [**VoicemailGroupPolicy**](VoicemailGroupPolicy.html)| The group&#39;s voicemail policy | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailGroupPolicy**](VoicemailGroupPolicy.html)
+[**VoicemailGroupPolicy**](VoicemailGroupPolicy.md)
 
 <a name="patchVoicemailMePolicy"></a>
 
 # **patchVoicemailMePolicy**
 
-
-
-> [VoicemailUserPolicy](VoicemailUserPolicy.html) patchVoicemailMePolicy(body)
+> [VoicemailUserPolicy](VoicemailUserPolicy.md) patchVoicemailMePolicy(body)
 
 Update the current user&#39;s voicemail policy
 
+Wraps PATCH /api/v2/voicemail/me/policy
 
-
-Wraps PATCH /api/v2/voicemail/me/policy  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1143,33 +1039,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                              | Description                     | Notes |
+| -------- | ------------------------------------------------- | ------------------------------- | ----- |
+| **body** | [**VoicemailUserPolicy**](VoicemailUserPolicy.md) | The user&#39;s voicemail policy |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**VoicemailUserPolicy**](VoicemailUserPolicy.html)| The user&#39;s voicemail policy | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailUserPolicy**](VoicemailUserPolicy.html)
+[**VoicemailUserPolicy**](VoicemailUserPolicy.md)
 
 <a name="patchVoicemailMessage"></a>
 
 # **patchVoicemailMessage**
 
-
-
-> [VoicemailMessage](VoicemailMessage.html) patchVoicemailMessage(messageId, body)
+> [VoicemailMessage](VoicemailMessage.md) patchVoicemailMessage(messageId, body)
 
 Update a voicemail message
 
 A user voicemail can only be modified by its associated user. A group voicemail can only be modified by a user that is a member of the group. A queue voicemail can only be modified by a participant of the conversation the voicemail is associated with.
 
-Wraps PATCH /api/v2/voicemail/messages/{messageId}  
+Wraps PATCH /api/v2/voicemail/messages/{messageId}
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1206,34 +1098,28 @@ try {
 
 ### Parameters
 
+| Name          | Type                                        | Description      | Notes |
+| ------------- | ------------------------------------------- | ---------------- | ----- |
+| **messageId** | **String**                                  | Message ID       |
+| **body**      | [**VoicemailMessage**](VoicemailMessage.md) | VoicemailMessage |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **messageId** | **String**| Message ID | 
-| **body** | [**VoicemailMessage**](VoicemailMessage.html)| VoicemailMessage | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailMessage**](VoicemailMessage.html)
+[**VoicemailMessage**](VoicemailMessage.md)
 
 <a name="patchVoicemailUserpolicy"></a>
 
 # **patchVoicemailUserpolicy**
 
-
-
-> [VoicemailUserPolicy](VoicemailUserPolicy.html) patchVoicemailUserpolicy(userId, body)
+> [VoicemailUserPolicy](VoicemailUserPolicy.md) patchVoicemailUserpolicy(userId, body)
 
 Update a user&#39;s voicemail policy
 
+Wraps PATCH /api/v2/voicemail/userpolicies/{userId}
 
-
-Wraps PATCH /api/v2/voicemail/userpolicies/{userId}  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1270,34 +1156,28 @@ try {
 
 ### Parameters
 
+| Name       | Type                                              | Description                     | Notes |
+| ---------- | ------------------------------------------------- | ------------------------------- | ----- |
+| **userId** | **String**                                        | User ID                         |
+| **body**   | [**VoicemailUserPolicy**](VoicemailUserPolicy.md) | The user&#39;s voicemail policy |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| User ID | 
-| **body** | [**VoicemailUserPolicy**](VoicemailUserPolicy.html)| The user&#39;s voicemail policy | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailUserPolicy**](VoicemailUserPolicy.html)
+[**VoicemailUserPolicy**](VoicemailUserPolicy.md)
 
 <a name="postVoicemailMessages"></a>
 
 # **postVoicemailMessages**
 
-
-
-> [VoicemailMessage](VoicemailMessage.html) postVoicemailMessages(body)
+> [VoicemailMessage](VoicemailMessage.md) postVoicemailMessages(body)
 
 Copy a voicemail message to a user or group
 
+Wraps POST /api/v2/voicemail/messages
 
-
-Wraps POST /api/v2/voicemail/messages  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1321,7 +1201,7 @@ ApiClient apiClient = ApiClient.Builder.standard()
 Configuration.setDefaultApiClient(apiClient);
 
 VoicemailApi apiInstance = new VoicemailApi();
-CopyVoicemailMessage body = new CopyVoicemailMessage(); // CopyVoicemailMessage | 
+CopyVoicemailMessage body = new CopyVoicemailMessage(); // CopyVoicemailMessage |
 try {
     VoicemailMessage result = apiInstance.postVoicemailMessages(body);
     System.out.println(result);
@@ -1333,33 +1213,27 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                | Description | Notes      |
+| -------- | --------------------------------------------------- | ----------- | ---------- |
+| **body** | [**CopyVoicemailMessage**](CopyVoicemailMessage.md) |             | [optional] |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**CopyVoicemailMessage**](CopyVoicemailMessage.html)|  | [optional] 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailMessage**](VoicemailMessage.html)
+[**VoicemailMessage**](VoicemailMessage.md)
 
 <a name="postVoicemailSearch"></a>
 
 # **postVoicemailSearch**
 
-
-
-> [VoicemailsSearchResponse](VoicemailsSearchResponse.html) postVoicemailSearch(body)
+> [VoicemailsSearchResponse](VoicemailsSearchResponse.md) postVoicemailSearch(body)
 
 Search voicemails
 
+Wraps POST /api/v2/voicemail/search
 
-
-Wraps POST /api/v2/voicemail/search  
-
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1395,33 +1269,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                    | Description            | Notes |
+| -------- | ------------------------------------------------------- | ---------------------- | ----- |
+| **body** | [**VoicemailSearchRequest**](VoicemailSearchRequest.md) | Search request options |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**VoicemailSearchRequest**](VoicemailSearchRequest.html)| Search request options | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailsSearchResponse**](VoicemailsSearchResponse.html)
+[**VoicemailsSearchResponse**](VoicemailsSearchResponse.md)
 
 <a name="putVoicemailMessage"></a>
 
 # **putVoicemailMessage**
 
-
-
-> [VoicemailMessage](VoicemailMessage.html) putVoicemailMessage(messageId, body)
+> [VoicemailMessage](VoicemailMessage.md) putVoicemailMessage(messageId, body)
 
 Update a voicemail message
 
 A user voicemail can only be modified by its associated user. A group voicemail can only be modified by a user that is a member of the group. A queue voicemail can only be modified by a participant of the conversation the voicemail is associated with.
 
-Wraps PUT /api/v2/voicemail/messages/{messageId}  
+Wraps PUT /api/v2/voicemail/messages/{messageId}
 
-Requires NO permissions: 
-
+Requires NO permissions:
 
 ### Example
 
@@ -1458,35 +1328,30 @@ try {
 
 ### Parameters
 
+| Name          | Type                                        | Description      | Notes |
+| ------------- | ------------------------------------------- | ---------------- | ----- |
+| **messageId** | **String**                                  | Message ID       |
+| **body**      | [**VoicemailMessage**](VoicemailMessage.md) | VoicemailMessage |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **messageId** | **String**| Message ID | 
-| **body** | [**VoicemailMessage**](VoicemailMessage.html)| VoicemailMessage | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailMessage**](VoicemailMessage.html)
+[**VoicemailMessage**](VoicemailMessage.md)
 
 <a name="putVoicemailPolicy"></a>
 
 # **putVoicemailPolicy**
 
-
-
-> [VoicemailOrganizationPolicy](VoicemailOrganizationPolicy.html) putVoicemailPolicy(body)
+> [VoicemailOrganizationPolicy](VoicemailOrganizationPolicy.md) putVoicemailPolicy(body)
 
 Update a policy
 
+Wraps PUT /api/v2/voicemail/policy
 
+Requires ALL permissions:
 
-Wraps PUT /api/v2/voicemail/policy  
-
-Requires ALL permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -1522,34 +1387,29 @@ try {
 
 ### Parameters
 
+| Name     | Type                                                              | Description | Notes |
+| -------- | ----------------------------------------------------------------- | ----------- | ----- |
+| **body** | [**VoicemailOrganizationPolicy**](VoicemailOrganizationPolicy.md) | Policy      |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **body** | [**VoicemailOrganizationPolicy**](VoicemailOrganizationPolicy.html)| Policy | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailOrganizationPolicy**](VoicemailOrganizationPolicy.html)
+[**VoicemailOrganizationPolicy**](VoicemailOrganizationPolicy.md)
 
 <a name="putVoicemailUserpolicy"></a>
 
 # **putVoicemailUserpolicy**
 
-
-
-> [VoicemailUserPolicy](VoicemailUserPolicy.html) putVoicemailUserpolicy(userId, body)
+> [VoicemailUserPolicy](VoicemailUserPolicy.md) putVoicemailUserpolicy(userId, body)
 
 Update a user&#39;s voicemail policy
 
+Wraps PUT /api/v2/voicemail/userpolicies/{userId}
 
+Requires ALL permissions:
 
-Wraps PUT /api/v2/voicemail/userpolicies/{userId}  
-
-Requires ALL permissions: 
-
-* telephony:plugin:all
+- telephony:plugin:all
 
 ### Example
 
@@ -1586,15 +1446,13 @@ try {
 
 ### Parameters
 
+| Name       | Type                                              | Description                     | Notes |
+| ---------- | ------------------------------------------------- | ------------------------------- | ----- |
+| **userId** | **String**                                        | User ID                         |
+| **body**   | [**VoicemailUserPolicy**](VoicemailUserPolicy.md) | The user&#39;s voicemail policy |
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **userId** | **String**| User ID | 
-| **body** | [**VoicemailUserPolicy**](VoicemailUserPolicy.html)| The user&#39;s voicemail policy | 
 {: class="table-striped"}
-
 
 ### Return type
 
-[**VoicemailUserPolicy**](VoicemailUserPolicy.html)
-
+[**VoicemailUserPolicy**](VoicemailUserPolicy.md)

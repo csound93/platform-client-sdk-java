@@ -1,17 +1,15 @@
 ---
 title: WfmBuShortTermForecastUpdateCompleteTopicWfmVersionedEntityMetadata
 ---
-## WfmBuShortTermForecastUpdateCompleteTopicWfmVersionedEntityMetadata
 
+## WfmBuShortTermForecastUpdateCompleteTopicWfmVersionedEntityMetadata
 
 ## Properties
 
-| Name | Type | Description | Notes |
-| ------------ | ------------- | ------------- | ------------- |
-| **version** | <!----><!---->**Integer**<!----> |  |  [optional] |
-| **modifiedBy** | <!----><!---->[**WfmBuShortTermForecastUpdateCompleteTopicUserReference**](WfmBuShortTermForecastUpdateCompleteTopicUserReference.html)<!----> |  |  [optional] |
-| **dateModified** | <!----><!---->[**Date**](Date.html)<!----> |  |  [optional] |
+| Name             | Type                                                                                                                                         | Description | Notes      |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **version**      | <!----><!---->**Integer**<!---->                                                                                                             |             | [optional] |
+| **modifiedBy**   | <!----><!---->[**WfmBuShortTermForecastUpdateCompleteTopicUserReference**](WfmBuShortTermForecastUpdateCompleteTopicUserReference.md)<!----> |             | [optional] |
+| **dateModified** | <!----><!---->[**Date**](Date.md)<!---->                                                                                                     |             | [optional] |
+
 {: class="table table-striped"}
-
-
-
