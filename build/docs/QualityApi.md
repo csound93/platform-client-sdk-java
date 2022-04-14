@@ -27,6 +27,7 @@ All URIs are relative to *https://api.mypurecloud.com*
 | [**getQualityFormsEvaluation**](QualityApi.html#getQualityFormsEvaluation) | Get an evaluation form |
 | [**getQualityFormsEvaluationVersions**](QualityApi.html#getQualityFormsEvaluationVersions) | Gets all the revisions for a specific evaluation. |
 | [**getQualityFormsEvaluations**](QualityApi.html#getQualityFormsEvaluations) | Get the list of evaluation forms |
+| [**getQualityFormsEvaluationsBulkContexts**](QualityApi.html#getQualityFormsEvaluationsBulkContexts) | Retrieve a list of the latest published evaluation form versions by context ids |
 | [**getQualityFormsSurvey**](QualityApi.html#getQualityFormsSurvey) | Get a survey form |
 | [**getQualityFormsSurveyVersions**](QualityApi.html#getQualityFormsSurveyVersions) | Gets all the revisions for a specific survey. |
 | [**getQualityFormsSurveys**](QualityApi.html#getQualityFormsSurveys) | Get the list of survey forms |
@@ -46,6 +47,7 @@ All URIs are relative to *https://api.mypurecloud.com*
 | [**postQualityCalibrations**](QualityApi.html#postQualityCalibrations) | Create a calibration |
 | [**postQualityConversationEvaluations**](QualityApi.html#postQualityConversationEvaluations) | Create an evaluation |
 | [**postQualityConversationsAuditsQuery**](QualityApi.html#postQualityConversationsAuditsQuery) | Create audit query execution |
+| [**postQualityEvaluationsAggregatesQueryMe**](QualityApi.html#postQualityEvaluationsAggregatesQueryMe) | Query for evaluation aggregates for the current user |
 | [**postQualityEvaluationsScoring**](QualityApi.html#postQualityEvaluationsScoring) | Score evaluation |
 | [**postQualityForms**](QualityApi.html#postQualityForms) | Create an evaluation form. |
 | [**postQualityFormsEvaluations**](QualityApi.html#postQualityFormsEvaluations) | Create an evaluation form. |
@@ -169,7 +171,7 @@ Configuration.setDefaultApiClient(apiClient);
 QualityApi apiInstance = new QualityApi();
 String conversationId = "conversationId_example"; // String | conversationId
 String evaluationId = "evaluationId_example"; // String | evaluationId
-String expand = "expand_example"; // String | evaluatorId
+String expand = "expand_example"; // String | evaluatorId, evaluationForm
 try {
     Evaluation result = apiInstance.deleteQualityConversationEvaluation(conversationId, evaluationId, expand);
     System.out.println(result);
@@ -186,7 +188,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **conversationId** | **String**| conversationId | 
 | **evaluationId** | **String**| evaluationId | 
-| **expand** | **String**| evaluatorId | [optional] 
+| **expand** | **String**| evaluatorId, evaluationForm | [optional] 
 {: class="table-striped"}
 
 
@@ -390,7 +392,7 @@ null (empty response body)
 
 Gets a list of Agent Activities
 
-Includes the number of evaluations and average evaluation score. These statistics include released evaluations only when evaluatorUserId is provided. In the absence of evaluatorUserId in the request, the api excludes evaluations which are set to never release for the calculation of evaluation statistics. 
+Each item on the list shows one agent&#39;s evaluation activity comprised of the number of evaluations and the highest, average, and lowest standard and critical scores, as well as a sub list showing the number and average score of evaluations for each evaluator for that agent.  evaluatorUserId, startTime, and endTime are all filtering criteria. If specified, the only evaluations used to compile the agent activity response will be ones that match the filtering criteria. agentUserId, name, group, and agentTeamId are all agent selection criteria. criteria.  If one or more agent selection criteria are specified, then the returned activity will include users that match the criteria even if those users did not have any agent activity or evaluations that do not match any filtering criteria.  If no agent selection criteria are specified but an evaluatorUserId is, then the returned activity will be only for those agents that had evaluations where the evaluator is the evaluatorUserId.  If no agent selection criteria are specified and no evaluatorUserId is specified, then the returned activity will be for all users
 
 Wraps GET /api/v2/quality/agents/activity  
 
@@ -1470,6 +1472,69 @@ try {
 ### Return type
 
 [**EvaluationFormEntityListing**](EvaluationFormEntityListing.html)
+
+<a name="getQualityFormsEvaluationsBulkContexts"></a>
+
+# **getQualityFormsEvaluationsBulkContexts**
+
+
+
+> [List&lt;EvaluationForm&gt;](EvaluationForm.html) getQualityFormsEvaluationsBulkContexts(contextId)
+
+Retrieve a list of the latest published evaluation form versions by context ids
+
+
+
+Wraps GET /api/v2/quality/forms/evaluations/bulk/contexts  
+
+Requires ALL permissions: 
+
+* quality:evaluationForm:view
+
+### Example
+
+```{"language":"java"}
+//Import classes:
+import com.mypurecloud.sdk.v2.ApiClient;
+import com.mypurecloud.sdk.v2.ApiException;
+import com.mypurecloud.sdk.v2.Configuration;
+import com.mypurecloud.sdk.v2.auth.*;
+import com.mypurecloud.sdk.v2.api.QualityApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Create ApiClient instance
+ApiClient apiClient = ApiClient.Builder.standard()
+		.withAccessToken(accessToken)
+		.withBasePath("https://api.mypurecloud.com")
+		.build();
+
+// Use the ApiClient instance
+Configuration.setDefaultApiClient(apiClient);
+
+QualityApi apiInstance = new QualityApi();
+List<String> contextId = Arrays.asList("contextId_example"); // List<String> | A comma-delimited list of valid evaluation form context ids
+try {
+    List<EvaluationForm> result = apiInstance.getQualityFormsEvaluationsBulkContexts(contextId);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling QualityApi#getQualityFormsEvaluationsBulkContexts");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **contextId** | [**List&lt;String&gt;**](String.html)| A comma-delimited list of valid evaluation form context ids | 
+{: class="table-striped"}
+
+
+### Return type
+
+[**List&lt;EvaluationForm&gt;**](EvaluationForm.html)
 
 <a name="getQualityFormsSurvey"></a>
 
@@ -2700,6 +2765,68 @@ try {
 
 [**QualityAuditQueryExecutionStatusResponse**](QualityAuditQueryExecutionStatusResponse.html)
 
+<a name="postQualityEvaluationsAggregatesQueryMe"></a>
+
+# **postQualityEvaluationsAggregatesQueryMe**
+
+
+
+> [EvaluationAggregateQueryResponse](EvaluationAggregateQueryResponse.html) postQualityEvaluationsAggregatesQueryMe(body)
+
+Query for evaluation aggregates for the current user
+
+
+
+Wraps POST /api/v2/quality/evaluations/aggregates/query/me  
+
+Requires NO permissions: 
+
+
+### Example
+
+```{"language":"java"}
+//Import classes:
+import com.mypurecloud.sdk.v2.ApiClient;
+import com.mypurecloud.sdk.v2.ApiException;
+import com.mypurecloud.sdk.v2.Configuration;
+import com.mypurecloud.sdk.v2.auth.*;
+import com.mypurecloud.sdk.v2.api.QualityApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Create ApiClient instance
+ApiClient apiClient = ApiClient.Builder.standard()
+		.withAccessToken(accessToken)
+		.withBasePath("https://api.mypurecloud.com")
+		.build();
+
+// Use the ApiClient instance
+Configuration.setDefaultApiClient(apiClient);
+
+QualityApi apiInstance = new QualityApi();
+EvaluationAggregationQueryMe body = new EvaluationAggregationQueryMe(); // EvaluationAggregationQueryMe | query
+try {
+    EvaluationAggregateQueryResponse result = apiInstance.postQualityEvaluationsAggregatesQueryMe(body);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling QualityApi#postQualityEvaluationsAggregatesQueryMe");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **body** | [**EvaluationAggregationQueryMe**](EvaluationAggregationQueryMe.html)| query | 
+{: class="table-striped"}
+
+
+### Return type
+
+[**EvaluationAggregateQueryResponse**](EvaluationAggregateQueryResponse.html)
+
 <a name="postQualityEvaluationsScoring"></a>
 
 # **postQualityEvaluationsScoring**
@@ -3312,7 +3439,7 @@ QualityApi apiInstance = new QualityApi();
 String conversationId = "conversationId_example"; // String | conversationId
 String evaluationId = "evaluationId_example"; // String | evaluationId
 Evaluation body = new Evaluation(); // Evaluation | evaluation
-String expand = "expand_example"; // String | evaluatorId
+String expand = "expand_example"; // String | evaluatorId, evaluationForm
 try {
     Evaluation result = apiInstance.putQualityConversationEvaluation(conversationId, evaluationId, body, expand);
     System.out.println(result);
@@ -3330,7 +3457,7 @@ try {
 | **conversationId** | **String**| conversationId | 
 | **evaluationId** | **String**| evaluationId | 
 | **body** | [**Evaluation**](Evaluation.html)| evaluation | 
-| **expand** | **String**| evaluatorId | [optional] 
+| **expand** | **String**| evaluatorId, evaluationForm | [optional] 
 {: class="table-striped"}
 
 

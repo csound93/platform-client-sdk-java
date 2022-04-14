@@ -12,6 +12,8 @@ import java.io.IOException;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.mypurecloud.sdk.v2.model.ConversationEventCoBrowse;
+import com.mypurecloud.sdk.v2.model.ConversationEventPresence;
+import com.mypurecloud.sdk.v2.model.ConversationEventTyping;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -42,7 +44,10 @@ public class ConversationMessageEvent  implements Serializable {
  @JsonDeserialize(using = EventTypeEnumDeserializer.class)
   public enum EventTypeEnum {
     OUTDATEDSDKVERSION("OutdatedSdkVersion"),
-    COBROWSE("CoBrowse");
+    COBROWSE("CoBrowse"),
+    TYPING("Typing"),
+    PRESENCE("Presence"),
+    UNKNOWN("Unknown");
 
     private String value;
 
@@ -71,6 +76,8 @@ public class ConversationMessageEvent  implements Serializable {
   }
   private EventTypeEnum eventType = null;
   private ConversationEventCoBrowse coBrowse = null;
+  private ConversationEventTyping typing = null;
+  private ConversationEventPresence presence = null;
 
   
   /**
@@ -109,6 +116,42 @@ public class ConversationMessageEvent  implements Serializable {
   }
 
   
+  /**
+   * Typing event.
+   **/
+  public ConversationMessageEvent typing(ConversationEventTyping typing) {
+    this.typing = typing;
+    return this;
+  }
+  
+  @ApiModelProperty(example = "null", value = "Typing event.")
+  @JsonProperty("typing")
+  public ConversationEventTyping getTyping() {
+    return typing;
+  }
+  public void setTyping(ConversationEventTyping typing) {
+    this.typing = typing;
+  }
+
+  
+  /**
+   * Presence event.
+   **/
+  public ConversationMessageEvent presence(ConversationEventPresence presence) {
+    this.presence = presence;
+    return this;
+  }
+  
+  @ApiModelProperty(example = "null", value = "Presence event.")
+  @JsonProperty("presence")
+  public ConversationEventPresence getPresence() {
+    return presence;
+  }
+  public void setPresence(ConversationEventPresence presence) {
+    this.presence = presence;
+  }
+
+  
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -120,12 +163,14 @@ public class ConversationMessageEvent  implements Serializable {
     }
     ConversationMessageEvent conversationMessageEvent = (ConversationMessageEvent) o;
     return Objects.equals(this.eventType, conversationMessageEvent.eventType) &&
-        Objects.equals(this.coBrowse, conversationMessageEvent.coBrowse);
+        Objects.equals(this.coBrowse, conversationMessageEvent.coBrowse) &&
+        Objects.equals(this.typing, conversationMessageEvent.typing) &&
+        Objects.equals(this.presence, conversationMessageEvent.presence);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(eventType, coBrowse);
+    return Objects.hash(eventType, coBrowse, typing, presence);
   }
 
   @Override
@@ -135,6 +180,8 @@ public class ConversationMessageEvent  implements Serializable {
     
     sb.append("    eventType: ").append(toIndentedString(eventType)).append("\n");
     sb.append("    coBrowse: ").append(toIndentedString(coBrowse)).append("\n");
+    sb.append("    typing: ").append(toIndentedString(typing)).append("\n");
+    sb.append("    presence: ").append(toIndentedString(presence)).append("\n");
     sb.append("}");
     return sb.toString();
   }

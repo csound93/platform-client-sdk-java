@@ -32,6 +32,7 @@ import com.mypurecloud.sdk.v2.model.SurveyAggregateQueryResponse;
 import com.mypurecloud.sdk.v2.model.SurveyAggregationQuery;
 import com.mypurecloud.sdk.v2.model.CalibrationCreate;
 import com.mypurecloud.sdk.v2.model.QMAuditQueryRequest;
+import com.mypurecloud.sdk.v2.model.EvaluationAggregationQueryMe;
 import com.mypurecloud.sdk.v2.model.EvaluationScoringSet;
 import com.mypurecloud.sdk.v2.model.EvaluationFormAndScoringSet;
 import com.mypurecloud.sdk.v2.model.PublishForm;
@@ -59,6 +60,7 @@ import com.mypurecloud.sdk.v2.api.request.GetQualityFormsRequest;
 import com.mypurecloud.sdk.v2.api.request.GetQualityFormsEvaluationRequest;
 import com.mypurecloud.sdk.v2.api.request.GetQualityFormsEvaluationVersionsRequest;
 import com.mypurecloud.sdk.v2.api.request.GetQualityFormsEvaluationsRequest;
+import com.mypurecloud.sdk.v2.api.request.GetQualityFormsEvaluationsBulkContextsRequest;
 import com.mypurecloud.sdk.v2.api.request.GetQualityFormsSurveyRequest;
 import com.mypurecloud.sdk.v2.api.request.GetQualityFormsSurveyVersionsRequest;
 import com.mypurecloud.sdk.v2.api.request.GetQualityFormsSurveysRequest;
@@ -78,6 +80,7 @@ import com.mypurecloud.sdk.v2.api.request.PostAnalyticsSurveysAggregatesQueryReq
 import com.mypurecloud.sdk.v2.api.request.PostQualityCalibrationsRequest;
 import com.mypurecloud.sdk.v2.api.request.PostQualityConversationEvaluationsRequest;
 import com.mypurecloud.sdk.v2.api.request.PostQualityConversationsAuditsQueryRequest;
+import com.mypurecloud.sdk.v2.api.request.PostQualityEvaluationsAggregatesQueryMeRequest;
 import com.mypurecloud.sdk.v2.api.request.PostQualityEvaluationsScoringRequest;
 import com.mypurecloud.sdk.v2.api.request.PostQualityFormsRequest;
 import com.mypurecloud.sdk.v2.api.request.PostQualityFormsEvaluationsRequest;
@@ -200,7 +203,7 @@ public class QualityApi {
    * 
    * @param conversationId conversationId (required)
    * @param evaluationId evaluationId (required)
-   * @param expand evaluatorId (optional)
+   * @param expand evaluatorId, evaluationForm (optional)
    * @return Evaluation
    * @throws ApiException if the request fails on the server
    * @throws IOException if the request fails to be processed
@@ -214,7 +217,7 @@ public class QualityApi {
    * 
    * @param conversationId conversationId (required)
    * @param evaluationId evaluationId (required)
-   * @param expand evaluatorId (optional)
+   * @param expand evaluatorId, evaluationForm (optional)
    * @return Evaluation
    * @throws IOException if the request fails to be processed
    */
@@ -512,7 +515,7 @@ public class QualityApi {
   
   /**
    * Gets a list of Agent Activities
-   * Includes the number of evaluations and average evaluation score. These statistics include released evaluations only when evaluatorUserId is provided. In the absence of evaluatorUserId in the request, the api excludes evaluations which are set to never release for the calculation of evaluation statistics. 
+   * Each item on the list shows one agent&#39;s evaluation activity comprised of the number of evaluations and the highest, average, and lowest standard and critical scores, as well as a sub list showing the number and average score of evaluations for each evaluator for that agent.  evaluatorUserId, startTime, and endTime are all filtering criteria. If specified, the only evaluations used to compile the agent activity response will be ones that match the filtering criteria. agentUserId, name, group, and agentTeamId are all agent selection criteria. criteria.  If one or more agent selection criteria are specified, then the returned activity will include users that match the criteria even if those users did not have any agent activity or evaluations that do not match any filtering criteria.  If no agent selection criteria are specified but an evaluatorUserId is, then the returned activity will be only for those agents that had evaluations where the evaluator is the evaluatorUserId.  If no agent selection criteria are specified and no evaluatorUserId is specified, then the returned activity will be for all users
    * @param pageSize The total page size requested (optional, default to 25)
    * @param pageNumber The page number requested (optional, default to 1)
    * @param sortBy variable name requested to sort by (optional)
@@ -535,7 +538,7 @@ public class QualityApi {
 
   /**
    * Gets a list of Agent Activities
-   * Includes the number of evaluations and average evaluation score. These statistics include released evaluations only when evaluatorUserId is provided. In the absence of evaluatorUserId in the request, the api excludes evaluations which are set to never release for the calculation of evaluation statistics. 
+   * Each item on the list shows one agent&#39;s evaluation activity comprised of the number of evaluations and the highest, average, and lowest standard and critical scores, as well as a sub list showing the number and average score of evaluations for each evaluator for that agent.  evaluatorUserId, startTime, and endTime are all filtering criteria. If specified, the only evaluations used to compile the agent activity response will be ones that match the filtering criteria. agentUserId, name, group, and agentTeamId are all agent selection criteria. criteria.  If one or more agent selection criteria are specified, then the returned activity will include users that match the criteria even if those users did not have any agent activity or evaluations that do not match any filtering criteria.  If no agent selection criteria are specified but an evaluatorUserId is, then the returned activity will be only for those agents that had evaluations where the evaluator is the evaluatorUserId.  If no agent selection criteria are specified and no evaluatorUserId is specified, then the returned activity will be for all users
    * @param pageSize The total page size requested (optional, default to 25)
    * @param pageNumber The page number requested (optional, default to 1)
    * @param sortBy variable name requested to sort by (optional)
@@ -586,7 +589,7 @@ public class QualityApi {
 
   /**
    * Gets a list of Agent Activities
-   * Includes the number of evaluations and average evaluation score. These statistics include released evaluations only when evaluatorUserId is provided. In the absence of evaluatorUserId in the request, the api excludes evaluations which are set to never release for the calculation of evaluation statistics. 
+   * Each item on the list shows one agent&#39;s evaluation activity comprised of the number of evaluations and the highest, average, and lowest standard and critical scores, as well as a sub list showing the number and average score of evaluations for each evaluator for that agent.  evaluatorUserId, startTime, and endTime are all filtering criteria. If specified, the only evaluations used to compile the agent activity response will be ones that match the filtering criteria. agentUserId, name, group, and agentTeamId are all agent selection criteria. criteria.  If one or more agent selection criteria are specified, then the returned activity will include users that match the criteria even if those users did not have any agent activity or evaluations that do not match any filtering criteria.  If no agent selection criteria are specified but an evaluatorUserId is, then the returned activity will be only for those agents that had evaluations where the evaluator is the evaluatorUserId.  If no agent selection criteria are specified and no evaluatorUserId is specified, then the returned activity will be for all users
    * @param request The request object
    * @return AgentActivityEntityListing
    * @throws ApiException if the request fails on the server
@@ -605,7 +608,7 @@ public class QualityApi {
 
   /**
    * Gets a list of Agent Activities
-   * Includes the number of evaluations and average evaluation score. These statistics include released evaluations only when evaluatorUserId is provided. In the absence of evaluatorUserId in the request, the api excludes evaluations which are set to never release for the calculation of evaluation statistics. 
+   * Each item on the list shows one agent&#39;s evaluation activity comprised of the number of evaluations and the highest, average, and lowest standard and critical scores, as well as a sub list showing the number and average score of evaluations for each evaluator for that agent.  evaluatorUserId, startTime, and endTime are all filtering criteria. If specified, the only evaluations used to compile the agent activity response will be ones that match the filtering criteria. agentUserId, name, group, and agentTeamId are all agent selection criteria. criteria.  If one or more agent selection criteria are specified, then the returned activity will include users that match the criteria even if those users did not have any agent activity or evaluations that do not match any filtering criteria.  If no agent selection criteria are specified but an evaluatorUserId is, then the returned activity will be only for those agents that had evaluations where the evaluator is the evaluatorUserId.  If no agent selection criteria are specified and no evaluatorUserId is specified, then the returned activity will be for all users
    * @param request The request object
    * @return the response
    * @throws IOException if the request fails to be processed
@@ -1982,6 +1985,85 @@ public class QualityApi {
       }
       @SuppressWarnings("unchecked")
       ApiResponse<EvaluationFormEntityListing> response = (ApiResponse<EvaluationFormEntityListing>)(ApiResponse<?>)(new ApiException(exception));
+      return response;
+    }
+  }
+
+  
+  /**
+   * Retrieve a list of the latest published evaluation form versions by context ids
+   * 
+   * @param contextId A comma-delimited list of valid evaluation form context ids (required)
+   * @return List<EvaluationForm>
+   * @throws ApiException if the request fails on the server
+   * @throws IOException if the request fails to be processed
+   */
+  public List<EvaluationForm> getQualityFormsEvaluationsBulkContexts(List<String> contextId) throws IOException, ApiException {
+    return  getQualityFormsEvaluationsBulkContexts(createGetQualityFormsEvaluationsBulkContextsRequest(contextId));
+  }
+
+  /**
+   * Retrieve a list of the latest published evaluation form versions by context ids
+   * 
+   * @param contextId A comma-delimited list of valid evaluation form context ids (required)
+   * @return List<EvaluationForm>
+   * @throws IOException if the request fails to be processed
+   */
+  public ApiResponse<List<EvaluationForm>> getQualityFormsEvaluationsBulkContextsWithHttpInfo(List<String> contextId) throws IOException {
+    return getQualityFormsEvaluationsBulkContexts(createGetQualityFormsEvaluationsBulkContextsRequest(contextId).withHttpInfo());
+  }
+
+  private GetQualityFormsEvaluationsBulkContextsRequest createGetQualityFormsEvaluationsBulkContextsRequest(List<String> contextId) {
+    return GetQualityFormsEvaluationsBulkContextsRequest.builder()
+            .withContextId(contextId)
+    
+            .build();
+  }
+
+  /**
+   * Retrieve a list of the latest published evaluation form versions by context ids
+   * 
+   * @param request The request object
+   * @return List<EvaluationForm>
+   * @throws ApiException if the request fails on the server
+   * @throws IOException if the request fails to be processed
+   */
+  public List<EvaluationForm> getQualityFormsEvaluationsBulkContexts(GetQualityFormsEvaluationsBulkContextsRequest request) throws IOException, ApiException {
+    try {
+      ApiResponse<List<EvaluationForm>> response = pcapiClient.invoke(request.withHttpInfo(), new TypeReference<List<EvaluationForm>>() {});
+      return response.getBody();
+    }
+    catch (ApiException | IOException exception) {
+      if (pcapiClient.getShouldThrowErrors()) throw exception;
+      return null;
+    }
+  }
+
+  /**
+   * Retrieve a list of the latest published evaluation form versions by context ids
+   * 
+   * @param request The request object
+   * @return the response
+   * @throws IOException if the request fails to be processed
+   */
+  public ApiResponse<List<EvaluationForm>> getQualityFormsEvaluationsBulkContexts(ApiRequest<Void> request) throws IOException {
+    try {
+      return pcapiClient.invoke(request, new TypeReference<List<EvaluationForm>>() {});
+    }
+    catch (ApiException exception) {
+      @SuppressWarnings("unchecked")
+      ApiResponse<List<EvaluationForm>> response = (ApiResponse<List<EvaluationForm>>)(ApiResponse<?>)exception;
+      return response;
+    }
+    catch (Throwable exception) {
+      if (pcapiClient.getShouldThrowErrors()) {
+        if (exception instanceof IOException) {
+          throw (IOException)exception;
+        }
+        throw new RuntimeException(exception);
+      }
+      @SuppressWarnings("unchecked")
+      ApiResponse<List<EvaluationForm>> response = (ApiResponse<List<EvaluationForm>>)(ApiResponse<?>)(new ApiException(exception));
       return response;
     }
   }
@@ -3581,6 +3663,85 @@ public class QualityApi {
 
   
   /**
+   * Query for evaluation aggregates for the current user
+   * 
+   * @param body query (required)
+   * @return EvaluationAggregateQueryResponse
+   * @throws ApiException if the request fails on the server
+   * @throws IOException if the request fails to be processed
+   */
+  public EvaluationAggregateQueryResponse postQualityEvaluationsAggregatesQueryMe(EvaluationAggregationQueryMe body) throws IOException, ApiException {
+    return  postQualityEvaluationsAggregatesQueryMe(createPostQualityEvaluationsAggregatesQueryMeRequest(body));
+  }
+
+  /**
+   * Query for evaluation aggregates for the current user
+   * 
+   * @param body query (required)
+   * @return EvaluationAggregateQueryResponse
+   * @throws IOException if the request fails to be processed
+   */
+  public ApiResponse<EvaluationAggregateQueryResponse> postQualityEvaluationsAggregatesQueryMeWithHttpInfo(EvaluationAggregationQueryMe body) throws IOException {
+    return postQualityEvaluationsAggregatesQueryMe(createPostQualityEvaluationsAggregatesQueryMeRequest(body).withHttpInfo());
+  }
+
+  private PostQualityEvaluationsAggregatesQueryMeRequest createPostQualityEvaluationsAggregatesQueryMeRequest(EvaluationAggregationQueryMe body) {
+    return PostQualityEvaluationsAggregatesQueryMeRequest.builder()
+            .withBody(body)
+    
+            .build();
+  }
+
+  /**
+   * Query for evaluation aggregates for the current user
+   * 
+   * @param request The request object
+   * @return EvaluationAggregateQueryResponse
+   * @throws ApiException if the request fails on the server
+   * @throws IOException if the request fails to be processed
+   */
+  public EvaluationAggregateQueryResponse postQualityEvaluationsAggregatesQueryMe(PostQualityEvaluationsAggregatesQueryMeRequest request) throws IOException, ApiException {
+    try {
+      ApiResponse<EvaluationAggregateQueryResponse> response = pcapiClient.invoke(request.withHttpInfo(), new TypeReference<EvaluationAggregateQueryResponse>() {});
+      return response.getBody();
+    }
+    catch (ApiException | IOException exception) {
+      if (pcapiClient.getShouldThrowErrors()) throw exception;
+      return null;
+    }
+  }
+
+  /**
+   * Query for evaluation aggregates for the current user
+   * 
+   * @param request The request object
+   * @return the response
+   * @throws IOException if the request fails to be processed
+   */
+  public ApiResponse<EvaluationAggregateQueryResponse> postQualityEvaluationsAggregatesQueryMe(ApiRequest<EvaluationAggregationQueryMe> request) throws IOException {
+    try {
+      return pcapiClient.invoke(request, new TypeReference<EvaluationAggregateQueryResponse>() {});
+    }
+    catch (ApiException exception) {
+      @SuppressWarnings("unchecked")
+      ApiResponse<EvaluationAggregateQueryResponse> response = (ApiResponse<EvaluationAggregateQueryResponse>)(ApiResponse<?>)exception;
+      return response;
+    }
+    catch (Throwable exception) {
+      if (pcapiClient.getShouldThrowErrors()) {
+        if (exception instanceof IOException) {
+          throw (IOException)exception;
+        }
+        throw new RuntimeException(exception);
+      }
+      @SuppressWarnings("unchecked")
+      ApiResponse<EvaluationAggregateQueryResponse> response = (ApiResponse<EvaluationAggregateQueryResponse>)(ApiResponse<?>)(new ApiException(exception));
+      return response;
+    }
+  }
+
+  
+  /**
    * Score evaluation
    * 
    * @param body evaluationAndScoringSet (required)
@@ -4301,7 +4462,7 @@ public class QualityApi {
    * @param conversationId conversationId (required)
    * @param evaluationId evaluationId (required)
    * @param body evaluation (required)
-   * @param expand evaluatorId (optional)
+   * @param expand evaluatorId, evaluationForm (optional)
    * @return Evaluation
    * @throws ApiException if the request fails on the server
    * @throws IOException if the request fails to be processed
@@ -4316,7 +4477,7 @@ public class QualityApi {
    * @param conversationId conversationId (required)
    * @param evaluationId evaluationId (required)
    * @param body evaluation (required)
-   * @param expand evaluatorId (optional)
+   * @param expand evaluatorId, evaluationForm (optional)
    * @return Evaluation
    * @throws IOException if the request fails to be processed
    */

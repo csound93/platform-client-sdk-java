@@ -55,6 +55,7 @@ All URIs are relative to *https://api.mypurecloud.com*
 | [**getConversationsEmailMessagesDraft**](ConversationsApi.html#getConversationsEmailMessagesDraft) | Get conversation draft reply |
 | [**getConversationsEmailParticipantWrapup**](ConversationsApi.html#getConversationsEmailParticipantWrapup) | Get the wrap-up for this conversation participant.  |
 | [**getConversationsEmailParticipantWrapupcodes**](ConversationsApi.html#getConversationsEmailParticipantWrapupcodes) | Get list of wrapup codes for this conversation participant |
+| [**getConversationsEmailSettings**](ConversationsApi.html#getConversationsEmailSettings) | Get emails settings for a given conversation |
 | [**getConversationsEmails**](ConversationsApi.html#getConversationsEmails) | Get active email conversations for the logged in user |
 | [**getConversationsMessage**](ConversationsApi.html#getConversationsMessage) | Get message conversation |
 | [**getConversationsMessageCommunicationMessagesMediaMediaId**](ConversationsApi.html#getConversationsMessageCommunicationMessagesMediaMediaId) | Get media |
@@ -91,6 +92,7 @@ All URIs are relative to *https://api.mypurecloud.com*
 | [**patchConversationsCallbackParticipant**](ConversationsApi.html#patchConversationsCallbackParticipant) | Update conversation participant |
 | [**patchConversationsCallbackParticipantAttributes**](ConversationsApi.html#patchConversationsCallbackParticipantAttributes) | Update the attributes on a conversation participant. |
 | [**patchConversationsCallbackParticipantCommunication**](ConversationsApi.html#patchConversationsCallbackParticipantCommunication) | Update conversation participant&#39;s communication by disconnecting it. |
+| [**patchConversationsCallbacks**](ConversationsApi.html#patchConversationsCallbacks) | Update a scheduled callback |
 | [**patchConversationsChat**](ConversationsApi.html#patchConversationsChat) | Update a conversation by disconnecting all of the participants |
 | [**patchConversationsChatParticipant**](ConversationsApi.html#patchConversationsChatParticipant) | Update conversation participant |
 | [**patchConversationsChatParticipantAttributes**](ConversationsApi.html#patchConversationsChatParticipantAttributes) | Update the attributes on a conversation participant. |
@@ -130,6 +132,8 @@ All URIs are relative to *https://api.mypurecloud.com*
 | [**postConversationsCallParticipants**](ConversationsApi.html#postConversationsCallParticipants) | Add participants to a conversation |
 | [**postConversationsCallbackParticipantReplace**](ConversationsApi.html#postConversationsCallbackParticipantReplace) | Replace this participant with the specified user and/or address |
 | [**postConversationsCallbacks**](ConversationsApi.html#postConversationsCallbacks) | Create a Callback |
+| [**postConversationsCallbacksBulkDisconnect**](ConversationsApi.html#postConversationsCallbacksBulkDisconnect) | Disconnect multiple scheduled callbacks |
+| [**postConversationsCallbacksBulkUpdate**](ConversationsApi.html#postConversationsCallbacksBulkUpdate) | Update multiple scheduled callbacks |
 | [**postConversationsCalls**](ConversationsApi.html#postConversationsCalls) | Create a call conversation |
 | [**postConversationsChatCommunicationMessages**](ConversationsApi.html#postConversationsChatCommunicationMessages) | Send a message on behalf of a communication in a chat conversation. |
 | [**postConversationsChatCommunicationTyping**](ConversationsApi.html#postConversationsChatCommunicationTyping) | Send a typing-indicator on behalf of a communication in a chat conversation. |
@@ -3198,6 +3202,68 @@ try {
 
 [**List&lt;WrapupCode&gt;**](WrapupCode.html)
 
+<a name="getConversationsEmailSettings"></a>
+
+# **getConversationsEmailSettings**
+
+
+
+> [EmailsSettings](EmailsSettings.html) getConversationsEmailSettings(conversationId)
+
+Get emails settings for a given conversation
+
+
+
+Wraps GET /api/v2/conversations/emails/{conversationId}/settings  
+
+Requires NO permissions: 
+
+
+### Example
+
+```{"language":"java"}
+//Import classes:
+import com.mypurecloud.sdk.v2.ApiClient;
+import com.mypurecloud.sdk.v2.ApiException;
+import com.mypurecloud.sdk.v2.Configuration;
+import com.mypurecloud.sdk.v2.auth.*;
+import com.mypurecloud.sdk.v2.api.ConversationsApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Create ApiClient instance
+ApiClient apiClient = ApiClient.Builder.standard()
+		.withAccessToken(accessToken)
+		.withBasePath("https://api.mypurecloud.com")
+		.build();
+
+// Use the ApiClient instance
+Configuration.setDefaultApiClient(apiClient);
+
+ConversationsApi apiInstance = new ConversationsApi();
+String conversationId = "conversationId_example"; // String | conversationId
+try {
+    EmailsSettings result = apiInstance.getConversationsEmailSettings(conversationId);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling ConversationsApi#getConversationsEmailSettings");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **conversationId** | **String**| conversationId | 
+{: class="table-striped"}
+
+
+### Return type
+
+[**EmailsSettings**](EmailsSettings.html)
+
 <a name="getConversationsEmails"></a>
 
 # **getConversationsEmails**
@@ -5536,6 +5602,69 @@ try {
 ### Return type
 
 [**Empty**](Empty.html)
+
+<a name="patchConversationsCallbacks"></a>
+
+# **patchConversationsCallbacks**
+
+
+
+> [PatchCallbackResponse](PatchCallbackResponse.html) patchConversationsCallbacks(body)
+
+Update a scheduled callback
+
+
+
+Wraps PATCH /api/v2/conversations/callbacks  
+
+Requires ANY permissions: 
+
+* conversation:callback:edit
+
+### Example
+
+```{"language":"java"}
+//Import classes:
+import com.mypurecloud.sdk.v2.ApiClient;
+import com.mypurecloud.sdk.v2.ApiException;
+import com.mypurecloud.sdk.v2.Configuration;
+import com.mypurecloud.sdk.v2.auth.*;
+import com.mypurecloud.sdk.v2.api.ConversationsApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Create ApiClient instance
+ApiClient apiClient = ApiClient.Builder.standard()
+		.withAccessToken(accessToken)
+		.withBasePath("https://api.mypurecloud.com")
+		.build();
+
+// Use the ApiClient instance
+Configuration.setDefaultApiClient(apiClient);
+
+ConversationsApi apiInstance = new ConversationsApi();
+PatchCallbackRequest body = new PatchCallbackRequest(); // PatchCallbackRequest | PatchCallbackRequest
+try {
+    PatchCallbackResponse result = apiInstance.patchConversationsCallbacks(body);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling ConversationsApi#patchConversationsCallbacks");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **body** | [**PatchCallbackRequest**](PatchCallbackRequest.html)| PatchCallbackRequest | 
+{: class="table-striped"}
+
+
+### Return type
+
+[**PatchCallbackResponse**](PatchCallbackResponse.html)
 
 <a name="patchConversationsChat"></a>
 
@@ -8084,6 +8213,131 @@ try {
 
 [**CreateCallbackResponse**](CreateCallbackResponse.html)
 
+<a name="postConversationsCallbacksBulkDisconnect"></a>
+
+# **postConversationsCallbacksBulkDisconnect**
+
+
+
+> Void postConversationsCallbacksBulkDisconnect(body)
+
+Disconnect multiple scheduled callbacks
+
+
+
+Wraps POST /api/v2/conversations/callbacks/bulk/disconnect  
+
+Requires ANY permissions: 
+
+* conversation:communication:disconnect
+
+### Example
+
+```{"language":"java"}
+//Import classes:
+import com.mypurecloud.sdk.v2.ApiClient;
+import com.mypurecloud.sdk.v2.ApiException;
+import com.mypurecloud.sdk.v2.Configuration;
+import com.mypurecloud.sdk.v2.auth.*;
+import com.mypurecloud.sdk.v2.api.ConversationsApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Create ApiClient instance
+ApiClient apiClient = ApiClient.Builder.standard()
+		.withAccessToken(accessToken)
+		.withBasePath("https://api.mypurecloud.com")
+		.build();
+
+// Use the ApiClient instance
+Configuration.setDefaultApiClient(apiClient);
+
+ConversationsApi apiInstance = new ConversationsApi();
+BulkCallbackDisconnectRequest body = new BulkCallbackDisconnectRequest(); // BulkCallbackDisconnectRequest | BulkCallbackDisconnectRequest
+try {
+    apiInstance.postConversationsCallbacksBulkDisconnect(body);
+} catch (ApiException e) {
+    System.err.println("Exception when calling ConversationsApi#postConversationsCallbacksBulkDisconnect");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **body** | [**BulkCallbackDisconnectRequest**](BulkCallbackDisconnectRequest.html)| BulkCallbackDisconnectRequest | 
+{: class="table-striped"}
+
+
+### Return type
+
+null (empty response body)
+
+<a name="postConversationsCallbacksBulkUpdate"></a>
+
+# **postConversationsCallbacksBulkUpdate**
+
+
+
+> [BulkCallbackPatchResponse](BulkCallbackPatchResponse.html) postConversationsCallbacksBulkUpdate(body)
+
+Update multiple scheduled callbacks
+
+
+
+Wraps POST /api/v2/conversations/callbacks/bulk/update  
+
+Requires ANY permissions: 
+
+* conversation:callback:edit
+
+### Example
+
+```{"language":"java"}
+//Import classes:
+import com.mypurecloud.sdk.v2.ApiClient;
+import com.mypurecloud.sdk.v2.ApiException;
+import com.mypurecloud.sdk.v2.Configuration;
+import com.mypurecloud.sdk.v2.auth.*;
+import com.mypurecloud.sdk.v2.api.ConversationsApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Create ApiClient instance
+ApiClient apiClient = ApiClient.Builder.standard()
+		.withAccessToken(accessToken)
+		.withBasePath("https://api.mypurecloud.com")
+		.build();
+
+// Use the ApiClient instance
+Configuration.setDefaultApiClient(apiClient);
+
+ConversationsApi apiInstance = new ConversationsApi();
+BulkCallbackPatchRequest body = new BulkCallbackPatchRequest(); // BulkCallbackPatchRequest | BulkCallbackPatchRequest
+try {
+    BulkCallbackPatchResponse result = apiInstance.postConversationsCallbacksBulkUpdate(body);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling ConversationsApi#postConversationsCallbacksBulkUpdate");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **body** | [**BulkCallbackPatchRequest**](BulkCallbackPatchRequest.html)| BulkCallbackPatchRequest | 
+{: class="table-striped"}
+
+
+### Return type
+
+[**BulkCallbackPatchResponse**](BulkCallbackPatchResponse.html)
+
 <a name="postConversationsCalls"></a>
 
 # **postConversationsCalls**
@@ -9190,7 +9444,7 @@ try {
 
 Send an agentless outbound message
 
-Send an agentlesss (api participant) outbound message using a client credential grant. In order to call this endpoint you will need OAuth token generated using OAuth client credentials authorized with at least messaging scope. This will generate a new Conversation, if there is an existing active Conversation between the fromAddress and toAddress already, then this POST will fail.
+Send an agentless (api participant) outbound message using a client credential grant. In order to call this endpoint you will need OAuth token generated using OAuth client credentials authorized with at least messaging scope. This will generate a new Conversation, if there is an existing active Conversation between the fromAddress and toAddress already, then this POST will fail.
 
 Wraps POST /api/v2/conversations/messages/agentless  
 

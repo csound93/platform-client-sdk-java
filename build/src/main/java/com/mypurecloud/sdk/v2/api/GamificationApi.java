@@ -3687,28 +3687,32 @@ public class GamificationApi {
    * Create a new custom performance profile
    * 
    * @param body performanceProfile (required)
-   * @return GetProfilesResponse
+   * @param copyMetrics Flag to copy metrics. If set to false, there will be no metrics associated with the new profile. If set to true or is absent (the default behavior), all metrics from the default profile will be copied over into the new profile. (optional, default to true)
+   * @return PerformanceProfile
    * @throws ApiException if the request fails on the server
    * @throws IOException if the request fails to be processed
    */
-  public GetProfilesResponse postGamificationProfiles(CreatePerformanceProfile body) throws IOException, ApiException {
-    return  postGamificationProfiles(createPostGamificationProfilesRequest(body));
+  public PerformanceProfile postGamificationProfiles(CreatePerformanceProfile body, Boolean copyMetrics) throws IOException, ApiException {
+    return  postGamificationProfiles(createPostGamificationProfilesRequest(body, copyMetrics));
   }
 
   /**
    * Create a new custom performance profile
    * 
    * @param body performanceProfile (required)
-   * @return GetProfilesResponse
+   * @param copyMetrics Flag to copy metrics. If set to false, there will be no metrics associated with the new profile. If set to true or is absent (the default behavior), all metrics from the default profile will be copied over into the new profile. (optional, default to true)
+   * @return PerformanceProfile
    * @throws IOException if the request fails to be processed
    */
-  public ApiResponse<GetProfilesResponse> postGamificationProfilesWithHttpInfo(CreatePerformanceProfile body) throws IOException {
-    return postGamificationProfiles(createPostGamificationProfilesRequest(body).withHttpInfo());
+  public ApiResponse<PerformanceProfile> postGamificationProfilesWithHttpInfo(CreatePerformanceProfile body, Boolean copyMetrics) throws IOException {
+    return postGamificationProfiles(createPostGamificationProfilesRequest(body, copyMetrics).withHttpInfo());
   }
 
-  private PostGamificationProfilesRequest createPostGamificationProfilesRequest(CreatePerformanceProfile body) {
+  private PostGamificationProfilesRequest createPostGamificationProfilesRequest(CreatePerformanceProfile body, Boolean copyMetrics) {
     return PostGamificationProfilesRequest.builder()
             .withBody(body)
+    
+            .withCopyMetrics(copyMetrics)
     
             .build();
   }
@@ -3717,13 +3721,13 @@ public class GamificationApi {
    * Create a new custom performance profile
    * 
    * @param request The request object
-   * @return GetProfilesResponse
+   * @return PerformanceProfile
    * @throws ApiException if the request fails on the server
    * @throws IOException if the request fails to be processed
    */
-  public GetProfilesResponse postGamificationProfiles(PostGamificationProfilesRequest request) throws IOException, ApiException {
+  public PerformanceProfile postGamificationProfiles(PostGamificationProfilesRequest request) throws IOException, ApiException {
     try {
-      ApiResponse<GetProfilesResponse> response = pcapiClient.invoke(request.withHttpInfo(), new TypeReference<GetProfilesResponse>() {});
+      ApiResponse<PerformanceProfile> response = pcapiClient.invoke(request.withHttpInfo(), new TypeReference<PerformanceProfile>() {});
       return response.getBody();
     }
     catch (ApiException | IOException exception) {
@@ -3739,13 +3743,13 @@ public class GamificationApi {
    * @return the response
    * @throws IOException if the request fails to be processed
    */
-  public ApiResponse<GetProfilesResponse> postGamificationProfiles(ApiRequest<CreatePerformanceProfile> request) throws IOException {
+  public ApiResponse<PerformanceProfile> postGamificationProfiles(ApiRequest<CreatePerformanceProfile> request) throws IOException {
     try {
-      return pcapiClient.invoke(request, new TypeReference<GetProfilesResponse>() {});
+      return pcapiClient.invoke(request, new TypeReference<PerformanceProfile>() {});
     }
     catch (ApiException exception) {
       @SuppressWarnings("unchecked")
-      ApiResponse<GetProfilesResponse> response = (ApiResponse<GetProfilesResponse>)(ApiResponse<?>)exception;
+      ApiResponse<PerformanceProfile> response = (ApiResponse<PerformanceProfile>)(ApiResponse<?>)exception;
       return response;
     }
     catch (Throwable exception) {
@@ -3756,7 +3760,7 @@ public class GamificationApi {
         throw new RuntimeException(exception);
       }
       @SuppressWarnings("unchecked")
-      ApiResponse<GetProfilesResponse> response = (ApiResponse<GetProfilesResponse>)(ApiResponse<?>)(new ApiException(exception));
+      ApiResponse<PerformanceProfile> response = (ApiResponse<PerformanceProfile>)(ApiResponse<?>)(new ApiException(exception));
       return response;
     }
   }

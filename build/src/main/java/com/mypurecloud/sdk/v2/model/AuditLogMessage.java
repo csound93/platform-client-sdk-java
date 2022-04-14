@@ -142,13 +142,21 @@ public class AuditLogMessage  implements Serializable {
     VIEW("View"),
     UPDATE("Update"),
     MOVE("Move"),
+    COPY("Copy"),
     DELETE("Delete"),
     DELETEALL("DeleteAll"),
+    FAX("Fax"),
+    VERSIONCREATE("VersionCreate"),
     DOWNLOAD("Download"),
     UPLOAD("Upload"),
     MEMBERADD("MemberAdd"),
     MEMBERUPDATE("MemberUpdate"),
     MEMBERREMOVE("MemberRemove"),
+    SHAREADD("ShareAdd"),
+    SHAREREMOVE("ShareRemove"),
+    TAGADD("TagAdd"),
+    TAGREMOVE("TagRemove"),
+    TAGUPDATE("TagUpdate"),
     READ("Read"),
     READALL("ReadAll"),
     EXECUTE("Execute"),
@@ -206,7 +214,8 @@ public class AuditLogMessage  implements Serializable {
     RESCHEDULE("Reschedule"),
     CANCEL("Cancel"),
     SOFTDELETE("SoftDelete"),
-    HARDDELETE("HardDelete");
+    HARDDELETE("HardDelete"),
+    RESET("Reset");
 
     private String value;
 
@@ -255,6 +264,8 @@ public class AuditLogMessage  implements Serializable {
   public enum EntityTypeEnum {
     OUTDATEDSDKVERSION("OutdatedSdkVersion"),
     ACCESSTOKEN("AccessToken"),
+    ACTION("Action"),
+    ACTIONDRAFT("ActionDraft"),
     ACTIONMAP("ActionMap"),
     ACTIONTEMPLATE("ActionTemplate"),
     ACTIVITYCODE("ActivityCode"),
@@ -339,6 +350,7 @@ public class AuditLogMessage  implements Serializable {
     MESSAGINGCAMPAIGN("MessagingCampaign"),
     METRIC("Metric"),
     MODULE("Module"),
+    NUMBERORDER("NumberOrder"),
     NUMBERPLAN("NumberPlan"),
     OAUTHCLIENT("OAuthClient"),
     OAUTHCLIENTAUTHORIZATION("OAuthClientAuthorization"),

@@ -2865,7 +2865,7 @@ try {
 
 
 
-> [GetProfilesResponse](GetProfilesResponse.html) postGamificationProfiles(body)
+> [PerformanceProfile](PerformanceProfile.html) postGamificationProfiles(body, copyMetrics)
 
 Create a new custom performance profile
 
@@ -2900,8 +2900,9 @@ Configuration.setDefaultApiClient(apiClient);
 
 GamificationApi apiInstance = new GamificationApi();
 CreatePerformanceProfile body = new CreatePerformanceProfile(); // CreatePerformanceProfile | performanceProfile
+Boolean copyMetrics = true; // Boolean | Flag to copy metrics. If set to false, there will be no metrics associated with the new profile. If set to true or is absent (the default behavior), all metrics from the default profile will be copied over into the new profile.
 try {
-    GetProfilesResponse result = apiInstance.postGamificationProfiles(body);
+    PerformanceProfile result = apiInstance.postGamificationProfiles(body, copyMetrics);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling GamificationApi#postGamificationProfiles");
@@ -2915,12 +2916,13 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **body** | [**CreatePerformanceProfile**](CreatePerformanceProfile.html)| performanceProfile | 
+| **copyMetrics** | **Boolean**| Flag to copy metrics. If set to false, there will be no metrics associated with the new profile. If set to true or is absent (the default behavior), all metrics from the default profile will be copied over into the new profile. | [optional] [default to true] 
 {: class="table-striped"}
 
 
 ### Return type
 
-[**GetProfilesResponse**](GetProfilesResponse.html)
+[**PerformanceProfile**](PerformanceProfile.html)
 
 <a name="putGamificationMetric"></a>
 
